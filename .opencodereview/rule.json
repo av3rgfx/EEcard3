@@ -1,0 +1,9 @@
+{
+  "rules": [
+    {
+      "path": "**/*",
+      "rule": "Review against confirmed product requirements and architecture. Check authorization, tenant isolation when relevant, input validation, error recovery, data integrity, duplicate sensitive operations and secret exposure. For UI check semantics, keyboard focus and meaningful feedback. Report concrete issues with evidence; do not prescribe speculative rewrites.",
+      "merge_system_rule": true
+    }
+  ]
+}

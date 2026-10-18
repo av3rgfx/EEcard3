@@ -1,0 +1,219 @@
+# EECard3: l'idea del progetto
+
+Descrizione completa dell'idea da sviluppare, scritta il 18 ottobre 2026. È autosufficiente: riassume le conversazioni dei fondatori (5, 7 e 15 ottobre 2026) e le risposte dell'utente. I materiali originali (audio, appunti) sono privati e non sono nel repository.
+
+Il documento descrive **cosa si vuole ottenere**, non come realizzarlo. Architettura, stack, piano di sviluppo, design e prima versione **non sono decisi**: si studiano a partire da [docs/STUDIO.md](docs/STUDIO.md), con il metodo di [docs/METODO.md](docs/METODO.md).
+
+**Come leggere gli stati**
+
+| Stato | Significato |
+| --- | --- |
+| **Confermato** | L'utente lo ha detto o approvato esplicitamente. Vale finché l'utente non lo cambia. |
+| **Idea dei fondatori** | Emerso nelle conversazioni. È un desiderio o una proposta, non una decisione né un requisito della prima versione. |
+| **Da decidere** | Nessuna risposta: serve una decisione dell'utente o una ricerca. |
+
+---
+
+## 1. Nome e identità
+
+- **EECard3** è il nome del repository; «EECard» è un nome di lavoro provvisorio. Il nome definitivo è **da decidere**.
+- L'idea nasce dalla collaborazione con un'agenzia immobiliare, Enrico Erca (sigla ƎE). Il prodotto deve avere un **marchio autonomo**, utilizzabile anche da altre agenzie. **Confermato**.
+- Identità visiva: **da decidere** (vedi [DESIGN.md](DESIGN.md)).
+
+## 2. L'idea in breve
+
+Un unico posto per **prendersi cura della propria casa e di ciò che la riguarda**: sapere cosa succede, capire cosa richiede attenzione e agire (trovare un documento, seguire una scadenza o una pratica, pagare, chiedere aiuto), nel modo più semplice e intuitivo possibile.
+
+La piattaforma non lavora da sola. Dietro c'è un **servizio reale**: l'agenzia segue il cliente nel tempo e i professionisti intervengono quando serve. L'app rende quel servizio visibile, ordinato e continuo. Una **tessera** (card) rende riconoscibile l'adesione al servizio.
+
+Motivo d'acquisto, nelle parole dell'utente: *«accedere, monitorare, verificare, pagare e richiedere assistenza per la casa e ciò che la riguarda: burocrazia, documenti, tecnici, abbonamenti e bollette, nel modo più semplice e intuitivo possibile»*. **Confermato**.
+
+## 3. Il problema da cui nasce
+
+Problemi concreti vissuti in agenzia e raccontati dai fondatori:
+
+- **Documenti dispersi.** Il proprietario spesso non sa quali carte possiede (contratto, APE, planimetrie, certificati, pratiche edilizie), né quale tecnico abbia seguito la casa. Il problema esplode quando deve vendere, affittare o rinnovare.
+- **Il rapporto si interrompe dopo il contratto.** Finita la pratica, il cliente sparisce. Quando torna, magari dopo un anno e mezzo, il personale è cambiato e nessuno lo ritrova: tutto dipende dalla memoria di chi c'era.
+- **Affitti poco trasparenti.** Il proprietario non sa se il canone è stato pagato; l'inquilino non sa dove trovare contratto e ricevute.
+- **Assistenza introvabile.** Il cliente chiama il tecnico la sera, nessuno risponde e resta senza aiuto. L'idea è che una richiesta senza risposta passi all'agenzia, che la prende in carico.
+- **Informazioni disperse** fra chat, cartelle e telefoni, con richieste ripetitive per l'agenzia.
+
+Possibile vantaggio, da verificare: **conoscenza della casa unita alla fiducia e alla responsabilità locale dell'agenzia**. Un archivio, un'app o una tessera da soli sono facili da sostituire; il valore starebbe nell'unione con un servizio vero.
+
+## 4. Persone
+
+| Persona | Bisogni | Confini |
+| --- | --- | --- |
+| **Proprietario che abita la casa** | Documenti, utenze proprie, manutenzione, assistenza, spese | Vede ciò che gli spetta per intestazione o delega |
+| **Proprietario che affitta** | Contratto e documenti, canoni, scadenze, interventi di sua competenza, storia della casa | Non vede le bollette personali dell'inquilino. **Confermato** |
+| **Inquilino** | Documenti pertinenti, canone, utenze, richieste di intervento | Dire «ho pagato» non prova l'incasso |
+| **Operatore dell'agenzia** | Attivare i clienti, tenere i fascicoli, verificare, seguire pratiche e richieste, lavorare al banco, dare continuità | Spazio di lavoro distinto; non si spaccia per il cliente |
+| **Tecnico o professionista** | Incarico, dati necessari, appuntamento, contatto, esito | Vede solo ciò che serve all'incarico |
+
+- Una persona può avere **ruoli diversi su case diverse**, per esempio proprietaria di tre case e inquilina di una quarta, con un unico accesso. **Confermato**.
+- Il proprietario deve poter usare anche le funzioni domestiche (utenze, bollette) per la casa in cui vive. Idea dei fondatori.
+- Cliente, agenzia e tecnico hanno **spazi distinti**. **Confermato**.
+- Nel tempo il prodotto può servire **più agenzie**, ciascuna con dati separati. **Confermato** come direzione. Con quante agenzie partire è da decidere.
+
+## 5. Cosa vorrebbe offrire
+
+È l'elenco completo di ciò che è stato immaginato. **Non è il perimetro della prima versione**: capire quale parte serve davvero, a chi e in che ordine è il cuore dello studio.
+
+### 5.1 Casa e fascicolo
+- Scheda della casa con le persone e i rapporti pertinenti: proprietari, comproprietari, inquilini, delegati.
+- **Fascicolo dei documenti**: contratto, APE, planimetrie, visure, certificati, documenti delle parti, ricevute, deposito. Per la compravendita anche relazione tecnica, abitabilità o agibilità, condoni, permessi edilizi. Originali e versioni conservati, con provenienza e data.
+- Il fascicolo parte dai **dati che l'agenzia ha già** al momento del contratto, senza reinserirli.
+- **Ricerca rapida**, anche di documenti storici: per esempio cercare una parte del nome e trovare un'abitabilità di decenni fa.
+- **Cronologia dei lavori** eseguiti sulla casa, con date, esecutori e documenti.
+- Condivisione controllata (a chi, per quanto tempo, revocabile) ed esportazione autorizzata.
+- Un controllo formale di un documento non ne certifica la validità tecnica o giuridica.
+
+### 5.2 Affitto e canoni
+- **Scadenziario dell'affitto**: canoni dovuti, date, promemoria.
+- L'inquilino carica la prova del bonifico; il proprietario vede il documento e lo stato del pagamento.
+- Ricevute dell'affitto distinte dalla prova del bonifico.
+- Adempimenti del contratto (registrazione, rinnovi) conservati e collegati alla locazione giusta.
+- **Bozze di nuovi contratti** che riusano anagrafiche e dati già verificati, sempre con revisione umana prima di firma o invio. Idea dei fondatori.
+
+### 5.3 Bollette e spese della casa
+- Nella home, ciò che richiede attenzione subito, per esempio **una bolletta da pagare**; pagare le bollette deve essere **semplice**. **Confermato**. Vedere l'avviso non vuol dire averlo pagato.
+- **Acquisizione del bollettino**, anche da una foto, con i dati riportati in digitale.
+- Importo e codice di pagamento in primo piano, i dettagli dopo.
+- **Pagare in contanti** mostrando il codice del bollettino in un punto convenzionato, per chi non usa la carta. Desiderio espresso dall'utente; fattibilità da studiare.
+- Importi sempre con il separatore delle migliaia («9.876,54 €»). **Confermato**.
+- Distinguere i servizi legati alla casa (luce, gas, acqua, internet, assicurazioni…) dall'adesione al servizio.
+
+### 5.4 Assistenza, tecnici e pratiche
+- Richiesta di aiuto legata alla casa o a un documento: descrizione semplice, allegati, riferimento, stato, prossimo passo.
+- Il servizio dietro la richiesta: qualcuno la riceve, la valuta (eventualmente con un preventivo da approvare), la affida a un tecnico, fissa l'appuntamento, verifica l'esito e la chiude.
+- **Rete di tecnici di fiducia** (geometri, idraulici, muratori, sgombero cantine…), conosciuti dall'agenzia o già intervenuti sulla casa.
+- **Assistenza fuori orario**: una segreteria, anche automatica, raccoglie il problema e lo inoltra, senza promettere interventi.
+- Aiuto nell'uso dell'app, pratiche documentali e burocratiche, interventi tecnici: sono attività diverse.
+- Il tecnico deve poter contattare il cliente durante l'incarico. Desiderio espresso dall'utente.
+- Non è un servizio di emergenza: le urgenze vere devono avere un percorso coerente con la copertura reale.
+
+### 5.5 Consulenza e valore della casa
+- **Consulenza annuale** personale e riservata per il proprietario; a chi spetti è da decidere.
+- **Piano di investimento** sulla casa, rivisto ogni anno; contenuto da definire.
+- **Casa in 3D** con ipotesi di modifica a partire dalla planimetria. Idea dei fondatori.
+
+### 5.6 Tessera e adesione
+- **Tessera digitale** subito; **tessera fisica** in formato carta di credito, consegnata in agenzia con una cartellina dedicata oppure spedita a pagamento a chi si iscrive online. Idea dei fondatori.
+- La tessera **non è una carta di pagamento** e averla in mano **non basta per accedere ai dati**. **Confermato**.
+- Se si blocca e si sostituisce, la vecchia non deve più funzionare.
+- Account, adesione, rinnovo, tessera e locazione sono cose separate: chiudere l'una non chiude automaticamente le altre. **Confermato**.
+- **Disdetta facile**, mantenendo il periodo già pagato; nelle conversazioni compare anche l'idea di un preavviso. Da decidere.
+- **Livelli** progressivi oppure **extra** acquistabili, con passaggio di livello pagando la differenza. Idea dei fondatori.
+- Tessera del proprietario più ricca e di colore diverso da quella dell'inquilino. Idea dei fondatori.
+- Tessera nei **wallet** del telefono e lettura **contactless** al banco. Idea dei fondatori.
+- Agenzie partner con la propria tessera personalizzata, con il marchio del sistema visibile. Idea dei fondatori.
+
+### 5.7 Lo spazio dell'agenzia
+- Lavoro da fare in coda, ricerca di clienti e fascicoli, gestione di clienti, rapporti e deleghe, documenti da controllare, richieste e incarichi.
+- Chi ha fatto cosa e da quale fonte resta tracciato; le note interne sono separate dalle informazioni condivise col cliente.
+- Permessi diversi secondo la funzione della persona (per esempio sportello, verifiche, coordinamento). Idea emersa, da confermare.
+- **Al banco**: con la tessera l'operatore richiama il fascicolo del cliente. Si è immaginato un **terminale da banco** piccolo e riconoscibile, magari stampato in 3D, con due schermi (uno per l'operatore, uno che mostra al cliente il riepilogo) e forse la firma con penna. Idea dei fondatori: chi vede cosa, tipo di firma e hardware sono aperti.
+- **Totem** nelle sedi, in futuro. Idea dei fondatori.
+
+### 5.8 Report e comunicazioni
+- **Report annuale** con due viste separate: per il cliente (attività e situazione delle sue case) e per l'agenzia (lavoro svolto, problemi operativi). **Confermato** sui destinatari; contenuti e metriche da decidere.
+- Aggiornamenti utili su richieste, scadenze e verifiche, con canali e preferenze scelti dalla persona. Mai solleciti di pagamento basati su stati incerti o contestati.
+- **Chiamata automatica all'inquilino** dopo una scadenza, venduta come extra al proprietario. Idea dei fondatori, con dubbi legali e di consenso da studiare.
+
+### 5.9 Altre possibilità immaginate
+- **Assistente AI** che conosce il cliente e il fascicolo: ricerca, bozze, preparazione dei contratti. Idea dei fondatori.
+- **Domotica** collegata all'app. Idea dei fondatori, solo esplorativa.
+- **App iPhone** dopo la piattaforma web. **Confermato** l'ordine (prima il web, poi l'app).
+- Canali: web, app, totem.
+
+## 6. Modello commerciale: cosa si sa
+
+Nulla è deciso. Gli elementi emersi:
+
+- Prima ipotesi: **50 € per il proprietario e 15 € (forse 20 €) per l'inquilino**, senza periodicità né unità definite. L'esempio di ricavo fatto a voce (circa 100 utenti, circa 2.600 € l'anno) non torna con questi prezzi.
+- La tessera viene proposta **in agenzia al momento del contratto**, come quota aggiuntiva rispetto alla mediazione. Non è stabilito che sia obbligatoria.
+- **Alcuni clienti già gestiti dall'agenzia pagano 600 € l'anno** per un servizio esistente. Non è un listino, ma è il dato economico più concreto disponibile.
+- Quota ricorrente con servizi premium; livelli o extra; cambio di livello con differenza.
+- Vendita del sistema **ad altre agenzie** come servizio pronto da usare, con personalizzazione e un compenso per il design.
+- Tessera fisica spedita a pagamento a chi si iscrive online.
+- Il software da solo non paga il lavoro umano promesso (verifiche, assistenza, consulenza): il costo del servizio va misurato.
+- Mercato iniziale ipotizzato: Italia, nella zona già servita dall'agenzia.
+- Tempi: nelle conversazioni si cita «gennaio dell'anno prossimo», senza un anno certo né un piano. Non è una data concordata.
+
+## 7. Regole che il prodotto deve rispettare
+
+Requisiti di significato, indipendenti da tecnologia e design. L'utente ha chiesto di preservarne il significato. **Confermato**.
+
+1. **L'accesso dipende dal rapporto con la casa**, non da un'etichetta: agenzia, tipo di rapporto, delega, periodo di validità, oggetto. Il ruolo, la tessera o il pacchetto acquistato non danno accesso ai dati di altri.
+2. **Deleghe e condivisioni** hanno destinatario, durata e revoca, e valgono nel momento in cui si agisce.
+3. **Originali e versioni** si conservano; una correzione è esplicita e non cancella la storia. Un duplicato non crea un nuovo importo da pagare.
+4. **I passaggi del denaro restano distinti**: importo dovuto, pagamento dichiarato, prova caricata, pagamento disposto, incasso verificato, quietanza. Caricare una ricevuta o dire «ho pagato» non salda nulla. Un pagamento parziale lascia un residuo.
+5. **Mai un doppio pagamento**: se l'esito non è noto non si riprova alla cieca; tornare da una pagina esterna non prova il pagamento.
+6. **«Paga» solo dove esiste un canale vero**, con i costi mostrati prima della conferma. Un comune pagamento con carta non paga qualsiasi bolletta a qualsiasi creditore.
+7. **Gli stati del servizio sono distinti**: richiesta ricevuta, presa in carico, preventivo accettato, intervento eseguito, chiusura.
+8. **Chi ha fatto cosa, quando e da quale fonte** resta ricostruibile.
+9. **Ciò che deriva dai dati** (ricerche, notifiche, anteprime, risposte dell'AI, statistiche, esportazioni) rispetta gli stessi permessi dell'originale.
+10. **I report dicono da dove vengono i dati e cosa coprono**: un dato mancante non diventa zero.
+11. **La fine di un rapporto** non cancella tutto e non lascia un accesso per sempre.
+12. **Solo dati inventati e ambienti di prova** finché l'utente non autorizza altro: niente pagamenti, messaggi, chiamate, account esterni o servizi reali.
+
+## 8. Parole del progetto
+
+Da consolidare in `GLOSSARY.md` con la skill `domain-modeling` quando il modello si chiarisce.
+
+| Parola | Significato |
+| --- | --- |
+| **Casa** | L'immobile o l'unità abitativa su cui si lavora |
+| **Rapporto** | Il legame di una persona con una casa (proprietà, comproprietà, locazione, delega), con una validità nel tempo |
+| **Agenzia** | Chi eroga il servizio; i suoi dati sono separati da quelli di altre agenzie |
+| **Delega** | Un'autorizzazione con oggetto, destinatario e durata, revocabile |
+| **Adesione** | L'abbonamento al servizio, con periodo e rinnovo. Diversa da account e tessera |
+| **Tessera** | Il segno riconoscibile dell'adesione, digitale o fisico. Non autentica e non paga |
+| **Fascicolo** | I documenti di una casa, con originali, versioni e provenienza |
+| **Dichiarato** | «Ho pagato» detto dalla persona: da solo non prova nulla |
+| **Prova** | Un documento caricato a sostegno (contabile, scontrino) |
+| **Disposto** | Un pagamento ordinato tramite banca o altro intermediario, non ancora incassato |
+| **Incasso verificato** | La conferma che chi doveva ricevere il denaro lo ha ricevuto |
+| **Quietanza** | La ricevuta liberatoria rilasciata da chi incassa |
+| **Richiesta** | Una domanda di aiuto del cliente; diversa da incarico e intervento |
+| **Incarico** | Il lavoro affidato a un tecnico, con accesso limitato a quello |
+
+## 9. Cosa il prodotto non è
+
+- Non certifica documenti e non sostituisce i professionisti abilitati (APE, perizie, pareri legali).
+- Non decide chi ha ragione in un conflitto fra proprietario e inquilino.
+- Non è un servizio di emergenza.
+- Non promette interventi illimitati né professionisti che non hanno un accordo.
+- Non è un gestionale generico per qualsiasi portafoglio immobiliare.
+- Se e come la piattaforma tocchi il denaro dei clienti è **da decidere** nello studio.
+
+## 10. Primo percorso completo e prima versione
+
+**Da decidere nello studio.** Le domande per arrivarci sono in [docs/STUDIO.md](docs/STUDIO.md).
+
+## 11. Web e app
+
+**Da decidere.** Confermato solo l'ordine: prima la piattaforma web, poi l'app iPhone.
+
+## 12. Decisioni confermate dall'utente
+
+| Data | Decisione |
+| --- | --- |
+| 5–15/10/2026 | Due destinatari principali (proprietario e inquilino), con agenzia e tecnici in spazi propri |
+| 15/10/2026 | Motivo d'acquisto: accedere, monitorare, verificare, pagare e chiedere assistenza per la casa (§2) |
+| 15/10/2026 | Nella home: la tessera, la casa e ciò che richiede attenzione subito, con un pagamento delle bollette semplice. La forma è da progettare da zero |
+| 15/10/2026 | Marchio autonomo dall'agenzia, utilizzabile da altre agenzie |
+| 15/10/2026 | Report annuale con due viste separate, cliente e agenzia |
+| 16/10/2026 | Il significato di permessi, originali e versioni, dichiarazione, prova, incasso verificato, residuo e quietanza va preservato (§7) |
+| 16/10/2026 | Solo dati inventati e ambienti di prova; nessuna pubblicazione in produzione senza autorizzazione |
+| 16/10/2026 | Le Apple Human Interface Guidelines sono il riferimento di design principale |
+| 16/10/2026 | Ogni lavoro sul codice passa dalla revisione con Open Code Review prima del commit finale e delle PR |
+| 16/10/2026 | L'app iPhone si sviluppa dopo la piattaforma web |
+| 16/10/2026 | Importi sempre con il separatore delle migliaia |
+| 18/10/2026 | Repository pulito: nessuna soluzione, codice o decisione tecnica dei tentativi precedenti; si riparte dall'idea, con studio, ricerca e decisioni da fare in EECard3 |
+
+## 13. Evidenze e criteri di successo
+
+Oggi **non esiste alcuna evidenza raccolta con persone reali**: nessuna intervista, prova d'uso o impegno a pagare. Le conversazioni dei fondatori sono intenzioni e opinioni, non misure della domanda.
+
+I criteri di successo si definiscono nello studio. Le evidenze che conteranno sono osservabili: clienti che si impegnano a pagare, tempo dell'agenzia risparmiato o speso per cliente, richieste prese in carico e chiuse, uso ripetuto, rinnovi. Non inventare valori numerici per completare questo documento.
