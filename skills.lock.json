@@ -1,0 +1,1193 @@
+{
+  "format_version": 1,
+  "snapshot_date": "2026-10-18",
+  "sources": [
+    {
+      "repository": "emilkowalski/skills",
+      "commit": "2d228630ba1446365f614a108cb8252f1feda202",
+      "skills": [
+        {
+          "name": "emil-design-eng",
+          "path": "skills/emil-design-eng"
+        },
+        {
+          "name": "apple-design",
+          "path": "skills/apple-design"
+        },
+        {
+          "name": "mobile-native",
+          "path": "skills/mobile-native"
+        },
+        {
+          "name": "break-ui",
+          "path": "skills/break-ui"
+        },
+        {
+          "name": "review-animations",
+          "path": "skills/review-animations"
+        },
+        {
+          "name": "write-swift",
+          "path": "skills/write-swift"
+        }
+      ],
+      "licenses": [
+        "LICENSE"
+      ]
+    },
+    {
+      "repository": "cuellarfr/design-skills",
+      "commit": "7e25e66e87f64f9d3dea22198f9e29937e7c48f5",
+      "skills": [
+        {
+          "name": "ux-research",
+          "path": "skills/ux-research"
+        },
+        {
+          "name": "ux-strategy",
+          "path": "skills/ux-strategy"
+        },
+        {
+          "name": "ux-writing",
+          "path": "skills/ux-writing"
+        },
+        {
+          "name": "accessibility-audit",
+          "path": "skills/accessibility-audit"
+        }
+      ],
+      "licenses": [
+        "LICENSE"
+      ]
+    },
+    {
+      "repository": "mattpocock/skills",
+      "commit": "49dd158d1076134a641b33efb035946536778336",
+      "skills": [
+        {
+          "name": "wayfinder",
+          "path": "skills/engineering/wayfinder"
+        },
+        {
+          "name": "research",
+          "path": "skills/engineering/research"
+        },
+        {
+          "name": "domain-modeling",
+          "path": "skills/engineering/domain-modeling"
+        },
+        {
+          "name": "prototype",
+          "path": "skills/engineering/prototype"
+        },
+        {
+          "name": "setup-matt-pocock-skills",
+          "path": "skills/engineering/setup-matt-pocock-skills"
+        },
+        {
+          "name": "grilling",
+          "path": "skills/productivity/grilling"
+        }
+      ],
+      "licenses": [
+        "LICENSE"
+      ]
+    },
+    {
+      "repository": "alibaba/open-code-review",
+      "commit": "8eb83340a487b1150af00701b94f01af97e4b4d6",
+      "skills": [
+        {
+          "name": "open-code-review-delegate",
+          "path": "skills/open-code-review-delegate"
+        }
+      ],
+      "licenses": [
+        "LICENSE"
+      ]
+    },
+    {
+      "repository": "imskyleen/animate-ui",
+      "commit": "0d68eb0f59e6e15f872bc21ea4bdd5b195ea7bb9",
+      "skills": [
+        {
+          "name": "animate-ui",
+          "path": "skills/animate-ui"
+        }
+      ],
+      "licenses": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "repository": "microsoft/playwright-cli",
+      "commit": "b85c7a736bb473bf55b584e54a09ffa698d6d871",
+      "skills": [
+        {
+          "name": "playwright-cli",
+          "path": "skills/playwright-cli"
+        }
+      ],
+      "licenses": [
+        "LICENSE"
+      ]
+    },
+    {
+      "repository": "user-provided Ponytail skill",
+      "source": "skill-6aa4a106fa588191a68fd235c33c65e4",
+      "license": "MIT as declared in its SKILL.md",
+      "skills": [
+        {
+          "name": "ponytail",
+          "path": "SKILL.md"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": ".agents/skills/accessibility-audit/SKILL.md",
+      "sha256": "66c384d9a2bab1a638951d22fae0dd7502739a56e873a4ed4fabb5463ff8e051"
+    },
+    {
+      "path": ".agents/skills/accessibility-audit/examples/audit-walkthrough.md",
+      "sha256": "bcc2324c6df89f84a8583aceb8cbfb520b3b0dc473baf3776ae24f00615924d4"
+    },
+    {
+      "path": ".agents/skills/accessibility-audit/examples/quick-wins.md",
+      "sha256": "7865b13d951571ad758327de5265e543c77c037a0beb00af68fa33ed34ff1803"
+    },
+    {
+      "path": ".agents/skills/accessibility-audit/references/common-issues-and-fixes.md",
+      "sha256": "9f7e1044486715e362647b6b8e19fcd643b7d974a1bcecf1b176878e6ea2fe12"
+    },
+    {
+      "path": ".agents/skills/accessibility-audit/references/testing-tools-and-techniques.md",
+      "sha256": "e41a42f8ecc081c44bc1badaa5095ecd304d3b8a191b68d9c2acd812bda424d4"
+    },
+    {
+      "path": ".agents/skills/accessibility-audit/references/wcag-checklist.md",
+      "sha256": "b6f9e4a8d2ce2891d503398db57defdd1559b6c63249dd40055ecec627a18d6a"
+    },
+    {
+      "path": ".agents/skills/accessibility-audit/templates/accessibility-rules-file.md",
+      "sha256": "9bef64f118802cfc4dbd3c87221cb2a042febfe28ce6edd95d36be1f8df26e60"
+    },
+    {
+      "path": ".agents/skills/accessibility-audit/templates/audit-report-template.md",
+      "sha256": "3902d1e7f86f55a4ad5f5858319d93c3ac375fee2896118e4d9121c579cd808f"
+    },
+    {
+      "path": ".agents/skills/accessibility-audit/templates/quick-checklist-template.md",
+      "sha256": "7d034f61aa5fc53c92e60409b5438a6664b146c1d1565632b16ff2db56f6c33f"
+    },
+    {
+      "path": ".agents/skills/animate-ui/NOTICE.md",
+      "sha256": "1ff5dfa2d39a302b5466bc850c3aeb34bb9299f969317a8fc761802f048ae166"
+    },
+    {
+      "path": ".agents/skills/animate-ui/SKILL.md",
+      "sha256": "bbd67fbd5b00e3d680f2bd11db0985f084347a045b7dc6c5294aa4affd06f1bc"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/base-libraries.md",
+      "sha256": "1a823533f75444899e9a1488a69fb70d2c0f7d3c04d746f8dcf3a55b125f6648"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/catalog.md",
+      "sha256": "0d57dcfbd63ef93b4d1b5b7c05d29b8fd1d214433f8dea2c94a68623eff0ece3"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/feel.md",
+      "sha256": "7b9fe013d922b18d8df55b17cff14150902cb5358f3ae66bbb388b5d26dc7daa"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/icons.md",
+      "sha256": "3677477c9a8063a6de07d037b4a510f26573a03d35006c76f5a976ae924d6c26"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/interactions/README.md",
+      "sha256": "4c02d5ef51afe4dee8068fd46c491229c640f097703c416b38f4f71f04c547e4"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/interactions/banner.md",
+      "sha256": "52fbe5023487dc30d1eee5f93325ec802f2d861ac7699e839e798ff1473eebaf"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/interactions/count-badge.md",
+      "sha256": "3551bac32087eb4f67c5832a0ecf8774e58f29ce07d77ad2b19cc3342307d3fb"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/interactions/expanding-card.md",
+      "sha256": "36a49e578b5b7f5b55074d7153aebf7fcd50dee9ab1540bd415c07d2c8a907c0"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/interactions/field-error.md",
+      "sha256": "b1315e26ecfd9fe02d162101ee560675dbfb35a9fdc85a1182182bdd7c6f5a05"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/interactions/filter-grid.md",
+      "sha256": "e67dd8b989e03d2d23344e522673e4ef210f7e25a9172737a5d5f4a8c192b038"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/interactions/form-steps.md",
+      "sha256": "3dd0714e080361ad3ae0e55656cfaf60573dc83592f4ea4431158b3212fef206"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/interactions/list.md",
+      "sha256": "078956d20b7483bf4209634c9b3ffa6d516346fff63e449c22bf5ac85a7efb60"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/interactions/reorder.md",
+      "sha256": "670ae147d1b6cdc7913a2dd1c43c3f6b80709e266fa37e8b1deeb4d0f198b815"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/interactions/skeleton.md",
+      "sha256": "d40dd2d3486a961a5560d0ea82c33bb89f6fcec97be138fca95e83ae5f469096"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/interactions/status-button.md",
+      "sha256": "418867f9d40925b7c39f7cbd5e696baeacb238bcb688da742bf9c7e50d235ed9"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/interactions/swipe-row.md",
+      "sha256": "17f6270a0cb10c011f2838d950c6b5b2fe1abf716f9bf5b27f03df046248fcdc"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/migrate.md",
+      "sha256": "1155772473beb6f7f30cbdd377a6d11200e82d69cf96f9eaf986cccbd6ba1ab0"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/recipes/README.md",
+      "sha256": "a5b34b8c26909b46d0f8c944de07f21e01574817d89659b84f1d27a4c5861a1e"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/recipes/card.md",
+      "sha256": "c96610d3ca05dad2bef00da177c57aa3cc3a1f3b906cbdba3ace2d24a185f618"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/recipes/css-driven.md",
+      "sha256": "e4aec4eef38440bbeed40559c996e168e37136e03e92488a96fd65fd29a701b3"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/recipes/disclosure.md",
+      "sha256": "f6d9945c750a0470e7e86ab2d3f06968dd561592e7cb95f0c495c4d0e14e2e4a"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/recipes/indicator.md",
+      "sha256": "7874ff5a12ac58d4b9ee4c3ddc77b128c0d49a26a11c3d007781e3d074d81ccb"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/recipes/menu.md",
+      "sha256": "f404af098af61479b05b1c0418c405b6f8d46cfcba39b7b8f65271233c21d7af"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/recipes/modal.md",
+      "sha256": "15badab0d4fb78be26d541c09928250e84b257df0f3f43fa49fd7d836f60978b"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/recipes/overlay.md",
+      "sha256": "2ff61f34862d15e024d6d0996062978c98fe1663c5443d4ff5c32f3545a5cf57"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/recipes/page.md",
+      "sha256": "07b6b797372eaf69282276a040a7bb33c26d783cbf7d9023c7734edea8b90f2d"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/recipes/palette.md",
+      "sha256": "8d02d2da776c11d4659cccfa9ba9ae4de8cf8b9adae2231d33058e4e8c348f00"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/recipes/press.md",
+      "sha256": "1c303509ba9ecb5c25cd97da836d804a725ca697e8c97748db3e6f4ad4942aa6"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/recipes/sheet.md",
+      "sha256": "998c64fcfbd5f30d638933fc2352474052f6e2fbd55e2f96a2dad39c0a9c5d44"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/recipes/steps.md",
+      "sha256": "8c691e17e610c6df4af3d61e1236ac0f6ac7cef67b2bb3771838db30d38c0828"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/recipes/swap.md",
+      "sha256": "28cbbfdeae7312bd9927a514fff44c6b4404a1e14d6a7aeb9c48ab30bb1cf3c9"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/recipes/toast.md",
+      "sha256": "f6beb830bebbc911ea605d505a0da2164464cb170f511882645d994b2dca9d9f"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/reproduce.md",
+      "sha256": "ae90339ead09d34069b2beabf2102c35db6093f2e1010f1ab34a742cbb397578"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/review.md",
+      "sha256": "988fcc22270429f7c209f7ea9d9c99bd95d81248ec8c61e26e49a9459fee2183"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/rules.md",
+      "sha256": "ff33e55663475b5b0f5958676ec84421f0d5165d45e5aceaef72eeefdd5d17b8"
+    },
+    {
+      "path": ".agents/skills/animate-ui/references/tokens.md",
+      "sha256": "c03407e0c77a8f537e194458f016472cabd58df8059f786ef74a1e7bb4b24e07"
+    },
+    {
+      "path": ".agents/skills/animate-ui/scripts/css-timing.mjs",
+      "sha256": "1bd84e8968b30f4cc9517c4485c0d1bf34827e71d6cdee24344655d1dfe66d6d"
+    },
+    {
+      "path": ".agents/skills/apple-design/SKILL.md",
+      "sha256": "406aea9e67f0700a6b281a27e3c596ca187626591355ad49348fd865c43f819f"
+    },
+    {
+      "path": ".agents/skills/break-ui/CATALOG.md",
+      "sha256": "1a0fc03f1a9529092c82639b3053cbd00f25fe5dc8d1376a3e67b05aa7c81301"
+    },
+    {
+      "path": ".agents/skills/break-ui/SKILL.md",
+      "sha256": "050d522b8240314eff3884443b8a2f26b20229f8b415431e06d4d472ba8a6372"
+    },
+    {
+      "path": ".agents/skills/domain-modeling/ADR-FORMAT.md",
+      "sha256": "1d060836c8fe8959da69d5388906d0bd88c3762f1ef3633d1c8412d56376b5d2"
+    },
+    {
+      "path": ".agents/skills/domain-modeling/GLOSSARY-FORMAT.md",
+      "sha256": "9d64fc0d51256c8ae20a7878c97254500c7749f9c775afb65c5d76f8d289dcef"
+    },
+    {
+      "path": ".agents/skills/domain-modeling/SKILL.md",
+      "sha256": "b405beb440fb1fdc2e83e135c576f711219fae9c60e726fe8c9dc25788961881"
+    },
+    {
+      "path": ".agents/skills/domain-modeling/agents/openai.yaml",
+      "sha256": "02df053c621f1cbec55d0b4e6cfbf97f703db761424d61d75a8b2c2fabe2dd77"
+    },
+    {
+      "path": ".agents/skills/emil-design-eng/SKILL.md",
+      "sha256": "18a0fc87bca050c147e139270867508fe646bcd2884d9548ad40e8fbfd66614f"
+    },
+    {
+      "path": ".agents/skills/grilling/SKILL.md",
+      "sha256": "eb82b24bc15cbfdcc30ed19ef60a663570fd5c2d89f9c569841658c4f3738744"
+    },
+    {
+      "path": ".agents/skills/grilling/agents/openai.yaml",
+      "sha256": "46374e10a913edacfbf90d98e8239ba88dd03be8f439c19464663aa658b13dd1"
+    },
+    {
+      "path": ".agents/skills/mobile-native/SKILL.md",
+      "sha256": "418b868afc3cca0ca2d183c605f6b1661fb567489295283054a048ce43318f1c"
+    },
+    {
+      "path": ".agents/skills/open-code-review-delegate/SKILL.md",
+      "sha256": "644a2fa18a2ca23f3a4477c3015e4ccca122f2435ae33ed2446f50fd4bcc9488"
+    },
+    {
+      "path": ".agents/skills/playwright-cli/SKILL.md",
+      "sha256": "0cd3862efe5b7e5e4d5e5c60a10063405aa454e3f9007ea7c26251b5134de61a"
+    },
+    {
+      "path": ".agents/skills/playwright-cli/references/element-attributes.md",
+      "sha256": "fadbf1d01cf6e13923b4a31c2544ff87df3eb2d3c6b5ceb5a772ba0c03569f23"
+    },
+    {
+      "path": ".agents/skills/playwright-cli/references/playwright-tests.md",
+      "sha256": "087c07cc620ba2a8d5e352c7e13a00e8f70a914f890f0c24f8483b2560fbaf03"
+    },
+    {
+      "path": ".agents/skills/playwright-cli/references/pr-attachments.md",
+      "sha256": "8c1ecd5a7bca3b1d0ffbf029d9cb8f4d292622855e29e317ccb64e7e61a7de67"
+    },
+    {
+      "path": ".agents/skills/playwright-cli/references/request-mocking.md",
+      "sha256": "0cb11d40faa7e65dea78f8d67cd31b953c6cc25088e9358b2936d0393a391e6f"
+    },
+    {
+      "path": ".agents/skills/playwright-cli/references/running-code.md",
+      "sha256": "c0795ab744e503a48d9c8fbdccaf555b2658806572eefb7e30419f13da646f64"
+    },
+    {
+      "path": ".agents/skills/playwright-cli/references/session-management.md",
+      "sha256": "b3bdcdb699a54a5b8a9974e52e97ef1f294482bc2c835f93725d3b3756e21ca9"
+    },
+    {
+      "path": ".agents/skills/playwright-cli/references/storage-state.md",
+      "sha256": "e99556d378ba390cce310b5e8ac93485462fd4e44ae0122278954f396b615ee0"
+    },
+    {
+      "path": ".agents/skills/playwright-cli/references/test-generation.md",
+      "sha256": "f6f8fcf569da846a2b512d9e7238d9a51a07880e4e5a9acdb940a8ea413fba19"
+    },
+    {
+      "path": ".agents/skills/playwright-cli/references/tracing.md",
+      "sha256": "bb229d99c8604d2852d0bc3045ac8be72bf7ed66fe3136b9671abe3c0e9bcea7"
+    },
+    {
+      "path": ".agents/skills/playwright-cli/references/video-recording.md",
+      "sha256": "3842a72807320fa40c72e42ff39a005ab607688354272e550fb82e39c7e74677"
+    },
+    {
+      "path": ".agents/skills/ponytail/SKILL.md",
+      "sha256": "9ab60e3e1227f599cb26c9812b90a1a97a8d4720633a355a876f925b900d541a"
+    },
+    {
+      "path": ".agents/skills/prototype/LOGIC.md",
+      "sha256": "80592b94f1f046559024193e017217c25d4fb9b33369b84632da6709c6c0f4fe"
+    },
+    {
+      "path": ".agents/skills/prototype/SKILL.md",
+      "sha256": "73549c11140b27d2ebf4dde4b5bfde15a2d708128571ba4b94b7d9a87568bc03"
+    },
+    {
+      "path": ".agents/skills/prototype/UI.md",
+      "sha256": "c6d5515d5fa794fff8ca12d081b2f5f9202631a1c88aa901c5d1e189968c5429"
+    },
+    {
+      "path": ".agents/skills/prototype/agents/openai.yaml",
+      "sha256": "b92cbc6600b15a4580dd577ed88e4d59a5104c8476b0503df43afd5393fb92e6"
+    },
+    {
+      "path": ".agents/skills/research/SKILL.md",
+      "sha256": "2b74846f093bb19f82d0deab306983572fa9d7a522ccd8c556b0a6800d3f0c2c"
+    },
+    {
+      "path": ".agents/skills/research/agents/openai.yaml",
+      "sha256": "044f2c5aeea5bf18a673f8907d74002e4d23feaa28b2476ac70a49484e4bad98"
+    },
+    {
+      "path": ".agents/skills/review-animations/SKILL.md",
+      "sha256": "32e8fe1c2ff55eddb3655c1f04642a16716d952078d251aabed735eb4cebba5d"
+    },
+    {
+      "path": ".agents/skills/review-animations/STANDARDS.md",
+      "sha256": "fe6448593963361a4a4adb499c1e20b7c7d1027f7b6fd3ac89436337ca037c24"
+    },
+    {
+      "path": ".agents/skills/setup-matt-pocock-skills/SKILL.md",
+      "sha256": "233a2283a084c8133cc3b74483136daae59d12dacbc8e85604314903b32a3e22"
+    },
+    {
+      "path": ".agents/skills/setup-matt-pocock-skills/agents/openai.yaml",
+      "sha256": "46eef341aaf3ce503bbc0a8a505630758ffb1d367c8c73d5fae846914a5dc953"
+    },
+    {
+      "path": ".agents/skills/setup-matt-pocock-skills/domain.md",
+      "sha256": "3041a27ade23b38956057b25dd574fc3ea9495b72b91cc752c2a8fe9226aa79e"
+    },
+    {
+      "path": ".agents/skills/setup-matt-pocock-skills/issue-tracker-github.md",
+      "sha256": "db261f7160c5cf19b0c48ed957a4d0cf6f28d50c359dd0f907cfb82275657047"
+    },
+    {
+      "path": ".agents/skills/setup-matt-pocock-skills/issue-tracker-gitlab.md",
+      "sha256": "a87704e59da175e599cdd0141c66907273cbe4b5086e167fdb105e34d9c10b7e"
+    },
+    {
+      "path": ".agents/skills/setup-matt-pocock-skills/issue-tracker-local.md",
+      "sha256": "e5f4d65821934f72539df6cd28b07b8f8f7854d8627982ba7f41ac09ad9eef66"
+    },
+    {
+      "path": ".agents/skills/setup-matt-pocock-skills/triage-labels.md",
+      "sha256": "50f5baf854e9c8a772f31b663cbd27f17671420d1316a3706c847e57638cb74d"
+    },
+    {
+      "path": ".agents/skills/ux-research/SKILL.md",
+      "sha256": "8f163daeb422a7e73f379b3d1321efcf0c794ad8f936d395b34fedcc9bddad08"
+    },
+    {
+      "path": ".agents/skills/ux-research/examples/interview-to-insights.md",
+      "sha256": "d7b13bba69ac8f9a9089a49ad0d19a4737ba7746fbe5d87a79cc546f3e2cad96"
+    },
+    {
+      "path": ".agents/skills/ux-research/examples/method-selection-scenarios.md",
+      "sha256": "651b0b726250fe836c2dc388ef891394020faa9c8375a79c3d44bd38b55fdf8a"
+    },
+    {
+      "path": ".agents/skills/ux-research/references/analysis-synthesis.md",
+      "sha256": "7acbd9cf637431e9ee478e7c6eddea7d0d9a9c8c234bb333b62e7117159e6aff"
+    },
+    {
+      "path": ".agents/skills/ux-research/references/continuous-discovery.md",
+      "sha256": "44d3e2cbe72454dbb76bfc99fb88d034620f7a3ff2aa00f8f907c5d506aa8d83"
+    },
+    {
+      "path": ".agents/skills/ux-research/references/interviewing-guide.md",
+      "sha256": "2baba08e46813a35f82350c0f660b6812209d9dbabe751bbc297940905113d8a"
+    },
+    {
+      "path": ".agents/skills/ux-research/references/research-methods-catalog.md",
+      "sha256": "3061e27ac06860073570b2e05ee68dba14de54d8babe1a467116272b5e6274c0"
+    },
+    {
+      "path": ".agents/skills/ux-research/references/usability-testing-guide.md",
+      "sha256": "6e6fc5aeb83741d54d67a7197a9f2d27fca0886fe705dbd616731b487404f84f"
+    },
+    {
+      "path": ".agents/skills/ux-research/references/workshop-methods.md",
+      "sha256": "67e329d61a4713b0e04f222f26c56a1bdd4852150c34489b103cfa42d7eec8e3"
+    },
+    {
+      "path": ".agents/skills/ux-research/templates/findings-report-template.md",
+      "sha256": "c4cf136393391f009561d5dbab5f54995fa1da3cfa44b06d3d34c93ced73b6bb"
+    },
+    {
+      "path": ".agents/skills/ux-research/templates/interview-guide-template.md",
+      "sha256": "84472f04b6dd76efe8a661cec5e1255837ea4bde86a35eb8f5a6dd5dcf9fca66"
+    },
+    {
+      "path": ".agents/skills/ux-research/templates/persona-template.md",
+      "sha256": "8c04834a27c1840c06b48d98ce7c377a3c18c5236ba6b81aa3c0cd2298cdf09d"
+    },
+    {
+      "path": ".agents/skills/ux-research/templates/research-plan-template.md",
+      "sha256": "a6e615f371ed3398fb39ceb1d6a8b8e8cb8b6bce78f872a45235f772b71f79bf"
+    },
+    {
+      "path": ".agents/skills/ux-research/templates/screener-template.md",
+      "sha256": "b080f4dbf30f9e072b01b545a1ae672b3436866070d051f4975cef812722d60b"
+    },
+    {
+      "path": ".agents/skills/ux-research/templates/usability-test-plan-template.md",
+      "sha256": "b56e292bc0852ce321ea8174eac492d3a84f75b5c39415b885097cd51b9bff5b"
+    },
+    {
+      "path": ".agents/skills/ux-strategy/SKILL.md",
+      "sha256": "db54806839319c7fdd01bfeded2c7948870741154f7f28a38e1cd07f956f323a"
+    },
+    {
+      "path": ".agents/skills/ux-strategy/examples/competitive-analysis-walkthrough.md",
+      "sha256": "b5c428c56488ec1be62dae4a142419d19d2c0f2df4a1577ae2a4c23292665f97"
+    },
+    {
+      "path": ".agents/skills/ux-strategy/examples/strategy-walkthrough.md",
+      "sha256": "c08b69af934bb58e035b6afe4de80dfb84041966e834a44fe9b47653c5eeeee0"
+    },
+    {
+      "path": ".agents/skills/ux-strategy/references/competitive-analysis.md",
+      "sha256": "268fbd078596ce3d3057afae0a17108c714189b30b8771be4ccbc296c40024ca"
+    },
+    {
+      "path": ".agents/skills/ux-strategy/references/jobs-to-be-done.md",
+      "sha256": "6a1e70de91374ae57fd94b9a2930518601272b233de845c727a4ef5a88f93721"
+    },
+    {
+      "path": ".agents/skills/ux-strategy/references/metrics-and-measurement.md",
+      "sha256": "c7b034ba0f3ebf018640ae30099422dfed345bc3dcc22ef9682d847ca09829fb"
+    },
+    {
+      "path": ".agents/skills/ux-strategy/references/outcomes-and-opportunities.md",
+      "sha256": "63d3c1b68e4477afdd97e18ba2917aa204b317f317f53fb0bbbc45f2d9e88544"
+    },
+    {
+      "path": ".agents/skills/ux-strategy/references/value-proposition.md",
+      "sha256": "fed5018d9c811be3f276bb646273a9b4d106ba99cc1ae8fc1f1ebe53d66f6c74"
+    },
+    {
+      "path": ".agents/skills/ux-strategy/templates/competitive-analysis-template.md",
+      "sha256": "890c213539ac0ab62a0fdb473c4abe9e3aeb661fb8b6087b311a9ecb25ae82d1"
+    },
+    {
+      "path": ".agents/skills/ux-strategy/templates/competitive-brief-template.md",
+      "sha256": "80157b95e8c5b7fd016f7dc10f1c86e9f0c9a46dd6381f3bc340c842f493789d"
+    },
+    {
+      "path": ".agents/skills/ux-strategy/templates/opportunity-solution-tree-template.md",
+      "sha256": "e472db79887067e170db23003b474f90d0802ae60289ee3a98d2bbca77a5bbb9"
+    },
+    {
+      "path": ".agents/skills/ux-strategy/templates/strategy-brief-template.md",
+      "sha256": "80aed5aac1d96743e17f97a37ea6707079b5df9f9b22fb5483b2b36b8ee2a16a"
+    },
+    {
+      "path": ".agents/skills/ux-writing/SKILL.md",
+      "sha256": "811cb8cf0fdf68724b4d6b068db4b38563023dadd713600725c68a0cf40b2cf6"
+    },
+    {
+      "path": ".agents/skills/ux-writing/docs/figma-integration.md",
+      "sha256": "dfa9b94cffaf119abcf004fbb93af0ea554a97cb07c9b93eb7ca63d8ebf1da21"
+    },
+    {
+      "path": ".agents/skills/ux-writing/examples/real-world-improvements.md",
+      "sha256": "7e56e377593ad23e80f01f768e4087a6fef7e4671b9d719ebad210ea166f1c02"
+    },
+    {
+      "path": ".agents/skills/ux-writing/references/accessibility-guidelines.md",
+      "sha256": "e6b40d2427e1975af0907f23325740b6c6cee0904dd1b826c649f92b32ac7326"
+    },
+    {
+      "path": ".agents/skills/ux-writing/references/content-usability-checklist.md",
+      "sha256": "f0595b1b1b3148f58d7b9d9edf6bf5adf6a7cc28d7ff948d0a67081224f9b64a"
+    },
+    {
+      "path": ".agents/skills/ux-writing/references/patterns-detailed.md",
+      "sha256": "e7e32b5734daed1b8c08e5f5d634e2f8d2aa8f517b56ed780704b51c3b990624"
+    },
+    {
+      "path": ".agents/skills/ux-writing/references/voice-chart-template.md",
+      "sha256": "31310e6059c1dc7c66bf6ca9cdc7808cad03a1ddf5470615217b36fc4c5b5279"
+    },
+    {
+      "path": ".agents/skills/ux-writing/templates/empty-state-template.md",
+      "sha256": "005864d81d85ba05b7311c2ac15ee38384da4dfc1f374a5e606f5f42a02d88ab"
+    },
+    {
+      "path": ".agents/skills/ux-writing/templates/error-message-template.md",
+      "sha256": "429e1914ec9aac115fe7ddb0436a57d78347d2724fe86bff0328dd9dd83dd242"
+    },
+    {
+      "path": ".agents/skills/ux-writing/templates/onboarding-flow-template.md",
+      "sha256": "ae0ecd8cdfdcbd4374cfe919f8827d624e032c605069ad06a40f2a7bb6d666ce"
+    },
+    {
+      "path": ".agents/skills/wayfinder/SKILL.md",
+      "sha256": "70edf4b40aba06134fc5764d4459c63915e4a312afc0842bef12193993eb9822"
+    },
+    {
+      "path": ".agents/skills/wayfinder/agents/openai.yaml",
+      "sha256": "2fd4e41670a5c5e486bf5b4aafbc4b75c577f18daa4310ddcfbaaa25f80aa9a9"
+    },
+    {
+      "path": ".agents/skills/write-swift/SKILL.md",
+      "sha256": "1de8bb1e249b96c95143102d9f57eee3747a318f1dc4b9b39f00441849b855bf"
+    },
+    {
+      "path": ".claude/skills/accessibility-audit/SKILL.md",
+      "sha256": "66c384d9a2bab1a638951d22fae0dd7502739a56e873a4ed4fabb5463ff8e051"
+    },
+    {
+      "path": ".claude/skills/accessibility-audit/examples/audit-walkthrough.md",
+      "sha256": "bcc2324c6df89f84a8583aceb8cbfb520b3b0dc473baf3776ae24f00615924d4"
+    },
+    {
+      "path": ".claude/skills/accessibility-audit/examples/quick-wins.md",
+      "sha256": "7865b13d951571ad758327de5265e543c77c037a0beb00af68fa33ed34ff1803"
+    },
+    {
+      "path": ".claude/skills/accessibility-audit/references/common-issues-and-fixes.md",
+      "sha256": "9f7e1044486715e362647b6b8e19fcd643b7d974a1bcecf1b176878e6ea2fe12"
+    },
+    {
+      "path": ".claude/skills/accessibility-audit/references/testing-tools-and-techniques.md",
+      "sha256": "e41a42f8ecc081c44bc1badaa5095ecd304d3b8a191b68d9c2acd812bda424d4"
+    },
+    {
+      "path": ".claude/skills/accessibility-audit/references/wcag-checklist.md",
+      "sha256": "b6f9e4a8d2ce2891d503398db57defdd1559b6c63249dd40055ecec627a18d6a"
+    },
+    {
+      "path": ".claude/skills/accessibility-audit/templates/accessibility-rules-file.md",
+      "sha256": "9bef64f118802cfc4dbd3c87221cb2a042febfe28ce6edd95d36be1f8df26e60"
+    },
+    {
+      "path": ".claude/skills/accessibility-audit/templates/audit-report-template.md",
+      "sha256": "3902d1e7f86f55a4ad5f5858319d93c3ac375fee2896118e4d9121c579cd808f"
+    },
+    {
+      "path": ".claude/skills/accessibility-audit/templates/quick-checklist-template.md",
+      "sha256": "7d034f61aa5fc53c92e60409b5438a6664b146c1d1565632b16ff2db56f6c33f"
+    },
+    {
+      "path": ".claude/skills/animate-ui/NOTICE.md",
+      "sha256": "1ff5dfa2d39a302b5466bc850c3aeb34bb9299f969317a8fc761802f048ae166"
+    },
+    {
+      "path": ".claude/skills/animate-ui/SKILL.md",
+      "sha256": "bbd67fbd5b00e3d680f2bd11db0985f084347a045b7dc6c5294aa4affd06f1bc"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/base-libraries.md",
+      "sha256": "1a823533f75444899e9a1488a69fb70d2c0f7d3c04d746f8dcf3a55b125f6648"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/catalog.md",
+      "sha256": "0d57dcfbd63ef93b4d1b5b7c05d29b8fd1d214433f8dea2c94a68623eff0ece3"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/feel.md",
+      "sha256": "7b9fe013d922b18d8df55b17cff14150902cb5358f3ae66bbb388b5d26dc7daa"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/icons.md",
+      "sha256": "3677477c9a8063a6de07d037b4a510f26573a03d35006c76f5a976ae924d6c26"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/interactions/README.md",
+      "sha256": "4c02d5ef51afe4dee8068fd46c491229c640f097703c416b38f4f71f04c547e4"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/interactions/banner.md",
+      "sha256": "52fbe5023487dc30d1eee5f93325ec802f2d861ac7699e839e798ff1473eebaf"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/interactions/count-badge.md",
+      "sha256": "3551bac32087eb4f67c5832a0ecf8774e58f29ce07d77ad2b19cc3342307d3fb"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/interactions/expanding-card.md",
+      "sha256": "36a49e578b5b7f5b55074d7153aebf7fcd50dee9ab1540bd415c07d2c8a907c0"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/interactions/field-error.md",
+      "sha256": "b1315e26ecfd9fe02d162101ee560675dbfb35a9fdc85a1182182bdd7c6f5a05"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/interactions/filter-grid.md",
+      "sha256": "e67dd8b989e03d2d23344e522673e4ef210f7e25a9172737a5d5f4a8c192b038"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/interactions/form-steps.md",
+      "sha256": "3dd0714e080361ad3ae0e55656cfaf60573dc83592f4ea4431158b3212fef206"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/interactions/list.md",
+      "sha256": "078956d20b7483bf4209634c9b3ffa6d516346fff63e449c22bf5ac85a7efb60"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/interactions/reorder.md",
+      "sha256": "670ae147d1b6cdc7913a2dd1c43c3f6b80709e266fa37e8b1deeb4d0f198b815"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/interactions/skeleton.md",
+      "sha256": "d40dd2d3486a961a5560d0ea82c33bb89f6fcec97be138fca95e83ae5f469096"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/interactions/status-button.md",
+      "sha256": "418867f9d40925b7c39f7cbd5e696baeacb238bcb688da742bf9c7e50d235ed9"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/interactions/swipe-row.md",
+      "sha256": "17f6270a0cb10c011f2838d950c6b5b2fe1abf716f9bf5b27f03df046248fcdc"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/migrate.md",
+      "sha256": "1155772473beb6f7f30cbdd377a6d11200e82d69cf96f9eaf986cccbd6ba1ab0"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/recipes/README.md",
+      "sha256": "a5b34b8c26909b46d0f8c944de07f21e01574817d89659b84f1d27a4c5861a1e"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/recipes/card.md",
+      "sha256": "c96610d3ca05dad2bef00da177c57aa3cc3a1f3b906cbdba3ace2d24a185f618"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/recipes/css-driven.md",
+      "sha256": "e4aec4eef38440bbeed40559c996e168e37136e03e92488a96fd65fd29a701b3"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/recipes/disclosure.md",
+      "sha256": "f6d9945c750a0470e7e86ab2d3f06968dd561592e7cb95f0c495c4d0e14e2e4a"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/recipes/indicator.md",
+      "sha256": "7874ff5a12ac58d4b9ee4c3ddc77b128c0d49a26a11c3d007781e3d074d81ccb"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/recipes/menu.md",
+      "sha256": "f404af098af61479b05b1c0418c405b6f8d46cfcba39b7b8f65271233c21d7af"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/recipes/modal.md",
+      "sha256": "15badab0d4fb78be26d541c09928250e84b257df0f3f43fa49fd7d836f60978b"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/recipes/overlay.md",
+      "sha256": "2ff61f34862d15e024d6d0996062978c98fe1663c5443d4ff5c32f3545a5cf57"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/recipes/page.md",
+      "sha256": "07b6b797372eaf69282276a040a7bb33c26d783cbf7d9023c7734edea8b90f2d"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/recipes/palette.md",
+      "sha256": "8d02d2da776c11d4659cccfa9ba9ae4de8cf8b9adae2231d33058e4e8c348f00"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/recipes/press.md",
+      "sha256": "1c303509ba9ecb5c25cd97da836d804a725ca697e8c97748db3e6f4ad4942aa6"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/recipes/sheet.md",
+      "sha256": "998c64fcfbd5f30d638933fc2352474052f6e2fbd55e2f96a2dad39c0a9c5d44"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/recipes/steps.md",
+      "sha256": "8c691e17e610c6df4af3d61e1236ac0f6ac7cef67b2bb3771838db30d38c0828"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/recipes/swap.md",
+      "sha256": "28cbbfdeae7312bd9927a514fff44c6b4404a1e14d6a7aeb9c48ab30bb1cf3c9"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/recipes/toast.md",
+      "sha256": "f6beb830bebbc911ea605d505a0da2164464cb170f511882645d994b2dca9d9f"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/reproduce.md",
+      "sha256": "ae90339ead09d34069b2beabf2102c35db6093f2e1010f1ab34a742cbb397578"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/review.md",
+      "sha256": "988fcc22270429f7c209f7ea9d9c99bd95d81248ec8c61e26e49a9459fee2183"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/rules.md",
+      "sha256": "ff33e55663475b5b0f5958676ec84421f0d5165d45e5aceaef72eeefdd5d17b8"
+    },
+    {
+      "path": ".claude/skills/animate-ui/references/tokens.md",
+      "sha256": "c03407e0c77a8f537e194458f016472cabd58df8059f786ef74a1e7bb4b24e07"
+    },
+    {
+      "path": ".claude/skills/animate-ui/scripts/css-timing.mjs",
+      "sha256": "1bd84e8968b30f4cc9517c4485c0d1bf34827e71d6cdee24344655d1dfe66d6d"
+    },
+    {
+      "path": ".claude/skills/apple-design/SKILL.md",
+      "sha256": "406aea9e67f0700a6b281a27e3c596ca187626591355ad49348fd865c43f819f"
+    },
+    {
+      "path": ".claude/skills/break-ui/CATALOG.md",
+      "sha256": "1a0fc03f1a9529092c82639b3053cbd00f25fe5dc8d1376a3e67b05aa7c81301"
+    },
+    {
+      "path": ".claude/skills/break-ui/SKILL.md",
+      "sha256": "050d522b8240314eff3884443b8a2f26b20229f8b415431e06d4d472ba8a6372"
+    },
+    {
+      "path": ".claude/skills/domain-modeling/ADR-FORMAT.md",
+      "sha256": "1d060836c8fe8959da69d5388906d0bd88c3762f1ef3633d1c8412d56376b5d2"
+    },
+    {
+      "path": ".claude/skills/domain-modeling/GLOSSARY-FORMAT.md",
+      "sha256": "9d64fc0d51256c8ae20a7878c97254500c7749f9c775afb65c5d76f8d289dcef"
+    },
+    {
+      "path": ".claude/skills/domain-modeling/SKILL.md",
+      "sha256": "b405beb440fb1fdc2e83e135c576f711219fae9c60e726fe8c9dc25788961881"
+    },
+    {
+      "path": ".claude/skills/domain-modeling/agents/openai.yaml",
+      "sha256": "02df053c621f1cbec55d0b4e6cfbf97f703db761424d61d75a8b2c2fabe2dd77"
+    },
+    {
+      "path": ".claude/skills/emil-design-eng/SKILL.md",
+      "sha256": "18a0fc87bca050c147e139270867508fe646bcd2884d9548ad40e8fbfd66614f"
+    },
+    {
+      "path": ".claude/skills/grilling/SKILL.md",
+      "sha256": "eb82b24bc15cbfdcc30ed19ef60a663570fd5c2d89f9c569841658c4f3738744"
+    },
+    {
+      "path": ".claude/skills/grilling/agents/openai.yaml",
+      "sha256": "46374e10a913edacfbf90d98e8239ba88dd03be8f439c19464663aa658b13dd1"
+    },
+    {
+      "path": ".claude/skills/mobile-native/SKILL.md",
+      "sha256": "418b868afc3cca0ca2d183c605f6b1661fb567489295283054a048ce43318f1c"
+    },
+    {
+      "path": ".claude/skills/open-code-review-delegate/SKILL.md",
+      "sha256": "644a2fa18a2ca23f3a4477c3015e4ccca122f2435ae33ed2446f50fd4bcc9488"
+    },
+    {
+      "path": ".claude/skills/playwright-cli/SKILL.md",
+      "sha256": "0cd3862efe5b7e5e4d5e5c60a10063405aa454e3f9007ea7c26251b5134de61a"
+    },
+    {
+      "path": ".claude/skills/playwright-cli/references/element-attributes.md",
+      "sha256": "fadbf1d01cf6e13923b4a31c2544ff87df3eb2d3c6b5ceb5a772ba0c03569f23"
+    },
+    {
+      "path": ".claude/skills/playwright-cli/references/playwright-tests.md",
+      "sha256": "087c07cc620ba2a8d5e352c7e13a00e8f70a914f890f0c24f8483b2560fbaf03"
+    },
+    {
+      "path": ".claude/skills/playwright-cli/references/pr-attachments.md",
+      "sha256": "8c1ecd5a7bca3b1d0ffbf029d9cb8f4d292622855e29e317ccb64e7e61a7de67"
+    },
+    {
+      "path": ".claude/skills/playwright-cli/references/request-mocking.md",
+      "sha256": "0cb11d40faa7e65dea78f8d67cd31b953c6cc25088e9358b2936d0393a391e6f"
+    },
+    {
+      "path": ".claude/skills/playwright-cli/references/running-code.md",
+      "sha256": "c0795ab744e503a48d9c8fbdccaf555b2658806572eefb7e30419f13da646f64"
+    },
+    {
+      "path": ".claude/skills/playwright-cli/references/session-management.md",
+      "sha256": "b3bdcdb699a54a5b8a9974e52e97ef1f294482bc2c835f93725d3b3756e21ca9"
+    },
+    {
+      "path": ".claude/skills/playwright-cli/references/storage-state.md",
+      "sha256": "e99556d378ba390cce310b5e8ac93485462fd4e44ae0122278954f396b615ee0"
+    },
+    {
+      "path": ".claude/skills/playwright-cli/references/test-generation.md",
+      "sha256": "f6f8fcf569da846a2b512d9e7238d9a51a07880e4e5a9acdb940a8ea413fba19"
+    },
+    {
+      "path": ".claude/skills/playwright-cli/references/tracing.md",
+      "sha256": "bb229d99c8604d2852d0bc3045ac8be72bf7ed66fe3136b9671abe3c0e9bcea7"
+    },
+    {
+      "path": ".claude/skills/playwright-cli/references/video-recording.md",
+      "sha256": "3842a72807320fa40c72e42ff39a005ab607688354272e550fb82e39c7e74677"
+    },
+    {
+      "path": ".claude/skills/ponytail/SKILL.md",
+      "sha256": "9ab60e3e1227f599cb26c9812b90a1a97a8d4720633a355a876f925b900d541a"
+    },
+    {
+      "path": ".claude/skills/prototype/LOGIC.md",
+      "sha256": "80592b94f1f046559024193e017217c25d4fb9b33369b84632da6709c6c0f4fe"
+    },
+    {
+      "path": ".claude/skills/prototype/SKILL.md",
+      "sha256": "73549c11140b27d2ebf4dde4b5bfde15a2d708128571ba4b94b7d9a87568bc03"
+    },
+    {
+      "path": ".claude/skills/prototype/UI.md",
+      "sha256": "c6d5515d5fa794fff8ca12d081b2f5f9202631a1c88aa901c5d1e189968c5429"
+    },
+    {
+      "path": ".claude/skills/prototype/agents/openai.yaml",
+      "sha256": "b92cbc6600b15a4580dd577ed88e4d59a5104c8476b0503df43afd5393fb92e6"
+    },
+    {
+      "path": ".claude/skills/research/SKILL.md",
+      "sha256": "2b74846f093bb19f82d0deab306983572fa9d7a522ccd8c556b0a6800d3f0c2c"
+    },
+    {
+      "path": ".claude/skills/research/agents/openai.yaml",
+      "sha256": "044f2c5aeea5bf18a673f8907d74002e4d23feaa28b2476ac70a49484e4bad98"
+    },
+    {
+      "path": ".claude/skills/review-animations/SKILL.md",
+      "sha256": "32e8fe1c2ff55eddb3655c1f04642a16716d952078d251aabed735eb4cebba5d"
+    },
+    {
+      "path": ".claude/skills/review-animations/STANDARDS.md",
+      "sha256": "fe6448593963361a4a4adb499c1e20b7c7d1027f7b6fd3ac89436337ca037c24"
+    },
+    {
+      "path": ".claude/skills/setup-matt-pocock-skills/SKILL.md",
+      "sha256": "233a2283a084c8133cc3b74483136daae59d12dacbc8e85604314903b32a3e22"
+    },
+    {
+      "path": ".claude/skills/setup-matt-pocock-skills/agents/openai.yaml",
+      "sha256": "46eef341aaf3ce503bbc0a8a505630758ffb1d367c8c73d5fae846914a5dc953"
+    },
+    {
+      "path": ".claude/skills/setup-matt-pocock-skills/domain.md",
+      "sha256": "3041a27ade23b38956057b25dd574fc3ea9495b72b91cc752c2a8fe9226aa79e"
+    },
+    {
+      "path": ".claude/skills/setup-matt-pocock-skills/issue-tracker-github.md",
+      "sha256": "db261f7160c5cf19b0c48ed957a4d0cf6f28d50c359dd0f907cfb82275657047"
+    },
+    {
+      "path": ".claude/skills/setup-matt-pocock-skills/issue-tracker-gitlab.md",
+      "sha256": "a87704e59da175e599cdd0141c66907273cbe4b5086e167fdb105e34d9c10b7e"
+    },
+    {
+      "path": ".claude/skills/setup-matt-pocock-skills/issue-tracker-local.md",
+      "sha256": "e5f4d65821934f72539df6cd28b07b8f8f7854d8627982ba7f41ac09ad9eef66"
+    },
+    {
+      "path": ".claude/skills/setup-matt-pocock-skills/triage-labels.md",
+      "sha256": "50f5baf854e9c8a772f31b663cbd27f17671420d1316a3706c847e57638cb74d"
+    },
+    {
+      "path": ".claude/skills/ux-research/SKILL.md",
+      "sha256": "8f163daeb422a7e73f379b3d1321efcf0c794ad8f936d395b34fedcc9bddad08"
+    },
+    {
+      "path": ".claude/skills/ux-research/examples/interview-to-insights.md",
+      "sha256": "d7b13bba69ac8f9a9089a49ad0d19a4737ba7746fbe5d87a79cc546f3e2cad96"
+    },
+    {
+      "path": ".claude/skills/ux-research/examples/method-selection-scenarios.md",
+      "sha256": "651b0b726250fe836c2dc388ef891394020faa9c8375a79c3d44bd38b55fdf8a"
+    },
+    {
+      "path": ".claude/skills/ux-research/references/analysis-synthesis.md",
+      "sha256": "7acbd9cf637431e9ee478e7c6eddea7d0d9a9c8c234bb333b62e7117159e6aff"
+    },
+    {
+      "path": ".claude/skills/ux-research/references/continuous-discovery.md",
+      "sha256": "44d3e2cbe72454dbb76bfc99fb88d034620f7a3ff2aa00f8f907c5d506aa8d83"
+    },
+    {
+      "path": ".claude/skills/ux-research/references/interviewing-guide.md",
+      "sha256": "2baba08e46813a35f82350c0f660b6812209d9dbabe751bbc297940905113d8a"
+    },
+    {
+      "path": ".claude/skills/ux-research/references/research-methods-catalog.md",
+      "sha256": "3061e27ac06860073570b2e05ee68dba14de54d8babe1a467116272b5e6274c0"
+    },
+    {
+      "path": ".claude/skills/ux-research/references/usability-testing-guide.md",
+      "sha256": "6e6fc5aeb83741d54d67a7197a9f2d27fca0886fe705dbd616731b487404f84f"
+    },
+    {
+      "path": ".claude/skills/ux-research/references/workshop-methods.md",
+      "sha256": "67e329d61a4713b0e04f222f26c56a1bdd4852150c34489b103cfa42d7eec8e3"
+    },
+    {
+      "path": ".claude/skills/ux-research/templates/findings-report-template.md",
+      "sha256": "c4cf136393391f009561d5dbab5f54995fa1da3cfa44b06d3d34c93ced73b6bb"
+    },
+    {
+      "path": ".claude/skills/ux-research/templates/interview-guide-template.md",
+      "sha256": "84472f04b6dd76efe8a661cec5e1255837ea4bde86a35eb8f5a6dd5dcf9fca66"
+    },
+    {
+      "path": ".claude/skills/ux-research/templates/persona-template.md",
+      "sha256": "8c04834a27c1840c06b48d98ce7c377a3c18c5236ba6b81aa3c0cd2298cdf09d"
+    },
+    {
+      "path": ".claude/skills/ux-research/templates/research-plan-template.md",
+      "sha256": "a6e615f371ed3398fb39ceb1d6a8b8e8cb8b6bce78f872a45235f772b71f79bf"
+    },
+    {
+      "path": ".claude/skills/ux-research/templates/screener-template.md",
+      "sha256": "b080f4dbf30f9e072b01b545a1ae672b3436866070d051f4975cef812722d60b"
+    },
+    {
+      "path": ".claude/skills/ux-research/templates/usability-test-plan-template.md",
+      "sha256": "b56e292bc0852ce321ea8174eac492d3a84f75b5c39415b885097cd51b9bff5b"
+    },
+    {
+      "path": ".claude/skills/ux-strategy/SKILL.md",
+      "sha256": "db54806839319c7fdd01bfeded2c7948870741154f7f28a38e1cd07f956f323a"
+    },
+    {
+      "path": ".claude/skills/ux-strategy/examples/competitive-analysis-walkthrough.md",
+      "sha256": "b5c428c56488ec1be62dae4a142419d19d2c0f2df4a1577ae2a4c23292665f97"
+    },
+    {
+      "path": ".claude/skills/ux-strategy/examples/strategy-walkthrough.md",
+      "sha256": "c08b69af934bb58e035b6afe4de80dfb84041966e834a44fe9b47653c5eeeee0"
+    },
+    {
+      "path": ".claude/skills/ux-strategy/references/competitive-analysis.md",
+      "sha256": "268fbd078596ce3d3057afae0a17108c714189b30b8771be4ccbc296c40024ca"
+    },
+    {
+      "path": ".claude/skills/ux-strategy/references/jobs-to-be-done.md",
+      "sha256": "6a1e70de91374ae57fd94b9a2930518601272b233de845c727a4ef5a88f93721"
+    },
+    {
+      "path": ".claude/skills/ux-strategy/references/metrics-and-measurement.md",
+      "sha256": "c7b034ba0f3ebf018640ae30099422dfed345bc3dcc22ef9682d847ca09829fb"
+    },
+    {
+      "path": ".claude/skills/ux-strategy/references/outcomes-and-opportunities.md",
+      "sha256": "63d3c1b68e4477afdd97e18ba2917aa204b317f317f53fb0bbbc45f2d9e88544"
+    },
+    {
+      "path": ".claude/skills/ux-strategy/references/value-proposition.md",
+      "sha256": "fed5018d9c811be3f276bb646273a9b4d106ba99cc1ae8fc1f1ebe53d66f6c74"
+    },
+    {
+      "path": ".claude/skills/ux-strategy/templates/competitive-analysis-template.md",
+      "sha256": "890c213539ac0ab62a0fdb473c4abe9e3aeb661fb8b6087b311a9ecb25ae82d1"
+    },
+    {
+      "path": ".claude/skills/ux-strategy/templates/competitive-brief-template.md",
+      "sha256": "80157b95e8c5b7fd016f7dc10f1c86e9f0c9a46dd6381f3bc340c842f493789d"
+    },
+    {
+      "path": ".claude/skills/ux-strategy/templates/opportunity-solution-tree-template.md",
+      "sha256": "e472db79887067e170db23003b474f90d0802ae60289ee3a98d2bbca77a5bbb9"
+    },
+    {
+      "path": ".claude/skills/ux-strategy/templates/strategy-brief-template.md",
+      "sha256": "80aed5aac1d96743e17f97a37ea6707079b5df9f9b22fb5483b2b36b8ee2a16a"
+    },
+    {
+      "path": ".claude/skills/ux-writing/SKILL.md",
+      "sha256": "811cb8cf0fdf68724b4d6b068db4b38563023dadd713600725c68a0cf40b2cf6"
+    },
+    {
+      "path": ".claude/skills/ux-writing/docs/figma-integration.md",
+      "sha256": "dfa9b94cffaf119abcf004fbb93af0ea554a97cb07c9b93eb7ca63d8ebf1da21"
+    },
+    {
+      "path": ".claude/skills/ux-writing/examples/real-world-improvements.md",
+      "sha256": "7e56e377593ad23e80f01f768e4087a6fef7e4671b9d719ebad210ea166f1c02"
+    },
+    {
+      "path": ".claude/skills/ux-writing/references/accessibility-guidelines.md",
+      "sha256": "e6b40d2427e1975af0907f23325740b6c6cee0904dd1b826c649f92b32ac7326"
+    },
+    {
+      "path": ".claude/skills/ux-writing/references/content-usability-checklist.md",
+      "sha256": "f0595b1b1b3148f58d7b9d9edf6bf5adf6a7cc28d7ff948d0a67081224f9b64a"
+    },
+    {
+      "path": ".claude/skills/ux-writing/references/patterns-detailed.md",
+      "sha256": "e7e32b5734daed1b8c08e5f5d634e2f8d2aa8f517b56ed780704b51c3b990624"
+    },
+    {
+      "path": ".claude/skills/ux-writing/references/voice-chart-template.md",
+      "sha256": "31310e6059c1dc7c66bf6ca9cdc7808cad03a1ddf5470615217b36fc4c5b5279"
+    },
+    {
+      "path": ".claude/skills/ux-writing/templates/empty-state-template.md",
+      "sha256": "005864d81d85ba05b7311c2ac15ee38384da4dfc1f374a5e606f5f42a02d88ab"
+    },
+    {
+      "path": ".claude/skills/ux-writing/templates/error-message-template.md",
+      "sha256": "429e1914ec9aac115fe7ddb0436a57d78347d2724fe86bff0328dd9dd83dd242"
+    },
+    {
+      "path": ".claude/skills/ux-writing/templates/onboarding-flow-template.md",
+      "sha256": "ae0ecd8cdfdcbd4374cfe919f8827d624e032c605069ad06a40f2a7bb6d666ce"
+    },
+    {
+      "path": ".claude/skills/wayfinder/SKILL.md",
+      "sha256": "70edf4b40aba06134fc5764d4459c63915e4a312afc0842bef12193993eb9822"
+    },
+    {
+      "path": ".claude/skills/wayfinder/agents/openai.yaml",
+      "sha256": "2fd4e41670a5c5e486bf5b4aafbc4b75c577f18daa4310ddcfbaaa25f80aa9a9"
+    },
+    {
+      "path": ".claude/skills/write-swift/SKILL.md",
+      "sha256": "1de8bb1e249b96c95143102d9f57eee3747a318f1dc4b9b39f00441849b855bf"
+    },
+    {
+      "path": "third_party/licenses/alibaba__open-code-review/LICENSE",
+      "sha256": "6e0bf8691d6c81b050e33727238c6474f9edf0beac8a5302cd956e1caa694ed1"
+    },
+    {
+      "path": "third_party/licenses/cuellarfr__design-skills/LICENSE",
+      "sha256": "6589197f4b618fc0e525fa38ed388a00cd0fed9443a42144dabc13f8f34acfec"
+    },
+    {
+      "path": "third_party/licenses/emilkowalski__skills/LICENSE",
+      "sha256": "7dbf2c892e67d2d79730f642b82238db27126017b0d3b97296533ac93f3f6a26"
+    },
+    {
+      "path": "third_party/licenses/imskyleen__animate-ui/LICENSE.md",
+      "sha256": "7cf3a53bfe83da23d6a4f9b14495c39d6cde17ea8a67ee8c7221fc789e735738"
+    },
+    {
+      "path": "third_party/licenses/mattpocock__skills/LICENSE",
+      "sha256": "75a3995e59b44c3593a61bb115e61ec95bdc2f870b0a9dc6b4fd88275f701d84"
+    },
+    {
+      "path": "third_party/licenses/microsoft__playwright-cli/LICENSE",
+      "sha256": "9c6c5f61c287182a4e285dab62add540b087adff2f009a5a07450f1da47cd753"
+    },
+    {
+      "path": "third_party/licenses/ponytail/LICENSE.txt",
+      "sha256": "e27d43aa2d50c725e8aa9b0039b8fb672951bdedccb6a969c362941bc35fff23"
+    }
+  ]
+}
