@@ -72,6 +72,7 @@ Il mestiere principale dell'agenzia è la mediazione: compravendite e locazioni.
 
 ### A. Persone e bisogni (**Persone**)
 - Come gestiscono oggi documenti, affitto, bollette, scadenze e guasti: proprietari che affittano, inquilini, proprietari che abitano la casa, operatori dell'agenzia, tecnici.
+- Gruppi da sentire per primi (decisioni del 18/10/2026): proprietari con una casa gestita da ƎE e i loro inquilini; alcuni venditori, per il fascicolo per la vendita.
 - Cosa fa perdere tempo o soldi, cosa preoccupa, quali errori capitano (scadenze dimenticate, documenti persi, solleciti ingiusti).
 - Familiarità digitale, dispositivi usati, ruolo del contatto di persona.
 - Quanto spesso servirebbe il servizio e in quali momenti.

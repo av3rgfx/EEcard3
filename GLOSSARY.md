@@ -28,6 +28,20 @@ _Da evitare_: chiamata, ticket, segnalazione
 Una richiesta accettata da un tecnico; gli dà accesso solo a ciò che serve per svolgerla.
 _Da evitare_: intervento (è il lavoro eseguito), lavoro
 
+**Intervento**:
+Il lavoro eseguito su una casa nell'ambito di un incarico; si chiude con data, esito, importo e documento fiscale.
+_Da evitare_: incarico (è l'affidamento), riparazione
+
+### Fascicolo
+
+**Storico della casa**:
+La cronologia di interventi, modifiche e documenti di una casa. Si vede solo attraverso un rapporto con la casa o una condivisione.
+_Da evitare_: storia dell'immobile, report
+
+**Condivisione**:
+Un accesso a una parte del fascicolo concesso dal proprietario a una persona senza rapporto con la casa, con destinatario, durata e revoca.
+_Da evitare_: accesso a pagamento, pubblicazione
+
 ### Denaro
 
 **Canale di pagamento**:
