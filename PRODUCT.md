@@ -53,7 +53,7 @@ Possibile vantaggio, da verificare: **conoscenza della casa unita alla fiducia e
 - Una persona può avere **ruoli diversi su case diverse**, per esempio proprietaria di tre case e inquilina di una quarta, con un unico accesso. **Confermato**.
 - Il proprietario deve poter usare anche le funzioni domestiche (utenze, bollette) per la casa in cui vive. Idea dei fondatori.
 - Cliente, agenzia e tecnico hanno **spazi distinti**. **Confermato**.
-- Nel tempo il prodotto può servire **più agenzie**, ciascuna con dati separati. **Confermato** come direzione. Con quante agenzie partire è da decidere.
+- Nel tempo il prodotto può servire **più agenzie**, ciascuna con dati separati. **Confermato** come direzione. Il pilota si fa con la sola ƎE; le altre agenzie vengono dopo che il metodo ha funzionato (§12, 18/10/2026).
 
 ## 5. Cosa vorrebbe offrire
 
@@ -159,7 +159,7 @@ Requisiti di significato, indipendenti da tecnologia e design. L'utente ha chies
 
 ## 8. Parole del progetto
 
-Da consolidare in `GLOSSARY.md` con la skill `domain-modeling` quando il modello si chiarisce.
+Termini provvisori, da consolidare con la skill `domain-modeling` quando il modello si chiarisce. I termini decisi passano in [GLOSSARY.md](GLOSSARY.md), che prevale su questa tabella.
 
 | Parola | Significato |
 | --- | --- |
@@ -185,7 +185,7 @@ Da consolidare in `GLOSSARY.md` con la skill `domain-modeling` quando il modello
 - Non è un servizio di emergenza.
 - Non promette interventi illimitati né professionisti che non hanno un accordo.
 - Non è un gestionale generico per qualsiasi portafoglio immobiliare.
-- Se e come la piattaforma tocchi il denaro dei clienti è **da decidere** nello studio.
+- Nella prima versione non detiene e non trasferisce il denaro dei clienti (§12, 18/10/2026).
 
 ## 10. Primo percorso completo e prima versione
 
@@ -211,6 +211,9 @@ Da consolidare in `GLOSSARY.md` con la skill `domain-modeling` quando il modello
 | 16/10/2026 | L'app iPhone si sviluppa dopo la piattaforma web |
 | 16/10/2026 | Importi sempre con il separatore delle migliaia |
 | 18/10/2026 | Repository pulito: nessuna soluzione, codice o decisione tecnica dei tentativi precedenti; si riparte dall'idea, con studio, ricerca e decisioni da fare in EECard3 |
+| 18/10/2026 | **Ruolo per l'agenzia (T8).** Nel pilota con ƎE la piattaforma è uno strumento del servizio dell'agenzia: il ritorno si misura in incarichi, rinnovi, pratiche e tempo risparmiato. La quota deve coprire almeno il lavoro umano che include. Ripagarsi da sola e la vendita ad altre agenzie vengono dopo, quando il metodo avrà funzionato con ƎE. *Motivo:* con una sola agenzia e circa 100 clienti le quote non pagano lo sviluppo; il vantaggio ipotizzato (§3) è l'unione con un servizio vero |
+| 18/10/2026 | **Evidenze con persone vere.** Lo studio coinvolge clienti reali di ƎE del gruppo scelto: colloqui e, alla fine, una proposta di pre-adesione. L'agente prepara piano e materiali, l'agenzia conduce; nel repository entrano solo sintesi anonime. Le decisioni che dipendono dal comportamento dei clienti restano ipotesi finché non sono verificate. *Motivo:* oggi non c'è alcuna evidenza raccolta con persone reali (§13) |
+| 18/10/2026 | **Denaro.** Nella prima versione la piattaforma non detiene e non trasferisce denaro dei clienti: mostra il dovuto, raccoglie dichiarazioni e prove, registra l'incasso verificato e, per pagare, porta a un [canale di pagamento](GLOSSARY.md) esistente. Un fornitore autorizzato resta possibile in futuro, dopo la ricerca (STUDIO, area F) e un parere professionale. *Motivo:* prestare servizi di pagamento senza autorizzazione è vietato ([dir. UE 2015/2366, art. 37](https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32015L2366), letta il 18/10/2026); le regole di §7 restano più semplici da rispettare |
 
 ## 13. Evidenze e criteri di successo
 

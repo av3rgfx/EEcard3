@@ -60,6 +60,7 @@ Il catalogo dell'idea (PRODUCT.md §5) è molto più grande di quanto un pilota 
 Il mestiere principale dell'agenzia è la mediazione: compravendite e locazioni. Un fascicolo completo e un rapporto continuo possono portare nuovi incarichi, rinnovi, pratiche a pagamento e vendite più rapide.
 - **Decisione:** la piattaforma è un prodotto che deve ripagarsi da solo con le quote, o uno strumento per fidelizzare i clienti e vendere servizi dell'agenzia? O entrambe le cose, con quale peso?
 - **Persone:** agenti e clienti confermano che una casa ben documentata si vende o si affitta meglio?
+- **Sciolta per il pilota il 18/10/2026** ([PRODUCT.md](../PRODUCT.md) §12): strumento del servizio dell'agenzia, con una quota che copre almeno il lavoro umano incluso. Resta aperta la domanda «Persone».
 
 ---
 
@@ -100,7 +101,7 @@ Il mestiere principale dell'agenzia è la mediazione: compravendite e locazioni.
 - Canali reali in Italia: avvisi pagoPA, CBILL, bollettino postale, bonifico, addebito diretto (SDD), punti di pagamento fisici.
 - Per ciascun canale: cosa ha in mano chi paga, cosa lo prova, quando il debito è davvero chiuso, cosa può andare storto (rimborsi dell'addebito diretto, bonifici non abbinati).
 - Chi può avviare un pagamento per conto di qualcuno (prestatori di servizi di pagamento, servizi di disposizione di ordini) e con quali costi, coperture e responsabilità; verifica del beneficiario.
-- La piattaforma deve mai toccare il denaro dei clienti? Che obblighi comporterebbe? L'agenzia incassa mai somme per conto dei clienti (per esempio rate condominiali o servizi propri)?
+- Nella prima versione la piattaforma non detiene e non trasferisce denaro dei clienti (deciso il 18/10/2026, [PRODUCT.md](../PRODUCT.md) §12). Restano da studiare: gli obblighi di un eventuale fornitore autorizzato in futuro, e se l'agenzia incassa somme per conto dei clienti (per esempio canoni, rate condominiali o servizi propri).
 - Pagamento in contanti mostrando il codice sul telefono: le casse dei punti convenzionati lo leggono? Quali codici hanno una specifica pubblica e quali limiti valgono (importi, tipi di bollettino)?
 - Quanto conservare le ricevute di ciascuna categoria di bolletta.
 
