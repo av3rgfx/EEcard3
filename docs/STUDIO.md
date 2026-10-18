@@ -24,19 +24,20 @@ L'idea mette insieme fascicolo della casa, affitto, bollette, assistenza, consul
 - **Decisione:** le bollette sono il centro della promessa, la porta d'ingresso o un servizio accessorio? Il pagamento semplice delle bollette è confermato dall'utente: la tensione va discussa, non decisa d'ufficio.
 - **Persone:** cosa fanno oggi i clienti per bollette, documenti, affitto e guasti, e cosa pagherebbero per smettere di farlo?
 - Direzione possibile: costruire la promessa su casa, affitto e continuità con l'agenzia, con le bollette come archivio, promemoria e accesso semplice ai canali che esistono già.
+- **Sciolta per il pilota il 18/10/2026** ([PRODUCT.md](../PRODUCT.md) §12): la promessa al proprietario si regge su affitto, documenti, scadenze e continuità; le bollette entrano dal lato dell'inquilino, in uno spazio privato. Resta aperta la domanda «Persone».
 
 ### T2. Chi è il primo cliente, e chi paga?
 Proprietario che affitta, inquilino, proprietario che abita la casa, altre agenzie: hanno bisogni e disponibilità a pagare diversi. Alcuni clienti dell'agenzia pagano già 600 € l'anno per un servizio di gestione.
 - **Decisione:** con quale tipo di persona si parte, e chi paga per chi (per esempio il proprietario paga e l'inquilino entra gratis)?
 - **Persone:** colloqui con clienti reali dell'agenzia per ciascun gruppo candidato.
 - Direzione possibile: partire dai proprietari che affittano tramite l'agenzia, i più vicini a un servizio che già comprano.
-- **Primo cliente deciso il 18/10/2026** ([PRODUCT.md](../PRODUCT.md) §12): proprietari che affittano tramite ƎE. Restano aperti chi paga per chi e la domanda «Persone».
+- **Sciolta per il pilota il 18/10/2026** ([PRODUCT.md](../PRODUCT.md) §12): proprietari con una casa gestita da ƎE; paga il proprietario con un'offerta unica, l'inquilino entra gratis. Restano aperti il prezzo e la domanda «Persone».
 
 ### T3. Quanto lavoro umano costa un cliente, e chi lo paga?
 Verifiche, presa in carico delle richieste, consulenza annuale e assistenza fuori orario sono lavoro di persone. Con quote da 15–50 € il conto non torna senza misure.
 - **Ricerca e persone:** quanti minuti al mese richiede un cliente all'agenzia, oggi e con la piattaforma? Quanto costa una richiesta gestita?
 - **Decisione:** cosa è incluso nella quota e cosa si paga a parte.
-- **Deciso il 18/10/2026** ([PRODUCT.md](../PRODUCT.md) §12): eroga il personale di ƎE in orario d'ufficio, circa 1–1,5 ore al giorno da fissare. Restano aperti cosa è incluso nella quota e la misura del tempo.
+- **Sciolta per il pilota il 18/10/2026, come ipotesi da misurare** ([PRODUCT.md](../PRODUCT.md) §12): eroga il personale di ƎE in orario d'ufficio, circa 1–1,5 ore al giorno da fissare; la richiesta va al tecnico e passa all'agenzia solo se non viene accettata. Restano aperti cosa si paga a parte (proposta: pratiche documentali e consulenza), il tempo di risposta e la misura del tempo reale.
 
 ### T4. Da dove arrivano i dati?
 Bollette e molti documenti arrivano al cliente (email, carta, app del fornitore), non all'agenzia. Se un operatore deve caricare e controllare tutto, il servizio non regge.
