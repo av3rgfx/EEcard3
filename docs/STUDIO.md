@@ -104,7 +104,7 @@ Il mestiere principale dell'agenzia è la mediazione: compravendite e locazioni.
 - Canali reali in Italia: avvisi pagoPA, CBILL, bollettino postale, bonifico, addebito diretto (SDD), punti di pagamento fisici.
 - Per ciascun canale: cosa ha in mano chi paga, cosa lo prova, quando il debito è davvero chiuso, cosa può andare storto (rimborsi dell'addebito diretto, bonifici non abbinati).
 - Chi può avviare un pagamento per conto di qualcuno (prestatori di servizi di pagamento, servizi di disposizione di ordini) e con quali costi, coperture e responsabilità; verifica del beneficiario.
-- Nella prima versione la piattaforma non detiene e non trasferisce denaro dei clienti (deciso il 18/10/2026, [PRODUCT.md](../PRODUCT.md) §12). Restano da studiare: gli obblighi di un eventuale fornitore autorizzato in futuro, e se l'agenzia incassa somme per conto dei clienti (per esempio canoni, rate condominiali o servizi propri).
+- Nella prima versione la piattaforma non detiene e non trasferisce denaro dei clienti (deciso il 18/10/2026, [PRODUCT.md](../PRODUCT.md) §12). Restano da studiare: gli obblighi di un eventuale fornitore autorizzato in futuro, e quelli dell'agenzia, che oggi incassa al banco canoni per conto dei proprietari (riferito il 18/10/2026): mandato all'incasso, contanti, ricevute, antiriciclaggio; e se incassa altre somme (rate condominiali, servizi propri).
 - Pagamento in contanti mostrando il codice sul telefono: le casse dei punti convenzionati lo leggono? Quali codici hanno una specifica pubblica e quali limiti valgono (importi, tipi di bollettino)?
 - Quanto conservare le ricevute di ciascuna categoria di bolletta.
 

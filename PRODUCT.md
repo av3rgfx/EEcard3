@@ -1,6 +1,6 @@
 # EECard3: l'idea del progetto
 
-Descrizione completa dell'idea da sviluppare, scritta il 18 ottobre 2026. È autosufficiente: riassume le conversazioni dei fondatori (5, 7 e 15 ottobre 2026) e le risposte dell'utente. I materiali originali (audio, appunti) sono privati e non sono nel repository.
+Descrizione completa dell'idea da sviluppare, scritta il 18 ottobre 2026. È autosufficiente: riassume le conversazioni dei fondatori (5, 7, 15 e 18 ottobre 2026) e le risposte dell'utente. I materiali originali (audio, appunti) sono privati e non sono nel repository.
 
 Il documento descrive **cosa si vuole ottenere**, non come realizzarlo. Architettura, stack, piano di sviluppo, design e prima versione **non sono decisi**: si studiano a partire da [docs/STUDIO.md](docs/STUDIO.md), con il metodo di [docs/METODO.md](docs/METODO.md).
 
@@ -67,6 +67,8 @@ Possibile vantaggio, da verificare: **conoscenza della casa unita alla fiducia e
 - **Cronologia dei lavori** eseguiti sulla casa, con date, esecutori e documenti.
 - Condivisione controllata (a chi, per quanto tempo, revocabile) ed esportazione autorizzata.
 - Un controllo formale di un documento non ne certifica la validità tecnica o giuridica.
+- **Storico della casa** (interventi, modifiche: «prima il bagno era da un'altra parte») anche come extra a pagamento; per chi vuole comprare, sul modello delle app che mostrano la storia di un'auto dalla targa. Idea dei fondatori (18/10/2026).
+- **Fascicolo per la vendita** proposto a chi vende al posto dell'incarico in esclusiva: dura un anno, non è esclusivo; i tecnici dell'agenzia fanno l'accesso agli atti e caricano i documenti, che arricchiscono l'annuncio. Idea dei fondatori (18/10/2026).
 
 ### 5.2 Affitto e canoni
 - **Scadenziario dell'affitto**: canoni dovuti, date, promemoria.
@@ -74,6 +76,7 @@ Possibile vantaggio, da verificare: **conoscenza della casa unita alla fiducia e
 - Ricevute dell'affitto distinte dalla prova del bonifico.
 - Adempimenti del contratto (registrazione, rinnovi) conservati e collegati alla locazione giusta.
 - **Bozze di nuovi contratti** che riusano anagrafiche e dati già verificati, sempre con revisione umana prima di firma o invio. Idea dei fondatori.
+- **Oggi** l'inquilino può pagare il canone al banco dell'agenzia, che rilascia una ricevuta di carta; il proprietario passa poi a ritirarlo. Nell'idea l'affitto non si paga nell'app: l'inquilino fotografa la ricevuta e la carica, l'agenzia conferma. Fatto riferito dai fondatori il 18/10/2026.
 
 ### 5.3 Bollette e spese della casa
 - Nella home, ciò che richiede attenzione subito, per esempio **una bolletta da pagare**; pagare le bollette deve essere **semplice**. **Confermato**. Vedere l'avviso non vuol dire averlo pagato.
@@ -91,6 +94,11 @@ Possibile vantaggio, da verificare: **conoscenza della casa unita alla fiducia e
 - Aiuto nell'uso dell'app, pratiche documentali e burocratiche, interventi tecnici: sono attività diverse.
 - Il tecnico deve poter contattare il cliente durante l'incarico. Desiderio espresso dall'utente.
 - Non è un servizio di emergenza: le urgenze vere devono avere un percorso coerente con la copertura reale.
+- **Un tecnico per mestiere**, scelto dall'agenzia, che firma una liberatoria per entrare nella piattaforma. Mestieri iniziali: idraulico, elettricista, muratore e un quarto da chiarire. La richiesta dell'inquilino va direttamente al tecnico; l'agenzia riceve la notifica e vede la cronologia. Se il tecnico non regge il lavoro deve crescere, o l'agenzia lo cambia. Idea dei fondatori (18/10/2026).
+- All'attivazione il proprietario sceglie se usare i **tecnici dell'agenzia o i propri**. Può anche chiedere un preventivo al tecnico per lavori più grandi. Idea dei fondatori (18/10/2026).
+- Il tecnico vede solo le richieste che riceve e può chiedere la cronologia degli interventi sulla casa. Un tasto «Chiama» e la cronologia dei contatti mostrano all'agenzia quanto inquilini e proprietari interagiscono con i tecnici. Idea dei fondatori (18/10/2026).
+- Convincere i tecnici a **fatturare** gli interventi, anche piccoli, in cambio di più lavoro; forse senza mostrare i prezzi degli interventi. Idea dei fondatori (18/10/2026).
+- In futuro un **abbonamento per i tecnici**: gestionale, segretaria con AI che risponde quando il tecnico non risponde e trasforma la chiamata in una richiesta, landing page. Idea dei fondatori (18/10/2026).
 
 ### 5.5 Consulenza e valore della casa
 - **Consulenza annuale** personale e riservata per il proprietario; a chi spetti è da decidere.
@@ -107,6 +115,7 @@ Possibile vantaggio, da verificare: **conoscenza della casa unita alla fiducia e
 - Tessera del proprietario più ricca e di colore diverso da quella dell'inquilino. Idea dei fondatori.
 - Tessera nei **wallet** del telefono e lettura **contactless** al banco. Idea dei fondatori.
 - Agenzie partner con la propria tessera personalizzata, con il marchio del sistema visibile. Idea dei fondatori.
+- Livelli del 18/10: proprietario con una base (circa 10 €) e un «plus» che mostra lo stato dei pagamenti, forse un livello intermedio; inquilino gratis, con i servizi extra visibili e sbloccabili a pagamento. Idea dei fondatori (18/10/2026).
 
 ### 5.7 Lo spazio dell'agenzia
 - Lavoro da fare in coda, ricerca di clienti e fascicoli, gestione di clienti, rapporti e deleghe, documenti da controllare, richieste e incarichi.
@@ -119,18 +128,22 @@ Possibile vantaggio, da verificare: **conoscenza della casa unita alla fiducia e
 - **Report annuale** con due viste separate: per il cliente (attività e situazione delle sue case) e per l'agenzia (lavoro svolto, problemi operativi). **Confermato** sui destinatari; contenuti e metriche da decidere.
 - Aggiornamenti utili su richieste, scadenze e verifiche, con canali e preferenze scelti dalla persona. Mai solleciti di pagamento basati su stati incerti o contestati.
 - **Chiamata automatica all'inquilino** dopo una scadenza, venduta come extra al proprietario. Idea dei fondatori, con dubbi legali e di consenso da studiare.
+- Report annuale gratuito **anche per l'inquilino**, con il riepilogo delle spese dell'anno (canone, bollette dell'inquilino), per invogliarlo a usare l'app. Idea dei fondatori (18/10/2026).
 
 ### 5.9 Altre possibilità immaginate
 - **Assistente AI** che conosce il cliente e il fascicolo: ricerca, bozze, preparazione dei contratti. Idea dei fondatori.
 - **Domotica** collegata all'app. Idea dei fondatori, solo esplorativa.
 - **App iPhone** dopo la piattaforma web. **Confermato** l'ordine (prima il web, poi l'app).
 - Canali: web, app, totem.
+- **Sito vetrina dell'agenzia** con ricerca delle case, che promuove l'app (non il contrario) e mostra sugli immobili informazioni che altri non hanno. Idea dei fondatori (18/10/2026).
+- Traduzioni in qualsiasi lingua. Idea dei fondatori (18/10/2026).
 
 ## 6. Modello commerciale: cosa si sa
 
 Nulla è deciso. Gli elementi emersi:
 
 - Prima ipotesi: **50 € per il proprietario e 15 € (forse 20 €) per l'inquilino**, senza periodicità né unità definite. L'esempio di ricavo fatto a voce (circa 100 utenti, circa 2.600 € l'anno) non torna con questi prezzi.
+- Ipotesi del 18/10/2026: base a circa 10 € per il proprietario, senza periodicità detta, più livelli superiori; inquilino gratis (§5.6).
 - La tessera viene proposta **in agenzia al momento del contratto**, come quota aggiuntiva rispetto alla mediazione. Non è stabilito che sia obbligatoria.
 - **Alcuni clienti già gestiti dall'agenzia pagano 600 € l'anno** per un servizio esistente. Non è un listino, ma è il dato economico più concreto disponibile. Cosa comprano e chi sono è in attesa della risposta del collaboratore dell'utente (18/10/2026).
 - Quota ricorrente con servizi premium; livelli o extra; cambio di livello con differenza.
