@@ -4,6 +4,12 @@ Il linguaggio del servizio per la cura della casa. Contiene solo i termini il cu
 
 ## Linguaggio
 
+### Adesione
+
+**Tessera**:
+Il segno riconoscibile dell'adesione, digitale o fisico. Non autentica, non paga e non dà accesso ai dati: il suo codice serve solo all'operatore per trovare il cliente.
+_Da evitare_: carta (si confonde con la carta di pagamento), badge
+
 ### Denaro
 
 **Canale di pagamento**:

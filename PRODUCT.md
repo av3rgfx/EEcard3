@@ -132,7 +132,7 @@ Nulla è deciso. Gli elementi emersi:
 
 - Prima ipotesi: **50 € per il proprietario e 15 € (forse 20 €) per l'inquilino**, senza periodicità né unità definite. L'esempio di ricavo fatto a voce (circa 100 utenti, circa 2.600 € l'anno) non torna con questi prezzi.
 - La tessera viene proposta **in agenzia al momento del contratto**, come quota aggiuntiva rispetto alla mediazione. Non è stabilito che sia obbligatoria.
-- **Alcuni clienti già gestiti dall'agenzia pagano 600 € l'anno** per un servizio esistente. Non è un listino, ma è il dato economico più concreto disponibile.
+- **Alcuni clienti già gestiti dall'agenzia pagano 600 € l'anno** per un servizio esistente. Non è un listino, ma è il dato economico più concreto disponibile. Cosa comprano e chi sono è in attesa della risposta del collaboratore dell'utente (18/10/2026).
 - Quota ricorrente con servizi premium; livelli o extra; cambio di livello con differenza.
 - Vendita del sistema **ad altre agenzie** come servizio pronto da usare, con personalizzazione e un compenso per il design.
 - Tessera fisica spedita a pagamento a chi si iscrive online.
@@ -168,7 +168,6 @@ Termini provvisori, da consolidare con la skill `domain-modeling` quando il mode
 | **Agenzia** | Chi eroga il servizio; i suoi dati sono separati da quelli di altre agenzie |
 | **Delega** | Un'autorizzazione con oggetto, destinatario e durata, revocabile |
 | **Adesione** | L'abbonamento al servizio, con periodo e rinnovo. Diversa da account e tessera |
-| **Tessera** | Il segno riconoscibile dell'adesione, digitale o fisico. Non autentica e non paga |
 | **Fascicolo** | I documenti di una casa, con originali, versioni e provenienza |
 | **Dichiarato** | «Ho pagato» detto dalla persona: da solo non prova nulla |
 | **Prova** | Un documento caricato a sostegno (contabile, scontrino) |
@@ -214,6 +213,9 @@ Termini provvisori, da consolidare con la skill `domain-modeling` quando il mode
 | 18/10/2026 | **Ruolo per l'agenzia (T8).** Nel pilota con ƎE la piattaforma è uno strumento del servizio dell'agenzia: il ritorno si misura in incarichi, rinnovi, pratiche e tempo risparmiato. La quota deve coprire almeno il lavoro umano che include. Ripagarsi da sola e la vendita ad altre agenzie vengono dopo, quando il metodo avrà funzionato con ƎE. *Motivo:* con una sola agenzia e circa 100 clienti le quote non pagano lo sviluppo; il vantaggio ipotizzato (§3) è l'unione con un servizio vero |
 | 18/10/2026 | **Evidenze con persone vere.** Lo studio coinvolge clienti reali di ƎE del gruppo scelto: colloqui e, alla fine, una proposta di pre-adesione. L'agente prepara piano e materiali, l'agenzia conduce; nel repository entrano solo sintesi anonime. Le decisioni che dipendono dal comportamento dei clienti restano ipotesi finché non sono verificate. *Motivo:* oggi non c'è alcuna evidenza raccolta con persone reali (§13) |
 | 18/10/2026 | **Denaro.** Nella prima versione la piattaforma non detiene e non trasferisce denaro dei clienti: mostra il dovuto, raccoglie dichiarazioni e prove, registra l'incasso verificato e, per pagare, porta a un [canale di pagamento](GLOSSARY.md) esistente. Un fornitore autorizzato resta possibile in futuro, dopo la ricerca (STUDIO, area F) e un parere professionale. *Motivo:* prestare servizi di pagamento senza autorizzazione è vietato ([dir. UE 2015/2366, art. 37](https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32015L2366), letta il 18/10/2026); le regole di §7 restano più semplici da rispettare |
+| 18/10/2026 | **Primo cliente (T2).** Si parte dai proprietari che affittano una casa tramite ƎE; l'inquilino entra perché fa parte della locazione. Chi paga per chi è ancora da decidere. *Motivo:* sono i più vicini a un servizio che l'agenzia vende già, hanno i problemi che solo l'agenzia risolve bene (documenti, canoni, continuità, rinnovi) e l'agenzia ha già i loro dati al momento del contratto |
+| 18/10/2026 | **Chi eroga il servizio nel pilota (T3).** Il personale di ƎE, in orario d'ufficio, con i tecnici con cui l'agenzia lavora già. Tempo disponibile stimato in 1–1,5 ore al giorno, non ancora fissato. Fuori orario si raccoglie la richiesta e si dice quando arriverà la risposta, senza promettere interventi; il tempo speso per ogni richiesta si registra. *Motivo:* le promesse devono coincidere con ciò che le persone di ƎE possono mantenere (§9), e il costo per cliente si misura solo su un servizio con orari definiti |
+| 18/10/2026 | **Tessera (T6).** Nella prima versione è solo il segno dell'adesione: digitale e, se costa poco, fisica, consegnata al banco. Il suo codice aiuta l'operatore, già autenticato, a trovare il cliente; non dà accesso ai dati. Wallet, contactless, terminale da banco e totem restano fuori dalla prima versione. *Motivo:* il contactless richiede un certificato NFC di Apple e terminali certificati ([Apple, loyalty passes](https://developer.apple.com/wallet/loyalty-passes/), letta il 18/10/2026); il valore della tessera nel pilota è la consegna e la vendita al banco, da verificare nei colloqui |
 
 ## 13. Evidenze e criteri di successo
 

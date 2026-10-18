@@ -30,11 +30,13 @@ Proprietario che affitta, inquilino, proprietario che abita la casa, altre agenz
 - **Decisione:** con quale tipo di persona si parte, e chi paga per chi (per esempio il proprietario paga e l'inquilino entra gratis)?
 - **Persone:** colloqui con clienti reali dell'agenzia per ciascun gruppo candidato.
 - Direzione possibile: partire dai proprietari che affittano tramite l'agenzia, i più vicini a un servizio che già comprano.
+- **Primo cliente deciso il 18/10/2026** ([PRODUCT.md](../PRODUCT.md) §12): proprietari che affittano tramite ƎE. Restano aperti chi paga per chi e la domanda «Persone».
 
 ### T3. Quanto lavoro umano costa un cliente, e chi lo paga?
 Verifiche, presa in carico delle richieste, consulenza annuale e assistenza fuori orario sono lavoro di persone. Con quote da 15–50 € il conto non torna senza misure.
 - **Ricerca e persone:** quanti minuti al mese richiede un cliente all'agenzia, oggi e con la piattaforma? Quanto costa una richiesta gestita?
 - **Decisione:** cosa è incluso nella quota e cosa si paga a parte.
+- **Deciso il 18/10/2026** ([PRODUCT.md](../PRODUCT.md) §12): eroga il personale di ƎE in orario d'ufficio, circa 1–1,5 ore al giorno da fissare. Restano aperti cosa è incluso nella quota e la misura del tempo.
 
 ### T4. Da dove arrivano i dati?
 Bollette e molti documenti arrivano al cliente (email, carta, app del fornitore), non all'agenzia. Se un operatore deve caricare e controllare tutto, il servizio non regge.
@@ -51,6 +53,7 @@ Un servizio per la casa si apre poche volte al mese, quasi sempre per una scaden
 Se non autentica e non paga, la tessera è un segno di appartenenza e uno strumento di vendita al banco. Wallet, contactless, lettori, terminale e totem hanno costi e requisiti propri.
 - **Decisione:** cosa deve permettere la tessera nella prima versione? Cosa lo giustifica?
 - **Ricerca:** requisiti e costi di pass nei wallet, lettura NFC, produzione e spedizione delle tessere fisiche.
+- **Sciolta per la prima versione il 18/10/2026** ([PRODUCT.md](../PRODUCT.md) §12): solo segno dell'adesione, senza wallet, contactless, terminale e totem. Restano da verificare nei colloqui il valore della consegna al banco e, per dopo, i costi della tessera fisica e del pass nel wallet.
 
 ### T7. Quanto è ampia la prima versione?
 Il catalogo dell'idea (PRODUCT.md §5) è molto più grande di quanto un pilota possa sostenere con qualità.
