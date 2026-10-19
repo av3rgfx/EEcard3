@@ -17,16 +17,18 @@ La specifica del primo percorso completo, **attivazione e canone del mese per le
 - **Tracker:** Local Markdown ([riferimento](../../.agents/skills/setup-matt-pocock-skills/issue-tracker-local.md)). Un file per ticket in `issues/`; righe `Type:`, `Status:` (`open`, `claimed`, `resolved`) e `Blocked by:`. Intestazioni in italiano: «Domanda» è la *Question*, «Risposta» è la *Answer*, «Commenti» sono i *Comments*. Nessun ticket, commento o branch remoto: le ricerche si salvano nel branch di lavoro della sessione.
 - **Persone vere:** l'agente prepara, l'agenzia conduce; nel repository entrano solo sintesi anonime, senza dati personali. Mai partecipanti, citazioni o risultati inventati.
 - **Impianto deciso dall'utente il 19/10/2026:** la proposta di pre-adesione arriva dopo i colloqui e la specifica; la prova sulle bollette segue lo schema autorizzato (entrambe in PRODUCT.md §12); ai ticket chiesti si aggiunge «Fatti dall'agenzia ƎE»; i pareri professionali restano fuori dalla mappa (vedi «Fuori ambito»).
-- **Percorso previsto:** ricerche → fatti dall'agenzia → materiali → colloqui → specifica del percorso 1 → proposta di pre-adesione → controllo A. La prova sulle bollette corre in parallelo.
+- **Percorso previsto:** ricerche → fatti dall'agenzia → materiali → colloqui → specifica del percorso 1 → proposta di pre-adesione → controllo A. La prova sulle bollette e la decisione su chi fornisce la piattaforma corrono in parallelo.
+- **Ricerche del 19/10/2026:** svolte da cinque agenti in parallelo (skill `research`); le decisioni che hanno fatto emergere sono state smistate nei ticket aperti, non decise.
 
 ## Decisioni finora
 
 <!-- una riga per ticket chiuso: nome con link, poi il succo della risposta -->
 
 - [Ricerca: obblighi dell'agenzia che incassa i canoni al banco](issues/01-incasso-canoni-al-banco.md): «incassato» e «consegnato» sono gli obblighi del mandatario; serve un incarico documentato; la ricevuta di ƎE è quietanza con bollo; contanti ammessi sotto i 5.000 € (obbligo specifico abrogato, da confermare); parere sui servizi di pagamento prima del pilota.
+- [Ricerca: adempimenti della locazione da mettere nello scadenzario](issues/02-adempimenti-locazione.md): quasi tutte le scadenze sono note alla firma e ruotano sull'anniversario; il canone del mese cambia solo per ISTAT, riduzioni e acconti; il canone è un importo con versioni; regole da riverificare con i testi unici del 2027.
+- [Ricerca: titolarità e privacy dei dati](issues/03-titolarita-privacy-dati.md): ƎE titolare dei dati del percorso 1 e piattaforma probabilmente responsabile; spazio delle bollette probabilmente della piattaforma come titolare autonomo; tutto dipende da chi fornisce la piattaforma (nuovo ticket); i colloqui sono il primo uso reale di dati e vanno preparati con informativa e sintesi davvero anonime.
 - [Ricerca: alternative già sul mercato](issues/04-alternative-mercato.md): le funzioni singole sono commodity (0–15 € al mese), l'incasso con garanzia costa il 5–7% del canone; nessuno sa se si è pagato al banco, l'alternativa vera è chiedere all'agenzia; 10 € al mese è in linea, 10 € all'anno è sotto mercato.
 - [Ricerca: email che non sembrano spam](issues/05-email-non-spam.md): ai volumi del pilota bastano autenticazione del mittente e poche segnalazioni; AMP e azioni nella casella non raggiungono tutti; un'email che propone qualcosa diventa promozionale: nel percorso 1 solo email di servizio, con il fatto nell'oggetto e un link.
-- [Ricerca: titolarità e privacy dei dati](issues/03-titolarita-privacy-dati.md): ƎE titolare dei dati del percorso 1 e piattaforma probabilmente responsabile; spazio delle bollette probabilmente della piattaforma come titolare autonomo; tutto dipende da chi fornisce la piattaforma (nuovo ticket); i colloqui sono il primo uso reale di dati e vanno preparati con informativa e sintesi davvero anonime.
 
 ## Non ancora specificato
 
@@ -34,7 +36,6 @@ La specifica del primo percorso completo, **attivazione e canone del mese per le
 - **Conferma o correzione delle decisioni del 18–19/10/2026** (PRODUCT.md §12) che non riguardano solo il percorso 1 (chi paga, canale, bollette dell'inquilino, tessera): diventerà uno o più ticket di discussione quando si sapranno i temi emersi dalle sintesi.
 - **Decisione sul secondo gruppo** (fascicolo per la vendita), dopo i colloqui con alcuni venditori.
 - **Esito della pre-adesione**: la proposta fatta davvero e il risultato registrato; prende forma con la [Proposta di pre-adesione: prezzo, periodicità e forma](issues/10-proposta-pre-adesione.md).
-- **Domande che le ricerche faranno emergere** e che possono cambiare il percorso 1 (per esempio come si paga il canone al banco, chi è titolare dei dati, quali scadenze entrano nel percorso).
 - **Controllo A**: la verifica finale, voce per voce, con le evidenze raccolte.
 
 ## Fuori ambito
