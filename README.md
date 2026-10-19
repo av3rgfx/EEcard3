@@ -4,7 +4,7 @@
 
 Una piattaforma per **prendersi cura della propria casa e di ciò che la riguarda**: documenti, affitto, bollette, scadenze, pratiche, tecnici e assistenza in un unico posto, con dietro il servizio reale di un'agenzia e dei suoi professionisti. Spazi distinti per cliente, agenzia e tecnico.
 
-**Stato (18 ottobre 2026): fase di studio.** Il repository contiene la descrizione completa dell'idea e cosa va studiato. Non c'è codice; architettura, design, stack e prima versione non sono decisi, per scelta. Si riparte da zero, senza soluzioni ereditate da tentativi precedenti, per poter trovare la strada migliore.
+**Stato (19 ottobre 2026): fase di studio.** Il repository contiene la descrizione completa dell'idea, cosa va studiato, le prime ricerche e la mappa delle decisioni verso il controllo A. Non c'è codice; architettura, design, stack e prima versione non sono decisi, per scelta. Si riparte da zero, senza soluzioni ereditate da tentativi precedenti, per poter trovare la strada migliore.
 
 ## Da dove partire
 
@@ -15,6 +15,7 @@ Una piattaforma per **prendersi cura della propria casa e di ciò che la riguard
 | [PRODUCT.md](PRODUCT.md) | **L'idea completa**: problema, persone, cosa si vorrebbe offrire, modello commerciale noto, regole del dominio, decisioni confermate |
 | [GLOSSARY.md](GLOSSARY.md) | I termini del progetto il cui significato è stato deciso |
 | [docs/ricerca/](docs/ricerca/) | Ricerche documentali, un file per tema, con fonti e date di lettura |
+| [.scratch/controllo-a/map.md](.scratch/controllo-a/map.md) | Mappa Wayfinder delle decisioni verso il controllo A, con un file per ticket |
 | [docs/STUDIO.md](docs/STUDIO.md) | Cosa va studiato: tensioni da sciogliere, aree di ricerca, fonti ufficiali |
 | [docs/METODO.md](docs/METODO.md) | Come procedere dallo studio alla realizzazione, con i controlli prima di design, architettura e codice |
 | [DESIGN.md](DESIGN.md), [ARCHITECTURE.md](ARCHITECTURE.md) | Decisioni visive e tecniche, ancora vuote |

@@ -1,0 +1,22 @@
+# Specifica del percorso 1: attivazione e canone del mese
+
+Type: grilling
+Status: open
+Blocked by: 01, 02, 03, 05, 06, 07, 11
+Mappa: [Superare il controllo A con le evidenze](../map.md)
+
+## Domanda (Question)
+
+Come funziona, passo per passo, il percorso 1 per le case gestite da ƎE, alla luce delle ricerche, dei fatti dell'agenzia e delle sintesi dei colloqui? Serve ciò che chiede il criterio 5 di [docs/STUDIO.md](../../../docs/STUDIO.md): passi, chi fa cosa, stati del canone, messaggi, casi limite (canone parziale, ritardo, contestazione, fine della locazione), cosa vede ciascuno, misure di successo del pilota.
+
+- **Attivazione:** scheda della casa, documenti dell'agenzia ed elenco dei mancanti, scelta dei tecnici e liberatorie, inviti a proprietario e inquilino, adesione e tessera, impostazione dell'indirizzo per le bollette.
+- **Canone del mese:** importo dovuto e suoi aggiornamenti; pagamento al banco registrato dall'agenzia con la ricevuta; bonifico con contabile e conferma di chi riceve; «incassato dall'agenzia» e «consegnato al proprietario»; residuo e quietanza. Va chiarito, con la skill `domain-modeling`, come questi stati si legano ai passaggi del denaro di [PRODUCT.md](../../../PRODUCT.md) §7.4 (per esempio se «incassato dall'agenzia» è già l'incasso verificato per il proprietario). La [ricerca sull'incasso dei canoni](01-incasso-canoni-al-banco.md) lega i due stati agli obblighi del mandatario (artt. 1712–1714 c.c.) e porta tre decisioni: contanti da 5.000 € in su bloccati o solo segnalati; pagamenti parziali al banco registrati o rifiutati; chi conferma la consegna (ƎE, proprietario o entrambi).
+- **Importo dovuto e scadenze**, dalla [ricerca sugli adempimenti della locazione](02-adempimenti-locazione.md): il canone è un importo con una storia di versioni; il regime fiscale del locatore si registra all'attivazione. Decisioni: lo scadenzario del pilota copre solo la locazione o anche IMU, TARI e impianti; se l'aggiornamento ISTAT entra nel percorso 1, chi inserisce l'indice e conferma il nuovo canone e se il proprietario lo vede prima che diventi dovuto; se la quota del registro a carico dell'inquilino compare nella piattaforma; con quanto anticipo e a chi arrivano i promemoria delle pratiche a pagamento (attenzione: un promemoria che propone una pratica è un'email promozionale, vedi la ricerca sulle email).
+- **Messaggi:** quali eventi producono un'email o una notifica, per chi e con quale contenuto essenziale. La forma si progetta dopo il controllo A. Decisioni emerse dalla [ricerca sulle email](05-email-non-spam.md): chi firma le email nel pilota (ƎE, il nuovo marchio o entrambi); dove arrivano le risposte; importi e nomi nell'email o solo il fatto e un link; se le email di servizio possono proporre pratiche a pagamento (se sì diventano promozionali); «registrato» e «consegnato» in una o due email.
+- **Chi lo eroga:** persone e ore dell'agenzia.
+- **Dati e fine del rapporto**, dalla [ricerca sulla privacy](03-titolarita-privacy-dati.md): chi è titolare in ogni passo, quando arriva l'informativa (all'attivazione, al più tardi con il primo messaggio all'inquilino), regole su chi vede cosa approvate da ƎE, per quanto tempo l'ex inquilino può scaricare contratto e ricevute, cosa resta a fine locazione e a fine adesione.
+- **Misure di successo del pilota** (PRODUCT.md §13), con la skill `ux-strategy`, senza valori inventati.
+
+Si registra: la specifica in PRODUCT.md §10, le misure in §13, le decisioni in §12, i termini decisi in [GLOSSARY.md](../../../GLOSSARY.md). Nessuna schermata. Se non sta in una sessione, si divide in «attivazione» e «canone del mese».
+
+È bloccato anche dai ticket dei colloqui, oggi in «Non ancora specificato»: quando diventano ticket, si aggiungono alla riga `Blocked by`.
