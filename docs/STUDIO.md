@@ -42,6 +42,7 @@ Verifiche, presa in carico delle richieste, consulenza annuale e assistenza fuor
 ### T4. Da dove arrivano i dati?
 Bollette e molti documenti arrivano al cliente (email, carta, app del fornitore), non all'agenzia. Se un operatore deve caricare e controllare tutto, il servizio non regge.
 - **Decisione e prova:** chi carica cosa? Il cliente inoltra un'email, fotografa o carica il file, l'estrazione dei dati è automatica e la conferma la dà la persona? L'agenzia lavora solo sulle eccezioni?
+- **Decisi il 19/10/2026** ([PRODUCT.md](../PRODUCT.md) §12): il canone delle case gestite lo registra l'agenzia; il fascicolo nasce all'attivazione dai documenti dell'agenzia, con l'elenco dei mancanti. Per le bollette dell'inquilino l'utente ha chiesto una ricerca sui modi per automatizzarne l'arrivo, anche dall'email.
 - **Ricerca:** quanto sono affidabili oggi l'estrazione automatica da bollette e documenti italiani e il riconoscimento dei codici di pagamento, e con che costi?
 
 ### T5. Quanto spesso si usa?
@@ -49,6 +50,7 @@ Un servizio per la casa si apre poche volte al mese, quasi sempre per una scaden
 - **Persone:** quando e perché una persona aprirebbe il servizio?
 - **Decisione:** qual è l'interfaccia principale? App, notifiche, email, messaggistica, banco in agenzia?
 - Direzione possibile: messaggi utili e puntuali come canale principale, con l'app per il dettaglio e le azioni.
+- **Sciolta per il pilota il 19/10/2026** ([PRODUCT.md](../PRODUCT.md) §12): email e notifiche puntuali, piattaforma web per il dettaglio, banco per attivazione e aiuto. Resta aperta la domanda «Persone».
 
 ### T6. A cosa serve la tessera?
 Se non autentica e non paga, la tessera è un segno di appartenenza e uno strumento di vendita al banco. Wallet, contactless, lettori, terminale e totem hanno costi e requisiti propri.
@@ -140,6 +142,7 @@ Da leggere sulle fonti ufficiali aggiornate; prima di un uso reale serve la veri
 
 ### K. Canali e accessibilità (**Persone**, **Ricerca**)
 - Web, app installabile dal browser, app nativa, notifiche, email, messaggistica (costi e regole delle piattaforme di messaggistica aziendale), SMS, banco.
+- Email che non sembrano spam o pubblicità (requisito del 19/10/2026): autenticazione del mittente, riconoscibilità del marchio nella casella, email dinamiche e quali programmi di posta le mostrano, separazione fra email di servizio e promozionali.
 - Persone con poca familiarità digitale: cosa le aiuta davvero.
 - Ordine confermato: prima la piattaforma web, poi l'app iPhone.
 
