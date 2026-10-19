@@ -15,6 +15,24 @@ Ogni domanda indica che tipo di lavoro serve:
 
 ---
 
+## Destinazione dello studio
+
+Confermata dall'utente il 19/10/2026 ([PRODUCT.md](../PRODUCT.md) §12), al termine del riallineamento ([METODO.md](METODO.md), passo 1).
+
+**Superare il controllo A con le evidenze:** arrivare alla specifica del primo percorso completo, **attivazione e canone del mese per le case gestite da ƎE**, confermata dall'utente e sostenuta da colloqui con proprietari e inquilini veri, da una prova di pre-adesione con un prezzo e dalle ricerche che potrebbero cambiarla.
+
+Lo studio è finito quando:
+1. **Persone:** l'agenzia ha svolto i colloqui con proprietari di case gestite, i loro inquilini e alcuni venditori, con i materiali preparati dall'agente; nel repository ci sono solo sintesi anonime; le decisioni del 18–19/10/2026 risultano confermate o corrette, e c'è una decisione sul secondo gruppo (fascicolo per la vendita).
+2. **Impegno:** una proposta di pre-adesione con prezzo e periodicità dell'offerta unica, con l'esito registrato; il dato dei 600 € è chiarito.
+3. **Ricerche chiuse** in `docs/ricerca/`, con l'indicazione di dove serve un parere professionale: obblighi dell'agenzia che incassa i canoni al banco; adempimenti della locazione da mettere nello scadenzario; titolarità e privacy dei dati fra agenzia, piattaforma, proprietari, inquilini e tecnici; alternative già sul mercato; email che non sembrano spam.
+4. **Prova sulle bollette:** quante arrivano con il PDF allegato e quante con un link, quante hanno il QR, quanto è affidabile la lettura automatica ([ricerca/bollette.md](ricerca/bollette.md)).
+5. **Specifica del percorso 1** in PRODUCT.md §10: passi, chi fa cosa, stati del canone, messaggi, casi limite (canone parziale, ritardo, contestazione, fine della locazione), cosa vede ciascuno, misure di successo del pilota (§13).
+6. **Controllo A** spuntato con queste evidenze.
+
+Fuori dalla destinazione: design, architettura, stack e nome del prodotto.
+
+---
+
 ## 1. Tensioni da sciogliere per prime
 
 Sono i punti in cui l'idea, così come è descritta, si contraddice o poggia su presupposti non verificati. Vanno discussi con l'utente all'inizio, perché cambiano tutto il resto. Per ognuna si indica una possibile direzione, che è una **proposta da discutere, non una decisione**.
