@@ -24,6 +24,7 @@ La specifica del primo percorso completo, **attivazione e canone del mese per le
 <!-- una riga per ticket chiuso: nome con link, poi il succo della risposta -->
 
 - [Ricerca: alternative già sul mercato](issues/04-alternative-mercato.md): le funzioni singole sono commodity (0–15 € al mese), l'incasso con garanzia costa il 5–7% del canone; nessuno sa se si è pagato al banco, l'alternativa vera è chiedere all'agenzia; 10 € al mese è in linea, 10 € all'anno è sotto mercato.
+- [Ricerca: email che non sembrano spam](issues/05-email-non-spam.md): ai volumi del pilota bastano autenticazione del mittente e poche segnalazioni; AMP e azioni nella casella non raggiungono tutti; un'email che propone qualcosa diventa promozionale: nel percorso 1 solo email di servizio, con il fatto nell'oggetto e un link.
 
 ## Non ancora specificato
 
@@ -36,7 +37,7 @@ La specifica del primo percorso completo, **attivazione e canone del mese per le
 
 ## Fuori ambito
 
-- **Design, architettura, stack e nome del prodotto**: esclusi dalla destinazione (STUDIO.md); vengono dopo il controllo A (METODO.md, passi 6–7).
+- **Design, architettura, stack e nome del prodotto**: esclusi dalla destinazione (STUDIO.md); vengono dopo il controllo A (METODO.md, passi 6–7). Con il nome va anche il logo del mittente nella casella, che richiede un marchio registrato o un logo già mostrato sul dominio ([ricerca sulle email](../../docs/ricerca/email.md)).
 - **Specifiche dei percorsi 2–4** (richiesta d'aiuto, bollette dell'inquilino, report annuale): la destinazione è la specifica del percorso 1. I colloqui possono comunque raccogliere evidenze su questi temi.
 - **Ciò che PRODUCT.md §12 (19/10/2026) dichiara fuori dalla prima versione**: livelli, «plus» ed extra per l'inquilino; più agenzie e vendita ad altre agenzie; wallet, contactless, terminale da banco e totem; pagamento nell'app, contanti nei punti convenzionati, solleciti e chiamate automatiche all'inquilino; collegamento della casella e fatture elettroniche; WhatsApp, SMS, app iPhone e traduzioni; abbonamento per i tecnici e preventivi per lavori grandi; fascicolo per la vendita come servizio, condivisione dello storico con chi vuole comprare e sito vetrina; consulenza annuale inclusa, piano di investimento, casa in 3D, domotica, assistente AI e bozze di contratti. Resta in ambito la sola *decisione* sul secondo gruppo, che la destinazione richiede.
 - **Misura del tempo reale dell'agenzia per cliente e dei tempi della richiesta**: si fa nel pilota (PRODUCT.md §12, T3), dopo lo studio.

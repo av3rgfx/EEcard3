@@ -11,7 +11,7 @@ Come funziona, passo per passo, il percorso 1 per le case gestite da ƎE, alla l
 
 - **Attivazione:** scheda della casa, documenti dell'agenzia ed elenco dei mancanti, scelta dei tecnici e liberatorie, inviti a proprietario e inquilino, adesione e tessera, impostazione dell'indirizzo per le bollette.
 - **Canone del mese:** importo dovuto e suoi aggiornamenti; pagamento al banco registrato dall'agenzia con la ricevuta; bonifico con contabile e conferma di chi riceve; «incassato dall'agenzia» e «consegnato al proprietario»; residuo e quietanza. Va chiarito, con la skill `domain-modeling`, come questi stati si legano ai passaggi del denaro di [PRODUCT.md](../../../PRODUCT.md) §7.4 (per esempio se «incassato dall'agenzia» è già l'incasso verificato per il proprietario).
-- **Messaggi:** quali eventi producono un'email o una notifica, per chi e con quale contenuto essenziale. La forma si progetta dopo il controllo A.
+- **Messaggi:** quali eventi producono un'email o una notifica, per chi e con quale contenuto essenziale. La forma si progetta dopo il controllo A. Decisioni emerse dalla [ricerca sulle email](05-email-non-spam.md): chi firma le email nel pilota (ƎE, il nuovo marchio o entrambi); dove arrivano le risposte; importi e nomi nell'email o solo il fatto e un link; se le email di servizio possono proporre pratiche a pagamento (se sì diventano promozionali); «registrato» e «consegnato» in una o due email.
 - **Chi lo eroga:** persone e ore dell'agenzia.
 - **Misure di successo del pilota** (PRODUCT.md §13), con la skill `ux-strategy`, senza valori inventati.
 
