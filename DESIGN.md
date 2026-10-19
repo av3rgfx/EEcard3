@@ -13,6 +13,7 @@ Riscontri dati dall'utente su proposte precedenti, riformulati come principi. Va
 - Il desktop va progettato con la stessa cura del telefono; un telefono allargato è risultato «trascurato e grezzo».
 - Una schermata senza nulla da fare non deve restare vuota: deve mostrare qualcosa di utile.
 - Interfaccia di qualità alta, calma e facile anche per chi ha poca familiarità digitale.
+- Email (19/10/2026): innovative e dinamiche, semplici ma d'impatto, mai con l'aria di spam o pubblicità. È un requisito; la forma si progetta nel passo 6 di [docs/METODO.md](docs/METODO.md).
 
 ## Piattaforme
 Prima la piattaforma web (telefono e desktop), poi l'app iPhone (confermato). I dettagli sono DA DEFINIRE.

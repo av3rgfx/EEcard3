@@ -15,6 +15,24 @@ Ogni domanda indica che tipo di lavoro serve:
 
 ---
 
+## Destinazione dello studio
+
+Confermata dall'utente il 19/10/2026 ([PRODUCT.md](../PRODUCT.md) §12), al termine del riallineamento ([METODO.md](METODO.md), passo 1).
+
+**Superare il controllo A con le evidenze:** arrivare alla specifica del primo percorso completo, **attivazione e canone del mese per le case gestite da ƎE**, confermata dall'utente e sostenuta da colloqui con proprietari e inquilini veri, da una prova di pre-adesione con un prezzo e dalle ricerche che potrebbero cambiarla.
+
+Lo studio è finito quando:
+1. **Persone:** l'agenzia ha svolto i colloqui con proprietari di case gestite, i loro inquilini e alcuni venditori, con i materiali preparati dall'agente; nel repository ci sono solo sintesi anonime; le decisioni del 18–19/10/2026 risultano confermate o corrette, e c'è una decisione sul secondo gruppo (fascicolo per la vendita).
+2. **Impegno:** una proposta di pre-adesione con prezzo e periodicità dell'offerta unica, con l'esito registrato; il dato dei 600 € è chiarito.
+3. **Ricerche chiuse** in `docs/ricerca/`, con l'indicazione di dove serve un parere professionale: obblighi dell'agenzia che incassa i canoni al banco; adempimenti della locazione da mettere nello scadenzario; titolarità e privacy dei dati fra agenzia, piattaforma, proprietari, inquilini e tecnici; alternative già sul mercato; email che non sembrano spam.
+4. **Prova sulle bollette:** quante arrivano con il PDF allegato e quante con un link, quante hanno il QR, quanto è affidabile la lettura automatica ([ricerca/bollette.md](ricerca/bollette.md)).
+5. **Specifica del percorso 1** in PRODUCT.md §10: passi, chi fa cosa, stati del canone, messaggi, casi limite (canone parziale, ritardo, contestazione, fine della locazione), cosa vede ciascuno, misure di successo del pilota (§13).
+6. **Controllo A** spuntato con queste evidenze.
+
+Fuori dalla destinazione: design, architettura, stack e nome del prodotto.
+
+---
+
 ## 1. Tensioni da sciogliere per prime
 
 Sono i punti in cui l'idea, così come è descritta, si contraddice o poggia su presupposti non verificati. Vanno discussi con l'utente all'inizio, perché cambiano tutto il resto. Per ognuna si indica una possibile direzione, che è una **proposta da discutere, non una decisione**.
@@ -24,21 +42,25 @@ L'idea mette insieme fascicolo della casa, affitto, bollette, assistenza, consul
 - **Decisione:** le bollette sono il centro della promessa, la porta d'ingresso o un servizio accessorio? Il pagamento semplice delle bollette è confermato dall'utente: la tensione va discussa, non decisa d'ufficio.
 - **Persone:** cosa fanno oggi i clienti per bollette, documenti, affitto e guasti, e cosa pagherebbero per smettere di farlo?
 - Direzione possibile: costruire la promessa su casa, affitto e continuità con l'agenzia, con le bollette come archivio, promemoria e accesso semplice ai canali che esistono già.
+- **Sciolta per il pilota il 18/10/2026** ([PRODUCT.md](../PRODUCT.md) §12): la promessa al proprietario si regge su affitto, documenti, scadenze e continuità; le bollette entrano dal lato dell'inquilino, in uno spazio privato. Resta aperta la domanda «Persone».
 
 ### T2. Chi è il primo cliente, e chi paga?
 Proprietario che affitta, inquilino, proprietario che abita la casa, altre agenzie: hanno bisogni e disponibilità a pagare diversi. Alcuni clienti dell'agenzia pagano già 600 € l'anno per un servizio di gestione.
 - **Decisione:** con quale tipo di persona si parte, e chi paga per chi (per esempio il proprietario paga e l'inquilino entra gratis)?
 - **Persone:** colloqui con clienti reali dell'agenzia per ciascun gruppo candidato.
 - Direzione possibile: partire dai proprietari che affittano tramite l'agenzia, i più vicini a un servizio che già comprano.
+- **Sciolta per il pilota il 18/10/2026** ([PRODUCT.md](../PRODUCT.md) §12): proprietari con una casa gestita da ƎE; paga il proprietario con un'offerta unica, l'inquilino entra gratis. Restano aperti il prezzo e la domanda «Persone».
 
 ### T3. Quanto lavoro umano costa un cliente, e chi lo paga?
 Verifiche, presa in carico delle richieste, consulenza annuale e assistenza fuori orario sono lavoro di persone. Con quote da 15–50 € il conto non torna senza misure.
 - **Ricerca e persone:** quanti minuti al mese richiede un cliente all'agenzia, oggi e con la piattaforma? Quanto costa una richiesta gestita?
 - **Decisione:** cosa è incluso nella quota e cosa si paga a parte.
+- **Sciolta per il pilota il 18/10/2026, come ipotesi da misurare** ([PRODUCT.md](../PRODUCT.md) §12): eroga il personale di ƎE in orario d'ufficio, circa 1–1,5 ore al giorno da fissare; la richiesta va al tecnico e passa all'agenzia solo se non viene accettata. Il 19/10/2026 decisi anche cosa si paga a parte (pratiche documentali e consulenza) e i tempi iniziali della richiesta. Resta la misura del tempo reale nel pilota.
 
 ### T4. Da dove arrivano i dati?
 Bollette e molti documenti arrivano al cliente (email, carta, app del fornitore), non all'agenzia. Se un operatore deve caricare e controllare tutto, il servizio non regge.
 - **Decisione e prova:** chi carica cosa? Il cliente inoltra un'email, fotografa o carica il file, l'estrazione dei dati è automatica e la conferma la dà la persona? L'agenzia lavora solo sulle eccezioni?
+- **Decisi il 19/10/2026** ([PRODUCT.md](../PRODUCT.md) §12): il canone delle case gestite lo registra l'agenzia; il fascicolo nasce all'attivazione dai documenti dell'agenzia, con l'elenco dei mancanti. Per le bollette dell'inquilino, dopo la [ricerca](ricerca/bollette.md): indirizzo personale con inoltro automatico, lettura del QR pagoPA e conferma della persona. **Sciolta per il pilota il 19/10/2026**; resta la prova su campioni di bollette.
 - **Ricerca:** quanto sono affidabili oggi l'estrazione automatica da bollette e documenti italiani e il riconoscimento dei codici di pagamento, e con che costi?
 
 ### T5. Quanto spesso si usa?
@@ -46,20 +68,24 @@ Un servizio per la casa si apre poche volte al mese, quasi sempre per una scaden
 - **Persone:** quando e perché una persona aprirebbe il servizio?
 - **Decisione:** qual è l'interfaccia principale? App, notifiche, email, messaggistica, banco in agenzia?
 - Direzione possibile: messaggi utili e puntuali come canale principale, con l'app per il dettaglio e le azioni.
+- **Sciolta per il pilota il 19/10/2026** ([PRODUCT.md](../PRODUCT.md) §12): email e notifiche puntuali, piattaforma web per il dettaglio, banco per attivazione e aiuto. Resta aperta la domanda «Persone».
 
 ### T6. A cosa serve la tessera?
 Se non autentica e non paga, la tessera è un segno di appartenenza e uno strumento di vendita al banco. Wallet, contactless, lettori, terminale e totem hanno costi e requisiti propri.
 - **Decisione:** cosa deve permettere la tessera nella prima versione? Cosa lo giustifica?
 - **Ricerca:** requisiti e costi di pass nei wallet, lettura NFC, produzione e spedizione delle tessere fisiche.
+- **Sciolta per la prima versione il 18/10/2026** ([PRODUCT.md](../PRODUCT.md) §12): solo segno dell'adesione, senza wallet, contactless, terminale e totem. Restano da verificare nei colloqui il valore della consegna al banco e, per dopo, i costi della tessera fisica e del pass nel wallet.
 
 ### T7. Quanto è ampia la prima versione?
 Il catalogo dell'idea (PRODUCT.md §5) è molto più grande di quanto un pilota possa sostenere con qualità.
 - **Decisione:** quale promessa minima si può mantenere davvero, con il servizio e le persone disponibili? Cosa resta fuori, dichiarandolo?
+- **Sciolta come ipotesi il 19/10/2026** ([PRODUCT.md](../PRODUCT.md) §10 e §12): primo percorso attivazione e canone del mese, poi richiesta d'aiuto, bollette dell'inquilino e report annuale; elenco dichiarato di ciò che resta fuori. Da confermare con le evidenze delle persone.
 
 ### T8. Che ruolo ha la piattaforma per l'agenzia?
 Il mestiere principale dell'agenzia è la mediazione: compravendite e locazioni. Un fascicolo completo e un rapporto continuo possono portare nuovi incarichi, rinnovi, pratiche a pagamento e vendite più rapide.
 - **Decisione:** la piattaforma è un prodotto che deve ripagarsi da solo con le quote, o uno strumento per fidelizzare i clienti e vendere servizi dell'agenzia? O entrambe le cose, con quale peso?
 - **Persone:** agenti e clienti confermano che una casa ben documentata si vende o si affitta meglio?
+- **Sciolta per il pilota il 18/10/2026** ([PRODUCT.md](../PRODUCT.md) §12): strumento del servizio dell'agenzia, con una quota che copre almeno il lavoro umano incluso. Resta aperta la domanda «Persone».
 
 ---
 
@@ -67,6 +93,7 @@ Il mestiere principale dell'agenzia è la mediazione: compravendite e locazioni.
 
 ### A. Persone e bisogni (**Persone**)
 - Come gestiscono oggi documenti, affitto, bollette, scadenze e guasti: proprietari che affittano, inquilini, proprietari che abitano la casa, operatori dell'agenzia, tecnici.
+- Gruppi da sentire per primi (decisioni del 18/10/2026): proprietari con una casa gestita da ƎE e i loro inquilini; alcuni venditori, per il fascicolo per la vendita.
 - Cosa fa perdere tempo o soldi, cosa preoccupa, quali errori capitano (scadenze dimenticate, documenti persi, solleciti ingiusti).
 - Familiarità digitale, dispositivi usati, ruolo del contatto di persona.
 - Quanto spesso servirebbe il servizio e in quali momenti.
@@ -100,7 +127,7 @@ Il mestiere principale dell'agenzia è la mediazione: compravendite e locazioni.
 - Canali reali in Italia: avvisi pagoPA, CBILL, bollettino postale, bonifico, addebito diretto (SDD), punti di pagamento fisici.
 - Per ciascun canale: cosa ha in mano chi paga, cosa lo prova, quando il debito è davvero chiuso, cosa può andare storto (rimborsi dell'addebito diretto, bonifici non abbinati).
 - Chi può avviare un pagamento per conto di qualcuno (prestatori di servizi di pagamento, servizi di disposizione di ordini) e con quali costi, coperture e responsabilità; verifica del beneficiario.
-- La piattaforma deve mai toccare il denaro dei clienti? Che obblighi comporterebbe? L'agenzia incassa mai somme per conto dei clienti (per esempio rate condominiali o servizi propri)?
+- Nella prima versione la piattaforma non detiene e non trasferisce denaro dei clienti (deciso il 18/10/2026, [PRODUCT.md](../PRODUCT.md) §12). Restano da studiare: gli obblighi di un eventuale fornitore autorizzato in futuro, e quelli dell'agenzia, che oggi incassa al banco canoni per conto dei proprietari (riferito il 18/10/2026): mandato all'incasso, contanti, ricevute, antiriciclaggio; e se incassa altre somme (rate condominiali, servizi propri).
 - Pagamento in contanti mostrando il codice sul telefono: le casse dei punti convenzionati lo leggono? Quali codici hanno una specifica pubblica e quali limiti valgono (importi, tipi di bollettino)?
 - Quanto conservare le ricevute di ciascuna categoria di bolletta.
 
@@ -134,6 +161,7 @@ Da leggere sulle fonti ufficiali aggiornate; prima di un uso reale serve la veri
 
 ### K. Canali e accessibilità (**Persone**, **Ricerca**)
 - Web, app installabile dal browser, app nativa, notifiche, email, messaggistica (costi e regole delle piattaforme di messaggistica aziendale), SMS, banco.
+- Email che non sembrano spam o pubblicità (requisito del 19/10/2026): autenticazione del mittente, riconoscibilità del marchio nella casella, email dinamiche e quali programmi di posta le mostrano, separazione fra email di servizio e promozionali.
 - Persone con poca familiarità digitale: cosa le aiuta davvero.
 - Ordine confermato: prima la piattaforma web, poi l'app iPhone.
 

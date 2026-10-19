@@ -13,6 +13,8 @@ Una piattaforma per **prendersi cura della propria casa e di ciò che la riguard
 | [START_HERE.md](START_HERE.md) | Il messaggio con cui iniziare la prossima sessione |
 | [STATUS.md](STATUS.md) | Punto di ripresa: fatto, verificato, prossimo passo |
 | [PRODUCT.md](PRODUCT.md) | **L'idea completa**: problema, persone, cosa si vorrebbe offrire, modello commerciale noto, regole del dominio, decisioni confermate |
+| [GLOSSARY.md](GLOSSARY.md) | I termini del progetto il cui significato è stato deciso |
+| [docs/ricerca/](docs/ricerca/) | Ricerche documentali, un file per tema, con fonti e date di lettura |
 | [docs/STUDIO.md](docs/STUDIO.md) | Cosa va studiato: tensioni da sciogliere, aree di ricerca, fonti ufficiali |
 | [docs/METODO.md](docs/METODO.md) | Come procedere dallo studio alla realizzazione, con i controlli prima di design, architettura e codice |
 | [DESIGN.md](DESIGN.md), [ARCHITECTURE.md](ARCHITECTURE.md) | Decisioni visive e tecniche, ancora vuote |
