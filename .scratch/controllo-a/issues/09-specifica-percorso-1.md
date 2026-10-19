@@ -5,7 +5,7 @@ Status: open
 Blocked by: 01, 02, 03, 05, 06, 07, 11
 Mappa: [Superare il controllo A con le evidenze](../map.md)
 
-## Domanda
+## Domanda (Question)
 
 Come funziona, passo per passo, il percorso 1 per le case gestite da ƎE, alla luce delle ricerche, dei fatti dell'agenzia e delle sintesi dei colloqui? Serve ciò che chiede il criterio 5 di [docs/STUDIO.md](../../../docs/STUDIO.md): passi, chi fa cosa, stati del canone, messaggi, casi limite (canone parziale, ritardo, contestazione, fine della locazione), cosa vede ciascuno, misure di successo del pilota.
 

@@ -5,7 +5,7 @@ Status: resolved
 Blocked by: —
 Mappa: [Superare il controllo A con le evidenze](../map.md)
 
-## Domanda
+## Domanda (Question)
 
 L'email è il canale che raggiunge tutti, e le email devono essere innovative e dinamiche ma non sembrare spam o pubblicità ([PRODUCT.md](../../../PRODUCT.md) §12, [DESIGN.md](../../../DESIGN.md), 19/10/2026). Cosa serve, su fonti ufficiali aggiornate, perché le email di servizio arrivino nella posta in arrivo e siano riconoscibili, e quali forme «dinamiche» i programmi di posta mostrano davvero?
 
@@ -17,7 +17,7 @@ L'email è il canale che raggiunge tutti, e le email devono essere innovative e 
 
 Esito atteso: `docs/ricerca/email.md`, con ciò che ne deriva per i messaggi del percorso 1 e ciò che dipende da scelte non ancora fatte (nome, marchio, architettura).
 
-## Risposta
+## Risposta (Answer)
 
 Risolto il 19/10/2026 con la skill `research`, da un agente in parallelo; dettaglio e fonti in [docs/ricerca/email.md](../../../docs/ricerca/email.md).
 

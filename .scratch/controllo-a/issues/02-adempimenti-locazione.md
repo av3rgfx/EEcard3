@@ -5,7 +5,7 @@ Status: resolved
 Blocked by: —
 Mappa: [Superare il controllo A con le evidenze](../map.md)
 
-## Domanda
+## Domanda (Question)
 
 Quali adempimenti e scadenze ha una locazione abitativa in Italia dalla firma alla fine del contratto, chi ne è responsabile (locatore, conduttore, entrambi, agenzia se incaricata) e quali dati servono per calcolarli, su fonti ufficiali aggiornate?
 
@@ -19,7 +19,7 @@ Per ogni adempimento: se l'agenzia lo conosce già alla firma (e quindi lo si pu
 
 Esito atteso: `docs/ricerca/adempimenti-locazione.md`, con un calendario tipo per contratto e dove serve un parere professionale.
 
-## Risposta
+## Risposta (Answer)
 
 Risolto il 19/10/2026 con la skill `research`, da un agente in parallelo; dettaglio, calendario tipo per contratto e fonti in [docs/ricerca/adempimenti-locazione.md](../../../docs/ricerca/adempimenti-locazione.md).
 

@@ -5,7 +5,7 @@ Status: open
 Blocked by: 01, 03
 Mappa: [Superare il controllo A con le evidenze](../map.md)
 
-## Domanda
+## Domanda (Question)
 
 Nel pilota, chi è giuridicamente il fornitore della piattaforma con marchio autonomo (ƎE, una società distinta, i fondatori) e chi vende l'adesione al proprietario e ne incassa la quota? Domande emerse dalla [Ricerca: titolarità e privacy dei dati](03-titolarita-privacy-dati.md), che ne fanno dipendere i ruoli privacy: il ruolo si stabilisce sui fatti, non sul marchio.
 

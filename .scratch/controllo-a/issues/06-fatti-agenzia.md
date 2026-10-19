@@ -5,7 +5,7 @@ Status: open
 Blocked by: 01, 03
 Mappa: [Superare il controllo A con le evidenze](../map.md)
 
-## Domanda
+## Domanda (Question)
 
 Quali fatti, che conosce solo ƎE, servono alla specifica del percorso 1, ai materiali dei colloqui e alla proposta di pre-adesione? L'agente prepara un elenco breve di domande, con risposte chiuse dove si può, e lo consegna all'utente; il collaboratore dell'utente lo compila (ticket aggiunto dall'utente il 19/10/2026).
 
@@ -21,4 +21,4 @@ Domande di partenza, da [STATUS.md](../../../STATUS.md), da completare con quell
 
 Dalla [ricerca sull'incasso dei canoni](01-incasso-canoni-al-banco.md): se esiste un incarico scritto del proprietario per incassare; dove il contratto di locazione dice di pagare il canone; dove sta il denaro fino alla consegna; tempi e modo della consegna al proprietario e compenso trattenuto; modello di ricevuta usato oggi (bollo compreso); altre somme che l'agenzia incassa (rate condominiali, servizi propri); se la polizza dell'agenzia copre il denaro in custodia.
 
-Risolto quando le risposte sono nella sezione «Risposta» di questo ticket, solo in forma aggregata: nessun nome, indirizzo o importo riconducibile a una persona. Un fatto che contraddice una decisione di [PRODUCT.md](../../../PRODUCT.md) §12 si segnala nel ticket [Specifica del percorso 1: attivazione e canone del mese](09-specifica-percorso-1.md).
+L'elenco pronto da consegnare si scrive in fondo a questo ticket, sotto «Commenti (Comments)». Risolto quando le risposte sono nella sezione «Risposta (Answer)», solo in forma aggregata: nessun nome, indirizzo o importo riconducibile a una persona. Un fatto che contraddice una decisione di [PRODUCT.md](../../../PRODUCT.md) §12 si segnala nel ticket [Specifica del percorso 1: attivazione e canone del mese](09-specifica-percorso-1.md).

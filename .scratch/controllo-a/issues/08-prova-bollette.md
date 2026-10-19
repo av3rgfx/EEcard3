@@ -5,7 +5,7 @@ Status: open
 Blocked by: —
 Mappa: [Superare il controllo A con le evidenze](../map.md)
 
-## Domanda
+## Domanda (Question)
 
 Prima di promettere l'automatismo delle bollette dell'inquilino ([PRODUCT.md](../../../PRODUCT.md) §12; [ricerca sulle bollette](../../../docs/ricerca/bollette.md) §4): quante bollette arrivano per email con il PDF allegato e quante con un link o solo nell'area clienti, quante hanno il codice QR pagoPA, e quanto è affidabile la lettura automatica di importo e scadenza?
 

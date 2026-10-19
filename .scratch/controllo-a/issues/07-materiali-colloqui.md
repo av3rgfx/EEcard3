@@ -5,7 +5,7 @@ Status: open
 Blocked by: 02, 03, 04, 06
 Mappa: [Superare il controllo A con le evidenze](../map.md)
 
-## Domanda
+## Domanda (Question)
 
 Con quali materiali l'agenzia può svolgere da sola i colloqui dello studio con proprietari di case gestite, i loro inquilini e alcuni venditori? Con la skill `ux-research` l'agente prepara, e l'utente approva:
 

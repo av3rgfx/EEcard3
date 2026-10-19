@@ -5,7 +5,7 @@ Status: open
 Blocked by: 04, 06, 09, 11
 Mappa: [Superare il controllo A con le evidenze](../map.md)
 
-## Domanda
+## Domanda (Question)
 
 Quale proposta di pre-adesione si fa agli stessi proprietari delle case gestite, dopo i colloqui e la specifica del percorso 1 (PRODUCT.md §12, 19/10/2026)? Decisioni dell'utente, ciascuna con una raccomandazione motivata:
 

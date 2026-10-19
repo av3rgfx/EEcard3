@@ -5,7 +5,7 @@ Status: resolved
 Blocked by: —
 Mappa: [Superare il controllo A con le evidenze](../map.md)
 
-## Domanda
+## Domanda (Question)
 
 Nelle case gestite ƎE riceve al banco il canone dall'inquilino per conto del proprietario, rilascia una ricevuta e poi consegna il denaro al proprietario ([PRODUCT.md](../../../PRODUCT.md) §5.2 e §12, 19/10/2026). Quali obblighi ha l'agenzia in questo passaggio e quali limiti valgono, su fonti ufficiali aggiornate?
 
@@ -19,7 +19,7 @@ Nelle case gestite ƎE riceve al banco il canone dall'inquilino per conto del pr
 
 Esito atteso: `docs/ricerca/incasso-canoni.md`, con ciò che ne deriva per gli stati del canone del percorso 1 («incassato dall'agenzia», «consegnato al proprietario», ricevuta come prova), le domande da fare all'agenzia e dove serve un parere professionale.
 
-## Risposta
+## Risposta (Answer)
 
 Risolto il 19/10/2026 con la skill `research`, da un agente in parallelo; dettaglio e fonti in [docs/ricerca/incasso-canoni.md](../../../docs/ricerca/incasso-canoni.md).
 

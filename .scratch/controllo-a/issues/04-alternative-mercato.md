@@ -5,7 +5,7 @@ Status: resolved
 Blocked by: —
 Mappa: [Superare il controllo A con le evidenze](../map.md)
 
-## Domanda
+## Domanda (Question)
 
 Chi offre già, in Italia e come riferimento in Europa, una parte di ciò che l'offerta unica promette al proprietario di una casa gestita (vedere lo stato del canone, documenti e scadenze della locazione, richieste ai tecnici, continuità con l'agenzia), a che prezzo, con quali limiti, e cosa ne deriva per il prezzo da proporre (ipotesi: circa 10 €, periodicità da decidere)?
 
@@ -16,7 +16,7 @@ Chi offre già, in Italia e come riferimento in Europa, una parte di ciò che l'
 
 Esito atteso: `docs/ricerca/mercato.md`. Le descrizioni di marketing non sono prove di funzionamento.
 
-## Risposta
+## Risposta (Answer)
 
 Risolto il 19/10/2026 con la skill `research`, da un agente in parallelo; dettaglio e fonti in [docs/ricerca/mercato.md](../../../docs/ricerca/mercato.md).
 
