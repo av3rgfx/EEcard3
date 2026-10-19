@@ -23,6 +23,8 @@ La specifica del primo percorso completo, **attivazione e canone del mese per le
 
 <!-- una riga per ticket chiuso: nome con link, poi il succo della risposta -->
 
+- [Ricerca: alternative già sul mercato](issues/04-alternative-mercato.md): le funzioni singole sono commodity (0–15 € al mese), l'incasso con garanzia costa il 5–7% del canone; nessuno sa se si è pagato al banco, l'alternativa vera è chiedere all'agenzia; 10 € al mese è in linea, 10 € all'anno è sotto mercato.
+
 ## Non ancora specificato
 
 - **Svolgimento dei colloqui e sintesi anonime.** Quanti, con chi, in che ordine e con quali tempi lo dirà il piano di [Materiali per i colloqui](issues/07-materiali-colloqui.md); da lì uno o più compiti, che bloccano la [Specifica del percorso 1: attivazione e canone del mese](issues/09-specifica-percorso-1.md).

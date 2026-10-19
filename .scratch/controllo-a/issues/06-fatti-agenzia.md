@@ -12,6 +12,7 @@ Quali fatti, che conosce solo ƎE, servono alla specifica del percorso 1, ai mat
 Domande di partenza, da [STATUS.md](../../../STATUS.md), da completare con quelle che portano le ricerche [Ricerca: obblighi dell'agenzia che incassa i canoni al banco](01-incasso-canoni-al-banco.md) e [Ricerca: titolarità e privacy dei dati](03-titolarita-privacy-dati.md):
 
 - Cosa comprano i clienti che pagano 600 € l'anno, e che tipo di clienti sono.
+- Quanto paga oggi il proprietario di una casa gestita per la gestione, e come si calcola (fisso o percentuale del canone); se coincide con il servizio da 600 € (domanda emersa dalla [ricerca sul mercato](04-alternative-mercato.md)).
 - Quante case gestite ci sono oggi; quanti proprietari e inquilini; quanti proprietari hanno più case.
 - Come si paga il canone al banco (contanti, carta, assegno); quanti inquilini pagano con bonifico, e su quale conto.
 - Come si fa oggi la ricevuta, cosa riceve il proprietario alla consegna, ogni quanto passa a ritirare.
