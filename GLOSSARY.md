@@ -44,6 +44,14 @@ _Da evitare_: accesso a pagamento, pubblicazione
 
 ### Denaro
 
+**Indirizzo per le bollette**:
+L'indirizzo email personale che la piattaforma dà a ogni inquilino, a cui inoltrare le proprie bollette perché entrino nel suo spazio privato.
+_Da evitare_: casella, collegamento della posta
+
+**Bolletta domiciliata**:
+Una bolletta pagata con addebito diretto sul conto: la piattaforma ne ricorda la data senza chiedere di pagarla, e l'addebito resta un pagamento disposto, non un incasso verificato.
+_Da evitare_: bolletta pagata, bolletta automatica
+
 **Canale di pagamento**:
 Un modo reale e già esistente di pagare un importo (app della banca, pagoPA, CBILL, domiciliazione, punto fisico), offerto da un prestatore autorizzato ed esterno alla piattaforma. Il denaro passa dal canale, mai dalla piattaforma.
 _Da evitare_: pagamento in app, portafoglio

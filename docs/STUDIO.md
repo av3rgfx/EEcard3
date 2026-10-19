@@ -37,12 +37,12 @@ Proprietario che affitta, inquilino, proprietario che abita la casa, altre agenz
 Verifiche, presa in carico delle richieste, consulenza annuale e assistenza fuori orario sono lavoro di persone. Con quote da 15–50 € il conto non torna senza misure.
 - **Ricerca e persone:** quanti minuti al mese richiede un cliente all'agenzia, oggi e con la piattaforma? Quanto costa una richiesta gestita?
 - **Decisione:** cosa è incluso nella quota e cosa si paga a parte.
-- **Sciolta per il pilota il 18/10/2026, come ipotesi da misurare** ([PRODUCT.md](../PRODUCT.md) §12): eroga il personale di ƎE in orario d'ufficio, circa 1–1,5 ore al giorno da fissare; la richiesta va al tecnico e passa all'agenzia solo se non viene accettata. Restano aperti cosa si paga a parte (proposta: pratiche documentali e consulenza), il tempo di risposta e la misura del tempo reale.
+- **Sciolta per il pilota il 18/10/2026, come ipotesi da misurare** ([PRODUCT.md](../PRODUCT.md) §12): eroga il personale di ƎE in orario d'ufficio, circa 1–1,5 ore al giorno da fissare; la richiesta va al tecnico e passa all'agenzia solo se non viene accettata. Il 19/10/2026 decisi anche cosa si paga a parte (pratiche documentali e consulenza) e i tempi iniziali della richiesta. Resta la misura del tempo reale nel pilota.
 
 ### T4. Da dove arrivano i dati?
 Bollette e molti documenti arrivano al cliente (email, carta, app del fornitore), non all'agenzia. Se un operatore deve caricare e controllare tutto, il servizio non regge.
 - **Decisione e prova:** chi carica cosa? Il cliente inoltra un'email, fotografa o carica il file, l'estrazione dei dati è automatica e la conferma la dà la persona? L'agenzia lavora solo sulle eccezioni?
-- **Decisi il 19/10/2026** ([PRODUCT.md](../PRODUCT.md) §12): il canone delle case gestite lo registra l'agenzia; il fascicolo nasce all'attivazione dai documenti dell'agenzia, con l'elenco dei mancanti. Per le bollette dell'inquilino l'utente ha chiesto una ricerca sui modi per automatizzarne l'arrivo, anche dall'email: [ricerca/bollette.md](ricerca/bollette.md) (19/10/2026).
+- **Decisi il 19/10/2026** ([PRODUCT.md](../PRODUCT.md) §12): il canone delle case gestite lo registra l'agenzia; il fascicolo nasce all'attivazione dai documenti dell'agenzia, con l'elenco dei mancanti. Per le bollette dell'inquilino, dopo la [ricerca](ricerca/bollette.md): indirizzo personale con inoltro automatico, lettura del QR pagoPA e conferma della persona. **Sciolta per il pilota il 19/10/2026**; resta la prova su campioni di bollette.
 - **Ricerca:** quanto sono affidabili oggi l'estrazione automatica da bollette e documenti italiani e il riconoscimento dei codici di pagamento, e con che costi?
 
 ### T5. Quanto spesso si usa?
