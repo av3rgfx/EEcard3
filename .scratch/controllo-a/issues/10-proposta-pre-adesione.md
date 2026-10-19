@@ -2,7 +2,7 @@
 
 Type: grilling
 Status: open
-Blocked by: 04, 06, 09
+Blocked by: 04, 06, 09, 11
 Mappa: [Superare il controllo A con le evidenze](../map.md)
 
 ## Domanda

@@ -25,6 +25,7 @@ La specifica del primo percorso completo, **attivazione e canone del mese per le
 
 - [Ricerca: alternative già sul mercato](issues/04-alternative-mercato.md): le funzioni singole sono commodity (0–15 € al mese), l'incasso con garanzia costa il 5–7% del canone; nessuno sa se si è pagato al banco, l'alternativa vera è chiedere all'agenzia; 10 € al mese è in linea, 10 € all'anno è sotto mercato.
 - [Ricerca: email che non sembrano spam](issues/05-email-non-spam.md): ai volumi del pilota bastano autenticazione del mittente e poche segnalazioni; AMP e azioni nella casella non raggiungono tutti; un'email che propone qualcosa diventa promozionale: nel percorso 1 solo email di servizio, con il fatto nell'oggetto e un link.
+- [Ricerca: titolarità e privacy dei dati](issues/03-titolarita-privacy-dati.md): ƎE titolare dei dati del percorso 1 e piattaforma probabilmente responsabile; spazio delle bollette probabilmente della piattaforma come titolare autonomo; tutto dipende da chi fornisce la piattaforma (nuovo ticket); i colloqui sono il primo uso reale di dati e vanno preparati con informativa e sintesi davvero anonime.
 
 ## Non ancora specificato
 

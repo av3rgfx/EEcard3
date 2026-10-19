@@ -2,7 +2,7 @@
 
 Type: grilling
 Status: open
-Blocked by: 01, 02, 03, 05, 06, 07
+Blocked by: 01, 02, 03, 05, 06, 07, 11
 Mappa: [Superare il controllo A con le evidenze](../map.md)
 
 ## Domanda
@@ -13,6 +13,7 @@ Come funziona, passo per passo, il percorso 1 per le case gestite da ƎE, alla l
 - **Canone del mese:** importo dovuto e suoi aggiornamenti; pagamento al banco registrato dall'agenzia con la ricevuta; bonifico con contabile e conferma di chi riceve; «incassato dall'agenzia» e «consegnato al proprietario»; residuo e quietanza. Va chiarito, con la skill `domain-modeling`, come questi stati si legano ai passaggi del denaro di [PRODUCT.md](../../../PRODUCT.md) §7.4 (per esempio se «incassato dall'agenzia» è già l'incasso verificato per il proprietario).
 - **Messaggi:** quali eventi producono un'email o una notifica, per chi e con quale contenuto essenziale. La forma si progetta dopo il controllo A. Decisioni emerse dalla [ricerca sulle email](05-email-non-spam.md): chi firma le email nel pilota (ƎE, il nuovo marchio o entrambi); dove arrivano le risposte; importi e nomi nell'email o solo il fatto e un link; se le email di servizio possono proporre pratiche a pagamento (se sì diventano promozionali); «registrato» e «consegnato» in una o due email.
 - **Chi lo eroga:** persone e ore dell'agenzia.
+- **Dati e fine del rapporto**, dalla [ricerca sulla privacy](03-titolarita-privacy-dati.md): chi è titolare in ogni passo, quando arriva l'informativa (all'attivazione, al più tardi con il primo messaggio all'inquilino), regole su chi vede cosa approvate da ƎE, per quanto tempo l'ex inquilino può scaricare contratto e ricevute, cosa resta a fine locazione e a fine adesione.
 - **Misure di successo del pilota** (PRODUCT.md §13), con la skill `ux-strategy`, senza valori inventati.
 
 Si registra: la specifica in PRODUCT.md §10, le misure in §13, le decisioni in §12, i termini decisi in [GLOSSARY.md](../../../GLOSSARY.md). Nessuna schermata. Se non sta in una sessione, si divide in «attivazione» e «canone del mese».
