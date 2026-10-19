@@ -16,6 +16,8 @@ La specifica del primo percorso completo, **attivazione e canone del mese per le
 - **Dove si registra:** decisioni di prodotto in PRODUCT.md §12 (con data e motivo), la specifica del percorso 1 in PRODUCT.md §10, le misure di successo in §13; la discussione resta nel ticket. Niente registri paralleli.
 - **Tracker:** Local Markdown ([riferimento](../../.agents/skills/setup-matt-pocock-skills/issue-tracker-local.md)). Un file per ticket in `issues/`; righe `Type:`, `Status:` (`open`, `claimed`, `resolved`) e `Blocked by:`. Intestazioni in italiano: «Domanda» è la *Question*, «Risposta» è la *Answer*, «Commenti» sono i *Comments*. Nessun ticket, commento o branch remoto: le ricerche si salvano nel branch di lavoro della sessione.
 - **Persone vere:** l'agente prepara, l'agenzia conduce; nel repository entrano solo sintesi anonime, senza dati personali. Mai partecipanti, citazioni o risultati inventati.
+- **Impianto deciso dall'utente il 19/10/2026:** la proposta di pre-adesione arriva dopo i colloqui e la specifica; la prova sulle bollette segue lo schema autorizzato (entrambe in PRODUCT.md §12); ai ticket chiesti si aggiunge «Fatti dall'agenzia ƎE»; i pareri professionali restano fuori dalla mappa (vedi «Fuori ambito»).
+- **Percorso previsto:** ricerche → fatti dall'agenzia → materiali → colloqui → specifica del percorso 1 → proposta di pre-adesione → controllo A. La prova sulle bollette corre in parallelo.
 
 ## Decisioni finora
 
@@ -23,10 +25,10 @@ La specifica del primo percorso completo, **attivazione e canone del mese per le
 
 ## Non ancora specificato
 
-- **Svolgimento dei colloqui e sintesi anonime.** Quanti, con chi, in che ordine e con quali tempi lo dirà il piano dei materiali; da lì uno o più ticket di tipo compito.
-- **Conferma o correzione delle decisioni del 18–19/10/2026** (PRODUCT.md §12) alla luce delle sintesi: quali decisioni tengono, quali cambiano. Diventerà uno o più ticket di discussione quando si sapranno i temi emersi.
+- **Svolgimento dei colloqui e sintesi anonime.** Quanti, con chi, in che ordine e con quali tempi lo dirà il piano di [Materiali per i colloqui](issues/07-materiali-colloqui.md); da lì uno o più compiti, che bloccano la [Specifica del percorso 1: attivazione e canone del mese](issues/09-specifica-percorso-1.md).
+- **Conferma o correzione delle decisioni del 18–19/10/2026** (PRODUCT.md §12) che non riguardano solo il percorso 1 (chi paga, canale, bollette dell'inquilino, tessera): diventerà uno o più ticket di discussione quando si sapranno i temi emersi dalle sintesi.
 - **Decisione sul secondo gruppo** (fascicolo per la vendita), dopo i colloqui con alcuni venditori.
-- **Esito della pre-adesione**: chi la propone, quando, come si registra l'esito e cosa conta come impegno.
+- **Esito della pre-adesione**: la proposta fatta davvero e il risultato registrato; prende forma con la [Proposta di pre-adesione: prezzo, periodicità e forma](issues/10-proposta-pre-adesione.md).
 - **Domande che le ricerche faranno emergere** e che possono cambiare il percorso 1 (per esempio come si paga il canone al banco, chi è titolare dei dati, quali scadenze entrano nel percorso).
 - **Controllo A**: la verifica finale, voce per voce, con le evidenze raccolte.
 
@@ -36,3 +38,4 @@ La specifica del primo percorso completo, **attivazione e canone del mese per le
 - **Specifiche dei percorsi 2–4** (richiesta d'aiuto, bollette dell'inquilino, report annuale): la destinazione è la specifica del percorso 1. I colloqui possono comunque raccogliere evidenze su questi temi.
 - **Ciò che PRODUCT.md §12 (19/10/2026) dichiara fuori dalla prima versione**: livelli, «plus» ed extra per l'inquilino; più agenzie e vendita ad altre agenzie; wallet, contactless, terminale da banco e totem; pagamento nell'app, contanti nei punti convenzionati, solleciti e chiamate automatiche all'inquilino; collegamento della casella e fatture elettroniche; WhatsApp, SMS, app iPhone e traduzioni; abbonamento per i tecnici e preventivi per lavori grandi; fascicolo per la vendita come servizio, condivisione dello storico con chi vuole comprare e sito vetrina; consulenza annuale inclusa, piano di investimento, casa in 3D, domotica, assistente AI e bozze di contratti. Resta in ambito la sola *decisione* sul secondo gruppo, che la destinazione richiede.
 - **Misura del tempo reale dell'agenzia per cliente e dei tempi della richiesta**: si fa nel pilota (PRODUCT.md §12, T3), dopo lo studio.
+- **Ottenere i pareri professionali** (legale, fiscale, privacy) che le ricerche segnalano: si fa prima del pilota (METODO.md, passo 9), per decisione dell'utente del 19/10/2026. Eccezione: un punto che impedisce di specificare il percorso 1 diventa una decisione in questa mappa.
