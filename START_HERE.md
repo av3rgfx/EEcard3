@@ -4,21 +4,19 @@ Da incollare in Claude Code o Codex aperto su questo repository. La skill Wayfin
 
 ---
 
-/wayfinder
+/wayfinder .scratch/controllo-a/map.md
 
-Leggi AGENTS.md, STATUS.md, GLOSSARY.md, PRODUCT.md (in particolare §10, §12 e §13) e docs/STUDIO.md, partendo dalla destinazione in cima. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice o decisioni di tentativi precedenti.
+Leggi AGENTS.md, STATUS.md e la mappa `.scratch/controllo-a/map.md` (destinazione: superare il controllo A con le evidenze). Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice o decisioni di tentativi precedenti.
 
-Costruisci la mappa delle decisioni verso la destinazione confermata il 19/10/2026: **superare il controllo A con le evidenze**, arrivando alla specifica del primo percorso completo, attivazione e canone del mese per le case gestite da ƎE, sostenuta da colloqui con persone vere, da una prova di pre-adesione con un prezzo e dalle ricerche che potrebbero cambiarla. I criteri di arrivo sono in docs/STUDIO.md.
-
-- Usa il tracker Local Markdown già configurato: mappa e ticket in `.scratch/`, nessun ticket, commento o branch remoto.
-- Trasforma in ticket solo le domande già precise: ricerche (obblighi dell'agenzia che incassa i canoni al banco, adempimenti della locazione, titolarità e privacy dei dati, alternative sul mercato, email che non sembrano spam); materiali per i colloqui e per la pre-adesione (skill `ux-research`); prova sulle bollette; specifica del percorso 1. Il resto va in «Non ancora specificato»; ciò che PRODUCT.md §12 dichiara fuori dalla prima versione va in «Fuori ambito».
-- Le domande ancora aperte con l'utente sono in STATUS.md: chiedi solo decisioni, i fatti cercali tu.
+- Prendi il primo ticket della frontiera (aperto, non rivendicato, con tutti i blocchi risolti): oggi è «Fatti dall'agenzia ƎE». Rivendicalo (`Status: claimed`) prima di lavorare e risolvilo secondo il suo tipo; un solo ticket per sessione.
+- Per un compito che richiede persone (agenzia, volontari) prepara l'elenco preciso e consegnalo a me; il ticket si chiude quando le risposte ci sono.
+- Chiedimi solo decisioni, con una raccomandazione motivata; i fatti cercali tu. Nel repository solo dati inventati o sintesi anonime.
 - Non scrivere codice applicativo, non scegliere lo stack, non disegnare schermate.
 
-Chiudi la sessione aggiornando STATUS.md e questo file con il messaggio per la sessione successiva, poi fai commit e push sul branch della sessione.
+Chiudi la sessione registrando la risposta nel ticket e nella mappa, aggiornando STATUS.md e questo file, poi fai commit e push sul branch della sessione.
 
 ---
 
 ## Sessioni successive
-- **Lavorare sulla mappa:** scrivere `/wayfinder` con il percorso della mappa (`.scratch/<nome>/map.md`); l'agente prende il primo ticket libero.
+- **Ticket in parallelo:** oggi si possono lavorare in sessioni separate anche «Prova sulle bollette» e «Chi fornisce la piattaforma e chi vende l'adesione nel pilota»: scrivere `/wayfinder .scratch/controllo-a/map.md` e il nome del ticket.
 - **Riprendere in generale:** «Leggi AGENTS.md e STATUS.md e riprendi dal prossimo passo indicato».
