@@ -19,4 +19,6 @@ Domande di partenza, da [STATUS.md](../../../STATUS.md), da completare con quell
 - Chi in agenzia eroga il servizio e con quante ore fisse (oggi stimate 1–1,5 al giorno).
 - Il quarto mestiere dei tecnici iniziali.
 
+Dalla [ricerca sull'incasso dei canoni](01-incasso-canoni-al-banco.md): se esiste un incarico scritto del proprietario per incassare; dove il contratto di locazione dice di pagare il canone; dove sta il denaro fino alla consegna; tempi e modo della consegna al proprietario e compenso trattenuto; modello di ricevuta usato oggi (bollo compreso); altre somme che l'agenzia incassa (rate condominiali, servizi propri); se la polizza dell'agenzia copre il denaro in custodia.
+
 Risolto quando le risposte sono nella sezione «Risposta» di questo ticket, solo in forma aggregata: nessun nome, indirizzo o importo riconducibile a una persona. Un fatto che contraddice una decisione di [PRODUCT.md](../../../PRODUCT.md) §12 si segnala nel ticket [Specifica del percorso 1: attivazione e canone del mese](09-specifica-percorso-1.md).
