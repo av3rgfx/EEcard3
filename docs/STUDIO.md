@@ -61,6 +61,7 @@ Se non autentica e non paga, la tessera è un segno di appartenenza e uno strume
 ### T7. Quanto è ampia la prima versione?
 Il catalogo dell'idea (PRODUCT.md §5) è molto più grande di quanto un pilota possa sostenere con qualità.
 - **Decisione:** quale promessa minima si può mantenere davvero, con il servizio e le persone disponibili? Cosa resta fuori, dichiarandolo?
+- **Sciolta come ipotesi il 19/10/2026** ([PRODUCT.md](../PRODUCT.md) §10 e §12): primo percorso attivazione e canone del mese, poi richiesta d'aiuto, bollette dell'inquilino e report annuale; elenco dichiarato di ciò che resta fuori. Da confermare con le evidenze delle persone.
 
 ### T8. Che ruolo ha la piattaforma per l'agenzia?
 Il mestiere principale dell'agenzia è la mediazione: compravendite e locazioni. Un fascicolo completo e un rapporto continuo possono portare nuovi incarichi, rinnovi, pratiche a pagamento e vendite più rapide.
