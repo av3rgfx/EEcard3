@@ -180,7 +180,6 @@ Termini provvisori, da consolidare con la skill `domain-modeling` quando il mode
 | **Rapporto** | Il legame di una persona con una casa (proprietà, comproprietà, locazione, delega), con una validità nel tempo |
 | **Agenzia** | Chi eroga il servizio; i suoi dati sono separati da quelli di altre agenzie |
 | **Delega** | Un'autorizzazione con oggetto, destinatario e durata, revocabile |
-| **Adesione** | L'abbonamento al servizio, con periodo e rinnovo. Diversa da account e tessera |
 | **Fascicolo** | I documenti di una casa, con originali, versioni e provenienza |
 | **Dichiarato** | «Ho pagato» detto dalla persona: da solo non prova nulla |
 | **Prova** | Un documento caricato a sostegno (contabile, scontrino) |
