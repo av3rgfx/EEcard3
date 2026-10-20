@@ -6,6 +6,10 @@ Il linguaggio del servizio per la cura della casa. Contiene solo i termini il cu
 
 ### Adesione
 
+**Adesione**:
+La partecipazione di una persona al servizio dell'agenzia, con condizioni proprie, periodo, rinnovo e disdetta: a pagamento per il proprietario, gratuita per l'inquilino. È distinta da account, tessera, incarico di gestione e locazione: chiuderne uno non chiude gli altri.
+_Da evitare_: abbonamento (fa pensare solo a chi paga), iscrizione, tessera (ne è il segno)
+
 **Tessera**:
 Il segno riconoscibile dell'adesione, digitale o fisico. Non autentica, non paga e non dà accesso ai dati: il suo codice serve solo all'operatore per trovare il cliente.
 _Da evitare_: carta (si confonde con la carta di pagamento), badge

@@ -1,7 +1,13 @@
 # Stato del progetto
 
-## Punto di ripresa (19 ottobre 2026, notte)
-**Fase: studio.** La mappa delle decisioni verso la destinazione dello studio, **superare il controllo A con le evidenze**, è in [.scratch/controllo-a/map.md](.scratch/controllo-a/map.md) ([docs/METODO.md](docs/METODO.md), passo 2). Le cinque ricerche documentali sono chiuse. **Si attende la risposta dell'agenzia** all'elenco di domande del ticket [Fatti dall'agenzia ƎE](.scratch/controllo-a/issues/06-fatti-agenzia.md), che resta `claimed`. Non c'è codice applicativo; design, architettura e stack non sono decisi.
+## Punto di ripresa (20 ottobre 2026)
+**Fase: studio.** La mappa delle decisioni verso la destinazione dello studio, **superare il controllo A con le evidenze**, è in [.scratch/controllo-a/map.md](.scratch/controllo-a/map.md) ([docs/METODO.md](docs/METODO.md), passo 2). Le cinque ricerche sono chiuse e lo è anche il ticket «Chi fornisce la piattaforma e chi vende l'adesione nel pilota». **Si attende la risposta dell'agenzia** all'elenco di domande del ticket [Fatti dall'agenzia ƎE](.scratch/controllo-a/issues/06-fatti-agenzia.md), che resta `claimed`. Non c'è codice applicativo; design, architettura e stack non sono decisi.
+
+## Fatto (20 ottobre 2026)
+- Ticket [Chi fornisce la piattaforma e chi vende l'adesione nel pilota](.scratch/controllo-a/issues/11-chi-fornisce-la-piattaforma.md) chiuso con le skill `grilling` e `domain-modeling`, una domanda alla volta. Decisioni dell'utente in [PRODUCT.md](PRODUCT.md) §12 (20/10/2026): nel pilota la piattaforma è di ƎE, che risponde di tutti i dati con un'informativa sola; società distinta solo con la seconda agenzia; ƎE vende l'adesione del proprietario con un foglio separato dall'incarico di gestione; l'inquilino ha un'adesione gratuita con tessera, che comprende lo spazio delle bollette, servizio di ƎE che l'agenzia non guarda.
+- «Adesione» passa da PRODUCT.md §8 al [GLOSSARY.md](GLOSSARY.md): a pagamento per il proprietario, gratuita per l'inquilino.
+- Aggiornati i ticket della specifica del percorso 1 (documenti all'attivazione, ruoli, due casi limite), della pre-adesione (propone e incassa ƎE) e dei materiali per i colloqui (titolare ƎE; fiducia degli inquilini nello spazio delle bollette).
+- Le risposte di ƎE alle domande 5 e 6 (incarico scritto, privacy) non c'erano: cosa ricontrollare quando arrivano è nel ticket chiuso, sotto «Da ricontrollare».
 
 ## Fatto (19 ottobre 2026)
 - Mappa Wayfinder (tracker Local Markdown, solo nel repository): destinazione, note, decisioni finora, «Non ancora specificato» e «Fuori ambito» con ciò che PRODUCT.md §12 esclude dalla prima versione. Undici ticket, collegati con i loro blocchi.
@@ -12,9 +18,9 @@
 - Regola nuova in [AGENTS.md](AGENTS.md), chiesta dall'utente: le domande all'utente si fanno in parole semplici, spiegando cosa comporta ogni opzione.
 
 ## Verificato
-- `python3 tools/check_setup.py`: integrità OK, 20 skill, copie Claude e Codex equivalenti (19/10/2026, sera; ripetuto di notte dopo la modifica di AGENTS.md).
-- Link locali di mappa, ticket e ricerche: nessuno rotto. Frontiera calcolata dai file dei ticket.
-- Due affermazioni delle ricerche controllate sulla fonte: DMARC è RFC 9989 (maggio 2026); la consultazione EDPB sulle linee guida 02/2026 esiste.
+- `python3 tools/check_setup.py`: integrità OK, 20 skill, copie Claude e Codex equivalenti (20/10/2026).
+- Link locali di PRODUCT.md, GLOSSARY.md, STATUS.md, START_HERE.md, mappa e ticket: nessuno rotto (20/10/2026). Frontiera calcolata dai file dei ticket: libero solo «Prova sulle bollette»; «Fatti dall'agenzia ƎE» è `claimed`.
+- Due affermazioni delle ricerche controllate sulla fonte (19/10/2026): DMARC è RFC 9989 (maggio 2026); la consultazione EDPB sulle linee guida 02/2026 esiste.
 - Non verificato: l'abrogazione dell'obbligo di pagare i canoni senza contanti (L. 208/2015) è riportata da Normattiva secondo la ricerca, ma Normattiva e Gazzetta Ufficiale non rispondevano al controllo; il comma viene da fonte secondaria.
 - Non applicabili: build, test, revisione OCR e verifiche dell'interfaccia (non c'è codice).
 
@@ -22,16 +28,16 @@
 - **Si attende la risposta dell'agenzia** all'elenco del ticket «Fatti dall'agenzia ƎE». Il ticket «Materiali per i colloqui» resta bloccato finché le risposte non sono registrate.
 - Normattiva ed EUR-Lex hanno rifiutato molte connessioni: alcune norme sono state lette da fonti secondarie o solo in parte; l'elenco è in fondo a ogni ricerca.
 - Dal 1/1/2027 registro, cedolare secca, IVA e termini fiscali passano a nuovi testi unici: le ricerche su adempimenti, incasso e privacy vanno riverificate a gennaio 2027.
-- Pareri professionali segnalati (legale, fiscale, privacy, servizi di pagamento, antiriciclaggio): fuori dalla mappa, prima del pilota; per l'informativa dei colloqui la decisione è nel ticket «Materiali per i colloqui».
+- Pareri professionali segnalati (legale, fiscale, privacy, servizi di pagamento, antiriciclaggio): fuori dalla mappa, prima del pilota; per l'informativa dei colloqui la decisione è nel ticket «Materiali per i colloqui». Dal 20/10 se ne aggiunge uno su ruoli e documenti del pilota: condizioni delle due adesioni, contratto sui dati con chi costruisce la piattaforma, accordo su marchio e software fra fondatori e ƎE.
 
 ## Da chiarire con l'utente
-Le domande aperte sono nei ticket della mappa: prezzo e periodicità in «Proposta di pre-adesione: prezzo, periodicità e forma»; chi fornisce la piattaforma e chi vende l'adesione nel ticket omonimo. I fatti che conosce solo l'agenzia sono nell'elenco consegnato al collaboratore.
+Le domande aperte sono nei ticket della mappa; prezzo, periodicità e trattenuta della quota dal canone in «Proposta di pre-adesione: prezzo, periodicità e forma». I fatti che conosce solo l'agenzia sono nell'elenco consegnato al collaboratore.
 
 ## Prossimo passo
-1. L'utente consegna l'elenco «Domande per ƎE» al collaboratore. Quando arrivano le risposte, una sessione le registra nel ticket in forma aggregata e lo chiude.
-2. Intanto la frontiera ha due ticket liberi: «Chi fornisce la piattaforma e chi vende l'adesione nel pilota» (consigliato per primo: è sul percorso verso la specifica e serve solo l'utente) e «Prova sulle bollette» (richiede i volontari).
+1. L'utente consegna l'elenco «Domande per ƎE» al collaboratore: è nel ticket [Fatti dall'agenzia ƎE](.scratch/controllo-a/issues/06-fatti-agenzia.md), sotto «Commenti (Comments)», dal titolo fino alla domanda 29. Quando arrivano le risposte, una sessione le registra nel ticket in forma aggregata, lo chiude e controlla anche i punti «Da ricontrollare» del ticket «Chi fornisce la piattaforma e chi vende l'adesione nel pilota» (domande 5 e 6).
+2. Intanto la frontiera ha un solo ticket libero: «Prova sulle bollette», che richiede i fondatori e il personale di ƎE volontari.
 
 Messaggi per le prossime sessioni in [START_HERE.md](START_HERE.md).
 
 ## Ultima verifica
-19/10/2026, notte, `python3 tools/check_setup.py`: integrità OK. Programmi facoltativi assenti nell'ambiente cloud: `ocr`, `playwright-cli`.
+20/10/2026, `python3 tools/check_setup.py`: integrità OK. Programmi facoltativi assenti nell'ambiente cloud: `ocr`, `playwright-cli`.
