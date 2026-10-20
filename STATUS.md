@@ -8,6 +8,7 @@
 - «Adesione» passa da PRODUCT.md §8 al [GLOSSARY.md](GLOSSARY.md): a pagamento per il proprietario, gratuita per l'inquilino.
 - Aggiornati i ticket della specifica del percorso 1 (documenti all'attivazione, ruoli, due casi limite), della pre-adesione (propone e incassa ƎE) e dei materiali per i colloqui (titolare ƎE; fiducia degli inquilini nello spazio delle bollette).
 - Le risposte di ƎE alle domande 5 e 6 (incarico scritto, privacy) non c'erano: cosa ricontrollare quando arrivano è nel ticket chiuso, sotto «Da ricontrollare».
+- Su richiesta dell'utente, pagina interattiva «Domande per ƎE» per far rispondere il collaboratore dal telefono: le 29 domande dell'elenco, salvataggio automatico, tasto «Copia le risposte» come alternativa. Le risposte si leggono solo da chi può compilare la pagina, non da chi la guarda soltanto. Il sorgente non è nel repository: è uno strumento per raccogliere le risposte, non codice del prodotto.
 
 ## Fatto (19 ottobre 2026)
 - Mappa Wayfinder (tracker Local Markdown, solo nel repository): destinazione, note, decisioni finora, «Non ancora specificato» e «Fuori ambito» con ciò che PRODUCT.md §12 esclude dalla prima versione. Undici ticket, collegati con i loro blocchi.
@@ -19,6 +20,7 @@
 
 ## Verificato
 - `python3 tools/check_setup.py`: integrità OK, 20 skill, copie Claude e Codex equivalenti (20/10/2026).
+- Pagina «Domande per ƎE» (20/10/2026): sintassi dello script controllata; aperta in Chromium a larghezza di telefono, senza errori né scorrimento laterale; avanzamento, scelta tolta al secondo tocco e testo da copiare provati una volta. Dopo la pubblicazione, un documento di prova nel suo database: invisibile a chi può solo guardare, visibile a chi può compilare; poi cancellato. Non provati: l'invito del collaboratore e il salvataggio dal suo account.
 - Link locali di PRODUCT.md, GLOSSARY.md, STATUS.md, START_HERE.md, mappa e ticket: nessuno rotto (20/10/2026). Frontiera calcolata dai file dei ticket: libero solo «Prova sulle bollette»; «Fatti dall'agenzia ƎE» è `claimed`.
 - Due affermazioni delle ricerche controllate sulla fonte (19/10/2026): DMARC è RFC 9989 (maggio 2026); la consultazione EDPB sulle linee guida 02/2026 esiste.
 - Non verificato: l'abrogazione dell'obbligo di pagare i canoni senza contanti (L. 208/2015) è riportata da Normattiva secondo la ricerca, ma Normattiva e Gazzetta Ufficiale non rispondevano al controllo; il comma viene da fonte secondaria.
@@ -34,7 +36,7 @@
 Le domande aperte sono nei ticket della mappa; prezzo, periodicità e trattenuta della quota dal canone in «Proposta di pre-adesione: prezzo, periodicità e forma». I fatti che conosce solo l'agenzia sono nell'elenco consegnato al collaboratore.
 
 ## Prossimo passo
-1. L'utente consegna l'elenco «Domande per ƎE» al collaboratore: è nel ticket [Fatti dall'agenzia ƎE](.scratch/controllo-a/issues/06-fatti-agenzia.md), sotto «Commenti (Comments)», dal titolo fino alla domanda 29. Quando arrivano le risposte, una sessione le registra nel ticket in forma aggregata, lo chiude e controlla anche i punti «Da ricontrollare» del ticket «Chi fornisce la piattaforma e chi vende l'adesione nel pilota» (domande 5 e 6).
+1. L'utente consegna l'elenco «Domande per ƎE» al collaboratore: è nel ticket [Fatti dall'agenzia ƎE](.scratch/controllo-a/issues/06-fatti-agenzia.md), sotto «Commenti (Comments)», dal titolo fino alla domanda 29. Il collaboratore lo compila nella pagina interattiva «Domande per ƎE» (https://claude.ai/artifact/EuMptgzRaJYEenhLXQ4CYq): stesse domande, risposte salvate da sole e lette dalla sessione con `ArtifactData` (raccolta `risposte`, documento `ee`); per salvare deve essere invitato per email come Editor, altrimenti usa «Copia le risposte». Quando arrivano le risposte, una sessione le registra nel ticket in forma aggregata, lo chiude e controlla anche i punti «Da ricontrollare» del ticket «Chi fornisce la piattaforma e chi vende l'adesione nel pilota» (domande 5 e 6).
 2. Intanto la frontiera ha un solo ticket libero: «Prova sulle bollette», che richiede i fondatori e il personale di ƎE volontari.
 
 Messaggi per le prossime sessioni in [START_HERE.md](START_HERE.md).

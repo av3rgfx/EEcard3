@@ -2,15 +2,17 @@
 
 Da incollare in Claude Code o Codex aperto su questo repository. La skill Wayfinder parte solo su richiesta: il messaggio comincia con `/wayfinder`.
 
-L'elenco da consegnare all'agenzia è in [.scratch/controllo-a/issues/06-fatti-agenzia.md](.scratch/controllo-a/issues/06-fatti-agenzia.md), sotto «Commenti (Comments)»: dal titolo «Domande per ƎE» fino alla domanda 29.
+L'elenco per l'agenzia è in [.scratch/controllo-a/issues/06-fatti-agenzia.md](.scratch/controllo-a/issues/06-fatti-agenzia.md), sotto «Commenti (Comments)», dal titolo «Domande per ƎE» fino alla domanda 29. Il collaboratore lo compila nella pagina interattiva **«Domande per ƎE»** (https://claude.ai/artifact/EuMptgzRaJYEenhLXQ4CYq), con le stesse domande: le risposte si salvano da sole e la sessione le legge da lì. Per salvarle il collaboratore deve essere invitato per email come Editor, con un account Claude, e la pagina non deve avere un link pubblico; altrimenti usa il tasto «Copia le risposte» e le manda con un messaggio.
 
-**Quando arrivano le risposte dell'agenzia**, incollare questo messaggio e, subito sotto, le risposte del collaboratore (testo, foto o PDF dell'elenco compilato):
+**Quando arrivano le risposte dell'agenzia**, incollare questo messaggio. Se il collaboratore le ha mandate come testo, foto o PDF, aggiungerle subito sotto:
 
 ---
 
-/wayfinder .scratch/controllo-a/map.md — ticket «Fatti dall'agenzia ƎE» (.scratch/controllo-a/issues/06-fatti-agenzia.md): sono arrivate le risposte dell'agenzia, le trovi in fondo a questo messaggio.
+/wayfinder .scratch/controllo-a/map.md — ticket «Fatti dall'agenzia ƎE» (.scratch/controllo-a/issues/06-fatti-agenzia.md): sono arrivate le risposte dell'agenzia. Sono nella pagina «Domande per ƎE» (https://claude.ai/artifact/EuMptgzRaJYEenhLXQ4CYq) oppure, se le ho ricevute in altro modo, in fondo a questo messaggio.
 
 Leggi AGENTS.md, STATUS.md, la mappa `.scratch/controllo-a/map.md` e il ticket; l'elenco delle domande è sotto «Commenti (Comments)». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice o decisioni di tentativi precedenti.
+
+- Le risposte della pagina si leggono con lo strumento `ArtifactData`, azione `get`, raccolta `risposte`, documento `ee`. Il campo `testo` le riporta con i numeri delle domande; `answers` ha gli stessi dati per campo; `stato` vale `inviate` quando il collaboratore ha toccato «Ho finito». Se `stato` è ancora `bozza`, chiedimi se le risposte sono complete prima di registrarle. Non modificare né cancellare le risposte nella pagina.
 
 - Il ticket è già `claimed` dalla sessione che ha preparato l'elenco: continua tu. Lavora solo su questo ticket.
 - Registra le risposte sotto «Risposta (Answer)», seguendo i numeri delle domande, solo in forma aggregata: niente nomi, indirizzi o importi di una singola persona o casa; un numero di 1 o 2 che fa riconoscere qualcuno diventa «meno di 3». Le domande senza risposta restano segnate come tali, senza riempirle con stime tue. Non salvare nel repository i documenti allegati (modelli di incarico, ricevute, informative, foto o PDF dell'elenco): riassumine solo il contenuto.
