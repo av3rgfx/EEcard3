@@ -1,7 +1,7 @@
 # Chi fornisce la piattaforma e chi vende l'adesione nel pilota
 
 Type: grilling
-Status: open
+Status: claimed
 Blocked by: 01, 03
 Mappa: [Superare il controllo A con le evidenze](../map.md)
 
