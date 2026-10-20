@@ -34,7 +34,7 @@
 Le domande aperte sono nei ticket della mappa; prezzo, periodicità e trattenuta della quota dal canone in «Proposta di pre-adesione: prezzo, periodicità e forma». I fatti che conosce solo l'agenzia sono nell'elenco consegnato al collaboratore.
 
 ## Prossimo passo
-1. L'utente consegna l'elenco «Domande per ƎE» al collaboratore. Quando arrivano le risposte, una sessione le registra nel ticket in forma aggregata, lo chiude e controlla anche i punti «Da ricontrollare» del ticket «Chi fornisce la piattaforma e chi vende l'adesione nel pilota» (domande 5 e 6).
+1. L'utente consegna l'elenco «Domande per ƎE» al collaboratore: è nel ticket [Fatti dall'agenzia ƎE](.scratch/controllo-a/issues/06-fatti-agenzia.md), sotto «Commenti (Comments)», dal titolo fino alla domanda 29. Quando arrivano le risposte, una sessione le registra nel ticket in forma aggregata, lo chiude e controlla anche i punti «Da ricontrollare» del ticket «Chi fornisce la piattaforma e chi vende l'adesione nel pilota» (domande 5 e 6).
 2. Intanto la frontiera ha un solo ticket libero: «Prova sulle bollette», che richiede i fondatori e il personale di ƎE volontari.
 
 Messaggi per le prossime sessioni in [START_HERE.md](START_HERE.md).
