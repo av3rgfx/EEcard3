@@ -18,3 +18,12 @@ Con quali materiali l'agenzia può svolgere da sola i colloqui dello studio con 
 La proposta di pre-adesione non fa parte dei colloqui: arriva in un secondo momento (PRODUCT.md §12, 19/10/2026). Le scelte del piano che spettano all'utente (numero, chi conduce, eventuale ringraziamento ai partecipanti) gli si chiedono con una raccomandazione; dove salvare i materiali si decide qui.
 
 Alla chiusura, «Svolgimento dei colloqui e sintesi anonime» passa dal «Non ancora specificato» a uno o più ticket, da aggiungere fra i blocchi della [Specifica del percorso 1: attivazione e canone del mese](09-specifica-percorso-1.md).
+
+## Commenti (Comments)
+
+**21/10/2026: fatti dall'agenzia ƎE** per il piano, da [Fatti dall'agenzia ƎE](06-fatti-agenzia.md), con i numeri delle domande:
+- Chi conduce: meno di 3 persone di ƎE, con 8 ore disponibili in tutto, in qualsiasi periodo, in agenzia o al telefono; la videochiamata non è indicata (risposta 27). Numero e durata dei colloqui devono stare in queste 8 ore.
+- Invito: ƎE contatta di solito proprietari e inquilini per telefono, WhatsApp, email e di persona (risposta 12).
+- Selezione: numeri di case e proprietari, fasce d'età e lingue non sono arrivati (risposte 8 e 13). Case e proprietari sono chiesti di nuovo (chiarimento 6), fasce d'età e lingue no: i criteri si applicano con l'agenzia, senza conteggi.
+- Informativa: ƎE dà già un'informativa a proprietari e inquilini e tiene il registro dei trattamenti, ma non ha un consulente per la privacy (risposta 6). La verifica di informativa e consenso, se l'utente la vuole, richiede un professionista esterno.
+- Temi per le guide: oggi per un guasto l'inquilino chiama ƎE (risposta 29), mentre la decisione «Percorso della richiesta» lo manda al tecnico; i proprietari pagano già un compenso che comprende assistenza e consulenza (risposta 1); WhatsApp è un canale abituale; le telefonate dei proprietari che chiedono del canone non sono state contate (risposta 23), quindi conviene chiedere ai proprietari come lo sanno oggi.

@@ -94,7 +94,7 @@ Possibile vantaggio, da verificare: **conoscenza della casa unita alla fiducia e
 - Aiuto nell'uso dell'app, pratiche documentali e burocratiche, interventi tecnici: sono attività diverse.
 - Il tecnico deve poter contattare il cliente durante l'incarico. Desiderio espresso dall'utente.
 - Non è un servizio di emergenza: le urgenze vere devono avere un percorso coerente con la copertura reale.
-- **Un tecnico per mestiere**, scelto dall'agenzia, che firma una liberatoria per entrare nella piattaforma. Mestieri iniziali: idraulico, elettricista, muratore e un quarto da chiarire. La richiesta dell'inquilino va direttamente al tecnico; l'agenzia riceve la notifica e vede la cronologia. Se il tecnico non regge il lavoro deve crescere, o l'agenzia lo cambia. Idea dei fondatori (18/10/2026).
+- **Un tecnico per mestiere**, scelto dall'agenzia, che firma una liberatoria per entrare nella piattaforma. Mestieri iniziali: idraulico, elettricista, muratore e un quarto, che per ƎE sarebbe caldaie e climatizzazione (21/10/2026). La richiesta dell'inquilino va direttamente al tecnico; l'agenzia riceve la notifica e vede la cronologia. Se il tecnico non regge il lavoro deve crescere, o l'agenzia lo cambia. Idea dei fondatori (18/10/2026).
 - All'attivazione il proprietario sceglie se usare i **tecnici dell'agenzia o i propri**. Può anche chiedere un preventivo al tecnico per lavori più grandi. Idea dei fondatori (18/10/2026).
 - Il tecnico vede solo le richieste che riceve e può chiedere la cronologia degli interventi sulla casa. Un tasto «Chiama» e la cronologia dei contatti mostrano all'agenzia quanto inquilini e proprietari interagiscono con i tecnici. Idea dei fondatori (18/10/2026).
 - Convincere i tecnici a **fatturare** gli interventi, anche piccoli, in cambio di più lavoro; forse senza mostrare i prezzi degli interventi. Idea dei fondatori (18/10/2026).
@@ -145,7 +145,7 @@ Nulla è deciso. Gli elementi emersi:
 - Prima ipotesi: **50 € per il proprietario e 15 € (forse 20 €) per l'inquilino**, senza periodicità né unità definite. L'esempio di ricavo fatto a voce (circa 100 utenti, circa 2.600 € l'anno) non torna con questi prezzi.
 - Ipotesi del 18/10/2026: base a circa 10 € per il proprietario, senza periodicità detta, più livelli superiori; inquilino gratis (§5.6).
 - La tessera viene proposta **in agenzia al momento del contratto**, come quota aggiuntiva rispetto alla mediazione. Non è stabilito che sia obbligatoria.
-- **Alcuni clienti già gestiti dall'agenzia pagano 600 € l'anno** per un servizio esistente. Non è un listino, ma è il dato economico più concreto disponibile. Cosa comprano e chi sono è in attesa della risposta del collaboratore dell'utente (18/10/2026).
+- **Alcuni clienti già gestiti dall'agenzia pagano 600 € l'anno** per un servizio esistente. Non è un listino, ma è il dato economico più concreto disponibile. Secondo ƎE (21/10/2026) i 600 € sono una media, IVA esclusa, pagata dai proprietari delle case gestite, e il servizio comprende gestione con incasso, scelta dell'inquilino, pratiche, assistenza per guasti e consulenza; dettagli e chiarimenti aperti in [Fatti dall'agenzia ƎE](.scratch/controllo-a/issues/06-fatti-agenzia.md).
 - Quota ricorrente con servizi premium; livelli o extra; cambio di livello con differenza.
 - Vendita del sistema **ad altre agenzie** come servizio pronto da usare, con personalizzazione e un compenso per il design.
 - Tessera fisica spedita a pagamento a chi si iscrive online.

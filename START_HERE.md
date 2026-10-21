@@ -2,40 +2,54 @@
 
 Da incollare in Claude Code o Codex aperto su questo repository. La skill Wayfinder parte solo su richiesta: il messaggio comincia con `/wayfinder`.
 
-L'elenco per l'agenzia è in [.scratch/controllo-a/issues/06-fatti-agenzia.md](.scratch/controllo-a/issues/06-fatti-agenzia.md), sotto «Commenti (Comments)», dal titolo «Domande per ƎE» fino alla domanda 29. Il collaboratore lo compila nella pagina interattiva **«Domande per ƎE»** (https://claude.ai/artifact/EuMptgzRaJYEenhLXQ4CYq), con le stesse domande: le risposte si salvano da sole e la sessione le legge da lì. Per salvarle il collaboratore deve essere invitato per email come Editor, con un account Claude, e la pagina non deve avere un link pubblico; altrimenti usa il tasto «Copia le risposte» e le manda con un messaggio.
-
-**Quando arrivano le risposte dell'agenzia**, incollare questo messaggio. Se il collaboratore le ha mandate come testo, foto o PDF, aggiungerle subito sotto:
+Le risposte dell'agenzia sono registrate e il ticket «Fatti dall'agenzia ƎE» è chiuso. Il prossimo ticket consigliato è **«Materiali per i colloqui»**, ora libero. Messaggio:
 
 ---
 
-/wayfinder .scratch/controllo-a/map.md — ticket «Fatti dall'agenzia ƎE» (.scratch/controllo-a/issues/06-fatti-agenzia.md): sono arrivate le risposte dell'agenzia. Sono nella pagina «Domande per ƎE» (https://claude.ai/artifact/EuMptgzRaJYEenhLXQ4CYq) oppure, se le ho ricevute in altro modo, in fondo a questo messaggio.
+/wayfinder .scratch/controllo-a/map.md — ticket «Materiali per i colloqui» (.scratch/controllo-a/issues/07-materiali-colloqui.md)
 
-Leggi AGENTS.md, STATUS.md, la mappa `.scratch/controllo-a/map.md` e il ticket; l'elenco delle domande è sotto «Commenti (Comments)». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice o decisioni di tentativi precedenti.
+Leggi AGENTS.md, STATUS.md, la mappa `.scratch/controllo-a/map.md` e il ticket, compresi i fatti dell'agenzia sotto «Commenti (Comments)». Poi, solo per le parti che servono, la «Risposta (Answer)» del ticket «Fatti dall'agenzia ƎE» (.scratch/controllo-a/issues/06-fatti-agenzia.md) e docs/ricerca/privacy-dati.md sezione 10 (colloqui dello studio). Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice o decisioni di tentativi precedenti.
 
-- Le risposte della pagina si leggono con lo strumento `ArtifactData`, azione `get`, raccolta `risposte`, documento `ee`. Il campo `testo` le riporta con i numeri delle domande; `answers` ha gli stessi dati per campo; `stato` vale `inviate` quando il collaboratore ha toccato «Ho finito». Se `stato` è ancora `bozza`, chiedimi se le risposte sono complete prima di registrarle. Non modificare né cancellare le risposte nella pagina.
-- Il ticket è già `claimed` dalla sessione che ha preparato l'elenco: continua tu. Lavora solo su questo ticket.
-- Registra le risposte sotto «Risposta (Answer)», seguendo i numeri delle domande, solo in forma aggregata: niente nomi, indirizzi o importi di una singola persona o casa; un numero di 1 o 2 che fa riconoscere qualcuno diventa «meno di 3». Le domande senza risposta restano segnate come tali, senza riempirle con stime tue. Non salvare nel repository i documenti allegati (modelli di incarico, ricevute, informative, foto o PDF dell'elenco): riassumine solo il contenuto.
-- Controlla i punti «Da controllare quando arrivano le risposte» del ticket. Un fatto che contraddice una decisione di PRODUCT.md §12 si segnala nel ticket «Specifica del percorso 1: attivazione e canone del mese» e me lo dici in parole semplici.
-- Con le risposte 5 e 6 controlla anche i punti «Da ricontrollare» del ticket chiuso «Chi fornisce la piattaforma e chi vende l'adesione nel pilota» (.scratch/controllo-a/issues/11-chi-fornisce-la-piattaforma.md): annota l'esito nel ticket della specifica e dimmi se serve un parere prima del pilota.
-- Se una risposta è ambigua o manca un dato che serve davvero a un ticket, prepara una domanda di chiarimento breve per il collaboratore, invece di supporre.
-- Chiudi il ticket (`Status: resolved`) e aggiungi una riga in «Decisioni finora» della mappa. Le decisioni che i fatti fanno emergere vanno nei ticket aperti: qui non si prendono. Alla fine dimmi quali ticket sono diventati liberi e quale consigli per primo.
+- Rivendica il ticket (`Status: claimed`) prima di lavorare. Lavora solo su questo ticket, con la skill `ux-research`.
+- Le scelte che spettano a me (quanti colloqui per gruppo, chi li conduce, eventuale ringraziamento ai partecipanti, registrazione dell'audio, verifica di informativa e consenso da parte di un professionista, dove salvare i materiali) chiedimele una alla volta, in parole semplici, con una raccomandazione motivata e le conseguenze di ogni opzione.
+- Il piano deve stare nei limiti indicati da ƎE: meno di 3 persone per condurre, 8 ore in tutto, in agenzia o al telefono. ƎE non ha un consulente per la privacy.
+- Poi prepara piano, criteri di selezione e invito, guide per gruppo, informativa e consenso e scheda di sintesi anonima, pronti da usare. Nessun dato personale nel repository; mai partecipanti, citazioni o risultati inventati.
+- Se il lavoro non sta in una sessione, il ticket resta `claimed` e annoti a che punto sei sotto «Commenti (Comments)».
+- Alla chiusura, «Svolgimento dei colloqui e sintesi anonime» passa dal «Non ancora specificato» della mappa a uno o più ticket, da aggiungere fra i blocchi della «Specifica del percorso 1: attivazione e canone del mese».
 - Non scrivere codice applicativo, non scegliere lo stack, non disegnare schermate.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md con il messaggio per la sessione successiva, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 
-Risposte dell'agenzia:
+---
+
+## Quando arrivano i chiarimenti di ƎE
+
+I chiarimenti sono nel ticket [Fatti dall'agenzia ƎE](.scratch/controllo-a/issues/06-fatti-agenzia.md), sotto «Commenti (Comments)», dal titolo «Chiarimenti per ƎE» fino alla domanda 8: vanno mandati al collaboratore. Quando tornano, incollare questo messaggio e aggiungere le risposte subito sotto:
+
+/wayfinder .scratch/controllo-a/map.md — chiarimenti del ticket chiuso «Fatti dall'agenzia ƎE» (.scratch/controllo-a/issues/06-fatti-agenzia.md): le risposte di ƎE sono in fondo a questo messaggio.
+
+Leggi AGENTS.md, STATUS.md, la mappa `.scratch/controllo-a/map.md` e il ticket; i chiarimenti sono in fondo, sotto «Commenti (Comments)». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice o decisioni di tentativi precedenti.
+
+- Abbina ogni risposta al numero del chiarimento; se non si capisce a quale appartiene, chiedimelo invece di supporre.
+- Registrale sotto «Risposta (Answer)», in una parte «Chiarimenti», senza riaprire il ticket: solo forma aggregata, un numero di 1 o 2 che fa riconoscere qualcuno diventa «meno di 3», niente allegati nel repository.
+- Ripeti i controlli dei punti che toccano e aggiorna le note nei ticket aperti che li aspettano (Specifica del percorso 1, Proposta di pre-adesione, Materiali per i colloqui). Un contrasto con PRODUCT.md §12 si segnala nella Specifica e me lo dici in parole semplici. Le decisioni non si prendono qui.
+- Non scrivere codice applicativo, non scegliere lo stack, non disegnare schermate.
+
+Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
+
+Risposte di ƎE ai chiarimenti:
 
 ---
 
-## Se le risposte non sono ancora arrivate
+## In alternativa: Prova sulle bollette
 
-L'unico ticket libero è «Prova sulle bollette», che richiede fondatori e personale di ƎE volontari. Messaggio:
+Resta libera e richiede fondatori e personale di ƎE volontari. Messaggio:
 
 /wayfinder .scratch/controllo-a/map.md — ticket «Prova sulle bollette» (.scratch/controllo-a/issues/08-prova-bollette.md)
 
 Leggi AGENTS.md, STATUS.md, la mappa `.scratch/controllo-a/map.md` e il ticket, poi la decisione «Prova sulle bollette con bollette reali» in PRODUCT.md §12 e, solo per le parti che servono, docs/ricerca/bollette.md §4 e docs/ricerca/privacy-dati.md sezione 10 (punto sulla prova). Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice o decisioni di tentativi precedenti.
 
-- Rivendica il ticket (`Status: claimed`) prima di lavorare. Lavora solo su questo ticket: «Fatti dall'agenzia ƎE» resta in attesa delle risposte del collaboratore e non va toccato.
+- Rivendica il ticket (`Status: claimed`) prima di lavorare. Lavora solo su questo ticket.
 - Come prima cosa chiedimi di confermare cosa si oscura nelle bollette dei volontari (proposta del ticket: anche codice cliente, POD o PDR, IBAN e QR; lettura del QR su avvisi inventati; consenso scritto dei volontari). Una domanda alla volta, in parole semplici, con una raccomandazione motivata e le conseguenze di ogni opzione.
 - Poi prepara l'elenco da compilare per il conteggio (parte 1) e il testo del consenso per i volontari, pronti da copiare. Nessun dato personale nel repository: solo conteggi e metodo, in una sezione nuova di docs/ricerca/bollette.md.
 - La misura della lettura (parte 3) si fa solo quando i volontari hanno caricato le bollette oscurate nella sessione; se non ci sono, il ticket resta `claimed` e lo annoti sotto «Commenti (Comments)».

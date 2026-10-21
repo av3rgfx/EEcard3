@@ -16,3 +16,10 @@ Quale proposta di pre-adesione si fa agli stessi proprietari delle case gestite,
 - **Cosa conta come impegno** e come si registra l'esito in forma anonima.
 
 Con la skill `ux-research` l'agente prepara il testo della proposta, l'eventuale modulo e la scheda dell'esito. Le decisioni si registrano in PRODUCT.md §12. Alla chiusura, «Esito della pre-adesione» passa dal «Non ancora specificato» a un ticket.
+
+## Commenti (Comments)
+
+**21/10/2026: fatti dall'agenzia ƎE**, da [Fatti dall'agenzia ƎE](06-fatti-agenzia.md), con i numeri delle domande:
+- Il compenso di gestione è oggi una cifra fissa, in media 600 € l'anno IVA esclusa, non uguale per tutti, pagata a parte con una fattura annuale (risposte 2–4). Il servizio comprende gestione con incasso, scelta dell'inquilino, pratiche, assistenza per guasti e consulenza (risposta 1). Se compenso e «servizio da 600 €» coincidono e se si paga per casa o per proprietario: chiarimento 1. La risposta 4 esclude la trattenuta dal canone, la 22 parla di compenso trattenuto: chiarimento 2.
+- Inferenza: 10 € al mese sono 120 € l'anno, il 20% del compenso medio; 10 € l'anno sono meno del 2%.
+- Decisioni che i fatti rendono più precise: se la quota si aggiunge al compenso o entra in esso, sapendo che il compenso comprende già assistenza e consulenza; con «Ruolo per l'agenzia (T8)», quale lavoro in più copre la quota rispetto alle circa 12 ore la settimana che il compenso paga già (risposta 25); se la quota va nella fattura annuale del compenso (risposta 4); «Cosa si paga a parte», con la consulenza già nel compenso e le pratiche da chiarire (risposta 7, chiarimento 4); la proposta al banco, sapendo che il canone si consegna ogni mese con una ricevuta firmata (risposte 20 e 22) ma non quanti proprietari passano davvero in agenzia (chiarimento 7).
