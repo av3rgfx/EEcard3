@@ -28,40 +28,43 @@ L'elenco pronto da consegnare si scrive in fondo a questo ticket, sotto «Commen
 Risposte di ƎE arrivate il 21/10/2026 in un PDF mandato dall'utente, con i numeri dell'elenco; la pagina «Domande per ƎE» non ne conteneva. Il PDF non è nel repository e non c'erano allegati (modelli di incarico, informative, ricevute). Forma aggregata: i numeri di persone pari a 1 o 2 sono scritti «meno di 3». Le domande o le parti senza risposta restano tali; dove una risposta non è chiara, il rimando porta ai chiarimenti, sotto «Commenti».
 
 **Clienti e compensi**
+
+Il servizio da 600 € è di ƎE e non fa parte del prodotto: le risposte 1–4 e 7 servono solo a capire come lavora oggi l'agenzia e quali servizi offre (chiarimento dell'utente del 21/10/2026, [PRODUCT.md](../../../PRODUCT.md) §12).
+
 1. Il servizio da 600 € comprende: gestione dell'affitto con incasso del canone; ricerca e scelta dell'inquilino; pratiche della locazione (registrazione, proroghe, disdette); assistenza per guasti e tecnici; consulenza.
 2. Lo pagano i proprietari di case gestite, IVA esclusa. Senza risposta: quanti clienti; se si paga per casa o per cliente.
-3. Il compenso di gestione è una cifra fissa, in media 600 € l'anno, non uguale per tutti. Senza risposta: da quanto a quanto va. La casella «è il servizio da 600 €» non è spuntata (chiarimento 1).
-4. Il proprietario paga il compenso a parte, con una fattura ogni anno. Non torna con la risposta 22 (chiarimento 2).
-5. Incarico di gestione scritto: «no». Sono però spuntati tutti i contenuti: incasso del canone, scelta dell'inquilino e trattative, rinnovi e disdette, pratiche, termine per consegnare il canone, compenso (chiarimento 3). Se ƎE incassa a nome del proprietario o a nome proprio: «non so».
+3. Il compenso di gestione è una cifra fissa, in media 600 € l'anno, non uguale per tutti. Senza risposta: da quanto a quanto va. La casella «è il servizio da 600 €» non è spuntata.
+4. Il proprietario paga il compenso a parte, con una fattura ogni anno. Non torna con la risposta 22 (chiarimento 1).
+5. Incarico di gestione scritto: «no». Sono però spuntati tutti i contenuti: incasso del canone, scelta dell'inquilino e trattative, rinnovi e disdette, pratiche, termine per consegnare il canone, compenso (chiarimento 2). Se ƎE incassa a nome del proprietario o a nome proprio: «non so».
 6. ƎE consegna un'informativa sulla privacy ai proprietari e agli inquilini. Se l'incarico parla dei dati personali: «non so». Tiene il registro dei trattamenti; non ha un consulente per la privacy.
-7. Pratiche pagate a parte oggi: registrazione e annualità; proroghe e rinnovi; nuovo contratto; APE, visure, planimetrie. Le pratiche della locazione compaiono anche nel servizio della risposta 1 (chiarimento 4).
+7. Pratiche pagate a parte oggi: registrazione e annualità; proroghe e rinnovi; nuovo contratto; APE, visure, planimetrie. Le pratiche della locazione compaiono anche nel servizio della risposta 1.
 
 **Case gestite e numeri**
-8. Senza risposta (chiarimento 6).
+8. Senza risposta (chiarimento 4).
 9. Senza risposta.
-10. Senza risposta (per l'aggiornamento ISTAT, chiarimento 6).
+10. Senza risposta (per l'aggiornamento ISTAT, chiarimento 4).
 11. Il contratto lo registra ƎE, che paga anche le annualità. La quota dell'inquilino si chiede al banco con il canone, oppure a parte.
-12. Proprietari e inquilini si contattano di solito per telefono, WhatsApp, email e di persona. Senza risposta: quanti hanno email e cellulare, tipi di indirizzo (chiarimento 6).
+12. Proprietari e inquilini si contattano di solito per telefono, WhatsApp, email e di persona. Senza risposta: quanti hanno email e cellulare, tipi di indirizzo (chiarimento 4).
 13. Senza risposta.
 14. I dati delle case gestite e dei canoni stanno su carta e in un foglio di calcolo, senza programma gestionale. Per una casa gestita ci sono di solito già contratto registrato, ricevuta della registrazione, APE, planimetria, visura catastale, documenti d'identità delle parti e verbale di consegna, soprattutto in digitale.
 
 **Canone al banco e ricevute**
 15. Se il contratto di locazione dice dove pagare il canone: «dipende».
-16. Il POS del banco è intestato a ƎE. Quando il bonifico va al proprietario, ƎE lo sa perché lo dice il proprietario o perché l'inquilino manda la contabile. Senza risposta: quanti canoni al mese per mezzo di pagamento (chiarimento 5).
+16. Il POS del banco è intestato a ƎE. Quando il bonifico va al proprietario, ƎE lo sa perché lo dice il proprietario o perché l'inquilino manda la contabile. Senza risposta: quanti canoni al mese per mezzo di pagamento (chiarimento 3).
 17. La ricevuta è intestata al proprietario e indica il mese pagato; la copia di ƎE si conserva in carta. Senza risposta: blocchetto o programma, numerazione, anni di conservazione.
-18. Un arretrato si conta per il mese più vecchio. Senza risposta: se si accettano pagamenti parziali (chiarimento 5); ritardi al mese; contestazioni all'anno.
+18. Un arretrato si conta per il mese più vecchio. Senza risposta: se si accettano pagamenti parziali (chiarimento 3); ritardi al mese; contestazioni all'anno.
 19. Oltre al canone ƎE incassa oneri accessori o spese condominiali, deposito cauzionale, quota del registro e spese dei tecnici. Gli oneri accessori si pagano in acconto con il canone. ƎE non amministra condomìni.
 
 **Consegna al proprietario**
-20. Il canone si consegna ogni mese. Senza risposta: entro quanti giorni dall'incasso e con quale mezzo (chiarimento 5).
-21. Senza risposta (chiarimento 7).
-22. Alla consegna il proprietario firma una ricevuta di consegna e riceve un riepilogo con canone, compenso trattenuto e netto, più la copia della ricevuta dell'inquilino (chiarimento 2).
+20. Il canone si consegna ogni mese. Senza risposta: entro quanti giorni dall'incasso e con quale mezzo (chiarimento 3).
+21. Senza risposta (chiarimento 5).
+22. Alla consegna il proprietario firma una ricevuta di consegna e riceve un riepilogo con canone, compenso trattenuto e netto, più la copia della ricevuta dell'inquilino (chiarimento 1).
 23. Senza risposta.
 
 **Persone e ore**
 24. In ƎE lavorano meno di 3 persone; ruolo indicato: «capo». Senza risposta: quante seguono le case gestite. Il banco è aperto 6 giorni su 7, dalle 9 alle 13 (sabato compreso) e dalle 16 alle 19:30 (sabato escluso).
 25. Ore alla settimana dedicate oggi alle case gestite, circa: incassi e ricevute 2; telefonate e richieste di inquilini e proprietari 5; pratiche 5. Senza risposta: consegne ai proprietari.
-26. Le 1–1,5 ore al giorno stimate per il servizio del pilota sono confermate. Senza risposta: chi le farebbe (chiarimento 8).
+26. Le 1–1,5 ore al giorno stimate per il servizio del pilota sono confermate. Senza risposta: chi le farebbe (chiarimento 6).
 27. Colloqui: li potrebbero condurre meno di 3 persone di ƎE, con 8 ore disponibili in tutto, in qualsiasi periodo, in agenzia o al telefono.
 
 **Tecnici**
@@ -73,7 +76,7 @@ Risposte di ƎE arrivate il 21/10/2026 in un PDF mandato dall'utente, con i nume
 - Domande 20 e 21 (proprietari in agenzia): non verificabile. La consegna mensile con ricevuta firmata fa pensare a passaggi frequenti (inferenza), ma la risposta 21 manca.
 - Domanda 12 (email): non verificabile, mancano i numeri. WhatsApp è fra i canali abituali.
 - Domanda 26 (ore): confermate. Con meno di 3 persone e il solo ruolo «capo», contrasto parziale con «Fascicolo all'attivazione», che affida la scheda alla «segreteria di ƎE».
-- Domande 1–4 e 7 (chi paga, cosa si paga a parte): «Chi paga» regge, il proprietario paga già. Contrasto parziale con «Cosa si paga a parte»: consulenza e assistenza per guasti sono già comprese nel compenso; le pratiche sono a parte, ma compaiono anche nel servizio (chiarimento 4).
+- Domande 1–4 e 7 (chi paga, cosa si paga a parte): nessun contrasto. Il servizio da 600 € è di ƎE e non fa parte del prodotto (chiarimento dell'utente del 21/10/2026): descrive come lavora oggi l'agenzia e non tocca «Chi paga» né «Cosa si paga a parte», che riguardano l'offerta della piattaforma.
 - Domanda 29 (guasti): oggi l'inquilino chiama ƎE. «Percorso della richiesta» cambia un'abitudine senza contraddire un fatto; i tecnici sono già meno di 3 per mestiere, senza accordo scritto.
 
 **Domande 5 e 6 per il ticket chiuso** [Chi fornisce la piattaforma e chi vende l'adesione nel pilota](11-chi-fornisce-la-piattaforma.md): esito dei punti «Da ricontrollare» nella [Specifica del percorso 1: attivazione e canone del mese](09-specifica-percorso-1.md). Le decisioni del 20/10/2026 reggono; si aggiungono documenti da preparare e un parere prima del pilota.
@@ -204,7 +207,7 @@ Come rispondere:
 - Domande 1–4 e 7: toccano «Chi paga» (offerta unica a circa 10 €) e «Cosa si paga a parte».
 - Domanda 29: tocca «Percorso della richiesta» (la richiesta va al tecnico).
 
-**21/10/2026: chiarimenti per ƎE.** Otto domande brevi dove una risposta non è chiara o manca un dato che serve a un ticket aperto; le altre domande senza risposta non si richiedono. Vanno copiate dal titolo «Chiarimenti per ƎE» fino alla domanda 8 e mandate al collaboratore. Non bloccano nessun ticket: le risposte si aggiungono sotto «Risposta (Answer)», in una parte «Chiarimenti», senza riaprire il ticket, e si ripetono i controlli dei punti che toccano.
+**21/10/2026: chiarimenti per ƎE.** Sei domande brevi dove una risposta non è chiara o manca un dato che serve a un ticket aperto; le altre domande senza risposta non si richiedono, e nemmeno i dubbi sul servizio da 600 €, che non fa parte del prodotto. Vanno copiate dal titolo «Chiarimenti per ƎE» fino alla domanda 6 e mandate al collaboratore. Non bloccano nessun ticket: le risposte si aggiungono sotto «Risposta (Answer)», in una parte «Chiarimenti», senza riaprire il ticket, e si ripetono i controlli dei punti che toccano.
 
 ---
 
@@ -212,22 +215,18 @@ Come rispondere:
 
 Grazie delle risposte. Restano pochi dubbi. Come prima: solo numeri complessivi e approssimati, niente nomi o casi di una singola persona; «non so» va bene; se un numero è 1 o 2 e farebbe riconoscere qualcuno, scrivere «meno di 3».
 
-1. Il compenso di gestione a cifra fissa, in media 600 € l'anno, è lo stesso servizio da 600 € della prima domanda? ☐ sì ☐ no, è un'altra cosa: ___. Si paga ☐ per casa ☐ per proprietario.
-   [Pre-adesione]
-2. Avete scritto che il proprietario paga il compenso a parte, ma anche che alla consegna riceve un riepilogo con il «compenso trattenuto». Come si fa di solito? ☐ si paga sempre a parte ☐ si trattiene sempre dal canone ☐ dipende dal proprietario ☐ dal canone si trattengono altre spese: quali ___.
+1. Avete scritto che il proprietario paga il compenso a parte, ma anche che alla consegna riceve un riepilogo con il «compenso trattenuto». Come si fa di solito? ☐ si paga sempre a parte ☐ si trattiene sempre dal canone ☐ dipende dal proprietario ☐ dal canone si trattengono altre spese: quali ___.
    [Specifica, Pre-adesione]
-3. Avete scritto che l'incarico di gestione non è scritto, ma avete spuntato cosa comprende. Cosa vuol dire? ☐ non c'è niente di scritto: quei punti si concordano a voce ☐ c'è uno scritto solo con una parte dei proprietari (circa ___ %) ☐ quei punti sono scritti in un altro documento: quale ___.
+2. Avete scritto che l'incarico di gestione non è scritto, ma avete spuntato cosa comprende. Cosa vuol dire? ☐ non c'è niente di scritto: quei punti si concordano a voce ☐ c'è uno scritto solo con una parte dei proprietari (circa ___ %) ☐ quei punti sono scritti in un altro documento: quale ___.
    [Specifica]
-4. Le pratiche (registrazione, proroghe) sono nel servizio da 600 € ma si fanno anche pagare a parte. Per chi paga il servizio da 600 €: ☐ sono comprese ☐ si pagano a parte ☐ è compreso il lavoro, si pagano a parte solo imposte e spese ☐ dipende dalla pratica: ___.
-   [Pre-adesione]
-5. In un mese, circa, quanti canoni arrivano: al banco (contanti, carta o assegno) ___; con bonifico sul conto di ƎE ___; con bonifico sul conto del proprietario ___.
+3. In un mese, circa, quanti canoni arrivano: al banco (contanti, carta o assegno) ___; con bonifico sul conto di ƎE ___; con bonifico sul conto del proprietario ___.
    Al banco si accettano pagamenti parziali del canone? ☐ sì ☐ no ☐ solo a volte.
    Il canone si consegna al proprietario di solito entro ___ giorni dall'incasso. Proprietari che lo ricevono in contanti al banco ___; con bonifico ___; con assegno ___.
    [Specifica, Pre-adesione]
-6. Circa quante: case gestite ___; proprietari ___, di cui con più di una casa ___; inquilini intestatari ___; contratti con aggiornamento ISTAT ___.
+4. Circa quante: case gestite ___; proprietari ___, di cui con più di una casa ___; inquilini intestatari ___; contratti con aggiornamento ISTAT ___.
    Per quanti proprietari avete un'email ___? Per quanti inquilini ___?
    [Colloqui, Specifica, Pre-adesione]
-7. Quanti proprietari passano in agenzia: almeno una volta al mese ___; qualche volta l'anno ___; mai ___.
+5. Quanti proprietari passano in agenzia: almeno una volta al mese ___; qualche volta l'anno ___; mai ___.
    [Pre-adesione, Colloqui]
-8. Le 1–1,5 ore al giorno del servizio del pilota chi le farebbe? ☐ il capo ☐ un'altra persona di ƎE (ruolo, non nome) ___ ☐ una persona da trovare.
+6. Le 1–1,5 ore al giorno del servizio del pilota chi le farebbe? ☐ il capo ☐ un'altra persona di ƎE (ruolo, non nome) ___ ☐ una persona da trovare.
    [Specifica]
