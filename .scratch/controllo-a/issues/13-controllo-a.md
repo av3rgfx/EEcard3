@@ -1,7 +1,7 @@
 # Controllo A e passaggio al design
 
 Type: grilling
-Status: open
+Status: claimed
 Blocked by: 09
 Mappa: [Dalla specifica del percorso 1 al design](../map.md)
 
