@@ -24,3 +24,10 @@ Non c'è proposta di pre-adesione: le adesioni si contano nel pilota (PRODUCT.md
 - Proposta al banco: il canone si consegna ogni mese con una ricevuta firmata (risposte 20 e 22); quanti proprietari passano davvero in agenzia non si sa (chiarimento 5).
 
 **22/10/2026: ticket ridefinito.** Era «Proposta di pre-adesione: prezzo, periodicità e forma». Con la decisione «Niente colloqui né pre-adesione: dalla specifica al design» ([PRODUCT.md](../../../PRODUCT.md) §12) cadono la forma dell'impegno, chi propone, quando e come, cosa conta come impegno e la scheda dell'esito; restano prezzo, periodicità, cosa include e trattenuta dal canone, decisi dall'utente prima del pilota. Tolto il blocco della Specifica del percorso 1. Le note del 21/10 qui sopra restano valide, salvo quella sulla proposta al banco.
+
+**22/10/2026: dalla [Specifica del percorso 1](09-specifica-percorso-1.md)**, punti che toccano questo ticket (numeri delle decisioni):
+- *Più proprietari* (6): ciascun proprietario può aderire e vedere la casa per il suo rapporto; se si paga per casa o per proprietario lo decide questo ticket.
+- *La casa esce dalla gestione con l'adesione in corso* (27): l'adesione resta fino alla fine del periodo pagato, senza rinnovo; le condizioni devono dirlo. *Il proprietario disdice l'adesione con la casa in gestione* (28): esce solo la sua vista.
+- *Compenso trattenuto* (15): il riepilogo di consegna mostra l'eventuale compenso trattenuto con il riferimento alla fattura; se la quota si trattiene dal canone lo decide questo ticket.
+- *Pratiche a pagamento* (20): il prezzo compare accanto alla scadenza, nella pagina della casa.
+- *Idea dell'utente* (26): adesione a pagamento per l'ex inquilino, con un periodo gratuito; da riprendere dopo il pilota, non qui salvo diversa scelta dell'utente.

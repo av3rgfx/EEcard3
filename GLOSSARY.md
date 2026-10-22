@@ -16,9 +16,17 @@ _Da evitare_: carta (si confonde con la carta di pagamento), badge
 
 ### Servizio
 
+**Attivazione**:
+Il passaggio con cui una casa gestita entra nel servizio: scheda della casa, documenti, incarico di gestione e adesione del proprietario. Le adesioni delle altre persone possono arrivare dopo.
+_Da evitare_: iscrizione (è della persona, non della casa), onboarding, registrazione (è quella del contratto)
+
 **Casa gestita**:
 Una casa in affitto che il proprietario ha affidato in gestione all'agenzia, che segue l'inquilino e riceve il canone per suo conto.
 _Da evitare_: casa mediata (la sola mediazione non è gestione), immobile in gestione
+
+**Incarico di gestione**:
+L'accordo scritto con cui il proprietario affida all'agenzia una casa gestita e l'incasso del canone per suo conto, con il termine di consegna e le regole sui pagamenti parziali e sul compenso. È distinto dall'adesione e dall'incarico del tecnico.
+_Da evitare_: mandato (termine legale, non del servizio), contratto di gestione, incarico (da solo indica quello del tecnico)
 
 **Tecnico**:
 Un professionista abilitato a ricevere le richieste di un mestiere per una casa, indicato dall'agenzia oppure dal proprietario.
@@ -47,6 +55,22 @@ Un accesso a una parte del fascicolo concesso dal proprietario a una persona sen
 _Da evitare_: accesso a pagamento, pubblicazione
 
 ### Denaro
+
+**Canone del mese**:
+L'importo che l'inquilino deve per un mese di locazione, con le sue versioni. È pagato quando chi è incaricato di riceverlo lo ha ricevuto: l'agenzia, se il proprietario l'ha indicata, oppure il proprietario.
+_Da evitare_: affitto (indica la locazione), rata, mensilità
+
+**Incasso verificato**:
+La conferma, data da chi ha ricevuto il denaro, che un importo è arrivato. Dire «ho pagato», caricare una prova o disporre un bonifico non lo sono.
+_Da evitare_: pagato (senza dire chi lo conferma), saldato
+
+**Consegna**:
+Il passaggio con cui l'agenzia dà al proprietario il canone incassato per lui, con il rendiconto. Ha stati propri, distinti da quelli del canone: da consegnare, consegnato, consegna in ritardo.
+_Da evitare_: rimessa, versamento, ritiro
+
+**Contestazione**:
+Un disaccordo registrato da chi ha un rapporto con la casa su un canone, una consegna o un nuovo canone, con un esito: confermato, corretto o non risolto. Finché è aperta la voce resta segnata e non produce messaggi di ritardo.
+_Da evitare_: reclamo, segnalazione, ticket
 
 **Indirizzo per le bollette**:
 L'indirizzo email personale che la piattaforma dà a ogni inquilino, a cui inoltrare le proprie bollette perché entrino nel suo spazio privato.
