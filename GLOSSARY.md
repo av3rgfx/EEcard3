@@ -64,6 +64,10 @@ _Da evitare_: pagato (senza dire chi lo conferma), saldato
 Il passaggio con cui l'agenzia dà al proprietario il canone incassato per lui, con il rendiconto. Ha stati propri, distinti da quelli del canone: da consegnare, consegnato, consegna in ritardo.
 _Da evitare_: rimessa, versamento, ritiro
 
+**Contestazione**:
+Un disaccordo registrato da chi ha un rapporto con la casa su un canone, una consegna o un nuovo canone, con un esito: confermato, corretto o non risolto. Finché è aperta la voce resta segnata e non produce messaggi di ritardo.
+_Da evitare_: reclamo, segnalazione, ticket
+
 **Indirizzo per le bollette**:
 L'indirizzo email personale che la piattaforma dà a ogni inquilino, a cui inoltrare le proprie bollette perché entrino nel suo spazio privato.
 _Da evitare_: casella, collegamento della posta
