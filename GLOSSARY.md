@@ -20,6 +20,10 @@ _Da evitare_: carta (si confonde con la carta di pagamento), badge
 Una casa in affitto che il proprietario ha affidato in gestione all'agenzia, che segue l'inquilino e riceve il canone per suo conto.
 _Da evitare_: casa mediata (la sola mediazione non è gestione), immobile in gestione
 
+**Incarico di gestione**:
+L'accordo scritto con cui il proprietario affida all'agenzia una casa gestita e l'incasso del canone per suo conto, con il termine di consegna e le regole sui pagamenti parziali e sul compenso. È distinto dall'adesione e dall'incarico del tecnico.
+_Da evitare_: mandato (termine legale, non del servizio), contratto di gestione, incarico (da solo indica quello del tecnico)
+
 **Tecnico**:
 Un professionista abilitato a ricevere le richieste di un mestiere per una casa, indicato dall'agenzia oppure dal proprietario.
 _Da evitare_: fornitore, artigiano
