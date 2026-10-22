@@ -16,6 +16,10 @@ _Da evitare_: carta (si confonde con la carta di pagamento), badge
 
 ### Servizio
 
+**Attivazione**:
+Il passaggio con cui una casa gestita entra nel servizio: scheda della casa, documenti, incarico di gestione e adesione del proprietario. Le adesioni delle altre persone possono arrivare dopo.
+_Da evitare_: iscrizione (è della persona, non della casa), onboarding, registrazione (è quella del contratto)
+
 **Casa gestita**:
 Una casa in affitto che il proprietario ha affidato in gestione all'agenzia, che segue l'inquilino e riceve il canone per suo conto.
 _Da evitare_: casa mediata (la sola mediazione non è gestione), immobile in gestione
