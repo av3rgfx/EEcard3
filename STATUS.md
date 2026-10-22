@@ -1,7 +1,16 @@
 # Stato del progetto
 
-## Punto di ripresa (22 ottobre 2026)
-**Fase: studio.** Per decisione dell'utente del 22/10/2026 lo studio non fa colloqui né proposta di pre-adesione: le evidenze con i clienti arriveranno dal pilota. La mappa ha una nuova destinazione, **dalla specifica del percorso 1 al design**: specifica di «attivazione e canone del mese» confermata dall'utente, poi controllo A e passaggio al design ([.scratch/controllo-a/map.md](.scratch/controllo-a/map.md)). Ora è libera la [Specifica del percorso 1: attivazione e canone del mese](.scratch/controllo-a/issues/09-specifica-percorso-1.md), il prossimo passo. Restano liberi, senza bloccare il design, «Prezzo e condizioni dell'adesione» (prima del pilota) e «Prova sulle bollette». Non c'è codice applicativo; design, architettura e stack non sono decisi.
+## Punto di ripresa (22 ottobre 2026, sera)
+**Fase: studio.** La [Specifica del percorso 1: attivazione e canone del mese](.scratch/controllo-a/issues/09-specifica-percorso-1.md) è chiusa e **confermata dall'utente**: è in [PRODUCT.md](PRODUCT.md) §10, con le decisioni in §12 e le misure del pilota in §13. Il prossimo passo è il ticket [Controllo A e passaggio al design](.scratch/controllo-a/issues/13-controllo-a.md), ora libero: l'ultimo della mappa ([.scratch/controllo-a/map.md](.scratch/controllo-a/map.md)). Restano liberi, senza bloccare il design, «Prezzo e condizioni dell'adesione», «Prova sulle bollette» e la nuova «Ricerca: tessere fisiche», tutti prima del pilota. Non c'è codice applicativo; design, architettura e stack non sono decisi.
+
+## Fatto (22 ottobre 2026, seconda sessione)
+- Ticket «Specifica del percorso 1» rivendicato e chiuso con le skill `grilling` e `domain-modeling` (`ux-strategy` per le misure): ventinove decisioni dell'utente, una alla volta, nel ticket sotto «Commenti», ciascuna con alternative scartate e motivo. Partenza dai due contrasti parziali: l'attivazione la fa l'operatore di ƎE dentro le 1–1,5 ore al giorno, le case entrano un po' alla volta e si misura il tempo; le case con bonifico al proprietario entrano con un percorso più corto, confermato dal proprietario.
+- Specifica scritta in [PRODUCT.md](PRODUCT.md) §10 (chi fa cosa, attivazione, canone del mese, importo e scadenze, messaggi, casi limite, cosa vede ciascuno, fine dei rapporti, prove, cosa resta da fare) e confermata nell'insieme. In §12 quattro righe del 22/10; precisate «Chi è nel pilota» e «Fascicolo all'attivazione», cambiata in parte «Cosa resta fuori dalla prima versione» (gli SMS entrano, solo per chi non ha l'email). In §13 le misure: principale «i proprietari sanno del canone senza chiedere all'agenzia», con le telefonate contate da ƎE già prima del pilota; nessun valore inventato, obiettivi dopo i primi dati.
+- Proposte dell'utente accolte: accesso anche con il cellulare (codice e messaggi via SMS); ISTAT semi-automatico con controllo e approvazione; tasto «Chiama» accanto a canone e consegna, con la chiamata registrata come avviata e l'esito scritto dall'operatore; prove di funzionamento solo dell'utente, con sub-agenti e dati inventati, e numeri delle misure visti solo da lui.
+- Richieste dell'utente annotate per dopo: ticket nuovo [Ricerca: tessere fisiche, fornitori, personalizzazione, ordini e spedizioni](.scratch/controllo-a/issues/12-ricerca-tessere-fisiche.md); IMU, TARI e impianti nello scadenzario più avanti e adesione a pagamento per l'ex inquilino con un periodo gratuito (mappa, «Fuori ambito»; PRODUCT.md §5.6).
+- [GLOSSARY.md](GLOSSARY.md): nuovi attivazione, incarico di gestione, canone del mese, consegna, contestazione; incasso verificato passa da PRODUCT.md §8 al glossario con il significato deciso (conferma di chi ha ricevuto il denaro).
+- Mappa: la specifica in «Decisioni finora»; «Controllo A e passaggio al design» passa dal «Non ancora specificato» al [ticket](.scratch/controllo-a/issues/13-controllo-a.md). Aggiornato [Prezzo e condizioni dell'adesione](.scratch/controllo-a/issues/10-prezzo-condizioni-adesione.md) con i punti della specifica che lo toccano.
+- Stima dell'utente: circa 100–200 case gestite (non un dato di ƎE); i numeri sui tipi di contratto non servono.
 
 ## Fatto (22 ottobre 2026)
 - Ticket «Materiali per i colloqui» rivendicato, poi chiuso fuori ambito senza materiali preparati: alla prima domanda (quanti colloqui per gruppo) l'utente ha deciso di non fare né i colloqui né la pre-adesione e di passare al design dopo la specifica e il controllo A. Decisione in [PRODUCT.md](PRODUCT.md) §12 con il motivo; segnate come sostituite, non cancellate, «Evidenze con persone vere» (18/10), «Destinazione dello studio» e «Pre-adesione in un secondo momento» (19/10). In §13 una frase: le prime evidenze con le persone arrivano dal pilota.
@@ -33,6 +42,7 @@
 - Regola nuova in [AGENTS.md](AGENTS.md), chiesta dall'utente: le domande all'utente si fanno in parole semplici, spiegando cosa comporta ogni opzione.
 
 ## Verificato
+- `python3 tools/check_setup.py`: integrità OK (22/10/2026, sera). Link locali di PRODUCT.md, GLOSSARY.md, STATUS.md, START_HERE.md, STUDIO.md, METODO.md, mappa e ticket: nessuno rotto. Frontiera calcolata dai file dei ticket: liberi «Prova sulle bollette», «Prezzo e condizioni dell'adesione», «Ricerca: tessere fisiche» e «Controllo A e passaggio al design».
 - `python3 tools/check_setup.py`: integrità OK (22/10/2026).
 - Link locali di PRODUCT.md, GLOSSARY.md, STATUS.md, START_HERE.md, STUDIO.md, METODO.md, mappa e ticket: nessuno rotto dopo il cambio di nome del ticket 10 (22/10/2026). Frontiera calcolata dai file dei ticket: liberi «Prova sulle bollette», «Specifica del percorso 1» e «Prezzo e condizioni dell'adesione».
 - Risposte di ƎE (21/10/2026): testo estratto dal PDF (4 pagine, solo testo, nessuna immagine) e confrontato domanda per domanda con l'elenco; nessun nome, indirizzo o importo individuale nel repository.
@@ -43,7 +53,8 @@
 - Non applicabili: build, test, revisione OCR e verifiche dell'interfaccia (non c'è codice).
 
 ## Problemi aperti
-- **Si attendono i sei chiarimenti di ƎE** (ticket «Fatti dall'agenzia ƎE», sotto «Commenti»). Non bloccano ticket, ma alcune decisioni della specifica e di «Prezzo e condizioni dell'adesione» li aspettano.
+- **Dalla specifica (22/10/2026), prima del pilota:** pareri su testo dell'incarico, della ricevuta e della comunicazione del luogo del pagamento, durate di accesso dell'ex inquilino (5 anni) e dello spazio delle bollette, numero del proprietario mostrato all'inquilino, frazionamento dei contanti; valori che fissa ƎE (anticipo dei promemoria, giorni prima di avvisare il proprietario); approvazione da parte di ƎE della tabella «chi vede cosa»; conteggio delle telefonate sul canone da avviare alcune settimane prima del pilota. Elenco in PRODUCT.md §10.10.
+- **Si attendono i sei chiarimenti di ƎE** (ticket «Fatti dall'agenzia ƎE», sotto «Commenti»). Non bloccano ticket; possono riaprire una decisione della specifica (bonifici al proprietario, se sono la maggioranza) e servono a «Prezzo e condizioni dell'adesione».
 - Normattiva ed EUR-Lex hanno rifiutato molte connessioni: alcune norme sono state lette da fonti secondarie o solo in parte; l'elenco è in fondo a ogni ricerca.
 - Dal 1/1/2027 registro, cedolare secca, IVA e termini fiscali passano a nuovi testi unici: le ricerche su adempimenti, incasso e privacy vanno riverificate a gennaio 2027.
 - Pareri professionali segnalati (legale, fiscale, privacy, servizi di pagamento, antiriciclaggio): fuori dalla mappa, prima del pilota; senza colloqui (22/10) cade il parere sull'informativa dei colloqui. Dal 20/10 se ne aggiunge uno su ruoli e documenti del pilota: condizioni delle due adesioni, contratto sui dati con chi costruisce la piattaforma, accordo su marchio e software fra fondatori e ƎE. Dal 21/10: l'incarico di gestione e incasso oggi non è scritto e va scritto; ƎE non ha un consulente per la privacy, quindi informativa e registro si aggiornano con un professionista esterno.
@@ -52,11 +63,11 @@
 Le domande aperte sono nei ticket della mappa; prezzo, periodicità e trattenuta della quota dal canone in «Prezzo e condizioni dell'adesione». I fatti che conosce solo l'agenzia sono nel ticket «Fatti dall'agenzia ƎE»; i dubbi rimasti sono nei sei chiarimenti da mandare al collaboratore.
 
 ## Prossimo passo
-1. Ticket [Specifica del percorso 1: attivazione e canone del mese](.scratch/controllo-a/issues/09-specifica-percorso-1.md), ora libero: discussione con l'utente (skill `grilling` e `domain-modeling`; `ux-strategy` per le misure di successo). Se non sta in una sessione, si divide in «attivazione» e «canone del mese».
-2. L'utente manda al collaboratore i sei «Chiarimenti per ƎE» (ticket [Fatti dall'agenzia ƎE](.scratch/controllo-a/issues/06-fatti-agenzia.md), sotto «Commenti»). Quando tornano, una sessione li registra nel ticket, senza riaprirlo, e aggiorna le note dei ticket che li aspettano.
-3. Quando l'utente vuole, prima del pilota: [Prezzo e condizioni dell'adesione](.scratch/controllo-a/issues/10-prezzo-condizioni-adesione.md). Resta libera anche «Prova sulle bollette», che richiede i fondatori e il personale di ƎE volontari e serve per le bollette dell'inquilino.
+1. Ticket [Controllo A e passaggio al design](.scratch/controllo-a/issues/13-controllo-a.md), ora libero: l'utente conferma voce per voce le cinque voci del controllo A (METODO.md, passo 5) con la specifica e le ricerche; alla chiusura si chiude la mappa e si avvia il design (passo 6).
+2. L'utente manda al collaboratore i sei «Chiarimenti per ƎE» (ticket [Fatti dall'agenzia ƎE](.scratch/controllo-a/issues/06-fatti-agenzia.md), sotto «Commenti»); cosa ricontrollare quando tornano è nella risposta della [Specifica](.scratch/controllo-a/issues/09-specifica-percorso-1.md), sotto «Da ricontrollare».
+3. Prima del pilota, quando l'utente vuole: [Prezzo e condizioni dell'adesione](.scratch/controllo-a/issues/10-prezzo-condizioni-adesione.md), [Ricerca: tessere fisiche](.scratch/controllo-a/issues/12-ricerca-tessere-fisiche.md), «Prova sulle bollette».
 
 Messaggi per le prossime sessioni in [START_HERE.md](START_HERE.md).
 
 ## Ultima verifica
-22/10/2026, `python3 tools/check_setup.py`: integrità OK. Programmi facoltativi assenti nell'ambiente cloud: `ocr`, `playwright-cli`.
+22/10/2026 (sera), `python3 tools/check_setup.py`: integrità OK. Programmi facoltativi assenti nell'ambiente cloud: `ocr`, `playwright-cli`.

@@ -2,22 +2,19 @@
 
 Da incollare in Claude Code o Codex aperto su questo repository. La skill Wayfinder parte solo su richiesta: il messaggio comincia con `/wayfinder`.
 
-Il 22/10/2026 l'utente ha deciso: niente colloqui né pre-adesione; dopo la specifica del percorso 1 e il controllo A si passa al design. Il prossimo ticket è **«Specifica del percorso 1: attivazione e canone del mese»**, ora libero. Messaggio:
+La specifica del percorso 1 è chiusa e confermata dall'utente (22/10/2026, [PRODUCT.md](PRODUCT.md) §10). Il prossimo ticket è **«Controllo A e passaggio al design»**, l'ultimo della mappa, ora libero. Messaggio:
 
 ---
 
-/wayfinder .scratch/controllo-a/map.md — ticket «Specifica del percorso 1: attivazione e canone del mese» (.scratch/controllo-a/issues/09-specifica-percorso-1.md)
+/wayfinder .scratch/controllo-a/map.md — ticket «Controllo A e passaggio al design» (.scratch/controllo-a/issues/13-controllo-a.md)
 
-Leggi AGENTS.md, STATUS.md, la mappa `.scratch/controllo-a/map.md` e il ticket, compresi i «Commenti (Comments)». Poi PRODUCT.md §7, §12 e §13, GLOSSARY.md e, solo per le parti che servono, le «Risposte (Answer)» dei ticket chiusi e le ricerche in docs/ricerca/ che il ticket cita. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice o decisioni di tentativi precedenti.
+Leggi AGENTS.md, STATUS.md, la mappa `.scratch/controllo-a/map.md` e il ticket. Poi PRODUCT.md §10, §12 e §13, docs/METODO.md (passo 5) e docs/STUDIO.md (destinazione e criteri di arrivo); le ricerche in docs/ricerca/ e le «Risposte (Answer)» dei ticket chiusi solo per le parti che servono a una voce. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice o decisioni di tentativi precedenti.
 
-- Rivendica il ticket (`Status: claimed`) prima di lavorare. Lavora solo su questo ticket, con le skill `grilling` e `domain-modeling`; `ux-strategy` per le misure di successo del pilota, senza valori inventati.
-- Comincia dai due contrasti parziali sotto «Commenti» (chi fa l'attivazione con meno di 3 persone in ƎE; canoni pagati con bonifico al proprietario), poi l'attivazione, poi il canone del mese.
-- Le decisioni chiedimele una alla volta, in parole semplici, con una raccomandazione motivata e le conseguenze di ogni opzione. Prezzo, periodicità e trattenuta della quota non si decidono qui: sono in «Prezzo e condizioni dell'adesione».
-- Registra la specifica in PRODUCT.md §10, le misure in §13, le decisioni in §12, i termini decisi in GLOSSARY.md. Se non sta in una sessione, dividi il ticket in «attivazione» e «canone del mese»: il ticket resta `claimed` e annoti a che punto sei sotto «Commenti (Comments)».
-- Alla chiusura, «Controllo A e passaggio al design» passa dal «Non ancora specificato» della mappa a un ticket.
-- Non scrivere codice applicativo, non scegliere lo stack, non disegnare schermate.
+- Rivendica il ticket (`Status: claimed`) prima di lavorare. Lavora solo su questo ticket, con le skill `grilling` e `domain-modeling`.
+- Passa con me le cinque voci del controllo A una alla volta (primo cliente e promessa; primo percorso completo; cosa resta fuori; chi eroga il servizio; se e come la piattaforma tocca il denaro): per ciascuna dimmi in parole semplici dove sta la decisione, cosa la sostiene e cosa manca, con una raccomandazione; la conferma è mia. Chiarimenti di ƎE, pareri, prezzo e tessere fisiche si segnalano, non bloccano il design.
+- Alla chiusura registra il controllo A in PRODUCT.md §12, chiudi la mappa con la destinazione raggiunta e aggiorna docs/STUDIO.md. Non scrivere codice applicativo, non scegliere lo stack, non disegnare schermate.
 
-Chiudi la sessione aggiornando STATUS.md e START_HERE.md con il messaggio per la sessione successiva, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
+Chiudi la sessione aggiornando STATUS.md e START_HERE.md con il messaggio per avviare il design (docs/METODO.md, passo 6), poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 
 ---
 
@@ -31,7 +28,7 @@ Leggi AGENTS.md, STATUS.md, la mappa `.scratch/controllo-a/map.md` e il ticket; 
 
 - Abbina ogni risposta al numero del chiarimento; se non si capisce a quale appartiene, chiedimelo invece di supporre.
 - Registrale sotto «Risposta (Answer)», in una parte «Chiarimenti», senza riaprire il ticket: solo forma aggregata, un numero di 1 o 2 che fa riconoscere qualcuno diventa «meno di 3», niente allegati nel repository.
-- Ripeti i controlli dei punti che toccano e aggiorna le note nei ticket aperti che li aspettano (Specifica del percorso 1, Prezzo e condizioni dell'adesione). Un contrasto con PRODUCT.md §12 si segnala nella Specifica e me lo dici in parole semplici. Le decisioni non si prendono qui.
+- Ripeti i controlli dei punti che toccano, compresi quelli «Da ricontrollare» nella risposta del ticket chiuso «Specifica del percorso 1» (.scratch/controllo-a/issues/09-specifica-percorso-1.md), e aggiorna le note nei ticket aperti che li aspettano (Prezzo e condizioni dell'adesione). Un contrasto con PRODUCT.md §10 o §12 me lo dici in parole semplici. Le decisioni non si prendono qui.
 - Non scrivere codice applicativo, non scegliere lo stack, non disegnare schermate.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
@@ -71,6 +68,21 @@ Leggi AGENTS.md, STATUS.md, la mappa `.scratch/controllo-a/map.md` e il ticket, 
 - Non scrivere codice applicativo, non scegliere lo stack, non disegnare schermate. La prova della parte 3, se si fa, è usa e getta (skill `prototype`) e non resta nel repository.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md con il messaggio per la sessione successiva, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
+
+---
+
+## Prima del pilota: Ricerca sulle tessere fisiche
+
+Chiesta dall'utente il 22/10/2026; non blocca il design. Messaggio:
+
+/wayfinder .scratch/controllo-a/map.md — ticket «Ricerca: tessere fisiche, fornitori, personalizzazione, ordini e spedizioni» (.scratch/controllo-a/issues/12-ricerca-tessere-fisiche.md)
+
+Leggi AGENTS.md, STATUS.md, la mappa e il ticket, poi PRODUCT.md §5.6 e la decisione «Tessera (T6)» in §12. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice o decisioni di tentativi precedenti.
+
+- Rivendica il ticket (`Status: claimed`) prima di lavorare. Fai la ricerca con la skill `research`, su fonti primarie con la data di lettura, in docs/ricerca/tessere.md: fornitori, costi per piccole tirature, personalizzazione su richiesta, ordini e scorte, consegna al banco, ordine dalla piattaforma con spedizione a pagamento, blocco e sostituzione.
+- Nessun ordine, preventivo chiesto, account o contatto con fornitori senza la mia autorizzazione. Le decisioni che emergono me le porti una alla volta, in parole semplici.
+
+Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 
 ---
 
