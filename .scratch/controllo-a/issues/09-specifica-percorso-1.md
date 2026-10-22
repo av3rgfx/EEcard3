@@ -1,7 +1,7 @@
 # Specifica del percorso 1: attivazione e canone del mese
 
 Type: grilling
-Status: open
+Status: claimed
 Blocked by: 01, 02, 03, 05, 06, 11
 Mappa: [Dalla specifica del percorso 1 al design](../map.md)
 
