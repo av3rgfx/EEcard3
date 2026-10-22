@@ -3,7 +3,7 @@
 Type: grilling
 Status: resolved
 Blocked by: 01, 03
-Mappa: [Superare il controllo A con le evidenze](../map.md)
+Mappa: [Dalla specifica del percorso 1 al design](../map.md)
 
 ## Domanda (Question)
 
@@ -31,7 +31,7 @@ Risolto il 20/10/2026 con le skill `grilling` e `domain-modeling`, una domanda a
 
 **Documenti che ne seguono**, da far verificare a un professionista prima del pilota (fuori dalla mappa): condizioni dell'adesione del proprietario; condizioni dell'adesione dell'inquilino con lo spazio delle bollette; contratto sui dati fra ƎE e chi costruisce la piattaforma, se esterno; accordo su proprietà di marchio e software fra fondatori e ƎE.
 
-**Ticket aggiornati:** [Specifica del percorso 1: attivazione e canone del mese](09-specifica-percorso-1.md) (ruoli, documenti all'attivazione, tessera dell'inquilino, due casi limite); [Proposta di pre-adesione: prezzo, periodicità e forma](10-proposta-pre-adesione.md) (la proposta la fa ƎE, l'impegno è con ƎE); [Materiali per i colloqui](07-materiali-colloqui.md) (titolare dei colloqui ƎE; tema della fiducia nello spazio delle bollette).
+**Ticket aggiornati:** [Specifica del percorso 1: attivazione e canone del mese](09-specifica-percorso-1.md) (ruoli, documenti all'attivazione, tessera dell'inquilino, due casi limite); [Prezzo e condizioni dell'adesione](10-prezzo-condizioni-adesione.md) (la proposta la fa ƎE, l'impegno è con ƎE); [Materiali per i colloqui](07-materiali-colloqui.md) (titolare dei colloqui ƎE; tema della fiducia nello spazio delle bollette).
 
 **Da ricontrollare quando arrivano le risposte di ƎE**
 - *Domanda 5 (incarico scritto).* Se l'incarico non c'è o riguarda solo una parte dei proprietari, va scritto comunque (lo chiede la [ricerca sull'incasso](01-incasso-canoni-al-banco.md)), separato dalle condizioni dell'adesione. Se dice che ƎE incassa «a nome proprio», va segnalato al professionista del parere.

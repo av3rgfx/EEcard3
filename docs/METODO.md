@@ -4,7 +4,7 @@ Il percorso di lavoro proposto il 18 ottobre 2026. Non è un piano di sviluppo: 
 
 ## Principi
 
-1. **Prima le evidenze, poi le schermate.** Un'idea discussa non è un bisogno verificato. Non costruire con qualità da produzione ciò che nessuno ha ancora confermato di volere.
+1. **Prima le evidenze, poi le schermate.** Un'idea discussa non è un bisogno verificato. Non costruire con qualità da produzione ciò che nessuno ha ancora confermato di volere. In EECard3 le evidenze sono le ricerche e i fatti dell'agenzia; quelle con i clienti arrivano dal pilota (vedi passo 4).
 2. **Le decisioni sono dell'utente; i fatti li cerca l'agente.** All'utente si chiedono solo le decisioni, poche alla volta, ognuna con una raccomandazione motivata. I fatti si trovano nelle fonti.
 3. **Un prototipo, una domanda.** I prototipi sono usa e getta, rispondono a una domanda precisa e confrontano alternative davvero diverse.
 4. **Un fatto in un solo posto.** Idea e requisiti in PRODUCT.md, design in DESIGN.md, tecnica in ARCHITECTURE.md, stato in STATUS.md, ricerche in `docs/ricerca/`, discussioni nei ticket di Wayfinder.
@@ -30,6 +30,8 @@ Il percorso di lavoro proposto il 18 ottobre 2026. Non è un piano di sviluppo: 
 - Prima della ricerca su persone conviene chiudere almeno: canali di pagamento (F), adempimenti dell'affitto (D), norme (I), mercato (J).
 
 ### 4. Ricerca con le persone
+**In EECard3 questo passo si salta** (decisione dell'utente del 22/10/2026, [PRODUCT.md](../PRODUCT.md) §12): niente colloqui né proposta di pre-adesione nello studio; le evidenze con i clienti arrivano dal pilota (passo 9). L'ordine resta: specifica del primo percorso e controllo A (passo 5), design, architettura, controllo B, codice. Il testo che segue resta come metodo generale.
+
 - Con la skill `ux-research` l'agente prepara piano, criteri di selezione, guida al colloquio e schede di sintesi. L'utente o l'agenzia svolgono i colloqui con clienti, operatori e tecnici veri.
 - I risultati entrano nel repository solo anonimi e senza dati personali.
 - Il numero di colloqui e le misure si scelgono nel piano, in base alla domanda; nessuna soglia generica.
@@ -71,7 +73,7 @@ Il percorso di lavoro proposto il 18 ottobre 2026. Non è un piano di sviluppo: 
 
 ### 9. Pilota
 - Solo con l'autorizzazione dell'utente: dati reali, privacy e conservazione decise, backup provato, servizio organizzato.
-- Misurare ciò che il passo 5 ha definito come successo.
+- Misurare ciò che il passo 5 ha definito come successo. In EECard3 è la prima evidenza raccolta con i clienti: adesioni, uso, rinnovi.
 
 ## Skill per passo
 
@@ -80,7 +82,7 @@ Il percorso di lavoro proposto il 18 ottobre 2026. Non è un piano di sviluppo: 
 | 1 Riallineamento | `grilling`, `domain-modeling` |
 | 2 Mappa | `wayfinder` (su richiesta dell'utente) |
 | 3 Ricerca documentale | `research` |
-| 4 Ricerca con persone | `ux-research` |
+| 4 Ricerca con persone (saltato in EECard3) | `ux-research` |
 | 5 Decisioni di prodotto | `ux-strategy`, `grilling` |
 | 6 Design | `prototype`, `ux-writing`, `apple-design`, `emil-design-eng`, `mobile-native`, `break-ui`, `accessibility-audit` |
 | 7 Architettura | `ponytail`, `domain-modeling`, `research` |

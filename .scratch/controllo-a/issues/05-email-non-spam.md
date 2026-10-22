@@ -3,7 +3,7 @@
 Type: research
 Status: resolved
 Blocked by: —
-Mappa: [Superare il controllo A con le evidenze](../map.md)
+Mappa: [Dalla specifica del percorso 1 al design](../map.md)
 
 ## Domanda (Question)
 

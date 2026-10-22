@@ -1,23 +1,23 @@
-# Superare il controllo A con le evidenze
+# Dalla specifica del percorso 1 al design
 
 Type: map (wayfinder:map)
-Aperta: 19/10/2026
+Aperta: 19/10/2026; destinazione ridisegnata il 22/10/2026 (prima: «Superare il controllo A con le evidenze»)
 
 ## Destinazione (Destination)
 
-La specifica del primo percorso completo, **attivazione e canone del mese per le case gestite da ƎE**, confermata dall'utente e sostenuta da colloqui con persone vere, da una prova di pre-adesione con un prezzo e dalle ricerche che potrebbero cambiarla; con queste evidenze si spunta il controllo A ([docs/METODO.md](../../docs/METODO.md), passo 5). Criteri di arrivo in [docs/STUDIO.md](../../docs/STUDIO.md), in cima.
+La specifica del primo percorso completo, **attivazione e canone del mese per le case gestite da ƎE**, confermata dall'utente; poi il controllo A ([docs/METODO.md](../../docs/METODO.md), passo 5) e il passaggio al design (passo 6). Niente colloqui né pre-adesione: le evidenze con i clienti arrivano dal pilota (decisione dell'utente del 22/10/2026, [PRODUCT.md](../../PRODUCT.md) §12). Criteri di arrivo in [docs/STUDIO.md](../../docs/STUDIO.md), in cima.
 
 ## Note (Notes)
 
 - **Dominio:** servizio per la cura della casa di un'agenzia immobiliare (ƎE). Parole decise in [GLOSSARY.md](../../GLOSSARY.md); provvisorie in [PRODUCT.md](../../PRODUCT.md) §8. Regole del dominio in PRODUCT.md §7.
 - **Regole del progetto:** [AGENTS.md](../../AGENTS.md). Fase di studio: niente codice applicativo, niente stack, niente schermate. Repository pulito: nessun riuso di tentativi precedenti. Solo dati inventati; nessun servizio, account o messaggio reale senza autorizzazione.
-- **Skill per tipo di ticket:** `research` per le ricerche (un file per tema in `docs/ricerca/`, fonti primarie con data, parere professionale segnalato); `ux-research` per i materiali dei colloqui e della pre-adesione; `grilling` e `domain-modeling` per le decisioni; `ux-strategy` per proposta di valore e misure di successo; `prototype` solo per una prova usa e getta con una domanda precisa.
+- **Skill per tipo di ticket:** `research` per le ricerche (un file per tema in `docs/ricerca/`, fonti primarie con data, parere professionale segnalato); `grilling` e `domain-modeling` per le decisioni; `ux-strategy` per proposta di valore e misure di successo; `prototype` solo per una prova usa e getta con una domanda precisa.
 - **Le decisioni sono dell'utente, i fatti li cerca l'agente.** I fatti che conosce solo l'agenzia si chiedono all'agenzia con un elenco preciso.
 - **Dove si registra:** decisioni di prodotto in PRODUCT.md §12 (con data e motivo), la specifica del percorso 1 in PRODUCT.md §10, le misure di successo in §13; la discussione resta nel ticket. Niente registri paralleli.
 - **Tracker:** Local Markdown ([riferimento](../../.agents/skills/setup-matt-pocock-skills/issue-tracker-local.md)). Un file per ticket in `issues/`; righe `Type:`, `Status:` (`open`, `claimed`, `resolved`) e `Blocked by:`. Intestazioni doppie come nei modelli di [templates/](../../templates/): «Domanda (Question)», «Risposta (Answer)», «Commenti (Comments)». Nessun ticket, commento o branch remoto: le ricerche si salvano nel branch di lavoro della sessione.
-- **Persone vere:** l'agente prepara, l'agenzia conduce; nel repository entrano solo sintesi anonime, senza dati personali. Mai partecipanti, citazioni o risultati inventati.
-- **Impianto deciso dall'utente il 19/10/2026:** la proposta di pre-adesione arriva dopo i colloqui e la specifica; la prova sulle bollette segue lo schema autorizzato (entrambe in PRODUCT.md §12); ai ticket chiesti si aggiunge «Fatti dall'agenzia ƎE»; i pareri professionali restano fuori dalla mappa (vedi «Fuori ambito»).
-- **Percorso previsto:** ricerche → fatti dall'agenzia → materiali → colloqui → specifica del percorso 1 → proposta di pre-adesione → controllo A. La prova sulle bollette e la decisione su chi fornisce la piattaforma corrono in parallelo.
+- **Persone vere:** dal 22/10/2026 lo studio non fa colloqui né pre-adesione (PRODUCT.md §12); le evidenze con i clienti arrivano dal pilota. Mai partecipanti, citazioni o risultati inventati.
+- **Impianto deciso dall'utente:** il 19/10/2026 la prova sulle bollette segue lo schema autorizzato (PRODUCT.md §12), si aggiunge «Fatti dall'agenzia ƎE» e i pareri professionali restano fuori dalla mappa (vedi «Fuori ambito»). Il 22/10/2026 cadono colloqui e pre-adesione; prezzo e condizioni dell'adesione si decidono prima del pilota.
+- **Percorso previsto:** ricerche → fatti dall'agenzia → specifica del percorso 1 → controllo A → design. In parallelo, senza bloccare il design del percorso 1: [Prezzo e condizioni dell'adesione](issues/10-prezzo-condizioni-adesione.md), da chiudere prima del pilota, e [Prova sulle bollette](issues/08-prova-bollette.md), che serve quando si lavora sulle bollette dell'inquilino.
 - **Ricerche del 19/10/2026:** svolte da cinque agenti in parallelo (skill `research`); le decisioni che hanno fatto emergere sono state smistate nei ticket aperti, non decise.
 
 ## Decisioni finora (Decisions so far)
@@ -34,16 +34,18 @@ La specifica del primo percorso completo, **attivazione e canone del mese per le
 
 ## Non ancora specificato (Not yet specified)
 
-- **Svolgimento dei colloqui e sintesi anonime.** Quanti, con chi, in che ordine e con quali tempi lo dirà il piano di [Materiali per i colloqui](issues/07-materiali-colloqui.md); da lì uno o più compiti, che bloccano la [Specifica del percorso 1: attivazione e canone del mese](issues/09-specifica-percorso-1.md).
-- **Conferma o correzione delle decisioni del 18–19/10/2026** (PRODUCT.md §12) che non riguardano solo il percorso 1 (chi paga, canale, bollette dell'inquilino, tessera): diventerà uno o più ticket di discussione quando si sapranno i temi emersi dalle sintesi.
-- **Decisione sul secondo gruppo** (fascicolo per la vendita), dopo i colloqui con alcuni venditori.
-- **Esito della pre-adesione**: la proposta fatta davvero e il risultato registrato; prende forma con la [Proposta di pre-adesione: prezzo, periodicità e forma](issues/10-proposta-pre-adesione.md).
-- **Controllo A**: la verifica finale, voce per voce, con le evidenze raccolte.
+- **Controllo A e passaggio al design**: la verifica finale, voce per voce (METODO.md, passo 5), con la specifica e le ricerche; poi la chiusura della mappa e l'avvio del passo 6.
 
 ## Fuori ambito (Out of scope)
 
-- **Design, architettura, stack e nome del prodotto**: esclusi dalla destinazione (STUDIO.md); vengono dopo il controllo A (METODO.md, passi 6–7). Con il nome va anche il logo del mittente nella casella, che richiede un marchio registrato o un logo già mostrato sul dominio ([ricerca sulle email](../../docs/ricerca/email.md)).
-- **Specifiche dei percorsi 2–4** (richiesta d'aiuto, bollette dell'inquilino, report annuale): la destinazione è la specifica del percorso 1. I colloqui possono comunque raccogliere evidenze su questi temi.
-- **Ciò che PRODUCT.md §12 (19/10/2026) dichiara fuori dalla prima versione**: livelli, «plus» ed extra per l'inquilino; più agenzie e vendita ad altre agenzie; wallet, contactless, terminale da banco e totem; pagamento nell'app, contanti nei punti convenzionati, solleciti e chiamate automatiche all'inquilino; collegamento della casella e fatture elettroniche; WhatsApp, SMS, app iPhone e traduzioni; abbonamento per i tecnici e preventivi per lavori grandi; fascicolo per la vendita come servizio, condivisione dello storico con chi vuole comprare e sito vetrina; consulenza annuale inclusa, piano di investimento, casa in 3D, domotica, assistente AI e bozze di contratti. Resta in ambito la sola *decisione* sul secondo gruppo, che la destinazione richiede.
+- **Il lavoro di design, architettura, stack e nome del prodotto**: la destinazione si ferma all'avvio del design (STUDIO.md); vengono dopo il controllo A (METODO.md, passi 6–7). Con il nome va anche il logo del mittente nella casella, che richiede un marchio registrato o un logo già mostrato sul dominio ([ricerca sulle email](../../docs/ricerca/email.md)).
+- **Specifiche dei percorsi 2–4** (richiesta d'aiuto, bollette dell'inquilino, report annuale): la destinazione è la specifica del percorso 1.
+- **Ciò che PRODUCT.md §12 (19/10/2026) dichiara fuori dalla prima versione**: livelli, «plus» ed extra per l'inquilino; più agenzie e vendita ad altre agenzie; wallet, contactless, terminale da banco e totem; pagamento nell'app, contanti nei punti convenzionati, solleciti e chiamate automatiche all'inquilino; collegamento della casella e fatture elettroniche; WhatsApp, SMS, app iPhone e traduzioni; abbonamento per i tecnici e preventivi per lavori grandi; fascicolo per la vendita come servizio, condivisione dello storico con chi vuole comprare e sito vetrina; consulenza annuale inclusa, piano di investimento, casa in 3D, domotica, assistente AI e bozze di contratti.
 - **Misura del tempo reale dell'agenzia per cliente e dei tempi della richiesta**: si fa nel pilota (PRODUCT.md §12, T3), dopo lo studio.
 - **Ottenere i pareri professionali** (legale, fiscale, privacy) che le ricerche segnalano: si fa prima del pilota (METODO.md, passo 9), per decisione dell'utente del 19/10/2026. Eccezione: un punto che impedisce di specificare il percorso 1 diventa una decisione in questa mappa. Il parere sui servizi di pagamento (passaggio del canone da ƎE al proprietario) riguarda la pratica attuale dell'agenzia e non impedisce la specifica.
+- **Colloqui, sintesi e pre-adesione** (decisione dell'utente del 22/10/2026, PRODUCT.md §12): le evidenze con i clienti arrivano dal pilota.
+  - [Materiali per i colloqui](issues/07-materiali-colloqui.md): chiuso senza materiali preparati, perché i colloqui non si fanno.
+  - Svolgimento dei colloqui e sintesi anonime: non si fanno.
+  - Conferma o correzione delle decisioni del 18–19/10/2026 con le sintesi: le decisioni restano come sono; la verifica passa al pilota.
+  - Esito della pre-adesione: non c'è proposta; prezzo e condizioni le decide l'utente, le adesioni si contano nel pilota.
+  - Decisione sul secondo gruppo (fascicolo per la vendita): si prende dopo il pilota, per scelta dell'utente del 22/10/2026; il fascicolo per la vendita era già fuori dalla prima versione.

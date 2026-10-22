@@ -3,7 +3,7 @@
 Type: task
 Status: resolved
 Blocked by: 01, 03
-Mappa: [Superare il controllo A con le evidenze](../map.md)
+Mappa: [Dalla specifica del percorso 1 al design](../map.md)
 
 ## Domanda (Question)
 
@@ -81,7 +81,7 @@ Il servizio da 600 € è di ƎE e non fa parte del prodotto: le risposte 1–4 
 
 **Domande 5 e 6 per il ticket chiuso** [Chi fornisce la piattaforma e chi vende l'adesione nel pilota](11-chi-fornisce-la-piattaforma.md): esito dei punti «Da ricontrollare» nella [Specifica del percorso 1: attivazione e canone del mese](09-specifica-percorso-1.md). Le decisioni del 20/10/2026 reggono; si aggiungono documenti da preparare e un parere prima del pilota.
 
-**Ticket aggiornati:** [Specifica del percorso 1: attivazione e canone del mese](09-specifica-percorso-1.md), [Materiali per i colloqui](07-materiali-colloqui.md), [Proposta di pre-adesione: prezzo, periodicità e forma](10-proposta-pre-adesione.md).
+**Ticket aggiornati:** [Specifica del percorso 1: attivazione e canone del mese](09-specifica-percorso-1.md), [Materiali per i colloqui](07-materiali-colloqui.md), [Prezzo e condizioni dell'adesione](10-prezzo-condizioni-adesione.md).
 
 ## Commenti (Comments)
 
@@ -90,7 +90,7 @@ Il servizio da 600 € è di ƎE e non fa parte del prodotto: le risposte 1–4 
 - **Tenute** le fasce d'età dei proprietari e le lingue degli inquilini, solo in forma aggregata, per scegliere chi invitare ai colloqui.
 - Non si chiede se i tecnici fatturano: nessun ticket della mappa ne ha bisogno.
 
-Fra parentesi quadre c'è il ticket a cui serve ciascuna domanda: **Specifica** = [Specifica del percorso 1: attivazione e canone del mese](09-specifica-percorso-1.md); **Colloqui** = [Materiali per i colloqui](07-materiali-colloqui.md); **Pre-adesione** = [Proposta di pre-adesione: prezzo, periodicità e forma](10-proposta-pre-adesione.md); **Piattaforma** = [Chi fornisce la piattaforma e chi vende l'adesione nel pilota](11-chi-fornisce-la-piattaforma.md).
+Fra parentesi quadre c'è il ticket a cui serve ciascuna domanda: **Specifica** = [Specifica del percorso 1: attivazione e canone del mese](09-specifica-percorso-1.md); **Colloqui** = [Materiali per i colloqui](07-materiali-colloqui.md); **Pre-adesione** = [Prezzo e condizioni dell'adesione](10-prezzo-condizioni-adesione.md); **Piattaforma** = [Chi fornisce la piattaforma e chi vende l'adesione nel pilota](11-chi-fornisce-la-piattaforma.md).
 
 ---
 

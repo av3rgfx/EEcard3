@@ -2,20 +2,19 @@
 
 Da incollare in Claude Code o Codex aperto su questo repository. La skill Wayfinder parte solo su richiesta: il messaggio comincia con `/wayfinder`.
 
-Le risposte dell'agenzia sono registrate e il ticket «Fatti dall'agenzia ƎE» è chiuso. Il prossimo ticket consigliato è **«Materiali per i colloqui»**, ora libero. Messaggio:
+Il 22/10/2026 l'utente ha deciso: niente colloqui né pre-adesione; dopo la specifica del percorso 1 e il controllo A si passa al design. Il prossimo ticket è **«Specifica del percorso 1: attivazione e canone del mese»**, ora libero. Messaggio:
 
 ---
 
-/wayfinder .scratch/controllo-a/map.md — ticket «Materiali per i colloqui» (.scratch/controllo-a/issues/07-materiali-colloqui.md)
+/wayfinder .scratch/controllo-a/map.md — ticket «Specifica del percorso 1: attivazione e canone del mese» (.scratch/controllo-a/issues/09-specifica-percorso-1.md)
 
-Leggi AGENTS.md, STATUS.md, la mappa `.scratch/controllo-a/map.md` e il ticket, compresi i fatti dell'agenzia sotto «Commenti (Comments)». Poi, solo per le parti che servono, la «Risposta (Answer)» del ticket «Fatti dall'agenzia ƎE» (.scratch/controllo-a/issues/06-fatti-agenzia.md) e docs/ricerca/privacy-dati.md sezione 10 (colloqui dello studio). Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice o decisioni di tentativi precedenti.
+Leggi AGENTS.md, STATUS.md, la mappa `.scratch/controllo-a/map.md` e il ticket, compresi i «Commenti (Comments)». Poi PRODUCT.md §7, §12 e §13, GLOSSARY.md e, solo per le parti che servono, le «Risposte (Answer)» dei ticket chiusi e le ricerche in docs/ricerca/ che il ticket cita. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice o decisioni di tentativi precedenti.
 
-- Rivendica il ticket (`Status: claimed`) prima di lavorare. Lavora solo su questo ticket, con la skill `ux-research`.
-- Le scelte che spettano a me (quanti colloqui per gruppo, chi li conduce, eventuale ringraziamento ai partecipanti, registrazione dell'audio, verifica di informativa e consenso da parte di un professionista, dove salvare i materiali) chiedimele una alla volta, in parole semplici, con una raccomandazione motivata e le conseguenze di ogni opzione.
-- Il piano deve stare nei limiti indicati da ƎE: meno di 3 persone per condurre, 8 ore in tutto, in agenzia o al telefono. ƎE non ha un consulente per la privacy.
-- Poi prepara piano, criteri di selezione e invito, guide per gruppo, informativa e consenso e scheda di sintesi anonima, pronti da usare. Nessun dato personale nel repository; mai partecipanti, citazioni o risultati inventati.
-- Se il lavoro non sta in una sessione, il ticket resta `claimed` e annoti a che punto sei sotto «Commenti (Comments)».
-- Alla chiusura, «Svolgimento dei colloqui e sintesi anonime» passa dal «Non ancora specificato» della mappa a uno o più ticket, da aggiungere fra i blocchi della «Specifica del percorso 1: attivazione e canone del mese».
+- Rivendica il ticket (`Status: claimed`) prima di lavorare. Lavora solo su questo ticket, con le skill `grilling` e `domain-modeling`; `ux-strategy` per le misure di successo del pilota, senza valori inventati.
+- Comincia dai due contrasti parziali sotto «Commenti» (chi fa l'attivazione con meno di 3 persone in ƎE; canoni pagati con bonifico al proprietario), poi l'attivazione, poi il canone del mese.
+- Le decisioni chiedimele una alla volta, in parole semplici, con una raccomandazione motivata e le conseguenze di ogni opzione. Prezzo, periodicità e trattenuta della quota non si decidono qui: sono in «Prezzo e condizioni dell'adesione».
+- Registra la specifica in PRODUCT.md §10, le misure in §13, le decisioni in §12, i termini decisi in GLOSSARY.md. Se non sta in una sessione, dividi il ticket in «attivazione» e «canone del mese»: il ticket resta `claimed` e annoti a che punto sei sotto «Commenti (Comments)».
+- Alla chiusura, «Controllo A e passaggio al design» passa dal «Non ancora specificato» della mappa a un ticket.
 - Non scrivere codice applicativo, non scegliere lo stack, non disegnare schermate.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md con il messaggio per la sessione successiva, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
@@ -32,7 +31,7 @@ Leggi AGENTS.md, STATUS.md, la mappa `.scratch/controllo-a/map.md` e il ticket; 
 
 - Abbina ogni risposta al numero del chiarimento; se non si capisce a quale appartiene, chiedimelo invece di supporre.
 - Registrale sotto «Risposta (Answer)», in una parte «Chiarimenti», senza riaprire il ticket: solo forma aggregata, un numero di 1 o 2 che fa riconoscere qualcuno diventa «meno di 3», niente allegati nel repository.
-- Ripeti i controlli dei punti che toccano e aggiorna le note nei ticket aperti che li aspettano (Specifica del percorso 1, Proposta di pre-adesione, Materiali per i colloqui). Un contrasto con PRODUCT.md §12 si segnala nella Specifica e me lo dici in parole semplici. Le decisioni non si prendono qui.
+- Ripeti i controlli dei punti che toccano e aggiorna le note nei ticket aperti che li aspettano (Specifica del percorso 1, Prezzo e condizioni dell'adesione). Un contrasto con PRODUCT.md §12 si segnala nella Specifica e me lo dici in parole semplici. Le decisioni non si prendono qui.
 - Non scrivere codice applicativo, non scegliere lo stack, non disegnare schermate.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
@@ -41,9 +40,25 @@ Risposte di ƎE ai chiarimenti:
 
 ---
 
+## Quando si vuole: Prezzo e condizioni dell'adesione
+
+Non blocca il design; va chiuso prima del pilota. Messaggio:
+
+/wayfinder .scratch/controllo-a/map.md — ticket «Prezzo e condizioni dell'adesione» (.scratch/controllo-a/issues/10-prezzo-condizioni-adesione.md)
+
+Leggi AGENTS.md, STATUS.md, la mappa `.scratch/controllo-a/map.md` e il ticket, compresi i «Commenti (Comments)». Poi, solo per le parti che servono, PRODUCT.md §6 e §12 e docs/ricerca/mercato.md. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice o decisioni di tentativi precedenti.
+
+- Rivendica il ticket (`Status: claimed`) prima di lavorare. Lavora solo su questo ticket, con le skill `grilling` e `domain-modeling`.
+- Le decisioni (prezzo e periodicità, cosa include, rapporto con il compenso di gestione e trattenuta dal canone) chiedimele una alla volta, in parole semplici, con una raccomandazione motivata e le conseguenze di ogni opzione.
+- Registra le decisioni in PRODUCT.md §12 e aggiorna §6. Non scrivere codice applicativo, non scegliere lo stack, non disegnare schermate.
+
+Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
+
+---
+
 ## In alternativa: Prova sulle bollette
 
-Resta libera e richiede fondatori e personale di ƎE volontari. Messaggio:
+Resta libera, richiede fondatori e personale di ƎE volontari e non blocca il design del percorso 1. Messaggio:
 
 /wayfinder .scratch/controllo-a/map.md — ticket «Prova sulle bollette» (.scratch/controllo-a/issues/08-prova-bollette.md)
 
