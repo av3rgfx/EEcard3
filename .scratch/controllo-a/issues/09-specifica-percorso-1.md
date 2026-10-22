@@ -2,12 +2,12 @@
 
 Type: grilling
 Status: open
-Blocked by: 01, 02, 03, 05, 06, 07, 11
-Mappa: [Superare il controllo A con le evidenze](../map.md)
+Blocked by: 01, 02, 03, 05, 06, 11
+Mappa: [Dalla specifica del percorso 1 al design](../map.md)
 
 ## Domanda (Question)
 
-Come funziona, passo per passo, il percorso 1 per le case gestite da ƎE, alla luce delle ricerche, dei fatti dell'agenzia e delle sintesi dei colloqui? Serve ciò che chiede il criterio 5 di [docs/STUDIO.md](../../../docs/STUDIO.md): passi, chi fa cosa, stati del canone, messaggi, casi limite (canone parziale, ritardo, contestazione, fine della locazione), cosa vede ciascuno, misure di successo del pilota.
+Come funziona, passo per passo, il percorso 1 per le case gestite da ƎE, alla luce delle ricerche e dei fatti dell'agenzia? Serve ciò che chiede il criterio 5 di [docs/STUDIO.md](../../../docs/STUDIO.md): passi, chi fa cosa, stati del canone, messaggi, casi limite (canone parziale, ritardo, contestazione, fine della locazione), cosa vede ciascuno, misure di successo del pilota.
 
 - **Attivazione:** scheda della casa, documenti dell'agenzia ed elenco dei mancanti, scelta dei tecnici e liberatorie, inviti a proprietario e inquilino, adesione e tessera, impostazione dell'indirizzo per le bollette. Da [Chi fornisce la piattaforma e chi vende l'adesione nel pilota](11-chi-fornisce-la-piattaforma.md) (PRODUCT.md §12, 20/10/2026): all'attivazione si firmano due fogli con ƎE, le condizioni dell'adesione del proprietario e quelle dell'adesione dell'inquilino, che comprendono lo spazio delle bollette, e si consegna l'informativa di ƎE. Da decidere: se la tessera dell'inquilino è solo digitale o anche fisica.
 - **Canone del mese:** importo dovuto e suoi aggiornamenti; pagamento al banco registrato dall'agenzia con la ricevuta; bonifico con contabile e conferma di chi riceve; «incassato dall'agenzia» e «consegnato al proprietario»; residuo e quietanza. Va chiarito, con la skill `domain-modeling`, come questi stati si legano ai passaggi del denaro di [PRODUCT.md](../../../PRODUCT.md) §7.4 (per esempio se «incassato dall'agenzia» è già l'incasso verificato per il proprietario). La [ricerca sull'incasso dei canoni](01-incasso-canoni-al-banco.md) lega i due stati agli obblighi del mandatario (artt. 1712–1714 c.c.) e porta tre decisioni: contanti da 5.000 € in su bloccati o solo segnalati; pagamenti parziali al banco registrati o rifiutati; chi conferma la consegna (ƎE, proprietario o entrambi).
@@ -18,8 +18,6 @@ Come funziona, passo per passo, il percorso 1 per le case gestite da ƎE, alla l
 - **Misure di successo del pilota** (PRODUCT.md §13), con la skill `ux-strategy`, senza valori inventati.
 
 Si registra: la specifica in PRODUCT.md §10, le misure in §13, le decisioni in §12, i termini decisi in [GLOSSARY.md](../../../GLOSSARY.md). Nessuna schermata. Se non sta in una sessione, si divide in «attivazione» e «canone del mese».
-
-È bloccato anche dai ticket dei colloqui, oggi in «Non ancora specificato»: quando diventano ticket, si aggiungono alla riga `Blocked by`.
 
 ## Commenti (Comments)
 
@@ -43,3 +41,7 @@ Si registra: la specifica in PRODUCT.md §10, le misure in §13, le decisioni in
 - Orario d'ufficio: banco aperto 6 giorni su 7, dalle 9 alle 13 sabato compreso e dalle 16 alle 19:30 sabato escluso (risposta 24); vale per i messaggi fuori orario e i tempi della richiesta.
 - Messaggi: l'email per tutti si verifica con il chiarimento 4; oggi si usa anche WhatsApp (risposta 12).
 - Misure di successo: oggi circa 12 ore la settimana sulle case gestite, consegne escluse (risposta 25), come punto di partenza per il tempo dell'agenzia; le telefonate dei proprietari sul canone non sono state contate (risposta 23).
+
+**22/10/2026: niente colloqui.** Con la decisione «Niente colloqui né pre-adesione: dalla specifica al design» ([PRODUCT.md](../../../PRODUCT.md) §12) questo ticket non aspetta più sintesi: è libero. Dopo la specifica vengono il controllo A e il design. Due conseguenze per la specifica:
+- Le **misure di successo del pilota** diventano la prima evidenza raccolta con i clienti (adesioni, uso, rinnovi), quindi vanno scelte con cura, sempre senza valori inventati.
+- Prezzo, periodicità e trattenuta della quota sono in [Prezzo e condizioni dell'adesione](10-prezzo-condizioni-adesione.md), che non blocca questo ticket; la specifica può citare la quota senza fissarne l'importo.

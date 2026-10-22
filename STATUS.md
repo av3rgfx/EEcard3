@@ -1,7 +1,13 @@
 # Stato del progetto
 
-## Punto di ripresa (21 ottobre 2026)
-**Fase: studio.** La mappa delle decisioni verso la destinazione dello studio, **superare il controllo A con le evidenze**, è in [.scratch/controllo-a/map.md](.scratch/controllo-a/map.md) ([docs/METODO.md](docs/METODO.md), passo 2). Sono arrivate le risposte di ƎE e il ticket [Fatti dall'agenzia ƎE](.scratch/controllo-a/issues/06-fatti-agenzia.md) è chiuso. Ora sono liberi «Materiali per i colloqui», consigliato per primo, e «Prova sulle bollette». A ƎE sono stati chiesti sei chiarimenti, che non bloccano nessun ticket. Non c'è codice applicativo; design, architettura e stack non sono decisi.
+## Punto di ripresa (22 ottobre 2026)
+**Fase: studio.** Per decisione dell'utente del 22/10/2026 lo studio non fa colloqui né proposta di pre-adesione: le evidenze con i clienti arriveranno dal pilota. La mappa ha una nuova destinazione, **dalla specifica del percorso 1 al design**: specifica di «attivazione e canone del mese» confermata dall'utente, poi controllo A e passaggio al design ([.scratch/controllo-a/map.md](.scratch/controllo-a/map.md)). Ora è libera la [Specifica del percorso 1: attivazione e canone del mese](.scratch/controllo-a/issues/09-specifica-percorso-1.md), il prossimo passo. Restano liberi, senza bloccare il design, «Prezzo e condizioni dell'adesione» (prima del pilota) e «Prova sulle bollette». Non c'è codice applicativo; design, architettura e stack non sono decisi.
+
+## Fatto (22 ottobre 2026)
+- Ticket «Materiali per i colloqui» rivendicato, poi chiuso fuori ambito senza materiali preparati: alla prima domanda (quanti colloqui per gruppo) l'utente ha deciso di non fare né i colloqui né la pre-adesione e di passare al design dopo la specifica e il controllo A. Decisione in [PRODUCT.md](PRODUCT.md) §12 con il motivo; segnate come sostituite, non cancellate, «Evidenze con persone vere» (18/10), «Destinazione dello studio» e «Pre-adesione in un secondo momento» (19/10). In §13 una frase: le prime evidenze con le persone arrivano dal pilota.
+- Mappa ridisegnata: nuova destinazione e titolo «Dalla specifica del percorso 1 al design»; in «Fuori ambito» i materiali per i colloqui, lo svolgimento e le sintesi, la conferma delle decisioni con le sintesi, l'esito della pre-adesione e, su scelta dell'utente, la decisione sul secondo gruppo (fascicolo per la vendita), rinviata a dopo il pilota. In «Non ancora specificato» resta solo «Controllo A e passaggio al design».
+- «Proposta di pre-adesione» diventa [Prezzo e condizioni dell'adesione](.scratch/controllo-a/issues/10-prezzo-condizioni-adesione.md): prezzo, periodicità, cosa include e trattenuta dal canone, decisi dall'utente prima del pilota; non blocca nulla. «Prova sulle bollette»: tolta la parte sui colloqui, non blocca il design del percorso 1. Dalla Specifica tolto il blocco dei colloqui.
+- [docs/STUDIO.md](docs/STUDIO.md): nuova destinazione e tre criteri di arrivo (ricerche chiuse, specifica, controllo A); le domande «Persone» si misurano nel pilota. [docs/METODO.md](docs/METODO.md): il passo 4 si salta in EECard3; l'ordine resta specifica, controllo A, design, architettura, controllo B, codice.
 
 ## Fatto (21 ottobre 2026)
 - Ticket [Fatti dall'agenzia ƎE](.scratch/controllo-a/issues/06-fatti-agenzia.md) chiuso con le risposte alle 29 domande, arrivate in un PDF mandato dall'utente; la pagina «Domande per ƎE» era vuota e non è stata toccata. Risposte registrate in forma aggregata, con i numeri delle domande; il PDF non è nel repository. Senza risposta le domande 8, 9, 10, 13, 21 e 23 e parti di altre.
@@ -27,7 +33,8 @@
 - Regola nuova in [AGENTS.md](AGENTS.md), chiesta dall'utente: le domande all'utente si fanno in parole semplici, spiegando cosa comporta ogni opzione.
 
 ## Verificato
-- `python3 tools/check_setup.py`: integrità OK, 20 skill, copie Claude e Codex equivalenti (21/10/2026).
+- `python3 tools/check_setup.py`: integrità OK (22/10/2026).
+- Link locali di PRODUCT.md, GLOSSARY.md, STATUS.md, START_HERE.md, STUDIO.md, METODO.md, mappa e ticket: nessuno rotto dopo il cambio di nome del ticket 10 (22/10/2026). Frontiera calcolata dai file dei ticket: liberi «Prova sulle bollette», «Specifica del percorso 1» e «Prezzo e condizioni dell'adesione».
 - Risposte di ƎE (21/10/2026): testo estratto dal PDF (4 pagine, solo testo, nessuna immagine) e confrontato domanda per domanda con l'elenco; nessun nome, indirizzo o importo individuale nel repository.
 - Pagina «Domande per ƎE» (20/10/2026): sintassi dello script controllata; aperta in Chromium a larghezza di telefono, senza errori né scorrimento laterale; avanzamento, scelta tolta al secondo tocco e testo da copiare provati una volta. Dopo la pubblicazione, un documento di prova nel suo database: invisibile a chi può solo guardare, visibile a chi può compilare; poi cancellato. Non provati: l'invito del collaboratore e il salvataggio dal suo account.
 - Link locali di PRODUCT.md, GLOSSARY.md, STATUS.md, START_HERE.md, mappa e ticket: nessuno rotto (21/10/2026). Frontiera calcolata dai file dei ticket: liberi «Materiali per i colloqui» e «Prova sulle bollette».
@@ -36,20 +43,20 @@
 - Non applicabili: build, test, revisione OCR e verifiche dell'interfaccia (non c'è codice).
 
 ## Problemi aperti
-- **Si attendono i sei chiarimenti di ƎE** (ticket «Fatti dall'agenzia ƎE», sotto «Commenti»). Non bloccano ticket, ma alcune decisioni della specifica e della pre-adesione li aspettano.
+- **Si attendono i sei chiarimenti di ƎE** (ticket «Fatti dall'agenzia ƎE», sotto «Commenti»). Non bloccano ticket, ma alcune decisioni della specifica e di «Prezzo e condizioni dell'adesione» li aspettano.
 - Normattiva ed EUR-Lex hanno rifiutato molte connessioni: alcune norme sono state lette da fonti secondarie o solo in parte; l'elenco è in fondo a ogni ricerca.
 - Dal 1/1/2027 registro, cedolare secca, IVA e termini fiscali passano a nuovi testi unici: le ricerche su adempimenti, incasso e privacy vanno riverificate a gennaio 2027.
-- Pareri professionali segnalati (legale, fiscale, privacy, servizi di pagamento, antiriciclaggio): fuori dalla mappa, prima del pilota; per l'informativa dei colloqui la decisione è nel ticket «Materiali per i colloqui». Dal 20/10 se ne aggiunge uno su ruoli e documenti del pilota: condizioni delle due adesioni, contratto sui dati con chi costruisce la piattaforma, accordo su marchio e software fra fondatori e ƎE. Dal 21/10: l'incarico di gestione e incasso oggi non è scritto e va scritto; ƎE non ha un consulente per la privacy, quindi informativa e registro si aggiornano con un professionista esterno.
+- Pareri professionali segnalati (legale, fiscale, privacy, servizi di pagamento, antiriciclaggio): fuori dalla mappa, prima del pilota; senza colloqui (22/10) cade il parere sull'informativa dei colloqui. Dal 20/10 se ne aggiunge uno su ruoli e documenti del pilota: condizioni delle due adesioni, contratto sui dati con chi costruisce la piattaforma, accordo su marchio e software fra fondatori e ƎE. Dal 21/10: l'incarico di gestione e incasso oggi non è scritto e va scritto; ƎE non ha un consulente per la privacy, quindi informativa e registro si aggiornano con un professionista esterno.
 
 ## Da chiarire con l'utente
-Le domande aperte sono nei ticket della mappa; prezzo, periodicità e trattenuta della quota dal canone in «Proposta di pre-adesione: prezzo, periodicità e forma». I fatti che conosce solo l'agenzia sono nel ticket «Fatti dall'agenzia ƎE»; i dubbi rimasti sono nei sei chiarimenti da mandare al collaboratore.
+Le domande aperte sono nei ticket della mappa; prezzo, periodicità e trattenuta della quota dal canone in «Prezzo e condizioni dell'adesione». I fatti che conosce solo l'agenzia sono nel ticket «Fatti dall'agenzia ƎE»; i dubbi rimasti sono nei sei chiarimenti da mandare al collaboratore.
 
 ## Prossimo passo
-1. Ticket [Materiali per i colloqui](.scratch/controllo-a/issues/07-materiali-colloqui.md), ora libero e consigliato per primo: è sul percorso verso la specifica e ƎE ha indicato chi conduce, quante ore e dove (sotto «Commenti» del ticket).
+1. Ticket [Specifica del percorso 1: attivazione e canone del mese](.scratch/controllo-a/issues/09-specifica-percorso-1.md), ora libero: discussione con l'utente (skill `grilling` e `domain-modeling`; `ux-strategy` per le misure di successo). Se non sta in una sessione, si divide in «attivazione» e «canone del mese».
 2. L'utente manda al collaboratore i sei «Chiarimenti per ƎE» (ticket [Fatti dall'agenzia ƎE](.scratch/controllo-a/issues/06-fatti-agenzia.md), sotto «Commenti»). Quando tornano, una sessione li registra nel ticket, senza riaprirlo, e aggiorna le note dei ticket che li aspettano.
-3. In parallelo resta libera «Prova sulle bollette», che richiede i fondatori e il personale di ƎE volontari.
+3. Quando l'utente vuole, prima del pilota: [Prezzo e condizioni dell'adesione](.scratch/controllo-a/issues/10-prezzo-condizioni-adesione.md). Resta libera anche «Prova sulle bollette», che richiede i fondatori e il personale di ƎE volontari e serve per le bollette dell'inquilino.
 
 Messaggi per le prossime sessioni in [START_HERE.md](START_HERE.md).
 
 ## Ultima verifica
-21/10/2026, `python3 tools/check_setup.py`: integrità OK. Programmi facoltativi assenti nell'ambiente cloud: `ocr`, `playwright-cli`.
+22/10/2026, `python3 tools/check_setup.py`: integrità OK. Programmi facoltativi assenti nell'ambiente cloud: `ocr`, `playwright-cli`.

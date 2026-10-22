@@ -1,9 +1,9 @@
 # Materiali per i colloqui
 
 Type: task
-Status: open
+Status: resolved
 Blocked by: 02, 03, 04, 06
-Mappa: [Superare il controllo A con le evidenze](../map.md)
+Mappa: [Dalla specifica del percorso 1 al design](../map.md)
 
 ## Domanda (Question)
 
@@ -27,3 +27,5 @@ Alla chiusura, «Svolgimento dei colloqui e sintesi anonime» passa dal «Non an
 - Selezione: numeri di case e proprietari, fasce d'età e lingue non sono arrivati (risposte 8 e 13). Case e proprietari sono chiesti di nuovo (chiarimento 4), fasce d'età e lingue no: i criteri si applicano con l'agenzia, senza conteggi.
 - Informativa: ƎE dà già un'informativa a proprietari e inquilini e tiene il registro dei trattamenti, ma non ha un consulente per la privacy (risposta 6). La verifica di informativa e consenso, se l'utente la vuole, richiede un professionista esterno.
 - Temi per le guide: oggi per un guasto l'inquilino chiama ƎE (risposta 29), mentre la decisione «Percorso della richiesta» lo manda al tecnico; per capire il presente, ƎE offre già ai proprietari un servizio con incasso, pratiche, assistenza e consulenza (risposta 1), che non fa parte del prodotto; WhatsApp è un canale abituale; le telefonate dei proprietari che chiedono del canone non sono state contate (risposta 23), quindi conviene chiedere ai proprietari come lo sanno oggi.
+
+**22/10/2026: chiuso fuori ambito, senza materiali preparati.** All'inizio della sessione l'utente ha deciso di non fare né i colloqui né la proposta di pre-adesione e di passare, dopo la specifica del percorso 1 e il controllo A, al design ([PRODUCT.md](../../../PRODUCT.md) §12, «Niente colloqui né pre-adesione: dalla specifica al design»). Motivo: l'utente è convinto che il prodotto, fatto bene, funzioni; il titolare di ƎE dice che, se il prodotto viene bene, trova facilmente clienti che lo usino; le evidenze con i clienti arrivano dal pilota (adesioni, uso, rinnovi). Nessun piano, invito, guida, informativa o scheda è stato scritto. La voce «Svolgimento dei colloqui e sintesi anonime» non diventa un ticket: è nel «Fuori ambito» della mappa, come la decisione sul secondo gruppo, rinviata a dopo il pilota.

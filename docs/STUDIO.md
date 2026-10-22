@@ -17,19 +17,18 @@ Ogni domanda indica che tipo di lavoro serve:
 
 ## Destinazione dello studio
 
-Confermata dall'utente il 19/10/2026 ([PRODUCT.md](../PRODUCT.md) §12), al termine del riallineamento ([METODO.md](METODO.md), passo 1).
+Confermata dall'utente il 19/10/2026 al termine del riallineamento ([METODO.md](METODO.md), passo 1) e cambiata il 22/10/2026 ([PRODUCT.md](../PRODUCT.md) §12, «Niente colloqui né pre-adesione: dalla specifica al design»).
 
-**Superare il controllo A con le evidenze:** arrivare alla specifica del primo percorso completo, **attivazione e canone del mese per le case gestite da ƎE**, confermata dall'utente e sostenuta da colloqui con proprietari e inquilini veri, da una prova di pre-adesione con un prezzo e dalle ricerche che potrebbero cambiarla.
+**Dalla specifica del percorso 1 al design:** arrivare alla specifica del primo percorso completo, **attivazione e canone del mese per le case gestite da ƎE**, confermata dall'utente e sostenuta dalle ricerche e dai fatti dell'agenzia; spuntare il controllo A e passare al design. Niente colloqui né proposta di pre-adesione: le evidenze con i clienti arrivano dal pilota (adesioni, uso, rinnovi). Le domande segnate «Persone» in questo documento si misurano nel pilota.
 
 Lo studio è finito quando:
-1. **Persone:** l'agenzia ha svolto i colloqui con proprietari di case gestite, i loro inquilini e alcuni venditori, con i materiali preparati dall'agente; nel repository ci sono solo sintesi anonime; le decisioni del 18–19/10/2026 risultano confermate o corrette, e c'è una decisione sul secondo gruppo (fascicolo per la vendita).
-2. **Impegno:** una proposta di pre-adesione con prezzo e periodicità dell'offerta unica, con l'esito registrato; il dato dei 600 € è chiarito.
-3. **Ricerche chiuse** in `docs/ricerca/`, con l'indicazione di dove serve un parere professionale: obblighi dell'agenzia che incassa i canoni al banco; adempimenti della locazione da mettere nello scadenzario; titolarità e privacy dei dati fra agenzia, piattaforma, proprietari, inquilini e tecnici; alternative già sul mercato; email che non sembrano spam.
-4. **Prova sulle bollette:** quante arrivano con il PDF allegato e quante con un link, quante hanno il QR, quanto è affidabile la lettura automatica ([ricerca/bollette.md](ricerca/bollette.md)).
-5. **Specifica del percorso 1** in PRODUCT.md §10: passi, chi fa cosa, stati del canone, messaggi, casi limite (canone parziale, ritardo, contestazione, fine della locazione), cosa vede ciascuno, misure di successo del pilota (§13).
-6. **Controllo A** spuntato con queste evidenze.
+1. **Ricerche chiuse** in `docs/ricerca/`, con l'indicazione di dove serve un parere professionale: obblighi dell'agenzia che incassa i canoni al banco; adempimenti della locazione da mettere nello scadenzario; titolarità e privacy dei dati fra agenzia, piattaforma, proprietari, inquilini e tecnici; alternative già sul mercato; email che non sembrano spam.
+2. **Specifica del percorso 1** in PRODUCT.md §10: passi, chi fa cosa, stati del canone, messaggi, casi limite (canone parziale, ritardo, contestazione, fine della locazione), cosa vede ciascuno, misure di successo del pilota (§13).
+3. **Controllo A** spuntato ([METODO.md](METODO.md), passo 5): l'utente conferma le voci con la specifica e le ricerche. Da lì si passa al design (passo 6).
 
-Fuori dalla destinazione: design, architettura, stack e nome del prodotto.
+Non sono criteri di arrivo: **prezzo e condizioni dell'adesione** del proprietario, che l'utente decide prima del pilota; la **prova sulle bollette** (quante arrivano con il PDF o con un link, quante hanno il QR, quanto è affidabile la lettura, [ricerca/bollette.md](ricerca/bollette.md)), che serve quando si lavora sulle bollette dell'inquilino. Il dato dei 600 € è chiarito (PRODUCT.md §12, 21/10/2026).
+
+Dopo la destinazione: il design stesso, l'architettura, lo stack e il nome del prodotto.
 
 ---
 
