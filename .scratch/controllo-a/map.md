@@ -31,10 +31,11 @@ La specifica del primo percorso completo, **attivazione e canone del mese per le
 - [Ricerca: email che non sembrano spam](issues/05-email-non-spam.md): ai volumi del pilota bastano autenticazione del mittente e poche segnalazioni; AMP e azioni nella casella non raggiungono tutti; un'email che propone qualcosa diventa promozionale: nel percorso 1 solo email di servizio, con il fatto nell'oggetto e un link.
 - [Chi fornisce la piattaforma e chi vende l'adesione nel pilota](issues/11-chi-fornisce-la-piattaforma.md): nel pilota la piattaforma è di ƎE, che risponde di tutti i dati con un'informativa sola; ƎE vende l'adesione del proprietario con un foglio separato dall'incarico; l'inquilino ha un'adesione gratuita con tessera, che comprende lo spazio delle bollette; società distinta solo con la seconda agenzia.
 - [Fatti dall'agenzia ƎE](issues/06-fatti-agenzia.md): il servizio da 600 € di ƎE descrive l'agenzia di oggi e non entra nel prodotto; incarico di gestione non scritto; meno di 3 persone in agenzia, 1–1,5 ore al giorno confermate; canone consegnato ogni mese con ricevuta firmata; mancano i numeri su case, bonifici ed email, chiesti con sei chiarimenti. Nessuna decisione smentita, due contrasti parziali nella specifica; parere legale e privacy prima del pilota.
+- [Specifica del percorso 1: attivazione e canone del mese](issues/09-specifica-percorso-1.md): confermata dall'utente in PRODUCT.md §10; attivazione dell'operatore di ƎE con incarico scritto obbligatorio, accesso con email o cellulare; canone e consegna come due conti distinti, conferma chi riceve il denaro; messaggi di servizio senza importi, nessun sollecito, contestazioni con «Chiama»; misure in §13, prove solo simulate.
 
 ## Non ancora specificato (Not yet specified)
 
-- **Controllo A e passaggio al design**: la verifica finale, voce per voce (METODO.md, passo 5), con la specifica e le ricerche; poi la chiusura della mappa e l'avvio del passo 6.
+Niente: l'ultimo tratto è il ticket [Controllo A e passaggio al design](issues/13-controllo-a.md).
 
 ## Fuori ambito (Out of scope)
 

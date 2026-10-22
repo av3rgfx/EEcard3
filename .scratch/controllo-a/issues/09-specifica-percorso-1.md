@@ -1,7 +1,7 @@
 # Specifica del percorso 1: attivazione e canone del mese
 
 Type: grilling
-Status: claimed
+Status: resolved
 Blocked by: 01, 02, 03, 05, 06, 11
 Mappa: [Dalla specifica del percorso 1 al design](../map.md)
 
@@ -18,6 +18,25 @@ Come funziona, passo per passo, il percorso 1 per le case gestite da ƎE, alla l
 - **Misure di successo del pilota** (PRODUCT.md §13), con la skill `ux-strategy`, senza valori inventati.
 
 Si registra: la specifica in PRODUCT.md §10, le misure in §13, le decisioni in §12, i termini decisi in [GLOSSARY.md](../../../GLOSSARY.md). Nessuna schermata. Se non sta in una sessione, si divide in «attivazione» e «canone del mese».
+
+## Risposta (Answer)
+
+Risolto il 22/10/2026 con le skill `grilling` e `domain-modeling` (`ux-strategy` per le misure), una decisione alla volta in parole semplici; ventinove decisioni, ciascuna con alternative scartate e motivo, sotto «Commenti», da «22/10/2026: discussione con l'utente». Specifica confermata dall'utente nell'insieme lo stesso giorno.
+
+- **Dove sta:** la specifica in [PRODUCT.md](../../../PRODUCT.md) §10 (chi fa cosa, attivazione, canone del mese, importo e scadenze, messaggi, casi limite, cosa vede ciascuno, fine dei rapporti, prove, cosa resta da fare); le decisioni in §12, in quattro righe del 22/10/2026; le misure del pilota in §13. Termini decisi in [GLOSSARY.md](../../../GLOSSARY.md): attivazione, incarico di gestione, canone del mese, incasso verificato (passato da §8), consegna, contestazione.
+- **I due contrasti parziali** con §12: l'attivazione la fa l'operatore di ƎE dentro le ore del servizio («Fascicolo all'attivazione» precisata); le case con bonifico al proprietario entrano con un percorso più corto, confermato dal proprietario («Chi è nel pilota» precisata). Una terza decisione cambiata in parte: gli SMS entrano nella prima versione, solo per chi non ha l'email («Cosa resta fuori dalla prima versione»).
+- **Il cuore del modello** (decisione 12): due conti distinti, il canone, pagato quando lo riceve chi è incaricato di riceverlo, e la consegna da ƎE al proprietario; conferma sempre chi riceve il denaro. Corregge l'inferenza della [ricerca sull'incasso](../../../docs/ricerca/incasso-canoni.md) §8.2.
+- **Spostato fuori dal percorso 1:** tecnici e liberatorie al percorso 2; IMU, TARI e impianti nello scadenzario più avanti (richiesta dell'utente); adesione a pagamento per l'ex inquilino, idea dell'utente da riprendere dopo il pilota (PRODUCT.md §5.6).
+- **Ticket nuovi:** [Ricerca: tessere fisiche, fornitori, personalizzazione, ordini e spedizioni](12-ricerca-tessere-fisiche.md), chiesta dall'utente, prima del pilota; [Controllo A e passaggio al design](13-controllo-a.md), dal «Non ancora specificato» della mappa.
+- **Ticket aggiornato:** [Prezzo e condizioni dell'adesione](10-prezzo-condizioni-adesione.md) (comproprietari, condizioni per la fine della gestione e dell'adesione).
+- **Dato dell'utente:** circa 100–200 case gestite (stima, non un dato di ƎE); i numeri sui tipi di contratto non servono.
+
+**Da ricontrollare quando arrivano i chiarimenti di ƎE** ([Fatti dall'agenzia ƎE](06-fatti-agenzia.md), sotto «Commenti»)
+- *Chiarimento 1 (compenso trattenuto):* è un campo dell'incarico e una riga del riepilogo di consegna; nessuna decisione cambia.
+- *Chiarimento 2 (incarico):* l'incarico scritto è comunque condizione dell'attivazione (decisione 3).
+- *Chiarimento 3 (canoni per mezzo, parziali, termine di consegna):* se i bonifici al proprietario sono la maggioranza si riapre la decisione 2; parziali e termine entrano nell'incarico (decisioni 3, 13, 15).
+- *Chiarimento 4 (email):* se molti non hanno l'email, crescono gli SMS (decisione 7); se l'ISTAT è raro, la decisione 18 resta ma pesa poco.
+- *Chiarimento 6 (chi fa le ore):* dà il nome al ruolo «operatore di ƎE» (decisione 1), senza cambiarlo.
 
 ## Commenti (Comments)
 
