@@ -184,7 +184,6 @@ Termini provvisori, da consolidare con la skill `domain-modeling` quando il mode
 | **Dichiarato** | «Ho pagato» detto dalla persona: da solo non prova nulla |
 | **Prova** | Un documento caricato a sostegno (contabile, scontrino) |
 | **Disposto** | Un pagamento ordinato tramite banca o altro intermediario, non ancora incassato |
-| **Incasso verificato** | La conferma che chi doveva ricevere il denaro lo ha ricevuto |
 | **Quietanza** | La ricevuta liberatoria rilasciata da chi incassa |
 
 ## 9. Cosa il prodotto non è

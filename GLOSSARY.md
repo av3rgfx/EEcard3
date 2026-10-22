@@ -52,6 +52,18 @@ _Da evitare_: accesso a pagamento, pubblicazione
 
 ### Denaro
 
+**Canone del mese**:
+L'importo che l'inquilino deve per un mese di locazione, con le sue versioni. È pagato quando chi è incaricato di riceverlo lo ha ricevuto: l'agenzia, se il proprietario l'ha indicata, oppure il proprietario.
+_Da evitare_: affitto (indica la locazione), rata, mensilità
+
+**Incasso verificato**:
+La conferma, data da chi ha ricevuto il denaro, che un importo è arrivato. Dire «ho pagato», caricare una prova o disporre un bonifico non lo sono.
+_Da evitare_: pagato (senza dire chi lo conferma), saldato
+
+**Consegna**:
+Il passaggio con cui l'agenzia dà al proprietario il canone incassato per lui, con il rendiconto. Ha stati propri, distinti da quelli del canone: da consegnare, consegnato, consegna in ritardo.
+_Da evitare_: rimessa, versamento, ritiro
+
 **Indirizzo per le bollette**:
 L'indirizzo email personale che la piattaforma dà a ogni inquilino, a cui inoltrare le proprie bollette perché entrino nel suo spazio privato.
 _Da evitare_: casella, collegamento della posta
