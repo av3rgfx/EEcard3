@@ -115,6 +115,7 @@ Possibile vantaggio, da verificare: **conoscenza della casa unita alla fiducia e
 - Tessera del proprietario più ricca e di colore diverso da quella dell'inquilino. Idea dei fondatori.
 - Tessera nei **wallet** del telefono e lettura **contactless** al banco. Idea dei fondatori.
 - Agenzie partner con la propria tessera personalizzata, con il marchio del sistema visibile. Idea dei fondatori.
+- **Adesione a pagamento per l'ex inquilino** che vuole tenere il suo spazio personale (bollette, documenti e storico propri) dopo la fine della locazione, con un periodo gratuito, per esempio un mese, proposta quando lo spazio sta per chiudersi. Idea dell'utente (22/10/2026), da riprendere dopo il pilota.
 - Livelli del 18/10: proprietario con una base (circa 10 €) e un «plus» che mostra lo stato dei pagamenti, forse un livello intermedio; inquilino gratis, con i servizi extra visibili e sbloccabili a pagamento. Idea dei fondatori (18/10/2026).
 
 ### 5.7 Lo spazio dell'agenzia
