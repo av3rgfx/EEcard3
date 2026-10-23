@@ -19,3 +19,12 @@ Per ogni voce: confermata, oppure cosa manca. Da segnalare senza decidere: i chi
 Alla chiusura: controllo A registrato in PRODUCT.md §12; mappa chiusa con la destinazione raggiunta; [docs/STUDIO.md](../../../docs/STUDIO.md) e STATUS.md aggiornati; avvio del passo 6 (design) con il messaggio per la sessione di design in START_HERE.md. Nessuna schermata, nessuno stack, nessun codice in questo ticket.
 
 ## Commenti (Comments)
+
+**22–23/10/2026: le cinque voci, una alla volta** (skill `grilling` e `domain-modeling`).
+
+*Voce 1, primo cliente e promessa: confermata dall'utente.* Primo cliente invariato (§12, 18/10 e 22/10): proprietari di una casa gestita da ƎE, anche con bonifico al proprietario; paga il proprietario, l'inquilino entra gratis. La promessa non era scritta in una frase; l'utente conferma questa, per il percorso 1:
+- al proprietario: «Ogni mese sai se il canone è stato pagato e quando ti viene consegnato, senza chiedere all'agenzia; contratto, documenti e scadenze della locazione della tua casa sono in un posto solo, tenuti da ƎE»;
+- all'inquilino, gratis: «Sai dove e quanto pagare, ricevi un promemoria e hai sempre le tue ricevute e il tuo contratto»; le bollette arrivano con il percorso 3.
+Richieste ai tecnici (percorso 2) e report annuale (percorso 4) restano fuori dalla promessa del percorso 1. Segnalati, senza bloccare: prezzo, chiarimento 3 di ƎE (bonifici al proprietario), evidenze dal pilota.
+
+*Domanda dell'utente sulla pianta e sulla casa in 3D.* La planimetria entra nel percorso 1 come documento del fascicolo (elenco dei mancanti, §10.2), visibile a proprietario e operatore (§10.7). La casa in 3D (PRODUCT.md §5.5) è fuori dalla prima versione (§12, 19/10) e non è fra i quattro percorsi; nessuna data.
