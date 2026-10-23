@@ -1,11 +1,26 @@
 # Stato del progetto
 
-## Punto di ripresa (23 ottobre 2026, spazio dell'operatore)
-**Fase: design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6), nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md). Direzione **«Terracotta»** con il chiaro in vetrina; **spazio dell'operatore approvato** ([DESIGN.md](DESIGN.md), «Direzione del percorso 1» e «Spazio dell'operatore (percorso 1)»). Prossimi passi:
-- **Il collaboratore di ƎE guarda lo spazio dell'operatore**, ora sbloccato: servono il link al prototipo, condiviso dall'utente, e tre o quattro domande pronte da copiare.
-- **Schermate del proprietario**, poi dell'inquilino e i passaggi comuni.
+## Punto di ripresa (23 ottobre 2026, proprietario e domande per ƎE)
+**Fase: design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6), nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md). Approvati: la direzione **«Terracotta»**, con il chiaro in vetrina; lo spazio dell'operatore; le schermate del proprietario. La voce ora è al **«tu»** anche per i clienti ([DESIGN.md](DESIGN.md)).
+
+Prossimi passi:
+- **Collaboratore di ƎE:** l'utente condivide il prototipo dell'operatore e manda il messaggio con le quattro domande, già pronto nel ticket [Il collaboratore di ƎE guarda lo spazio dell'operatore](.scratch/design-percorso-1/issues/05-collaboratore-guarda-operatore.md), rivendicato e in attesa delle risposte.
+- **Schermate dell'inquilino**, poi accesso, adesione e situazioni comuni.
 
 Prodotto: **Connetto**, nome di lavoro in attesa del parere sul marchio. Non c'è codice applicativo; architettura e stack non sono decisi.
+
+## Fatto (23 ottobre 2026, proprietario e voce)
+- Ticket [Schermate del proprietario](.scratch/design-percorso-1/issues/10-schermate-proprietario.md) rivendicato e chiuso nella stessa sessione, su richiesta dell'utente, con le skill `prototype` e `grilling`, in tre giri.
+- Decisioni dell'utente:
+  - le case a schede, con un interruttore a icone per passare alle righe (sua proposta);
+  - i mesi passati come fila di mesi a pillola con il nome, scelta dell'anno e linea del tempo del mese, sul modello di due suoi esempi. Striscia e calendario a griglia sono stati scartati; i numeri «26» nelle pillole erano un difetto, corretto.
+  - la **voce al «tu»** anche per proprietari e inquilini. È un cambio del punto fermo del 23/10, registrato in DESIGN.md «Voce» come cambiato e non cancellato.
+- Il «Non lo chiedo» accanto ad «Approva» per il nuovo canone è una scelta ragionevole dell'agente, mostrata nel prototipo e approvata con il resto.
+- Verifiche: a ogni giro, Chromium a sette larghezze in chiaro e in scuro; nessun pulsante fuori dal riquadro (salvo le pillole nascoste nella fila che si scorre, come previsto), nessuno scorrimento orizzontale, nessun errore. Provati il cambio d'anno e di mese.
+- Regole in [DESIGN.md](DESIGN.md), «Schermate del proprietario (percorso 1)»; decisione nella mappa.
+- Ticket 05 rivendicato: messaggio e quattro domande per il collaboratore, pronti da copiare.
+  - Fra le domande c'è come date del tu o del Lei al banco, per verificare la nuova voce.
+  - Il link al prototipo va condiviso dall'utente, perché la pagina è privata.
 
 ## Fatto (23 ottobre 2026, spazio dell'operatore)
 - Ticket [Schermate dell'operatore di ƎE](.scratch/design-percorso-1/issues/09-schermate-operatore.md) rivendicato e chiuso nella stessa sessione della direzione, su richiesta dell'utente, con le skill `prototype` e `grilling`.

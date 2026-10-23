@@ -1,7 +1,7 @@
 # Schermate del proprietario
 
 Type: prototype
-Status: claimed
+Status: resolved
 Blocked by: 04
 Mappa: [Design del percorso 1](../map.md)
 
@@ -17,6 +17,15 @@ Come sono, nella direzione scelta, le schermate e le situazioni del proprietario
 - mesi passati e ricevute.
 
 Prototipo usa e getta (skill `prototype`, ramo UI) nella direzione «Terracotta» ([DESIGN.md](../../../DESIGN.md), «Direzione del percorso 1»), su telefono e desktop, in chiaro e in scuro con il chiaro per primo. Solo dati inventati, importi come «9.876,54 €», parole del [glossario](../../../GLOSSARY.md); si mostra all'utente come pagina privata e non entra nel repository. Le scelte all'utente una alla volta, in parole semplici, con una raccomandazione motivata. Quello che si decide va in DESIGN.md come regole, con data e motivo; un problema con la specifica (PRODUCT.md §10) o con i punti fermi si porta all'utente come conflitto. Testi definitivi, rifinitura, dati limite e accessibilità vengono dopo, nei loro ticket.
+
+## Risposta (Answer)
+
+**Approvato dall'utente il 23/10/2026** («adesso va bene»), dopo tre giri. Regole in [DESIGN.md](../../../DESIGN.md), «Schermate del proprietario (percorso 1)». Decisioni dell'utente:
+- schede come vista predefinita delle case, con un interruttore a icone per le righe;
+- mesi passati come fila di mesi a pillola con il nome, scelta dell'anno e linea del tempo del mese; striscia e calendario a griglia scartati;
+- **voce al «tu»** per proprietari e inquilini: è un cambio del punto fermo «Voce» del 23/10, deciso dall'utente guardando il prototipo, registrato in DESIGN.md e applicato al prototipo.
+
+Il prototipo, usa e getta, resta fuori dal repository.
 
 ## Commenti (Comments)
 
@@ -43,3 +52,5 @@ Prototipo usa e getta (skill `prototype`, ramo UI) nella direzione «Terracotta�
 - Ricontrollato nel browser: nessuno scorrimento orizzontale, nessun errore. Fuori dai riquadri risultano solo le pillole dei mesi nascoste nella fila che si scorre, come previsto.
 
 **23/10/2026, correzione chiesta dall'utente.** Nella fila dei mesi compariva «26» sotto ogni mese, un numero che non significava nulla: negli esempi c'erano i numeri dei giorni, qui si sceglie un mese. Ora le pillole mostrano solo il nome intero del mese con il pallino dello stato. Si aggiunge la **scelta dell'anno**, per chi resta proprietario per più anni: un selettore a pillola accanto al titolo (2026, 2025, 2024), un menu nativo che sul telefono apre il selettore del sistema. La fila mostra i mesi di quell'anno, dall'inizio della locazione (febbraio 2024) a oggi. Provato nel browser: cambio d'anno e di mese funzionano, nessun errore, nessuno scorrimento orizzontale.
+
+**23/10/2026, voce e chiusura.** Guardando il prototipo l'utente decide di dare del «tu» anche ai clienti («suona meglio»), cambiando una propria decisione precedente. L'agente segnala due conseguenze: il «tu» vale in tutto, comprese email e SMS; se al banco ƎE dà del «Lei», a voce il tono resta più formale che per iscritto (da chiedere al collaboratore). Testi del prototipo convertiti e ripubblicati; controllo nel browser senza errori. Ticket chiuso.

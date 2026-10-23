@@ -42,9 +42,9 @@ Decisi dall'utente il 23/10/2026, una domanda alla volta, nel ticket [Cosa vede 
 - Con più proprietari, «Ricevuto» compare solo alla persona indicata nell'incarico (§10.6).
 
 **Voce**
-- A proprietari e inquilini il servizio dà del **«Lei»**, in schermate, email, SMS, errori e conferme. I pulsanti hanno il solo verbo («Ricevuto», «Carica la contabile», «Chiama») e gli stati sono in forma breve («Pagato il 3 ottobre»). Il tono è caldo, non burocratico. *Ipotesi:* al banco ƎE dà del «Lei»; se così non fosse, la scelta si riapre.
-- Nello spazio dell'operatore si usano il **«tu»** e frasi brevissime; le anteprime dei testi per i clienti restano al «Lei».
-- **Nessuno parla in prima persona:** niente «noi» e niente Connetto come personaggio. Le frasi dicono il fatto e chi ha agito, e ogni fatto del denaro dice chi l'ha confermato («ricevuto da ƎE al banco», «confermato da Lei»). Connetto è il nome del posto; il mittente dei messaggi resta quello di §10.5. *Motivo:* il glossario («Incasso verificato»), le HIG e un nome ancora di lavoro.
+- A proprietari e inquilini il servizio dà del **«tu»**, in schermate, email, SMS, errori e conferme (cambiato dall'utente il 23/10/2026 guardando il prototipo del proprietario: «suona meglio»; prima si dava del «Lei», con l'ipotesi che al banco ƎE dia del «Lei»). I pulsanti hanno il solo verbo («Ricevuto», «Carica la contabile», «Chiama») e gli stati sono in forma breve («Pagato il 3 ottobre»). Il tono è caldo, non burocratico. *Da verificare con ƎE:* se al banco si dà del «Lei», a voce il tono resta più formale che per iscritto; è una differenza accettata.
+- Nello spazio dell'operatore si usano il **«tu»** e frasi brevissime; ora anche i testi per i clienti sono al «tu».
+- **Nessuno parla in prima persona:** niente «noi» e niente Connetto come personaggio. Le frasi dicono il fatto e chi ha agito, e ogni fatto del denaro dice chi l'ha confermato («ricevuto da ƎE al banco», «confermato da te»). Connetto è il nome del posto; il mittente dei messaggi resta quello di §10.5. *Motivo:* il glossario («Incasso verificato»), le HIG e un nome ancora di lavoro.
 
 **Tema**
 - Il tema segue l'impostazione chiaro o scuro del dispositivo, senza interruttore nell'app. Ogni direzione si disegna in chiaro e in scuro, curati allo stesso modo; lo scuro è fatto di nero e grigi neutri. *Motivo:* la preferenza dell'utente resta senza essere imposta a chi legge meglio in chiaro; le HIG chiedono di seguire il sistema ([ricerca](docs/ricerca/hig-web.md), §4).
@@ -104,6 +104,27 @@ Approvato dall'utente il 23/10/2026 nel ticket [Schermate dell'operatore di ƎE]
 - **Oggi.** Le chiamate avviate da Connetto, con «Scrivi l'esito», e i messaggi partiti. Una nota dice che si registra solo l'avvio della chiamata.
 - *Evidenza:* approvazione dell'utente su un prototipo con dati inventati. Il parere di chi lavora al banco arriva con il ticket «Il collaboratore di ƎE guarda lo spazio dell'operatore».
 
+## Schermate del proprietario (percorso 1)
+Approvate dall'utente il 23/10/2026 nel ticket [Schermate del proprietario](.scratch/design-percorso-1/issues/10-schermate-proprietario.md), che conserva le varianti scartate. Applicano «Direzione del percorso 1», i punti fermi e le larghezze di «Spazio dell'operatore».
+
+- **Le mie case.** In cima «Da fare», con una voce per cosa e un solo pulsante, ciascuna con il nome della casa. Sotto, le case con i due stati del mese, senza somme di importi. *Vista a schede* predefinita: illustrazione grande, indirizzo, inquilino e i due stati. Un **interruttore a icone** (schede, righe) in alto a destra passa alla *vista a righe*, compatta, per chi ha molte case; le icone hanno un nome per lo screen reader e la scelta resta ricordata (proposta dell'utente). Chi ha una casa sola entra direttamente nella casa.
+- **La casa.** Illustrazione con il fatto del mese e la sola cosa da fare; il mese con canone e consegna; i fatti in riquadri; scorciatoie a mesi passati, documenti e scadenze, «Chiama ƎE» e «Contesta».
+- **Contabile da confermare** (bonifico al proprietario).
+  - Si vede la contabile caricata dall'inquilino, detta chiaramente come «prova che il bonifico è stato disposto, non che sia arrivato».
+  - Poi «Vedi l'importo sul tuo conto?» con «Ricevuto».
+  - Se non c'è ancora, non si deve fare nulla e non parte alcun ritardo.
+- **Nuovo canone da approvare.** Il confronto «oggi» e «dal 1° dicembre», il calcolo con fonte e controllo di ƎE. «Approva» è l'azione principale, «Non lo chiedo» la secondaria (§10.4); se il calcolo non torna, «Contesta».
+- **Mesi passati** (sugli esempi dell'utente).
+  - Una fila di mesi a pillola da scorrere, con il nome intero del mese e un pallino dello stato; il mese scelto è pieno in arancio.
+  - Accanto al titolo, un selettore dell'anno a pillola, con un menu nativo, dagli anni della locazione a oggi.
+  - Sotto, la linea del tempo del mese: la data con il giorno della settimana e un riquadro tenue per ogni fatto, cioè canone pagato, scadenza («pagato 2 giorni prima»), consegna inviata e confermata, contestazione. Quando serve, «Ricevuto» sta nel riquadro.
+  - Scartati la striscia di dodici caselle e il calendario a griglia («non mi piace affatto»).
+- **Dettaglio di un mese**: canone e consegna con importi, ricevuta, fattura del compenso, chi ha confermato e la cronologia.
+- **Documenti e scadenze.** Ogni documento dice se lo vede anche l'inquilino; un interruttore «Mostra all'inquilino» per quelli in più (§10.7). Accanto alla scadenza c'è «Chiedi a ƎE di occuparsene» con il prezzo: quello del prototipo è inventato, i prezzi li fissa ƎE.
+- **Contestare.** Si sceglie cosa (canone, consegna, nuovo canone) e il mese, si scrive una frase, si allega una prova se la si ha. Si spiega cosa succede: la voce resta segnata e non partono ritardi. Si può anche chiamare ƎE, e l'operatore apre la contestazione per te.
+- **Più proprietari.** «Ricevuto» compare solo alla persona indicata nell'incarico; gli altri leggono a chi spetta la conferma.
+- *Evidenza:* approvazione dell'utente su un prototipo con dati inventati.
+
 ## Componenti e token
 DA DEFINIRE dopo il primo percorso. Riutilizzare e documentare solo ciò che serve.
 
@@ -112,4 +133,4 @@ Registrare feedback, caricamento, errore, stato vuoto, successo, disabilitato e 
 Registrare comportamento mobile, tastiera, testo ingrandito e movimento ridotto.
 
 ## Decisioni confermate
-Per ogni scelta: decisione, motivo, evidenza o ipotesi, ambito e data. Finora: il riferimento Apple, il formato degli importi, il simbolo C–Legame (sezione «Identità»), i punti fermi del percorso 1, la direzione «Terracotta» con il chiaro in vetrina e lo spazio dell'operatore (23/10/2026).
+Per ogni scelta: decisione, motivo, evidenza o ipotesi, ambito e data. Finora: il riferimento Apple, il formato degli importi, il simbolo C–Legame (sezione «Identità»), i punti fermi del percorso 1 (con la voce passata al «tu»), la direzione «Terracotta» con il chiaro in vetrina, lo spazio dell'operatore e le schermate del proprietario (23/10/2026).
