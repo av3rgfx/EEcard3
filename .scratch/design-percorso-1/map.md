@@ -42,7 +42,7 @@ Dipende dalla direzione scelta in [Direzione del percorso 1](issues/04-prototipo
 
 ## Fuori ambito (Out of scope)
 
-- **Logo del mittente nella casella email:** richiede un marchio registrato o un logo mostrato da 12 mesi sul dominio ([ricerca sulle email](../../docs/ricerca/email.md)). Restano fuori anche la ricerca di anteriorità e la registrazione del nome e del simbolo, che vanno fatte prima del pilota con un parere (PRODUCT.md §12). Il nome del prodotto, prima qui, è stato deciso dall'utente: Connetto.
+- **Logo del mittente nella casella email:** richiede un marchio registrato o un logo mostrato da 12 mesi sul dominio ([ricerca sulle email](../../docs/ricerca/email.md)). Resta fuori anche la registrazione del nome e del simbolo, prima del pilota con un parere (PRODUCT.md §12). La ricerca preliminare sul nome è entrata su richiesta dell'utente: [Ricerca: si può usare il nome Connetto?](issues/07-ricerca-nome-connetto.md). Il nome del prodotto, prima qui, è stato deciso dall'utente: Connetto.
 - **Vista 3D indicativa:** prima la [ricerca](../controllo-a/issues/14-ricerca-vista-3d.md) e la [prova](../controllo-a/issues/15-prova-vista-3d.md) della mappa chiusa; se la prova va bene si progetta come parte del fascicolo (richiesta dell'utente).
 - **Prezzo e condizioni dell'adesione** ([ticket](../controllo-a/issues/10-prezzo-condizioni-adesione.md)) e **tessere fisiche** ([ticket](../controllo-a/issues/12-ricerca-tessere-fisiche.md)), su richiesta dell'utente. Il design lascia il posto a prezzo e condizioni senza fissarne i valori.
 - **Bollette** (percorso 3), su richiesta dell'utente: spazio delle bollette e [indirizzo per le bollette](../../GLOSSARY.md). All'attivazione dell'inquilino resta solo il posto del passaggio.
