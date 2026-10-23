@@ -2,6 +2,7 @@
 
 ## Stato
 Nessuna direzione visiva approvata. Non si eredita alcun layout, menu, palette, font o componente: il design si progetta da zero dopo le decisioni di prodotto (vedi [docs/METODO.md](docs/METODO.md), passo 6).
+Il design del percorso 1 è in corso dal 23/10/2026 nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md). Le scelte arrivano qui man mano che l'utente le conferma.
 
 ## Riferimento confermato dall'utente
 - Le **Apple Human Interface Guidelines** sono il riferimento di design più importante (16/10/2026), adattate alla piattaforma effettiva. Sintesi e fonti: [docs/rules/APPLE_DESIGN.md](docs/rules/APPLE_DESIGN.md). In caso di dubbio si rilegge la pagina ufficiale del componente.

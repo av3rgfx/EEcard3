@@ -2,22 +2,23 @@
 
 Da incollare in Claude Code o Codex aperto su questo repository. La skill Wayfinder parte solo su richiesta: il messaggio comincia con `/wayfinder`.
 
-Lo studio è chiuso: il controllo A è superato (23/10/2026, [PRODUCT.md](PRODUCT.md) §12, riga «Controllo A») e la mappa [Dalla specifica del percorso 1 al design](.scratch/controllo-a/map.md) ha raggiunto la destinazione. Il prossimo passo è il **design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6). Il design ha più scelte che dipendono l'una dall'altra (direzione, tre spazi, telefono e desktop, email e SMS): il messaggio apre una mappa nuova. Messaggio:
+Il **design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6) ha una mappa: [Design del percorso 1](.scratch/design-percorso-1/map.md), aperta il 23/10/2026 con la destinazione confermata dall'utente (direzione più percorso intero, nome del prodotto fuori). Le due ricerche iniziali sono chiuse; il prossimo ticket libero è «Cosa vede per primo ciascuno e come parla il servizio», poi viene il prototipo delle direzioni. Messaggio:
 
 ---
 
-/wayfinder Design del percorso 1: attivazione e canone del mese (METODO.md, passo 6). Nuova mappa in .scratch/design-percorso-1/.
+/wayfinder .scratch/design-percorso-1/map.md — ticket «Cosa vede per primo ciascuno e come parla il servizio» (.scratch/design-percorso-1/issues/03-cosa-vede-per-primo.md)
 
-Leggi AGENTS.md, STATUS.md, DESIGN.md e docs/rules/APPLE_DESIGN.md; poi PRODUCT.md §10 (la specifica), la riga «Controllo A» di §12 (promessa, cosa resta fuori) e §13; GLOSSARY.md per le parole. La mappa chiusa .scratch/controllo-a/map.md e il ticket «Controllo A e passaggio al design» solo per le parti che servono. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+Leggi AGENTS.md, STATUS.md, la mappa e il ticket; poi PRODUCT.md §10.7 e la riga «Controllo A» di §12, DESIGN.md e, solo per le parti che servono, docs/ricerca/hig-web.md. GLOSSARY.md per le parole. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
 
-- Prima la destinazione, da confermare con me (skill `grilling` e `domain-modeling`); proposta: una direzione di design del percorso 1 scelta da me e registrata in DESIGN.md, per proprietario, inquilino e operatore di ƎE, su telefono e desktop, con email e SMS, pronta per il controllo B insieme all'architettura.
-- Poi la mappa, in ampiezza, con i ticket che si possono già scrivere e il resto in «Non ancora specificato». Riferimento principale le Apple Human Interface Guidelines; le indicazioni di DESIGN.md valgono come orientamento. Le domande me le fai una alla volta, in parole semplici, con una raccomandazione motivata e le conseguenze di ogni opzione.
-- Prototipi solo usa e getta (skill `prototype`), con direzioni davvero diverse dietro un selettore e solo dati inventati; nessuno stack scelto, nessun codice applicativo. Le scelte visive si registrano in DESIGN.md con data e motivo.
-- Restano fuori dalla mappa, salvo mia richiesta: la vista 3D indicativa (prima la ricerca e la prova nei ticket 14 e 15 della mappa chiusa), prezzo e condizioni dell'adesione, tessere fisiche, bollette.
+- Rivendica il ticket (`Status: claimed`) prima di lavorare. Lavora solo su questo ticket, con le skill `grilling` e `domain-modeling`.
+- Le domande me le fai una alla volta, in parole semplici, con una raccomandazione motivata e le conseguenze di ogni opzione. Nessuna schermata, nessuno stack, nessun codice applicativo.
+- Le scelte visive vanno in DESIGN.md con data e motivo; un cambio della specifica me lo porti come conflitto.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 
 ---
+
+Dopo questo ticket: «Direzione del percorso 1» (.scratch/design-percorso-1/issues/04-prototipo-direzione.md), con lo stesso schema di messaggio e la skill `prototype`.
 
 ## Prima dell'architettura: Vista 3D indicativa
 
