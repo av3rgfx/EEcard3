@@ -1,7 +1,7 @@
 # Cosa vede per primo ciascuno e come parla il servizio
 
 Type: grilling
-Status: claimed
+Status: resolved
 Blocked by:
 Mappa: [Design del percorso 1](../map.md)
 
@@ -15,6 +15,17 @@ Prima di disegnare le direzioni servono pochi punti fermi, uguali per tutte, cos
 4. **Punti di partenza dell'identità**: il nome **Connetto** e il simbolo **C–Legame** sono decisi dall'utente il 23/10/2026 ([DESIGN.md](../../../DESIGN.md), «Identità»; [assets/marchio/](../../../assets/marchio/README.md)). Resta da dire se la preferenza per il tema scuro si riconferma, si lascia aperta alle direzioni o si scarta. Sul tema: Apple chiede di seguire l'impostazione chiaro o scuro del sistema e sconsiglia un selettore nell'app; «solo scuro» o un selettore si scelgono sapendo che si scostano dalle HIG ([ricerca](01-ricerca-hig-web.md), §16 punto 4).
 
 Skill `grilling` e `domain-modeling`; `ux-strategy` per le priorità, `ux-writing` per il tono. Le scelte di contenuto che toccano la specifica si confrontano con PRODUCT.md §10; quelle visive vanno in DESIGN.md con data e motivo. Nessuna schermata in questo ticket.
+
+## Risposta (Answer)
+
+Decisa con l'utente il 23/10/2026, una domanda alla volta (dieci decisioni sotto «Commenti», con alternative scartate e motivi). Regole in [DESIGN.md](../../../DESIGN.md), «Punti fermi del percorso 1»; valgono per tutte le direzioni.
+
+- **Proprietario:** per primo il mese in corso, due righe distinte per canone e consegna; sopra, da sola e con un pulsante, l'eventuale cosa da fare. Con più case un elenco con i due stati per casa, senza somme di importi.
+- **Inquilino:** per primo il prossimo pagamento (quanto, quando, dove); dopo, «pagato» con la ricevuta. Scadenza passata detta con calma, senza allarme. Locazioni finite un tocco più in là, in sola lettura con la data di chiusura.
+- **Operatore:** il lavoro in coda in ordine fisso, dalla consegna in ritardo alle scadenze, con «Trova cliente o casa» sempre in alto.
+- **Due ruoli nella stessa persona:** un elenco «Le mie case» diviso per ruolo.
+- **Voce:** «Lei» a proprietari e inquilini, pulsanti col solo verbo; «tu» nello spazio dell'operatore; nessuno parla in prima persona, ogni fatto del denaro dice chi l'ha confermato.
+- **Tema:** segue il dispositivo; lo scuro (nero e grigi neutri) è la vetrina, il chiaro curato allo stesso modo.
 
 ## Commenti (Comments)
 
@@ -37,3 +48,7 @@ Skill `grilling` e `domain-modeling`; `ux-strategy` per le priorità, `ux-writin
 **8. Chi parla: opzione A, nessuno in prima persona.** Le frasi dicono i fatti e nominano chi ha agito: «Pagato il 3 ottobre, ricevuto da ƎE al banco»; «Ricevuto il 4 ottobre, confermato da Lei»; «Consegnato da ƎE il 10 ottobre»; «Chiama ƎE». Connetto è il nome del posto, non un personaggio; nelle email resta il mittente deciso nella specifica (ƎE con il nome del servizio accanto, D21). *Scartate:* B, ƎE al plurale («Abbiamo ricevuto…»: sconsigliato dalle HIG e confonde chi ha confermato quando conferma il proprietario); C, Connetto come personaggio (meno sobrio; il nome è di lavoro e cambiarlo obbligherebbe a riscrivere la voce). *Motivo:* ogni fatto del denaro dice chi l'ha confermato (GLOSSARY.md, «Canone del mese», «Incasso verificato»); non dipende dal nome provvisorio.
 
 **9. Tema: opzione A.** Segue l'impostazione chiaro o scuro del dispositivo, senza interruttore nell'app. Ogni direzione si disegna in chiaro e in scuro; lo scuro (fondo nero e grigi neutri, preferenza dell'utente) è la vetrina e si mostra per primo nei prototipi; il chiaro è curato allo stesso modo. *Scartate:* B, solo scuro (si scosta dalle HIG; contratti e ricevute si leggono meglio in chiaro, di giorno e con la vista stanca); C, sistema più interruttore (sconsigliato dalle HIG, una scelta in più per chi ha poca familiarità digitale); D, lasciarlo alle direzioni (differirebbero per il tema invece che per impostazione e aspetto). *Motivo:* la preferenza resta come vetrina senza essere imposta; segue il riferimento Apple ([ricerca](01-ricerca-hig-web.md), §4 e §16 punto 4).
+
+**10. Una persona proprietario di una casa e inquilino in un'altra: opzione A.** Un'entrata sola, un elenco «Le mie case» diviso in due gruppi con il ruolo scritto («Case di cui è proprietario», «Casa in cui abita»); ogni riga con il suo riassunto (i due stati del mese per le case da proprietario, il prossimo pagamento per quella in cui abita); le cose da fare di entrambi i ruoli in cima, ciascuna con il nome della casa; un tocco apre la schermata del ruolo. *Scartate:* B, due spazi con un cambio di ruolo (una cosa da fare nell'altro ruolo resta nascosta; concetto astratto); C, due accessi diversi (scarica il problema sulla persona; l'accesso è della persona, non del ruolo, §10.2). *Motivo:* nessuna cosa da fare nascosta, ruolo sempre visibile, riuso delle decisioni 4 e 5. *Conseguenza della specifica, non una scelta:* con più proprietari, «Ricevuto» compare solo alla persona indicata nell'incarico (D6); gli altri vedono gli stati senza il pulsante.
+
+**Esito.** Nessun conflitto con la specifica: le dieci scelte la applicano. L'ordine della coda dell'operatore (decisione 3) e la scadenza passata detta senza allarme (decisione 2) sono scelte di design dentro §10.1 e §10.5–10.6. Nessun termine nuovo per il glossario: «Locazioni passate» e «Le mie case» sono etichette dell'interfaccia, non parole del dominio, e passeranno da `ux-writing`. Domanda esaurita, confermato dall'utente.
