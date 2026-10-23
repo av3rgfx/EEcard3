@@ -1,7 +1,7 @@
 # Cosa vede per primo ciascuno e come parla il servizio
 
 Type: grilling
-Status: open
+Status: claimed
 Blocked by:
 Mappa: [Design del percorso 1](../map.md)
 
