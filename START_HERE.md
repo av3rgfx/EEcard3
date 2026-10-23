@@ -2,24 +2,24 @@
 
 Da incollare in Claude Code o Codex aperto su questo repository. La skill Wayfinder parte solo su richiesta: il messaggio comincia con `/wayfinder`.
 
-Il **design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6) ha una mappa: [Design del percorso 1](.scratch/design-percorso-1/map.md), aperta il 23/10/2026 con la destinazione confermata dall'utente (direzione più percorso intero). Nome di lavoro **Connetto**, simbolo **C–Legame** ([assets/marchio/](assets/marchio/README.md)); il parere sul marchio è chiesto subito e il suo esito va nel ticket «Parere di un consulente in marchi sul nome Connetto». I punti fermi uguali per tutte le direzioni sono decisi: cosa vede per primo ciascuno, più case, voce e tema ([DESIGN.md](DESIGN.md), «Punti fermi del percorso 1»). Il prossimo ticket libero è il prototipo delle direzioni. Messaggio:
+Il **design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6) ha una mappa: [Design del percorso 1](.scratch/design-percorso-1/map.md). La direzione è scelta dall'utente il 23/10/2026: **«Terracotta»**, con il chiaro in vetrina ([DESIGN.md](DESIGN.md), «Direzione del percorso 1»). Nome di lavoro **Connetto**, simbolo **C–Legame** ([assets/marchio/](assets/marchio/README.md)); il parere sul marchio è chiesto subito e il suo esito va nel ticket «Parere di un consulente in marchi sul nome Connetto». Ora si disegna il percorso intero in questa direzione, un ruolo alla volta. Si consiglia di cominciare dall'operatore, perché il collaboratore di ƎE lo deve guardare prima del controllo B. Messaggio:
 
 ---
 
-/wayfinder .scratch/design-percorso-1/map.md — ticket «Direzione del percorso 1» (.scratch/design-percorso-1/issues/04-prototipo-direzione.md)
+/wayfinder .scratch/design-percorso-1/map.md — ticket «Schermate dell'operatore di ƎE» (.scratch/design-percorso-1/issues/09-schermate-operatore.md)
 
-Leggi AGENTS.md, STATUS.md, la mappa e il ticket; poi DESIGN.md (soprattutto «Punti fermi del percorso 1» e «Indicazioni dell'utente»), docs/ricerca/hig-web.md §16 e, per le parole, GLOSSARY.md. PRODUCT.md §10 solo per le parti che servono alle schermate campione. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti. Il simbolo in assets/marchio/ è una scelta dell'utente e fa parte del progetto.
+Leggi AGENTS.md, STATUS.md, la mappa e il ticket; poi DESIGN.md («Punti fermi del percorso 1», «Direzione del percorso 1» e «Indicazioni dell'utente»), il ticket chiuso «Direzione del percorso 1» per i giri già fatti e, per le parole, GLOSSARY.md. PRODUCT.md §10 per le situazioni dell'operatore. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti. Il simbolo in assets/marchio/ è una scelta dell'utente e fa parte del progetto.
 
 - Rivendica il ticket (`Status: claimed`) prima di lavorare. Lavora solo su questo ticket, con la skill `prototype` (ramo UI); per le scelte, `grilling`.
-- Prima di costruire chiedimi quante direzioni e su quali assi differiscono, una domanda alla volta, in parole semplici, con una raccomandazione motivata e le conseguenze di ogni opzione.
-- Prototipo usa e getta, fuori dal repository, con le direzioni dietro un selettore, solo dati inventati e importi come «9.876,54 €»; ogni direzione in chiaro e in scuro, lo scuro per primo. Mostramelo come pagina privata da aprire su telefono e desktop e controllalo prima nel browser disponibile. Nessuno stack scelto, nessun codice applicativo.
-- La direzione scelta va in DESIGN.md con data e motivo; un cambio della specifica o dei punti fermi me lo porti come conflitto.
+- Le scelte me le fai una alla volta, in parole semplici, con una raccomandazione motivata e le conseguenze di ogni opzione.
+- Prototipo usa e getta, fuori dal repository, nella direzione «Terracotta», con solo dati inventati e importi come «9.876,54 €». Chiaro per primo, poi scuro, su telefono e desktop, con il tasto per nascondere i comandi. Mostramelo come pagina privata da aprire su telefono e desktop e controllalo prima nel browser disponibile. Nessuno stack scelto, nessun codice applicativo.
+- Le regole decise vanno in DESIGN.md con data e motivo; un cambio della specifica o dei punti fermi me lo porti come conflitto.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 
 ---
 
-Dopo questo ticket: «Il collaboratore di ƎE guarda lo spazio dell'operatore» (.scratch/design-percorso-1/issues/05-collaboratore-guarda-operatore.md). In qualsiasi momento: «Prova su iPhone: la piattaforma aggiunta alla schermata Home» (.scratch/design-percorso-1/issues/06-prova-iphone-schermata-home.md).
+Gli altri ticket delle schermate si lanciano con lo stesso messaggio, cambiando nome e file: «Schermate del proprietario» (.scratch/design-percorso-1/issues/10-schermate-proprietario.md), «Schermate dell'inquilino» (.scratch/design-percorso-1/issues/11-schermate-inquilino.md), «Accesso, adesione e situazioni comuni» (.scratch/design-percorso-1/issues/12-accesso-e-situazioni-comuni.md). Dopo le schermate dell'operatore: «Il collaboratore di ƎE guarda lo spazio dell'operatore» (.scratch/design-percorso-1/issues/05-collaboratore-guarda-operatore.md). In qualsiasi momento: «Prova su iPhone: la piattaforma aggiunta alla schermata Home» (.scratch/design-percorso-1/issues/06-prova-iphone-schermata-home.md).
 
 ## Quando arriva il parere sul nome Connetto
 

@@ -1,7 +1,7 @@
 # Direzione del percorso 1
 
 Type: prototype
-Status: claimed
+Status: resolved
 Blocked by: 01, 03
 Mappa: [Design del percorso 1](../map.md)
 
@@ -14,6 +14,17 @@ Prototipo usa e getta (skill `prototype`, ramo UI), con un selettore fra le dire
 Schermate campione, su telefono e desktop: la casa vista dal proprietario con il canone del mese e la consegna; la stessa vista dall'inquilino, con dove e quanto pagare e le ricevute; il lavoro in coda dell'operatore e la registrazione di un incasso al banco; una situazione difficile (contestazione o consegna in ritardo); un'email di servizio. Solo dati inventati, importi nel formato «9.876,54 €».
 
 Il prototipo si mostra all'utente come pagina privata da aprire su telefono e desktop; non entra nel repository. Nel ticket restano domanda, direzioni mostrate in breve, scelta e motivo; la direzione scelta va in [DESIGN.md](../../../DESIGN.md) con data e motivo. L'utente può scegliere una direzione, combinarne due con una regola chiara o chiederne altre.
+
+## Risposta (Answer)
+
+**Direzione scelta dall'utente il 23/10/2026: «Terracotta»**, nella versione del terzo giro, dopo tre giri di prototipo (dettaglio sotto «Commenti»). Regole in [DESIGN.md](../../../DESIGN.md), «Direzione del percorso 1».
+- *Organizzazione:* barra laterale sul desktop dentro un grande pannello, schede in basso sul telefono; per l'operatore elenco e dettaglio.
+- *Aspetto:* fondo neutro caldo, pannello bianco e ordinato. In cima alla pagina della casa c'è la sua illustrazione in grande, come in un annuncio, con le caratteristiche in etichette e la cosa da fare con un solo pulsante arancio a pillola. I fatti stanno in riquadri con icone arancio; carattere Manrope.
+- *Scuro:* neri e grigi neutri, con l'arancio solo come accento.
+- *Motivo:* è la versione che l'utente preferisce fra tre atmosfere ispirate ai suoi riferimenti: è gradevole e attira l'attenzione restando ordinata e professionale.
+- *Due decisioni prese lungo la strada:* **il chiaro in vetrina** al posto dello scuro, un cambio del punto fermo del 23/10 portato come conflitto, e **la casa illustrata**, non fotografata, senza cambiare la specifica.
+- *Scartate:* le direzioni del primo giro (A · Schede, B · Pagina casa, C · Elenco e dettaglio), funzionali ma non belle; «Luce calda» (d'impatto, ma con titoli troppo giocosi nel secondo giro) e «Cielo» (bella, ma con un riquadro troppo giocoso nel secondo giro), riviste nel terzo giro e non scelte.
+- *Prototipo:* usa e getta, fuori dal repository. È stato mostrato come pagina privata ed è rimasto nella cartella temporanea della sessione, senza branch di prova (regola del progetto: niente branch remoti oltre a quello di lavoro).
 
 ## Commenti (Comments)
 
@@ -43,3 +54,5 @@ Il prototipo si mostra all'utente come pagina privata da aprire su telefono e de
 - *Luce calda:* titoli in Source Serif 4, un carattere con grazie classico e sobrio, senza corsivo; il nome Connetto nei caratteri di sistema.
 - *Cielo:* niente quadretti né inclinazioni; la casa sta in una cornice dritta e gli stati del mese in etichette sobrie con icona colorata.
 - *Terracotta:* tutti i pulsanti a pillola; lo scuro su neri e grigi neutri, con l'arancio solo come accento e la facciata di sera con le finestre accese.
+
+**23/10/2026, chiusura.** Aggiunto alla pagina un tasto per nascondere i comandi del prototipo, che sul telefono occupavano troppo spazio (richiesta dell'utente). **Scelta dell'utente: Terracotta.** Registrata in DESIGN.md con data e motivo; la mappa passa ai ticket delle schermate per ruolo.

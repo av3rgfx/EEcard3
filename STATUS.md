@@ -1,7 +1,31 @@
 # Stato del progetto
 
-## Punto di ripresa (23 ottobre 2026, notte)
-**Fase: design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6), nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md). La destinazione, confermata dall'utente, è la direzione di design più il percorso intero disegnato in quella direzione, registrato in DESIGN.md e pronto per il controllo B. Prodotto: **Connetto** (nome di lavoro: esiste un marchio UE identico, l'utente chiede subito un parere a un consulente), simbolo **C–Legame**. I punti fermi uguali per tutte le direzioni sono decisi ([DESIGN.md](DESIGN.md), «Punti fermi del percorso 1»). Prossimo ticket libero: «Direzione del percorso 1», un prototipo con le direzioni dietro un selettore. Non c'è codice applicativo; architettura e stack non sono decisi.
+## Punto di ripresa (23 ottobre 2026, direzione scelta)
+**Fase: design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6), nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md). La direzione è scelta: **«Terracotta»** ([DESIGN.md](DESIGN.md), «Direzione del percorso 1»), con il chiaro in vetrina. Ora si disegna il percorso intero in questa direzione. I prossimi ticket liberi sono le schermate dell'operatore, del proprietario e dell'inquilino e i passaggi comuni; si consiglia di cominciare dall'operatore, perché il collaboratore di ƎE deve guardarlo prima del controllo B. Prodotto: **Connetto**, nome di lavoro in attesa del parere sul marchio; simbolo **C–Legame**. Non c'è codice applicativo; architettura e stack non sono decisi.
+
+## Fatto (23 ottobre 2026, direzione)
+- Ticket [Direzione del percorso 1](.scratch/design-percorso-1/issues/04-prototipo-direzione.md) rivendicato e chiuso con le skill `prototype` (ramo UI) e `grilling`. Domande una alla volta; ogni giro è stato mostrato come pagina privata, con il sorgente nella cartella temporanea della sessione (fuori dal repository) e un controllo nel browser prima della consegna.
+  - *Primo giro:* tre direzioni con organizzazioni diverse (schede, pagina casa, elenco e dettaglio). Per l'utente erano funzionali ma non belle.
+  - *Riferimenti dell'utente:* tre immagini di interfacce altrui, usate come atmosfera e non copiate.
+  - *Secondo giro:* tre atmosfere («Luce calda», «Cielo», «Terracotta») sulla stessa organizzazione, con le case illustrate.
+  - *Terzo giro:* le tre atmosfere riviste. Terracotta con tutti i pulsanti a pillola e lo scuro neutro; Cielo senza elementi giocosi; Luce calda con titoli più sobri.
+  - Su richiesta dell'utente, un tasto per nascondere i comandi del prototipo sul telefono.
+- **Decisioni dell'utente** (dettagli e alternative scartate nel ticket):
+  - tre direzioni, poi tre atmosfere;
+  - il **chiaro in vetrina** al posto dello scuro: è un cambio di un punto fermo del 23/10, portato come conflitto;
+  - la **casa illustrata**, non fotografata, senza cambiare la specifica;
+  - la direzione **«Terracotta»**.
+- [DESIGN.md](DESIGN.md): nuova sezione «Direzione del percorso 1» con organizzazione, la casa in cima, illustrazione, colori chiaro e scuro, stati, caratteri, forme ed email. Aggiornati «Stato», «Identità» e «Tema»; la vetrina scura è segnata come cambiata, non cancellata.
+- Verifiche eseguite:
+  - Ogni giro è stato reso con il Chromium disponibile, in tutte le combinazioni (3 versioni × 6 schermate × chiaro e scuro, a 390 px e a 1366 px): nessuno scorrimento orizzontale e nessun errore nella pagina.
+  - Contrasti dei colori di Terracotta misurati con la formula WCAG: tutti sopra 4,5:1. I valori sono in DESIGN.md.
+  - Non è una revisione dell'accessibilità: quella ha il suo passaggio nella mappa.
+- Mappa: la decisione è in «Decisioni finora». Le schermate per ruolo passano dal «Non ancora specificato» a quattro ticket: [Schermate dell'operatore di ƎE](.scratch/design-percorso-1/issues/09-schermate-operatore.md), [Schermate del proprietario](.scratch/design-percorso-1/issues/10-schermate-proprietario.md), [Schermate dell'inquilino](.scratch/design-percorso-1/issues/11-schermate-inquilino.md) e [Accesso, adesione e situazioni comuni](.scratch/design-percorso-1/issues/12-accesso-e-situazioni-comuni.md). «Il collaboratore di ƎE guarda lo spazio dell'operatore» ora aspetta anche le schermate dell'operatore.
+- Problemi aperti:
+  - Nel prototipo la facciata era un palazzo con i portici, ma la città delle case di ƎE non è registrata: lo stile si adatta, da verificare.
+  - La licenza di Manrope e un set di icone con licenza libera vanno letti e scelti prima dell'uso nel prodotto.
+  - Chi genera l'illustrazione di ogni casa, e come, è una domanda dell'architettura.
+- Lavoro sul branch `claude/design-direzione-percorso-1`, creato da `main` perché la sessione non ne indicava uno.
 
 ## Fatto (23 ottobre 2026, cosa vede per primo)
 - Ticket [Cosa vede per primo ciascuno e come parla il servizio](.scratch/design-percorso-1/issues/03-cosa-vede-per-primo.md) rivendicato e chiuso con le skill `grilling` e `domain-modeling`: dieci decisioni dell'utente, una alla volta, tutte sull'opzione raccomandata. Nel ticket, sotto «Commenti», ci sono le alternative scartate e i motivi.

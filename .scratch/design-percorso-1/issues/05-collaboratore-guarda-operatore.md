@@ -2,7 +2,7 @@
 
 Type: task
 Status: open
-Blocked by: 04
+Blocked by: 04, 09
 Mappa: [Design del percorso 1](../map.md)
 
 ## Domanda (Question)
@@ -14,6 +14,6 @@ Compito con l'utente (HITL):
 2. L'utente lo manda al collaboratore e riporta le risposte.
 3. L'agente le registra qui in forma sintetica, senza nomi; le correzioni che ne escono si portano all'utente una alla volta.
 
-Va fatto sul prototipo più completo dello spazio dell'operatore disponibile: quando esisterà il ticket delle sue schermate, si aggiunge a «Blocked by». Blocca solo il controllo B, non il resto del design. Le risposte del collaboratore sono il parere di chi lavora al banco, non un'evidenza sui clienti.
+Va fatto sul prototipo più completo dello spazio dell'operatore disponibile: quello del ticket [Schermate dell'operatore di ƎE](09-schermate-operatore.md), aggiunto a «Blocked by» il 23/10/2026. Blocca solo il controllo B, non il resto del design. Le risposte del collaboratore sono il parere di chi lavora al banco, non un'evidenza sui clienti.
 
 ## Commenti (Comments)

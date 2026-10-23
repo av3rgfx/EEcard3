@@ -1,8 +1,8 @@
 # Decisioni visive del progetto
 
 ## Stato
-Nessuna direzione visiva approvata. Non si eredita alcun layout, menu, palette, font o componente: il design si progetta da zero dopo le decisioni di prodotto (vedi [docs/METODO.md](docs/METODO.md), passo 6).
-Il design del percorso 1 è in corso dal 23/10/2026 nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md). Le scelte arrivano qui man mano che l'utente le conferma.
+Direzione del percorso 1 approvata dall'utente il 23/10/2026: **«Terracotta»** (sezione «Direzione del percorso 1»). Non si eredita alcun layout, menu, palette, font o componente da tentativi precedenti: il design si progetta da zero (vedi [docs/METODO.md](docs/METODO.md), passo 6).
+Il design del percorso 1 è in corso dal 23/10/2026 nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md): ora si disegna il percorso intero in questa direzione. Le scelte arrivano qui man mano che l'utente le conferma.
 
 ## Riferimento confermato dall'utente
 - Le **Apple Human Interface Guidelines** sono il riferimento di design più importante (16/10/2026), adattate alla piattaforma effettiva. Sintesi e fonti: [docs/rules/APPLE_DESIGN.md](docs/rules/APPLE_DESIGN.md). In caso di dubbio si rilegge la pagina ufficiale del componente.
@@ -20,10 +20,10 @@ Riscontri dati dall'utente su proposte precedenti, riformulati come principi. Va
 Prima la piattaforma web (telefono e desktop), poi l'app iPhone (confermato). I dettagli sono DA DEFINIRE.
 
 ## Identità
-DA DEFINIRE: palette, tipografia, icone e densità delle informazioni; la scritta del nome (wordmark). Voce e tema sono in «Punti fermi del percorso 1».
+Palette, tipografia, icone e densità del percorso 1 sono in «Direzione del percorso 1»; voce e tema in «Punti fermi del percorso 1». DA DEFINIRE: la scritta del nome (wordmark), dopo il parere sul marchio.
 - Il prodotto ha un marchio autonomo dall'agenzia (confermato). Nome: **Connetto** ([PRODUCT.md](PRODUCT.md) §1 e §12, 23/10/2026), nome di lavoro in attesa del parere sul marchio: la scritta del nome si disegna dopo il parere.
 - **Simbolo C–Legame** (23/10/2026, scelto e fornito dall'utente): due elementi a forma di C che si agganciano, a rappresentare la connessione, il legame. Ambito: solo il segno, in un colore pieno che prende quello del testo intorno; versione regolare e versione piccola. File e regole d'uso in [assets/marchio/](assets/marchio/README.md). È un materiale dell'utente, non un riuso di tentativi precedenti.
-- Preferenza per il tema scuro (fondo nero e grigi neutri): riconfermata il 23/10/2026 come vetrina, non come unico tema (vedi «Tema»).
+- Preferenza per il tema scuro (fondo nero e grigi neutri): riconfermata il 23/10/2026 come vetrina, non come unico tema. Lo stesso giorno, scegliendo la direzione, l'utente ha messo in vetrina il chiaro; lo scuro resta nero e grigi neutri (vedi «Tema»).
 
 ## Punti fermi del percorso 1
 Decisi dall'utente il 23/10/2026, una domanda alla volta, nel ticket [Cosa vede per primo ciascuno e come parla il servizio](.scratch/design-percorso-1/issues/03-cosa-vede-per-primo.md), che conserva alternative scartate e motivi. Ambito: tutte le direzioni del percorso 1, su telefono e desktop; le direzioni differiscono per impostazione e aspetto, non per questi contenuti. Applicano [PRODUCT.md](PRODUCT.md) §10 senza cambiarla.
@@ -47,7 +47,37 @@ Decisi dall'utente il 23/10/2026, una domanda alla volta, nel ticket [Cosa vede 
 - **Nessuno parla in prima persona:** niente «noi» e niente Connetto come personaggio. Le frasi dicono il fatto e chi ha agito, e ogni fatto del denaro dice chi l'ha confermato («ricevuto da ƎE al banco», «confermato da Lei»). Connetto è il nome del posto; il mittente dei messaggi resta quello di §10.5. *Motivo:* il glossario («Incasso verificato»), le HIG e un nome ancora di lavoro.
 
 **Tema**
-- Il tema segue l'impostazione chiaro o scuro del dispositivo, senza interruttore nell'app. Ogni direzione si disegna in chiaro e in scuro: lo scuro, nero e grigi neutri, è la vetrina e si mostra per primo nei prototipi; il chiaro è curato allo stesso modo. *Motivo:* la preferenza dell'utente resta senza essere imposta a chi legge meglio in chiaro; le HIG chiedono di seguire il sistema ([ricerca](docs/ricerca/hig-web.md), §4).
+- Il tema segue l'impostazione chiaro o scuro del dispositivo, senza interruttore nell'app. Ogni direzione si disegna in chiaro e in scuro, curati allo stesso modo; lo scuro è fatto di nero e grigi neutri. *Motivo:* la preferenza dell'utente resta senza essere imposta a chi legge meglio in chiaro; le HIG chiedono di seguire il sistema ([ricerca](docs/ricerca/hig-web.md), §4).
+- **Vetrina: il chiaro** (cambiato dall'utente il 23/10/2026 nel ticket [Direzione del percorso 1](.scratch/design-percorso-1/issues/04-prototipo-direzione.md), portato come conflitto). Prima la vetrina era lo scuro, che si mostrava per primo nei prototipi; ora prototipi e presentazioni si aprono in chiaro. *Motivo:* le immagini di riferimento scelte dall'utente sono chiare e la loro bellezza viene da luce e immagini.
+
+## Direzione del percorso 1
+Scelta dall'utente il 23/10/2026: **«Terracotta»**, dopo tre giri di prototipo con dati inventati. Il ticket [Direzione del percorso 1](.scratch/design-percorso-1/issues/04-prototipo-direzione.md) conserva le direzioni mostrate, i riferimenti dell'utente e i motivi delle scelte. Ambito: tutto il percorso 1, per proprietario, inquilino e operatore di ƎE, su telefono e desktop, comprese le email. Applica i «Punti fermi del percorso 1» senza cambiarli; il prototipo non resta nel repository, valgono queste regole.
+
+- **Organizzazione.**
+  - *Desktop:* il servizio sta in un grande pannello arrotondato su un fondo neutro. A sinistra la barra laterale con simbolo e nome, le sezioni, «Le mie case» e in fondo la persona; in cima la ricerca.
+  - *Telefono:* un'intestazione con il simbolo e le iniziali della persona, il contenuto in colonna e quattro schede in basso. Per i clienti sono Casa, Ricevute, Documenti e Profilo; per l'operatore Coda, Case, Persone e Oggi. La barra delle schede è traslucida, con una versione opaca quando si chiede più contrasto.
+  - *Operatore:* elenco e dettaglio, affiancati sul desktop e in fila sul telefono, con Indietro. In cima «Trova cliente o casa» e tre numeri del giorno: voci in coda, incassi, registrato oggi.
+- **La casa in cima.** La pagina della casa si apre con un riquadro. Contiene l'illustrazione della casa in grande, come la foto di un annuncio, con l'indirizzo in un'etichetta; accanto sul desktop, sotto sul telefono, un titolo che dice il fatto del mese («Ottobre: il canone è pagato»), le caratteristiche in etichette e la cosa da fare con un solo pulsante. Sotto ci sono i fatti in riquadri con icona (canone, oneri, prossima scadenza, inquilino), poi il mese con canone e consegna su righe distinte, e le scorciatoie.
+- **Illustrazione della casa, non foto** (decisione dell'utente del 23/10/2026: nessun cambio alla specifica, nessun lavoro in più per ƎE, nessun interno di una casa abitata). Ogni casa ha una facciata disegnata, diversa da casa a casa e sempre presente, ricavata da dati che la piattaforma ha già. Compare in piccolo anche nelle righe dell'operatore e nell'email, dove è solo decorazione e il fatto resta testo. Nel prototipo era un palazzo con i portici: lo stile va adattato alle case di ƎE (*da verificare*). Chi la genera e come è una domanda dell'architettura.
+- **Colori, chiaro.**
+  - Fondo #efedea con un alone arancio leggero; pannello e carte bianchi, con linee #ece7e2.
+  - Testo #1b1714, testo secondario #5d554e.
+  - Arancio: pulsante principale #c4460f con testo bianco; testo e icone #b8410e su fondo tenue #fdf0e9.
+- **Colori, scuro:** neri e grigi neutri, senza toni arancio nei fondi (richiesta dell'utente).
+  - Fondo #0a0a0a, pannello #141414, carte #1b1b1b e #242424.
+  - Testo #f4f4f4 e #b3b3b3.
+  - Arancio solo come accento: pulsante #ff7a45 con testo quasi nero, testo e icone #ff8a57.
+- **Contrasti misurati** con la formula WCAG il 23/10/2026, tutti sopra 4,5:1. Sono valori del prototipo e si ricontrollano nella revisione dell'accessibilità.
+  - Chiaro: pulsante 4,96:1; arancio su bianco 5,53:1, sul fondo tenue 4,95:1; testo secondario 7,3:1.
+  - Scuro: pulsante 7,6:1; arancio 7,4:1; testo secondario 8,21:1.
+- **Stati.** Pagato in verde con la spunta, in attesa nel colore d'accento, in ritardo in ambra con l'orologio, contestata in grigio corsivo con il fumetto. Sempre parola e icona, mai il solo colore. La scadenza passata dell'inquilino resta detta con calma (punti fermi).
+- **Caratteri.** Manrope per titoli e testo, con le cifre in colonna negli importi. È un carattere di Google Fonts con licenza libera dichiarata: la licenza va letta e annotata prima di usarlo nel prodotto. Nelle email si usano i caratteri di sistema ([ricerca sulle email](docs/ricerca/email-sms-forma.md)).
+- **Forme.**
+  - Pulsanti tutti a pillola (richiesta dell'utente). Carte con angoli di 20 px, riquadri interni di 14 px, ombre leggere.
+  - Icone a tratto dentro cerchi arancio tenue. Quelle del prototipo sono disegnate a mano; il set definitivo, con licenza libera, si sceglie con i componenti.
+- **Email.** Stessa direzione: intestazione bianca con simbolo e nome, l'illustrazione della casa, il titolo con il fatto, il testo e il pulsante a pillola, senza importi.
+- *Motivo:* fra tre atmosfere ispirate alle immagini di riferimento dell'utente, è quella che preferisce. È gradevole e attira l'attenzione anche di chi ha poco interesse, restando ordinata e professionale, come chiesto («oltre che facile deve essere bello da vedere»).
+- *Evidenza:* preferenza dell'utente su prototipi con dati inventati. Non ci sono prove con persone; lo spazio dell'operatore lo guarda il collaboratore di ƎE prima del controllo B.
 
 ## Componenti e token
 DA DEFINIRE dopo il primo percorso. Riutilizzare e documentare solo ciò che serve.
@@ -57,4 +87,4 @@ Registrare feedback, caricamento, errore, stato vuoto, successo, disabilitato e 
 Registrare comportamento mobile, tastiera, testo ingrandito e movimento ridotto.
 
 ## Decisioni confermate
-Per ogni scelta: decisione, motivo, evidenza o ipotesi, ambito e data. Finora: il riferimento Apple, il formato degli importi, il simbolo C–Legame (sezione «Identità») e i punti fermi del percorso 1 (23/10/2026).
+Per ogni scelta: decisione, motivo, evidenza o ipotesi, ambito e data. Finora: il riferimento Apple, il formato degli importi, il simbolo C–Legame (sezione «Identità»), i punti fermi del percorso 1 e la direzione «Terracotta» con il chiaro in vetrina (23/10/2026).
