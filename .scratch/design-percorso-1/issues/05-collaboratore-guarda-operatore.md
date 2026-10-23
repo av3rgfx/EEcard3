@@ -1,8 +1,8 @@
 # Il collaboratore di ƎE guarda lo spazio dell'operatore
 
 Type: task
-Status: open
-Blocked by: 04
+Status: claimed
+Blocked by: 04, 09
 Mappa: [Design del percorso 1](../map.md)
 
 ## Domanda (Question)
@@ -14,6 +14,25 @@ Compito con l'utente (HITL):
 2. L'utente lo manda al collaboratore e riporta le risposte.
 3. L'agente le registra qui in forma sintetica, senza nomi; le correzioni che ne escono si portano all'utente una alla volta.
 
-Va fatto sul prototipo più completo dello spazio dell'operatore disponibile: quando esisterà il ticket delle sue schermate, si aggiunge a «Blocked by». Blocca solo il controllo B, non il resto del design. Le risposte del collaboratore sono il parere di chi lavora al banco, non un'evidenza sui clienti.
+Va fatto sul prototipo più completo dello spazio dell'operatore disponibile: quello del ticket [Schermate dell'operatore di ƎE](09-schermate-operatore.md), aggiunto a «Blocked by» il 23/10/2026. Blocca solo il controllo B, non il resto del design. Le risposte del collaboratore sono il parere di chi lavora al banco, non un'evidenza sui clienti.
 
 ## Commenti (Comments)
+
+**23/10/2026, messaggio e domande pronti da copiare** (preparati dall'agente; li manda l'utente, insieme al link del prototipo dell'operatore condiviso dal menu «Condividi» della pagina, che ora è privata).
+
+> Ciao! Ti mando il link a una prova di come potrebbe essere lo spazio di ƎE in Connetto, il servizio che stiamo progettando. Dentro ci sono solo dati inventati: nomi, case e importi non sono veri. In alto puoi scegliere le schermate (coda, persona al banco, incasso, scheda di una casa e altre). Funziona sia sul computer sia sul telefono. Ti chiedo dieci minuti e quattro risposte, anche brevi:
+>
+> 1. Al banco su cosa lavori: computer fisso, portatile, tablet o telefono? E la stampante per le ricevute è lì vicino?
+> 2. Quando un inquilino viene a pagare, cosa fai oggi, passo per passo, e quanto ci metti più o meno? Guardando le schermate «Al banco» e «Incasso al banco», c'è qualcosa che manca o che ti rallenterebbe?
+> 3. La «Coda» mette le cose in quest'ordine: consegne in ritardo, contestazioni, canoni non pagati, consegne da fare, nuovi canoni da controllare, attivazioni e documenti mancanti, scadenze. È l'ordine giusto per il tuo lavoro? Cosa guarderesti per primo la mattina?
+> 4. Ai clienti, al banco e per iscritto, date del «tu» o del «Lei»?
+>
+> Grazie!
+
+Perché queste domande:
+- la 1 decide su cosa si disegna per primo il banco e come si stampa;
+- la 2 controlla l'incasso, il passaggio più frequente;
+- la 3 controlla l'ordine della coda, punto fermo del 23/10;
+- la 4 controlla la voce appena passata al «tu».
+
+Il ticket resta `claimed` finché arrivano le risposte; si registrano in sintesi, senza nomi.
