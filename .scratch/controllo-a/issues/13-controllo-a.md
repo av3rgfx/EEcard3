@@ -28,3 +28,13 @@ Alla chiusura: controllo A registrato in PRODUCT.md §12; mappa chiusa con la de
 Richieste ai tecnici (percorso 2) e report annuale (percorso 4) restano fuori dalla promessa del percorso 1. Segnalati, senza bloccare: prezzo, chiarimento 3 di ƎE (bonifici al proprietario), evidenze dal pilota.
 
 *Domanda dell'utente sulla pianta e sulla casa in 3D.* La planimetria entra nel percorso 1 come documento del fascicolo (elenco dei mancanti, §10.2), visibile a proprietario e operatore (§10.7). La casa in 3D (PRODUCT.md §5.5) è fuori dalla prima versione (§12, 19/10) e non è fra i quattro percorsi; nessuna data.
+
+*Voce 2, primo percorso completo: confermata dall'utente* così com'è in PRODUCT.md §10. I punti aperti restano in §10.10 e non bloccano il design: chiarimenti di ƎE (il 3 può riaprire la decisione 2), pareri, prezzo, tessere fisiche, valori fissati da ƎE, temi tecnici. Per il design: la home decisa il 15/10 nel percorso 1 vale senza le bollette (percorso 3).
+
+*Vista 3D indicativa (23/10/2026): decisione dell'utente*, che puntava molto sulla casa in 3D e propone uno script che, dalle sole planimetrie leggibili, ricostruisca una vista approssimativa, con un messaggio per quelle di bassa qualità. Valutazione dell'agente: ha senso come prova; esistono studi sul riconoscimento delle piante (su piante non italiane), ma quanto reggono le planimetrie catastali, spesso disegnate a mano e scansionate, lo dice solo una prova; un servizio esterno richiederebbe un contratto sui dati. Deciso:
+1. entra nella prima versione **come prova a condizione**: solo una vista ricavata dalla planimetria, con la scritta «indicativa, non è una misura» (§9); le «ipotesi di modifica» di §5.5 restano fuori;
+2. la vedono le stesse persone della planimetria: proprietario e operatore (§7.9);
+3. planimetria di bassa qualità: un messaggio invita a caricarne una migliore o a parlarne con l'agenzia; una copia nuova dal catasto rientra nelle pratiche a pagamento (§12, 19/10);
+4. non cambia il percorso 1 né ne frena il design: [Ricerca: dalla planimetria catastale alla vista 3D indicativa](14-ricerca-vista-3d.md) e [Prova: vista 3D da una planimetria](15-prova-vista-3d.md), prima dell'architettura; se la prova va male torna fuori, se va bene si costruisce dopo il percorso 1;
+5. prove solo con piante inventate; una planimetria vera solo con l'autorizzazione dell'utente.
+Scartate: lasciarla fuori dalla prima versione (l'utente ci punta); metterla dentro senza prova (non si sa se funziona sulle planimetrie italiane). Cambia la voce 3; si registra in PRODUCT.md §12 alla chiusura.

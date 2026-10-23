@@ -50,6 +50,10 @@ _Da evitare_: incarico (è l'affidamento), riparazione
 La cronologia di interventi, modifiche e documenti di una casa. Si vede solo attraverso un rapporto con la casa o una condivisione.
 _Da evitare_: storia dell'immobile, report
 
+**Vista 3D indicativa**:
+Una rappresentazione approssimativa della casa ricavata dalla planimetria del fascicolo, solo quando la planimetria si legge abbastanza. Non è una misura e non sostituisce la planimetria; la vede chi può vedere la planimetria.
+_Da evitare_: rilievo, modello 3D (fanno pensare a misure), casa in 3D (l'idea più ampia, con le ipotesi di modifica)
+
 **Condivisione**:
 Un accesso a una parte del fascicolo concesso dal proprietario a una persona senza rapporto con la casa, con destinatario, durata e revoca.
 _Da evitare_: accesso a pagamento, pubblicazione
