@@ -21,12 +21,14 @@ Confermata dall'utente il 19/10/2026 al termine del riallineamento ([METODO.md](
 
 **Dalla specifica del percorso 1 al design:** arrivare alla specifica del primo percorso completo, **attivazione e canone del mese per le case gestite da ƎE**, confermata dall'utente e sostenuta dalle ricerche e dai fatti dell'agenzia; spuntare il controllo A e passare al design. Niente colloqui né proposta di pre-adesione: le evidenze con i clienti arrivano dal pilota (adesioni, uso, rinnovi). Le domande segnate «Persone» in questo documento si misurano nel pilota.
 
+**Destinazione raggiunta il 23/10/2026:** i tre criteri sono soddisfatti; il controllo A è registrato in [PRODUCT.md](../PRODUCT.md) §12 («Controllo A») e si passa al design ([METODO.md](METODO.md), passo 6).
+
 Lo studio è finito quando:
 1. **Ricerche chiuse** in `docs/ricerca/`, con l'indicazione di dove serve un parere professionale: obblighi dell'agenzia che incassa i canoni al banco; adempimenti della locazione da mettere nello scadenzario; titolarità e privacy dei dati fra agenzia, piattaforma, proprietari, inquilini e tecnici; alternative già sul mercato; email che non sembrano spam.
 2. **Specifica del percorso 1** in PRODUCT.md §10: passi, chi fa cosa, stati del canone, messaggi, casi limite (canone parziale, ritardo, contestazione, fine della locazione), cosa vede ciascuno, misure di successo del pilota (§13).
 3. **Controllo A** spuntato ([METODO.md](METODO.md), passo 5): l'utente conferma le voci con la specifica e le ricerche. Da lì si passa al design (passo 6).
 
-Non sono criteri di arrivo: **prezzo e condizioni dell'adesione** del proprietario, che l'utente decide prima del pilota; la **prova sulle bollette** (quante arrivano con il PDF o con un link, quante hanno il QR, quanto è affidabile la lettura, [ricerca/bollette.md](ricerca/bollette.md)), che serve quando si lavora sulle bollette dell'inquilino. Il dato dei 600 € è chiarito (PRODUCT.md §12, 21/10/2026).
+Non sono criteri di arrivo: **prezzo e condizioni dell'adesione** del proprietario, che l'utente decide prima del pilota; la **prova sulle bollette** (quante arrivano con il PDF o con un link, quante hanno il QR, quanto è affidabile la lettura, [ricerca/bollette.md](ricerca/bollette.md)), che serve quando si lavora sulle bollette dell'inquilino. Il dato dei 600 € è chiarito (PRODUCT.md §12, 21/10/2026). Dal 23/10/2026 nemmeno la **vista 3D indicativa**, entrata nella prima versione come prova a condizione: ricerca e prova si chiudono prima dell'architettura (PRODUCT.md §12).
 
 Dopo la destinazione: il design stesso, l'architettura, lo stack e il nome del prodotto.
 
@@ -67,7 +69,7 @@ Un servizio per la casa si apre poche volte al mese, quasi sempre per una scaden
 - **Persone:** quando e perché una persona aprirebbe il servizio?
 - **Decisione:** qual è l'interfaccia principale? App, notifiche, email, messaggistica, banco in agenzia?
 - Direzione possibile: messaggi utili e puntuali come canale principale, con l'app per il dettaglio e le azioni.
-- **Sciolta per il pilota il 19/10/2026** ([PRODUCT.md](../PRODUCT.md) §12): email e notifiche puntuali, piattaforma web per il dettaglio, banco per attivazione e aiuto. Resta aperta la domanda «Persone».
+- **Sciolta per il pilota il 19/10/2026** ([PRODUCT.md](../PRODUCT.md) §12): email e notifiche puntuali, piattaforma web per il dettaglio, banco per attivazione e aiuto. Resta aperta la domanda «Persone». Precisata il 23/10/2026 (controllo A): nel percorso 1 email, o SMS per chi non ha l'email; notifiche sul telefono con l'app iPhone.
 
 ### T6. A cosa serve la tessera?
 Se non autentica e non paga, la tessera è un segno di appartenenza e uno strumento di vendita al banco. Wallet, contactless, lettori, terminale e totem hanno costi e requisiti propri.
@@ -78,7 +80,7 @@ Se non autentica e non paga, la tessera è un segno di appartenenza e uno strume
 ### T7. Quanto è ampia la prima versione?
 Il catalogo dell'idea (PRODUCT.md §5) è molto più grande di quanto un pilota possa sostenere con qualità.
 - **Decisione:** quale promessa minima si può mantenere davvero, con il servizio e le persone disponibili? Cosa resta fuori, dichiarandolo?
-- **Sciolta come ipotesi il 19/10/2026** ([PRODUCT.md](../PRODUCT.md) §10 e §12): primo percorso attivazione e canone del mese, poi richiesta d'aiuto, bollette dell'inquilino e report annuale; elenco dichiarato di ciò che resta fuori. Da confermare con le evidenze delle persone.
+- **Sciolta come ipotesi il 19/10/2026** ([PRODUCT.md](../PRODUCT.md) §10 e §12): primo percorso attivazione e canone del mese, poi richiesta d'aiuto, bollette dell'inquilino e report annuale; elenco dichiarato di ciò che resta fuori. Confermata nel controllo A del 23/10/2026, con l'elenco aggiornato (vista 3D indicativa come prova a condizione); le evidenze delle persone arrivano dal pilota.
 
 ### T8. Che ruolo ha la piattaforma per l'agenzia?
 Il mestiere principale dell'agenzia è la mediazione: compravendite e locazioni. Un fascicolo completo e un rapporto continuo possono portare nuovi incarichi, rinnovi, pratiche a pagamento e vendite più rapide.

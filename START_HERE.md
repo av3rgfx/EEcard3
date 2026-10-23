@@ -2,19 +2,35 @@
 
 Da incollare in Claude Code o Codex aperto su questo repository. La skill Wayfinder parte solo su richiesta: il messaggio comincia con `/wayfinder`.
 
-La specifica del percorso 1 è chiusa e confermata dall'utente (22/10/2026, [PRODUCT.md](PRODUCT.md) §10). Il prossimo ticket è **«Controllo A e passaggio al design»**, l'ultimo della mappa, ora libero. Messaggio:
+Lo studio è chiuso: il controllo A è superato (23/10/2026, [PRODUCT.md](PRODUCT.md) §12, riga «Controllo A») e la mappa [Dalla specifica del percorso 1 al design](.scratch/controllo-a/map.md) ha raggiunto la destinazione. Il prossimo passo è il **design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6). Il design ha più scelte che dipendono l'una dall'altra (direzione, tre spazi, telefono e desktop, email e SMS): il messaggio apre una mappa nuova. Messaggio:
 
 ---
 
-/wayfinder .scratch/controllo-a/map.md — ticket «Controllo A e passaggio al design» (.scratch/controllo-a/issues/13-controllo-a.md)
+/wayfinder Design del percorso 1: attivazione e canone del mese (METODO.md, passo 6). Nuova mappa in .scratch/design-percorso-1/.
 
-Leggi AGENTS.md, STATUS.md, la mappa `.scratch/controllo-a/map.md` e il ticket. Poi PRODUCT.md §10, §12 e §13, docs/METODO.md (passo 5) e docs/STUDIO.md (destinazione e criteri di arrivo); le ricerche in docs/ricerca/ e le «Risposte (Answer)» dei ticket chiusi solo per le parti che servono a una voce. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice o decisioni di tentativi precedenti.
+Leggi AGENTS.md, STATUS.md, DESIGN.md e docs/rules/APPLE_DESIGN.md; poi PRODUCT.md §10 (la specifica), la riga «Controllo A» di §12 (promessa, cosa resta fuori) e §13; GLOSSARY.md per le parole. La mappa chiusa .scratch/controllo-a/map.md e il ticket «Controllo A e passaggio al design» solo per le parti che servono. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
 
-- Rivendica il ticket (`Status: claimed`) prima di lavorare. Lavora solo su questo ticket, con le skill `grilling` e `domain-modeling`.
-- Passa con me le cinque voci del controllo A una alla volta (primo cliente e promessa; primo percorso completo; cosa resta fuori; chi eroga il servizio; se e come la piattaforma tocca il denaro): per ciascuna dimmi in parole semplici dove sta la decisione, cosa la sostiene e cosa manca, con una raccomandazione; la conferma è mia. Chiarimenti di ƎE, pareri, prezzo e tessere fisiche si segnalano, non bloccano il design.
-- Alla chiusura registra il controllo A in PRODUCT.md §12, chiudi la mappa con la destinazione raggiunta e aggiorna docs/STUDIO.md. Non scrivere codice applicativo, non scegliere lo stack, non disegnare schermate.
+- Prima la destinazione, da confermare con me (skill `grilling` e `domain-modeling`); proposta: una direzione di design del percorso 1 scelta da me e registrata in DESIGN.md, per proprietario, inquilino e operatore di ƎE, su telefono e desktop, con email e SMS, pronta per il controllo B insieme all'architettura.
+- Poi la mappa, in ampiezza, con i ticket che si possono già scrivere e il resto in «Non ancora specificato». Riferimento principale le Apple Human Interface Guidelines; le indicazioni di DESIGN.md valgono come orientamento. Le domande me le fai una alla volta, in parole semplici, con una raccomandazione motivata e le conseguenze di ogni opzione.
+- Prototipi solo usa e getta (skill `prototype`), con direzioni davvero diverse dietro un selettore e solo dati inventati; nessuno stack scelto, nessun codice applicativo. Le scelte visive si registrano in DESIGN.md con data e motivo.
+- Restano fuori dalla mappa, salvo mia richiesta: la vista 3D indicativa (prima la ricerca e la prova nei ticket 14 e 15 della mappa chiusa), prezzo e condizioni dell'adesione, tessere fisiche, bollette.
 
-Chiudi la sessione aggiornando STATUS.md e START_HERE.md con il messaggio per avviare il design (docs/METODO.md, passo 6), poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
+Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
+
+---
+
+## Prima dell'architettura: Vista 3D indicativa
+
+Decisa come prova a condizione il 23/10/2026 (PRODUCT.md §12); non blocca il design del percorso 1. Messaggio per la ricerca (la prova, ticket 15, viene dopo):
+
+/wayfinder .scratch/controllo-a/map.md — ticket «Ricerca: dalla planimetria catastale alla vista 3D indicativa» (.scratch/controllo-a/issues/14-ricerca-vista-3d.md)
+
+Leggi AGENTS.md, STATUS.md, la mappa (sezione «Dopo la destinazione») e il ticket, poi la decisione «Vista 3D indicativa» in PRODUCT.md §12. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice o decisioni di tentativi precedenti.
+
+- Rivendica il ticket (`Status: claimed`) prima di lavorare. Fai la ricerca con la skill `research`, su fonti primarie con la data di lettura, in docs/ricerca/vista-3d.md.
+- Nessun servizio, account o caricamento di planimetrie vere senza la mia autorizzazione. Le decisioni che emergono me le porti una alla volta, in parole semplici.
+
+Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 
 ---
 

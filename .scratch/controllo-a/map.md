@@ -2,6 +2,7 @@
 
 Type: map (wayfinder:map)
 Aperta: 19/10/2026; destinazione ridisegnata il 22/10/2026 (prima: «Superare il controllo A con le evidenze»)
+**Chiusa: 23/10/2026, destinazione raggiunta.** Specifica del percorso 1 confermata, controllo A superato ([PRODUCT.md](../../PRODUCT.md) §12, «Controllo A»); si passa al design ([docs/METODO.md](../../docs/METODO.md), passo 6). I ticket ancora aperti sono in fondo, sotto «Dopo la destinazione».
 
 ## Destinazione (Destination)
 
@@ -32,10 +33,11 @@ La specifica del primo percorso completo, **attivazione e canone del mese per le
 - [Chi fornisce la piattaforma e chi vende l'adesione nel pilota](issues/11-chi-fornisce-la-piattaforma.md): nel pilota la piattaforma è di ƎE, che risponde di tutti i dati con un'informativa sola; ƎE vende l'adesione del proprietario con un foglio separato dall'incarico; l'inquilino ha un'adesione gratuita con tessera, che comprende lo spazio delle bollette; società distinta solo con la seconda agenzia.
 - [Fatti dall'agenzia ƎE](issues/06-fatti-agenzia.md): il servizio da 600 € di ƎE descrive l'agenzia di oggi e non entra nel prodotto; incarico di gestione non scritto; meno di 3 persone in agenzia, 1–1,5 ore al giorno confermate; canone consegnato ogni mese con ricevuta firmata; mancano i numeri su case, bonifici ed email, chiesti con sei chiarimenti. Nessuna decisione smentita, due contrasti parziali nella specifica; parere legale e privacy prima del pilota.
 - [Specifica del percorso 1: attivazione e canone del mese](issues/09-specifica-percorso-1.md): confermata dall'utente in PRODUCT.md §10; attivazione dell'operatore di ƎE con incarico scritto obbligatorio, accesso con email o cellulare; canone e consegna come due conti distinti, conferma chi riceve il denaro; messaggi di servizio senza importi, nessun sollecito, contestazioni con «Chiama»; misure in §13, prove solo simulate.
+- [Controllo A e passaggio al design](issues/13-controllo-a.md): le cinque voci confermate dall'utente il 23/10/2026; promessa del percorso 1 scritta in una frase per proprietario e inquilino; lista unica di cosa resta fuori, notifiche sul telefono fuori dal percorso 1; la vista 3D indicativa entra nella prima versione come prova a condizione; il denaro non passa dalla piattaforma. Si passa al design.
 
 ## Non ancora specificato (Not yet specified)
 
-Niente: l'ultimo tratto è il ticket [Controllo A e passaggio al design](issues/13-controllo-a.md).
+Niente: la destinazione è raggiunta.
 
 ## Fuori ambito (Out of scope)
 
@@ -52,3 +54,11 @@ Niente: l'ultimo tratto è il ticket [Controllo A e passaggio al design](issues/
   - Conferma o correzione delle decisioni del 18–19/10/2026 con le sintesi: le decisioni restano come sono; la verifica passa al pilota.
   - Esito della pre-adesione: non c'è proposta; prezzo e condizioni le decide l'utente, le adesioni si contano nel pilota.
   - Decisione sul secondo gruppo (fascicolo per la vendita): si prende dopo il pilota, per scelta dell'utente del 22/10/2026; il fascicolo per la vendita era già fuori dalla prima versione.
+
+## Dopo la destinazione
+
+Ticket rimasti aperti alla chiusura: non bloccano il design del percorso 1 e si lavorano con questo stesso tracker finché non serve una mappa nuova.
+- [Prezzo e condizioni dell'adesione](issues/10-prezzo-condizioni-adesione.md): decisione dell'utente, prima del pilota.
+- [Ricerca: tessere fisiche, fornitori, personalizzazione, ordini e spedizioni](issues/12-ricerca-tessere-fisiche.md): prima del pilota.
+- [Prova sulle bollette](issues/08-prova-bollette.md): serve quando si lavora sulle bollette dell'inquilino (percorso 3).
+- [Ricerca: dalla planimetria catastale alla vista 3D indicativa](issues/14-ricerca-vista-3d.md), poi [Prova: vista 3D da una planimetria](issues/15-prova-vista-3d.md): prima dell'architettura.

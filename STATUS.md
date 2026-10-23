@@ -1,7 +1,14 @@
 # Stato del progetto
 
-## Punto di ripresa (22 ottobre 2026, sera)
-**Fase: studio.** La [Specifica del percorso 1: attivazione e canone del mese](.scratch/controllo-a/issues/09-specifica-percorso-1.md) è chiusa e **confermata dall'utente**: è in [PRODUCT.md](PRODUCT.md) §10, con le decisioni in §12 e le misure del pilota in §13. Il prossimo passo è il ticket [Controllo A e passaggio al design](.scratch/controllo-a/issues/13-controllo-a.md), ora libero: l'ultimo della mappa ([.scratch/controllo-a/map.md](.scratch/controllo-a/map.md)). Restano liberi, senza bloccare il design, «Prezzo e condizioni dell'adesione», «Prova sulle bollette» e la nuova «Ricerca: tessere fisiche», tutti prima del pilota. Non c'è codice applicativo; design, architettura e stack non sono decisi.
+## Punto di ripresa (23 ottobre 2026)
+**Fase: studio chiusa; si passa al design** ([docs/METODO.md](docs/METODO.md), passo 6). Il controllo A è superato: l'utente ha confermato le cinque voci una alla volta ([PRODUCT.md](PRODUCT.md) §12, riga «Controllo A»). La mappa [Dalla specifica del percorso 1 al design](.scratch/controllo-a/map.md) è chiusa con la destinazione raggiunta. Restano aperti, senza bloccare il design: «Prezzo e condizioni dell'adesione», «Ricerca: tessere fisiche», «Prova sulle bollette» e, prima dell'architettura, ricerca e prova sulla vista 3D indicativa. Non c'è codice applicativo; design, architettura e stack non sono decisi.
+
+## Fatto (23 ottobre 2026)
+- Ticket [Controllo A e passaggio al design](.scratch/controllo-a/issues/13-controllo-a.md) rivendicato e chiuso con le skill `grilling` e `domain-modeling`, una voce alla volta, ciascuna con decisione, sostegno, mancanze e raccomandazione; conferme dell'utente annotate nel ticket.
+- Voce 1: primo cliente invariato; **promessa del percorso 1 scritta in una frase** per proprietario e inquilino. Voce 2: specifica di §10 confermata così com'è. Voce 4: operatore di ƎE dentro le 1–1,5 ore al giorno. Voce 5: il denaro non passa dalla piattaforma; adesione e pratiche si pagano a ƎE fuori dalla piattaforma.
+- Voce 3, con due cambi: lista unica di cosa resta fuori in §12; **notifiche sul telefono fuori dal percorso 1** (email, o SMS per chi non ha l'email; si riconsiderano con l'app iPhone). Precisate in §12 «Canale principale» e «Cosa resta fuori» (19/10), segnate e non cancellate.
+- Proposta dell'utente accolta: **vista 3D indicativa** della casa dalla planimetria nella prima versione, come prova a condizione (§12, 23/10; §5.5; §10.10): solo planimetrie leggibili, messaggio per quelle di bassa qualità, scritta «indicativa, non è una misura», visibile a proprietario e operatore, ipotesi di modifica fuori. Ticket nuovi [Ricerca: dalla planimetria catastale alla vista 3D indicativa](.scratch/controllo-a/issues/14-ricerca-vista-3d.md) e [Prova: vista 3D da una planimetria](.scratch/controllo-a/issues/15-prova-vista-3d.md), prima dell'architettura. Prima lettura (non una ricerca): esistono studi sul riconoscimento delle piante, non sulle planimetrie catastali italiane.
+- [GLOSSARY.md](GLOSSARY.md): nuovo termine «vista 3D indicativa». Mappa chiusa, con la sezione «Dopo la destinazione» per i ticket aperti. [docs/STUDIO.md](docs/STUDIO.md): destinazione raggiunta, T5 e T7 aggiornate.
 
 ## Fatto (22 ottobre 2026, seconda sessione)
 - Ticket «Specifica del percorso 1» rivendicato e chiuso con le skill `grilling` e `domain-modeling` (`ux-strategy` per le misure): ventinove decisioni dell'utente, una alla volta, nel ticket sotto «Commenti», ciascuna con alternative scartate e motivo. Partenza dai due contrasti parziali: l'attivazione la fa l'operatore di ƎE dentro le 1–1,5 ore al giorno, le case entrano un po' alla volta e si misura il tempo; le case con bonifico al proprietario entrano con un percorso più corto, confermato dal proprietario.
@@ -42,6 +49,7 @@
 - Regola nuova in [AGENTS.md](AGENTS.md), chiesta dall'utente: le domande all'utente si fanno in parole semplici, spiegando cosa comporta ogni opzione.
 
 ## Verificato
+- `python3 tools/check_setup.py` e link locali di PRODUCT.md, GLOSSARY.md, STATUS.md, START_HERE.md, STUDIO.md, mappa e ticket: vedi «Ultima verifica» (23/10/2026).
 - `python3 tools/check_setup.py`: integrità OK (22/10/2026, sera). Link locali di PRODUCT.md, GLOSSARY.md, STATUS.md, START_HERE.md, STUDIO.md, METODO.md, mappa e ticket: nessuno rotto. Frontiera calcolata dai file dei ticket: liberi «Prova sulle bollette», «Prezzo e condizioni dell'adesione», «Ricerca: tessere fisiche» e «Controllo A e passaggio al design».
 - `python3 tools/check_setup.py`: integrità OK (22/10/2026).
 - Link locali di PRODUCT.md, GLOSSARY.md, STATUS.md, START_HERE.md, STUDIO.md, METODO.md, mappa e ticket: nessuno rotto dopo il cambio di nome del ticket 10 (22/10/2026). Frontiera calcolata dai file dei ticket: liberi «Prova sulle bollette», «Specifica del percorso 1» e «Prezzo e condizioni dell'adesione».
@@ -63,11 +71,11 @@
 Le domande aperte sono nei ticket della mappa; prezzo, periodicità e trattenuta della quota dal canone in «Prezzo e condizioni dell'adesione». I fatti che conosce solo l'agenzia sono nel ticket «Fatti dall'agenzia ƎE»; i dubbi rimasti sono nei sei chiarimenti da mandare al collaboratore.
 
 ## Prossimo passo
-1. Ticket [Controllo A e passaggio al design](.scratch/controllo-a/issues/13-controllo-a.md), ora libero: l'utente conferma voce per voce le cinque voci del controllo A (METODO.md, passo 5) con la specifica e le ricerche; alla chiusura si chiude la mappa e si avvia il design (passo 6).
-2. L'utente manda al collaboratore i sei «Chiarimenti per ƎE» (ticket [Fatti dall'agenzia ƎE](.scratch/controllo-a/issues/06-fatti-agenzia.md), sotto «Commenti»); cosa ricontrollare quando tornano è nella risposta della [Specifica](.scratch/controllo-a/issues/09-specifica-percorso-1.md), sotto «Da ricontrollare».
-3. Prima del pilota, quando l'utente vuole: [Prezzo e condizioni dell'adesione](.scratch/controllo-a/issues/10-prezzo-condizioni-adesione.md), [Ricerca: tessere fisiche](.scratch/controllo-a/issues/12-ricerca-tessere-fisiche.md), «Prova sulle bollette».
+1. **Design del percorso 1** (METODO.md, passo 6): messaggio in [START_HERE.md](START_HERE.md). Direzioni davvero diverse in prototipi usa e getta, su telefono e desktop, per proprietario, inquilino e operatore; l'utente sceglie; si registra in DESIGN.md.
+2. L'utente manda al collaboratore i sei «Chiarimenti per ƎE» (ticket [Fatti dall'agenzia ƎE](.scratch/controllo-a/issues/06-fatti-agenzia.md), sotto «Commenti»).
+3. Prima dell'architettura: [ricerca](.scratch/controllo-a/issues/14-ricerca-vista-3d.md) e [prova](.scratch/controllo-a/issues/15-prova-vista-3d.md) sulla vista 3D indicativa. Prima del pilota, quando l'utente vuole: [Prezzo e condizioni dell'adesione](.scratch/controllo-a/issues/10-prezzo-condizioni-adesione.md), [Ricerca: tessere fisiche](.scratch/controllo-a/issues/12-ricerca-tessere-fisiche.md), «Prova sulle bollette».
 
 Messaggi per le prossime sessioni in [START_HERE.md](START_HERE.md).
 
 ## Ultima verifica
-22/10/2026 (sera), `python3 tools/check_setup.py`: integrità OK. Programmi facoltativi assenti nell'ambiente cloud: `ocr`, `playwright-cli`.
+23/10/2026, `python3 tools/check_setup.py`: integrità OK. Link locali di PRODUCT.md, GLOSSARY.md, STATUS.md, START_HERE.md, STUDIO.md, METODO.md, mappa e ticket: nessuno rotto. Ticket aperti calcolati dai file: «Prova sulle bollette», «Prezzo e condizioni dell'adesione», «Ricerca: tessere fisiche», «Ricerca: vista 3D» liberi; «Prova: vista 3D» bloccata dalla ricerca. Non applicabili: build, test, revisione OCR, verifiche dell'interfaccia (non c'è codice). Programmi facoltativi assenti nell'ambiente cloud: `ocr`, `playwright-cli`.
