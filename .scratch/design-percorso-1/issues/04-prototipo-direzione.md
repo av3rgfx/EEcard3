@@ -25,3 +25,21 @@ Il prototipo si mostra all'utente come pagina privata da aprire su telefono e de
   - *C · Elenco e dettaglio:* elenco e dettaglio affiancati sul desktop, in fila sul telefono; densità alta, IBM Plex Sans; accento indaco.
 - Raccomandazione dell'agente: B per proprietari e inquilini, C per l'operatore, con un'identità sola.
 - **Risposta dell'utente:** nessuna convince, soprattutto per l'estetica. Sembrano funzionali; l'utente vuole qualcosa di più gradevole e bello, che attiri l'attenzione anche di chi ha poco interesse: facile **e** bello da vedere. C può andare per l'operatore, ma va migliorata. Riferimenti visivi in arrivo dall'utente (foto). Si rifà il giro.
+
+**23/10/2026, riferimenti dell'utente e domande per il secondo giro.**
+- L'utente ha mandato tre immagini di interfacce altrui come riferimento d'atmosfera, non da copiare: un pannello traslucido su un tramonto con riquadro dorato e titoli con grazie; un'app chiara su sfondo azzurro-lilla con illustrazione ed etichette sospese; una scheda immobiliare chiara con accento arancio e immagini della casa. Hanno in comune un momento visivo in cima, la casa che si vede, un fondo d'atmosfera, molta aria e caratteri curati.
+- *Vetrina:* **il chiaro in vetrina** (consigliato), perché le immagini scelte sono chiare. È un cambio del punto fermo del 23/10 («lo scuro si mostra per primo»), segnalato come conflitto e deciso dall'utente. Scartati «lo scuro resta vetrina» e «chiaro e scuro affiancati». Da registrare in DESIGN.md alla chiusura.
+- *Volto della casa:* **illustrazioni** (consigliato): un disegno per ogni casa, senza cambiare la specifica, senza lavoro in più per ƎE e senza mostrare interni. Scartate «foto della facciata», che avrebbero cambiato §10.2 e §12, e «solo sfumature».
+- *Secondo giro:* **tre atmosfere** (consigliato): «Luce calda», «Cielo» e «Terracotta», sulla stessa organizzazione (barra laterale sul desktop, schede in basso sul telefono); per l'operatore elenco e dettaglio, rifinito nella stessa atmosfera. Scartate «due atmosfere» e «un'atmosfera, tre organizzazioni».
+
+**23/10/2026, secondo giro mostrato** (pagina privata, sorgente nella cartella temporanea della sessione; controllato nel browser su telefono e desktop, in chiaro e in scuro, senza scorrimento orizzontale né errori). Tre atmosfere sulla stessa organizzazione, con le case illustrate (facciate con i portici, generate per ogni casa):
+- *Luce calda:* tramonto, pannello traslucido, riquadro dorato, titoli Instrument Serif.
+- *Cielo:* azzurro e lilla, casa disegnata a linea su una tessera inclinata, etichette sospese, Figtree.
+- *Terracotta:* fondo neutro e pannello bianco, casa grande come in un annuncio, fatti con icone arancio, Manrope.
+
+**Risposta dell'utente:** preferisce **Terracotta**, ma vuole i pulsanti ben arrotondati delle altre due e non vuole lo scuro dai toni arancio scuro. *Cielo* è molto bella, ma il riquadro in cima è troppo giocoso: deve restare professionale. *Luce calda* è molto d'impatto, ma il carattere dei titoli è troppo giocoso. Chiede di rifare tutte e tre migliorate e di riconfrontarle.
+
+**23/10/2026, terzo giro mostrato** (stessa pagina privata, aggiornata; stessi controlli nel browser, superati):
+- *Luce calda:* titoli in Source Serif 4, un carattere con grazie classico e sobrio, senza corsivo; il nome Connetto nei caratteri di sistema.
+- *Cielo:* niente quadretti né inclinazioni; la casa sta in una cornice dritta e gli stati del mese in etichette sobrie con icona colorata.
+- *Terracotta:* tutti i pulsanti a pillola; lo scuro su neri e grigi neutri, con l'arancio solo come accento e la facciata di sera con le finestre accese.
