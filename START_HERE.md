@@ -2,7 +2,7 @@
 
 Da incollare in Claude Code o Codex aperto su questo repository. La skill Wayfinder parte solo su richiesta: il messaggio comincia con `/wayfinder`.
 
-Il **design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6) ha una mappa: [Design del percorso 1](.scratch/design-percorso-1/map.md), aperta il 23/10/2026 con la destinazione confermata dall'utente (direzione più percorso intero). Lo stesso giorno l'utente ha deciso il nome, **Connetto**, e il simbolo **C–Legame** ([assets/marchio/](assets/marchio/README.md)). Le due ricerche iniziali sono chiuse; il prossimo ticket libero è «Cosa vede per primo ciascuno e come parla il servizio», poi viene il prototipo delle direzioni. Messaggio:
+Il **design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6) ha una mappa: [Design del percorso 1](.scratch/design-percorso-1/map.md), aperta il 23/10/2026 con la destinazione confermata dall'utente (direzione più percorso intero). Lo stesso giorno l'utente ha deciso il nome, **Connetto**, e il simbolo **C–Legame** ([assets/marchio/](assets/marchio/README.md)). Connetto è nome di lavoro: esiste un marchio UE identico e l'utente chiede subito un parere a un consulente ([ricerca](docs/ricerca/nome-connetto.md)); quando arriva l'esito, si registra nel ticket «Parere di un consulente in marchi sul nome Connetto». Le due ricerche iniziali sono chiuse; il prossimo ticket libero è «Cosa vede per primo ciascuno e come parla il servizio», poi viene il prototipo delle direzioni. Messaggio:
 
 ---
 
@@ -19,6 +19,24 @@ Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push 
 ---
 
 Dopo questo ticket: «Direzione del percorso 1» (.scratch/design-percorso-1/issues/04-prototipo-direzione.md), con lo stesso schema di messaggio e la skill `prototype`.
+
+## Quando arriva il parere sul nome Connetto
+
+Incollare questo messaggio e aggiungere l'esito subito sotto, in parole proprie (senza costi né dati del professionista):
+
+/wayfinder .scratch/design-percorso-1/map.md — ticket «Parere di un consulente in marchi sul nome Connetto» (.scratch/design-percorso-1/issues/08-parere-nome-connetto.md): l'esito del parere è in fondo a questo messaggio.
+
+Leggi AGENTS.md, STATUS.md, la mappa, il ticket e docs/ricerca/nome-connetto.md. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+
+- Rivendica il ticket (`Status: claimed`), registra l'esito in sintesi e chiudilo.
+- Se il parere chiede di cambiare il nome o di usarne una forma diversa, le scelte me le fai una alla volta, in parole semplici, con una raccomandazione motivata; per i nomi candidati fai prima la stessa ricerca preliminare (skill `research`). Nessuna registrazione di domini o marchi.
+- Aggiorna PRODUCT.md §1 e §12, DESIGN.md e la mappa.
+
+Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
+
+Esito del parere:
+
+---
 
 ## Prima dell'architettura: Vista 3D indicativa
 

@@ -1,13 +1,13 @@
 # Stato del progetto
 
 ## Punto di ripresa (23 ottobre 2026, sera)
-**Fase: design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6), nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md). La destinazione, confermata dall'utente, è la direzione di design più il percorso intero disegnato in quella direzione, registrato in DESIGN.md e pronto per il controllo B. Prodotto: **Connetto**, simbolo **C–Legame**. Prossimo ticket libero: «Cosa vede per primo ciascuno e come parla il servizio». Non c'è codice applicativo; architettura e stack non sono decisi.
+**Fase: design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6), nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md). La destinazione, confermata dall'utente, è la direzione di design più il percorso intero disegnato in quella direzione, registrato in DESIGN.md e pronto per il controllo B. Prodotto: **Connetto** (nome di lavoro: esiste un marchio UE identico, l'utente chiede subito un parere a un consulente), simbolo **C–Legame**. Prossimo ticket libero: «Cosa vede per primo ciascuno e come parla il servizio». Non c'è codice applicativo; architettura e stack non sono decisi.
 
 ## Fatto (23 ottobre 2026, design)
 - Nuova mappa Wayfinder [Design del percorso 1](.scratch/design-percorso-1/map.md), con le skill `grilling` e `domain-modeling`, una domanda alla volta.
 - **Destinazione** scelta dall'utente (opzione B): la direzione più il percorso intero, per proprietario, inquilino e operatore, su telefono e desktop, con testi, email, SMS e revisione dell'accessibilità. Scartate «solo la direzione» e «direzione e schermate principali».
 - **Persone vere:** il collaboratore di ƎE guarda lo spazio dell'operatore prima del controllo B (opzione A), con dati inventati e poche domande precise; nessun proprietario o inquilino vero.
-- Sei ticket:
+- Ticket della mappa (sei all'apertura, otto a fine sessione):
   - due ricerche chiuse;
   - «Cosa vede per primo ciascuno e come parla il servizio», libero;
   - «Direzione del percorso 1», prototipo con selettore, aspetta il ticket precedente;
@@ -22,7 +22,12 @@
   - **Connetto**, registrato in [PRODUCT.md](PRODUCT.md) §1 e §12 con il motivo: la connessione, il legame, con tutto ciò che riguarda la casa;
   - **C–Legame**, in [assets/marchio/](assets/marchio/README.md), due SVG con regole d'uso, registrato in [DESIGN.md](DESIGN.md) «Identità».
 
-  Ricerca di anteriorità e registrazione non sono fatte: servono prima del pilota, con un parere.
+- **Ricerca preliminare sul nome**, chiesta dall'utente e svolta da un agente: [docs/ricerca/nome-connetto.md](docs/ricerca/nome-connetto.md).
+  - Marchio: rosso. «Connetto» è già un marchio UE registrato fino al 2033, con «Software» in classe 9; ci sono anche «Connecto» per software e SaaS e la domanda «CONNETTA».
+  - Domini: giallo. `.it` e `.com` sono di altri, `.app` e `.casa` liberi.
+  - Altri che usano il nome: giallo. Nessuno nel settore casa.
+  - Significato e alias SMS: verde.
+- **Decisione dell'utente (opzione A):** Connetto resta nome di lavoro e il parere di un consulente in marchi si chiede subito, prima di email, SMS e scritta del nome e prima del controllo B. Registrata in PRODUCT.md §12; nuovo ticket «Parere di un consulente in marchi sul nome Connetto». Scartati: cambiare subito, accordo con il titolare.
 
 ## Fatto (23 ottobre 2026)
 - Ticket [Controllo A e passaggio al design](.scratch/controllo-a/issues/13-controllo-a.md) rivendicato e chiuso con le skill `grilling` e `domain-modeling`, una voce alla volta, ciascuna con decisione, sostegno, mancanze e raccomandazione; conferme dell'utente annotate nel ticket.
@@ -70,7 +75,7 @@
 - Regola nuova in [AGENTS.md](AGENTS.md), chiesta dall'utente: le domande all'utente si fanno in parole semplici, spiegando cosa comporta ogni opzione.
 
 ## Verificato
-- 23/10/2026, design: impronte `sha256sum` dei due SVG uguali a quelle indicate dall'utente. Anteprima usa e getta del simbolo a 128, 48, 32, 24 e 16 px, su fondo chiaro e scuro, aperta in Chromium headless e guardata come immagine; fuori dal repository. Le affermazioni delle due ricerche non sono state ricontrollate una per una sulle fonti.
+- 23/10/2026, design: impronte `sha256sum` dei due SVG uguali a quelle indicate dall'utente. Anteprima usa e getta del simbolo a 128, 48, 32, 24 e 16 px, su fondo chiaro e scuro, aperta in Chromium headless e guardata come immagine; fuori dal repository. Le affermazioni delle tre ricerche non sono state ricontrollate una per una sulle fonti; il marchio UE «Connetto» non si è potuto riaprire da qui (TMview risponde «Forbidden» all'ambiente).
 - `python3 tools/check_setup.py` e link locali di PRODUCT.md, GLOSSARY.md, STATUS.md, START_HERE.md, STUDIO.md, mappa e ticket: vedi «Ultima verifica» (23/10/2026).
 - `python3 tools/check_setup.py`: integrità OK (22/10/2026, sera). Link locali di PRODUCT.md, GLOSSARY.md, STATUS.md, START_HERE.md, STUDIO.md, METODO.md, mappa e ticket: nessuno rotto. Frontiera calcolata dai file dei ticket: liberi «Prova sulle bollette», «Prezzo e condizioni dell'adesione», «Ricerca: tessere fisiche» e «Controllo A e passaggio al design».
 - `python3 tools/check_setup.py`: integrità OK (22/10/2026).
@@ -87,18 +92,19 @@
 - **Si attendono i sei chiarimenti di ƎE** (ticket «Fatti dall'agenzia ƎE», sotto «Commenti»). Non bloccano ticket; possono riaprire una decisione della specifica (bonifici al proprietario, se sono la maggioranza) e servono a «Prezzo e condizioni dell'adesione».
 - Normattiva ed EUR-Lex hanno rifiutato molte connessioni: alcune norme sono state lette da fonti secondarie o solo in parte; l'elenco è in fondo a ogni ricerca.
 - Dal 1/1/2027 registro, cedolare secca, IVA e termini fiscali passano a nuovi testi unici: le ricerche su adempimenti, incasso e privacy vanno riverificate a gennaio 2027.
-- Pareri professionali segnalati (legale, fiscale, privacy, servizi di pagamento, antiriciclaggio): fuori dalla mappa, prima del pilota; senza colloqui (22/10) cade il parere sull'informativa dei colloqui. Dal 20/10 se ne aggiunge uno su ruoli e documenti del pilota: condizioni delle due adesioni, contratto sui dati con chi costruisce la piattaforma, accordo su marchio e software fra fondatori e ƎE. Dal 21/10: l'incarico di gestione e incasso oggi non è scritto e va scritto; ƎE non ha un consulente per la privacy, quindi informativa e registro si aggiornano con un professionista esterno. Dal 23/10: chi è il mittente degli SMS e il suo alias nel Registro AGCOM; ricerca di anteriorità e registrazione di nome e simbolo.
+- Pareri professionali segnalati (legale, fiscale, privacy, servizi di pagamento, antiriciclaggio): fuori dalla mappa, prima del pilota; senza colloqui (22/10) cade il parere sull'informativa dei colloqui. Dal 20/10 se ne aggiunge uno su ruoli e documenti del pilota: condizioni delle due adesioni, contratto sui dati con chi costruisce la piattaforma, accordo su marchio e software fra fondatori e ƎE. Dal 21/10: l'incarico di gestione e incasso oggi non è scritto e va scritto; ƎE non ha un consulente per la privacy, quindi informativa e registro si aggiornano con un professionista esterno. Dal 23/10: chi è il mittente degli SMS e il suo alias nel Registro AGCOM; deposito di nome e simbolo. Il parere sul nome Connetto si chiede subito (ticket della mappa del design).
 
 ## Da chiarire con l'utente
 Le domande aperte sono nei ticket della mappa; prezzo, periodicità e trattenuta della quota dal canone in «Prezzo e condizioni dell'adesione». I fatti che conosce solo l'agenzia sono nel ticket «Fatti dall'agenzia ƎE»; i dubbi rimasti sono nei sei chiarimenti da mandare al collaboratore.
 
 ## Prossimo passo
 1. **«Cosa vede per primo ciascuno e come parla il servizio»** nella mappa del design: messaggio in [START_HERE.md](START_HERE.md). Poi «Direzione del percorso 1», con le direzioni dietro un selettore.
-2. Quando l'utente vuole: «Prova su iPhone: la piattaforma aggiunta alla schermata Home», con una pagina di prova da aprire sul suo telefono.
-3. L'utente manda al collaboratore i sei «Chiarimenti per ƎE» (ticket [Fatti dall'agenzia ƎE](.scratch/controllo-a/issues/06-fatti-agenzia.md), sotto «Commenti»).
-4. Prima dell'architettura: [ricerca](.scratch/controllo-a/issues/14-ricerca-vista-3d.md) e [prova](.scratch/controllo-a/issues/15-prova-vista-3d.md) sulla vista 3D indicativa. Prima del pilota, quando l'utente vuole: [Prezzo e condizioni dell'adesione](.scratch/controllo-a/issues/10-prezzo-condizioni-adesione.md), [Ricerca: tessere fisiche](.scratch/controllo-a/issues/12-ricerca-tessere-fisiche.md), «Prova sulle bollette».
+2. **L'utente porta a un consulente in marchi** [docs/ricerca/nome-connetto.md](docs/ricerca/nome-connetto.md), con le domande già pronte, e riporta l'esito (ticket «Parere di un consulente in marchi sul nome Connetto»). Serve prima del design di email, SMS e scritta del nome.
+3. Quando l'utente vuole: «Prova su iPhone: la piattaforma aggiunta alla schermata Home», con una pagina di prova da aprire sul suo telefono.
+4. L'utente manda al collaboratore i sei «Chiarimenti per ƎE» (ticket [Fatti dall'agenzia ƎE](.scratch/controllo-a/issues/06-fatti-agenzia.md), sotto «Commenti»).
+5. Prima dell'architettura: [ricerca](.scratch/controllo-a/issues/14-ricerca-vista-3d.md) e [prova](.scratch/controllo-a/issues/15-prova-vista-3d.md) sulla vista 3D indicativa. Prima del pilota, quando l'utente vuole: [Prezzo e condizioni dell'adesione](.scratch/controllo-a/issues/10-prezzo-condizioni-adesione.md), [Ricerca: tessere fisiche](.scratch/controllo-a/issues/12-ricerca-tessere-fisiche.md), «Prova sulle bollette».
 
 Messaggi per le prossime sessioni in [START_HERE.md](START_HERE.md).
 
 ## Ultima verifica
-23/10/2026, sera: `python3 tools/check_setup.py` dà integrità OK. Link locali di PRODUCT.md, GLOSSARY.md, STATUS.md, START_HERE.md, DESIGN.md, README.md, assets/marchio/README.md, delle due ricerche nuove e della mappa del design con i suoi ticket: nessuno rotto. Frontiera calcolata dai file dei ticket: liberi «Cosa vede per primo ciascuno e come parla il servizio» e «Prova su iPhone»; «Direzione del percorso 1» aspetta il primo, «Il collaboratore di ƎE guarda lo spazio dell'operatore» aspetta la direzione. Non applicabili: build, test, revisione OCR (non c'è codice). Programmi facoltativi assenti nell'ambiente cloud: `ocr`, `playwright-cli`; Chromium c'è.
+23/10/2026, sera: `python3 tools/check_setup.py` dà integrità OK. Link locali di PRODUCT.md, GLOSSARY.md, STATUS.md, START_HERE.md, DESIGN.md, README.md, assets/marchio/README.md, delle tre ricerche nuove e della mappa del design con i suoi ticket: nessuno rotto. Frontiera calcolata dai file dei ticket: liberi «Cosa vede per primo ciascuno e come parla il servizio», «Prova su iPhone» e «Parere di un consulente in marchi sul nome Connetto» (compito per l'utente); «Direzione del percorso 1» aspetta il primo, «Il collaboratore di ƎE guarda lo spazio dell'operatore» aspetta la direzione. Non applicabili: build, test, revisione OCR (non c'è codice). Programmi facoltativi assenti nell'ambiente cloud: `ocr`, `playwright-cli`; Chromium c'è.
