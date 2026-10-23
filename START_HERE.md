@@ -2,13 +2,13 @@
 
 Da incollare in Claude Code o Codex aperto su questo repository. La skill Wayfinder parte solo su richiesta: il messaggio comincia con `/wayfinder`.
 
-Il **design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6) ha una mappa: [Design del percorso 1](.scratch/design-percorso-1/map.md), aperta il 23/10/2026 con la destinazione confermata dall'utente (direzione più percorso intero, nome del prodotto fuori). Le due ricerche iniziali sono chiuse; il prossimo ticket libero è «Cosa vede per primo ciascuno e come parla il servizio», poi viene il prototipo delle direzioni. Messaggio:
+Il **design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6) ha una mappa: [Design del percorso 1](.scratch/design-percorso-1/map.md), aperta il 23/10/2026 con la destinazione confermata dall'utente (direzione più percorso intero). Lo stesso giorno l'utente ha deciso il nome, **Connetto**, e il simbolo **C–Legame** ([assets/marchio/](assets/marchio/README.md)). Le due ricerche iniziali sono chiuse; il prossimo ticket libero è «Cosa vede per primo ciascuno e come parla il servizio», poi viene il prototipo delle direzioni. Messaggio:
 
 ---
 
 /wayfinder .scratch/design-percorso-1/map.md — ticket «Cosa vede per primo ciascuno e come parla il servizio» (.scratch/design-percorso-1/issues/03-cosa-vede-per-primo.md)
 
-Leggi AGENTS.md, STATUS.md, la mappa e il ticket; poi PRODUCT.md §10.7 e la riga «Controllo A» di §12, DESIGN.md e, solo per le parti che servono, docs/ricerca/hig-web.md. GLOSSARY.md per le parole. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+Leggi AGENTS.md, STATUS.md, la mappa e il ticket; poi PRODUCT.md §10.7 e la riga «Controllo A» di §12, DESIGN.md e, solo per le parti che servono, docs/ricerca/hig-web.md. GLOSSARY.md per le parole. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti. Il simbolo in assets/marchio/ è una scelta dell'utente e fa parte del progetto.
 
 - Rivendica il ticket (`Status: claimed`) prima di lavorare. Lavora solo su questo ticket, con le skill `grilling` e `domain-modeling`.
 - Le domande me le fai una alla volta, in parole semplici, con una raccomandazione motivata e le conseguenze di ogni opzione. Nessuna schermata, nessuno stack, nessun codice applicativo.

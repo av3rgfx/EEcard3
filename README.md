@@ -1,6 +1,6 @@
 # EECard3
 
-> Nome del repository, non del prodotto: «EECard» è un nome di lavoro provvisorio.
+> Nome del repository, non del prodotto: il prodotto si chiama **Connetto** (PRODUCT.md §1).
 
 Una piattaforma per **prendersi cura della propria casa e di ciò che la riguarda**: documenti, affitto, bollette, scadenze, pratiche, tecnici e assistenza in un unico posto, con dietro il servizio reale di un'agenzia e dei suoi professionisti. Spazi distinti per cliente, agenzia e tecnico.
 
