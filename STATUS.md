@@ -12,6 +12,7 @@ La voce è al **«tu»** anche per i clienti ([DESIGN.md](DESIGN.md)).
 Prossimi passi:
 - **Rifinitura estetica delle schermate interne:** ticket nuovo e libero. Le funzioni convincono l'utente, l'estetica meno: si porta dentro la luce della pagina d'accesso.
 - **Collaboratore di ƎE:** ticket rivendicato, con cinque domande pronte.
+- Promemoria dell'utente (23/10/2026): Animate UI e Watermelon UI si valutano all'architettura, in [ARCHITECTURE.md](ARCHITECTURE.md), «Da valutare al passo 7»; nessuna installazione prima.
 - Dopo: email e SMS (aspettano il parere sul nome), ricevute stampate, testi dell'interfaccia, componenti, rifinitura di interazioni e dati limite, revisione dell'accessibilità, pacchetto per il controllo B (mappa, «Non ancora specificato»).
 
 **Prototipi pubblicati** (pagine private dell'utente, usa e getta). Il sorgente sta nella cartella temporanea della sessione e si perde; una sessione nuova può leggerli con lo strumento Artifact, azione «read». Servono come riferimento di stile e non entrano nel repository.

@@ -10,7 +10,7 @@ Il **design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6) ha una 
 
 Voce al «tu» anche per i clienti ([DESIGN.md](DESIGN.md)). Nome di lavoro **Connetto**, simbolo **C–Legame** ([assets/marchio/](assets/marchio/README.md)); il parere sul marchio è chiesto subito e il suo esito va nel ticket «Parere di un consulente in marchi sul nome Connetto».
 
-**Prima della prossima sessione:** unire in `main` la PR del branch `claude/blissful-pasteur-9poend` (accesso e tessera). Se non è ancora unita, la sessione deve partire da quel branch: altrimenti non trova DESIGN.md, la mappa e i ticket aggiornati.
+**Prima della prossima sessione:** unire in `main` la PR del branch `claude/blissful-pasteur-9poend` (promemoria sulle librerie di componenti). Se non è ancora unita, la sessione deve partire da quel branch.
 
 **Rifinitura estetica delle schermate interne.** Messaggio:
 
@@ -26,6 +26,7 @@ Leggi AGENTS.md, STATUS.md, la mappa e il ticket. Poi DESIGN.md: «Indicazioni d
 - Le scelte me le fai una alla volta, in parole semplici, con una raccomandazione motivata e le conseguenze di ogni opzione. Un cambio delle regole già approvate me lo porti come scelta e va in DESIGN.md come cambiato, non cancellato.
 - Prototipo usa e getta, fuori dal repository, solo dati inventati e importi come «9.876,54 €». Chiaro per primo, poi scuro, con il tasto per nascondere i comandi.
 - Prima di mostrarmelo controllalo nel browser disponibile: a 360, 390, 768, 900, 1024, 1180 e 1366 px; che nessun pulsante esca dal suo riquadro; che la pagina non scorra di lato. Ricarica la pagina per ogni schermata e verifica che sia quella giusta (STATUS.md, lezione del 23/10). Nessuno stack scelto, nessun codice applicativo.
+- Le librerie Animate UI e Watermelon UI si valutano all'architettura (ARCHITECTURE.md, «Da valutare al passo 7»): non installarle e non copiarne il codice. Se ti mando un link di Watermelon, usalo solo come idea da ridisegnare nello stile di Connetto.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 
