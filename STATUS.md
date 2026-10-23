@@ -1,7 +1,21 @@
 # Stato del progetto
 
-## Punto di ripresa (23 ottobre 2026, sera)
-**Fase: design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6), nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md). La destinazione, confermata dall'utente, è la direzione di design più il percorso intero disegnato in quella direzione, registrato in DESIGN.md e pronto per il controllo B. Prodotto: **Connetto** (nome di lavoro: esiste un marchio UE identico, l'utente chiede subito un parere a un consulente), simbolo **C–Legame**. Prossimo ticket libero: «Cosa vede per primo ciascuno e come parla il servizio». Non c'è codice applicativo; architettura e stack non sono decisi.
+## Punto di ripresa (23 ottobre 2026, notte)
+**Fase: design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6), nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md). La destinazione, confermata dall'utente, è la direzione di design più il percorso intero disegnato in quella direzione, registrato in DESIGN.md e pronto per il controllo B. Prodotto: **Connetto** (nome di lavoro: esiste un marchio UE identico, l'utente chiede subito un parere a un consulente), simbolo **C–Legame**. I punti fermi uguali per tutte le direzioni sono decisi ([DESIGN.md](DESIGN.md), «Punti fermi del percorso 1»). Prossimo ticket libero: «Direzione del percorso 1», un prototipo con le direzioni dietro un selettore. Non c'è codice applicativo; architettura e stack non sono decisi.
+
+## Fatto (23 ottobre 2026, cosa vede per primo)
+- Ticket [Cosa vede per primo ciascuno e come parla il servizio](.scratch/design-percorso-1/issues/03-cosa-vede-per-primo.md) rivendicato e chiuso con le skill `grilling` e `domain-modeling`: dieci decisioni dell'utente, una alla volta, tutte sull'opzione raccomandata. Nel ticket, sotto «Commenti», ci sono le alternative scartate e i motivi.
+  - *Proprietario:* per primo il mese in corso, con canone e consegna in due righe distinte; sopra, la cosa da fare. Con più case, un elenco con i due stati per casa, senza somme di importi.
+  - *Inquilino:* per primo il prossimo pagamento; la scadenza passata è detta con calma, senza allarme. Le locazioni finite sono in sola lettura, un tocco più in là.
+  - *Operatore:* il lavoro in coda in ordine fisso, dalle consegne in ritardo alle scadenze, con «Trova cliente o casa» sempre in alto.
+  - *Due ruoli nella stessa persona:* un elenco «Le mie case» diviso per ruolo.
+  - *Voce:* «Lei» a proprietari e inquilini, «tu» all'operatore, nessuno parla in prima persona; ogni fatto del denaro dice chi l'ha confermato.
+  - *Tema:* segue il dispositivo; lo scuro, nero e grigi neutri, è la vetrina.
+- Registrate in [DESIGN.md](DESIGN.md), nella nuova sezione «Punti fermi del percorso 1», con data e motivo. Riconfermata come vetrina la preferenza per il tema scuro.
+- Nessun conflitto con la specifica (PRODUCT.md §10 invariato) e nessun termine nuovo nel glossario: «Le mie case» e «Locazioni passate» sono etichette, passeranno da `ux-writing`.
+- Ipotesi da confermare con ƎE: al banco i clienti ricevono del «Lei»; se così non fosse, la scelta della voce si riapre.
+- Mappa: la decisione è in «Decisioni finora». Nel ticket «Direzione del percorso 1» il tema non è più una proposta di ciascuna direzione: ognuna si disegna in chiaro e in scuro.
+- Lavoro sul branch `claude/design-cosa-vede-per-primo`, creato da `main` perché la sessione non ne indicava uno.
 
 ## Fatto (23 ottobre 2026, design)
 - Nuova mappa Wayfinder [Design del percorso 1](.scratch/design-percorso-1/map.md), con le skill `grilling` e `domain-modeling`, una domanda alla volta.
@@ -98,13 +112,13 @@
 Le domande aperte sono nei ticket della mappa; prezzo, periodicità e trattenuta della quota dal canone in «Prezzo e condizioni dell'adesione». I fatti che conosce solo l'agenzia sono nel ticket «Fatti dall'agenzia ƎE»; i dubbi rimasti sono nei sei chiarimenti da mandare al collaboratore.
 
 ## Prossimo passo
-1. **«Cosa vede per primo ciascuno e come parla il servizio»** nella mappa del design: messaggio in [START_HERE.md](START_HERE.md). Poi «Direzione del percorso 1», con le direzioni dietro un selettore.
+1. **«Direzione del percorso 1»** nella mappa del design: messaggio in [START_HERE.md](START_HERE.md). Prototipo usa e getta con le direzioni dietro un selettore, da aprire su telefono e desktop, dentro i punti fermi di DESIGN.md.
 2. **L'utente porta a un consulente in marchi** [docs/ricerca/nome-connetto.md](docs/ricerca/nome-connetto.md), con le domande già pronte, e riporta l'esito (ticket «Parere di un consulente in marchi sul nome Connetto»). Serve prima del design di email, SMS e scritta del nome.
 3. Quando l'utente vuole: «Prova su iPhone: la piattaforma aggiunta alla schermata Home», con una pagina di prova da aprire sul suo telefono.
-4. L'utente manda al collaboratore i sei «Chiarimenti per ƎE» (ticket [Fatti dall'agenzia ƎE](.scratch/controllo-a/issues/06-fatti-agenzia.md), sotto «Commenti»).
+4. L'utente manda al collaboratore i sei «Chiarimenti per ƎE» (ticket [Fatti dall'agenzia ƎE](.scratch/controllo-a/issues/06-fatti-agenzia.md), sotto «Commenti»). Si può aggiungere una domanda: ai clienti al banco si dà del «Lei»?
 5. Prima dell'architettura: [ricerca](.scratch/controllo-a/issues/14-ricerca-vista-3d.md) e [prova](.scratch/controllo-a/issues/15-prova-vista-3d.md) sulla vista 3D indicativa. Prima del pilota, quando l'utente vuole: [Prezzo e condizioni dell'adesione](.scratch/controllo-a/issues/10-prezzo-condizioni-adesione.md), [Ricerca: tessere fisiche](.scratch/controllo-a/issues/12-ricerca-tessere-fisiche.md), «Prova sulle bollette».
 
 Messaggi per le prossime sessioni in [START_HERE.md](START_HERE.md).
 
 ## Ultima verifica
-23/10/2026, sera: `python3 tools/check_setup.py` dà integrità OK. Link locali di PRODUCT.md, GLOSSARY.md, STATUS.md, START_HERE.md, DESIGN.md, README.md, assets/marchio/README.md, delle tre ricerche nuove e della mappa del design con i suoi ticket: nessuno rotto. Frontiera calcolata dai file dei ticket: liberi «Cosa vede per primo ciascuno e come parla il servizio», «Prova su iPhone» e «Parere di un consulente in marchi sul nome Connetto» (compito per l'utente); «Direzione del percorso 1» aspetta il primo, «Il collaboratore di ƎE guarda lo spazio dell'operatore» aspetta la direzione. Non applicabili: build, test, revisione OCR (non c'è codice). Programmi facoltativi assenti nell'ambiente cloud: `ocr`, `playwright-cli`; Chromium c'è.
+23/10/2026, notte: `python3 tools/check_setup.py` dà integrità OK. Link locali di PRODUCT.md, GLOSSARY.md, STATUS.md, START_HERE.md, DESIGN.md e della mappa del design con i suoi ticket: nessuno rotto. Frontiera calcolata dai file dei ticket: liberi «Direzione del percorso 1», «Prova su iPhone» e «Parere di un consulente in marchi sul nome Connetto» (compito per l'utente); «Il collaboratore di ƎE guarda lo spazio dell'operatore» aspetta la direzione. Non applicabili: build, test, revisione OCR, verifiche dell'interfaccia (non c'è codice né schermata). Programmi facoltativi assenti nell'ambiente cloud: `ocr`, `playwright-cli`; Chromium c'è.
