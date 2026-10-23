@@ -24,6 +24,8 @@ Una direzione di design del percorso 1 scelta dall'utente e il **percorso intero
 
 <!-- una riga per ticket chiuso: nome con link, poi il succo della risposta -->
 
+- [Ricerca: le Apple Human Interface Guidelines per una piattaforma web su telefono e desktop](issues/01-ricerca-hig-web.md): le HIG valgono come grammatica, non come specifica tecnica. Ci sono tre strutture compatibili: schede e barra laterale, pagina «casa» a pila, elenco e dettaglio. Vetro solo sulle barre e con versione opaca; niente font San Francisco incorporato né SF Symbols. Dalla schermata Home la pagina deve offrire il suo «Indietro». Il tema segue il sistema, salvo una scelta diversa dell'utente.
+
 ## Non ancora specificato (Not yet specified)
 
 Dipende dalla direzione scelta in [Direzione del percorso 1](issues/04-prototipo-direzione.md); diventerà ticket man mano.
