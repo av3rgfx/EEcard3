@@ -1,20 +1,38 @@
 # Stato del progetto
 
-## Punto di ripresa (23 ottobre 2026, proprietario e domande per ƎE)
-**Fase: design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6), nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md). Approvati: la direzione **«Terracotta»**, con il chiaro in vetrina; lo spazio dell'operatore; le schermate del proprietario. La voce ora è al **«tu»** anche per i clienti ([DESIGN.md](DESIGN.md)).
+## Punto di ripresa (23 ottobre 2026, inquilino)
+**Fase: design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6), nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md). Approvati: la direzione **«Terracotta»**, con il chiaro in vetrina; lo spazio dell'operatore; le schermate del proprietario e quelle dell'inquilino. Nell'inquilino le ricevute a mesi a pillola sono una scelta provvisoria. La voce è al **«tu»** anche per i clienti ([DESIGN.md](DESIGN.md)).
 
 Prossimi passi:
-- **Collaboratore di ƎE:** l'utente lo incontra la sera del 23/10/2026. Gli fa le quattro domande, già pronte nel ticket [Il collaboratore di ƎE guarda lo spazio dell'operatore](.scratch/design-percorso-1/issues/05-collaboratore-guarda-operatore.md), rivendicato e in attesa delle risposte, e condivide il prototipo dell'operatore.
-- **Schermate dell'inquilino**, poi accesso, adesione e situazioni comuni.
+- **Collaboratore di ƎE:** l'utente lo incontra la sera del 23/10/2026. Il ticket [Il collaboratore di ƎE guarda lo spazio dell'operatore](.scratch/design-percorso-1/issues/05-collaboratore-guarda-operatore.md) è rivendicato e ha cinque domande pronte; la quinta riguarda le ricevute dell'inquilino. L'utente condivide due prototipi, operatore e inquilino.
+- **Accesso, adesione e situazioni comuni**, l'ultimo ticket di schermate.
 - Dopo: email e SMS (aspettano il parere sul nome), tessera digitale e ricevute stampate, testi dell'interfaccia, componenti, rifinitura e revisione dell'accessibilità, pacchetto per il controllo B (mappa, «Non ancora specificato»).
 
-**Prototipi pubblicati** (pagine private dell'utente, usa e getta). Il sorgente stava nella cartella temporanea della sessione del 23/10 e non c'è più; una sessione nuova può leggerli con lo strumento Artifact, azione «read». Servono come riferimento di stile e non entrano nel repository.
+**Prototipi pubblicati** (pagine private dell'utente, usa e getta). Il sorgente sta nella cartella temporanea della sessione e si perde; una sessione nuova può leggerli con lo strumento Artifact, azione «read». Servono come riferimento di stile e non entrano nel repository.
 - Direzioni, primo giro: https://claude.ai/artifact/3qFHoy8XyHydtvetDPosmU
 - Atmosfere, secondo e terzo giro (Terracotta scelta): https://claude.ai/artifact/DpHYhxDoru6CeV2i14Ztmg
 - Spazio dell'operatore: https://claude.ai/artifact/8uYkEqTXrp27KWmc698JK9
 - Schermate del proprietario: https://claude.ai/artifact/4iSZ4Mpb8k691WVQwnrUVR
+- Schermate dell'inquilino: https://claude.ai/artifact/PB8wRY5NZT2jgYndnJLn2v
 
 Prodotto: **Connetto**, nome di lavoro in attesa del parere sul marchio. Non c'è codice applicativo; architettura e stack non sono decisi.
+
+## Fatto (23 ottobre 2026, inquilino)
+- Ticket [Schermate dell'inquilino](.scratch/design-percorso-1/issues/11-schermate-inquilino.md) rivendicato e chiuso nella stessa sessione, con le skill `prototype` e `grilling`, in un giro, partendo dal prototipo del proprietario.
+- Non si sono richieste le cose già decise nei punti fermi: il prossimo pagamento per primo con le coordinate del bonifico, la scadenza passata detta con calma, le locazioni passate, il doppio ruolo.
+- Decisioni dell'utente:
+  - **contabile:** prima l'anteprima, poi «Invia al proprietario», senza altre conferme (consigliato);
+  - **ricevute:** mesi a pillola come il proprietario, **in forma provvisoria**. L'utente aspetta il parere del collaboratore di ƎE, quinta domanda del suo ticket; l'alternativa ancora aperta è l'elenco semplice.
+- Scelte ragionevoli dell'agente, mostrate e approvate con il resto:
+  - la contabile si può sostituire finché non è confermata;
+  - un posto tratteggiato per lo spazio delle bollette;
+  - fuori orario c'è solo «Scrivi a ƎE»;
+  - «Chiama» si apre come foglio dal basso sul telefono.
+- Verifiche: Chromium a 360, 390, 768, 900, 1024, 1180 e 1366 px, con tutte le varianti, in chiaro e in scuro (266 combinazioni). Nessun pulsante, importo o titolo fuori dal suo riquadro, nessuno scorrimento orizzontale, nessun errore.
+  - Lezione: il primo controllo cambiava solo il segno «#» dell'indirizzo, che non ricarica la pagina, e provava sempre la stessa schermata. Ora ricarica e verifica quale schermata è aperta.
+  - Al secondo controllo un importo usciva di 3 px a 360 px; corretto.
+- Regole in [DESIGN.md](DESIGN.md), «Schermate dell'inquilino (percorso 1)»; decisione nella mappa. Nessun conflitto con la specifica né con i punti fermi; nessun termine nuovo nel glossario.
+- Non applicabili: build, test e revisione OCR (non c'è codice applicativo; il programma `ocr` non è nell'ambiente).
 
 ## Fatto (23 ottobre 2026, proprietario e voce)
 - Ticket [Schermate del proprietario](.scratch/design-percorso-1/issues/10-schermate-proprietario.md) rivendicato e chiuso nella stessa sessione, su richiesta dell'utente, con le skill `prototype` e `grilling`, in tre giri.

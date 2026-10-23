@@ -1,7 +1,7 @@
 # Schermate dell'inquilino
 
 Type: prototype
-Status: claimed
+Status: resolved
 Blocked by: 04
 Mappa: [Design del percorso 1](../map.md)
 
@@ -18,6 +18,14 @@ Come sono, nella direzione scelta, le schermate e le situazioni dell'inquilino (
 Lo spazio delle bollette resta fuori: c'è solo il posto del passaggio all'attivazione.
 
 Prototipo usa e getta (skill `prototype`, ramo UI) nella direzione «Terracotta» ([DESIGN.md](../../../DESIGN.md), «Direzione del percorso 1»), su telefono e desktop, in chiaro e in scuro con il chiaro per primo. Solo dati inventati, importi come «9.876,54 €», parole del [glossario](../../../GLOSSARY.md); si mostra all'utente come pagina privata e non entra nel repository. Le scelte all'utente una alla volta, in parole semplici, con una raccomandazione motivata. Quello che si decide va in DESIGN.md come regole, con data e motivo; un problema con la specifica (PRODUCT.md §10) o con i punti fermi si porta all'utente come conflitto. Testi definitivi, rifinitura, dati limite e accessibilità vengono dopo, nei loro ticket.
+
+## Risposta (Answer)
+
+**Approvato dall'utente il 23/10/2026**, dopo un giro di prototipo. Regole in [DESIGN.md](../../../DESIGN.md), «Schermate dell'inquilino (percorso 1)». Decisioni dell'utente:
+- caricare la contabile: **anteprima, poi «Invia al proprietario»**, senza altre conferme; la contabile si può sostituire finché non è confermata e la prima resta conservata;
+- ricevute: **mesi a pillola**, come il proprietario, con la ricevuta del mese in cima. È una **scelta provvisoria**: l'utente aspetta il parere del collaboratore di ƎE, a cui va la domanda nel ticket [Il collaboratore di ƎE guarda lo spazio dell'operatore](05-collaboratore-guarda-operatore.md). L'alternativa ancora aperta è l'elenco semplice di ricevute per anno.
+
+Il resto (dieci schermate e le scelte ragionevoli dell'agente sotto «Commenti») è approvato con il prototipo. Il prototipo, usa e getta, resta fuori dal repository: https://claude.ai/artifact/PB8wRY5NZT2jgYndnJLn2v (pagina privata).
 
 ## Commenti (Comments)
 
@@ -39,3 +47,5 @@ Prototipo usa e getta (skill `prototype`, ramo UI) nella direzione «Terracotta�
 11. una persona inquilino e proprietario: «Le mie case» diviso per ruolo, con le cose da fare dei due ruoli in cima.
 
 Scelte ragionevoli dell'agente, da cambiare se l'utente lo chiede: dopo l'invio della contabile la casa resta «contabile da confermare» con «Sostituisci la contabile»; nelle scorciatoie della casa c'è un posto tratteggiato per lo spazio delle bollette, senza contenuto; «Chiama» si apre come un foglio dal basso sul telefono e come una finestra al centro sul desktop.
+
+**23/10/2026, chiusura.** L'utente preferisce i mesi a pillola ma vuole sentire anche il collaboratore di ƎE prima di confermarli; approva il resto e chiede di chiudere. Il ticket si chiude con i mesi a pillola come scelta provvisoria; la conferma o il cambio arriva con le risposte del collaboratore e si registra in DESIGN.md.
