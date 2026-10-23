@@ -1,12 +1,18 @@
 # Stato del progetto
 
-## Punto di ripresa (23 ottobre 2026, inquilino)
-**Fase: design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6), nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md). Approvati: la direzione **«Terracotta»**, con il chiaro in vetrina; lo spazio dell'operatore; le schermate del proprietario e quelle dell'inquilino. Nell'inquilino le ricevute a mesi a pillola sono una scelta provvisoria. La voce è al **«tu»** anche per i clienti ([DESIGN.md](DESIGN.md)).
+## Punto di ripresa (23 ottobre 2026, accesso e tessera)
+**Fase: design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6), nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md). Approvati:
+- la direzione **«Terracotta»**, con il chiaro in vetrina;
+- lo spazio dell'operatore;
+- le schermate del proprietario e quelle dell'inquilino (le ricevute dell'inquilino a mesi a pillola sono provvisorie);
+- dal 23/10 anche **accesso, tessera digitale e situazioni comuni**: accesso con un codice, pagina d'accesso con la tessera di rame, benvenuto animato, scheda «Tessera», disdetta da soli.
+
+La voce è al **«tu»** anche per i clienti ([DESIGN.md](DESIGN.md)).
 
 Prossimi passi:
-- **Collaboratore di ƎE:** l'utente lo incontra la sera del 23/10/2026. Il ticket [Il collaboratore di ƎE guarda lo spazio dell'operatore](.scratch/design-percorso-1/issues/05-collaboratore-guarda-operatore.md) è rivendicato e ha cinque domande pronte; la quinta riguarda le ricevute dell'inquilino. L'utente condivide due prototipi, operatore e inquilino.
-- **Accesso, adesione e situazioni comuni**, l'ultimo ticket di schermate.
-- Dopo: email e SMS (aspettano il parere sul nome), tessera digitale e ricevute stampate, testi dell'interfaccia, componenti, rifinitura e revisione dell'accessibilità, pacchetto per il controllo B (mappa, «Non ancora specificato»).
+- **Rifinitura estetica delle schermate interne:** ticket nuovo e libero. Le funzioni convincono l'utente, l'estetica meno: si porta dentro la luce della pagina d'accesso.
+- **Collaboratore di ƎE:** ticket rivendicato, con cinque domande pronte.
+- Dopo: email e SMS (aspettano il parere sul nome), ricevute stampate, testi dell'interfaccia, componenti, rifinitura di interazioni e dati limite, revisione dell'accessibilità, pacchetto per il controllo B (mappa, «Non ancora specificato»).
 
 **Prototipi pubblicati** (pagine private dell'utente, usa e getta). Il sorgente sta nella cartella temporanea della sessione e si perde; una sessione nuova può leggerli con lo strumento Artifact, azione «read». Servono come riferimento di stile e non entrano nel repository.
 - Direzioni, primo giro: https://claude.ai/artifact/3qFHoy8XyHydtvetDPosmU
@@ -14,8 +20,40 @@ Prossimi passi:
 - Spazio dell'operatore: https://claude.ai/artifact/8uYkEqTXrp27KWmc698JK9
 - Schermate del proprietario: https://claude.ai/artifact/4iSZ4Mpb8k691WVQwnrUVR
 - Schermate dell'inquilino: https://claude.ai/artifact/PB8wRY5NZT2jgYndnJLn2v
+- Accesso, tessera e situazioni comuni (versione 5): https://claude.ai/artifact/3LkcGCmp2P4SNpVAFbP92s. Le immagini della stanza e della tessera, generate dall'utente con ChatGPT, sono pubblicate con la pagina in WebP; gli originali sono nelle cartelle Drive dell'utente.
 
 Prodotto: **Connetto**, nome di lavoro in attesa del parere sul marchio. Non c'è codice applicativo; architettura e stack non sono decisi.
+
+## Fatto (23 ottobre 2026, accesso e tessera)
+- Ticket [Accesso, adesione e situazioni comuni](.scratch/design-percorso-1/issues/12-accesso-e-situazioni-comuni.md) rivendicato e chiuso nella stessa sessione, con le skill `prototype` e `grilling`, in cinque giri. Si è partiti dal prototipo dell'inquilino.
+- Decisioni dell'utente, una alla volta:
+  - **accesso** con un codice di verifica via email o SMS, per tutti, senza password (consigliato);
+  - **primo accesso:** prima la casa con una carta di benvenuto; poi l'utente l'ha cambiata con la **tessera a tutto schermo**. Lo stesso giorno sono arrivati la **scheda «Tessera»** (quinta scheda dei clienti), i **soli dati essenziali** sulla tessera e la **tessera di rame per tutti**, con la personalizzazione dopo la prima versione;
+  - **disdetta dell'adesione:** consigliata la richiesta a ƎE. L'utente ha proposto una disdetta da soli, ricordando le nuove regole sulla disdetta online; scelta la sua idea con due ritocchi dell'agente (niente codice in più; «non rinnovare» per primo, «chiudi subito» solo se le condizioni lo prevedono);
+  - **eccezione alle regole del simbolo:** inciso solo sulla tessera vista come oggetto;
+  - **pagina d'accesso uguale ai riferimenti** che l'utente ha generato con ChatGPT.
+- Lavoro con le immagini generate dall'utente:
+  - l'agente ha scritto le richieste e preparato gli allegati: il simbolo in PNG e lo schema della tessera, fuori dal repository;
+  - l'utente ha generato le immagini e le ha condivise su Drive. L'agente le ha scaricate e guardate una per una, poi le ha compresse (da 19 MB a circa mezzo MB);
+  - dopo il riscontro «non sono uguali», l'utente ha generato livelli separati (stanza, tessera in posa, ombra) che combaciano con i riferimenti;
+  - la pagina è stata tarata riga per riga sulle misure dei riferimenti, con scarti di 1–3 px.
+- Animazione del benvenuto rifatta dopo il riscontro «sembra grezza»:
+  - la tessera si distende dalla sua posa con una prospettiva vera, calcolata dai quattro angoli misurati;
+  - incisione lettera per lettera, riflesso, volo nella scheda «Tessera»;
+  - con il movimento ridotto c'è solo una dissolvenza.
+- Verifiche:
+  - a ogni giro, Chromium a 360, 390, 768, 900, 1024, 1180 e 1366 px, in chiaro e in scuro, con la pagina ricaricata e la schermata verificata ogni volta (fino a 476 combinazioni). Nessun pulsante fuori dal riquadro, nessuno scorrimento orizzontale, nessun errore;
+  - il controllo è stato provato su una copia rotta apposta: trova i difetti;
+  - fotogrammi delle animazioni guardati uno per uno, su telefono e computer.
+- Regole in [DESIGN.md](DESIGN.md), nella nuova sezione «Accesso, tessera e situazioni comuni (percorso 1)»; aggiornati «Identità», «Organizzazione» (cinque schede) e «Interazioni e stati». Eccezione del simbolo in [assets/marchio/](assets/marchio/README.md). Decisione di prodotto in [PRODUCT.md](PRODUCT.md) §12; parere legale in più in §10.10.
+- Mappa:
+  - la decisione è in «Decisioni finora»;
+  - ticket nuovo [Rifinitura estetica delle schermate interne](.scratch/design-percorso-1/issues/13-rifinitura-estetica.md), dalla diagnosi accolta dall'utente;
+  - «Tessera digitale» tolta dal «Non ancora specificato»;
+  - personalizzazione della tessera in «Fuori ambito».
+- Annotato in [Prezzo e condizioni dell'adesione](.scratch/controllo-a/issues/10-prezzo-condizioni-adesione.md) cosa resta da decidere sulla disdetta: rimborso, periodicità e condizioni.
+- Nessun termine nuovo nel glossario. Nessun conflitto con la specifica: l'account creato dall'operatore e la disdetta da soli precisano §10.2 e §10.8 senza cambiarle.
+- Non applicabili: build, test e revisione OCR (non c'è codice applicativo; il programma `ocr` non è nell'ambiente).
 
 ## Fatto (23 ottobre 2026, inquilino)
 - Ticket [Schermate dell'inquilino](.scratch/design-percorso-1/issues/11-schermate-inquilino.md) rivendicato e chiuso nella stessa sessione, con le skill `prototype` e `grilling`, in un giro, partendo dal prototipo del proprietario.
@@ -191,17 +229,19 @@ Prodotto: **Connetto**, nome di lavoro in attesa del parere sul marchio. Non c'�
 - Dal 1/1/2027 registro, cedolare secca, IVA e termini fiscali passano a nuovi testi unici: le ricerche su adempimenti, incasso e privacy vanno riverificate a gennaio 2027.
 - Pareri professionali segnalati (legale, fiscale, privacy, servizi di pagamento, antiriciclaggio): fuori dalla mappa, prima del pilota; senza colloqui (22/10) cade il parere sull'informativa dei colloqui. Dal 20/10 se ne aggiunge uno su ruoli e documenti del pilota: condizioni delle due adesioni, contratto sui dati con chi costruisce la piattaforma, accordo su marchio e software fra fondatori e ƎE. Dal 21/10: l'incarico di gestione e incasso oggi non è scritto e va scritto; ƎE non ha un consulente per la privacy, quindi informativa e registro si aggiornano con un professionista esterno. Dal 23/10: chi è il mittente degli SMS e il suo alias nel Registro AGCOM; deposito di nome e simbolo. Il parere sul nome Connetto si chiede subito (ticket della mappa del design).
 
+- **Dal 23/10/2026 (accesso e tessera):** parere legale sulla disdetta online dell'adesione e sull'art. 54-bis del Codice del consumo (PRODUCT.md §10.10); condizioni d'uso delle immagini generate con ChatGPT prima dell'uso nel prodotto; contrasto dei dati incisi sulla tessera, da misurare nella revisione dell'accessibilità; il passaggio animato e l'accesso con link vanno provati sull'iPhone (ticket «Prova su iPhone»). La legge sulla disdetta è stata letta solo da fonti secondarie: EUR-Lex non ha restituito il testo.
+
 ## Da chiarire con l'utente
 Le domande aperte sono nei ticket della mappa; prezzo, periodicità e trattenuta della quota dal canone in «Prezzo e condizioni dell'adesione». I fatti che conosce solo l'agenzia sono nel ticket «Fatti dall'agenzia ƎE»; i dubbi rimasti sono nei sei chiarimenti da mandare al collaboratore.
 
 ## Prossimo passo
-1. **«Direzione del percorso 1»** nella mappa del design: messaggio in [START_HERE.md](START_HERE.md). Prototipo usa e getta con le direzioni dietro un selettore, da aprire su telefono e desktop, dentro i punti fermi di DESIGN.md.
-2. **L'utente porta a un consulente in marchi** [docs/ricerca/nome-connetto.md](docs/ricerca/nome-connetto.md), con le domande già pronte, e riporta l'esito (ticket «Parere di un consulente in marchi sul nome Connetto»). Serve prima del design di email, SMS e scritta del nome.
-3. Quando l'utente vuole: «Prova su iPhone: la piattaforma aggiunta alla schermata Home», con una pagina di prova da aprire sul suo telefono.
-4. L'utente manda al collaboratore i sei «Chiarimenti per ƎE» (ticket [Fatti dall'agenzia ƎE](.scratch/controllo-a/issues/06-fatti-agenzia.md), sotto «Commenti»). Si può aggiungere una domanda: ai clienti al banco si dà del «Lei»?
-5. Prima dell'architettura: [ricerca](.scratch/controllo-a/issues/14-ricerca-vista-3d.md) e [prova](.scratch/controllo-a/issues/15-prova-vista-3d.md) sulla vista 3D indicativa. Prima del pilota, quando l'utente vuole: [Prezzo e condizioni dell'adesione](.scratch/controllo-a/issues/10-prezzo-condizioni-adesione.md), [Ricerca: tessere fisiche](.scratch/controllo-a/issues/12-ricerca-tessere-fisiche.md), «Prova sulle bollette».
+1. **«Rifinitura estetica delle schermate interne»** nella mappa del design: messaggio in [START_HERE.md](START_HERE.md). Prima e dopo dietro un selettore, partendo dalla casa dell'inquilino e del proprietario.
+2. **Il collaboratore di ƎE** risponde alle cinque domande (ticket rivendicato); la quinta decide le ricevute dell'inquilino.
+3. **Parere sul nome Connetto**, prima di email, SMS e scritta del nome.
+4. Quando l'utente vuole: «Prova su iPhone», da fare ora anche sulla pagina d'accesso, sul codice proposto sopra la tastiera e sull'animazione del benvenuto.
+5. Prima del pilota: «Prezzo e condizioni dell'adesione», con rimborso e periodicità della disdetta; i pareri di PRODUCT.md §10.10.
 
 Messaggi per le prossime sessioni in [START_HERE.md](START_HERE.md).
 
 ## Ultima verifica
-23/10/2026, notte: `python3 tools/check_setup.py` dà integrità OK. Link locali di PRODUCT.md, GLOSSARY.md, STATUS.md, START_HERE.md, DESIGN.md e della mappa del design con i suoi ticket: nessuno rotto. Frontiera calcolata dai file dei ticket: liberi «Direzione del percorso 1», «Prova su iPhone» e «Parere di un consulente in marchi sul nome Connetto» (compito per l'utente); «Il collaboratore di ƎE guarda lo spazio dell'operatore» aspetta la direzione. Non applicabili: build, test, revisione OCR, verifiche dell'interfaccia (non c'è codice né schermata). Programmi facoltativi assenti nell'ambiente cloud: `ocr`, `playwright-cli`; Chromium c'è.
+23/10/2026, sera, accesso e tessera: `python3 tools/check_setup.py` dà integrità OK. Link locali di PRODUCT.md, GLOSSARY.md, STATUS.md, START_HERE.md, DESIGN.md, assets/marchio/README.md, della mappa del design con i suoi ticket e di «Prezzo e condizioni dell'adesione»: nessuno rotto. Frontiera calcolata dai file dei ticket: liberi «Rifinitura estetica delle schermate interne», «Prova su iPhone» e «Parere di un consulente in marchi sul nome Connetto» (compito per l'utente); «Il collaboratore di ƎE guarda lo spazio dell'operatore» è rivendicato. Non applicabili: build, test, revisione OCR (non c'è codice applicativo). Programmi facoltativi assenti nell'ambiente cloud: `ocr`, `playwright-cli`; Chromium c'è.

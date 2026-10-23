@@ -31,3 +31,10 @@ Non c'è proposta di pre-adesione: le adesioni si contano nel pilota (PRODUCT.md
 - *Compenso trattenuto* (15): il riepilogo di consegna mostra l'eventuale compenso trattenuto con il riferimento alla fattura; se la quota si trattiene dal canone lo decide questo ticket.
 - *Pratiche a pagamento* (20): il prezzo compare accanto alla scadenza, nella pagina della casa.
 - *Idea dell'utente* (26): adesione a pagamento per l'ex inquilino, con un periodo gratuito; da riprendere dopo il pilota, non qui salvo diversa scelta dell'utente.
+
+**23/10/2026: dal ticket [Accesso, adesione e situazioni comuni](../../design-percorso-1/issues/12-accesso-e-situazioni-comuni.md)** (PRODUCT.md §12, 23/10/2026). L'adesione si disdice anche da soli nella piattaforma. Questo ticket deve decidere:
+- se esiste «chiudi subito» con rimborso del periodo non usato, e come si calcola; altrimenti resta solo «non rinnovare»;
+- mensile o annuale, perché decide la data di fine mostrata nel riepilogo della disdetta;
+- cosa dicono le condizioni sulla disdetta fatta online.
+
+Il parere legale sull'art. 54-bis del Codice del consumo (funzione di recesso) è in PRODUCT.md §10.10.

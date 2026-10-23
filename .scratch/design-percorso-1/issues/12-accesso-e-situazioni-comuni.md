@@ -1,7 +1,7 @@
 # Accesso, adesione e situazioni comuni
 
 Type: prototype
-Status: open
+Status: resolved
 Blocked by: 04
 Mappa: [Design del percorso 1](../map.md)
 
@@ -16,4 +16,96 @@ Come sono, nella direzione scelta, i passaggi uguali per tutti ([PRODUCT.md](../
 
 Prototipo usa e getta (skill `prototype`, ramo UI) nella direzione «Terracotta» ([DESIGN.md](../../../DESIGN.md), «Direzione del percorso 1»), su telefono e desktop, in chiaro e in scuro con il chiaro per primo. Solo dati inventati, importi come «9.876,54 €», parole del [glossario](../../../GLOSSARY.md); si mostra all'utente come pagina privata e non entra nel repository. Le scelte all'utente una alla volta, in parole semplici, con una raccomandazione motivata. Quello che si decide va in DESIGN.md come regole, con data e motivo; un problema con la specifica (PRODUCT.md §10) o con i punti fermi si porta all'utente come conflitto. Testi definitivi, rifinitura, dati limite e accessibilità vengono dopo, nei loro ticket.
 
+## Risposta (Answer)
+
+**Approvato dall'utente il 23/10/2026**, dopo cinque giri di prototipo. Regole in [DESIGN.md](../../../DESIGN.md), «Accesso, tessera e situazioni comuni (percorso 1)»; decisione di prodotto in [PRODUCT.md](../../../PRODUCT.md) §12. Decisioni dell'utente:
+- **accesso** con un codice di verifica via email o SMS, per tutti, senza password; l'account lo crea l'operatore al banco e il cliente entra dal link che riceve lì;
+- **pagina d'accesso** uguale ai riferimenti generati dall'utente: la stanza calda, la tessera di rame in posa, il modulo;
+- **tessera digitale** di rame per tutti, con i soli dati essenziali; la personalizzazione viene dopo la prima versione. Il simbolo può essere inciso solo sulla tessera vista come oggetto, un'eccezione alle regole del simbolo;
+- **scheda «Tessera»**, la quinta dei clienti;
+- **benvenuto al primo accesso:** la tessera dell'accesso si distende al centro, ci si incidono i dati e poi vola nella scheda «Tessera». Sostituisce la carta di benvenuto scelta prima;
+- **disdetta dell'adesione** da soli: «non rinnovare» oppure «chiudi subito» se le condizioni lo prevedono; riepilogo, un tocco di conferma, ricevuta subito.
+
+Il resto (invito ad aderire, profilo, fine dei rapporti, stati comuni, comportamento dalla schermata Home) è approvato con il prototipo, con le scelte ragionevoli dell'agente sotto «Commenti». Il prototipo, usa e getta, resta fuori dal repository: https://claude.ai/artifact/3LkcGCmp2P4SNpVAFbP92s (pagina privata, versione 5).
+
+Aperti, fuori da questo ticket: parere legale sulla disdetta online (PRODUCT.md §10.10); rimborso e periodicità in «Prezzo e condizioni dell'adesione»; condizioni d'uso delle immagini generate; verifiche sull'iPhone nella prova dedicata. L'estetica delle schermate interne passa al ticket [Rifinitura estetica delle schermate interne](13-rifinitura-estetica.md).
+
 ## Commenti (Comments)
+
+**23/10/2026, domande prima di costruire** (skill `grilling`, una alla volta):
+- *Accesso:* **un codice per tutti** (consigliato). Un solo campo «email o numero di cellulare», poi un codice di 6 cifre via email o via SMS; niente password. *Motivo:* niente da ricordare, un solo schema da spiegare al banco; il link nell'email rischia di aprirsi nel browser invece che nell'app sulla schermata Home (da verificare nella [Prova su iPhone](06-prova-iphone-schermata-home.md)). Scartati «email con password» (due schemi, password da recuperare) e «link nell'email».
+- *Primo accesso:* **subito la casa** (consigliato), con in cima una sola carta di benvenuto che si chiude e non torna: tessera digitale, informativa, come mettere Connetto sulla schermata Home. Tutto resta nel Profilo. *Motivo:* adesione e informativa si firmano e si ricevono al banco (§10.2), online non c'è nulla da firmare; i punti fermi mettono per prima la casa e le HIG sconsigliano gli avvisi all'avvio. Scartata la presentazione a passi.
+- *Disdetta dell'adesione:* consigliata all'inizio una richiesta a ƎE, che la conferma. L'utente obietta che così sembra rendere difficile la disdetta e ricorda le nuove regole sulla disdetta semplice; propone una **disdetta in autonomia, immediata ma ben progettata**: avviso e riepilogo di cosa comporta, doppia conferma, verifica via email o SMS, due scelte («disdire subito» con rimborso del periodo non usato, oppure fermare il rinnovo).
+  - Verifica dell'agente (lettura non primaria, 23/10/2026): esiste la «funzione di recesso» della direttiva (UE) 2023/2673, recepita con il D.Lgs. 209/2025 (art. 54-bis del Codice del consumo), dal 19/6/2026: pulsante facile da trovare, pochi dati, conferma con un secondo tocco, ricevuta su supporto durevole. Riguarda i contratti conclusi online con diritto di recesso; l'adesione si firma al banco, quindi forse non si applica in senso stretto: serve il parere legale. Fonti lette: [iubenda](https://www.iubenda.com/it/blog/funzione-di-recesso-online-direttiva-2023-2673/), [Panorama](https://www.panorama.it/tempo-libero/tecnologia/diritto-di-recesso-online-arriva-il-pulsante-obbligatorio-che-semplifica-la-vita-dei-consumatori); EUR-Lex non ha restituito il testo.
+  - Decisione dell'utente: **la sua idea con due ritocchi dell'agente** (consigliata). Niente codice di verifica in più (la persona è già entrata con un codice e la norma chiede di non mettere ostacoli): la ricevuta arriva subito via email o SMS con «Non sei stato tu? Chiama ƎE». «Non rinnovare» è la prima scelta, annullabile fino alla scadenza con «Riattiva il rinnovo»; «Chiudi subito» con rimborso compare solo se le condizioni dell'adesione lo prevedono. Rimborso e periodicità (mensile o annuale) si decidono in [Prezzo e condizioni dell'adesione](../../controllo-a/issues/10-prezzo-condizioni-adesione.md): nel prototipo sono segnaposto. Scartati il codice in più e la richiesta a ƎE.
+
+**23/10/2026, primo giro mostrato** (pagina privata https://claude.ai/artifact/3LkcGCmp2P4SNpVAFbP92s, sorgente nella cartella temporanea della sessione, costruito sul prototipo dell'inquilino). Controllato nel Chromium disponibile a 360, 390, 768, 900, 1024, 1180 e 1366 px, con tutte le varianti e le due scelte della disdetta, in chiaro e in scuro: 406 combinazioni, ognuna con la pagina ricaricata e la verifica della schermata aperta. Nessun pulsante, importo o titolo fuori dal suo riquadro, nessuno scorrimento orizzontale, nessun errore. Il controllo è stato provato su una copia rotta apposta, dove ha trovato i difetti e le schermate sbagliate. Guardando le immagini sono stati corretti due difetti: il codice della tessera prendeva lo stile del campo del codice di verifica, e la «x» del benvenuto sembrava un divieto. Nove schermate in «Terracotta»:
+1. accesso con un codice: email o cellulare, codice via email, codice via SMS, codice sbagliato, «Il codice non arriva?» con quattro rimedi in ordine;
+2. primo accesso, inquilino e proprietaria: la casa con la carta di benvenuto;
+3. invito ad aderire, proprietario e inquilino: cosa comprende, il posto per prezzo e condizioni, come aderire al banco;
+4. profilo con tessera, come entri, adesione e «Disdici l'adesione»; la guida per la schermata Home;
+5. disdetta: scegli, controlla, fatta; la casa durante il periodo senza rinnovo; cosa vede dopo la fine; la variante dell'inquilino;
+6. fine della locazione per il proprietario: residuo e contestazione aperti, storico con le sole iniziali dell'ex inquilino;
+7. la casa esce dalla gestione: sola lettura, adesione fino alla fine del periodo pagato, «Scarica tutto»;
+8. caricamento, vuoto, senza rete, errore, link scaduto, accesso scaduto;
+9. la stessa pagina nel browser e dalla schermata Home, con l'Indietro della pagina sempre presente.
+
+Scelte ragionevoli dell'agente, da cambiare se l'utente lo chiede:
+- dopo il codice si dice «se questa email è registrata»: non si rivela chi è iscritto;
+- i dati di accesso si cambiano al banco o chiamando ƎE, perché sono verificati al banco (§10.2);
+- l'accesso dura 30 giorni, poi serve un codice nuovo e si torna alla pagina di prima;
+- i link dei messaggi scadono e portano all'accesso;
+- senza rete si vedono i dati in memoria, con l'ora;
+- l'adesione dell'inquilino si disdice con un solo passaggio: è gratuita, senza rinnovo né rimborso. Che canone, ricevute e contratto restino anche senza adesione è un'ipotesi da confermare: discende da §7, l'accesso legato al rapporto con la casa;
+- «Conferma la disdetta» ha lo stile del pulsante principale. È un'eccezione voluta all'indicazione HIG di non dare quello stile alle azioni distruttive: la persona l'ha scelta deliberatamente e un pulsante sbiadito renderebbe la disdetta più difficile.
+
+**23/10/2026, riscontro dell'utente sul primo giro.** Il resto va bene; non convincono la schermata dopo l'accesso e quella dell'accesso.
+- *Dopo l'accesso* (cambia la scelta «subito la casa con la carta di benvenuto»): il primo accesso avviene di solito al banco, sul telefono del cliente, dopo l'attivazione. L'operatore crea l'account dal suo spazio, sul computer di ƎE, con l'email o il cellulare verificati (§10.2, senza conflitto), e dà al cliente il link per entrare. Al primo accesso l'utente vuole una schermata d'impatto, soprattutto sul telefono: la **tessera a tutto schermo** con i dati del cliente; toccandola se ne va con un'animazione. Vuole anche la **tessera digitale come rappresentazione della tessera fisica**, sul modello delle carte di Revolut, che oggi nella piattaforma manca. L'agente ricorda il glossario: la tessera non deve sembrare una carta di pagamento (niente chip, niente numeri lunghi).
+- *Dove abita la tessera:* **una scheda tutta sua, «Tessera»** (consigliato): cinque schede sul telefono (Casa, Ricevute, Tessera, Documenti, Profilo), una voce nella barra laterale sul desktop. Toccata al primo accesso, la tessera vola verso quella scheda. Scartati «in cima alla Casa» (sposta in basso il canone del mese) e «nel Profilo» (due tocchi al banco).
+- *Dati sulla tessera:* **solo gli essenziali** (consigliato): nome e cognome, ruolo, codice, «dal» con mese e anno dell'adesione, «Connetto · ƎE»; sul retro il codice in grande per l'operatore. Niente indirizzo, telefono o email, perché la tessera si mostra in pubblico. Scartato l'indirizzo della casa.
+- *Accesso:* l'utente non ha idee precise per migliorarlo e propone di far generare a ChatGPT alcune versioni come immagini di ispirazione, se ha senso. L'agente lo ritiene utile come riferimento d'atmosfera, come le immagini del ticket della direzione; intanto propone una sua seconda versione.
+- Il colore della tessera (uno per ruolo o uno solo) si mostra con due varianti nel prototipo.
+
+**23/10/2026, secondo giro mostrato** (stessa pagina privata, versione 2; il primo giro resta nella cartella temporanea della sessione). Controllato come il primo: 476 combinazioni a sette larghezze, in chiaro e in scuro, con la pagina ricaricata e la schermata verificata ogni volta; nessun difetto, nessuno scorrimento orizzontale, nessun errore. Provata a parte l'animazione a 390 e 1366 px: la tessera vola nella scheda «Tessera», che lampeggia due volte, la sovrapposizione sparisce e il focus va al titolo della casa. Con il movimento ridotto resta solo una dissolvenza. Cambiamenti:
+- *Accesso:* in alto la casa illustrata con due tessere che galleggiano piano, sotto un foglio bianco con il modulo; sul desktop le due metà affiancate. Nuova variante **«Dal banco»**: il link che l'operatore dà al cliente apre l'accesso con il nome e l'email già scritti, poi c'è solo «Mandami il codice». Il codice resta sempre necessario: il link non fa entrare da solo.
+- *Primo accesso:* al posto della carta di benvenuto, la tessera a tutto schermo, che sale con una luce che la attraversa. Sotto, «Tocca la tessera per entrare» e il pulsante «Entra nella tua casa», per chi non tocca la tessera o usa la tastiera. Poi la casa, con in cima una riga che si chiude: «Metti Connetto sulla schermata Home».
+- *Scheda «Tessera»:* la tessera grande, che si gira con un tocco; sul retro il codice in grande. Sotto, a cosa serve, cosa non fa, l'adesione e la tessera fisica, se ƎE la prevede. Varianti: proprietaria, due ruoli (due tessere, una per adesione, da scorrere sul telefono), un colore per tutti. Con un colore per ruolo il proprietario ha la tessera arancio terracotta e l'inquilino verde scuro, il verde delle persiane dell'illustrazione.
+- Cinque schede per i clienti (Casa, Ricevute, Tessera, Documenti, Profilo); nel Profilo la tessera è ora una riga che porta alla scheda.
+
+Scelte ragionevoli dell'agente: una persona con due ruoli ha due tessere, perché ha due adesioni e la tessera è il segno dell'adesione (glossario); i codici sono brevi, «EE-7730-15», per non sembrare il numero di una carta; il testo bianco sta nella parte scura del colore della tessera (il contrasto si misura nella revisione dell'accessibilità).
+
+**23/10/2026, immagine di ispirazione per l'accesso.** L'utente ha generato con ChatGPT, dalla prima richiesta preparata dall'agente, una schermata per telefono: una tessera di rame spazzolato sospesa in una stanza calda, con ombre di finestra e un arco di porta, il titolo «La tua casa, a portata di mano» e il modulo sotto. Gli piace molto; sono sbagliati il logo del prodotto e quello sulla tessera (una casetta al posto del simbolo C–Legame). L'immagine non entra nel repository. Chiede una richiesta per far generare le parti separate (PNG ritagliati) con il logo giusto, così da costruire l'accesso e animare la tessera. Propone che, dopo l'accesso, la tessera della pagina di accesso si muova e diventi la tessera di benvenuto.
+- *Conflitto con le regole del simbolo* (assets/marchio/README.md: un solo colore pieno, niente gradienti, ombre o contorni): nell'immagine il simbolo è inciso nel rame. Decisione dell'utente: **eccezione solo per la tessera vista come oggetto** (consigliata). Il simbolo può essere inciso nel materiale, con forma identica, senza ruotarlo rispetto alla tessera e senza unire le due C; ovunque altro resta piatto e di un colore. Scartata «regola invariata, simbolo stampato piatto».
+- *Idea dell'animazione:* l'agente la ritiene sensata e propone di usare la stessa tessera in tre momenti. All'accesso è anonima; dopo il codice va al centro e ci si incidono nome, ruolo e codice (il riconoscimento dell'account); toccata, vola nella scheda «Tessera». I dati personali restano testo vero sopra l'immagine, mai scritti dentro l'immagine.
+- Materiali preparati dall'agente, nella cartella temporanea della sessione e non nel repository: il simbolo in PNG trasparente, nero e bianco (1024 px, dagli SVG di assets/marchio/), e uno schema della tessera con le posizioni, la zona vuota per i dati e cosa non fare.
+- Da verificare prima dell'uso nel prodotto: le condizioni d'uso delle immagini generate. Va tenuto presente che lo stile in rame e luce reale è diverso dalle case illustrate in piatto della direzione: la tessera sarebbe l'unico oggetto «materico».
+
+**23/10/2026, terzo giro mostrato** (stessa pagina privata, versione 3). L'utente ha generato le parti separate con ChatGPT e le ha condivise in una cartella Drive. Sono otto immagini: tessera di rame e di verderame, fronte e retro, ritagliate; l'ombra; la stanza per telefono e per computer; un riferimento d'insieme. Le immagini sono state guardate una per una: simbolo C–Legame e «ƎE» sono corretti. Sono state compresse in WebP (da 19 MB a circa 0,5 MB) e pubblicate con la pagina; non entrano nel repository.
+- *Accesso:* la tessera di rame anonima galleggia nella stanza, inclinata, con il modulo sotto sul telefono e in un riquadro chiaro e sfocato a destra sul desktop. Nel passo del codice la tessera resta, più piccola.
+- *Passaggio al benvenuto:* «Entra» porta la stessa tessera al centro (transizione animata del browser) e, per l'inquilino, il rame diventa verderame. Poi ruolo, nome e codice si incidono una lettera alla volta, come testo vero sopra l'immagine. Toccata, la tessera vola nella scheda «Tessera». Con il movimento ridotto il passaggio non c'è e le lettere compaiono subito.
+- *Scheda «Tessera»:* le stesse immagini, con fronte e retro che si girano. Sul verderame il testo è chiaro, perché il testo scuro non si leggeva; sul rame è marrone molto scuro. I contrasti si misurano nella revisione dell'accessibilità.
+- Verifiche: 476 combinazioni a sette larghezze, chiaro e scuro, senza difetti; percorso accesso → benvenuto → casa provato a 390 e 1366 px e in scuro, con le immagini guardate a ogni passo.
+- Da tenere presente: il passaggio animato usa le «view transitions» del browser, presenti in Chrome e in Safari dalla versione 18; senza, si passa direttamente. Le condizioni d'uso delle immagini generate vanno lette prima dell'uso nel prodotto.
+
+**23/10/2026, riscontro sul terzo giro e quarto giro** (stessa pagina privata, versione 4). L'utente sceglie per il computer un'immagine generata con ChatGPT: la stanza a tutta pagina, la tessera di rame grande e inclinata a sinistra e il modulo a destra direttamente sulla stanza. Poi nota che accesso su telefono e su computer non sono uguali ai due riferimenti e li vuole **identici**, salvo il logo sbagliato della tessera nel riferimento del telefono. Segnala anche che la tessera non sembrava più in 3D e aveva una prospettiva strana: era l'immagine piatta inclinata dal browser, senza spessore. L'agente propone di far modificare a ChatGPT le immagini già scelte e di ricavarne livelli separati della stessa misura (stanza, tessera in posa con lo spessore, ombra), invece di generare pezzi nuovi. L'utente li genera nella stessa chat e li condivide su Drive, con la schermata del telefono corretta.
+- I livelli sovrapposti combaciano con i riferimenti: nella differenza restano solo testi e comandi. Tessera e ombra sono ritagliate ai loro bordi e messe nella posizione misurata.
+- L'accesso è ricostruito a strati con le misure dei riferimenti (un'unità = un pixel del riferimento). Righe di testo, campo, pulsante, note e «Hai bisogno di aiuto?» sono stati confrontati con le bande misurate sui riferimenti; restano scarti di 1–3 px. Composizione del computer da 1000 px; sotto, la colonna del telefono con la stanza sfocata ai lati.
+- Differenze lasciate di proposito: il simbolo del logo in alto ha il colore del testo, come chiedono le regole del simbolo (nel riferimento del telefono era arancio); il pulsante usa l'arancio della direzione (#c4460f), più contrastato di quello del riferimento; l'informativa si raggiunge da «Hai bisogno di aiuto?», che apre una pagina d'aiuto.
+- Passaggio al benvenuto: la tessera in posa scivola al centro e diventa la tessera piatta, con i dati incisi; provato a 390 e 1366 px e in scuro. Verifiche: 476 combinazioni senza difetti.
+
+**23/10/2026, quinto giro** (stessa pagina privata, versione 5). Due richieste dell'utente:
+- **Tessera di rame per tutti** come impostazione di base, inquilini compresi; la possibilità di personalizzarla verrà più avanti (fuori dalla prima versione, da rivedere dopo il pilota). Il verderame resta tra le immagini, non usato. Con due ruoli si hanno due tessere di rame, distinte dal ruolo scritto.
+- **Animazione del benvenuto più curata:** «adesso sembra grezza». La dissolvenza fra la tessera in posa e quella piatta mostrava due immagini sovrapposte. Ora:
+  - *Arrivo:* l'accesso svanisce. La tessera parte esattamente dalla sua posa (i quattro angoli misurati sull'immagine) e si distende al centro con una prospettiva vera, calcolata a ogni fotogramma. Si solleva appena e la attraversa un riflesso. Dura poco più di un secondo.
+  - *Incisione:* posata la tessera compaiono saluto e titolo. Poi ruolo, nome e codice si accendono una lettera alla volta, come incisi dal laser, e si raffreddano nel colore inciso. Segue un riflesso di luce con una lieve inclinazione verso la luce, poi compaiono il suggerimento e «Entra nella tua casa». La tessera «respira» piano finché non la si tocca.
+  - *Uscita:* la tessera si solleva, compie un arco e si rimpicciolisce nella scheda «Tessera», che lampeggia.
+  - Con il movimento ridotto non c'è nessun volo: le lettere compaiono subito e si passa con una dissolvenza.
+- Verifiche: fotogrammi a 120–4200 ms dell'arrivo e a 150–1100 ms dell'uscita, a 390 e 1366 px; corretto il titolo che compariva sotto la tessera in volo. 462 combinazioni senza difetti.
+
+**23/10/2026, estetica e chiusura.** L'utente prova a far generare a ChatGPT, in una chat nuova, proposte per la schermata principale. Non escono idee migliori. Le funzioni lo convincono, l'estetica delle schermate interne meno. L'agente indica quattro motivi:
+- troppi riquadri dello stesso peso;
+- un'illustrazione piatta accanto alla tessera di rame;
+- caratteri quasi tutti in grassetto pieno;
+- icone ripetute in ogni riga.
+
+Propone di portare dentro la luce della pagina d'accesso. Decisione dell'utente (consigliata): chiudere questo ticket e aprirne uno nuovo per la rifinitura estetica, nella prossima sessione. Scartati «un campione subito qui» e «lasciare così».

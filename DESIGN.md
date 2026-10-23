@@ -2,7 +2,7 @@
 
 ## Stato
 Direzione del percorso 1 approvata dall'utente il 23/10/2026: **«Terracotta»** (sezione «Direzione del percorso 1»). Non si eredita alcun layout, menu, palette, font o componente da tentativi precedenti: il design si progetta da zero (vedi [docs/METODO.md](docs/METODO.md), passo 6).
-Il design del percorso 1 è in corso dal 23/10/2026 nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md): ora si disegna il percorso intero in questa direzione. Le scelte arrivano qui man mano che l'utente le conferma.
+Il design del percorso 1 è in corso dal 23/10/2026 nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md): ora si disegna il percorso intero in questa direzione. Le schermate per ruolo e quelle comuni sono approvate; la prossima è la rifinitura estetica delle schermate interne, che porta dentro la luce della pagina d'accesso. Le scelte arrivano qui man mano che l'utente le conferma.
 
 ## Riferimento confermato dall'utente
 - Le **Apple Human Interface Guidelines** sono il riferimento di design più importante (16/10/2026), adattate alla piattaforma effettiva. Sintesi e fonti: [docs/rules/APPLE_DESIGN.md](docs/rules/APPLE_DESIGN.md). In caso di dubbio si rilegge la pagina ufficiale del componente.
@@ -22,7 +22,7 @@ Prima la piattaforma web (telefono e desktop), poi l'app iPhone (confermato). I 
 ## Identità
 Palette, tipografia, icone e densità del percorso 1 sono in «Direzione del percorso 1»; voce e tema in «Punti fermi del percorso 1». DA DEFINIRE: la scritta del nome (wordmark), dopo il parere sul marchio.
 - Il prodotto ha un marchio autonomo dall'agenzia (confermato). Nome: **Connetto** ([PRODUCT.md](PRODUCT.md) §1 e §12, 23/10/2026), nome di lavoro in attesa del parere sul marchio: la scritta del nome si disegna dopo il parere.
-- **Simbolo C–Legame** (23/10/2026, scelto e fornito dall'utente): due elementi a forma di C che si agganciano, a rappresentare la connessione, il legame. Ambito: solo il segno, in un colore pieno che prende quello del testo intorno; versione regolare e versione piccola. File e regole d'uso in [assets/marchio/](assets/marchio/README.md). È un materiale dell'utente, non un riuso di tentativi precedenti.
+- **Simbolo C–Legame** (23/10/2026, scelto e fornito dall'utente): due elementi a forma di C che si agganciano, a rappresentare la connessione, il legame. Ambito: solo il segno, in un colore pieno che prende quello del testo intorno; versione regolare e versione piccola. File e regole d'uso in [assets/marchio/](assets/marchio/README.md). È un materiale dell'utente, non un riuso di tentativi precedenti. Unica eccezione, decisa dall'utente il 23/10/2026: sulla tessera di rame, vista come oggetto, il simbolo può essere inciso nel materiale, con la forma identica.
 - Preferenza per il tema scuro (fondo nero e grigi neutri): riconfermata il 23/10/2026 come vetrina, non come unico tema. Lo stesso giorno, scegliendo la direzione, l'utente ha messo in vetrina il chiaro; lo scuro resta nero e grigi neutri (vedi «Tema»).
 
 ## Punti fermi del percorso 1
@@ -55,7 +55,7 @@ Scelta dall'utente il 23/10/2026: **«Terracotta»**, dopo tre giri di prototipo
 
 - **Organizzazione.**
   - *Desktop:* il servizio sta in un grande pannello arrotondato su un fondo neutro. A sinistra la barra laterale con simbolo e nome, le sezioni, «Le mie case» e in fondo la persona; in cima la ricerca.
-  - *Telefono:* un'intestazione con il simbolo e le iniziali della persona, il contenuto in colonna e quattro schede in basso. Per i clienti sono Casa, Ricevute, Documenti e Profilo; per l'operatore Coda, Case, Persone e Oggi. La barra delle schede è traslucida, con una versione opaca quando si chiede più contrasto.
+  - *Telefono:* un'intestazione con il simbolo e le iniziali della persona, il contenuto in colonna e le schede in basso. Per i clienti sono cinque: Casa, Ricevute, Tessera, Documenti e Profilo (cambiato il 23/10/2026: prima erano quattro, senza Tessera; vedi «Accesso, tessera e situazioni comuni»). Per l'operatore sono quattro: Coda, Case, Persone e Oggi. La barra delle schede è traslucida, con una versione opaca quando si chiede più contrasto.
   - *Operatore:* elenco e dettaglio, affiancati sul desktop e in fila sul telefono, con Indietro. In cima «Trova cliente o casa» e tre numeri del giorno: voci in coda, incassi, registrato oggi.
 - **La casa in cima.** La pagina della casa si apre con un riquadro. Contiene l'illustrazione della casa in grande, come la foto di un annuncio, con l'indirizzo in un'etichetta; accanto sul desktop, sotto sul telefono, un titolo che dice il fatto del mese («Ottobre: il canone è pagato»), le caratteristiche in etichette e la cosa da fare con un solo pulsante. Sotto ci sono i fatti in riquadri con icona (canone, oneri, prossima scadenza, inquilino), poi il mese con canone e consegna su righe distinte, e le scorciatoie.
 - **Illustrazione della casa, non foto** (decisione dell'utente del 23/10/2026: nessun cambio alla specifica, nessun lavoro in più per ƎE, nessun interno di una casa abitata). Ogni casa ha una facciata disegnata, diversa da casa a casa e sempre presente, ricavata da dati che la piattaforma ha già. Compare in piccolo anche nelle righe dell'operatore e nell'email, dove è solo decorazione e il fatto resta testo. Nel prototipo era un palazzo con i portici: lo stile va adattato alle case di ƎE (*da verificare*). Chi la genera e come è una domanda dell'architettura.
@@ -145,12 +145,55 @@ Approvate dall'utente il 23/10/2026 nel ticket [Schermate dell'inquilino](.scrat
 - **Spazio delle bollette:** solo un posto tratteggiato nelle scorciatoie della casa, senza contenuto (percorso 3, fuori dalla mappa).
 - *Evidenza:* approvazione dell'utente su un prototipo con dati inventati. Le ricevute aspettano il parere del collaboratore di ƎE.
 
+## Accesso, tessera e situazioni comuni (percorso 1)
+Approvati dall'utente il 23/10/2026 nel ticket [Accesso, adesione e situazioni comuni](.scratch/design-percorso-1/issues/12-accesso-e-situazioni-comuni.md), dopo cinque giri di prototipo; il ticket conserva domande, alternative e motivi. Applicano i punti fermi e le larghezze di «Spazio dell'operatore»; ambito: proprietari e inquilini, su telefono e desktop.
+
+- **Accesso** (decisione dell'utente): un solo campo «Email o numero di cellulare», poi un codice di verifica di 6 cifre via email o via SMS, senza password. Il campo del codice accetta il riempimento automatico e l'incolla. Dopo l'invio si dice «se questa email è registrata», così non si rivela chi è iscritto. «Il codice non arriva?» dà quattro rimedi in ordine: correggere, rimandare il codice, riceverlo via SMS, chiamare ƎE. Dopo 30 giorni serve un codice nuovo e si torna alla pagina di prima; i link dei messaggi scadono e portano all'accesso. *Motivo:* niente da ricordare e un solo schema da spiegare al banco; il link nell'email rischia di aprirsi nel browser invece che nell'app sulla schermata Home (da verificare nella prova su iPhone).
+- **Primo accesso al banco:** l'operatore crea l'account dal suo spazio, con l'email o il cellulare verificati (§10.2), e dà al cliente il link. Il link apre l'accesso con nome ed email già scritti («Ciao Luca, manca un passo»); il codice serve comunque.
+- **Pagina d'accesso** (decisione dell'utente): uguale ai due riferimenti che l'utente ha generato con ChatGPT e scelto. Una stanza calda con la luce di una finestra e un arco; la tessera di rame anonima, inclinata, con il suo spessore e la sua ombra. Sotto, «La tua casa, a portata di mano», il campo, «Mandami il codice», «Ricevi un codice via email o SMS. Niente password da ricordare.» e «Hai bisogno di aiuto?».
+  - *Telefono:* tutto in colonna, centrato.
+  - *Desktop, da 1000 px:* la stanza a tutta pagina, la tessera a sinistra, il modulo a destra direttamente sulla stanza.
+  - *Differenze volute dai riferimenti:* il simbolo ha il colore del testo (regole del simbolo); il pulsante usa l'arancio della direzione; l'informativa si raggiunge da «Hai bisogno di aiuto?».
+  - Le immagini sono livelli separati (stanza, tessera in posa, ombra); restano fuori dal repository e le loro condizioni d'uso vanno lette prima dell'uso nel prodotto.
+- **Tessera digitale** (decisioni dell'utente): un oggetto di rame spazzolato, formato carta (rapporto 1,586).
+  - *Fronte:* simbolo piccolo e «Connetto» in alto a sinistra, «ƎE» in alto a destra, il simbolo grande inciso a destra.
+  - *Dati:* testo vero inciso, mai scritto dentro l'immagine. Solo ruolo, nome e cognome, codice breve (per esempio «EE-7730-15») e «dal» con mese e anno dell'adesione. Niente indirizzo, telefono o email, perché la tessera si mostra in pubblico; niente chip o numeri lunghi, perché non è una carta di pagamento.
+  - *Retro:* il codice in grande e a cosa serve. La tessera si gira con un tocco.
+  - **Rame per tutti**, inquilini compresi; la personalizzazione verrà più avanti, dopo la prima versione. Chi ha due ruoli ha due tessere, una per adesione.
+- **Scheda «Tessera»** (decisione dell'utente): la quinta scheda dei clienti, fra Ricevute e Documenti, e una voce nella barra laterale. Mostra la tessera grande, a cosa serve, cosa non fa, l'adesione e la tessera fisica, se ƎE la prevede. *Motivo:* al banco la tessera è a un tocco.
+- **Benvenuto al primo accesso** (decisione dell'utente; sostituisce la «carta di benvenuto» scelta lo stesso giorno). Una volta sola.
+  - Dopo il codice la pagina d'accesso svanisce e la stessa tessera si distende al centro, dalla sua posa alla vista di fronte, con una prospettiva vera.
+  - Compaiono «Benvenuto in Connetto» e «Ciao Luca, ecco la tua tessera». Ruolo, nome e codice si incidono una lettera alla volta e un riflesso attraversa la tessera.
+  - Poi compaiono «Tocca la tessera per entrare» e il pulsante «Entra nella tua casa». Toccata, la tessera vola nella scheda «Tessera», che lampeggia.
+  - Segue la casa, con una riga che si chiude: «Metti Connetto sulla schermata Home».
+  - Con il movimento ridotto c'è solo una dissolvenza e le lettere compaiono subito.
+- **Invito ad aderire:** una pagina pubblica, prima dell'adesione. Contiene cosa comprende, il posto per prezzo e condizioni (valori non decisi) e come aderire al banco, con documento d'identità. Dice anche che senza adesione non cambia nulla.
+- **Profilo:** la riga della tessera e come si entra (email e cellulare si cambiano al banco o chiamando ƎE). Poi l'adesione, con il posto per prezzo e periodo, l'informativa, la guida per la schermata Home, «Esci» e «Disdici l'adesione».
+- **Disdetta dell'adesione** (decisione dell'utente): si fa da soli, senza aspettare l'agenzia.
+  - *Scelte:* «Non rinnovare» è la prima, e si annulla fino alla scadenza con «Riattiva il rinnovo». «Chiudi subito» con rimborso compare solo se le condizioni dell'adesione lo prevedono.
+  - *Conferma:* un riepilogo di cosa succede e cosa non cambia, con «Scarica tutto», poi un tocco su «Conferma la disdetta». Il pulsante ha lo stile principale, un'eccezione voluta per non rendere difficile la disdetta. Non si chiede un codice in più.
+  - *Ricevuta:* arriva subito via email o SMS, con data, ora e scelta, e la riga «Non sei stato tu? Chiama ƎE».
+  - *Inquilino:* disdice in un passaggio. Canone, ricevute e contratto restano, perché seguono la locazione (§7; da confermare).
+  - *Dopo:* durante il periodo senza rinnovo la casa mostra una fascia con «Riattiva il rinnovo». Alla fine compare «La tua adesione è finita», con «Aderisci di nuovo».
+  - *Motivo:* l'utente vuole una disdetta semplice, come chiedono le nuove regole sulla disdetta online (art. 54-bis del Codice del consumo, dal 19/6/2026). Se valgano per un'adesione firmata al banco lo dice il parere legale.
+- **Fine dei rapporti** (§10.8):
+  - *Fine della locazione, per il proprietario:* la casa resta «senza inquilino», con residui e contestazioni aperti finché non si chiudono. Lo storico mostra dell'ex inquilino solo le iniziali e ciò che serve ai conti.
+  - *Casa che esce dalla gestione:* la casa è in sola lettura, con l'ultimo mese gestito, l'adesione fino alla fine del periodo pagato senza rinnovo e «Scarica tutto».
+- **Stati comuni:**
+  - *Caricamento:* segnaposto nella forma del contenuto, mai la parola «Caricamento».
+  - *Vuoto:* dice perché è vuoto e il prossimo passo.
+  - *Senza rete:* i dati in memoria con l'ora e una fascia «Sei senza connessione»; si disattiva ciò che richiede la rete.
+  - *Errore:* la causa, la rassicurazione che i dati sono al sicuro, «Riprova» e «Chiama ƎE».
+  - *Link scaduto:* porta all'accesso.
+- **Dalla schermata Home:** le viste di secondo livello hanno sempre il loro «Indietro», anche senza le barre di Safari. Le schede restano sopra l'area sicura. La guida «Connetto sulla schermata Home» è nel Profilo. Da verificare nella prova su iPhone.
+- *Evidenza:* approvazione dell'utente su prototipi con dati inventati; immagini dell'accesso e della tessera generate dall'utente. Nessuna prova con persone.
+
 ## Componenti e token
 DA DEFINIRE dopo il primo percorso. Riutilizzare e documentare solo ciò che serve.
 
 ## Interazioni e stati
-Registrare feedback, caricamento, errore, stato vuoto, successo, disabilitato e recupero.
+Caricamento, vuoto, senza rete, errore e recupero del percorso 1: «Accesso, tessera e situazioni comuni» (23/10/2026). Da registrare con la rifinitura: feedback, successo, disabilitato.
 Registrare comportamento mobile, tastiera, testo ingrandito e movimento ridotto.
 
 ## Decisioni confermate
-Per ogni scelta: decisione, motivo, evidenza o ipotesi, ambito e data. Finora: il riferimento Apple, il formato degli importi, il simbolo C–Legame (sezione «Identità»), i punti fermi del percorso 1 (con la voce passata al «tu»), la direzione «Terracotta» con il chiaro in vetrina, lo spazio dell'operatore, le schermate del proprietario e quelle dell'inquilino, con le ricevute in forma provvisoria (23/10/2026).
+Per ogni scelta: decisione, motivo, evidenza o ipotesi, ambito e data. Finora: il riferimento Apple, il formato degli importi, il simbolo C–Legame (sezione «Identità»), i punti fermi del percorso 1 (con la voce passata al «tu»), la direzione «Terracotta» con il chiaro in vetrina, lo spazio dell'operatore, le schermate del proprietario e quelle dell'inquilino, con le ricevute in forma provvisoria; accesso, tessera digitale di rame, benvenuto, disdetta e situazioni comuni, con l'eccezione del simbolo sulla tessera (23/10/2026).
