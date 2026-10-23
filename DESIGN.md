@@ -2,6 +2,7 @@
 
 ## Stato
 Nessuna direzione visiva approvata. Non si eredita alcun layout, menu, palette, font o componente: il design si progetta da zero dopo le decisioni di prodotto (vedi [docs/METODO.md](docs/METODO.md), passo 6).
+Il design del percorso 1 è in corso dal 23/10/2026 nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md). Le scelte arrivano qui man mano che l'utente le conferma.
 
 ## Riferimento confermato dall'utente
 - Le **Apple Human Interface Guidelines** sono il riferimento di design più importante (16/10/2026), adattate alla piattaforma effettiva. Sintesi e fonti: [docs/rules/APPLE_DESIGN.md](docs/rules/APPLE_DESIGN.md). In caso di dubbio si rilegge la pagina ufficiale del componente.
@@ -19,9 +20,9 @@ Riscontri dati dall'utente su proposte precedenti, riformulati come principi. Va
 Prima la piattaforma web (telefono e desktop), poi l'app iPhone (confermato). I dettagli sono DA DEFINIRE.
 
 ## Identità
-DA DEFINIRE: nome, simbolo, tono, palette, tipografia, icone e densità delle informazioni.
-- Il prodotto ha un marchio autonomo dall'agenzia (confermato).
-- In passato l'utente aveva scelto un simbolo («C–Legame»). Se mantenerlo è una decisione da riconfermare quando si lavorerà sull'identità.
+DA DEFINIRE: tono, palette, tipografia, icone e densità delle informazioni; la scritta del nome (wordmark).
+- Il prodotto ha un marchio autonomo dall'agenzia (confermato). Nome: **Connetto** ([PRODUCT.md](PRODUCT.md) §1 e §12, 23/10/2026), nome di lavoro in attesa del parere sul marchio: la scritta del nome si disegna dopo il parere.
+- **Simbolo C–Legame** (23/10/2026, scelto e fornito dall'utente): due elementi a forma di C che si agganciano, a rappresentare la connessione, il legame. Ambito: solo il segno, in un colore pieno che prende quello del testo intorno; versione regolare e versione piccola. File e regole d'uso in [assets/marchio/](assets/marchio/README.md). È un materiale dell'utente, non un riuso di tentativi precedenti.
 - Preferenza espressa per il tema scuro: fondo nero e grigi neutri. Da riconfermare nella nuova direzione.
 
 ## Componenti e token
@@ -32,4 +33,4 @@ Registrare feedback, caricamento, errore, stato vuoto, successo, disabilitato e 
 Registrare comportamento mobile, tastiera, testo ingrandito e movimento ridotto.
 
 ## Decisioni confermate
-Per ogni scelta: decisione, motivo, evidenza o ipotesi, ambito e data. Nessuna finora oltre al riferimento Apple e al formato degli importi.
+Per ogni scelta: decisione, motivo, evidenza o ipotesi, ambito e data. Finora: il riferimento Apple, il formato degli importi e il simbolo C–Legame (sezione «Identità»).
