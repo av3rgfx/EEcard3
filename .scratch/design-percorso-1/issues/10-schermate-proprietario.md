@@ -36,3 +36,8 @@ Prototipo usa e getta (skill `prototype`, ramo UI) nella direzione «Terracotta�
 8. contestare;
 9. casa con più proprietari;
 10. consegna in ritardo.
+
+**23/10/2026, risposta dell'utente e secondo giro.**
+- *Mesi passati:* né la striscia né il calendario a griglia piacciono; l'utente vuole qualcosa di più carino e intuitivo e manda due esempi per telefono (un'agenda con i giorni in pillole da scorrere e una linea del tempo a riquadri morbidi). Rifatto così: in alto una fila di mesi in pillole da scorrere, con il mese scelto pieno in arancio e un pallino per lo stato; sotto, la linea del tempo del mese, un riquadro tenue per ogni fatto (canone pagato, scadenza, consegna inviata e confermata, contestazione) con data e giorno della settimana. «Ricevuto» compare nel riquadro quando serve. Striscia e calendario a griglia tolti.
+- *Le mie case:* l'utente preferisce le schede e propone un **interruttore a icone** per passare alle righe, utile a chi ha molte case. Accolto: l'interruttore sta in alto a destra, con due icone (schede, righe); ognuna ha un nome per lo screen reader e un suggerimento al passaggio del mouse. Le schede sono la vista predefinita e la scelta resta ricordata.
+- Ricontrollato nel browser: nessuno scorrimento orizzontale, nessun errore. Fuori dai riquadri risultano solo le pillole dei mesi nascoste nella fila che si scorre, come previsto.
