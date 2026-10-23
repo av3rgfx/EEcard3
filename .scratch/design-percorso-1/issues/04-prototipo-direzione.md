@@ -1,7 +1,7 @@
 # Direzione del percorso 1
 
 Type: prototype
-Status: open
+Status: claimed
 Blocked by: 01, 03
 Mappa: [Design del percorso 1](../map.md)
 
@@ -16,3 +16,12 @@ Schermate campione, su telefono e desktop: la casa vista dal proprietario con il
 Il prototipo si mostra all'utente come pagina privata da aprire su telefono e desktop; non entra nel repository. Nel ticket restano domanda, direzioni mostrate in breve, scelta e motivo; la direzione scelta va in [DESIGN.md](../../../DESIGN.md) con data e motivo. L'utente può scegliere una direzione, combinarne due con una regola chiara o chiederne altre.
 
 ## Commenti (Comments)
+
+**23/10/2026, primo giro (skill `prototype`, ramo UI; `grilling` per le scelte).**
+- Domande prima di costruire, una alla volta. *Quante direzioni:* tre (consigliato; scartate due, rischio di estremi, e quattro, differenze più sottili). *Su cosa differiscono:* ciascuna un modo diverso di organizzare il servizio fra i tre compatibili con le HIG ([ricerca](../../../docs/ricerca/hig-web.md) §16), con densità e identità proprie (consigliato; scartate «stessa organizzazione» e «solo l'aspetto»).
+- Mostrato come pagina privata, sorgente nella cartella temporanea della sessione, controllato prima nel browser (telefono 390 px e desktop 1366 px, scuro e chiaro, nessuno scorrimento orizzontale, nessun errore). Sei schermate: proprietario, inquilino, coda dell'operatore, incasso al banco, consegna in ritardo, email «canone pagato».
+  - *A · Schede:* schede in basso e barra laterale; densità media; caratteri di sistema; accento azzurro.
+  - *B · Pagina casa:* una frase sul mese, ricerca in vista, dettagli in fila; poca informazione, testo grande, titoli in Literata; accento salvia.
+  - *C · Elenco e dettaglio:* elenco e dettaglio affiancati sul desktop, in fila sul telefono; densità alta, IBM Plex Sans; accento indaco.
+- Raccomandazione dell'agente: B per proprietari e inquilini, C per l'operatore, con un'identità sola.
+- **Risposta dell'utente:** nessuna convince, soprattutto per l'estetica. Sembrano funzionali; l'utente vuole qualcosa di più gradevole e bello, che attiri l'attenzione anche di chi ha poco interesse: facile **e** bello da vedere. C può andare per l'operatore, ma va migliorata. Riferimenti visivi in arrivo dall'utente (foto). Si rifà il giro.
