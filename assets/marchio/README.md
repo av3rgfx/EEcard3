@@ -11,6 +11,7 @@ Regole d'uso, indicate dall'utente:
 - Intorno al segno restano libere almeno 12 unità su 96.
 - Un solo colore pieno: i file usano `currentColor`, quindi il segno prende il colore del testo intorno. I colori non sono decisi.
 - Il segno non si ruota, non si specchia e non si deforma; i due elementi non si uniscono. Niente gradienti, ombre o contorni. Sulle foto va su un fondo uniforme.
+- Eccezione decisa dall'utente il 23/10/2026: sulla tessera di rame, vista come oggetto, il segno può essere inciso nel materiale, con rilievo e ombre del materiale, la forma identica e senza ruotarlo rispetto alla tessera. Ovunque altro valgono le regole sopra ([DESIGN.md](../../DESIGN.md), «Accesso, tessera e situazioni comuni»).
 - «Legame» è il nome del disegno; il prodotto si chiama Connetto. La scritta del nome (wordmark) non esiste ancora.
 - Non è stata fatta una ricerca di marchi simili già registrati e il marchio non è registrato: prima di registrarlo o di usarlo in pubblico serve un parere professionale.
 

@@ -1,7 +1,7 @@
 # Accesso, adesione e situazioni comuni
 
 Type: prototype
-Status: claimed
+Status: resolved
 Blocked by: 04
 Mappa: [Design del percorso 1](../map.md)
 
@@ -15,6 +15,20 @@ Come sono, nella direzione scelta, i passaggi uguali per tutti ([PRODUCT.md](../
 - Il comportamento sul telefono come pagina aggiunta alla schermata Home, con il suo «Indietro» (si collega al ticket [Prova su iPhone](06-prova-iphone-schermata-home.md)).
 
 Prototipo usa e getta (skill `prototype`, ramo UI) nella direzione «Terracotta» ([DESIGN.md](../../../DESIGN.md), «Direzione del percorso 1»), su telefono e desktop, in chiaro e in scuro con il chiaro per primo. Solo dati inventati, importi come «9.876,54 €», parole del [glossario](../../../GLOSSARY.md); si mostra all'utente come pagina privata e non entra nel repository. Le scelte all'utente una alla volta, in parole semplici, con una raccomandazione motivata. Quello che si decide va in DESIGN.md come regole, con data e motivo; un problema con la specifica (PRODUCT.md §10) o con i punti fermi si porta all'utente come conflitto. Testi definitivi, rifinitura, dati limite e accessibilità vengono dopo, nei loro ticket.
+
+## Risposta (Answer)
+
+**Approvato dall'utente il 23/10/2026**, dopo cinque giri di prototipo. Regole in [DESIGN.md](../../../DESIGN.md), «Accesso, tessera e situazioni comuni (percorso 1)»; decisione di prodotto in [PRODUCT.md](../../../PRODUCT.md) §12. Decisioni dell'utente:
+- **accesso** con un codice di verifica via email o SMS, per tutti, senza password; l'account lo crea l'operatore al banco e il cliente entra dal link che riceve lì;
+- **pagina d'accesso** uguale ai riferimenti generati dall'utente: la stanza calda, la tessera di rame in posa, il modulo;
+- **tessera digitale** di rame per tutti, con i soli dati essenziali; la personalizzazione viene dopo la prima versione. Il simbolo può essere inciso solo sulla tessera vista come oggetto, un'eccezione alle regole del simbolo;
+- **scheda «Tessera»**, la quinta dei clienti;
+- **benvenuto al primo accesso:** la tessera dell'accesso si distende al centro, ci si incidono i dati e poi vola nella scheda «Tessera». Sostituisce la carta di benvenuto scelta prima;
+- **disdetta dell'adesione** da soli: «non rinnovare» oppure «chiudi subito» se le condizioni lo prevedono; riepilogo, un tocco di conferma, ricevuta subito.
+
+Il resto (invito ad aderire, profilo, fine dei rapporti, stati comuni, comportamento dalla schermata Home) è approvato con il prototipo, con le scelte ragionevoli dell'agente sotto «Commenti». Il prototipo, usa e getta, resta fuori dal repository: https://claude.ai/artifact/3LkcGCmp2P4SNpVAFbP92s (pagina privata, versione 5).
+
+Aperti, fuori da questo ticket: parere legale sulla disdetta online (PRODUCT.md §10.10); rimborso e periodicità in «Prezzo e condizioni dell'adesione»; condizioni d'uso delle immagini generate; verifiche sull'iPhone nella prova dedicata. L'estetica delle schermate interne passa al ticket [Rifinitura estetica delle schermate interne](13-rifinitura-estetica.md).
 
 ## Commenti (Comments)
 
@@ -87,3 +101,11 @@ Scelte ragionevoli dell'agente: una persona con due ruoli ha due tessere, perch�
   - *Uscita:* la tessera si solleva, compie un arco e si rimpicciolisce nella scheda «Tessera», che lampeggia.
   - Con il movimento ridotto non c'è nessun volo: le lettere compaiono subito e si passa con una dissolvenza.
 - Verifiche: fotogrammi a 120–4200 ms dell'arrivo e a 150–1100 ms dell'uscita, a 390 e 1366 px; corretto il titolo che compariva sotto la tessera in volo. 462 combinazioni senza difetti.
+
+**23/10/2026, estetica e chiusura.** L'utente prova a far generare a ChatGPT, in una chat nuova, proposte per la schermata principale. Non escono idee migliori. Le funzioni lo convincono, l'estetica delle schermate interne meno. L'agente indica quattro motivi:
+- troppi riquadri dello stesso peso;
+- un'illustrazione piatta accanto alla tessera di rame;
+- caratteri quasi tutti in grassetto pieno;
+- icone ripetute in ogni riga.
+
+Propone di portare dentro la luce della pagina d'accesso. Decisione dell'utente (consigliata): chiudere questo ticket e aprirne uno nuovo per la rifinitura estetica, nella prossima sessione. Scartati «un campione subito qui» e «lasciare così».
