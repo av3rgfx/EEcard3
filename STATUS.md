@@ -1,7 +1,26 @@
 # Stato del progetto
 
-## Punto di ripresa (23 ottobre 2026, direzione scelta)
-**Fase: design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6), nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md). La direzione è scelta: **«Terracotta»** ([DESIGN.md](DESIGN.md), «Direzione del percorso 1»), con il chiaro in vetrina. Ora si disegna il percorso intero in questa direzione. I prossimi ticket liberi sono le schermate dell'operatore, del proprietario e dell'inquilino e i passaggi comuni; si consiglia di cominciare dall'operatore, perché il collaboratore di ƎE deve guardarlo prima del controllo B. Prodotto: **Connetto**, nome di lavoro in attesa del parere sul marchio; simbolo **C–Legame**. Non c'è codice applicativo; architettura e stack non sono decisi.
+## Punto di ripresa (23 ottobre 2026, spazio dell'operatore)
+**Fase: design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6), nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md). Direzione **«Terracotta»** con il chiaro in vetrina; **spazio dell'operatore approvato** ([DESIGN.md](DESIGN.md), «Direzione del percorso 1» e «Spazio dell'operatore (percorso 1)»). Prossimi passi:
+- **Il collaboratore di ƎE guarda lo spazio dell'operatore**, ora sbloccato: servono il link al prototipo, condiviso dall'utente, e tre o quattro domande pronte da copiare.
+- **Schermate del proprietario**, poi dell'inquilino e i passaggi comuni.
+
+Prodotto: **Connetto**, nome di lavoro in attesa del parere sul marchio. Non c'è codice applicativo; architettura e stack non sono decisi.
+
+## Fatto (23 ottobre 2026, spazio dell'operatore)
+- Ticket [Schermate dell'operatore di ƎE](.scratch/design-percorso-1/issues/09-schermate-operatore.md) rivendicato e chiuso nella stessa sessione della direzione, su richiesta dell'utente, con le skill `prototype` e `grilling`.
+- Tre decisioni dell'utente, una alla volta, tutte sull'opzione consigliata:
+  - la scheda della casa che si riempie un po' alla volta;
+  - l'incasso con l'anteprima della ricevuta accanto e nessuna conferma;
+  - la pagina «Al banco» per la persona.
+- Prototipo usa e getta con undici schermate e i casi dell'incasso (più mesi, parziale, contanti oltre soglia), mostrato come pagina privata. L'utente l'ha approvato, segnalando pulsanti che uscivano dai riquadri.
+- Correzione: pulsanti ed etichette vanno a capo e le due colonne compaiono solo da 1120 px.
+- Verifiche eseguite:
+  - un controllo automatico su ogni pulsante a sette larghezze, da 360 a 1366 px, ha trovato 19 difetti, poi corretti;
+  - al ricontrollo nessun elemento è fuori dal suo riquadro, la pagina non scorre di lato e non dà errori, in chiaro e in scuro.
+  - Lezione per i prossimi prototipi: il controllo della sola pagina non bastava, e non si erano provate le larghezze intermedie.
+- Regole in [DESIGN.md](DESIGN.md), «Spazio dell'operatore (percorso 1)»; decisione nella mappa.
+- Aperto: nella pagina «Al banco» la tessera fisica è indicata come «arriva con l'adesione». È un testo del prototipo, non una decisione: la tessera fisica dipende dalla ricerca e dal costo (§10.2, D8).
 
 ## Fatto (23 ottobre 2026, direzione)
 - Ticket [Direzione del percorso 1](.scratch/design-percorso-1/issues/04-prototipo-direzione.md) rivendicato e chiuso con le skill `prototype` (ramo UI) e `grilling`. Domande una alla volta; ogni giro è stato mostrato come pagina privata, con il sorgente nella cartella temporanea della sessione (fuori dal repository) e un controllo nel browser prima della consegna.

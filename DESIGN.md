@@ -79,6 +79,31 @@ Scelta dall'utente il 23/10/2026: **«Terracotta»**, dopo tre giri di prototipo
 - *Motivo:* fra tre atmosfere ispirate alle immagini di riferimento dell'utente, è quella che preferisce. È gradevole e attira l'attenzione anche di chi ha poco interesse, restando ordinata e professionale, come chiesto («oltre che facile deve essere bello da vedere»).
 - *Evidenza:* preferenza dell'utente su prototipi con dati inventati. Non ci sono prove con persone; lo spazio dell'operatore lo guarda il collaboratore di ƎE prima del controllo B.
 
+## Spazio dell'operatore (percorso 1)
+Approvato dall'utente il 23/10/2026 nel ticket [Schermate dell'operatore di ƎE](.scratch/design-percorso-1/issues/09-schermate-operatore.md), che conserva le domande e le alternative scartate. Applica «Direzione del percorso 1» e i punti fermi; voce al «tu», con frasi brevi. Ambito: tutte le schermate dell'operatore di ƎE, su telefono, tablet e desktop.
+
+- **Larghezze.** Sotto gli 860 px una colonna con le schede in basso; da 860 px la barra laterale, con un pannello alla volta e «Indietro»; da 1120 px elenco e dettaglio affiancati e contenuti su due colonne. Pulsanti ed etichette vanno a capo, mai fuori dal loro riquadro. *Motivo:* il primo giro, con le due colonne già a 860 px, faceva uscire i pulsanti dai riquadri sui tablet e sui portatili piccoli (segnalazione dell'utente, verificata nel browser).
+- **Lavoro in coda.** Ordine fisso dei punti fermi; ogni voce ha la miniatura della casa, «cosa · casa» e «persona · stato». In cima «Trova cliente o casa» e tre numeri: voci in coda, incassi di oggi, registrato oggi. Con la coda vuota la pagina dice «Niente in coda» e mostra il registrato di oggi e le consegne e scadenze della settimana.
+- **Al banco** (decisione dell'utente): chi è trovato con la ricerca ha una pagina sua, con la tessera digitale («serve solo a trovarlo»). In cima, con l'illustrazione della casa, c'è l'azione più probabile (per l'inquilino «Registra l'incasso» del mese più vecchio aperto). Sotto «Da chiudere con lui/lei», con il conto «2 di 5 fatte» e un pulsante per riga: firme, informativa, luogo del pagamento, verifica dell'accesso, tessera. Poi gli ultimi pagamenti, «Apri la casa» e «Apri una contestazione» per conto della persona, con la fonte.
+- **Incasso al banco** (decisione dell'utente).
+  - Il modulo contiene i mesi aperti, già spuntati dal più vecchio, l'importo ricevuto e il mezzo (contanti o carta). Accanto c'è l'anteprima della ricevuta, che si aggiorna mentre si scrive.
+  - C'è un solo pulsante, «Registra e prepara la ricevuta», senza finestra di conferma.
+  - Dopo, la pagina «Incasso registrato» offre «Stampa la ricevuta» e «Torna alla coda», ricorda la firma e il bollo quando serve e mostra la consegna che ora è da fare.
+  - Casi:
+    - più mesi: una ricevuta sola divisa sui mesi;
+    - pagamento parziale: solo se l'incarico lo ammette, con il residuo;
+    - contanti oltre 5.000 € nella giornata, sommati per persona: un avviso con il conto del giorno, il pulsante disattivato e «Passa a carta».
+- **Consegna.** Riepilogo con incassato, compenso trattenuto, fattura e netto. Si sceglie il mezzo: con il bonifico si carica la contabile e la consegna risulta «inviata»; in contanti al banco vale la firma. Il ritardo si mostra con un avviso ambra.
+- **Attivazione** (decisione dell'utente): la scheda della casa si riempie un po' alla volta, non c'è una procedura a passi.
+  - In cima dice cosa manca per attivarla, con un avanzamento («6 di 10») e il pulsante per aprire «Al banco» del proprietario.
+  - Sotto c'è l'elenco dei mancanti, con «Carica» e «Non serve» (con il motivo).
+  - Poi persone e rapporti, con lo stato di ciascuno, e i dati della locazione, con «Modifica».
+- **Correzione di una ricevuta.** Si sceglie «Annulla» o «Sostituisci» e il motivo è obbligatorio. La ricevuta annullata resta visibile, timbrata «annullata», accanto alla nuova che la sostituisce.
+- **Nuovo canone ISTAT.** Il calcolo è in chiaro: canone attuale, variazione, misura del contratto, aumento, nuovo canone, fonte e data. Due pulsanti: «Controllato: invia alla proprietaria» e «Inserisci il dato a mano». Un avviso ricorda che un indice uscito tardi dà una differenza, mai un ritardo.
+- **Contestazione.** Mostra la frase della persona come citazione, gli importi, la prova e la fonte. L'esito si sceglie fra tre: confermato, corretto (crea una nuova versione) o non risolto, con il motivo.
+- **Oggi.** Le chiamate avviate da Connetto, con «Scrivi l'esito», e i messaggi partiti. Una nota dice che si registra solo l'avvio della chiamata.
+- *Evidenza:* approvazione dell'utente su un prototipo con dati inventati. Il parere di chi lavora al banco arriva con il ticket «Il collaboratore di ƎE guarda lo spazio dell'operatore».
+
 ## Componenti e token
 DA DEFINIRE dopo il primo percorso. Riutilizzare e documentare solo ciò che serve.
 
@@ -87,4 +112,4 @@ Registrare feedback, caricamento, errore, stato vuoto, successo, disabilitato e 
 Registrare comportamento mobile, tastiera, testo ingrandito e movimento ridotto.
 
 ## Decisioni confermate
-Per ogni scelta: decisione, motivo, evidenza o ipotesi, ambito e data. Finora: il riferimento Apple, il formato degli importi, il simbolo C–Legame (sezione «Identità»), i punti fermi del percorso 1 e la direzione «Terracotta» con il chiaro in vetrina (23/10/2026).
+Per ogni scelta: decisione, motivo, evidenza o ipotesi, ambito e data. Finora: il riferimento Apple, il formato degli importi, il simbolo C–Legame (sezione «Identità»), i punti fermi del percorso 1, la direzione «Terracotta» con il chiaro in vetrina e lo spazio dell'operatore (23/10/2026).

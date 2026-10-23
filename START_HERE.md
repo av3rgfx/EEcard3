@@ -2,24 +2,40 @@
 
 Da incollare in Claude Code o Codex aperto su questo repository. La skill Wayfinder parte solo su richiesta: il messaggio comincia con `/wayfinder`.
 
-Il **design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6) ha una mappa: [Design del percorso 1](.scratch/design-percorso-1/map.md). La direzione è scelta dall'utente il 23/10/2026: **«Terracotta»**, con il chiaro in vetrina ([DESIGN.md](DESIGN.md), «Direzione del percorso 1»). Nome di lavoro **Connetto**, simbolo **C–Legame** ([assets/marchio/](assets/marchio/README.md)); il parere sul marchio è chiesto subito e il suo esito va nel ticket «Parere di un consulente in marchi sul nome Connetto». Ora si disegna il percorso intero in questa direzione, un ruolo alla volta. Si consiglia di cominciare dall'operatore, perché il collaboratore di ƎE lo deve guardare prima del controllo B. Messaggio:
+Il **design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6) ha una mappa: [Design del percorso 1](.scratch/design-percorso-1/map.md). Direzione **«Terracotta»** con il chiaro in vetrina e spazio dell'operatore approvati il 23/10/2026 ([DESIGN.md](DESIGN.md)). Nome di lavoro **Connetto**, simbolo **C–Legame** ([assets/marchio/](assets/marchio/README.md)); il parere sul marchio è chiesto subito e il suo esito va nel ticket «Parere di un consulente in marchi sul nome Connetto». Ci sono due strade, anche in parallelo.
+
+**Schermate del proprietario.** Messaggio:
 
 ---
 
-/wayfinder .scratch/design-percorso-1/map.md — ticket «Schermate dell'operatore di ƎE» (.scratch/design-percorso-1/issues/09-schermate-operatore.md)
+/wayfinder .scratch/design-percorso-1/map.md — ticket «Schermate del proprietario» (.scratch/design-percorso-1/issues/10-schermate-proprietario.md)
 
-Leggi AGENTS.md, STATUS.md, la mappa e il ticket; poi DESIGN.md («Punti fermi del percorso 1», «Direzione del percorso 1» e «Indicazioni dell'utente»), il ticket chiuso «Direzione del percorso 1» per i giri già fatti e, per le parole, GLOSSARY.md. PRODUCT.md §10 per le situazioni dell'operatore. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti. Il simbolo in assets/marchio/ è una scelta dell'utente e fa parte del progetto.
+Leggi AGENTS.md, STATUS.md, la mappa e il ticket. Poi DESIGN.md: «Punti fermi del percorso 1», «Direzione del percorso 1», «Spazio dell'operatore (percorso 1)» per le regole di larghezza, e «Indicazioni dell'utente». Leggi anche i ticket chiusi «Direzione del percorso 1» e «Schermate dell'operatore di ƎE», e GLOSSARY.md per le parole; PRODUCT.md §10 per le situazioni del proprietario. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti. Il simbolo in assets/marchio/ è una scelta dell'utente e fa parte del progetto.
 
 - Rivendica il ticket (`Status: claimed`) prima di lavorare. Lavora solo su questo ticket, con la skill `prototype` (ramo UI); per le scelte, `grilling`.
 - Le scelte me le fai una alla volta, in parole semplici, con una raccomandazione motivata e le conseguenze di ogni opzione.
-- Prototipo usa e getta, fuori dal repository, nella direzione «Terracotta», con solo dati inventati e importi come «9.876,54 €». Chiaro per primo, poi scuro, su telefono e desktop, con il tasto per nascondere i comandi. Mostramelo come pagina privata da aprire su telefono e desktop e controllalo prima nel browser disponibile. Nessuno stack scelto, nessun codice applicativo.
+- Prototipo usa e getta, fuori dal repository, in «Terracotta», con solo dati inventati e importi come «9.876,54 €». Chiaro per primo, poi scuro, su telefono e desktop, con il tasto per nascondere i comandi.
+- Prima di mostrarmelo controllalo nel browser disponibile: a 360, 390, 768, 900, 1024, 1180 e 1366 px; che nessun pulsante esca dal suo riquadro; che la pagina non scorra di lato. Nessuno stack scelto, nessun codice applicativo.
 - Le regole decise vanno in DESIGN.md con data e motivo; un cambio della specifica o dei punti fermi me lo porti come conflitto.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 
 ---
 
-Gli altri ticket delle schermate si lanciano con lo stesso messaggio, cambiando nome e file: «Schermate del proprietario» (.scratch/design-percorso-1/issues/10-schermate-proprietario.md), «Schermate dell'inquilino» (.scratch/design-percorso-1/issues/11-schermate-inquilino.md), «Accesso, adesione e situazioni comuni» (.scratch/design-percorso-1/issues/12-accesso-e-situazioni-comuni.md). Dopo le schermate dell'operatore: «Il collaboratore di ƎE guarda lo spazio dell'operatore» (.scratch/design-percorso-1/issues/05-collaboratore-guarda-operatore.md). In qualsiasi momento: «Prova su iPhone: la piattaforma aggiunta alla schermata Home» (.scratch/design-percorso-1/issues/06-prova-iphone-schermata-home.md).
+Gli altri ticket delle schermate si lanciano con lo stesso messaggio, cambiando nome e file: «Schermate dell'inquilino» (.scratch/design-percorso-1/issues/11-schermate-inquilino.md) e «Accesso, adesione e situazioni comuni» (.scratch/design-percorso-1/issues/12-accesso-e-situazioni-comuni.md). In qualsiasi momento: «Prova su iPhone: la piattaforma aggiunta alla schermata Home» (.scratch/design-percorso-1/issues/06-prova-iphone-schermata-home.md).
+
+**Il collaboratore di ƎE guarda lo spazio dell'operatore**, ora sbloccato. Serve il link al prototipo dell'operatore, una pagina privata dell'utente da condividere con il collaboratore. Messaggio:
+
+/wayfinder .scratch/design-percorso-1/map.md — ticket «Il collaboratore di ƎE guarda lo spazio dell'operatore» (.scratch/design-percorso-1/issues/05-collaboratore-guarda-operatore.md)
+
+Leggi AGENTS.md, STATUS.md, la mappa, il ticket e, in DESIGN.md, «Spazio dell'operatore (percorso 1)». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+
+- Rivendica il ticket (`Status: claimed`). Prepara tre o quattro domande precise per il collaboratore, pronte da copiare e in parole semplici. Ti dico io il link al prototipo da mandargli.
+- Quando ti riporto le risposte, registrale in sintesi senza nomi e portami le correzioni una alla volta. Nessun messaggio inviato da te.
+
+Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
+
+---
 
 ## Quando arriva il parere sul nome Connetto
 

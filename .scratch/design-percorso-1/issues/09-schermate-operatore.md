@@ -1,7 +1,7 @@
 # Schermate dell'operatore di ƎE
 
 Type: prototype
-Status: claimed
+Status: resolved
 Blocked by: 04
 Mappa: [Design del percorso 1](../map.md)
 
@@ -18,6 +18,10 @@ Come sono, nella direzione scelta, le schermate e le situazioni dell'operatore d
 Prototipo usa e getta (skill `prototype`, ramo UI) nella direzione «Terracotta» ([DESIGN.md](../../../DESIGN.md), «Direzione del percorso 1»), su telefono e desktop, in chiaro e in scuro con il chiaro per primo. Solo dati inventati, importi come «9.876,54 €», parole del [glossario](../../../GLOSSARY.md); si mostra all'utente come pagina privata e non entra nel repository. Le scelte all'utente una alla volta, in parole semplici, con una raccomandazione motivata. Quello che si decide va in DESIGN.md come regole, con data e motivo; un problema con la specifica (PRODUCT.md §10) o con i punti fermi si porta all'utente come conflitto. Testi definitivi, rifinitura, dati limite e accessibilità vengono dopo, nei loro ticket.
 
 Serve al ticket [Il collaboratore di ƎE guarda lo spazio dell'operatore](05-collaboratore-guarda-operatore.md).
+
+## Risposta (Answer)
+
+**Approvato dall'utente il 23/10/2026**, dopo un giro di prototipo e la correzione dei pulsanti che uscivano dai riquadri: «va bene, tutto ok». Le regole sono in [DESIGN.md](../../../DESIGN.md), «Spazio dell'operatore (percorso 1)». Tre decisioni dell'utente: la scheda della casa che si riempie un po' alla volta; l'incasso con l'anteprima della ricevuta accanto e nessuna conferma; la pagina «Al banco» per la persona. Il prototipo, usa e getta, resta fuori dal repository ed è il materiale da mostrare al collaboratore di ƎE (ticket 05).
 
 ## Commenti (Comments)
 
@@ -38,3 +42,7 @@ Serve al ticket [Il collaboratore di ƎE guarda lo spazio dell'operatore](05-col
 9. nuovo canone ISTAT da controllare;
 10. esito di una contestazione;
 11. «Oggi», con le chiamate avviate e i messaggi partiti.
+
+**23/10/2026, correzioni e chiusura.** L'utente ha segnalato pulsanti che uscivano dai riquadri. Un controllo automatico su ogni pulsante, a 360, 390, 768, 900, 1024, 1180 e 1366 px, ne ha trovati 19, quasi tutti fra 900 e 1366 px, dove elenco, dettaglio e barra laterale stavano affiancati in poco spazio.
+- *Correzione:* i pulsanti e le etichette vanno a capo; due colonne solo da 1120 px; l'illustrazione ha un'altezza limitata quando la colonna è una sola.
+- *Ricontrollo:* nessun elemento fuori dal suo riquadro, nessuno scorrimento orizzontale, nessun errore. Ticket chiuso con l'approvazione dell'utente.
