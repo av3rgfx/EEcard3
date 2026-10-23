@@ -2,37 +2,38 @@
 
 Da incollare in Claude Code o Codex aperto su questo repository. La skill Wayfinder parte solo su richiesta: il messaggio comincia con `/wayfinder`.
 
-Il **design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6) ha una mappa: [Design del percorso 1](.scratch/design-percorso-1/map.md). Approvati il 23/10/2026: direzione **«Terracotta»** con il chiaro in vetrina, spazio dell'operatore e schermate del proprietario; voce al «tu» anche per i clienti ([DESIGN.md](DESIGN.md)). Nome di lavoro **Connetto**, simbolo **C–Legame** ([assets/marchio/](assets/marchio/README.md)); il parere sul marchio è chiesto subito e il suo esito va nel ticket «Parere di un consulente in marchi sul nome Connetto». Ci sono due strade, anche in parallelo.
+Il **design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6) ha una mappa: [Design del percorso 1](.scratch/design-percorso-1/map.md). Approvati il 23/10/2026: direzione **«Terracotta»** con il chiaro in vetrina, spazio dell'operatore, schermate del proprietario e dell'inquilino (le ricevute dell'inquilino a mesi a pillola sono provvisorie, in attesa del collaboratore di ƎE); voce al «tu» anche per i clienti ([DESIGN.md](DESIGN.md)). Nome di lavoro **Connetto**, simbolo **C–Legame** ([assets/marchio/](assets/marchio/README.md)); il parere sul marchio è chiesto subito e il suo esito va nel ticket «Parere di un consulente in marchi sul nome Connetto». Ci sono due strade, anche in parallelo.
 
-**Prima della prossima sessione:** unire la PR #13 (branch `claude/design-direzione-percorso-1`) in `main`. Se non è ancora unita, la sessione deve partire da quel branch: altrimenti non trova DESIGN.md, la mappa e i ticket aggiornati.
+**Prima della prossima sessione:** unire in `main` la PR del branch `claude/tenant-screens-design-cbbm2f` (schermate dell'inquilino). Se non è ancora unita, la sessione deve partire da quel branch: altrimenti non trova DESIGN.md, la mappa e i ticket aggiornati.
 
-**Schermate dell'inquilino.** Messaggio:
+**Accesso, adesione e situazioni comuni.** Messaggio:
 
 ---
 
-/wayfinder .scratch/design-percorso-1/map.md — ticket «Schermate dell'inquilino» (.scratch/design-percorso-1/issues/11-schermate-inquilino.md)
+/wayfinder .scratch/design-percorso-1/map.md — ticket «Accesso, adesione e situazioni comuni» (.scratch/design-percorso-1/issues/12-accesso-e-situazioni-comuni.md)
 
-Leggi AGENTS.md, STATUS.md, la mappa e il ticket. Poi DESIGN.md: «Punti fermi del percorso 1», «Direzione del percorso 1», «Spazio dell'operatore (percorso 1)» per le regole di larghezza, «Schermate del proprietario (percorso 1)» e «Indicazioni dell'utente». Leggi anche i ticket chiusi «Direzione del percorso 1», «Schermate dell'operatore di ƎE» e «Schermate del proprietario», e GLOSSARY.md per le parole; PRODUCT.md §10 per le situazioni dell'inquilino. La voce è al «tu» (DESIGN.md, «Voce»). Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti. Il simbolo in assets/marchio/ è una scelta dell'utente e fa parte del progetto.
+Leggi AGENTS.md, STATUS.md, la mappa e il ticket. Poi DESIGN.md: «Punti fermi del percorso 1», «Direzione del percorso 1», «Spazio dell'operatore (percorso 1)» per le regole di larghezza, «Schermate del proprietario (percorso 1)», «Schermate dell'inquilino (percorso 1)» e «Indicazioni dell'utente». Leggi anche i ticket chiusi «Direzione del percorso 1», «Schermate del proprietario» e «Schermate dell'inquilino», la ricerca docs/ricerca/hig-web.md (§9 e §16) e GLOSSARY.md per le parole; PRODUCT.md §10.2 e §10.8 per le situazioni. La voce è al «tu» (DESIGN.md, «Voce»). Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti. Il simbolo in assets/marchio/ è una scelta dell'utente e fa parte del progetto.
 
 - Rivendica il ticket (`Status: claimed`) prima di lavorare. Lavora solo su questo ticket, con la skill `prototype` (ramo UI); per le scelte, `grilling`.
 - Le scelte me le fai una alla volta, in parole semplici, con una raccomandazione motivata e le conseguenze di ogni opzione.
-- Prototipo usa e getta, fuori dal repository, in «Terracotta», con solo dati inventati e importi come «9.876,54 €». Chiaro per primo, poi scuro, su telefono e desktop, con il tasto per nascondere i comandi. Per restare coerente parti dal prototipo del proprietario, che leggi con lo strumento Artifact (azione «read»): https://claude.ai/artifact/4iSZ4Mpb8k691WVQwnrUVR. Il link è in STATUS.md, «Prototipi pubblicati».
-- Prima di mostrarmelo controllalo nel browser disponibile: a 360, 390, 768, 900, 1024, 1180 e 1366 px; che nessun pulsante esca dal suo riquadro; che la pagina non scorra di lato. Nessuno stack scelto, nessun codice applicativo.
+- Prototipo usa e getta, fuori dal repository, in «Terracotta», con solo dati inventati e importi come «9.876,54 €». Chiaro per primo, poi scuro, su telefono e desktop, con il tasto per nascondere i comandi. Per restare coerente parti dal prototipo dell'inquilino, che leggi con lo strumento Artifact (azione «read»): https://claude.ai/artifact/PB8wRY5NZT2jgYndnJLn2v. Il link è in STATUS.md, «Prototipi pubblicati».
+- Prima di mostrarmelo controllalo nel browser disponibile: a 360, 390, 768, 900, 1024, 1180 e 1366 px; che nessun pulsante esca dal suo riquadro; che la pagina non scorra di lato. Ricarica la pagina per ogni schermata e verifica che sia quella giusta (STATUS.md, lezione del 23/10). Nessuno stack scelto, nessun codice applicativo.
 - Le regole decise vanno in DESIGN.md con data e motivo; un cambio della specifica o dei punti fermi me lo porti come conflitto.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 
 ---
 
-Poi, con lo stesso messaggio cambiando nome e file: «Accesso, adesione e situazioni comuni» (.scratch/design-percorso-1/issues/12-accesso-e-situazioni-comuni.md). In qualsiasi momento: «Prova su iPhone: la piattaforma aggiunta alla schermata Home» (.scratch/design-percorso-1/issues/06-prova-iphone-schermata-home.md).
+In qualsiasi momento, con lo stesso messaggio cambiando nome e file: «Prova su iPhone: la piattaforma aggiunta alla schermata Home» (.scratch/design-percorso-1/issues/06-prova-iphone-schermata-home.md).
 
-**Il collaboratore di ƎE guarda lo spazio dell'operatore.** Il ticket è rivendicato: il messaggio con le quattro domande è pronto nel ticket, sotto «Commenti». L'utente condivide il prototipo dell'operatore dal menu «Condividi» della pagina, lo manda con il messaggio e, quando arrivano le risposte, incolla:
+**Il collaboratore di ƎE guarda lo spazio dell'operatore.** Il ticket è rivendicato: il messaggio con le cinque domande è pronto nel ticket, sotto «Commenti»; la quinta riguarda le ricevute dell'inquilino. L'utente condivide dal menu «Condividi» due pagine: il prototipo dell'operatore (https://claude.ai/artifact/8uYkEqTXrp27KWmc698JK9) e quello dell'inquilino (https://claude.ai/artifact/PB8wRY5NZT2jgYndnJLn2v). Le manda con il messaggio e, quando arrivano le risposte, incolla:
 
 /wayfinder .scratch/design-percorso-1/map.md — ticket «Il collaboratore di ƎE guarda lo spazio dell'operatore» (.scratch/design-percorso-1/issues/05-collaboratore-guarda-operatore.md): le risposte del collaboratore sono in fondo a questo messaggio.
 
-Leggi AGENTS.md, STATUS.md, la mappa, il ticket e, in DESIGN.md, «Spazio dell'operatore (percorso 1)» e «Voce». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+Leggi AGENTS.md, STATUS.md, la mappa, il ticket e, in DESIGN.md, «Spazio dell'operatore (percorso 1)», «Schermate dell'inquilino (percorso 1)» e «Voce». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
 
 - Registra le risposte in sintesi, senza nomi, abbinate al numero della domanda; se non si capisce a quale appartengono, chiedimelo.
+- La risposta 5 decide le ricevute dell'inquilino: mesi a pillola (scelta provvisoria) o elenco semplice. Me la porti come scelta da confermare e la registri in DESIGN.md, «Schermate dell'inquilino (percorso 1)», e nel ticket «Schermate dell'inquilino».
 - Le correzioni che ne escono me le porti una alla volta, in parole semplici, con una raccomandazione; un cambio di regole va in DESIGN.md con data e motivo. Chiudi il ticket quando le correzioni sono decise.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.

@@ -125,6 +125,26 @@ Approvate dall'utente il 23/10/2026 nel ticket [Schermate del proprietario](.scr
 - **Più proprietari.** «Ricevuto» compare solo alla persona indicata nell'incarico; gli altri leggono a chi spetta la conferma.
 - *Evidenza:* approvazione dell'utente su un prototipo con dati inventati.
 
+## Schermate dell'inquilino (percorso 1)
+Approvate dall'utente il 23/10/2026 nel ticket [Schermate dell'inquilino](.scratch/design-percorso-1/issues/11-schermate-inquilino.md), che conserva le domande e le alternative. Applicano «Direzione del percorso 1», i punti fermi e le larghezze di «Spazio dell'operatore»; ripetono i modelli del proprietario dove le situazioni coincidono, così chi ha i due ruoli trova lo stesso modo di muoversi.
+
+- **La casa.** In cima l'illustrazione con il prossimo pagamento: «Novembre: paghi entro giovedì 5», l'importo in grande, canone e oneri in etichette separate. Sotto, il dovuto del mese con canone, oneri e totale su righe distinte e «Dove pagare»; accanto l'ultimo mese pagato con la sua ricevuta e le scorciatoie (ricevute, contratto e documenti, «Chiama», «Contesta», locazioni passate).
+  - *Al banco:* indirizzo, orari e mezzi accettati.
+  - *Bonifico:* intestatario, IBAN e causale, ognuno con «Copia», presi dalla comunicazione del luogo del pagamento. Si dice quando il canone risulta pagato: quando ƎE vede il bonifico, oppure quando il proprietario conferma.
+  - *Bonifico al proprietario:* il solo pulsante in cima è «Carica la contabile».
+- **Dopo il pagamento** la stessa zona dice «Novembre è pagato», con chi l'ha ricevuto, «Vedi la ricevuta» e il prossimo pagamento.
+- **Scadenza passata:** «Canone di novembre: scadeva il 5», con dove pagare e «Chiama ƎE» come azione secondaria. Nessun colore d'allarme, nessuna parola di rimprovero (punti fermi).
+- **Caricare la contabile** (decisione dell'utente): si sceglie il file o si fa una foto, si vede l'anteprima con il mese e un solo pulsante «Invia a» seguito dal nome del proprietario, senza altre conferme. Dopo, la casa dice «contabile da confermare», ricorda che è una prova e non il pagamento e offre «Sostituisci la contabile»; quella di prima resta conservata (§7.3). *Motivo:* è facile prendere la foto sbagliata dalla galleria, e l'invio fa partire un messaggio al proprietario. Scartato l'invio appena scelto il file.
+- **Ricevute** (scelta **provvisoria** dell'utente, da confermare con il collaboratore di ƎE): la fila di mesi a pillola del proprietario, con la scelta dell'anno. Per il mese scelto, prima la ricevuta con «Scarica la ricevuta», poi i fatti del mese in breve (scadenza, pagamento, contestazione). In cima «Scarica le ricevute» dell'anno. Una ricevuta sostituita dice quale annulla. L'alternativa ancora aperta è l'elenco semplice per anno, una riga per ricevuta con «Scarica».
+- **Contratto, documenti e scadenze.** Solo i documenti della sua locazione (§10.7), ciascuno con «Scarica», più quelli che il proprietario sceglie di mostrargli, con il nome di chi li ha condivisi. Sotto, le scadenze che lo riguardano.
+- **Nuovo canone in arrivo.** Una riga nella casa e una pagina con «fino a novembre» e «dal 1° dicembre», il calcolo con la fonte, chi l'ha controllato e approvato e quanto paga il primo mese; «Contesta» se non torna.
+- **Contestare.** Come il proprietario, ma solo un canone o il nuovo canone: la consegna non lo riguarda (§10.7).
+- **Chiama.** Un foglio che sale dal basso sul telefono e una finestra al centro sul desktop. ƎE con gli orari; il proprietario solo per un bonifico a lui da confermare e solo se ha scelto di mostrare il numero (§10.6). Fuori orario c'è solo «Scrivi a ƎE», con quando arriva la risposta. Una riga dice che ƎE vede l'avvio della chiamata, non la conversazione.
+- **Locazioni passate.** L'illustrazione con «Sola lettura», le date della locazione, fino a quando si possono vedere contratto e ricevute (5 anni, §10.8) e «Scarica tutto» come azione principale. Sotto, cosa resta (contratto e ricevute per anno) e cosa non si vede più. Chi non ha una casa attuale entra qui, con solo «Locazioni» e «Profilo».
+- **Inquilino e proprietario.** «Le mie case» con «Da fare» in cima, ogni voce con l'etichetta del ruolo; sotto, «Dove abiti · inquilino» e «Le tue case · proprietario». Nella barra laterale ogni casa dice il ruolo.
+- **Spazio delle bollette:** solo un posto tratteggiato nelle scorciatoie della casa, senza contenuto (percorso 3, fuori dalla mappa).
+- *Evidenza:* approvazione dell'utente su un prototipo con dati inventati. Le ricevute aspettano il parere del collaboratore di ƎE.
+
 ## Componenti e token
 DA DEFINIRE dopo il primo percorso. Riutilizzare e documentare solo ciò che serve.
 
@@ -133,4 +153,4 @@ Registrare feedback, caricamento, errore, stato vuoto, successo, disabilitato e 
 Registrare comportamento mobile, tastiera, testo ingrandito e movimento ridotto.
 
 ## Decisioni confermate
-Per ogni scelta: decisione, motivo, evidenza o ipotesi, ambito e data. Finora: il riferimento Apple, il formato degli importi, il simbolo C–Legame (sezione «Identità»), i punti fermi del percorso 1 (con la voce passata al «tu»), la direzione «Terracotta» con il chiaro in vetrina, lo spazio dell'operatore e le schermate del proprietario (23/10/2026).
+Per ogni scelta: decisione, motivo, evidenza o ipotesi, ambito e data. Finora: il riferimento Apple, il formato degli importi, il simbolo C–Legame (sezione «Identità»), i punti fermi del percorso 1 (con la voce passata al «tu»), la direzione «Terracotta» con il chiaro in vetrina, lo spazio dell'operatore, le schermate del proprietario e quelle dell'inquilino, con le ricevute in forma provvisoria (23/10/2026).
