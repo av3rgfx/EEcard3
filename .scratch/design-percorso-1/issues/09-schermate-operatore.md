@@ -1,7 +1,7 @@
 # Schermate dell'operatore di ƎE
 
 Type: prototype
-Status: open
+Status: claimed
 Blocked by: 04
 Mappa: [Design del percorso 1](../map.md)
 
@@ -20,3 +20,21 @@ Prototipo usa e getta (skill `prototype`, ramo UI) nella direzione «Terracotta�
 Serve al ticket [Il collaboratore di ƎE guarda lo spazio dell'operatore](05-collaboratore-guarda-operatore.md).
 
 ## Commenti (Comments)
+
+**23/10/2026, domande prima di costruire** (skill `grilling`, una alla volta; tutte sull'opzione consigliata):
+- *Attivazione:* **una scheda della casa che si riempie un po' alla volta**, con in cima l'elenco di cosa manca e di cosa è pronto; si riprende quando si vuole. Scartate «procedura a passi obbligata», rigida quando manca un documento, e «tutte e due», con due modi da imparare.
+- *Registrazione di un incasso:* **anteprima della ricevuta accanto al modulo** e un solo pulsante «Registra e prepara la ricevuta», poi una pagina «Fatto» con «Stampa la ricevuta». Nessuna finestra di conferma: un errore si corregge annullando la ricevuta, che resta nello storico. Scartate «conferma prima», un passaggio in più a ogni incasso, e «conferma solo nei casi delicati», una regola in più.
+- *Al banco:* **una pagina «Al banco» per la persona** trovata con «Trova cliente o casa». In cima l'azione più probabile, sotto le cose da chiudere con lei (firme, informativa, verifica dell'accesso, tessera). Scartata «si passa dalla scheda della casa», con più tocchi e la scelta della casa.
+
+**23/10/2026, primo giro mostrato** (pagina privata, sorgente nella cartella temporanea della sessione). Controllato nel Chromium disponibile a 390 px e 1366 px, in chiaro e in scuro, con tutti i casi dell'incasso: nessuno scorrimento orizzontale e nessun errore. Undici schermate in «Terracotta»:
+1. lavoro in coda;
+2. coda vuota (registrato oggi, settimana);
+3. «Al banco» per un inquilino;
+4. incasso al banco, con i casi «un mese», «più mesi», «parziale» e «contanti oltre soglia»;
+5. incasso registrato;
+6. registrazione di una consegna in ritardo;
+7. scheda della casa in attivazione, con l'elenco dei mancanti e «non serve»;
+8. correzione di una ricevuta;
+9. nuovo canone ISTAT da controllare;
+10. esito di una contestazione;
+11. «Oggi», con le chiamate avviate e i messaggi partiti.
