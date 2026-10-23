@@ -1,7 +1,7 @@
 # Ricerca: si può usare il nome Connetto?
 
 Type: research
-Status: claimed
+Status: resolved
 Blocked by:
 Mappa: [Design del percorso 1](../map.md)
 
@@ -19,5 +19,17 @@ Da cercare, su fonti pubbliche e con la data di lettura:
 Limiti: solo lettura di pagine e registri pubblici. Nessuna registrazione di domini o marchi, nessun account, nessun contatto con titolari. Il risultato è una **ricerca preliminare, non un parere di registrabilità**: per depositare il marchio serve un professionista (consulente in proprietà industriale o avvocato). Risultati in `docs/ricerca/nome-connetto.md`, con «In breve», legenda Fonte / Inferenza / Da verificare e fonti non raggiunte.
 
 L'esito arriva all'utente in parole semplici; se il nome ha un ostacolo serio, cambiarlo o tenerlo è una decisione sua. La registrazione vera resta fuori dalla mappa, prima del pilota.
+
+## Risposta (Answer)
+
+Ricerca preliminare chiusa il 23/10/2026, svolta da un agente con la skill `research`: [docs/ricerca/nome-connetto.md](../../../docs/ricerca/nome-connetto.md). I marchi sono stati letti su TMview di EUIPO, che raccoglie anche i dati italiani, perché UIBM era in manutenzione ed eSearch non rispondeva. La ricerca contiene anche le domande per il professionista. Non è un parere. L'agente principale non ha potuto ricontrollare le schede di TMview dall'ambiente, che le blocca.
+
+- **Marchio: rosso.** Esiste un marchio dell'Unione europea «Connetto» (n. 018927374), registrato da EMMEGI RICAMBI S.P.A. fino al 19/09/2033. È figurativo, nelle classi 2, 9 e 16, e la classe 9 comprende «Software». Vicini nelle stesse classi:
+  - «Connecto», nell'UE (software e SaaS) e in Italia (SaaS e brokeraggio);
+  - la domanda italiana «CONNETTA» del 2026.
+- **Domini: giallo.** `connetto.it`, `.com`, `.net`, `.eu` e `.de` sono di altri, senza siti attivi. `connetto.app`, `connetto.casa` e varianti composte risultano liberi.
+- **Confusione con altri: giallo.** Nessuna app «Connetto»; esistono una Connetto Srl nelle telecomunicazioni e una società di avvocati con quel nome. Nessuno lavora nel settore casa e locazione. Gli account `@connetto` su X, TikTok e YouTube sono presi.
+- **Significato e alias SMS: verde.**
+- **Decisione dell'utente aperta:** tenere il nome sentendo un professionista, magari in forma composta; cercare un accordo con il titolare; oppure cambiarlo prima che entri nel design definitivo.
 
 ## Commenti (Comments)
