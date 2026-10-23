@@ -4,6 +4,8 @@ Da incollare in Claude Code o Codex aperto su questo repository. La skill Wayfin
 
 Il **design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6) ha una mappa: [Design del percorso 1](.scratch/design-percorso-1/map.md). Approvati il 23/10/2026: direzione **«Terracotta»** con il chiaro in vetrina, spazio dell'operatore e schermate del proprietario; voce al «tu» anche per i clienti ([DESIGN.md](DESIGN.md)). Nome di lavoro **Connetto**, simbolo **C–Legame** ([assets/marchio/](assets/marchio/README.md)); il parere sul marchio è chiesto subito e il suo esito va nel ticket «Parere di un consulente in marchi sul nome Connetto». Ci sono due strade, anche in parallelo.
 
+**Prima della prossima sessione:** unire la PR #13 (branch `claude/design-direzione-percorso-1`) in `main`. Se non è ancora unita, la sessione deve partire da quel branch: altrimenti non trova DESIGN.md, la mappa e i ticket aggiornati.
+
 **Schermate dell'inquilino.** Messaggio:
 
 ---
@@ -14,7 +16,7 @@ Leggi AGENTS.md, STATUS.md, la mappa e il ticket. Poi DESIGN.md: «Punti fermi d
 
 - Rivendica il ticket (`Status: claimed`) prima di lavorare. Lavora solo su questo ticket, con la skill `prototype` (ramo UI); per le scelte, `grilling`.
 - Le scelte me le fai una alla volta, in parole semplici, con una raccomandazione motivata e le conseguenze di ogni opzione.
-- Prototipo usa e getta, fuori dal repository, in «Terracotta», con solo dati inventati e importi come «9.876,54 €». Chiaro per primo, poi scuro, su telefono e desktop, con il tasto per nascondere i comandi.
+- Prototipo usa e getta, fuori dal repository, in «Terracotta», con solo dati inventati e importi come «9.876,54 €». Chiaro per primo, poi scuro, su telefono e desktop, con il tasto per nascondere i comandi. Per restare coerente parti dal prototipo del proprietario, che leggi con lo strumento Artifact (azione «read»): https://claude.ai/artifact/4iSZ4Mpb8k691WVQwnrUVR. Il link è in STATUS.md, «Prototipi pubblicati».
 - Prima di mostrarmelo controllalo nel browser disponibile: a 360, 390, 768, 900, 1024, 1180 e 1366 px; che nessun pulsante esca dal suo riquadro; che la pagina non scorra di lato. Nessuno stack scelto, nessun codice applicativo.
 - Le regole decise vanno in DESIGN.md con data e motivo; un cambio della specifica o dei punti fermi me lo porti come conflitto.
 

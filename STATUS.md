@@ -4,8 +4,15 @@
 **Fase: design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6), nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md). Approvati: la direzione **«Terracotta»**, con il chiaro in vetrina; lo spazio dell'operatore; le schermate del proprietario. La voce ora è al **«tu»** anche per i clienti ([DESIGN.md](DESIGN.md)).
 
 Prossimi passi:
-- **Collaboratore di ƎE:** l'utente condivide il prototipo dell'operatore e manda il messaggio con le quattro domande, già pronto nel ticket [Il collaboratore di ƎE guarda lo spazio dell'operatore](.scratch/design-percorso-1/issues/05-collaboratore-guarda-operatore.md), rivendicato e in attesa delle risposte.
+- **Collaboratore di ƎE:** l'utente lo incontra la sera del 23/10/2026. Gli fa le quattro domande, già pronte nel ticket [Il collaboratore di ƎE guarda lo spazio dell'operatore](.scratch/design-percorso-1/issues/05-collaboratore-guarda-operatore.md), rivendicato e in attesa delle risposte, e condivide il prototipo dell'operatore.
 - **Schermate dell'inquilino**, poi accesso, adesione e situazioni comuni.
+- Dopo: email e SMS (aspettano il parere sul nome), tessera digitale e ricevute stampate, testi dell'interfaccia, componenti, rifinitura e revisione dell'accessibilità, pacchetto per il controllo B (mappa, «Non ancora specificato»).
+
+**Prototipi pubblicati** (pagine private dell'utente, usa e getta). Il sorgente stava nella cartella temporanea della sessione del 23/10 e non c'è più; una sessione nuova può leggerli con lo strumento Artifact, azione «read». Servono come riferimento di stile e non entrano nel repository.
+- Direzioni, primo giro: https://claude.ai/artifact/3qFHoy8XyHydtvetDPosmU
+- Atmosfere, secondo e terzo giro (Terracotta scelta): https://claude.ai/artifact/DpHYhxDoru6CeV2i14Ztmg
+- Spazio dell'operatore: https://claude.ai/artifact/8uYkEqTXrp27KWmc698JK9
+- Schermate del proprietario: https://claude.ai/artifact/4iSZ4Mpb8k691WVQwnrUVR
 
 Prodotto: **Connetto**, nome di lavoro in attesa del parere sul marchio. Non c'è codice applicativo; architettura e stack non sono decisi.
 
