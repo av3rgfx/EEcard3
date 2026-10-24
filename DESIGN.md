@@ -190,7 +190,7 @@ Approvati dall'utente il 23/10/2026 nel ticket [Accesso, adesione e situazioni c
   - *Senza rete:* i dati in memoria con l'ora e una fascia «Sei senza connessione»; si disattiva ciò che richiede la rete.
   - *Errore:* la causa, la rassicurazione che i dati sono al sicuro, «Riprova» e «Chiama ƎE».
   - *Link scaduto:* porta all'accesso.
-- **Dalla schermata Home:** le viste di secondo livello hanno sempre il loro «Indietro», anche senza le barre di Safari. Le schede restano sopra l'area sicura. La guida «Connetto sulla schermata Home» è nel Profilo. Da verificare nella prova su iPhone.
+- **Dalla schermata Home:** le viste di secondo livello hanno sempre il loro «Indietro», anche senza le barre di Safari. Le schede restano sopra l'area sicura. La guida «Connetto sulla schermata Home» è nel Profilo. Da verificare nella prova su iPhone. *Aggiornato il 24/10/2026, scelta dell'utente* (ticket [Prova su iPhone](.scratch/design-percorso-1/issues/06-prova-iphone-schermata-home.md)): la pagina di prova gira dentro la cornice di claude.ai, quindi schede sopra l'area sicura, colore in alto, aggiunta alla schermata Home e gesto dal bordo si verificano sulla prima versione della piattaforma, con un indirizzo suo. La regola non cambia.
 - *Evidenza:* approvazione dell'utente su prototipi con dati inventati; immagini dell'accesso e della tessera generate dall'utente. Nessuna prova con persone.
 
 ## Rifinitura delle schermate interne (percorso 1)
