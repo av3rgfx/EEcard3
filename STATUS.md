@@ -1,6 +1,6 @@
 # Stato del progetto
 
-## Punto di ripresa (24 ottobre 2026, ricerca sulla vista 3D)
+## Punto di ripresa (24 ottobre 2026, vista 3D: ricerche e prova)
 **Fase: design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6), nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md). Approvati:
 - la direzione **«Terracotta»**, con il chiaro in vetrina;
 - lo spazio dell'operatore;
@@ -13,7 +13,11 @@ La voce è al **«tu»** anche per i clienti ([DESIGN.md](DESIGN.md)).
 Prossimi passi:
 - **Collaboratore di ƎE:** ticket rivendicato, con cinque domande pronte; si aspettano le risposte.
 - **Prova su iPhone:** ticket rivendicato, pagina di prova pubblicata (https://claude.ai/artifact/5ousKXbFpFsGqd5mrtcH7t) con l'elenco dei controlli nel ticket. Primo riscontro: «sembra andare bene», ma la barra delle schede finisce sotto lo schermo dentro la cornice di claude.ai. Scelta dell'utente (A): la pagina resta com'è. Schede sopra l'area sicura, colore in alto, schermata Home e gesto dal bordo si verificano sulla prima versione della piattaforma. In pausa dal 24/10/2026 per scelta dell'utente («ci penseremo poi»): restano gli altri controlli, la versione di iOS e la diagnosi.
-- **Vista 3D indicativa:** [ricerca](docs/ricerca/vista-3d.md) chiusa il 24/10/2026 con sette decisioni dell'utente (PRODUCT.md §12, «Vista 3D indicativa: come si ricava»). Prossimo passo proposto: la [prova con piante inventate](.scratch/controllo-a/issues/15-prova-vista-3d.md), prima dell'architettura; il messaggio è in START_HERE.md.
+- **Vista 3D indicativa:**
+  - due ricerche chiuse il 24/10/2026, [come si ricava](docs/ricerca/vista-3d.md) e [come si rende](docs/ricerca/vista-3d-resa.md), con tredici decisioni dell'utente in PRODUCT.md §12;
+  - [prova](.scratch/controllo-a/issues/15-prova-vista-3d.md) in due versioni. La prima (https://claude.ai/artifact/Uwav9qpKCBQNkSskEWF5nZ) legge bene le piante inventate, ma per l'utente la resa era «ancora grezza»;
+  - la seconda (https://claude.ai/artifact/3XGpiR7CyEKeYAgTz91Vjr) mostra tre stili affiancati, con arredi d'esempio facoltativi;
+  - prossimo passo: il giudizio dell'utente sulla seconda versione; il messaggio è in START_HERE.md.
 - Facoltativo, solo se l'utente lo chiede: rivedere lo spazio dell'operatore con le regole della rifinitura (mappa, «Non ancora specificato»).
 - Promemoria dell'utente (23/10/2026): Animate UI e Watermelon UI si valutano all'architettura, in [ARCHITECTURE.md](ARCHITECTURE.md), «Da valutare al passo 7»; nessuna installazione prima.
 - Dopo: email e SMS (aspettano il parere sul nome), ricevute stampate, testi dell'interfaccia, componenti, interazioni e dati limite, revisione dell'accessibilità, pacchetto per il controllo B (mappa, «Non ancora specificato»).
@@ -29,6 +33,24 @@ Prossimi passi:
 - Rifinitura delle case di inquilino e proprietario (versione 2, «via di mezzo» approvata): https://claude.ai/artifact/9CQ4BtLZxYXJRBKiEfpZGj. Con «Prima», i due «dopo» scartati e la «via di mezzo»; il livello delle ombre di foglie è ricavato dalla stanza dell'accesso.
 
 Prodotto: **Connetto**, nome di lavoro in attesa del parere sul marchio. Non c'è codice applicativo; architettura e stack non sono decisi.
+
+## Fatto (24 ottobre 2026, prova della vista 3D e ricerca sulla resa)
+- Ticket [Prova: vista 3D da una planimetria](.scratch/controllo-a/issues/15-prova-vista-3d.md) rivendicato, con la skill `prototype`. Due pagine usa e getta, private, solo dati inventati; metodo, verifiche ed esiti sono nel ticket.
+- **Prima versione** (https://claude.ai/artifact/Uwav9qpKCBQNkSskEWF5nZ):
+  - tre piante inventate in stile catastale, in sette versioni, dalla buona alla rovinata;
+  - ricalco e riconoscimento automatico con anteprima, fatto con visione artificiale classica, quindi senza modelli allenati né licenze da chiarire;
+  - controlli di qualità, vista del proprietario;
+  - esiti sulle piante inventate: nelle versioni buone, anche a mano, muri al 100% e porte 14 su 14; 6 buone su 6 passano, 15 rovinate su 15 vengono fermate o mandate al controllo;
+  - giudizio dell'utente: «per come è fatto ora non sembra utile, è ancora grezzo».
+- Ticket [Ricerca: come le altre piattaforme rendono belle e chiare le case in 3D](.scratch/controllo-a/issues/16-ricerca-resa-vista-3d.md), chiesto dall'utente, aperto e chiuso:
+  - circa 60 fonti in [docs/ricerca/vista-3d-resa.md](docs/ricerca/vista-3d-resa.md); controllo a campione su Poly Haven, three.js e RoomSketcher, tutto confermato;
+  - sei decisioni dell'utente, tutte sull'opzione consigliata: tre stili affiancati; arredi d'esempio accanto alla versione vuota; solo i nomi delle stanze; nord e luce da sud; viste pronte con trascinamento limitato; immagine fissa dopo la scelta dello stile.
+- **Seconda versione** (https://claude.ai/artifact/3XGpiR7CyEKeYAgTz91Vjr):
+  - la stessa casa in tre stili: pianta dall'alto, casa delle bambole, isometrica illustrata;
+  - nomi delle stanze, ingresso, nord, pianta 2D, arredi facoltativi;
+  - verificata in Chromium a 7 larghezze, in chiaro e in scuro, con tutti i pulsanti: nessuno scorrimento orizzontale, nessun errore; quattro difetti trovati e corretti.
+- Non è una prova su planimetrie vere. La planimetria dei fondatori arriva solo se l'utente la carica, con il loro consenso scritto.
+- Non applicabili: build, test e revisione OCR (non c'è codice applicativo; il programma `ocr` non è nell'ambiente).
 
 ## Fatto (24 ottobre 2026, ricerca sulla vista 3D)
 - Ticket [Ricerca: dalla planimetria catastale alla vista 3D indicativa](.scratch/controllo-a/issues/14-ricerca-vista-3d.md) rivendicato e chiuso. Ricerca con la skill `research`, affidata a un agente in background: circa 45 fonti primarie lette il 24/10/2026, in [docs/ricerca/vista-3d.md](docs/ricerca/vista-3d.md).

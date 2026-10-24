@@ -91,3 +91,31 @@ L'utente guarda il risultato e decide. Se la prova va male, la vista 3D torna fu
 - nomi delle stanze senza metri quadri, ingresso indicato, nord e luce da sud;
 - viste pronte («Dall'alto», «Di lato», «Gira», «Pianta 2D») con trascinamento limitato;
 - avvertenza sempre visibile; movimento ridotto rispettato.
+
+**24/10/2026, seconda versione costruita** (pagina usa e getta, privata): https://claude.ai/artifact/3XGpiR7CyEKeYAgTz91Vjr. La prima versione resta a https://claude.ai/artifact/Uwav9qpKCBQNkSskEWF5nZ.
+
+*Contenuto:*
+- le tre case lette in automatico dalle versioni pulite, cioè ciò che l'operatore conferma, in tre stili affiancati:
+  - A, pianta 3D dall'alto: muri a 1,10 m con la cima color rame;
+  - B, casa delle bambole: muri a tutta altezza, sole da sud con ombre morbide; i muri esterni verso chi guarda si abbassano a 1 m;
+  - C, isometrica illustrata: telecamera senza prospettiva, colori pieni, contorni sottili, quarti di giro;
+- pavimenti in quattro tinte per zona, nomi delle stanze senza metri quadri, freccia e «Ingresso», bussola con il nord;
+- finestre con il vetro;
+- arredi d'esempio facoltativi, scelti dal tipo di stanza e messi solo dove ci stanno e lontano dalle porte, con «Gli arredi sono solo un esempio»;
+- in ogni vetrina «Dall'alto», «Di lato», «Gira» e «Pianta 2D», con trascinamento entro limiti;
+- avvertenza sempre visibile con «Perché?»;
+- three.js r170 con luce d'ambiente RoomEnvironment e tone mapping Neutral, nessun asset esterno.
+
+*Nomi e ingresso:* nella prova i nomi delle stanze vengono dalle scritte delle piante inventate, al posto della conferma dell'operatore. L'ingresso è la porta che dà verso l'esterno.
+
+*Verifiche (Chromium):*
+- tre case in chiaro e in scuro;
+- tutti i pulsanti delle tre vetrine, «Perché?», interruttore degli arredi, trascinamento, movimento ridotto;
+- larghezze 360, 390, 768, 900, 1024, 1180 e 1366 px: nessuno scorrimento orizzontale, nessun errore;
+- difetti trovati e corretti:
+  - mobili della cucina scartati per un tramezzo vicino;
+  - nomi della vista 3D sopra la pianta 2D;
+  - «Dall'alto» storto nella casa delle bambole;
+  - etichetta «Ingresso» tagliata.
+
+Si aspetta il giudizio dell'utente: quale stile, con o senza arredi, se la vista resta nella prima versione.
