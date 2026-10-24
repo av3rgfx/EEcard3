@@ -67,7 +67,7 @@ L'utente guarda il risultato e decide. Se la prova va male, la vista 3D torna fu
 *Esiti misurati* (Chromium, solo piante inventate; il confronto usa la pianta vera, che nella realtà non si conosce)
 - Versioni buone, cioè pulita e a mano, sulle tre piante:
   - muri ritrovati 100%;
-  - porte 14 su 14 nelle pulite e 15 su 14 nelle versioni a mano (una porta in più nella casa a L);
+  - porte 14 su 14, sia nelle pulite sia nelle versioni a mano; in queste ultime c'è una porta in più che non esiste, nella casa a L;
   - finestre 15 su 17 nelle pulite e 14 su 17 nelle versioni a mano. Manca sempre quella sul muro obliquo; ne manca anche qualcun'altra.
 - Controllo di qualità: 6 versioni buone su 6 passano; 15 rovinate su 15 non arrivano al proprietario senza un controllo.
   - Esito «non va»: la bassa risoluzione, lo strappo e la scala falsata, grazie allo scarto di superficie dalla visura.
