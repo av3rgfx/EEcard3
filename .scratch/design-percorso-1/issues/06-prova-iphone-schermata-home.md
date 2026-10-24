@@ -54,3 +54,4 @@ Compito con l'utente (HITL): l'agente prepara una pagina di prova usa e getta, p
 - *Motivo:* nessun costo e nessun servizio esterno ora. Le regole di DESIGN.md non cambiano, cambia solo quando si verificano.
 - Si aspettano gli altri controlli dell'utente, con la versione di iOS e la diagnosi.
 
+**24/10/2026, in pausa per scelta dell'utente** («ci penseremo poi»). Il ticket resta rivendicato; il messaggio per riprenderlo è in START_HERE.md, «In pausa: Prova su iPhone». La prossima sessione passa alla vista 3D indicativa.
