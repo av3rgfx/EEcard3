@@ -49,3 +49,8 @@ Compito con l'utente (HITL): l'agente prepara una pagina di prova usa e getta, p
 - *Inferenza dell'agente, da confermare con la diagnosi:* dentro la cornice la «finestra» della pagina è più alta della parte visibile. Le schede sono fissate al fondo di quella finestra e finiscono fuori dallo schermo. La misura «Finestra» della diagnosi, confrontata con «Schermo», lo conferma o lo smentisce. Nella piattaforma vera, aperta senza cornice, la finestra coincide con la parte visibile: questo problema non dice ancora nulla sulla piattaforma.
 - Posta all'utente la scelta su cosa fare della barra (prima correzione), con la raccomandazione di non toccare la pagina e di chiudere la prova con gli altri controlli.
 
+**24/10/2026, prima scelta dell'utente: A, la pagina resta com'è.** La prova si chiude con i controlli che dipendono dalla pagina: campo del codice e tastiera, benvenuto animato, «Indietro», «Testo più grande», movimento ridotto e diagnosi. Quattro punti dipendono dalla cornice di claude.ai: barra delle schede sopra l'area sicura, colore in alto, aggiunta alla schermata Home e gesto dal bordo. Restano **da verificare sulla prima versione della piattaforma, con un indirizzo suo**.
+- *Scartate:* «B», ritoccare la pagina per adattarla alla cornice, perché misurerebbe claude.ai e non la piattaforma; «C», un indirizzo temporaneo su un servizio esterno, perché richiede un account esterno e rende la pagina raggiungibile da chiunque abbia l'indirizzo.
+- *Motivo:* nessun costo e nessun servizio esterno ora. Le regole di DESIGN.md non cambiano, cambia solo quando si verificano.
+- Si aspettano gli altri controlli dell'utente, con la versione di iOS e la diagnosi.
+

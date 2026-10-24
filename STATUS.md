@@ -12,7 +12,7 @@ La voce è al **«tu»** anche per i clienti ([DESIGN.md](DESIGN.md)).
 
 Prossimi passi:
 - **Collaboratore di ƎE:** ticket rivendicato, con cinque domande pronte; si aspettano le risposte.
-- **Prova su iPhone:** ticket rivendicato, pagina di prova pubblicata (https://claude.ai/artifact/5ousKXbFpFsGqd5mrtcH7t) con l'elenco dei controlli nel ticket. Si aspetta il riscontro dell'utente: cosa vede, la versione di iOS e il testo della diagnosi. Poi le correzioni, una alla volta.
+- **Prova su iPhone:** ticket rivendicato, pagina di prova pubblicata (https://claude.ai/artifact/5ousKXbFpFsGqd5mrtcH7t) con l'elenco dei controlli nel ticket. Primo riscontro: «sembra andare bene», ma la barra delle schede finisce sotto lo schermo dentro la cornice di claude.ai. Scelta dell'utente (A): la pagina resta com'è. Schede sopra l'area sicura, colore in alto, schermata Home e gesto dal bordo si verificano sulla prima versione della piattaforma. Si aspettano gli altri controlli, la versione di iOS e la diagnosi.
 - Facoltativo, solo se l'utente lo chiede: rivedere lo spazio dell'operatore con le regole della rifinitura (mappa, «Non ancora specificato»).
 - Promemoria dell'utente (23/10/2026): Animate UI e Watermelon UI si valutano all'architettura, in [ARCHITECTURE.md](ARCHITECTURE.md), «Da valutare al passo 7»; nessuna installazione prima.
 - Dopo: email e SMS (aspettano il parere sul nome), ricevute stampate, testi dell'interfaccia, componenti, interazioni e dati limite, revisione dell'accessibilità, pacchetto per il controllo B (mappa, «Non ancora specificato»).

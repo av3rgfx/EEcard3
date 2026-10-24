@@ -14,7 +14,7 @@ Voce al «tu» anche per i clienti ([DESIGN.md](DESIGN.md)). Nome di lavoro **Co
 
 **Prima della prossima sessione:** unire in `main` la PR del branch `claude/prova-iphone-schermata-home` (prova su iPhone). Se non è ancora unita, la sessione deve partire da quel branch.
 
-**Prova su iPhone.** Il ticket è rivendicato e la pagina di prova è pubblicata: https://claude.ai/artifact/5ousKXbFpFsGqd5mrtcH7t. L'elenco dei controlli è nel ticket, sotto «Commenti». Fatta la prova in Safari e dalla schermata Home, incollare:
+**Prova su iPhone.** Il ticket è rivendicato e la pagina di prova è pubblicata: https://claude.ai/artifact/5ousKXbFpFsGqd5mrtcH7t. L'elenco dei controlli è nel ticket, sotto «Commenti». Per scelta dell'utente (24/10/2026) bastano i controlli in Safari: schede in basso, colore in alto, schermata Home e gesto dal bordo si verificano sulla prima versione della piattaforma. Fatti i controlli rimasti, incollare:
 
 /wayfinder .scratch/design-percorso-1/map.md — ticket «Prova su iPhone: la piattaforma aggiunta alla schermata Home» (.scratch/design-percorso-1/issues/06-prova-iphone-schermata-home.md): cosa ho visto, la versione di iOS e il testo della diagnosi sono in fondo a questo messaggio.
 
