@@ -1,7 +1,7 @@
 # Ricerca: dalla planimetria catastale alla vista 3D indicativa
 
 Type: research
-Status: open
+Status: claimed
 Blocked by: —
 Mappa: [Dalla specifica del percorso 1 al design](../map.md)
 
