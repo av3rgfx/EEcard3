@@ -62,4 +62,5 @@ Ticket rimasti aperti alla chiusura: non bloccano il design del percorso 1 e si 
 - [Ricerca: tessere fisiche, fornitori, personalizzazione, ordini e spedizioni](issues/12-ricerca-tessere-fisiche.md): prima del pilota.
 - [Prova sulle bollette](issues/08-prova-bollette.md): serve quando si lavora sulle bollette dell'inquilino (percorso 3).
 - [Ricerca: dalla planimetria catastale alla vista 3D indicativa](issues/14-ricerca-vista-3d.md): **chiusa il 24/10/2026**. Ricalco e riconoscimento automatico con anteprima, scelti dall'operatore, dentro la piattaforma; conferma solo l'operatore; avvertenza sempre visibile; planimetria del fascicolo, copia nuova se non si legge; nella prova prima piante inventate, poi una dei fondatori con consenso.
-- [Prova: vista 3D da una planimetria](issues/15-prova-vista-3d.md): libera ora che la ricerca è chiusa; prima dell'architettura.
+- [Prova: vista 3D da una planimetria](issues/15-prova-vista-3d.md): prima versione vista dall'utente il 24/10/2026, «non sembra utile, è ancora grezzo»; la seconda versione aspetta la ricerca sulla resa. Prima dell'architettura.
+- [Ricerca: come le altre piattaforme rendono belle e chiare le case in 3D](issues/16-ricerca-resa-vista-3d.md): chiesta dall'utente il 24/10/2026.

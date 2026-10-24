@@ -2,7 +2,7 @@
 
 Type: prototype
 Status: claimed
-Blocked by: 14
+Blocked by: 14, 16
 Mappa: [Dalla specifica del percorso 1 al design](../map.md)
 
 ## Domanda (Question)
@@ -82,3 +82,5 @@ L'utente guarda il risultato e decide. Se la prova va male, la vista 3D torna fu
 - Le soglie sono tarate su queste 21 versioni.
 - Le finestre sugli obliqui non si riconoscono.
 - Un esito buono dice che il metodo è credibile, non che regge sul pilota. Il passo successivo è la planimetria vera dei fondatori, quando l'utente la carica con il loro consenso scritto.
+
+**24/10/2026, esito della prima versione (utente):** «Ho controllato e per come è fatto ora non sembra utile. È ancora grezzo.» L'utente chiede una ricerca su altre piattaforme e servizi di piante 3D: cosa offrono per renderle speciali, e come rendere la vista più bella, piacevole e chiara. Aperta la [ricerca sulla resa](16-ricerca-resa-vista-3d.md); la seconda versione della prova parte dai suoi risultati. Il ticket resta rivendicato; se la vista resta nella prima versione non è ancora deciso.
