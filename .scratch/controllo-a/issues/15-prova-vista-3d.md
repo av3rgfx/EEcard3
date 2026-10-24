@@ -2,7 +2,7 @@
 
 Type: prototype
 Status: claimed
-Blocked by: 14, 16
+Blocked by: 14, 16 (chiusi)
 Mappa: [Dalla specifica del percorso 1 al design](../map.md)
 
 ## Domanda (Question)
@@ -84,3 +84,10 @@ L'utente guarda il risultato e decide. Se la prova va male, la vista 3D torna fu
 - Un esito buono dice che il metodo è credibile, non che regge sul pilota. Il passo successivo è la planimetria vera dei fondatori, quando l'utente la carica con il loro consenso scritto.
 
 **24/10/2026, esito della prima versione (utente):** «Ho controllato e per come è fatto ora non sembra utile. È ancora grezzo.» L'utente chiede una ricerca su altre piattaforme e servizi di piante 3D: cosa offrono per renderle speciali, e come rendere la vista più bella, piacevole e chiara. Aperta la [ricerca sulla resa](16-ricerca-resa-vista-3d.md); la seconda versione della prova parte dai suoi risultati. Il ticket resta rivendicato; se la vista resta nella prima versione non è ancora deciso.
+
+**Seconda versione, da fare** (decisioni del 24/10/2026, [ricerca sulla resa](../../../docs/ricerca/vista-3d-resa.md) §6):
+- la stessa casa in tre stili affiancati: pianta 3D dall'alto, casa delle bambole luminosa, isometrica illustrata «Terracotta»;
+- in ogni stile l'interruttore degli arredi semplici;
+- nomi delle stanze senza metri quadri, ingresso indicato, nord e luce da sud;
+- viste pronte («Dall'alto», «Di lato», «Gira», «Pianta 2D») con trascinamento limitato;
+- avvertenza sempre visibile; movimento ridotto rispettato.
