@@ -37,3 +37,18 @@ Prototipo usa e getta (skill `prototype`, ramo UI) con varianti dietro un selett
 - *Rame come accento:* l'occhiello sopra il titolo e, nella barra laterale, la tessera di rame in piccolo con il codice.
 - Verifiche: Chromium a 360, 390, 768, 900, 1024, 1180 e 1366 px, in chiaro e in scuro, con le due schermate e le tre versioni: 84 combinazioni, ciascuna con la pagina ricaricata e la verifica della schermata aperta. Nessun pulsante fuori dal suo riquadro, nessuno scorrimento orizzontale, nessun errore. Il controllo ha trovato e fatto correggere un difetto (righe toccabili 12 px oltre il loro elenco). Provato su copie rotte apposta: trova i pulsanti fuori riquadro, lo scorrimento laterale e la schermata sbagliata.
 - Contrasti misurati con la formula WCAG: tutti sopra 4,5:1. Il rame dell'occhiello sulle ombre più scure della stanza era a 3,8:1; nella variante «stanza» è stato scurito (5,3:1).
+
+**24/10/2026, riscontro sul primo giro e secondo giro** (stessa pagina privata, versione 2). L'utente trova la casa ridisegnata «veramente carina e bella», ma:
+- *troppe cose che possono distrarre* chi ha poca familiarità con il computer;
+- *il chiaro è più scuro* di prima, che era molto più bianco;
+- del «prima» gli piaceva la **scheda**: la foto della casa dentro un riquadro con tutti i dettagli del canone (com'è formato, cosa pagare). Nei «dopo» i dettagli finiscono in disparte e conta troppo l'estetica.
+
+Chiede di provare una via di mezzo fra la casa ridisegnata e il «prima», prima della decisione finale. La «stanza in cima» non l'ha commentata; resta nel selettore per il confronto.
+
+Nuova versione **«Via di mezzo»**, aperta per prima:
+- *Bianco come prima:* pannello e scheda bianchi. La stanza dell'accesso resta solo sul fondo fuori dal pannello, sul computer, coperta da un velo chiaro. Sul telefono se ne vede appena la luce in cima.
+- *Una sola scheda in cima* con la casa ridisegnata e tutti i dettagli: per l'inquilino importo, canone, oneri, totale e dove pagare; per il proprietario il fatto del mese, «Ricevuto», canone e consegna con stato e importo, il contratto. Sul computer la foto sta a sinistra, alta quanto i dettagli.
+- *Meno distrazioni:* ombre delle foglie a metà intensità, niente vetro sul pannello.
+- *Sotto la scheda,* come nei «dopo»: elenchi puliti, icone senza cerchi, caratteri più leggeri.
+
+Verifiche: 112 combinazioni (7 larghezze, 2 schermate, 4 versioni, chiaro e scuro), con la pagina ricaricata e la schermata verificata ogni volta. Nessun pulsante fuori dal riquadro, nessuno scorrimento orizzontale, nessun errore.
