@@ -188,7 +188,7 @@ Legenda: **Fonte** = ciò che dice la fonte; **Inferenza** = ciò che ne deduce 
 
 ## 7. Decisioni che emergono
 
-Spettano all'utente; qui solo le opzioni e la raccomandazione dell'agente.
+Spettano all'utente; qui solo le opzioni e la raccomandazione dell'agente. **Decise dall'utente il 24/10/2026**: [PRODUCT.md](../../PRODUCT.md) §12, «Vista 3D indicativa: come si ricava»; la discussione è nel [ticket](../../.scratch/controllo-a/issues/14-ricerca-vista-3d.md).
 
 1. **Come si ricava la pianta.**
    - *Ricalco dell'operatore*: funziona su tutte le planimetrie e nessun dato esce, ma costa tempo di ƎE a ogni casa.

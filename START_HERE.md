@@ -12,16 +12,17 @@ Il 24/10/2026 è approvata anche la **rifinitura estetica delle schermate intern
 
 Voce al «tu» anche per i clienti ([DESIGN.md](DESIGN.md)). Nome di lavoro **Connetto**, simbolo **C–Legame** ([assets/marchio/](assets/marchio/README.md)); il parere sul marchio è chiesto subito e il suo esito va nel ticket «Parere di un consulente in marchi sul nome Connetto».
 
-**Prima della prossima sessione:** unire in `main` la PR del branch `claude/prova-iphone-schermata-home` (prova su iPhone). Se non è ancora unita, la sessione deve partire da quel branch.
+**Prima della prossima sessione:** unire in `main` la PR del branch `claude/ricerca-vista-3d` (ricerca sulla vista 3D). Se non è ancora unita, la sessione deve partire da quel branch.
 
-**Prossima sessione: la casa in 3D (vista 3D indicativa).** Scelta dall'utente il 24/10/2026 per la prossima sessione. È la prova a condizione decisa il 23/10/2026 (PRODUCT.md §12) e non blocca il design del percorso 1. Prima si fa la ricerca; la prova (ticket 15) viene dopo. Messaggio:
+**Prossimo passo proposto: la prova della vista 3D con piante inventate.** La ricerca è chiusa il 24/10/2026 ([docs/ricerca/vista-3d.md](docs/ricerca/vista-3d.md)) con sette decisioni dell'utente (PRODUCT.md §12, «Vista 3D indicativa: come si ricava»). La prova va chiusa prima dell'architettura e non blocca il design del percorso 1. Messaggio:
 
-/wayfinder .scratch/controllo-a/map.md — ticket «Ricerca: dalla planimetria catastale alla vista 3D indicativa» (.scratch/controllo-a/issues/14-ricerca-vista-3d.md)
+/wayfinder .scratch/controllo-a/map.md — ticket «Prova: vista 3D da una planimetria» (.scratch/controllo-a/issues/15-prova-vista-3d.md)
 
-Leggi AGENTS.md, STATUS.md, la mappa (sezione «Dopo la destinazione») e il ticket, poi la decisione «Vista 3D indicativa» in PRODUCT.md §12. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice o decisioni di tentativi precedenti.
+Leggi AGENTS.md, STATUS.md, la mappa (sezione «Dopo la destinazione») e il ticket, poi la decisione «Vista 3D indicativa: come si ricava» in PRODUCT.md §12 e docs/ricerca/vista-3d.md (§2.3, §4, §5 e §6). Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice o decisioni di tentativi precedenti.
 
-- Rivendica il ticket (`Status: claimed`) prima di lavorare e lavora solo su questo ticket. Fai la ricerca con la skill `research`, su fonti primarie con la data di lettura, in docs/ricerca/vista-3d.md.
-- Nessun servizio, account o caricamento di planimetrie vere senza la mia autorizzazione. Le decisioni che emergono me le porti una alla volta, in parole semplici.
+- Rivendica il ticket (`Status: claimed`) e lavora solo su questo, con la skill `prototype`. Prova usa e getta, fuori dal repository, con poche piante inventate in stile catastale, buone e cattive. Prova il ricalco e il riconoscimento automatico con anteprima, la vista 3D con l'avvertenza e i controlli di qualità.
+- Per l'automatico, se usi un modello già allenato, leggi prima la sua licenza; se non è chiara, resta sulla visione artificiale classica e annotalo. Niente servizi esterni.
+- Nessuna planimetria vera finché non la carico io, con il consenso scritto dei fondatori. Le scelte me le porti una alla volta, in parole semplici, con una raccomandazione.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 
