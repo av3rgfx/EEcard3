@@ -214,6 +214,14 @@ Approvata dall'utente il 24/10/2026 nel ticket [Rifinitura estetica delle scherm
   - Contrasti misurati con la formula WCAG, tutti sopra 4,5:1. Si ricontrollano nella revisione dell'accessibilità.
 - *Evidenza:* preferenza dell'utente su un prototipo con dati inventati. Nessuna prova con persone.
 
+## Vista 3D indicativa (stile)
+Scelta dall'utente il 24/10/2026 nella [prova della vista 3D](.scratch/controllo-a/issues/15-prova-vista-3d.md), seconda versione, fra tre stili affiancati sulla stessa casa inventata. Vale solo se la vista resta nella prima versione (PRODUCT.md §12). Le regole di contenuto (nomi senza metri quadri, nord e luce da sud, viste pronte, avvertenza sempre visibile) sono in PRODUCT.md §12, «Vista 3D indicativa: resa da provare».
+
+- **Isometrica illustrata** (decisione dell'utente: «mi piace isometrica illustrata»). Vista di tre quarti senza prospettiva, colori pieni nei toni «Terracotta», contorni sottili; gira di un quarto alla volta. Muri bassi color crema con la cima color rame; pavimenti in quattro tinte per zona.
+  - *Scartate:* la pianta 3D dall'alto in prospettiva e la casa delle bambole a tutta altezza.
+- **Da vicino, ciò che copre diventa trasparente** (richiesta dell'utente, 24/10/2026). Quando ci si avvicina molto a una stanza, i muri tra chi guarda e la stanza diventano semitrasparenti. Da provare nella terza versione della prova.
+- *Evidenza:* preferenza dell'utente su un prototipo con dati inventati. Nessuna prova con persone.
+
 ## Componenti e token
 DA DEFINIRE dopo il primo percorso. Riutilizzare e documentare solo ciò che serve.
 
@@ -222,4 +230,4 @@ Caricamento, vuoto, senza rete, errore e recupero del percorso 1: «Accesso, tes
 Registrare comportamento mobile, tastiera, testo ingrandito e movimento ridotto.
 
 ## Decisioni confermate
-Per ogni scelta: decisione, motivo, evidenza o ipotesi, ambito e data. Finora: il riferimento Apple, il formato degli importi, il simbolo C–Legame (sezione «Identità»), i punti fermi del percorso 1 (con la voce passata al «tu»), la direzione «Terracotta» con il chiaro in vetrina, lo spazio dell'operatore, le schermate del proprietario e quelle dell'inquilino, con le ricevute in forma provvisoria; accesso, tessera digitale di rame, benvenuto, disdetta e situazioni comuni, con l'eccezione del simbolo sulla tessera (23/10/2026); la rifinitura delle schermate interne dei clienti, la «via di mezzo», con tre regole cambiate: la casa in cima con i dettagli del mese, le icone senza cerchi e i fatti senza riquadri (24/10/2026).
+Per ogni scelta: decisione, motivo, evidenza o ipotesi, ambito e data. Finora: il riferimento Apple, il formato degli importi, il simbolo C–Legame (sezione «Identità»), i punti fermi del percorso 1 (con la voce passata al «tu»), la direzione «Terracotta» con il chiaro in vetrina, lo spazio dell'operatore, le schermate del proprietario e quelle dell'inquilino, con le ricevute in forma provvisoria; accesso, tessera digitale di rame, benvenuto, disdetta e situazioni comuni, con l'eccezione del simbolo sulla tessera (23/10/2026); la rifinitura delle schermate interne dei clienti, la «via di mezzo», con tre regole cambiate: la casa in cima con i dettagli del mese, le icone senza cerchi e i fatti senza riquadri (24/10/2026); lo stile della vista 3D indicativa, l'isometrica illustrata (24/10/2026).

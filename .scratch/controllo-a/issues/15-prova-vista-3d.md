@@ -119,3 +119,8 @@ L'utente guarda il risultato e decide. Se la prova va male, la vista 3D torna fu
   - etichetta «Ingresso» tagliata.
 
 Si aspetta il giudizio dell'utente: quale stile, con o senza arredi, se la vista resta nella prima versione.
+
+**24/10/2026, giudizio sulla seconda versione (utente):** «Mi piace isometrica illustrata. Però volevo aggiungere che quando si zooma tanto su una stanza le cose vicino alla telecamera che coprono troppa vista diventino semi trasparenti.»
+- Stile registrato in DESIGN.md, «Vista 3D indicativa (stile)».
+- Terza versione: solo l'isometrica, con i muri che coprono la stanza semitrasparenti da vicino. Per avvicinarsi si tocca il nome della stanza, oppure si ingrandisce con la rotella o con due dita verso il punto indicato.
+- Ancora aperti: arredi d'esempio sì o no; se la vista resta nella prima versione; la planimetria dei fondatori.
