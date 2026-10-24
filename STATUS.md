@@ -1,19 +1,21 @@
 # Stato del progetto
 
-## Punto di ripresa (23 ottobre 2026, accesso e tessera)
+## Punto di ripresa (24 ottobre 2026, rifinitura estetica)
 **Fase: design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6), nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md). Approvati:
 - la direzione **«Terracotta»**, con il chiaro in vetrina;
 - lo spazio dell'operatore;
 - le schermate del proprietario e quelle dell'inquilino (le ricevute dell'inquilino a mesi a pillola sono provvisorie);
-- dal 23/10 anche **accesso, tessera digitale e situazioni comuni**: accesso con un codice, pagina d'accesso con la tessera di rame, benvenuto animato, scheda «Tessera», disdetta da soli.
+- **accesso, tessera digitale e situazioni comuni** (23/10): accesso con un codice, pagina d'accesso con la tessera di rame, benvenuto animato, scheda «Tessera», disdetta da soli;
+- dal 24/10 la **rifinitura estetica delle schermate interne dei clienti**, la «via di mezzo». Pannello bianco, un solo riquadro in cima con la casa ridisegnata e i dettagli del mese, sotto elenchi puliti; caratteri più leggeri e il rame come accento.
 
 La voce è al **«tu»** anche per i clienti ([DESIGN.md](DESIGN.md)).
 
 Prossimi passi:
-- **Rifinitura estetica delle schermate interne:** ticket nuovo e libero. Le funzioni convincono l'utente, l'estetica meno: si porta dentro la luce della pagina d'accesso.
-- **Collaboratore di ƎE:** ticket rivendicato, con cinque domande pronte.
+- **Collaboratore di ƎE:** ticket rivendicato, con cinque domande pronte; si aspettano le risposte.
+- **Prova su iPhone**, quando l'utente vuole.
+- Facoltativo, solo se l'utente lo chiede: rivedere lo spazio dell'operatore con le regole della rifinitura (mappa, «Non ancora specificato»).
 - Promemoria dell'utente (23/10/2026): Animate UI e Watermelon UI si valutano all'architettura, in [ARCHITECTURE.md](ARCHITECTURE.md), «Da valutare al passo 7»; nessuna installazione prima.
-- Dopo: email e SMS (aspettano il parere sul nome), ricevute stampate, testi dell'interfaccia, componenti, rifinitura di interazioni e dati limite, revisione dell'accessibilità, pacchetto per il controllo B (mappa, «Non ancora specificato»).
+- Dopo: email e SMS (aspettano il parere sul nome), ricevute stampate, testi dell'interfaccia, componenti, interazioni e dati limite, revisione dell'accessibilità, pacchetto per il controllo B (mappa, «Non ancora specificato»).
 
 **Prototipi pubblicati** (pagine private dell'utente, usa e getta). Il sorgente sta nella cartella temporanea della sessione e si perde; una sessione nuova può leggerli con lo strumento Artifact, azione «read». Servono come riferimento di stile e non entrano nel repository.
 - Direzioni, primo giro: https://claude.ai/artifact/3qFHoy8XyHydtvetDPosmU
@@ -22,8 +24,26 @@ Prossimi passi:
 - Schermate del proprietario: https://claude.ai/artifact/4iSZ4Mpb8k691WVQwnrUVR
 - Schermate dell'inquilino: https://claude.ai/artifact/PB8wRY5NZT2jgYndnJLn2v
 - Accesso, tessera e situazioni comuni (versione 5): https://claude.ai/artifact/3LkcGCmp2P4SNpVAFbP92s. Le immagini della stanza e della tessera, generate dall'utente con ChatGPT, sono pubblicate con la pagina in WebP; gli originali sono nelle cartelle Drive dell'utente.
+- Rifinitura delle case di inquilino e proprietario (versione 2, «via di mezzo» approvata): https://claude.ai/artifact/9CQ4BtLZxYXJRBKiEfpZGj. Con «Prima», i due «dopo» scartati e la «via di mezzo»; il livello delle ombre di foglie è ricavato dalla stanza dell'accesso.
 
 Prodotto: **Connetto**, nome di lavoro in attesa del parere sul marchio. Non c'è codice applicativo; architettura e stack non sono decisi.
+
+## Fatto (24 ottobre 2026, rifinitura estetica)
+- Ticket [Rifinitura estetica delle schermate interne](.scratch/design-percorso-1/issues/13-rifinitura-estetica.md) rivendicato e chiuso, con le skill `prototype` (ramo UI), `grilling`, `emil-design-eng` e `apple-design`, in due giri. Letti con lo strumento Artifact i prototipi di accesso, inquilino e proprietario. Le case approvate sono state fotografate nel browser per avere il «prima».
+- Decisioni dell'utente, una alla volta:
+  - *in cima alla casa:* consigliata la casa ridisegnata. L'utente ha voluto provare anche la «stanza in cima» e ha guardato tutte e due;
+  - *riscontro sul primo giro:* la casa ridisegnata è «veramente carina e bella», ma ha troppe cose che distraggono chi ha poca familiarità con il computer. Il chiaro era più scuro di prima e i dettagli del canone erano finiti in disparte. L'utente ha chiesto una via di mezzo con la scheda del «prima»;
+  - *via di mezzo* approvata: «così va bene, perfetto»;
+  - *tre regole che cambiano*, confermate insieme sull'opzione consigliata: dettagli del mese nel riquadro in cima, icone senza cerchi, fatti senza riquadri. Valgono per tutte le schermate interne dei clienti.
+- Verifiche:
+  - nel Chromium disponibile a 360, 390, 768, 900, 1024, 1180 e 1366 px, in chiaro e in scuro, con due schermate e tutte le versioni (84 combinazioni al primo giro, 112 al secondo). La pagina è stata ricaricata ogni volta e la schermata aperta verificata. Nessun pulsante fuori dal riquadro, nessuno scorrimento orizzontale, nessun errore;
+  - il controllo ha trovato un difetto vero (righe toccabili 12 px oltre il loro elenco), poi corretto. Su copie rotte apposta trova pulsanti fuori riquadro, scorrimento laterale e schermata sbagliata;
+  - contrasti misurati con la formula WCAG, tutti sopra 4,5:1. Il rame sulle ombre della stanza era a 3,8:1 ed è stato scurito.
+  - Lezione: il livello delle foglie dentro il disegno usciva dai bordi del disegno senza essere visibile, perché ritagliato. Il controllo ora ignora gli elementi interni ai disegni, che sono ritagliati, e continua a controllare i loro contenitori.
+- Regole in [DESIGN.md](DESIGN.md): nuova sezione «Rifinitura delle schermate interne (percorso 1)». Cambiate, non cancellate: «La casa in cima», «Illustrazione della casa» e le icone in «Forme». Aggiunta un'indicazione dell'utente: la bellezza non deve mettere in disparte le informazioni. Rimandi nelle sezioni di proprietario e inquilino.
+- Mappa: la decisione è in «Decisioni finora». Lo spazio dell'operatore con le stesse regole resta nel «Non ancora specificato», solo se l'utente lo chiede.
+- Nessun termine nuovo nel glossario. Nessun conflitto con la specifica né con i punti fermi: cambia l'aspetto, non i contenuti.
+- Non applicabili: build, test e revisione OCR (non c'è codice applicativo; il programma `ocr` non è nell'ambiente).
 
 ## Fatto (23 ottobre 2026, accesso e tessera)
 - Ticket [Accesso, adesione e situazioni comuni](.scratch/design-percorso-1/issues/12-accesso-e-situazioni-comuni.md) rivendicato e chiuso nella stessa sessione, con le skill `prototype` e `grilling`, in cinque giri. Si è partiti dal prototipo dell'inquilino.
@@ -236,13 +256,12 @@ Prodotto: **Connetto**, nome di lavoro in attesa del parere sul marchio. Non c'�
 Le domande aperte sono nei ticket della mappa; prezzo, periodicità e trattenuta della quota dal canone in «Prezzo e condizioni dell'adesione». I fatti che conosce solo l'agenzia sono nel ticket «Fatti dall'agenzia ƎE»; i dubbi rimasti sono nei sei chiarimenti da mandare al collaboratore.
 
 ## Prossimo passo
-1. **«Rifinitura estetica delle schermate interne»** nella mappa del design: messaggio in [START_HERE.md](START_HERE.md). Prima e dopo dietro un selettore, partendo dalla casa dell'inquilino e del proprietario.
-2. **Il collaboratore di ƎE** risponde alle cinque domande (ticket rivendicato); la quinta decide le ricevute dell'inquilino.
-3. **Parere sul nome Connetto**, prima di email, SMS e scritta del nome.
-4. Quando l'utente vuole: «Prova su iPhone», da fare ora anche sulla pagina d'accesso, sul codice proposto sopra la tastiera e sull'animazione del benvenuto.
-5. Prima del pilota: «Prezzo e condizioni dell'adesione», con rimborso e periodicità della disdetta; i pareri di PRODUCT.md §10.10.
+1. **Il collaboratore di ƎE** risponde alle cinque domande (ticket rivendicato); la quinta decide le ricevute dell'inquilino. Messaggio in [START_HERE.md](START_HERE.md).
+2. **Parere sul nome Connetto**, prima di email, SMS e scritta del nome.
+3. Quando l'utente vuole: «Prova su iPhone», anche sulla pagina d'accesso, sul codice proposto sopra la tastiera, sull'animazione del benvenuto e ora sulla casa rifinita.
+4. Prima del pilota: «Prezzo e condizioni dell'adesione», con rimborso e periodicità della disdetta; i pareri di PRODUCT.md §10.10.
 
 Messaggi per le prossime sessioni in [START_HERE.md](START_HERE.md).
 
 ## Ultima verifica
-23/10/2026, sera, accesso e tessera: `python3 tools/check_setup.py` dà integrità OK. Link locali di PRODUCT.md, GLOSSARY.md, STATUS.md, START_HERE.md, DESIGN.md, assets/marchio/README.md, della mappa del design con i suoi ticket e di «Prezzo e condizioni dell'adesione»: nessuno rotto. Frontiera calcolata dai file dei ticket: liberi «Rifinitura estetica delle schermate interne», «Prova su iPhone» e «Parere di un consulente in marchi sul nome Connetto» (compito per l'utente); «Il collaboratore di ƎE guarda lo spazio dell'operatore» è rivendicato. Non applicabili: build, test, revisione OCR (non c'è codice applicativo). Programmi facoltativi assenti nell'ambiente cloud: `ocr`, `playwright-cli`; Chromium c'è.
+24/10/2026, rifinitura estetica: `python3 tools/check_setup.py` dà integrità OK. Link locali di PRODUCT.md, GLOSSARY.md, STATUS.md, START_HERE.md, DESIGN.md, della mappa del design e dei suoi ticket: nessuno rotto. Frontiera calcolata dai file dei ticket: liberi «Prova su iPhone» e «Parere di un consulente in marchi sul nome Connetto» (compito per l'utente); «Il collaboratore di ƎE guarda lo spazio dell'operatore» è rivendicato. Prototipo controllato in Chromium (vedi «Fatto (24 ottobre 2026, rifinitura estetica)»). Non applicabili: build, test, revisione OCR (non c'è codice applicativo). Programmi facoltativi assenti nell'ambiente cloud: `ocr`, `playwright-cli`; Chromium c'è.

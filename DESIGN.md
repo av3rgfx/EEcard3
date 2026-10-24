@@ -2,7 +2,7 @@
 
 ## Stato
 Direzione del percorso 1 approvata dall'utente il 23/10/2026: **«Terracotta»** (sezione «Direzione del percorso 1»). Non si eredita alcun layout, menu, palette, font o componente da tentativi precedenti: il design si progetta da zero (vedi [docs/METODO.md](docs/METODO.md), passo 6).
-Il design del percorso 1 è in corso dal 23/10/2026 nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md): ora si disegna il percorso intero in questa direzione. Le schermate per ruolo e quelle comuni sono approvate; la prossima è la rifinitura estetica delle schermate interne, che porta dentro la luce della pagina d'accesso. Le scelte arrivano qui man mano che l'utente le conferma.
+Il design del percorso 1 è in corso dal 23/10/2026 nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md): ora si disegna il percorso intero in questa direzione. Le schermate per ruolo e quelle comuni sono approvate. Dal 24/10/2026 è approvata anche la rifinitura estetica delle schermate interne dei clienti, la «via di mezzo» (sezione «Rifinitura delle schermate interne (percorso 1)»). Le scelte arrivano qui man mano che l'utente le conferma.
 
 ## Riferimento confermato dall'utente
 - Le **Apple Human Interface Guidelines** sono il riferimento di design più importante (16/10/2026), adattate alla piattaforma effettiva. Sintesi e fonti: [docs/rules/APPLE_DESIGN.md](docs/rules/APPLE_DESIGN.md). In caso di dubbio si rilegge la pagina ufficiale del componente.
@@ -14,6 +14,7 @@ Riscontri dati dall'utente su proposte precedenti, riformulati come principi. Va
 - Il desktop va progettato con la stessa cura del telefono; un telefono allargato è risultato «trascurato e grezzo».
 - Una schermata senza nulla da fare non deve restare vuota: deve mostrare qualcosa di utile.
 - Interfaccia di qualità alta, calma e facile anche per chi ha poca familiarità digitale.
+- La bellezza non deve mettere in disparte le informazioni (24/10/2026): una versione «veramente carina» è stata rivista perché aveva troppe cose che distraggono chi ha poca familiarità con il computer, era più scura del bianco di prima e lasciava in secondo piano i dettagli del canone.
 - Email (19/10/2026): innovative e dinamiche, semplici ma d'impatto, mai con l'aria di spam o pubblicità. È un requisito; la forma si progetta nel passo 6 di [docs/METODO.md](docs/METODO.md).
 
 ## Piattaforme
@@ -57,8 +58,11 @@ Scelta dall'utente il 23/10/2026: **«Terracotta»**, dopo tre giri di prototipo
   - *Desktop:* il servizio sta in un grande pannello arrotondato su un fondo neutro. A sinistra la barra laterale con simbolo e nome, le sezioni, «Le mie case» e in fondo la persona; in cima la ricerca.
   - *Telefono:* un'intestazione con il simbolo e le iniziali della persona, il contenuto in colonna e le schede in basso. Per i clienti sono cinque: Casa, Ricevute, Tessera, Documenti e Profilo (cambiato il 23/10/2026: prima erano quattro, senza Tessera; vedi «Accesso, tessera e situazioni comuni»). Per l'operatore sono quattro: Coda, Case, Persone e Oggi. La barra delle schede è traslucida, con una versione opaca quando si chiede più contrasto.
   - *Operatore:* elenco e dettaglio, affiancati sul desktop e in fila sul telefono, con Indietro. In cima «Trova cliente o casa» e tre numeri del giorno: voci in coda, incassi, registrato oggi.
-- **La casa in cima.** La pagina della casa si apre con un riquadro. Contiene l'illustrazione della casa in grande, come la foto di un annuncio, con l'indirizzo in un'etichetta; accanto sul desktop, sotto sul telefono, un titolo che dice il fatto del mese («Ottobre: il canone è pagato»), le caratteristiche in etichette e la cosa da fare con un solo pulsante. Sotto ci sono i fatti in riquadri con icona (canone, oneri, prossima scadenza, inquilino), poi il mese con canone e consegna su righe distinte, e le scorciatoie.
-- **Illustrazione della casa, non foto** (decisione dell'utente del 23/10/2026: nessun cambio alla specifica, nessun lavoro in più per ƎE, nessun interno di una casa abitata). Ogni casa ha una facciata disegnata, diversa da casa a casa e sempre presente, ricavata da dati che la piattaforma ha già. Compare in piccolo anche nelle righe dell'operatore e nell'email, dove è solo decorazione e il fatto resta testo. Nel prototipo era un palazzo con i portici: lo stile va adattato alle case di ƎE (*da verificare*). Chi la genera e come è una domanda dell'architettura.
+- **La casa in cima.** La pagina della casa si apre con un riquadro. Contiene l'illustrazione della casa in grande, come la foto di un annuncio, con l'indirizzo in un'etichetta; accanto sul desktop, sotto sul telefono, un titolo che dice il fatto del mese («Ottobre: il canone è pagato») e la cosa da fare con un solo pulsante.
+  - *Cambiato dall'utente il 24/10/2026* (ticket [Rifinitura estetica delle schermate interne](.scratch/design-percorso-1/issues/13-rifinitura-estetica.md)): nel riquadro entrano anche i dettagli del mese, cioè importo, canone, oneri, totale e dove pagare per l'inquilino, canone e consegna con stato e importo per il proprietario. Il contratto è una riga di testo. Sotto il riquadro i fatti della casa sono un elenco semplice e le scorciatoie un elenco pulito (vedi «Rifinitura delle schermate interne»).
+  - *Prima:* nel riquadro le caratteristiche stavano in etichette a pillola; sotto c'erano i fatti in riquadri con icona (canone, oneri, prossima scadenza, inquilino), poi il mese con canone e consegna su righe distinte, e le scorciatoie, ciascuno nel suo riquadro. *Motivo del cambio:* l'utente vuole i dettagli del canone insieme alla casa, dove si guarda per primo, e meno riquadri dello stesso peso.
+- **Illustrazione della casa, non foto** (decisione dell'utente del 23/10/2026: nessun cambio alla specifica, nessun lavoro in più per ƎE, nessun interno di una casa abitata). Ogni casa ha una facciata disegnata, diversa da casa a casa e sempre presente, ricavata da dati che la piattaforma ha già. Compare in piccolo anche nelle righe dell'operatore e nell'email, dove è solo decorazione e il fatto resta testo. Lo stile va adattato alle case di ƎE (*da verificare*). Chi la genera e come è una domanda dell'architettura.
+  - *Cambiato dall'utente il 24/10/2026:* la facciata è **ridisegnata**, con intonaco dai colori sobri, tetto, cornicione, finestre con spessore, persiane a doghe e portico con profondità. La luce viene da sinistra, come nella stanza dell'accesso: di giorno sulla facciata cadono ombre di foglie tenui, di notte alcune finestre sono accese. *Prima:* un disegno piatto a tinte piene, giudicato un po' infantile accanto alla tessera di rame.
 - **Colori, chiaro.**
   - Fondo #efedea con un alone arancio leggero; pannello e carte bianchi, con linee #ece7e2.
   - Testo #1b1714, testo secondario #5d554e.
@@ -73,8 +77,9 @@ Scelta dall'utente il 23/10/2026: **«Terracotta»**, dopo tre giri di prototipo
 - **Stati.** Pagato in verde con la spunta, in attesa nel colore d'accento, in ritardo in ambra con l'orologio, contestata in grigio corsivo con il fumetto. Sempre parola e icona, mai il solo colore. La scadenza passata dell'inquilino resta detta con calma (punti fermi).
 - **Caratteri.** Manrope per titoli e testo, con le cifre in colonna negli importi. È un carattere di Google Fonts con licenza libera dichiarata: la licenza va letta e annotata prima di usarlo nel prodotto. Nelle email si usano i caratteri di sistema ([ricerca sulle email](docs/ricerca/email-sms-forma.md)).
 - **Forme.**
-  - Pulsanti tutti a pillola (richiesta dell'utente). Carte con angoli di 20 px, riquadri interni di 14 px, ombre leggere.
-  - Icone a tratto dentro cerchi arancio tenue. Quelle del prototipo sono disegnate a mano; il set definitivo, con licenza libera, si sceglie con i componenti.
+  - Pulsanti tutti a pillola (richiesta dell'utente). Carte con angoli di 20 px, riquadri interni di 14 px, ombre leggere. Dal 24/10/2026 nelle schermate dei clienti c'è un solo riquadro per pagina, quello in cima, con angoli di 26 px (vedi «Rifinitura delle schermate interne»).
+  - Icone a tratto, senza cerchi, e solo nelle righe che portano altrove. Quelle del prototipo sono disegnate a mano; il set definitivo, con licenza libera, si sceglie con i componenti.
+    - *Cambiato dall'utente il 24/10/2026.* *Prima:* icone dentro cerchi arancio tenue in ogni riga. *Motivo:* la stessa icona nel cerchio, ripetuta in ogni riga, appesantiva le schermate.
 - **Email.** Stessa direzione: intestazione bianca con simbolo e nome, l'illustrazione della casa, il titolo con il fatto, il testo e il pulsante a pillola, senza importi.
 - *Motivo:* fra tre atmosfere ispirate alle immagini di riferimento dell'utente, è quella che preferisce. È gradevole e attira l'attenzione anche di chi ha poco interesse, restando ordinata e professionale, come chiesto («oltre che facile deve essere bello da vedere»).
 - *Evidenza:* preferenza dell'utente su prototipi con dati inventati. Non ci sono prove con persone; lo spazio dell'operatore lo guarda il collaboratore di ƎE prima del controllo B.
@@ -108,7 +113,7 @@ Approvato dall'utente il 23/10/2026 nel ticket [Schermate dell'operatore di ƎE]
 Approvate dall'utente il 23/10/2026 nel ticket [Schermate del proprietario](.scratch/design-percorso-1/issues/10-schermate-proprietario.md), che conserva le varianti scartate. Applicano «Direzione del percorso 1», i punti fermi e le larghezze di «Spazio dell'operatore».
 
 - **Le mie case.** In cima «Da fare», con una voce per cosa e un solo pulsante, ciascuna con il nome della casa. Sotto, le case con i due stati del mese, senza somme di importi. *Vista a schede* predefinita: illustrazione grande, indirizzo, inquilino e i due stati. Un **interruttore a icone** (schede, righe) in alto a destra passa alla *vista a righe*, compatta, per chi ha molte case; le icone hanno un nome per lo screen reader e la scelta resta ricordata (proposta dell'utente). Chi ha una casa sola entra direttamente nella casa.
-- **La casa.** Illustrazione con il fatto del mese e la sola cosa da fare; il mese con canone e consegna; i fatti in riquadri; scorciatoie a mesi passati, documenti e scadenze, «Chiama ƎE» e «Contesta».
+- **La casa.** Illustrazione con il fatto del mese e la sola cosa da fare; il mese con canone e consegna; i fatti in riquadri; scorciatoie a mesi passati, documenti e scadenze, «Chiama ƎE» e «Contesta». *Aspetto cambiato il 24/10/2026:* il mese con canone e consegna entra nel riquadro in cima, i fatti diventano un elenco semplice (vedi «Rifinitura delle schermate interne»).
 - **Contabile da confermare** (bonifico al proprietario).
   - Si vede la contabile caricata dall'inquilino, detta chiaramente come «prova che il bonifico è stato disposto, non che sia arrivato».
   - Poi «Vedi l'importo sul tuo conto?» con «Ricevuto».
@@ -128,7 +133,7 @@ Approvate dall'utente il 23/10/2026 nel ticket [Schermate del proprietario](.scr
 ## Schermate dell'inquilino (percorso 1)
 Approvate dall'utente il 23/10/2026 nel ticket [Schermate dell'inquilino](.scratch/design-percorso-1/issues/11-schermate-inquilino.md), che conserva le domande e le alternative. Applicano «Direzione del percorso 1», i punti fermi e le larghezze di «Spazio dell'operatore»; ripetono i modelli del proprietario dove le situazioni coincidono, così chi ha i due ruoli trova lo stesso modo di muoversi.
 
-- **La casa.** In cima l'illustrazione con il prossimo pagamento: «Novembre: paghi entro giovedì 5», l'importo in grande, canone e oneri in etichette separate. Sotto, il dovuto del mese con canone, oneri e totale su righe distinte e «Dove pagare»; accanto l'ultimo mese pagato con la sua ricevuta e le scorciatoie (ricevute, contratto e documenti, «Chiama», «Contesta», locazioni passate).
+- **La casa.** In cima l'illustrazione con il prossimo pagamento: «Novembre: paghi entro giovedì 5», l'importo in grande, canone e oneri in etichette separate. Sotto, il dovuto del mese con canone, oneri e totale su righe distinte e «Dove pagare»; accanto l'ultimo mese pagato con la sua ricevuta e le scorciatoie (ricevute, contratto e documenti, «Chiama», «Contesta», locazioni passate). *Aspetto cambiato il 24/10/2026:* il dovuto del mese e «Dove pagare» entrano nel riquadro in cima, con l'importo; sotto restano il mese scorso e le scorciatoie, come elenchi puliti (vedi «Rifinitura delle schermate interne»).
   - *Al banco:* indirizzo, orari e mezzi accettati.
   - *Bonifico:* intestatario, IBAN e causale, ognuno con «Copia», presi dalla comunicazione del luogo del pagamento. Si dice quando il canone risulta pagato: quando ƎE vede il bonifico, oppure quando il proprietario conferma.
   - *Bonifico al proprietario:* il solo pulsante in cima è «Carica la contabile».
@@ -188,12 +193,33 @@ Approvati dall'utente il 23/10/2026 nel ticket [Accesso, adesione e situazioni c
 - **Dalla schermata Home:** le viste di secondo livello hanno sempre il loro «Indietro», anche senza le barre di Safari. Le schede restano sopra l'area sicura. La guida «Connetto sulla schermata Home» è nel Profilo. Da verificare nella prova su iPhone.
 - *Evidenza:* approvazione dell'utente su prototipi con dati inventati; immagini dell'accesso e della tessera generate dall'utente. Nessuna prova con persone.
 
+## Rifinitura delle schermate interne (percorso 1)
+Approvata dall'utente il 24/10/2026 nel ticket [Rifinitura estetica delle schermate interne](.scratch/design-percorso-1/issues/13-rifinitura-estetica.md), dopo due giri di prototipo sulla casa dell'inquilino e su quella del proprietario. Il ticket conserva le versioni mostrate e i riscontri. Funzioni e testi delle schermate approvate non cambiano; cambia l'aspetto. Ambito: tutte le schermate interne di proprietari e inquilini, su telefono e desktop, in chiaro e in scuro. Lo spazio dell'operatore resta com'è finché l'utente non chiede di rivederlo.
+
+- **La «via di mezzo»** (decisione dell'utente). È la terza versione, fra le case approvate e la «casa ridisegnata» del primo giro.
+  - Il primo giro piaceva («veramente carina e bella»), ma aveva troppe cose che possono distrarre chi ha poca familiarità con il computer.
+  - Il chiaro era più scuro di prima.
+  - I dettagli del canone erano finiti in disparte.
+  - *Scartate:* la «casa ridisegnata» così com'era e la «stanza in cima». Nella seconda il fatto del mese stava sulla stanza dell'accesso e la casa diventava una miniatura, quindi tutte le case avevano la stessa cima.
+- **Bianco come prima.** Pannello e riquadro restano bianchi. La luce della pagina d'accesso entra con misura: sul computer la stanza dell'accesso fa da fondo fuori dal pannello, coperta da un velo chiaro; sul telefono se ne vede appena la luce in cima alla pagina. Il pannello non è trasparente.
+- **Un solo riquadro, in cima:** la casa ridisegnata e tutti i dettagli del mese (vedi «La casa in cima»). Sul desktop largo la foto sta a sinistra, alta quanto i dettagli; sul telefono e fino a 1120 px la foto sta sopra. Per l'inquilino «Dove pagare» è un riquadro interno tenue; il contratto è una riga di testo.
+- **Sotto, elenchi puliti:** un titolo di sezione con una riga sottile, poi righe separate da linee leggere, senza riquadri né ombre. I fatti della casa sono coppie nome e valore, senza icone. Le righe che portano altrove hanno una piccola icona a tratto e la freccia.
+- **Caratteri più leggeri.** Titolo in peso medio, con le lettere un po' più strette nei titoli grandi. Importo grande in peso medio, cifre in colonna. Testo secondario a 14,5 px invece di 13 px. Il grassetto pieno resta solo nei totali e nei nomi.
+- **Il rame come accento.** Una piccola scritta sopra il titolo, con un trattino di rame («Prossimo pagamento», «Ottobre 2026»). Nella barra laterale, in basso, c'è la tessera di rame in miniatura con il codice; porta alla scheda «Tessera». Il pulsante principale resta arancio.
+- **Colori aggiunti:** rame per il testo #97502a in chiaro (5,67:1 sul bianco caldo) e #dba47e in scuro (8,58:1); testo secondario #5d554e. Il resto della palette è quello di «Direzione del percorso 1».
+- **Scuro:** nero e grigi neutri come prima. La stanza non si usa sullo sfondo del computer; la facciata è notturna, con alcune finestre accese.
+- **Movimento:** il pulsante si abbassa appena alla pressione (scala 0,97 in 160 ms); le righe che si toccano si schiariscono al passaggio del mouse. Con il movimento ridotto non si anima nulla.
+- *Verifiche del prototipo:*
+  - Chromium a 360, 390, 768, 900, 1024, 1180 e 1366 px, in chiaro e in scuro, con le versioni a confronto: 112 combinazioni, con la pagina ricaricata e la schermata verificata ogni volta. Nessun pulsante fuori dal riquadro, nessuno scorrimento orizzontale, nessun errore.
+  - Contrasti misurati con la formula WCAG, tutti sopra 4,5:1. Si ricontrollano nella revisione dell'accessibilità.
+- *Evidenza:* preferenza dell'utente su un prototipo con dati inventati. Nessuna prova con persone.
+
 ## Componenti e token
 DA DEFINIRE dopo il primo percorso. Riutilizzare e documentare solo ciò che serve.
 
 ## Interazioni e stati
-Caricamento, vuoto, senza rete, errore e recupero del percorso 1: «Accesso, tessera e situazioni comuni» (23/10/2026). Da registrare con la rifinitura: feedback, successo, disabilitato.
+Caricamento, vuoto, senza rete, errore e recupero del percorso 1: «Accesso, tessera e situazioni comuni» (23/10/2026). Il riscontro alla pressione dei pulsanti è in «Rifinitura delle schermate interne» (24/10/2026). Da registrare con la rifinitura di interazioni e movimento: successo, disabilitato.
 Registrare comportamento mobile, tastiera, testo ingrandito e movimento ridotto.
 
 ## Decisioni confermate
-Per ogni scelta: decisione, motivo, evidenza o ipotesi, ambito e data. Finora: il riferimento Apple, il formato degli importi, il simbolo C–Legame (sezione «Identità»), i punti fermi del percorso 1 (con la voce passata al «tu»), la direzione «Terracotta» con il chiaro in vetrina, lo spazio dell'operatore, le schermate del proprietario e quelle dell'inquilino, con le ricevute in forma provvisoria; accesso, tessera digitale di rame, benvenuto, disdetta e situazioni comuni, con l'eccezione del simbolo sulla tessera (23/10/2026).
+Per ogni scelta: decisione, motivo, evidenza o ipotesi, ambito e data. Finora: il riferimento Apple, il formato degli importi, il simbolo C–Legame (sezione «Identità»), i punti fermi del percorso 1 (con la voce passata al «tu»), la direzione «Terracotta» con il chiaro in vetrina, lo spazio dell'operatore, le schermate del proprietario e quelle dell'inquilino, con le ricevute in forma provvisoria; accesso, tessera digitale di rame, benvenuto, disdetta e situazioni comuni, con l'eccezione del simbolo sulla tessera (23/10/2026); la rifinitura delle schermate interne dei clienti, la «via di mezzo», con tre regole cambiate: la casa in cima con i dettagli del mese, le icone senza cerchi e i fatti senza riquadri (24/10/2026).
