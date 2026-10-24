@@ -8,31 +8,13 @@ Il **design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6) ha una 
 - schermate del proprietario e dell'inquilino (le ricevute dell'inquilino a mesi a pillola sono provvisorie, in attesa del collaboratore di ƎE);
 - **accesso, tessera digitale e situazioni comuni**: accesso con un codice, pagina d'accesso con la tessera di rame, benvenuto animato, scheda «Tessera», disdetta da soli.
 
+Il 24/10/2026 è approvata anche la **rifinitura estetica delle schermate interne dei clienti**, la «via di mezzo»: pannello bianco, un solo riquadro in cima con la casa ridisegnata e i dettagli del mese, sotto elenchi puliti ([DESIGN.md](DESIGN.md), «Rifinitura delle schermate interne (percorso 1)»).
+
 Voce al «tu» anche per i clienti ([DESIGN.md](DESIGN.md)). Nome di lavoro **Connetto**, simbolo **C–Legame** ([assets/marchio/](assets/marchio/README.md)); il parere sul marchio è chiesto subito e il suo esito va nel ticket «Parere di un consulente in marchi sul nome Connetto».
 
-**Prima della prossima sessione:** unire in `main` la PR del branch `claude/blissful-pasteur-9poend` (promemoria sulle librerie di componenti). Se non è ancora unita, la sessione deve partire da quel branch.
+**Prima della prossima sessione:** unire in `main` la PR del branch `claude/optimistic-cannon-l0pt3t` (rifinitura estetica). Se non è ancora unita, la sessione deve partire da quel branch.
 
-**Rifinitura estetica delle schermate interne.** Messaggio:
-
----
-
-/wayfinder .scratch/design-percorso-1/map.md — ticket «Rifinitura estetica delle schermate interne» (.scratch/design-percorso-1/issues/13-rifinitura-estetica.md)
-
-Leggi AGENTS.md, STATUS.md, la mappa e il ticket. Poi DESIGN.md: «Indicazioni dell'utente», «Punti fermi del percorso 1», «Direzione del percorso 1», «Spazio dell'operatore (percorso 1)» per le larghezze, «Schermate del proprietario (percorso 1)», «Schermate dell'inquilino (percorso 1)» e «Accesso, tessera e situazioni comuni (percorso 1)». Leggi anche il ticket chiuso «Accesso, adesione e situazioni comuni», soprattutto gli ultimi commenti. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti. Il simbolo in assets/marchio/ e le immagini della stanza e della tessera di rame sono materiali dell'utente e fanno parte del progetto.
-
-- Rivendica il ticket (`Status: claimed`) prima di lavorare. Lavora solo su questo ticket, con la skill `prototype` (ramo UI); per le scelte, `grilling`; per la rifinitura, `emil-design-eng` e `apple-design`.
-- Le funzioni mi convincono, l'estetica meno: voglio le schermate interne all'altezza della pagina d'accesso. Parti dalla casa dell'inquilino e da quella del proprietario, su telefono e desktop, con «prima» e «dopo» dietro un selettore.
-- Per restare coerente leggi con lo strumento Artifact (azione «read») il prototipo dell'accesso, https://claude.ai/artifact/3LkcGCmp2P4SNpVAFbP92s, e quelli di inquilino e proprietario: i link sono in STATUS.md, «Prototipi pubblicati». Le immagini della stanza e della tessera sono pubblicate con il prototipo dell'accesso (leggile con l'azione «read» e `path`).
-- Le scelte me le fai una alla volta, in parole semplici, con una raccomandazione motivata e le conseguenze di ogni opzione. Un cambio delle regole già approvate me lo porti come scelta e va in DESIGN.md come cambiato, non cancellato.
-- Prototipo usa e getta, fuori dal repository, solo dati inventati e importi come «9.876,54 €». Chiaro per primo, poi scuro, con il tasto per nascondere i comandi.
-- Prima di mostrarmelo controllalo nel browser disponibile: a 360, 390, 768, 900, 1024, 1180 e 1366 px; che nessun pulsante esca dal suo riquadro; che la pagina non scorra di lato. Ricarica la pagina per ogni schermata e verifica che sia quella giusta (STATUS.md, lezione del 23/10). Nessuno stack scelto, nessun codice applicativo.
-- Le librerie Animate UI e Watermelon UI si valutano all'architettura (ARCHITECTURE.md, «Da valutare al passo 7»): non installarle e non copiarne il codice. Se ti mando un link di Watermelon, usalo solo come idea da ridisegnare nello stile di Connetto.
-
-Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
-
----
-
-In qualsiasi momento, con un messaggio simile cambiando nome e file: «Prova su iPhone: la piattaforma aggiunta alla schermata Home» (.scratch/design-percorso-1/issues/06-prova-iphone-schermata-home.md). Ora conviene provare anche la pagina d'accesso del prototipo, il codice proposto sopra la tastiera e l'animazione del benvenuto.
+In qualsiasi momento, con un messaggio come quelli qui sotto, cambiando nome e file: «Prova su iPhone: la piattaforma aggiunta alla schermata Home» (.scratch/design-percorso-1/issues/06-prova-iphone-schermata-home.md). Ora conviene provare anche la pagina d'accesso del prototipo, il codice proposto sopra la tastiera, l'animazione del benvenuto e la casa rifinita (https://claude.ai/artifact/9CQ4BtLZxYXJRBKiEfpZGj).
 
 **Il collaboratore di ƎE guarda lo spazio dell'operatore.** Il ticket è rivendicato: il messaggio con le cinque domande è pronto nel ticket, sotto «Commenti»; la quinta riguarda le ricevute dell'inquilino. L'utente condivide dal menu «Condividi» due pagine: il prototipo dell'operatore (https://claude.ai/artifact/8uYkEqTXrp27KWmc698JK9) e quello dell'inquilino (https://claude.ai/artifact/PB8wRY5NZT2jgYndnJLn2v). Le manda con il messaggio e, quando arrivano le risposte, incolla:
 
@@ -47,6 +29,23 @@ Leggi AGENTS.md, STATUS.md, la mappa, il ticket e, in DESIGN.md, «Spazio dell'o
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 
 Risposte del collaboratore:
+
+---
+
+## Solo se l'utente lo chiede: rifinitura dello spazio dell'operatore
+
+Le regole della rifinitura valgono per proprietari e inquilini; lo spazio dell'operatore resta com'era. Per rivederlo, prima si apre un ticket nella mappa (è nel «Non ancora specificato»). Messaggio:
+
+/wayfinder .scratch/design-percorso-1/map.md — apri e lavora un ticket «Rifinitura dello spazio dell'operatore» dal «Non ancora specificato».
+
+Leggi AGENTS.md, STATUS.md, la mappa e, in DESIGN.md, «Indicazioni dell'utente», «Spazio dell'operatore (percorso 1)» e «Rifinitura delle schermate interne (percorso 1)». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+
+- Crea il ticket (tipo `prototype`), rivendicalo e lavora solo su quello, con le skill `prototype` (ramo UI) e `grilling`.
+- Leggi con lo strumento Artifact il prototipo dell'operatore (https://claude.ai/artifact/8uYkEqTXrp27KWmc698JK9) e quello della rifinitura (https://claude.ai/artifact/9CQ4BtLZxYXJRBKiEfpZGj). Prima e dopo dietro un selettore, partendo dalla coda e da «Al banco».
+- Le scelte me le fai una alla volta, in parole semplici, con una raccomandazione motivata. Un cambio delle regole già approvate va in DESIGN.md come cambiato, non cancellato.
+- Prototipo usa e getta, fuori dal repository, solo dati inventati. Controllalo nel browser a 360, 390, 768, 900, 1024, 1180 e 1366 px, ricaricando la pagina per ogni schermata.
+
+Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 
 ---
 

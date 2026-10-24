@@ -1,7 +1,7 @@
 # Rifinitura estetica delle schermate interne
 
 Type: prototype
-Status: claimed
+Status: resolved
 Blocked by: 12
 Mappa: [Design del percorso 1](../map.md)
 
@@ -18,6 +18,24 @@ Diagnosi dell'agente, accolta dall'utente il 23/10/2026 nel ticket [Accesso, ade
 Direzione da provare: portare dentro la luce della pagina d'accesso. Fondo caldo con ombre morbide di finestra, casa disegnata meglio e illuminata dalla stessa luce, meno riquadri (uno principale, poi elenchi puliti), caratteri più leggeri, il rame come accento. Restano i punti fermi, il chiaro in vetrina, lo scuro curato allo stesso modo e i contrasti AA. Un cambio delle regole già approvate (per esempio «La casa in cima» o lo stile dell'illustrazione) si porta all'utente come scelta e si registra in [DESIGN.md](../../../DESIGN.md) come cambiato, non cancellato.
 
 Prototipo usa e getta (skill `prototype`, ramo UI) con varianti dietro un selettore, prima e dopo, solo dati inventati, controllato nel browser a 360, 390, 768, 900, 1024, 1180 e 1366 px. Utili anche `emil-design-eng` e `apple-design`. Le scelte all'utente una alla volta, in parole semplici, con una raccomandazione motivata.
+
+## Risposta (Answer)
+
+**Approvata dall'utente il 24/10/2026: la «via di mezzo»**, dopo due giri di prototipo sulla casa dell'inquilino e su quella del proprietario («così va bene, perfetto»). Regole in [DESIGN.md](../../../DESIGN.md), nella nuova sezione «Rifinitura delle schermate interne (percorso 1)».
+- *Bianco come prima:* pannello e riquadro bianchi. La luce della pagina d'accesso entra con misura: la stanza dietro il pannello sul computer, sotto un velo chiaro, e un accenno in cima sul telefono.
+- *Un solo riquadro in cima* con la casa ridisegnata e tutti i dettagli del mese; sotto, elenchi puliti.
+- *Caratteri più leggeri e il rame come accento*, con la tessera in miniatura nella barra laterale.
+
+Tre regole già approvate cambiano. L'utente le ha confermate una per una, insieme, sull'opzione consigliata; in DESIGN.md sono segnate come cambiate, non cancellate:
+1. «La casa in cima»: i dettagli del mese entrano nel riquadro con la casa, al posto delle etichette a pillola;
+2. le icone non hanno più i cerchi arancio e compaiono solo nelle righe che portano altrove;
+3. i fatti della casa sono un elenco semplice, senza riquadri né icone.
+
+Insieme cambia lo stile dell'illustrazione, che ora è una facciata ridisegnata con la luce della stanza. Le nuove regole valgono per tutte le schermate interne di proprietari e inquilini (scelta dell'utente). Lo spazio dell'operatore resta com'è finché l'utente non chiede di rivederlo.
+
+Scartate: la «casa ridisegnata» del primo giro (bella, ma con troppe cose che distraggono, più scura e con i dettagli in disparte) e la «stanza in cima» (tutte le case con la stessa cima). Il prototipo, usa e getta, resta fuori dal repository: https://claude.ai/artifact/9CQ4BtLZxYXJRBKiEfpZGj (pagina privata, versione 2, con «Prima», i due «dopo» e la «via di mezzo»).
+
+Aperti, fuori da questo ticket: rivedere lo spazio dell'operatore con le stesse regole, se l'utente lo chiede; ricontrollare i contrasti nella revisione dell'accessibilità; le condizioni d'uso delle immagini generate, già annotate.
 
 ## Commenti (Comments)
 
@@ -52,3 +70,5 @@ Nuova versione **«Via di mezzo»**, aperta per prima:
 - *Sotto la scheda,* come nei «dopo»: elenchi puliti, icone senza cerchi, caratteri più leggeri.
 
 Verifiche: 112 combinazioni (7 larghezze, 2 schermate, 4 versioni, chiaro e scuro), con la pagina ricaricata e la schermata verificata ogni volta. Nessun pulsante fuori dal riquadro, nessuno scorrimento orizzontale, nessun errore.
+
+**24/10/2026, decisione e chiusura.** L'utente approva la «via di mezzo»: «così va bene, perfetto». Domanda sulle regole che cambiano: **tutte e tre, come cambiate** (consigliato), cioè dettagli del mese nel riquadro in cima, icone senza cerchi e fatti senza riquadri, per tutte le schermate interne dei clienti. Scartate «tenere i cerchi delle icone» (torna la ripetizione che appesantiva le righe) e «solo per queste due case» (l'app avrebbe due stili insieme). Nessun termine nuovo nel glossario e nessun conflitto con la specifica: cambia l'aspetto, non i contenuti dei punti fermi.
