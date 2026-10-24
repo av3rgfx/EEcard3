@@ -133,3 +133,13 @@ Si aspetta il giudizio dell'utente: quale stile, con o senza arredi, se la vista
   - avvicinamento a letto, cucina e bagno nelle tre case, ingrandimento con la rotella, pianta 2D, «Gira»;
   - 360, 390, 768, 1024 e 1366 px, in chiaro e in scuro, e il telefono con il movimento ridotto;
   - nessuno scorrimento orizzontale, nessun errore.
+
+**24/10/2026, riscontro sulla terza versione (utente):** «Come mai lo zoom è così strano e si bugga tutto, insieme al movimento. Rimettilo come era prima.»
+- *Cause trovate:*
+  - l'ingrandimento verso il punto indicato spostava anche il centro di rotazione, per cui dopo uno zoom la casa girava attorno a un punto sbagliato;
+  - la sfumatura dei muri ricompilava i materiali a ogni fotogramma e la vista andava a scatti.
+- *Corretto nella stessa pagina* (versione 2 dell'artifact):
+  - zoom e movimento come nella seconda versione: si ingrandisce verso il centro e si gira attorno alla casa;
+  - i nomi delle stanze tornano semplici etichette;
+  - la trasparenza resta per la stanza al centro della vista, con i materiali cambiati solo quando serve e meno raggi.
+- Verificato in Chromium: zoom con la rotella in un angolo, rotazione dopo lo zoom, «Tutta la casa», 390 e 1024 px; nessun errore.

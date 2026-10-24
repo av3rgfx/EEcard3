@@ -17,7 +17,7 @@ Prossimi passi:
   - due ricerche chiuse il 24/10/2026, [come si ricava](docs/ricerca/vista-3d.md) e [come si rende](docs/ricerca/vista-3d-resa.md), con tredici decisioni dell'utente in PRODUCT.md §12;
   - [prova](.scratch/controllo-a/issues/15-prova-vista-3d.md) in due versioni. La prima (https://claude.ai/artifact/Uwav9qpKCBQNkSskEWF5nZ) legge bene le piante inventate, ma per l'utente la resa era «ancora grezza»;
   - la seconda (https://claude.ai/artifact/3XGpiR7CyEKeYAgTz91Vjr) mostra tre stili affiancati, con arredi d'esempio facoltativi; l'utente ha scelto l'isometrica illustrata (DESIGN.md, «Vista 3D indicativa (stile)») e ha chiesto che da vicino ciò che copre la stanza diventi trasparente;
-  - la terza (https://claude.ai/artifact/C2aRNbV3h59zmdQKs8z93q) è solo isometrica, con la trasparenza da vicino e i nomi delle stanze da toccare;
+  - la terza (https://claude.ai/artifact/C2aRNbV3h59zmdQKs8z93q) è solo isometrica, con la trasparenza da vicino; zoom e movimento sono tornati come nella seconda versione su richiesta dell'utente, perché «si bugga tutto»;
   - prossimo passo: il giudizio dell'utente sulla terza versione (arredi sì o no, se la vista è utile e resta nella prima versione, planimetria dei fondatori); il messaggio è in START_HERE.md.
 - Facoltativo, solo se l'utente lo chiede: rivedere lo spazio dell'operatore con le regole della rifinitura (mappa, «Non ancora specificato»).
 - Promemoria dell'utente (23/10/2026): Animate UI e Watermelon UI si valutano all'architettura, in [ARCHITECTURE.md](ARCHITECTURE.md), «Da valutare al passo 7»; nessuna installazione prima.
@@ -53,7 +53,7 @@ Prodotto: **Connetto**, nome di lavoro in attesa del parere sul marchio. Non c'�
   - giudizio dell'utente: sceglie l'isometrica illustrata e chiede la trasparenza da vicino. Lo stile è in DESIGN.md.
 - **Terza versione** (https://claude.ai/artifact/C2aRNbV3h59zmdQKs8z93q):
   - solo l'isometrica, con i muri che coprono la stanza semitrasparenti da vicino;
-  - nomi delle stanze da toccare per avvicinarsi, «Tutta la casa», ingrandimento verso il punto indicato;
+  - provati e tolti su richiesta dell'utente lo zoom verso il punto indicato e i nomi delle stanze da toccare: spostavano il centro di rotazione e la sfumatura andava a scatti. Ora lo zoom va verso il centro e la sfumatura è più leggera;
   - verificata in Chromium (tre case, 5 larghezze, chiaro e scuro, movimento ridotto): nessun errore.
 - Non è una prova su planimetrie vere. La planimetria dei fondatori arriva solo se l'utente la carica, con il loro consenso scritto.
 - Non applicabili: build, test e revisione OCR (non c'è codice applicativo; il programma `ocr` non è nell'ambiente).
