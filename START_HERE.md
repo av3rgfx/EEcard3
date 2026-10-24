@@ -14,18 +14,18 @@ Voce al «tu» anche per i clienti ([DESIGN.md](DESIGN.md)). Nome di lavoro **Co
 
 **Prima della prossima sessione:** unire in `main` la PR del branch `claude/ricerca-vista-3d` (ricerche e prova della vista 3D). Se non è ancora unita, la sessione deve partire da quel branch.
 
-**Prossimo passo: il giudizio sulla seconda versione della vista 3D.** La seconda prova mostra la stessa casa in tre stili affiancati, con arredi d'esempio facoltativi: https://claude.ai/artifact/3XGpiR7CyEKeYAgTz91Vjr. Guardala anche dal telefono, poi incolla:
+**Prossimo passo: il giudizio sulla terza versione della vista 3D.** Lo stile è scelto: l'isometrica illustrata (DESIGN.md). La terza prova la mostra con i muri che diventano trasparenti quando ci si avvicina a una stanza: https://claude.ai/artifact/C2aRNbV3h59zmdQKs8z93q. Guardala anche dal telefono, poi incolla:
 
-/wayfinder .scratch/controllo-a/map.md — ticket «Prova: vista 3D da una planimetria» (.scratch/controllo-a/issues/15-prova-vista-3d.md): il mio giudizio sulla seconda versione è in fondo a questo messaggio.
+/wayfinder .scratch/controllo-a/map.md — ticket «Prova: vista 3D da una planimetria» (.scratch/controllo-a/issues/15-prova-vista-3d.md): il mio giudizio sulla terza versione è in fondo a questo messaggio.
 
-Leggi AGENTS.md, STATUS.md, la mappa (sezione «Dopo la destinazione») e il ticket, poi in PRODUCT.md §12 le tre righe «Vista 3D indicativa» (23 e 24/10/2026) e, solo per le parti che servono, docs/ricerca/vista-3d-resa.md §6 e §7. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice o decisioni di tentativi precedenti.
+Leggi AGENTS.md, STATUS.md, la mappa (sezione «Dopo la destinazione») e il ticket, poi in PRODUCT.md §12 le tre righe «Vista 3D indicativa» (23 e 24/10/2026), in DESIGN.md «Vista 3D indicativa (stile)» e, solo per le parti che servono, docs/ricerca/vista-3d-resa.md §6 e §7. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice o decisioni di tentativi precedenti.
 
-- Registra il mio giudizio nel ticket. Le scelte che ne escono me le porti una alla volta, in parole semplici, con una raccomandazione: lo stile, gli arredi, se la vista resta nella prima versione, se si prova la planimetria dei fondatori. Lo stile scelto va in DESIGN.md, le decisioni di prodotto in PRODUCT.md §12.
-- Se serve una terza versione, è usa e getta (skill `prototype`) e la controlli a 360, 390, 768, 900, 1024, 1180 e 1366 px, in chiaro e in scuro. Nessuna planimetria vera finché non la carico io con il consenso scritto dei fondatori; niente servizi esterni.
+- Registra il mio giudizio nel ticket. Le scelte che ne escono me le porti una alla volta, in parole semplici, con una raccomandazione: gli arredi d'esempio, la trasparenza da vicino, se la vista resta nella prima versione, se si prova la planimetria dei fondatori. Le scelte visive vanno in DESIGN.md, le decisioni di prodotto in PRODUCT.md §12.
+- Se serve un'altra versione, è usa e getta (skill `prototype`) e la controlli a 360, 390, 768, 900, 1024, 1180 e 1366 px, in chiaro e in scuro. Nessuna planimetria vera finché non la carico io con il consenso scritto dei fondatori; niente servizi esterni.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 
-Il mio giudizio sulla seconda versione:
+Il mio giudizio sulla terza versione:
 
 ---
 

@@ -124,3 +124,12 @@ Si aspetta il giudizio dell'utente: quale stile, con o senza arredi, se la vista
 - Stile registrato in DESIGN.md, «Vista 3D indicativa (stile)».
 - Terza versione: solo l'isometrica, con i muri che coprono la stanza semitrasparenti da vicino. Per avvicinarsi si tocca il nome della stanza, oppure si ingrandisce con la rotella o con due dita verso il punto indicato.
 - Ancora aperti: arredi d'esempio sì o no; se la vista resta nella prima versione; la planimetria dei fondatori.
+
+**24/10/2026, terza versione costruita** (pagina usa e getta, privata): https://claude.ai/artifact/C2aRNbV3h59zmdQKs8z93q. La seconda resta per confronto.
+- Solo l'isometrica illustrata, più grande; arredi d'esempio facoltativi come prima.
+- I nomi delle stanze sono pulsanti: toccandone uno ci si avvicina alla stanza. In più c'è «Tutta la casa», e la rotella o le due dita ingrandiscono verso il punto indicato.
+- Trasparenza da vicino: oltre un certo ingrandimento si individua la stanza al centro della vista. I muri, le loro cime e i vetri che stanno tra chi guarda e quella stanza sfumano al 20% (i vetri al 12%). I muri dietro la stanza e gli arredi restano pieni; con il movimento ridotto la sfumatura è istantanea.
+- Verifiche (Chromium):
+  - avvicinamento a letto, cucina e bagno nelle tre case, ingrandimento con la rotella, pianta 2D, «Gira»;
+  - 360, 390, 768, 1024 e 1366 px, in chiaro e in scuro, e il telefono con il movimento ridotto;
+  - nessuno scorrimento orizzontale, nessun errore.
