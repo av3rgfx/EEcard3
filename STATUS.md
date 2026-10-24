@@ -1,6 +1,6 @@
 # Stato del progetto
 
-## Punto di ripresa (24 ottobre 2026, rifinitura estetica)
+## Punto di ripresa (24 ottobre 2026, prova su iPhone)
 **Fase: design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6), nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md). Approvati:
 - la direzione **«Terracotta»**, con il chiaro in vetrina;
 - lo spazio dell'operatore;
@@ -12,7 +12,7 @@ La voce è al **«tu»** anche per i clienti ([DESIGN.md](DESIGN.md)).
 
 Prossimi passi:
 - **Collaboratore di ƎE:** ticket rivendicato, con cinque domande pronte; si aspettano le risposte.
-- **Prova su iPhone**, quando l'utente vuole.
+- **Prova su iPhone:** ticket rivendicato, pagina di prova pubblicata (https://claude.ai/artifact/5ousKXbFpFsGqd5mrtcH7t) con l'elenco dei controlli nel ticket. Si aspetta il riscontro dell'utente: cosa vede, la versione di iOS e il testo della diagnosi. Poi le correzioni, una alla volta.
 - Facoltativo, solo se l'utente lo chiede: rivedere lo spazio dell'operatore con le regole della rifinitura (mappa, «Non ancora specificato»).
 - Promemoria dell'utente (23/10/2026): Animate UI e Watermelon UI si valutano all'architettura, in [ARCHITECTURE.md](ARCHITECTURE.md), «Da valutare al passo 7»; nessuna installazione prima.
 - Dopo: email e SMS (aspettano il parere sul nome), ricevute stampate, testi dell'interfaccia, componenti, interazioni e dati limite, revisione dell'accessibilità, pacchetto per il controllo B (mappa, «Non ancora specificato»).
@@ -24,9 +24,27 @@ Prossimi passi:
 - Schermate del proprietario: https://claude.ai/artifact/4iSZ4Mpb8k691WVQwnrUVR
 - Schermate dell'inquilino: https://claude.ai/artifact/PB8wRY5NZT2jgYndnJLn2v
 - Accesso, tessera e situazioni comuni (versione 5): https://claude.ai/artifact/3LkcGCmp2P4SNpVAFbP92s. Le immagini della stanza e della tessera, generate dall'utente con ChatGPT, sono pubblicate con la pagina in WebP; gli originali sono nelle cartelle Drive dell'utente.
+- Prova su iPhone (versione 1): https://claude.ai/artifact/5ousKXbFpFsGqd5mrtcH7t. Accesso con il codice, benvenuto animato, casa rifinita con le cinque schede, viste di secondo livello con «Indietro», diagnosi del telefono.
 - Rifinitura delle case di inquilino e proprietario (versione 2, «via di mezzo» approvata): https://claude.ai/artifact/9CQ4BtLZxYXJRBKiEfpZGj. Con «Prima», i due «dopo» scartati e la «via di mezzo»; il livello delle ombre di foglie è ricavato dalla stanza dell'accesso.
 
 Prodotto: **Connetto**, nome di lavoro in attesa del parere sul marchio. Non c'è codice applicativo; architettura e stack non sono decisi.
+
+## Fatto (24 ottobre 2026, prova su iPhone)
+- Ticket [Prova su iPhone: la piattaforma aggiunta alla schermata Home](.scratch/design-percorso-1/issues/06-prova-iphone-schermata-home.md) rivendicato, con la skill `mobile-native`. Letti con lo strumento Artifact i prototipi dell'accesso e della rifinitura, con le immagini.
+- Pagina di prova usa e getta, privata, solo dati inventati: https://claude.ai/artifact/5ousKXbFpFsGqd5mrtcH7t. Contiene:
+  - accesso con il campo del codice: non parte nessun messaggio;
+  - benvenuto animato;
+  - casa nella «via di mezzo» con le cinque schede fisse in basso;
+  - viste di secondo livello con «Indietro», che entrano nella cronologia del browser per provare il gesto dal bordo;
+  - una diagnosi che misura il telefono e si copia con un tocco.
+- Limite annotato nel ticket: la pagina privata gira dentro una cornice di claude.ai. Barra di stato, colore in alto, aggiunta alla schermata Home e gesto dal bordo possono dipendere da claude.ai. La diagnosi lo dirà; un indirizzo tutto della pagina richiederebbe un servizio esterno e quindi l'autorizzazione dell'utente.
+- Passi per la schermata Home presi dal manuale Apple in italiano (letto il 24/10/2026), aggiunti in [docs/ricerca/hig-web.md](docs/ricerca/hig-web.md) §15.
+- Verifiche:
+  - Chromium a 360, 390, 768, 900, 1024, 1180 e 1366 px, in chiaro e in scuro, con 11 schermate: 154 combinazioni, pagina ricaricata e schermata verificata ogni volta. Nessun elemento fuori dal riquadro o dalla finestra, nessuno scorrimento orizzontale, nessun errore;
+  - il controllo, provato su una copia rotta apposta, trova i difetti;
+  - percorsi completi con e senza movimento ridotto (codice, benvenuto, volo nella scheda, «Indietro», ritorno del browser). Corretto un difetto: titolo del benvenuto visibile durante il volo.
+- Non è ancora una prova su iPhone: l'esito arriva dall'utente. Nessuna regola di DESIGN.md cambiata.
+- Non applicabili: build, test e revisione OCR (non c'è codice applicativo; il programma `ocr` non è nell'ambiente).
 
 ## Fatto (24 ottobre 2026, rifinitura estetica)
 - Ticket [Rifinitura estetica delle schermate interne](.scratch/design-percorso-1/issues/13-rifinitura-estetica.md) rivendicato e chiuso, con le skill `prototype` (ramo UI), `grilling`, `emil-design-eng` e `apple-design`, in due giri. Letti con lo strumento Artifact i prototipi di accesso, inquilino e proprietario. Le case approvate sono state fotografate nel browser per avere il «prima».
