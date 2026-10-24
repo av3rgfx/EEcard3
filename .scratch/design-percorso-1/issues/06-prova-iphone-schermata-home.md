@@ -42,5 +42,10 @@ Compito con l'utente (HITL): l'agente prepara una pagina di prova usa e getta, p
 
 *Elenco dei controlli dato all'utente* (uno per riga, da spuntare in Safari e poi dalla schermata Home): versione di iOS; il campo email non ingrandisce la pagina; tastiera numerica e codice proposto sopra la tastiera; animazione del benvenuto fluida; schede sopra la linea in fondo e non coperte dalla barra di Safari; colore della fascia con l'ora e ora leggibile; gesto dal bordo nella ricevuta e «‹ Casa»; «Testo più grande» al massimo (riga A e resto della pagina); «Riduci movimento» (solo dissolvenza); «Riduci trasparenza» (schede piene); tema scuro; diagnosi copiata, in Safari e dalla schermata Home.
 
-*Esito:* in attesa del riscontro dell'utente, con la versione di iOS e il testo della diagnosi.
+*Esito:* in attesa del riscontro completo, con la versione di iOS e il testo della diagnosi.
+
+**24/10/2026, primo riscontro dell'utente** (iPhone, Safari, con una foto dello schermo della casa; versione di iOS non ancora indicata). «Sembra andare bene.» Un problema: la barra delle schede in basso non si vede, perché la pagina risulta troppo lunga.
+- *Osservazione dalla foto:* sotto la barra di stato c'è la barra di claude.ai («Chatta», «Condividi»), quindi la pagina è dentro la cornice. La fascia in alto ha il colore di claude.ai, non quello della pagina. In fondo alla foto si vede appena il bordo superiore della barra delle schede, tagliato dal fondo dello schermo.
+- *Inferenza dell'agente, da confermare con la diagnosi:* dentro la cornice la «finestra» della pagina è più alta della parte visibile. Le schede sono fissate al fondo di quella finestra e finiscono fuori dallo schermo. La misura «Finestra» della diagnosi, confrontata con «Schermo», lo conferma o lo smentisce. Nella piattaforma vera, aperta senza cornice, la finestra coincide con la parte visibile: questo problema non dice ancora nulla sulla piattaforma.
+- Posta all'utente la scelta su cosa fare della barra (prima correzione), con la raccomandazione di non toccare la pagina e di chiudere la prova con gli altri controlli.
 
