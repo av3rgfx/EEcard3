@@ -1,7 +1,7 @@
 # Prova: vista 3D da una planimetria
 
 Type: prototype
-Status: open
+Status: claimed
 Blocked by: 14
 Mappa: [Dalla specifica del percorso 1 al design](../map.md)
 
