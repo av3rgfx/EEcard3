@@ -143,3 +143,13 @@ Si aspetta il giudizio dell'utente: quale stile, con o senza arredi, se la vista
   - i nomi delle stanze tornano semplici etichette;
   - la trasparenza resta per la stanza al centro della vista, con i materiali cambiati solo quando serve e meno raggi.
 - Verificato in Chromium: zoom con la rotella in un angolo, rotazione dopo lo zoom, «Tutta la casa», 390 e 1024 px; nessun errore.
+
+**25/10/2026, secondo riscontro sulla terza versione (utente):**
+- Con una schermata: all'apertura il centro di rotazione era su un angolo, non al centro della casa, e girando la vista veniva tutta storta.
+- Domanda: sul telefono lo zoom con due dita c'è già; cosa si intendeva con «trascinare con due dita»?
+
+*Causa:* nella terza versione la prima inquadratura prendeva il centro di rotazione dal punto di partenza dei comandi, l'origine della pianta, invece che dal centro della casa. La seconda versione non aveva il difetto.
+
+*Corretto* (versione 3 dell'artifact): la prima inquadratura parte dal centro della casa. Verificato in Chromium sulle tre case, in scuro a 1366 px e a 390 px: la casa resta al centro del riquadro prima e dopo una rotazione (fra 0,43 e 0,55 della larghezza).
+
+*Risposta alla domanda:* «trascinare con due dita» voleva dire spostare la vista di lato, per avvicinarsi a una stanza che non è al centro. Non è stato aggiunto.
