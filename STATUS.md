@@ -1,17 +1,21 @@
 # Stato del progetto
 
-## Punto di ripresa (25 ottobre 2026, vista 3D: prova chiusa)
+## Punto di ripresa (25 ottobre 2026, testi dell'interfaccia e tessere fisiche decisi)
 **Fase: design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6), nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md). Approvati:
 - la direzione **«Terracotta»**, con il chiaro in vetrina;
 - lo spazio dell'operatore;
 - le schermate del proprietario e quelle dell'inquilino (le ricevute dell'inquilino a mesi a pillola sono provvisorie);
 - **accesso, tessera digitale e situazioni comuni** (23/10): accesso con un codice, pagina d'accesso con la tessera di rame, benvenuto animato, scheda «Tessera», disdetta da soli;
-- dal 24/10 la **rifinitura estetica delle schermate interne dei clienti**, la «via di mezzo». Pannello bianco, un solo riquadro in cima con la casa ridisegnata e i dettagli del mese, sotto elenchi puliti; caratteri più leggeri e il rame come accento.
+- dal 24/10 la **rifinitura estetica delle schermate interne dei clienti**, la «via di mezzo». Pannello bianco, un solo riquadro in cima con la casa ridisegnata e i dettagli del mese, sotto elenchi puliti; caratteri più leggeri e il rame come accento;
+- dal 25/10 i **testi dell'interfaccia** ([DESIGN.md](DESIGN.md), «Testi dell'interfaccia (percorso 1)»): «in agenzia», «tu» anche nei titoli, frasi senza genere, «entro» per il canone, «Spese», titolo «Mese: il fatto».
+
+Dal 25/10 è decisa anche la **tessera fisica del pilota** ([PRODUCT.md](PRODUCT.md) §12): plastica con lamina arancione, chip DESFire EV3 spento, solo un codice suo, consegna in agenzia.
 
 La voce è al **«tu»** anche per i clienti ([DESIGN.md](DESIGN.md)).
 
 Prossimi passi:
-- **Prossima sessione, scelta dall'utente (25/10/2026):** [Testi dell'interfaccia del percorso 1](.scratch/design-percorso-1/issues/14-testi-interfaccia.md), con in parallelo la [ricerca sulle tessere fisiche](.scratch/controllo-a/issues/12-ricerca-tessere-fisiche.md) affidata a un agente in background. Il messaggio è in START_HERE.md.
+- **Prossima sessione, proposta:** dati limite e revisione dell'accessibilità del percorso 1, dal «Non ancora specificato» della mappa (skill `break-ui` e `accessibility-audit`). Il messaggio è in START_HERE.md; l'utente può scegliere altro.
+- **Preventivo delle tessere:** la richiesta è pronta nel ticket [Ricerca: tessere fisiche](.scratch/controllo-a/issues/12-ricerca-tessere-fisiche.md); la manda l'utente o ƎE. Con le risposte si decidono quantità, lamina e campione.
 - **Collaboratore di ƎE:** ticket rivendicato, con cinque domande pronte; si aspettano le risposte. L'utente incontra il collaboratore la sera del 25/10/2026: porta le cinque domande e i sei chiarimenti di ƎE, e chiede una piantina per la vista 3D.
 - **Prova su iPhone:** ticket rivendicato, pagina di prova pubblicata (https://claude.ai/artifact/5ousKXbFpFsGqd5mrtcH7t) con l'elenco dei controlli nel ticket. Primo riscontro: «sembra andare bene», ma la barra delle schede finisce sotto lo schermo dentro la cornice di claude.ai. Scelta dell'utente (A): la pagina resta com'è. Schede sopra l'area sicura, colore in alto, schermata Home e gesto dal bordo si verificano sulla prima versione della piattaforma. In pausa dal 24/10/2026 per scelta dell'utente («ci penseremo poi»): restano gli altri controlli, la versione di iOS e la diagnosi.
 - **Vista 3D indicativa:**
@@ -20,7 +24,7 @@ Prossimi passi:
   - esito buono, ma la vista entra nella prima versione solo dopo la [prova su una planimetria vera dei fondatori](.scratch/controllo-a/issues/17-prova-planimetria-fondatori.md), che aspetta il caricamento con il loro consenso scritto. In pausa dal 25/10/2026: l'utente chiede una piantina al collaboratore di ƎE; deve essere di una casa dei fondatori o del collaboratore, non di un cliente. Il messaggio è in START_HERE.md.
 - Facoltativo, solo se l'utente lo chiede: rivedere lo spazio dell'operatore con le regole della rifinitura (mappa, «Non ancora specificato»).
 - Promemoria dell'utente (23/10/2026): Animate UI e Watermelon UI si valutano all'architettura, in [ARCHITECTURE.md](ARCHITECTURE.md), «Da valutare al passo 7»; nessuna installazione prima.
-- Dopo: email e SMS (aspettano il parere sul nome), ricevute stampate, testi dell'interfaccia, componenti, interazioni e dati limite, revisione dell'accessibilità, pacchetto per il controllo B (mappa, «Non ancora specificato»).
+- Dopo: email e SMS (aspettano il parere sul nome), ricevute stampate, componenti, interazioni, pacchetto per il controllo B (mappa, «Non ancora specificato»). Il totem in agenzia, con wallet e pagamenti, resta dopo la prima versione.
 
 **Prototipi pubblicati** (pagine private dell'utente, usa e getta). Il sorgente sta nella cartella temporanea della sessione e si perde; una sessione nuova può leggerli con lo strumento Artifact, azione «read». Servono come riferimento di stile e non entrano nel repository.
 - Direzioni, primo giro: https://claude.ai/artifact/3qFHoy8XyHydtvetDPosmU
@@ -31,8 +35,24 @@ Prossimi passi:
 - Accesso, tessera e situazioni comuni (versione 5): https://claude.ai/artifact/3LkcGCmp2P4SNpVAFbP92s. Le immagini della stanza e della tessera, generate dall'utente con ChatGPT, sono pubblicate con la pagina in WebP; gli originali sono nelle cartelle Drive dell'utente.
 - Prova su iPhone (versione 1): https://claude.ai/artifact/5ousKXbFpFsGqd5mrtcH7t. Accesso con il codice, benvenuto animato, casa rifinita con le cinque schede, viste di secondo livello con «Indietro», diagnosi del telefono.
 - Rifinitura delle case di inquilino e proprietario (versione 2, «via di mezzo» approvata): https://claude.ai/artifact/9CQ4BtLZxYXJRBKiEfpZGj. Con «Prima», i due «dopo» scartati e la «via di mezzo»; il livello delle ombre di foglie è ricavato dalla stanza dell'accesso.
+- Titolo del mese e date, «Prima / Dopo» (25/10/2026, «Dopo» scelto): https://claude.ai/artifact/2A1w9suz98aQk9YDkTCsNv. I prototipi precedenti mostrano ancora i testi di prima: valgono le regole di DESIGN.md.
 
 Prodotto: **Connetto**, nome di lavoro in attesa del parere sul marchio. Non c'è codice applicativo; architettura e stack non sono decisi.
+
+## Fatto (25 ottobre 2026, testi dell'interfaccia e tessere fisiche)
+- Ticket [Testi dell'interfaccia del percorso 1](.scratch/design-percorso-1/issues/14-testi-interfaccia.md) rivendicato e chiuso, con le skill `ux-writing`, `grilling` e `domain-modeling`.
+  - Inventario: letti con lo strumento Artifact i cinque prototipi approvati; ogni schermata e variante aperta nel browser e il testo raccolto, con le etichette per lo screen reader (44 schermate). Dieci punti trovati, elencati nel ticket.
+  - Nove scelte dell'utente, una alla volta, tutte sull'opzione consigliata: «in agenzia» invece di «al banco» per i clienti; frasi senza genere, con ruolo e saluti nella forma scelta dalla persona in agenzia; il servizio dà del «tu» anche nei titoli («Le tue case», «Chiedi il codice»); «entro» per il canone, «scadenza» solo per la locazione; «Spese» per gli oneri accessori; titolo del mese «Mese: il fatto» e date per intero, scelto dopo un confronto «Prima / Dopo» (https://claude.ai/artifact/2A1w9suz98aQk9YDkTCsNv); stati fissi della consegna con «Consegnata»; «Case dove abitavi»; «conferma della disdetta».
+  - Correzioni dell'agente, elencate in DESIGN.md: «Ti aiutiamo» (prima persona), «dal ottobre 2026», «il conto finale lo fa ƎE» (non è nella specifica).
+  - Registrato in [DESIGN.md](DESIGN.md), nuova sezione «Testi dell'interfaccia (percorso 1)», con i segni di cambio nelle righe toccate; [GLOSSARY.md](GLOSSARY.md): «Consegna» con gli stati, nuovi «Oneri accessori», «Contabile», «Ricevuta»; [PRODUCT.md](PRODUCT.md) §12: la forma con cui rivolgersi alla persona.
+- Ticket [Ricerca: tessere fisiche](.scratch/controllo-a/issues/12-ricerca-tessere-fisiche.md) rivendicato; ricerca con la skill `research`, affidata a un agente in background: [docs/ricerca/tessere.md](docs/ricerca/tessere.md). Nessun ordine, preventivo, account o contatto con fornitori.
+  - Controllo a campione sulle fonti originali (GCARD, Metaliccards, Posta Ordinaria, art. 59 del Codice del consumo): tutto confermato.
+  - Decisioni dell'utente: tessera fisica nel pilota per proprietari e inquilini (consigliata); in plastica con **lamina metallica arancione**, «rame stampato assolutamente no» (era consigliato dall'agente); se la lamina costa troppo, altre soluzioni come la plastica a colore fisso. In PRODUCT.md §12.
+  - Alla terza domanda (nome o solo codice) l'utente ha chiesto la funzione contactless fin da subito, per un futuro totem in agenzia aperto 24 ore su 24, e uno studio prima di cercare fornitori. Aperto il ticket [Ricerca: tessera contactless, wallet e totem in agenzia](.scratch/controllo-a/issues/18-ricerca-tessera-contactless-totem.md), con un agente in background. Conflitto segnalato all'utente: la tessera che apre i dati da sola e i pagamenti al totem toccano tre decisioni confermate (§5.6, T6, Controllo A); il chip da solo no.
+  - Ricerca [contactless, wallet e totem](docs/ricerca/tessera-contactless.md), affidata a un secondo agente. Controllo a campione: NXP su MIFARE Classic, Apple sui pass NFC, foglio LIS Pay dei tabaccai confermati; il prezzo Carteplastiche della DESFire EV1 2K è incoerente nella pagina (310 € o 160 € per 100), annotato come da verificare.
+  - Altre decisioni, una alla volta: chip contactless sicuro spento nel pilota; MIFARE DESFire EV3; niente chip a contatto né lettore che trattiene la tessera; come si paga al totem, secondo passaggio e wallet rimandati al totem; solo il codice, niente nome né ruolo, stampa del fornitore a lotti; un codice per tessera, diverso dalla digitale; niente spedizione nel pilota; quantità col preventivo. Tutte sull'opzione consigliata, salvo il materiale e due rinvii scelti dall'utente (come si paga al totem, quantità).
+  - Due ticket chiusi; richiesta di preventivo pronta da copiare nel ticket 12. Aggiornati PRODUCT.md §12 («Tessera fisica nel pilota»), GLOSSARY.md («Tessera»: un codice per tessera), DESIGN.md (riga della tessera fisica nella scheda «Tessera» e «Collega una tessera» per l'operatore, scelta ragionevole dell'agente), la mappa del controllo A.
+- Non applicabili: build, test e revisione OCR (non c'è codice applicativo; il programma `ocr` non è nell'ambiente).
 
 ## Fatto (25 ottobre 2026, chiusura della prova della vista 3D)
 - Terza versione corretta su riscontro dell'utente:

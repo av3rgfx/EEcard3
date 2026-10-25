@@ -11,7 +11,7 @@ La partecipazione di una persona al servizio dell'agenzia, con condizioni propri
 _Da evitare_: abbonamento (fa pensare solo a chi paga), iscrizione, tessera (ne è il segno)
 
 **Tessera**:
-Il segno riconoscibile dell'adesione, digitale o fisico. Non autentica, non paga e non dà accesso ai dati: il suo codice serve solo all'operatore per trovare il cliente.
+Il segno riconoscibile dell'adesione, digitale o fisico. Non autentica, non paga e non dà accesso ai dati. Ogni tessera ha un codice suo, collegato all'adesione, che serve solo all'operatore per trovare il cliente; una tessera bloccata non cambia l'adesione.
 _Da evitare_: carta (si confonde con la carta di pagamento), badge
 
 ### Servizio
@@ -64,12 +64,24 @@ _Da evitare_: accesso a pagamento, pubblicazione
 L'importo che l'inquilino deve per un mese di locazione, con le sue versioni. È pagato quando chi è incaricato di riceverlo lo ha ricevuto: l'agenzia, se il proprietario l'ha indicata, oppure il proprietario.
 _Da evitare_: affitto (indica la locazione), rata, mensilità
 
+**Oneri accessori**:
+Le spese della casa che il contratto mette a carico dell'inquilino oltre al canone, pagate ogni mese in acconto insieme al canone; il conto finale si fa a parte. Nelle schermate per i clienti si chiamano «spese».
+_Da evitare_: oneri (da solo), spese condominiali (non sempre esatto)
+
+**Contabile**:
+Il documento della banca che dice che un bonifico è stato disposto. È una prova, non un incasso verificato: il canone è pagato quando chi lo riceve conferma.
+_Da evitare_: ricevuta del bonifico, ricevuta
+
+**Ricevuta**:
+Il documento che chi incassa il canone rilascia a chi paga, preparato dalla piattaforma e firmato da ƎE; si corregge solo annullandola o sostituendola. Fuori dal denaro la parola compare solo nel nome ufficiale «ricevuta della registrazione».
+_Da evitare_: quietanza (termine legale), ricevuta per le conferme (per esempio la conferma della disdetta)
+
 **Incasso verificato**:
 La conferma, data da chi ha ricevuto il denaro, che un importo è arrivato. Dire «ho pagato», caricare una prova o disporre un bonifico non lo sono.
 _Da evitare_: pagato (senza dire chi lo conferma), saldato
 
 **Consegna**:
-Il passaggio con cui l'agenzia dà al proprietario il canone incassato per lui, con il rendiconto. Ha stati propri, distinti da quelli del canone: da consegnare, consegnato, consegna in ritardo.
+Il passaggio con cui l'agenzia dà al proprietario il canone incassato per lui, con il rendiconto. Ha stati propri, distinti da quelli del canone: da consegnare, inviata (con bonifico, finché il proprietario non conferma di averla ricevuta), consegnata (confermata dal proprietario o firmata da lui in agenzia), in ritardo, contestata.
 _Da evitare_: rimessa, versamento, ritiro
 
 **Contestazione**:
