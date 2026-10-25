@@ -14,7 +14,21 @@ Voce al «tu» anche per i clienti ([DESIGN.md](DESIGN.md)). Nome di lavoro **Co
 
 **Prima della prossima sessione:** unire in `main` la PR del branch `claude/ricerca-vista-3d` (ricerche e prova della vista 3D). Se non è ancora unita, la sessione deve partire da quel branch.
 
-**Prossimo passo sulla vista 3D: una planimetria vera dei fondatori.** La prova con piante inventate è chiusa (stile isometrico, arredi d'esempio con l'interruttore). La vista entra nella prima versione solo se regge su una planimetria vera. Prima di incollare il messaggio, procurati il consenso scritto dei fondatori e tieni pronta la planimetria (PDF o immagine) da caricare nella sessione. Messaggio:
+**Prossima sessione, scelta dall'utente il 25/10/2026: i testi dell'interfaccia, con la ricerca sulle tessere in parallelo.** Messaggio:
+
+/wayfinder .scratch/design-percorso-1/map.md — ticket «Testi dell'interfaccia del percorso 1» (.scratch/design-percorso-1/issues/14-testi-interfaccia.md); in parallelo il ticket di ricerca «Ricerca: tessere fisiche, fornitori, personalizzazione, ordini e spedizioni» (.scratch/controllo-a/issues/12-ricerca-tessere-fisiche.md).
+
+Leggi AGENTS.md, STATUS.md, la mappa del design e i due ticket, poi GLOSSARY.md e, in DESIGN.md, «Punti fermi del percorso 1», «Voce» e le sezioni per ruolo; per le tessere anche PRODUCT.md §5.6 e la decisione «Tessera (T6)» in §12. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+
+- Prima rivendica il ticket delle tessere (`Status: claimed`) e lancia subito la ricerca con la skill `research`, affidata a un agente in background, su fonti primarie con la data di lettura, in docs/ricerca/tessere.md. Nessun ordine, preventivo, account o contatto con fornitori senza la mia autorizzazione.
+- Poi rivendica il ticket dei testi e lavora con le skill `ux-writing`, `grilling` e `domain-modeling`. Fai l'inventario dai prototipi approvati, leggendoli con lo strumento Artifact; i link sono in STATUS.md. Le scelte me le porti una alla volta, in parole semplici, con una raccomandazione motivata. Le regole vanno in DESIGN.md, i termini nuovi in GLOSSARY.md. Email, SMS, scritta del nome e ricevute stampate restano fuori: aspettano i pareri.
+- Quando la ricerca sulle tessere è pronta, rileggila, controlla a campione le fonti e portami le decisioni che emergono una alla volta.
+
+Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
+
+---
+
+**In pausa: la vista 3D su una planimetria vera.** La prova con piante inventate è chiusa (stile isometrico, arredi d'esempio con l'interruttore). La vista entra nella prima versione solo se regge su una planimetria vera. L'utente chiede una piantina al collaboratore di ƎE (25/10/2026). Deve essere di una casa dei fondatori o del collaboratore, con il consenso scritto; mai quella di un cliente. Quando la planimetria c'è, caricala nella sessione con questo messaggio: Messaggio:
 
 /wayfinder .scratch/controllo-a/map.md — ticket «Prova: la vista 3D su una planimetria vera dei fondatori» (.scratch/controllo-a/issues/17-prova-planimetria-fondatori.md): allego la planimetria; il consenso scritto dei fondatori c'è.
 

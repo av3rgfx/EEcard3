@@ -11,7 +11,8 @@
 La voce è al **«tu»** anche per i clienti ([DESIGN.md](DESIGN.md)).
 
 Prossimi passi:
-- **Collaboratore di ƎE:** ticket rivendicato, con cinque domande pronte; si aspettano le risposte.
+- **Prossima sessione, scelta dall'utente (25/10/2026):** [Testi dell'interfaccia del percorso 1](.scratch/design-percorso-1/issues/14-testi-interfaccia.md), con in parallelo la [ricerca sulle tessere fisiche](.scratch/controllo-a/issues/12-ricerca-tessere-fisiche.md) affidata a un agente in background. Il messaggio è in START_HERE.md.
+- **Collaboratore di ƎE:** ticket rivendicato, con cinque domande pronte; si aspettano le risposte. L'utente incontra il collaboratore la sera del 25/10/2026: porta le cinque domande e i sei chiarimenti di ƎE, e chiede una piantina per la vista 3D.
 - **Prova su iPhone:** ticket rivendicato, pagina di prova pubblicata (https://claude.ai/artifact/5ousKXbFpFsGqd5mrtcH7t) con l'elenco dei controlli nel ticket. Primo riscontro: «sembra andare bene», ma la barra delle schede finisce sotto lo schermo dentro la cornice di claude.ai. Scelta dell'utente (A): la pagina resta com'è. Schede sopra l'area sicura, colore in alto, schermata Home e gesto dal bordo si verificano sulla prima versione della piattaforma. In pausa dal 24/10/2026 per scelta dell'utente («ci penseremo poi»): restano gli altri controlli, la versione di iOS e la diagnosi.
 - **Vista 3D indicativa:**
   - due ricerche chiuse, [come si ricava](docs/ricerca/vista-3d.md) e [come si rende](docs/ricerca/vista-3d-resa.md);
