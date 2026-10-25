@@ -11,7 +11,7 @@ La partecipazione di una persona al servizio dell'agenzia, con condizioni propri
 _Da evitare_: abbonamento (fa pensare solo a chi paga), iscrizione, tessera (ne è il segno)
 
 **Tessera**:
-Il segno riconoscibile dell'adesione, digitale o fisico. Non autentica, non paga e non dà accesso ai dati: il suo codice serve solo all'operatore per trovare il cliente.
+Il segno riconoscibile dell'adesione, digitale o fisico. Non autentica, non paga e non dà accesso ai dati. Ogni tessera ha un codice suo, collegato all'adesione, che serve solo all'operatore per trovare il cliente; una tessera bloccata non cambia l'adesione.
 _Da evitare_: carta (si confonde con la carta di pagamento), badge
 
 ### Servizio

@@ -8,21 +8,22 @@ Il **design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6) ha una 
 - schermate del proprietario e dell'inquilino (le ricevute dell'inquilino a mesi a pillola sono provvisorie, in attesa del collaboratore di ƎE);
 - **accesso, tessera digitale e situazioni comuni**: accesso con un codice, pagina d'accesso con la tessera di rame, benvenuto animato, scheda «Tessera», disdetta da soli.
 
-Il 24/10/2026 è approvata anche la **rifinitura estetica delle schermate interne dei clienti**, la «via di mezzo»: pannello bianco, un solo riquadro in cima con la casa ridisegnata e i dettagli del mese, sotto elenchi puliti ([DESIGN.md](DESIGN.md), «Rifinitura delle schermate interne (percorso 1)»).
+Il 24/10/2026 è approvata anche la **rifinitura estetica delle schermate interne dei clienti**, la «via di mezzo» ([DESIGN.md](DESIGN.md), «Rifinitura delle schermate interne (percorso 1)»). Il 25/10/2026 sono decisi i **testi dell'interfaccia** ([DESIGN.md](DESIGN.md), «Testi dell'interfaccia (percorso 1)»: «in agenzia», «tu» anche nei titoli, frasi senza genere, «entro» per il canone, «Spese», titolo «Mese: il fatto») e la **tessera fisica del pilota** ([PRODUCT.md](PRODUCT.md) §12: lamina arancione, chip DESFire EV3 spento, solo un codice suo, consegna in agenzia).
 
-Voce al «tu» anche per i clienti ([DESIGN.md](DESIGN.md)). Nome di lavoro **Connetto**, simbolo **C–Legame** ([assets/marchio/](assets/marchio/README.md)); il parere sul marchio è chiesto subito e il suo esito va nel ticket «Parere di un consulente in marchi sul nome Connetto».
+Voce al «tu» anche per i clienti. Nome di lavoro **Connetto**, simbolo **C–Legame** ([assets/marchio/](assets/marchio/README.md)); il parere sul marchio è chiesto subito e il suo esito va nel ticket «Parere di un consulente in marchi sul nome Connetto».
 
-**Prima della prossima sessione:** unire in `main` la PR del branch `claude/ricerca-vista-3d` (ricerche e prova della vista 3D). Se non è ancora unita, la sessione deve partire da quel branch.
+**Prima della prossima sessione:** unire in `main` la PR del branch `claude/testi-interfaccia-tessere`. Se non è ancora unita, la sessione deve partire da quel branch.
 
-**Prossima sessione, scelta dall'utente il 25/10/2026: i testi dell'interfaccia, con la ricerca sulle tessere in parallelo.** Messaggio:
+**Prossima sessione, proposta dall'agente: dati limite e revisione dell'accessibilità del percorso 1.** È nel «Non ancora specificato» della mappa; l'utente può scegliere un altro passo. Messaggio:
 
-/wayfinder .scratch/design-percorso-1/map.md — ticket «Testi dell'interfaccia del percorso 1» (.scratch/design-percorso-1/issues/14-testi-interfaccia.md); in parallelo il ticket di ricerca «Ricerca: tessere fisiche, fornitori, personalizzazione, ordini e spedizioni» (.scratch/controllo-a/issues/12-ricerca-tessere-fisiche.md).
+/wayfinder .scratch/design-percorso-1/map.md — apri e lavora un ticket «Dati limite e accessibilità del percorso 1» dal «Non ancora specificato» («Rifinitura e revisione»).
 
-Leggi AGENTS.md, STATUS.md, la mappa del design e i due ticket, poi GLOSSARY.md e, in DESIGN.md, «Punti fermi del percorso 1», «Voce» e le sezioni per ruolo; per le tessere anche PRODUCT.md §5.6 e la decisione «Tessera (T6)» in §12. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+Leggi AGENTS.md, STATUS.md, la mappa e, in DESIGN.md, «Punti fermi del percorso 1», «Direzione del percorso 1», le sezioni per ruolo, «Rifinitura delle schermate interne (percorso 1)» e «Testi dell'interfaccia (percorso 1)». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
 
-- Prima rivendica il ticket delle tessere (`Status: claimed`) e lancia subito la ricerca con la skill `research`, affidata a un agente in background, su fonti primarie con la data di lettura, in docs/ricerca/tessere.md. Nessun ordine, preventivo, account o contatto con fornitori senza la mia autorizzazione.
-- Poi rivendica il ticket dei testi e lavora con le skill `ux-writing`, `grilling` e `domain-modeling`. Fai l'inventario dai prototipi approvati, leggendoli con lo strumento Artifact; i link sono in STATUS.md. Le scelte me le porti una alla volta, in parole semplici, con una raccomandazione motivata. Le regole vanno in DESIGN.md, i termini nuovi in GLOSSARY.md. Email, SMS, scritta del nome e ricevute stampate restano fuori: aspettano i pareri.
-- Quando la ricerca sulle tessere è pronta, rileggila, controlla a campione le fonti e portami le decisioni che emergono una alla volta.
+- Crea il ticket (tipo `prototype`), rivendicalo e lavora solo su quello, con le skill `break-ui` e `accessibility-audit` (WCAG 2.2 AA, come dice la mappa).
+- Leggi con lo strumento Artifact i prototipi approvati (link in STATUS.md) e prepara una pagina usa e getta con i dati peggiori (nomi lunghi, molte case, molti mesi arretrati, importi grandi, testo ingrandito), con i testi nuovi di DESIGN.md. Solo dati inventati.
+- Controllala nel browser a 360, 390, 768, 900, 1024, 1180 e 1366 px, in chiaro e in scuro, ricaricando per ogni schermata; misura i contrasti, compresi i dati incisi sulla tessera.
+- Le correzioni me le porti una alla volta, in parole semplici, con una raccomandazione motivata. Un cambio delle regole già approvate va in DESIGN.md come cambiato, non cancellato.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 
@@ -163,6 +164,24 @@ Leggi AGENTS.md, STATUS.md, la mappa `.scratch/controllo-a/map.md` e il ticket, 
 - Non scrivere codice applicativo, non scegliere lo stack, non disegnare schermate. La prova della parte 3, se si fa, è usa e getta (skill `prototype`) e non resta nel repository.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md con il messaggio per la sessione successiva, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
+
+---
+
+## Quando arrivano i preventivi delle tessere
+
+La richiesta è pronta nel ticket [Ricerca: tessere fisiche](.scratch/controllo-a/issues/12-ricerca-tessere-fisiche.md), sotto «Richiesta di preventivo»; la manda l'utente o ƎE. Quando arrivano le risposte, incollare questo messaggio con le risposte in sintesi (senza dati del fornitore che non servono):
+
+/wayfinder .scratch/controllo-a/map.md — preventivi delle tessere fisiche, ticket chiuso «Ricerca: tessere fisiche, fornitori, personalizzazione, ordini e spedizioni» (.scratch/controllo-a/issues/12-ricerca-tessere-fisiche.md): le risposte dei fornitori sono in fondo a questo messaggio.
+
+Leggi AGENTS.md, STATUS.md, il ticket, docs/ricerca/tessere.md e docs/ricerca/tessera-contactless.md (sezione 5) e in PRODUCT.md §12 la riga «Tessera fisica nel pilota». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice o decisioni di tentativi precedenti.
+
+- Confronta i preventivi con i requisiti della richiesta (chip DESFire EV3 originale, lamina arancione e antenna, codice da file, chiavi, campione) e segnala cosa manca.
+- Portami una alla volta, con una raccomandazione: fornitore, quantità (era consigliato 250), lamina o plastica a colore fisso se la lamina costa troppo, campione da ordinare. Nessun ordine o pagamento senza la mia autorizzazione esplicita.
+- Registra le decisioni in PRODUCT.md §12 e nel ticket.
+
+Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
+
+Risposte dei fornitori:
 
 ---
 
