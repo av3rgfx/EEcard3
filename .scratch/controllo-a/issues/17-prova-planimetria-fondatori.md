@@ -24,3 +24,4 @@ Come si fa:
 Pareri utili (ricerca, §8): privacy per la planimetria come dato personale; legale sul diritto d'autore del tecnico che l'ha disegnata.
 
 ## Commenti (Comments)
+**25/10/2026, in pausa:** l'utente chiederà una piantina reale al collaboratore di ƎE la sera stessa. Promemoria: deve essere la planimetria di una casa dei fondatori, o del collaboratore stesso, con il consenso scritto. Quella di un cliente di ƎE è esclusa dalla decisione del 24/10/2026 (PRODUCT.md §12, «Vista 3D indicativa: come si ricava»): servirebbero una base giuridica e il parere del DPO.

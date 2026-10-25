@@ -16,7 +16,7 @@ Prossimi passi:
 - **Vista 3D indicativa:**
   - due ricerche chiuse, [come si ricava](docs/ricerca/vista-3d.md) e [come si rende](docs/ricerca/vista-3d-resa.md);
   - [prova con piante inventate](.scratch/controllo-a/issues/15-prova-vista-3d.md) chiusa il 25/10/2026 dopo tre versioni (la terza: https://claude.ai/artifact/C2aRNbV3h59zmdQKs8z93q). Stile isometrico illustrato, in DESIGN.md; arredi d'esempio con l'interruttore. Le decisioni sono in PRODUCT.md §12;
-  - esito buono, ma la vista entra nella prima versione solo dopo la [prova su una planimetria vera dei fondatori](.scratch/controllo-a/issues/17-prova-planimetria-fondatori.md), che aspetta il caricamento con il loro consenso scritto; il messaggio è in START_HERE.md.
+  - esito buono, ma la vista entra nella prima versione solo dopo la [prova su una planimetria vera dei fondatori](.scratch/controllo-a/issues/17-prova-planimetria-fondatori.md), che aspetta il caricamento con il loro consenso scritto. In pausa dal 25/10/2026: l'utente chiede una piantina al collaboratore di ƎE; deve essere di una casa dei fondatori o del collaboratore, non di un cliente. Il messaggio è in START_HERE.md.
 - Facoltativo, solo se l'utente lo chiede: rivedere lo spazio dell'operatore con le regole della rifinitura (mappa, «Non ancora specificato»).
 - Promemoria dell'utente (23/10/2026): Animate UI e Watermelon UI si valutano all'architettura, in [ARCHITECTURE.md](ARCHITECTURE.md), «Da valutare al passo 7»; nessuna installazione prima.
 - Dopo: email e SMS (aspettano il parere sul nome), ricevute stampate, testi dell'interfaccia, componenti, interazioni e dati limite, revisione dell'accessibilità, pacchetto per il controllo B (mappa, «Non ancora specificato»).
