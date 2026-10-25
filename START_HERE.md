@@ -28,7 +28,7 @@ Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push 
 
 ---
 
-**In pausa: la vista 3D su una planimetria vera.** La prova con piante inventate è chiusa (stile isometrico, arredi d'esempio con l'interruttore). La vista entra nella prima versione solo se regge su una planimetria vera. L'utente chiede una piantina al collaboratore di ƎE (25/10/2026). Deve essere di una casa dei fondatori o del collaboratore, con il consenso scritto; mai quella di un cliente. Quando la planimetria c'è, caricala nella sessione con questo messaggio: Messaggio:
+**In pausa: la vista 3D su una planimetria vera.** La prova con piante inventate è chiusa (stile isometrico, arredi d'esempio con l'interruttore). La vista entra nella prima versione solo se regge su una planimetria vera. L'utente chiede una piantina al collaboratore di ƎE (25/10/2026). Deve essere di una casa dei fondatori o del collaboratore, con il consenso scritto; mai quella di un cliente. Quando la planimetria c'è, caricala nella sessione con questo messaggio:
 
 /wayfinder .scratch/controllo-a/map.md — ticket «Prova: la vista 3D su una planimetria vera dei fondatori» (.scratch/controllo-a/issues/17-prova-planimetria-fondatori.md): allego la planimetria; il consenso scritto dei fondatori c'è.
 
@@ -163,21 +163,6 @@ Leggi AGENTS.md, STATUS.md, la mappa `.scratch/controllo-a/map.md` e il ticket, 
 - Non scrivere codice applicativo, non scegliere lo stack, non disegnare schermate. La prova della parte 3, se si fa, è usa e getta (skill `prototype`) e non resta nel repository.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md con il messaggio per la sessione successiva, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
-
----
-
-## Prima del pilota: Ricerca sulle tessere fisiche
-
-Chiesta dall'utente il 22/10/2026; non blocca il design. Messaggio:
-
-/wayfinder .scratch/controllo-a/map.md — ticket «Ricerca: tessere fisiche, fornitori, personalizzazione, ordini e spedizioni» (.scratch/controllo-a/issues/12-ricerca-tessere-fisiche.md)
-
-Leggi AGENTS.md, STATUS.md, la mappa e il ticket, poi PRODUCT.md §5.6 e la decisione «Tessera (T6)» in §12. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice o decisioni di tentativi precedenti.
-
-- Rivendica il ticket (`Status: claimed`) prima di lavorare. Fai la ricerca con la skill `research`, su fonti primarie con la data di lettura, in docs/ricerca/tessere.md: fornitori, costi per piccole tirature, personalizzazione su richiesta, ordini e scorte, consegna al banco, ordine dalla piattaforma con spedizione a pagamento, blocco e sostituzione.
-- Nessun ordine, preventivo chiesto, account o contatto con fornitori senza la mia autorizzazione. Le decisioni che emergono me le porti una alla volta, in parole semplici.
-
-Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 
 ---
 
