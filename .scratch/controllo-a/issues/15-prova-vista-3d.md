@@ -1,7 +1,7 @@
 # Prova: vista 3D da una planimetria
 
 Type: prototype
-Status: claimed
+Status: resolved
 Blocked by: 14, 16 (chiusi)
 Mappa: [Dalla specifica del percorso 1 al design](../map.md)
 
@@ -33,6 +33,16 @@ Da misurare:
 - se i controlli di qualità scartano le piante cattive senza scartare le buone.
 
 L'utente guarda il risultato e decide. Se la prova va male, la vista 3D torna fuori dalla prima versione senza toccare il resto; se va bene, si specifica e si progetta come parte del fascicolo e si costruisce dopo il percorso 1. Va chiusa prima dell'architettura (METODO.md, passo 7); non blocca il design del percorso 1. La prova non resta nel repository: si annotano solo domanda, metodo ed esito.
+
+## Risposta (Answer)
+
+**Sulle piante inventate la prova va bene; la conferma arriva con una planimetria vera** (decisioni dell'utente del 24–25/10/2026, in [PRODUCT.md](../../../PRODUCT.md) §12, righe «Vista 3D indicativa», e in [DESIGN.md](../../../DESIGN.md), «Vista 3D indicativa (stile)»).
+- *Lettura:* ricalco e riconoscimento automatico dentro la piattaforma. Sulle versioni buone, anche a mano: muri al 100%, porte 14 su 14; il controllo di qualità ferma o manda al controllo tutte le 15 versioni rovinate.
+- *Resa:* la prima versione era «ancora grezza». Dopo la [ricerca sulla resa](16-ricerca-resa-vista-3d.md) l'utente ha scelto l'isometrica illustrata fra tre stili; da vicino i muri che coprono la stanza al centro diventano trasparenti. Zoom e rotazione restano attorno alla casa: lo zoom verso il punto indicato è stato provato e tolto, niente scorrimento con due dita.
+- *Arredi d'esempio:* sì, accesi, con l'interruttore.
+- *Prossimo passo:* [Prova: la vista 3D su una planimetria vera dei fondatori](17-prova-planimetria-fondatori.md).
+
+Pagine usa e getta: prima https://claude.ai/artifact/Uwav9qpKCBQNkSskEWF5nZ, seconda https://claude.ai/artifact/3XGpiR7CyEKeYAgTz91Vjr, terza https://claude.ai/artifact/C2aRNbV3h59zmdQKs8z93q.
 
 ## Commenti (Comments)
 
@@ -155,3 +165,5 @@ Si aspetta il giudizio dell'utente: quale stile, con o senza arredi, se la vista
 *Risposta alla domanda:* «trascinare con due dita» voleva dire spostare la vista di lato, per avvicinarsi a una stanza che non è al centro. Non è stato aggiunto.
 
 **25/10/2026, decisione dell'utente:** niente scorrimento con due dita («no, non aggiungere lo scorrimento con 2 dita, andiamo avanti»). Si guarda da vicino la stanza al centro; zoom e rotazione restano attorno alla casa.
+
+**25/10/2026, decisioni dell'utente:** arredi d'esempio sì, con l'interruttore; esito buono, conferma dopo una planimetria vera dei fondatori. Ticket chiuso.
