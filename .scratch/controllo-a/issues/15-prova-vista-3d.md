@@ -153,3 +153,5 @@ Si aspetta il giudizio dell'utente: quale stile, con o senza arredi, se la vista
 *Corretto* (versione 3 dell'artifact): la prima inquadratura parte dal centro della casa. Verificato in Chromium sulle tre case, in scuro a 1366 px e a 390 px: la casa resta al centro del riquadro prima e dopo una rotazione (fra 0,43 e 0,55 della larghezza).
 
 *Risposta alla domanda:* «trascinare con due dita» voleva dire spostare la vista di lato, per avvicinarsi a una stanza che non è al centro. Non è stato aggiunto.
+
+**25/10/2026, decisione dell'utente:** niente scorrimento con due dita («no, non aggiungere lo scorrimento con 2 dita, andiamo avanti»). Si guarda da vicino la stanza al centro; zoom e rotazione restano attorno alla casa.

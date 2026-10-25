@@ -220,7 +220,7 @@ Scelta dall'utente il 24/10/2026 nella [prova della vista 3D](.scratch/controllo
 - **Isometrica illustrata** (decisione dell'utente: «mi piace isometrica illustrata»). Vista di tre quarti senza prospettiva, colori pieni nei toni «Terracotta», contorni sottili; gira di un quarto alla volta. Muri bassi color crema con la cima color rame; pavimenti in quattro tinte per zona.
   - *Scartate:* la pianta 3D dall'alto in prospettiva e la casa delle bambole a tutta altezza.
 - **Da vicino, ciò che copre diventa trasparente** (richiesta dell'utente, 24/10/2026). Quando ci si avvicina molto a una stanza, i muri tra chi guarda e la stanza diventano semitrasparenti. In prova nella terza versione (https://claude.ai/artifact/C2aRNbV3h59zmdQKs8z93q): ingrandendo, i muri che coprono la stanza al centro sfumano al 20%.
-- **Zoom e movimento semplici** (richiesta dell'utente, 24/10/2026): si ingrandisce verso il centro e si gira sempre attorno alla casa. Lo zoom verso il punto indicato e lo spostamento toccando il nome di una stanza sono stati provati e tolti: rendevano strani zoom e rotazione.
+- **Zoom e movimento semplici** (richiesta dell'utente, 24/10/2026): si ingrandisce verso il centro e si gira sempre attorno alla casa. Lo zoom verso il punto indicato e lo spostamento toccando il nome di una stanza sono stati provati e tolti: rendevano strani zoom e rotazione. Niente scorrimento di lato con due dita (decisione dell'utente, 25/10/2026).
 - *Evidenza:* preferenza dell'utente su un prototipo con dati inventati. Nessuna prova con persone.
 
 ## Componenti e token
