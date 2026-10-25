@@ -1,6 +1,6 @@
 # Stato del progetto
 
-## Punto di ripresa (24 ottobre 2026, vista 3D: ricerche e prova)
+## Punto di ripresa (25 ottobre 2026, vista 3D: prova chiusa)
 **Fase: design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6), nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md). Approvati:
 - la direzione **«Terracotta»**, con il chiaro in vetrina;
 - lo spazio dell'operatore;
@@ -14,11 +14,9 @@ Prossimi passi:
 - **Collaboratore di ƎE:** ticket rivendicato, con cinque domande pronte; si aspettano le risposte.
 - **Prova su iPhone:** ticket rivendicato, pagina di prova pubblicata (https://claude.ai/artifact/5ousKXbFpFsGqd5mrtcH7t) con l'elenco dei controlli nel ticket. Primo riscontro: «sembra andare bene», ma la barra delle schede finisce sotto lo schermo dentro la cornice di claude.ai. Scelta dell'utente (A): la pagina resta com'è. Schede sopra l'area sicura, colore in alto, schermata Home e gesto dal bordo si verificano sulla prima versione della piattaforma. In pausa dal 24/10/2026 per scelta dell'utente («ci penseremo poi»): restano gli altri controlli, la versione di iOS e la diagnosi.
 - **Vista 3D indicativa:**
-  - due ricerche chiuse il 24/10/2026, [come si ricava](docs/ricerca/vista-3d.md) e [come si rende](docs/ricerca/vista-3d-resa.md), con tredici decisioni dell'utente in PRODUCT.md §12;
-  - [prova](.scratch/controllo-a/issues/15-prova-vista-3d.md) in due versioni. La prima (https://claude.ai/artifact/Uwav9qpKCBQNkSskEWF5nZ) legge bene le piante inventate, ma per l'utente la resa era «ancora grezza»;
-  - la seconda (https://claude.ai/artifact/3XGpiR7CyEKeYAgTz91Vjr) mostra tre stili affiancati, con arredi d'esempio facoltativi; l'utente ha scelto l'isometrica illustrata (DESIGN.md, «Vista 3D indicativa (stile)») e ha chiesto che da vicino ciò che copre la stanza diventi trasparente;
-  - la terza (https://claude.ai/artifact/C2aRNbV3h59zmdQKs8z93q) è solo isometrica, con la trasparenza da vicino; zoom e movimento sono tornati come nella seconda versione su richiesta dell'utente, perché «si bugga tutto»;
-  - prossimo passo: il giudizio dell'utente sulla terza versione (arredi sì o no, se la vista è utile e resta nella prima versione, planimetria dei fondatori); il messaggio è in START_HERE.md.
+  - due ricerche chiuse, [come si ricava](docs/ricerca/vista-3d.md) e [come si rende](docs/ricerca/vista-3d-resa.md);
+  - [prova con piante inventate](.scratch/controllo-a/issues/15-prova-vista-3d.md) chiusa il 25/10/2026 dopo tre versioni (la terza: https://claude.ai/artifact/C2aRNbV3h59zmdQKs8z93q). Stile isometrico illustrato, in DESIGN.md; arredi d'esempio con l'interruttore. Le decisioni sono in PRODUCT.md §12;
+  - esito buono, ma la vista entra nella prima versione solo dopo la [prova su una planimetria vera dei fondatori](.scratch/controllo-a/issues/17-prova-planimetria-fondatori.md), che aspetta il caricamento con il loro consenso scritto; il messaggio è in START_HERE.md.
 - Facoltativo, solo se l'utente lo chiede: rivedere lo spazio dell'operatore con le regole della rifinitura (mappa, «Non ancora specificato»).
 - Promemoria dell'utente (23/10/2026): Animate UI e Watermelon UI si valutano all'architettura, in [ARCHITECTURE.md](ARCHITECTURE.md), «Da valutare al passo 7»; nessuna installazione prima.
 - Dopo: email e SMS (aspettano il parere sul nome), ricevute stampate, testi dell'interfaccia, componenti, interazioni e dati limite, revisione dell'accessibilità, pacchetto per il controllo B (mappa, «Non ancora specificato»).
@@ -34,6 +32,14 @@ Prossimi passi:
 - Rifinitura delle case di inquilino e proprietario (versione 2, «via di mezzo» approvata): https://claude.ai/artifact/9CQ4BtLZxYXJRBKiEfpZGj. Con «Prima», i due «dopo» scartati e la «via di mezzo»; il livello delle ombre di foglie è ricavato dalla stanza dell'accesso.
 
 Prodotto: **Connetto**, nome di lavoro in attesa del parere sul marchio. Non c'è codice applicativo; architettura e stack non sono decisi.
+
+## Fatto (25 ottobre 2026, chiusura della prova della vista 3D)
+- Terza versione corretta su riscontro dell'utente:
+  - zoom e movimento tornati come nella seconda versione;
+  - la sfumatura ora è più leggera;
+  - centro di rotazione iniziale riportato al centro della casa, verificato misurando la posizione della casa prima e dopo una rotazione.
+- Decisioni dell'utente: niente scorrimento con due dita; arredi d'esempio accesi con l'interruttore; esito buono, conferma dopo una planimetria vera dei fondatori. Registrate in PRODUCT.md §12 e DESIGN.md.
+- Ticket «Prova: vista 3D da una planimetria» chiuso; aperto «Prova: la vista 3D su una planimetria vera dei fondatori».
 
 ## Fatto (24 ottobre 2026, prova della vista 3D e ricerca sulla resa)
 - Ticket [Prova: vista 3D da una planimetria](.scratch/controllo-a/issues/15-prova-vista-3d.md) rivendicato, con la skill `prototype`. Due pagine usa e getta, private, solo dati inventati; metodo, verifiche ed esiti sono nel ticket.
