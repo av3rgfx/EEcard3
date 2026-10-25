@@ -1,6 +1,6 @@
 # Stato del progetto
 
-## Punto di ripresa (24 ottobre 2026, prova su iPhone)
+## Punto di ripresa (25 ottobre 2026, vista 3D: prova chiusa)
 **Fase: design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6), nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md). Approvati:
 - la direzione **«Terracotta»**, con il chiaro in vetrina;
 - lo spazio dell'operatore;
@@ -11,9 +11,13 @@
 La voce è al **«tu»** anche per i clienti ([DESIGN.md](DESIGN.md)).
 
 Prossimi passi:
-- **Collaboratore di ƎE:** ticket rivendicato, con cinque domande pronte; si aspettano le risposte.
+- **Prossima sessione, scelta dall'utente (25/10/2026):** [Testi dell'interfaccia del percorso 1](.scratch/design-percorso-1/issues/14-testi-interfaccia.md), con in parallelo la [ricerca sulle tessere fisiche](.scratch/controllo-a/issues/12-ricerca-tessere-fisiche.md) affidata a un agente in background. Il messaggio è in START_HERE.md.
+- **Collaboratore di ƎE:** ticket rivendicato, con cinque domande pronte; si aspettano le risposte. L'utente incontra il collaboratore la sera del 25/10/2026: porta le cinque domande e i sei chiarimenti di ƎE, e chiede una piantina per la vista 3D.
 - **Prova su iPhone:** ticket rivendicato, pagina di prova pubblicata (https://claude.ai/artifact/5ousKXbFpFsGqd5mrtcH7t) con l'elenco dei controlli nel ticket. Primo riscontro: «sembra andare bene», ma la barra delle schede finisce sotto lo schermo dentro la cornice di claude.ai. Scelta dell'utente (A): la pagina resta com'è. Schede sopra l'area sicura, colore in alto, schermata Home e gesto dal bordo si verificano sulla prima versione della piattaforma. In pausa dal 24/10/2026 per scelta dell'utente («ci penseremo poi»): restano gli altri controlli, la versione di iOS e la diagnosi.
-- **Prossima sessione, scelta dall'utente:** la casa in 3D, cioè la [ricerca sulla vista 3D indicativa](.scratch/controllo-a/issues/14-ricerca-vista-3d.md); il messaggio è in START_HERE.md.
+- **Vista 3D indicativa:**
+  - due ricerche chiuse, [come si ricava](docs/ricerca/vista-3d.md) e [come si rende](docs/ricerca/vista-3d-resa.md);
+  - [prova con piante inventate](.scratch/controllo-a/issues/15-prova-vista-3d.md) chiusa il 25/10/2026 dopo tre versioni (la terza: https://claude.ai/artifact/C2aRNbV3h59zmdQKs8z93q). Stile isometrico illustrato, in DESIGN.md; arredi d'esempio con l'interruttore. Le decisioni sono in PRODUCT.md §12;
+  - esito buono, ma la vista entra nella prima versione solo dopo la [prova su una planimetria vera dei fondatori](.scratch/controllo-a/issues/17-prova-planimetria-fondatori.md), che aspetta il caricamento con il loro consenso scritto. In pausa dal 25/10/2026: l'utente chiede una piantina al collaboratore di ƎE; deve essere di una casa dei fondatori o del collaboratore, non di un cliente. Il messaggio è in START_HERE.md.
 - Facoltativo, solo se l'utente lo chiede: rivedere lo spazio dell'operatore con le regole della rifinitura (mappa, «Non ancora specificato»).
 - Promemoria dell'utente (23/10/2026): Animate UI e Watermelon UI si valutano all'architettura, in [ARCHITECTURE.md](ARCHITECTURE.md), «Da valutare al passo 7»; nessuna installazione prima.
 - Dopo: email e SMS (aspettano il parere sul nome), ricevute stampate, testi dell'interfaccia, componenti, interazioni e dati limite, revisione dell'accessibilità, pacchetto per il controllo B (mappa, «Non ancora specificato»).
@@ -29,6 +33,60 @@ Prossimi passi:
 - Rifinitura delle case di inquilino e proprietario (versione 2, «via di mezzo» approvata): https://claude.ai/artifact/9CQ4BtLZxYXJRBKiEfpZGj. Con «Prima», i due «dopo» scartati e la «via di mezzo»; il livello delle ombre di foglie è ricavato dalla stanza dell'accesso.
 
 Prodotto: **Connetto**, nome di lavoro in attesa del parere sul marchio. Non c'è codice applicativo; architettura e stack non sono decisi.
+
+## Fatto (25 ottobre 2026, chiusura della prova della vista 3D)
+- Terza versione corretta su riscontro dell'utente:
+  - zoom e movimento tornati come nella seconda versione;
+  - la sfumatura ora è più leggera;
+  - centro di rotazione iniziale riportato al centro della casa, verificato misurando la posizione della casa prima e dopo una rotazione.
+- Decisioni dell'utente: niente scorrimento con due dita; arredi d'esempio accesi con l'interruttore; esito buono, conferma dopo una planimetria vera dei fondatori. Registrate in PRODUCT.md §12 e DESIGN.md.
+- Ticket «Prova: vista 3D da una planimetria» chiuso; aperto «Prova: la vista 3D su una planimetria vera dei fondatori».
+
+## Fatto (24 ottobre 2026, prova della vista 3D e ricerca sulla resa)
+- Ticket [Prova: vista 3D da una planimetria](.scratch/controllo-a/issues/15-prova-vista-3d.md) rivendicato, con la skill `prototype`. Due pagine usa e getta, private, solo dati inventati; metodo, verifiche ed esiti sono nel ticket.
+- **Prima versione** (https://claude.ai/artifact/Uwav9qpKCBQNkSskEWF5nZ):
+  - tre piante inventate in stile catastale, in sette versioni, dalla buona alla rovinata;
+  - ricalco e riconoscimento automatico con anteprima, fatto con visione artificiale classica, quindi senza modelli allenati né licenze da chiarire;
+  - controlli di qualità, vista del proprietario;
+  - esiti sulle piante inventate: nelle versioni buone, anche a mano, muri al 100% e porte 14 su 14; 6 buone su 6 passano, 15 rovinate su 15 vengono fermate o mandate al controllo;
+  - giudizio dell'utente: «per come è fatto ora non sembra utile, è ancora grezzo».
+- Ticket [Ricerca: come le altre piattaforme rendono belle e chiare le case in 3D](.scratch/controllo-a/issues/16-ricerca-resa-vista-3d.md), chiesto dall'utente, aperto e chiuso:
+  - circa 60 fonti in [docs/ricerca/vista-3d-resa.md](docs/ricerca/vista-3d-resa.md); controllo a campione su Poly Haven, three.js e RoomSketcher, tutto confermato;
+  - sei decisioni dell'utente, tutte sull'opzione consigliata: tre stili affiancati; arredi d'esempio accanto alla versione vuota; solo i nomi delle stanze; nord e luce da sud; viste pronte con trascinamento limitato; immagine fissa dopo la scelta dello stile.
+- **Seconda versione** (https://claude.ai/artifact/3XGpiR7CyEKeYAgTz91Vjr):
+  - la stessa casa in tre stili: pianta dall'alto, casa delle bambole, isometrica illustrata;
+  - nomi delle stanze, ingresso, nord, pianta 2D, arredi facoltativi;
+  - verificata in Chromium a 7 larghezze, in chiaro e in scuro, con tutti i pulsanti: nessuno scorrimento orizzontale, nessun errore; quattro difetti trovati e corretti;
+  - giudizio dell'utente: sceglie l'isometrica illustrata e chiede la trasparenza da vicino. Lo stile è in DESIGN.md.
+- **Terza versione** (https://claude.ai/artifact/C2aRNbV3h59zmdQKs8z93q):
+  - solo l'isometrica, con i muri che coprono la stanza semitrasparenti da vicino;
+  - provati e tolti su richiesta dell'utente lo zoom verso il punto indicato e i nomi delle stanze da toccare: spostavano il centro di rotazione e la sfumatura andava a scatti. Ora lo zoom va verso il centro e la sfumatura è più leggera;
+  - verificata in Chromium (tre case, 5 larghezze, chiaro e scuro, movimento ridotto): nessun errore.
+- Non è una prova su planimetrie vere. La planimetria dei fondatori arriva solo se l'utente la carica, con il loro consenso scritto.
+- Non applicabili: build, test e revisione OCR (non c'è codice applicativo; il programma `ocr` non è nell'ambiente).
+
+## Fatto (24 ottobre 2026, ricerca sulla vista 3D)
+- Ticket [Ricerca: dalla planimetria catastale alla vista 3D indicativa](.scratch/controllo-a/issues/14-ricerca-vista-3d.md) rivendicato e chiuso. Ricerca con la skill `research`, affidata a un agente in background: circa 45 fonti primarie lette il 24/10/2026, in [docs/ricerca/vista-3d.md](docs/ricerca/vista-3d.md).
+- Fonti non raggiungibili o lette in copia non ufficiale: sono annotate nel file (sito di CubiCasa, articoli del regolamento del 1949 su Normattiva, allegato tecnico della circolare 9/2001).
+- Controllo a campione della sessione principale sulle fonti originali: comunicato dell'Agenzia del 12/7/2023 sulla delega agli agenti, scheda sulla planimetria, licenza di CubiCasa5K, privacy di Planner 5D. Tutto confermato.
+- Fatti principali:
+  - la planimetria catastale è un disegno a fini fiscali, di norma 1:200; ƎE può scaricarla gratis con la delega online del proprietario;
+  - nessuno studio sul riconoscimento delle planimetrie catastali italiane;
+  - i servizi esterni escludono i disegni a mano e hanno condizioni sui dati lontane dalla decisione del 20/10/2026.
+- Decisioni dell'utente, una alla volta, registrate in PRODUCT.md §12:
+  - ricalco e riconoscimento automatico fin da subito, sceglie l'operatore; l'automatico mostra un'anteprima da correggere o confermare. Era consigliato prima il solo ricalco: l'utente ha voluto tutte e due;
+  - il riconoscimento gira dentro la piattaforma, senza servizi esterni;
+  - conferma la vista solo l'operatore;
+  - altezza letta sulla planimetria, oppure un valore fisso dichiarato;
+  - avvertenza sempre visibile, con il testo scritto dal progetto senza parere legale. Era consigliato il legale: l'utente ha scelto di non chiederlo. Si può aggiungere, se si vuole, al parere già previsto prima del pilota;
+  - si parte dalla planimetria del fascicolo; la copia nuova si chiede solo se non si legge;
+  - nella prova, prima le piante inventate, poi una sola planimetria dei fondatori con il loro consenso.
+- Aggiornati:
+  - la [prova](.scratch/controllo-a/issues/15-prova-vista-3d.md), ora libera, con le due strade e il controllo delle licenze dei modelli;
+  - la mappa, sezione «Dopo la destinazione»;
+  - ARCHITECTURE.md, «Cosa vincolerà la scelta».
+- Nessun servizio, account o planimetria vera usati. Nessun termine nuovo nel glossario.
+- Non applicabili: build, test e revisione OCR (non c'è codice applicativo; il programma `ocr` non è nell'ambiente).
 
 ## Fatto (24 ottobre 2026, prova su iPhone)
 - Ticket [Prova su iPhone: la piattaforma aggiunta alla schermata Home](.scratch/design-percorso-1/issues/06-prova-iphone-schermata-home.md) rivendicato, con la skill `mobile-native`. Letti con lo strumento Artifact i prototipi dell'accesso e della rifinitura, con le immagini.

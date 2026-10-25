@@ -8,6 +8,7 @@
 - Le decisioni di prodotto che usciranno dallo studio: primo cliente, primo percorso, canali, integrazioni davvero necessarie.
 - Le domande tecniche elencate in [docs/STUDIO.md](docs/STUDIO.md), area O.
 - Ordine confermato: prima la piattaforma web, poi l'app iPhone sullo stesso servizio.
+- Vista 3D indicativa, se la prova va bene: ricalco e riconoscimento automatico dentro la piattaforma, senza servizi esterni per le planimetrie ([PRODUCT.md](PRODUCT.md) §12, 24/10/2026). Le licenze dei modelli di ricerca vanno chiarite prima di usarli ([ricerca](docs/ricerca/vista-3d.md), §2.3 e §8).
 - Regole generali in [docs/rules/BACKEND.md](docs/rules/BACKEND.md).
 
 ## Da valutare al passo 7
