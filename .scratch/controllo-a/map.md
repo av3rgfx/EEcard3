@@ -60,6 +60,7 @@ Niente: la destinazione è raggiunta.
 Ticket rimasti aperti alla chiusura: non bloccano il design del percorso 1 e si lavorano con questo stesso tracker finché non serve una mappa nuova.
 - [Prezzo e condizioni dell'adesione](issues/10-prezzo-condizioni-adesione.md): decisione dell'utente, prima del pilota.
 - [Ricerca: tessere fisiche, fornitori, personalizzazione, ordini e spedizioni](issues/12-ricerca-tessere-fisiche.md): prima del pilota.
+- [Ricerca: tessera contactless, wallet e totem in agenzia](issues/18-ricerca-tessera-contactless-totem.md): chiesta dall'utente il 25/10/2026; le domande rimaste sulle tessere fisiche la aspettano.
 - [Prova sulle bollette](issues/08-prova-bollette.md): serve quando si lavora sulle bollette dell'inquilino (percorso 3).
 - [Ricerca: dalla planimetria catastale alla vista 3D indicativa](issues/14-ricerca-vista-3d.md): **chiusa il 24/10/2026**. Ricalco e riconoscimento automatico con anteprima, scelti dall'operatore, dentro la piattaforma; conferma solo l'operatore; avvertenza sempre visibile; planimetria del fascicolo, copia nuova se non si legge; nella prova prima piante inventate, poi una dei fondatori con consenso.
 - [Prova: vista 3D da una planimetria](issues/15-prova-vista-3d.md): **chiusa il 25/10/2026**. Tre versioni; stile isometrico illustrato con trasparenza da vicino, arredi d'esempio con l'interruttore; esito buono sulle piante inventate, conferma dopo una planimetria vera.

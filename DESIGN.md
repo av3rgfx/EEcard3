@@ -2,7 +2,7 @@
 
 ## Stato
 Direzione del percorso 1 approvata dall'utente il 23/10/2026: **«Terracotta»** (sezione «Direzione del percorso 1»). Non si eredita alcun layout, menu, palette, font o componente da tentativi precedenti: il design si progetta da zero (vedi [docs/METODO.md](docs/METODO.md), passo 6).
-Il design del percorso 1 è in corso dal 23/10/2026 nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md): ora si disegna il percorso intero in questa direzione. Le schermate per ruolo e quelle comuni sono approvate. Dal 24/10/2026 è approvata anche la rifinitura estetica delle schermate interne dei clienti, la «via di mezzo» (sezione «Rifinitura delle schermate interne (percorso 1)»). Le scelte arrivano qui man mano che l'utente le conferma.
+Il design del percorso 1 è in corso dal 23/10/2026 nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md): ora si disegna il percorso intero in questa direzione. Le schermate per ruolo e quelle comuni sono approvate. Dal 24/10/2026 è approvata anche la rifinitura estetica delle schermate interne dei clienti, la «via di mezzo» (sezione «Rifinitura delle schermate interne (percorso 1)»). Dal 25/10/2026 sono decisi anche i testi dell'interfaccia (sezione «Testi dell'interfaccia (percorso 1)»), che prevalgono sui testi citati nelle sezioni per ruolo. Le scelte arrivano qui man mano che l'utente le conferma.
 
 ## Riferimento confermato dall'utente
 - Le **Apple Human Interface Guidelines** sono il riferimento di design più importante (16/10/2026), adattate alla piattaforma effettiva. Sintesi e fonti: [docs/rules/APPLE_DESIGN.md](docs/rules/APPLE_DESIGN.md). In caso di dubbio si rilegge la pagina ufficiale del componente.
@@ -155,14 +155,14 @@ Approvati dall'utente il 23/10/2026 nel ticket [Accesso, adesione e situazioni c
 
 - **Accesso** (decisione dell'utente): un solo campo «Email o numero di cellulare», poi un codice di verifica di 6 cifre via email o via SMS, senza password. Il campo del codice accetta il riempimento automatico e l'incolla. Dopo l'invio si dice «se questa email è registrata», così non si rivela chi è iscritto. «Il codice non arriva?» dà quattro rimedi in ordine: correggere, rimandare il codice, riceverlo via SMS, chiamare ƎE. Dopo 30 giorni serve un codice nuovo e si torna alla pagina di prima; i link dei messaggi scadono e portano all'accesso. *Motivo:* niente da ricordare e un solo schema da spiegare al banco; il link nell'email rischia di aprirsi nel browser invece che nell'app sulla schermata Home (da verificare nella prova su iPhone).
 - **Primo accesso al banco:** l'operatore crea l'account dal suo spazio, con l'email o il cellulare verificati (§10.2), e dà al cliente il link. Il link apre l'accesso con nome ed email già scritti («Ciao Luca, manca un passo»); il codice serve comunque.
-- **Pagina d'accesso** (decisione dell'utente): uguale ai due riferimenti che l'utente ha generato con ChatGPT e scelto. Una stanza calda con la luce di una finestra e un arco; la tessera di rame anonima, inclinata, con il suo spessore e la sua ombra. Sotto, «La tua casa, a portata di mano», il campo, «Mandami il codice», «Ricevi un codice via email o SMS. Niente password da ricordare.» e «Hai bisogno di aiuto?».
+- **Pagina d'accesso** (decisione dell'utente): uguale ai due riferimenti che l'utente ha generato con ChatGPT e scelto. Una stanza calda con la luce di una finestra e un arco; la tessera di rame anonima, inclinata, con il suo spessore e la sua ombra. Sotto, «La tua casa, a portata di mano», il campo, «Mandami il codice» (dal 25/10/2026 «Chiedi il codice», vedi «Testi dell'interfaccia»), «Ricevi un codice via email o SMS. Niente password da ricordare.» e «Hai bisogno di aiuto?».
   - *Telefono:* tutto in colonna, centrato.
   - *Desktop, da 1000 px:* la stanza a tutta pagina, la tessera a sinistra, il modulo a destra direttamente sulla stanza.
   - *Differenze volute dai riferimenti:* il simbolo ha il colore del testo (regole del simbolo); il pulsante usa l'arancio della direzione; l'informativa si raggiunge da «Hai bisogno di aiuto?».
   - Le immagini sono livelli separati (stanza, tessera in posa, ombra); restano fuori dal repository e le loro condizioni d'uso vanno lette prima dell'uso nel prodotto.
 - **Tessera digitale** (decisioni dell'utente): un oggetto di rame spazzolato, formato carta (rapporto 1,586).
   - *Fronte:* simbolo piccolo e «Connetto» in alto a sinistra, «ƎE» in alto a destra, il simbolo grande inciso a destra.
-  - *Dati:* testo vero inciso, mai scritto dentro l'immagine. Solo ruolo, nome e cognome, codice breve (per esempio «EE-7730-15») e «dal» con mese e anno dell'adesione. Niente indirizzo, telefono o email, perché la tessera si mostra in pubblico; niente chip o numeri lunghi, perché non è una carta di pagamento.
+  - *Dati:* testo vero inciso, mai scritto dentro l'immagine. Solo ruolo, nome e cognome, codice breve (per esempio «EE-7730-15») e «da» con mese e anno dell'adesione (era «dal», corretto il 25/10/2026). Niente indirizzo, telefono o email, perché la tessera si mostra in pubblico; niente chip o numeri lunghi, perché non è una carta di pagamento.
   - *Retro:* il codice in grande e a cosa serve. La tessera si gira con un tocco.
   - **Rame per tutti**, inquilini compresi; la personalizzazione verrà più avanti, dopo la prima versione. Chi ha due ruoli ha due tessere, una per adesione.
 - **Scheda «Tessera»** (decisione dell'utente): la quinta scheda dei clienti, fra Ricevute e Documenti, e una voce nella barra laterale. Mostra la tessera grande, a cosa serve, cosa non fa, l'adesione e la tessera fisica, se ƎE la prevede. *Motivo:* al banco la tessera è a un tocco.
@@ -177,7 +177,7 @@ Approvati dall'utente il 23/10/2026 nel ticket [Accesso, adesione e situazioni c
 - **Disdetta dell'adesione** (decisione dell'utente): si fa da soli, senza aspettare l'agenzia.
   - *Scelte:* «Non rinnovare» è la prima, e si annulla fino alla scadenza con «Riattiva il rinnovo». «Chiudi subito» con rimborso compare solo se le condizioni dell'adesione lo prevedono.
   - *Conferma:* un riepilogo di cosa succede e cosa non cambia, con «Scarica tutto», poi un tocco su «Conferma la disdetta». Il pulsante ha lo stile principale, un'eccezione voluta per non rendere difficile la disdetta. Non si chiede un codice in più.
-  - *Ricevuta:* arriva subito via email o SMS, con data, ora e scelta, e la riga «Non sei stato tu? Chiama ƎE».
+  - *Conferma della disdetta* (era «ricevuta», cambiato il 25/10/2026): arriva subito via email o SMS, con data, ora e scelta, e la riga «Non l'hai chiesto tu? Chiama ƎE».
   - *Inquilino:* disdice in un passaggio. Canone, ricevute e contratto restano, perché seguono la locazione (§7; da confermare).
   - *Dopo:* durante il periodo senza rinnovo la casa mostra una fascia con «Riattiva il rinnovo». Alla fine compare «La tua adesione è finita», con «Aderisci di nuovo».
   - *Motivo:* l'utente vuole una disdetta semplice, come chiedono le nuove regole sulla disdetta online (art. 54-bis del Codice del consumo, dal 19/6/2026). Se valgano per un'adesione firmata al banco lo dice il parere legale.
@@ -214,6 +214,53 @@ Approvata dall'utente il 24/10/2026 nel ticket [Rifinitura estetica delle scherm
   - Contrasti misurati con la formula WCAG, tutti sopra 4,5:1. Si ricontrollano nella revisione dell'accessibilità.
 - *Evidenza:* preferenza dell'utente su un prototipo con dati inventati. Nessuna prova con persone.
 
+## Testi dell'interfaccia (percorso 1)
+Decisi dall'utente il 25/10/2026, una scelta alla volta, nel ticket [Testi dell'interfaccia del percorso 1](.scratch/design-percorso-1/issues/14-testi-interfaccia.md), che conserva l'inventario dei prototipi approvati, le alternative scartate e i motivi. Applicano i «Punti fermi del percorso 1» (Voce) e il [glossario](GLOSSARY.md). Ambito: tutte le schermate del percorso 1, su telefono e desktop; per i clienti, salvo dove è detto «operatore». Restano fuori, in attesa dei pareri: email e SMS, la scritta del nome, il testo delle ricevute stampate e delle condizioni. Dove le sezioni per ruolo citano un testo diverso, vale questa sezione.
+
+**Regole generali**
+- **Il servizio ti dà del «tu»** anche nei titoli: «Le tue case», «La tua tessera», «Case dove abitavi». I pulsanti sono un verbo all'imperativo rivolto a te, con l'oggetto se serve: «Chiedi il codice», «Carica la contabile», «Chiama ƎE», «Ricevuto». Mai il servizio in prima persona («ti aiutiamo», «abbiamo ricevuto»). *Motivo:* una sola voce, facile da tenere; prima si mescolavano «Le mie case» e «Le tue case».
+- **Maschile e femminile.** Le frasi si scrivono senza genere dove viene naturale: «Non l'hai chiesto tu?», «Da chiudere con Luca Benassi», «Apri una contestazione per suo conto». Il ruolo («proprietario» o «proprietaria», «inquilino» o «inquilina») e i saluti («Benvenuto», «Bentornata») usano la forma che la persona sceglie in agenzia quando l'operatore crea l'account; si cambia chiamando ƎE. Mai indovinata dal nome. *Motivo:* la piattaforma non sa come ognuno vuole essere chiamato, e il nome inganna (Andrea, Nicola, nomi stranieri).
+- **Maiuscole:** solo la prima lettera della frase e i nomi propri, anche in titoli, pulsanti e schede. Il maiuscoletto solo per le etichette brevi sopra un gruppo, al massimo tre parole.
+- **Il titolo del mese** ha un solo schema, «Mese: il fatto», uguale per proprietario e inquilino: «Novembre: paga entro giovedì 5», «Novembre: il canone è pagato», «Novembre: era da pagare entro giovedì 5», «Novembre: contabile inviata», «Ottobre: la consegna è in ritardo». *Motivo:* chi ha due ruoli legge la stessa frase per la stessa cosa. Confronto: https://claude.ai/artifact/2A1w9suz98aQk9YDkTCsNv (privato, dati inventati).
+- **Date:** mesi sempre per intero («1° febbraio 2027», «2 settembre»), mai in cifre («04/10/2026») né abbreviati. Il giorno della settimana solo quando la data è a meno di una settimana da oggi, prima o dopo («entro giovedì 5»); più lontano basta la data («entro il 5 dicembre»).
+- **Orari:** nelle frasi per intero, «dal lunedì al venerdì, 9:00–12:30»; nelle righe piccole «lun–ven 9:00–12:30», con la forma intera per lo screen reader.
+- **Numeri:** importi come «1.275,00 €» (vedi «Riferimento confermato dall'utente»), percentuali «+1,73%», numeri di ricevuta e codici come sono («n. 412/2026», «EE-7730-15»); il segno meno vero per le somme trattenute («−67,00 €»).
+- **Separatore** «·» fra fatti brevi della stessa riga («Via dei Tigli 14 · interno 3»), al massimo tre per riga.
+- **Ogni fatto del denaro dice chi l'ha confermato** (Voce): l'etichetta di stato non sta mai da sola; la riga sotto dice chi e quando («Ricevuto da ƎE in agenzia il 3 ottobre», «confermata da te il 16 settembre»).
+
+**Parole per i clienti**
+
+| Si dice | Al posto di | Motivo |
+| --- | --- | --- |
+| «in agenzia» («Paga in agenzia, Via dell'Indipendenza 21», «Ricevuto da ƎE in agenzia») | «al banco di ƎE» | «banco» è anche il nome di molte banche e si legge «in banca» accanto ai bonifici. L'operatore tiene la pagina «Al banco» e le sue parole di lavoro |
+| «entro» per il canone («Paga entro giovedì 5», «Era da pagare entro il 5») | «scade», «scadeva» | «scadenza» resta alle date della locazione (registro, disdetta, ISTAT, fine del contratto) e alla sezione «Scadenze». L'operatore tiene «scaduto il 5 ottobre» |
+| «Spese» nelle righe brevi; una volta nel dettaglio «Spese in acconto (oneri accessori)», con «Le spese della casa che il contratto ti fa pagare insieme al canone, per esempio il condominio. Sono un anticipo: il conto finale si fa a parte.» | «Oneri», «Oneri in acconto», «Oneri accessori in acconto» | parola di tutti i giorni; il termine del contratto resta riconoscibile |
+| «Case dove abitavi» (sezione e scheda dell'inquilino per le locazioni finite) | «Locazioni passate», «Locazioni» | dice cosa contiene. «Locazione» resta nelle frasi che chiedono precisione, accanto a «contratto»; mai «affitto», che si confonde con il canone |
+| «conferma della disdetta» | «ricevuta della disdetta» | «ricevuta» resta al canone e al documento «ricevuta della registrazione»; nella scheda «Ricevute» ci sono solo pagamenti. Il nome lo può ritoccare il parere legale |
+
+**Stati, sempre parola e icona**
+- *Canone:* «Da pagare» (con «entro giovedì 5», poi «era da pagare entro il 5», senza colore d'allarme), «Contabile da confermare», «Pagato», «Contestato». Nello spazio dell'operatore anche «scaduto il 5 ottobre».
+- *Consegna:* «Da consegnare», «Inviata» (bonifico di ƎE che aspetta il tuo «Ricevuto»), «Consegnata» (con «confermata da te il …» o «firmata da te in agenzia»), «In ritardo», «Contestata». «Confermata» non è un'etichetta.
+- *Adesione:* «Attiva», «Senza rinnovo» (con «fino al 1° ottobre 2027»), «Finita».
+
+**Testi delle situazioni comuni** (dai prototipi approvati, con le regole qui sopra)
+- *Errore:* la causa, i dati al sicuro, cosa fare. «Le ricevute non si sono caricate. Il collegamento si è interrotto. Le ricevute sono al sicuro: riprova tra poco. Se non va ancora, chiama ƎE.» con «Riprova».
+- *Codice sbagliato:* «Il codice non corrisponde. Controlla l'ultimo messaggio arrivato: ogni nuovo codice sostituisce quello prima. Ti restano 4 tentativi.»
+- *Senza rete:* «Sei senza connessione. Vedi i dati di oggi alle 9:12; si aggiornano da soli quando torna la rete.»
+- *Vuoto:* il perché e il prossimo passo. «Ancora nessuna ricevuta. La prima compare qui quando paghi il canone di novembre: in agenzia, entro giovedì 5.» con «Vedi cosa pagare».
+- *Link scaduto:* «Questo link non vale più. Per sicurezza i link dei messaggi scadono dopo un po'. Entra con l'email o il cellulare: ritrovi la stessa ricevuta in Ricevute.»
+- *Conferme:* participio breve, poi cosa succede dopo. «Contabile inviata a Marta Ferri», «Incasso registrato», «Rinnovo fermato».
+- *Caricamento:* nessuna parola sullo schermo; per lo screen reader «La casa si sta caricando».
+
+**Cosa cambia nei testi approvati** (25/10/2026)
+- Pagina d'accesso: «Mandami il codice» diventa «Chiedi il codice»; nell'aiuto «Ti aiutiamo» diventa «Aiuto per entrare» (correzione dell'agente: il servizio non parla in prima persona).
+- Tessera digitale: «dal ottobre 2026» diventa «da ottobre 2026» (correzione di grammatica dell'agente).
+- Disdetta: «Ti arriva subito una conferma via email, con data, ora e cosa hai scelto»; «Non sei stato tu?» diventa «Non l'hai chiesto tu?».
+- Casa dell'inquilino: «Novembre: paghi entro giovedì 5» diventa «Novembre: paga entro giovedì 5»; «Novembre è pagato» diventa «Novembre: il canone è pagato»; «Canone di novembre: scadeva il 5» diventa «Novembre: era da pagare entro giovedì 5».
+- «Le mie case» diventa «Le tue case»; «Locazioni passate» diventa «Case dove abitavi».
+- Operatore: «Da chiudere con lui» diventa «Da chiudere con» seguito dal nome; «serve solo a trovarlo» diventa «serve solo a trovare la persona».
+- *Evidenza:* scelte dell'utente sui testi dei prototipi e su un confronto con dati inventati. Nessuna prova con persone; la lettura del collaboratore di ƎE può correggerli.
+
 ## Vista 3D indicativa (stile)
 Scelta dall'utente il 24/10/2026 nella [prova della vista 3D](.scratch/controllo-a/issues/15-prova-vista-3d.md), seconda versione, fra tre stili affiancati sulla stessa casa inventata. Vale solo se la vista resta nella prima versione (PRODUCT.md §12). Le regole di contenuto (nomi senza metri quadri, nord e luce da sud, viste pronte, avvertenza sempre visibile) sono in PRODUCT.md §12, «Vista 3D indicativa: resa da provare».
 
@@ -231,4 +278,4 @@ Caricamento, vuoto, senza rete, errore e recupero del percorso 1: «Accesso, tes
 Registrare comportamento mobile, tastiera, testo ingrandito e movimento ridotto.
 
 ## Decisioni confermate
-Per ogni scelta: decisione, motivo, evidenza o ipotesi, ambito e data. Finora: il riferimento Apple, il formato degli importi, il simbolo C–Legame (sezione «Identità»), i punti fermi del percorso 1 (con la voce passata al «tu»), la direzione «Terracotta» con il chiaro in vetrina, lo spazio dell'operatore, le schermate del proprietario e quelle dell'inquilino, con le ricevute in forma provvisoria; accesso, tessera digitale di rame, benvenuto, disdetta e situazioni comuni, con l'eccezione del simbolo sulla tessera (23/10/2026); la rifinitura delle schermate interne dei clienti, la «via di mezzo», con tre regole cambiate: la casa in cima con i dettagli del mese, le icone senza cerchi e i fatti senza riquadri (24/10/2026); lo stile della vista 3D indicativa, l'isometrica illustrata (24/10/2026).
+Per ogni scelta: decisione, motivo, evidenza o ipotesi, ambito e data. Finora: il riferimento Apple, il formato degli importi, il simbolo C–Legame (sezione «Identità»), i punti fermi del percorso 1 (con la voce passata al «tu»), la direzione «Terracotta» con il chiaro in vetrina, lo spazio dell'operatore, le schermate del proprietario e quelle dell'inquilino, con le ricevute in forma provvisoria; accesso, tessera digitale di rame, benvenuto, disdetta e situazioni comuni, con l'eccezione del simbolo sulla tessera (23/10/2026); la rifinitura delle schermate interne dei clienti, la «via di mezzo», con tre regole cambiate: la casa in cima con i dettagli del mese, le icone senza cerchi e i fatti senza riquadri (24/10/2026); lo stile della vista 3D indicativa, l'isometrica illustrata (24/10/2026); i testi dell'interfaccia del percorso 1 (25/10/2026).

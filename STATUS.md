@@ -34,6 +34,18 @@ Prossimi passi:
 
 Prodotto: **Connetto**, nome di lavoro in attesa del parere sul marchio. Non c'è codice applicativo; architettura e stack non sono decisi.
 
+## Fatto (25 ottobre 2026, testi dell'interfaccia e tessere fisiche)
+- Ticket [Testi dell'interfaccia del percorso 1](.scratch/design-percorso-1/issues/14-testi-interfaccia.md) rivendicato e chiuso, con le skill `ux-writing`, `grilling` e `domain-modeling`.
+  - Inventario: letti con lo strumento Artifact i cinque prototipi approvati; ogni schermata e variante aperta nel browser e il testo raccolto, con le etichette per lo screen reader (44 schermate). Dieci punti trovati, elencati nel ticket.
+  - Nove scelte dell'utente, una alla volta, tutte sull'opzione consigliata: «in agenzia» invece di «al banco» per i clienti; frasi senza genere, con ruolo e saluti nella forma scelta dalla persona in agenzia; il servizio dà del «tu» anche nei titoli («Le tue case», «Chiedi il codice»); «entro» per il canone, «scadenza» solo per la locazione; «Spese» per gli oneri accessori; titolo del mese «Mese: il fatto» e date per intero, scelto dopo un confronto «Prima / Dopo» (https://claude.ai/artifact/2A1w9suz98aQk9YDkTCsNv); stati fissi della consegna con «Consegnata»; «Case dove abitavi»; «conferma della disdetta».
+  - Correzioni dell'agente, elencate in DESIGN.md: «Ti aiutiamo» (prima persona), «dal ottobre 2026», «il conto finale lo fa ƎE» (non è nella specifica).
+  - Registrato in [DESIGN.md](DESIGN.md), nuova sezione «Testi dell'interfaccia (percorso 1)», con i segni di cambio nelle righe toccate; [GLOSSARY.md](GLOSSARY.md): «Consegna» con gli stati, nuovi «Oneri accessori», «Contabile», «Ricevuta»; [PRODUCT.md](PRODUCT.md) §12: la forma con cui rivolgersi alla persona.
+- Ticket [Ricerca: tessere fisiche](.scratch/controllo-a/issues/12-ricerca-tessere-fisiche.md) rivendicato; ricerca con la skill `research`, affidata a un agente in background: [docs/ricerca/tessere.md](docs/ricerca/tessere.md). Nessun ordine, preventivo, account o contatto con fornitori.
+  - Controllo a campione sulle fonti originali (GCARD, Metaliccards, Posta Ordinaria, art. 59 del Codice del consumo): tutto confermato.
+  - Decisioni dell'utente: tessera fisica nel pilota per proprietari e inquilini (consigliata); in plastica con **lamina metallica arancione**, «rame stampato assolutamente no» (era consigliato dall'agente); se la lamina costa troppo, altre soluzioni come la plastica a colore fisso. In PRODUCT.md §12.
+  - Alla terza domanda (nome o solo codice) l'utente ha chiesto la funzione contactless fin da subito, per un futuro totem in agenzia aperto 24 ore su 24, e uno studio prima di cercare fornitori. Aperto il ticket [Ricerca: tessera contactless, wallet e totem in agenzia](.scratch/controllo-a/issues/18-ricerca-tessera-contactless-totem.md), con un agente in background. Conflitto segnalato all'utente: la tessera che apre i dati da sola e i pagamenti al totem toccano tre decisioni confermate (§5.6, T6, Controllo A); il chip da solo no.
+- Non applicabili: build, test e revisione OCR (non c'è codice applicativo; il programma `ocr` non è nell'ambiente).
+
 ## Fatto (25 ottobre 2026, chiusura della prova della vista 3D)
 - Terza versione corretta su riscontro dell'utente:
   - zoom e movimento tornati come nella seconda versione;
