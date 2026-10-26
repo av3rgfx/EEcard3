@@ -16,17 +16,25 @@ Il 26/10/2026 sono decisi i **dati limite e l'accessibilità** ([DESIGN.md](DESI
 
 Il 26/10/2026 sono decisi anche le **interazioni e gli stati** ([DESIGN.md](DESIGN.md), «Interazioni e stati (percorso 1)»): conferma al suo posto, «Annulla» per 8 secondi sul «Ricevuto», pulsanti spenti con il perché, movimento ridotto fatto solo di dissolvenze, «Di nuovo in linea» per 4 secondi e otto dettagli su attesa, errori e annunci. Pagina di prova: https://claude.ai/artifact/MvrdhkTegSQ5eUUGC4XzeY.
 
-**Prima della prossima sessione:** unire in `main` la PR del branch `claude/percorso-1-interazioni-stati-inobxl`. Se non è ancora unita, la sessione deve partire da quel branch.
+Il 26/10/2026, dopo la [ricerca sulle licenze](docs/ricerca/licenze-grafiche.md), sono fissati anche **carattere, icone, logo di ƎE e immagini** ([DESIGN.md](DESIGN.md), «Componenti e token»):
+- Manrope arriva dal nostro sito, non da Google;
+- icone Lucide a tratto 1,6;
+- «ƎE» diventa un disegno ovunque nelle schermate, e lo ridisegniamo noi perché l'agenzia non ha più il file;
+- le immagini fatte con ChatGPT restano nei prototipi fino al parere, chiesto insieme a quello sul nome.
 
-**Prossima sessione, proposta dall'agente: licenze di icone, carattere e immagini (componenti e token).** È nel «Non ancora specificato» della mappa («Componenti e token»): prima di registrare i componenti servono fatti letti sulle fonti ufficiali (licenza di Manrope, un set di icone con licenza libera, condizioni d'uso delle immagini generate con ChatGPT). È una ricerca che l'agente fa da solo; le decisioni arrivano dopo. L'utente può scegliere un altro passo, per esempio il pacchetto per il controllo B. Messaggio:
+Le condizioni di OpenAI non si sono potute aprire: prima del lancio l'utente le legge sul sito di OpenAI (condizioni europee, piano Plus).
 
-/wayfinder .scratch/design-percorso-1/map.md — apri e lavora un ticket «Ricerca: licenze di icone, carattere e immagini» dal «Non ancora specificato» («Componenti e token»).
+**Prima della prossima sessione:** unire in `main` la PR del branch `claude/research-icon-font-image-licenses-gj2soe`. Se non è ancora unita, la sessione deve partire da quel branch.
 
-Leggi AGENTS.md, STATUS.md, la mappa e, in DESIGN.md, «Direzione del percorso 1» («Caratteri» e «Forme»), «Accesso, tessera e situazioni comuni (percorso 1)» (le immagini della stanza e della tessera) e «Componenti e token». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+**Prossima sessione, proposta dall'agente: il logo di ƎE ridisegnato in SVG.** Serve una foto o una scansione nitida del logo attuale (insegna, carta intestata, biglietto da visita o pagina del sito), da allegare al messaggio. Senza riferimento, l'utente può scegliere un altro passo, per esempio il pacchetto per il controllo B o l'illustrazione di ogni casa (mappa, «Non ancora specificato»). Messaggio:
 
-- Crea il ticket (tipo `research`), rivendicalo e lavora solo su quello, con la skill `research`. Un file per tema in docs/ricerca/, con la data di lettura e il link a ogni fonte primaria.
-- Domande: cosa permette la licenza di Manrope (uso nel prodotto, nelle email, incorporato); due o tre set di icone a tratto con licenza libera, adatti alle icone già disegnate, con le condizioni; cosa dicono le condizioni d'uso di OpenAI sulle immagini generate dall'utente con ChatGPT (stanza e tessera di rame) per un prodotto commerciale. Segnala dove serve un parere professionale.
-- Nessun account, download di pagamento o contatto con fornitori. Alla fine portami le scelte una alla volta, in parole semplici, con una raccomandazione motivata.
+/wayfinder .scratch/design-percorso-1/map.md — ticket «Logo di ƎE ridisegnato in SVG» (.scratch/design-percorso-1/issues/18-logo-ee-svg.md): allego la foto del logo attuale dell'agenzia.
+
+Leggi AGENTS.md, STATUS.md, la mappa, il ticket e, in DESIGN.md, «Identità» (logo di ƎE e simbolo C–Legame), «Accesso, tessera e situazioni comuni (percorso 1)» (la tessera) e «Dati limite e accessibilità (percorso 1)»; poi assets/marchio/README.md. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+
+- Rivendica il ticket (`Status: claimed`) e lavora solo su quello, con la skill `prototype` (ramo UI). Ridisegna il logo dalla foto allegata, in un solo colore (`currentColor`), senza cercarlo altrove.
+- Pagina usa e getta, privata, con solo dati inventati: il logo dentro le frasi a varie grandezze e con il testo ingrandito, sulla tessera di rame e nella barra laterale, in chiaro e in scuro. Controllala a 360, 390, 768, 1024 e 1366 px. Lo screen reader deve leggere «ƎE».
+- Le scelte me le fai una alla volta, in parole semplici, con una raccomandazione motivata. Il disegno approvato va in assets/marchio/ con le regole d'uso; la conferma dell'agenzia va annotata nel ticket.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 

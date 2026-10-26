@@ -1,6 +1,6 @@
 # Stato del progetto
 
-## Punto di ripresa (26 ottobre 2026, interazioni e stati decisi)
+## Punto di ripresa (26 ottobre 2026, licenze di carattere, icone e immagini lette)
 **Fase: design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6), nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md). Approvati:
 - la direzione **«Terracotta»**, con il chiaro in vetrina;
 - lo spazio dell'operatore;
@@ -10,13 +10,15 @@
 - dal 25/10 i **testi dell'interfaccia** ([DESIGN.md](DESIGN.md), «Testi dell'interfaccia (percorso 1)»): «in agenzia», «tu» anche nei titoli, frasi senza genere, «entro» per il canone, «Spese», titolo «Mese: il fatto»;
 - dal 26/10 i **dati limite e l'accessibilità** ([DESIGN.md](DESIGN.md), «Dati limite e accessibilità (percorso 1)»): più mesi aperti con elenco e totale, targhetta satinata sulla tessera, icone nei mesi a pillola, contorno dei campi a 3:1, testo che segue il telefono e altre cinque correzioni.
 - dal 26/10 anche le **interazioni e gli stati** ([DESIGN.md](DESIGN.md), «Interazioni e stati (percorso 1)»): conferma al suo posto, «Annulla» per 8 secondi sul «Ricevuto», pulsanti spenti con il perché, movimento ridotto fatto solo di dissolvenze, «Di nuovo in linea» per 4 secondi.
+- dal 26/10, dopo la [ricerca sulle licenze](docs/ricerca/licenze-grafiche.md), anche **carattere, icone, logo di ƎE e immagini** ([DESIGN.md](DESIGN.md), «Componenti e token»): Manrope dal nostro sito, icone Lucide a tratto 1,6, «ƎE» come disegno ovunque nelle schermate (lo ridisegniamo noi), immagini ChatGPT solo nei prototipi fino al parere.
 
 Dal 25/10 è decisa anche la **tessera fisica del pilota** ([PRODUCT.md](PRODUCT.md) §12): plastica con lamina arancione, chip DESFire EV3 spento, solo un codice suo, consegna in agenzia.
 
 La voce è al **«tu»** anche per i clienti ([DESIGN.md](DESIGN.md)).
 
 Prossimi passi:
-- **Prossima sessione, proposta:** ricerca sulle licenze di icone, carattere e immagini, per i componenti e token (mappa, «Non ancora specificato»). Il messaggio è in START_HERE.md; l'utente può scegliere altro, per esempio il pacchetto per il controllo B.
+- **Prossima sessione, proposta:** il [logo di ƎE ridisegnato in SVG](.scratch/design-percorso-1/issues/18-logo-ee-svg.md), appena l'utente ha una foto o una scansione del logo attuale (insegna, carta intestata, biglietto). Senza riferimento, in alternativa: come si genera l'illustrazione di ogni casa, oppure il pacchetto per il controllo B (mappa, «Non ancora specificato»). I messaggi sono in START_HERE.md.
+- **Parere unico prima del lancio:** al parere sul nome Connetto si aggiungono sei domande su immagini ChatGPT, AI Act, scritta del nome e logo di ƎE ([ticket](.scratch/design-percorso-1/issues/08-parere-nome-connetto.md)). Prima, a cura dell'utente: leggere sul sito di OpenAI le condizioni europee per il piano Plus (l'agente non ha potuto aprirle) e fare una ricerca per immagini simili alla stanza e alla tessera.
 - **Preventivo delle tessere:** la richiesta è pronta nel ticket [Ricerca: tessere fisiche](.scratch/controllo-a/issues/12-ricerca-tessere-fisiche.md); la manda l'utente o ƎE. Con le risposte si decidono quantità, lamina e campione.
 - **Collaboratore di ƎE:** ticket rivendicato, con cinque domande pronte; si aspettano le risposte. L'utente incontra il collaboratore la sera del 25/10/2026: porta le cinque domande e i sei chiarimenti di ƎE, e chiede una piantina per la vista 3D.
 - **Prova su iPhone:** ticket rivendicato, pagina di prova pubblicata (https://claude.ai/artifact/5ousKXbFpFsGqd5mrtcH7t) con l'elenco dei controlli nel ticket. Primo riscontro: «sembra andare bene», ma la barra delle schede finisce sotto lo schermo dentro la cornice di claude.ai. Scelta dell'utente (A): la pagina resta com'è. Schede sopra l'area sicura, colore in alto, schermata Home e gesto dal bordo si verificano sulla prima versione della piattaforma. In pausa dal 24/10/2026 per scelta dell'utente («ci penseremo poi»): restano gli altri controlli, la versione di iOS e la diagnosi.
@@ -42,6 +44,17 @@ Prossimi passi:
 - Interazioni e stati (26/10/2026, versione 2): https://claude.ai/artifact/MvrdhkTegSQ5eUUGC4XzeY. Otto momenti che cambiano lo stato, con le varianti, tre livelli di movimento e il registro di cosa sente lo screen reader; all'apertura mostra le scelte fatte.
 
 Prodotto: **Connetto**, nome di lavoro in attesa del parere sul marchio. Non c'è codice applicativo; architettura e stack non sono decisi.
+
+## Fatto (26 ottobre 2026, licenze di carattere, icone e immagini)
+- Ticket [Ricerca: licenze di icone, carattere e immagini](.scratch/design-percorso-1/issues/17-ricerca-licenze-grafiche.md) aperto dal «Non ancora specificato» della mappa, rivendicato e chiuso. Ricerca svolta da un agente in background con la skill `research`, in [docs/ricerca/licenze-grafiche.md](docs/ricerca/licenze-grafiche.md); stile delle icone del prototipo letto con lo strumento Artifact.
+- Controllo a campione della sessione principale, tutto confermato:
+  - file della licenza di Manrope e file del carattere riletto: versione 4.505, «Ǝ» assente, `tnum` presente;
+  - licenza di Lucide;
+  - AI Act, art. 50, sull'AI Act Service Desk della Commissione;
+  - legge 132/2025, art. 25, in Gazzetta Ufficiale.
+- **Non letto:** le condizioni e le policy di OpenAI rispondono 403 a ogni lettura automatica, anche alla sessione principale. Il §3.2–3.6 della ricerca viene dagli estratti del motore di ricerca ed è segnato «Da verificare». Nessun aggiramento dei controlli anti-bot.
+- Cinque scelte dell'utente, una alla volta: Manrope dal nostro sito; icone Lucide; «ƎE» come disegno ovunque nelle schermate, ridisegnato da noi perché l'agenzia non ha più il file (lo ha confermato il collaboratore, riferisce l'utente); immagini ChatGPT solo nei prototipi fino al parere (piano usato: Plus); parere insieme a quello sul nome. Regole in [DESIGN.md](DESIGN.md); nuovo ticket [Logo di ƎE ridisegnato in SVG](.scratch/design-percorso-1/issues/18-logo-ee-svg.md); domande in più nel ticket del parere.
+- Non applicabili: build, test e revisione OCR (non c'è codice applicativo; il programma `ocr` non è nell'ambiente).
 
 ## Fatto (26 ottobre 2026, interazioni e stati)
 - Ticket [Interazioni e stati del percorso 1](.scratch/design-percorso-1/issues/16-interazioni-stati.md) aperto dal «Non ancora specificato» della mappa, rivendicato e chiuso, con le skill `prototype` (ramo UI), `emil-design-eng`, `apple-design` e `accessibility-audit`.
