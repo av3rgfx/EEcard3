@@ -12,18 +12,20 @@ Il 24/10/2026 è approvata anche la **rifinitura estetica delle schermate intern
 
 Voce al «tu» anche per i clienti. Nome di lavoro **Connetto**, simbolo **C–Legame** ([assets/marchio/](assets/marchio/README.md)); il parere sul marchio è chiesto subito e il suo esito va nel ticket «Parere di un consulente in marchi sul nome Connetto».
 
-**Prima della prossima sessione:** unire in `main` la PR del branch `claude/testi-interfaccia-tessere`. Se non è ancora unita, la sessione deve partire da quel branch.
+Il 26/10/2026 sono decisi i **dati limite e l'accessibilità** ([DESIGN.md](DESIGN.md), «Dati limite e accessibilità (percorso 1)»): più mesi aperti con elenco e totale, targhetta satinata sulla tessera, icone nei mesi a pillola, contorno dei campi a 3:1, testo che segue il telefono e altre cinque correzioni. Pagina di prova: https://claude.ai/artifact/RtwaFRWDmVNnrr5XQnJTh9.
 
-**Prossima sessione, proposta dall'agente: dati limite e revisione dell'accessibilità del percorso 1.** È nel «Non ancora specificato» della mappa; l'utente può scegliere un altro passo. Messaggio:
+**Prima della prossima sessione:** unire in `main` la PR del branch `claude/percorso-1-accessibility-audit-kt3yp7`. Se non è ancora unita, la sessione deve partire da quel branch.
 
-/wayfinder .scratch/design-percorso-1/map.md — apri e lavora un ticket «Dati limite e accessibilità del percorso 1» dal «Non ancora specificato» («Rifinitura e revisione»).
+**Prossima sessione, proposta dall'agente: interazioni e stati del percorso 1.** È nel «Non ancora specificato» della mappa («Rifinitura e revisione»); DESIGN.md, «Interazioni e stati», dice che mancano successo e disabilitato. L'utente può scegliere un altro passo, per esempio componenti e token. Messaggio:
 
-Leggi AGENTS.md, STATUS.md, la mappa e, in DESIGN.md, «Punti fermi del percorso 1», «Direzione del percorso 1», le sezioni per ruolo, «Rifinitura delle schermate interne (percorso 1)» e «Testi dell'interfaccia (percorso 1)». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+/wayfinder .scratch/design-percorso-1/map.md — apri e lavora un ticket «Interazioni e stati del percorso 1» dal «Non ancora specificato» («Rifinitura e revisione»).
 
-- Crea il ticket (tipo `prototype`), rivendicalo e lavora solo su quello, con le skill `break-ui` e `accessibility-audit` (WCAG 2.2 AA, come dice la mappa).
-- Leggi con lo strumento Artifact i prototipi approvati (link in STATUS.md) e prepara una pagina usa e getta con i dati peggiori (nomi lunghi, molte case, molti mesi arretrati, importi grandi, testo ingrandito), con i testi nuovi di DESIGN.md. Solo dati inventati.
-- Controllala nel browser a 360, 390, 768, 900, 1024, 1180 e 1366 px, in chiaro e in scuro, ricaricando per ogni schermata; misura i contrasti, compresi i dati incisi sulla tessera.
-- Le correzioni me le porti una alla volta, in parole semplici, con una raccomandazione motivata. Un cambio delle regole già approvate va in DESIGN.md come cambiato, non cancellato.
+Leggi AGENTS.md, STATUS.md, la mappa e, in DESIGN.md, «Direzione del percorso 1», «Accesso, tessera e situazioni comuni (percorso 1)» («Stati comuni» e «Benvenuto»), «Rifinitura delle schermate interne (percorso 1)» («Movimento»), «Testi dell'interfaccia (percorso 1)», «Dati limite e accessibilità (percorso 1)» e «Interazioni e stati». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+
+- Crea il ticket (tipo `prototype`), rivendicalo e lavora solo su quello, con le skill `prototype` (ramo UI), `emil-design-eng` e `apple-design`; `accessibility-audit` per il movimento ridotto e gli annunci allo screen reader.
+- Leggi con lo strumento Artifact la pagina dei dati limite (https://claude.ai/artifact/RtwaFRWDmVNnrr5XQnJTh9, con «Proposta») e la prova su iPhone (https://claude.ai/artifact/5ousKXbFpFsGqd5mrtcH7t). Prepara una pagina usa e getta con i momenti che cambiano lo stato: «Ricevuto», contabile inviata, incasso registrato, disdetta, pulsanti spenti, caricamento, errore e ritorno della rete. Ogni momento con e senza movimento ridotto. Solo dati inventati.
+- Controllala nel browser a 360, 390, 768, 900, 1024, 1180 e 1366 px, in chiaro e in scuro, ricaricando per ogni schermata.
+- Le scelte me le porti una alla volta, in parole semplici, con una raccomandazione motivata. Un cambio delle regole già approvate va in DESIGN.md come cambiato, non cancellato.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 

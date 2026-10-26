@@ -1,20 +1,21 @@
 # Stato del progetto
 
-## Punto di ripresa (25 ottobre 2026, testi dell'interfaccia e tessere fisiche decisi)
+## Punto di ripresa (26 ottobre 2026, dati limite e accessibilità decisi)
 **Fase: design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6), nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md). Approvati:
 - la direzione **«Terracotta»**, con il chiaro in vetrina;
 - lo spazio dell'operatore;
 - le schermate del proprietario e quelle dell'inquilino (le ricevute dell'inquilino a mesi a pillola sono provvisorie);
 - **accesso, tessera digitale e situazioni comuni** (23/10): accesso con un codice, pagina d'accesso con la tessera di rame, benvenuto animato, scheda «Tessera», disdetta da soli;
 - dal 24/10 la **rifinitura estetica delle schermate interne dei clienti**, la «via di mezzo». Pannello bianco, un solo riquadro in cima con la casa ridisegnata e i dettagli del mese, sotto elenchi puliti; caratteri più leggeri e il rame come accento;
-- dal 25/10 i **testi dell'interfaccia** ([DESIGN.md](DESIGN.md), «Testi dell'interfaccia (percorso 1)»): «in agenzia», «tu» anche nei titoli, frasi senza genere, «entro» per il canone, «Spese», titolo «Mese: il fatto».
+- dal 25/10 i **testi dell'interfaccia** ([DESIGN.md](DESIGN.md), «Testi dell'interfaccia (percorso 1)»): «in agenzia», «tu» anche nei titoli, frasi senza genere, «entro» per il canone, «Spese», titolo «Mese: il fatto»;
+- dal 26/10 i **dati limite e l'accessibilità** ([DESIGN.md](DESIGN.md), «Dati limite e accessibilità (percorso 1)»): più mesi aperti con elenco e totale, targhetta satinata sulla tessera, icone nei mesi a pillola, contorno dei campi a 3:1, testo che segue il telefono e altre cinque correzioni.
 
 Dal 25/10 è decisa anche la **tessera fisica del pilota** ([PRODUCT.md](PRODUCT.md) §12): plastica con lamina arancione, chip DESFire EV3 spento, solo un codice suo, consegna in agenzia.
 
 La voce è al **«tu»** anche per i clienti ([DESIGN.md](DESIGN.md)).
 
 Prossimi passi:
-- **Prossima sessione, proposta:** dati limite e revisione dell'accessibilità del percorso 1, dal «Non ancora specificato» della mappa (skill `break-ui` e `accessibility-audit`). Il messaggio è in START_HERE.md; l'utente può scegliere altro.
+- **Prossima sessione, proposta:** interazioni e stati del percorso 1 (successo, disabilitato, movimento), dal «Non ancora specificato» della mappa (skill `emil-design-eng` e `apple-design`). Il messaggio è in START_HERE.md; l'utente può scegliere altro, per esempio componenti e token.
 - **Preventivo delle tessere:** la richiesta è pronta nel ticket [Ricerca: tessere fisiche](.scratch/controllo-a/issues/12-ricerca-tessere-fisiche.md); la manda l'utente o ƎE. Con le risposte si decidono quantità, lamina e campione.
 - **Collaboratore di ƎE:** ticket rivendicato, con cinque domande pronte; si aspettano le risposte. L'utente incontra il collaboratore la sera del 25/10/2026: porta le cinque domande e i sei chiarimenti di ƎE, e chiede una piantina per la vista 3D.
 - **Prova su iPhone:** ticket rivendicato, pagina di prova pubblicata (https://claude.ai/artifact/5ousKXbFpFsGqd5mrtcH7t) con l'elenco dei controlli nel ticket. Primo riscontro: «sembra andare bene», ma la barra delle schede finisce sotto lo schermo dentro la cornice di claude.ai. Scelta dell'utente (A): la pagina resta com'è. Schede sopra l'area sicura, colore in alto, schermata Home e gesto dal bordo si verificano sulla prima versione della piattaforma. In pausa dal 24/10/2026 per scelta dell'utente («ci penseremo poi»): restano gli altri controlli, la versione di iOS e la diagnosi.
@@ -36,8 +37,29 @@ Prossimi passi:
 - Prova su iPhone (versione 1): https://claude.ai/artifact/5ousKXbFpFsGqd5mrtcH7t. Accesso con il codice, benvenuto animato, casa rifinita con le cinque schede, viste di secondo livello con «Indietro», diagnosi del telefono.
 - Rifinitura delle case di inquilino e proprietario (versione 2, «via di mezzo» approvata): https://claude.ai/artifact/9CQ4BtLZxYXJRBKiEfpZGj. Con «Prima», i due «dopo» scartati e la «via di mezzo»; il livello delle ombre di foglie è ricavato dalla stanza dell'accesso.
 - Titolo del mese e date, «Prima / Dopo» (25/10/2026, «Dopo» scelto): https://claude.ai/artifact/2A1w9suz98aQk9YDkTCsNv. I prototipi precedenti mostrano ancora i testi di prima: valgono le regole di DESIGN.md.
+- Dati limite e accessibilità (26/10/2026): https://claude.ai/artifact/RtwaFRWDmVNnrr5XQnJTh9. Dieci schermate con «Dati d'esempio / Caso peggiore» e «Com'è / Proposta / Alternativa»; con «Proposta» si vedono le correzioni decise.
 
 Prodotto: **Connetto**, nome di lavoro in attesa del parere sul marchio. Non c'è codice applicativo; architettura e stack non sono decisi.
+
+## Fatto (26 ottobre 2026, dati limite e accessibilità)
+- Ticket [Dati limite e accessibilità del percorso 1](.scratch/design-percorso-1/issues/15-dati-limite-accessibilita.md) aperto dal «Non ancora specificato» della mappa, rivendicato e chiuso, con le skill `break-ui`, `accessibility-audit` e `prototype`.
+- Letti con lo strumento Artifact i prototipi della rifinitura, della prova su iPhone e dell'accesso. Pagina usa e getta, privata, solo dati inventati: https://claude.ai/artifact/RtwaFRWDmVNnrr5XQnJTh9.
+  - Dieci schermate con i testi del 25/10/2026.
+  - Caso peggiore: nomi lunghi e con accenti, email di 64 caratteri, 14 case, 9 cose da fare, 7 mesi arretrati per 77.777,70 €, anni dal 2019, 115 voci in coda, contanti oltre la soglia.
+- Verifiche nel Chromium disponibile, pagina ricaricata e schermata verificata ogni volta:
+  - 308 combinazioni (7 larghezze, chiaro e scuro, due insiemi di dati), più zoom al 200%, 320 px, spaziatura del testo di WCAG 1.4.12 e tastiera;
+  - contrasti misurati sui pixel del fondo, comprese la tessera di rame e la stanza.
+  - Trovati 11 problemi veri; i falsi allarmi sono scartati guardando le schermate e annotati nel ticket.
+  - I più gravi:
+    - l'inquilino con più mesi arretrati vedeva solo il mese più vecchio;
+    - i dati incisi sulla tessera erano fra 2,2:1 e 3,4:1;
+    - un nome lungo copriva la scritta «Connetto» della tessera;
+    - il pulsante «Entra» spariva sotto la sfumatura con il nuovo messaggio d'errore;
+    - lo stato dei mesi a pillola si vedeva solo dal colore.
+- Dieci scelte dell'utente, una alla volta, tutte sull'opzione consigliata; l'ultima raccoglie otto piccole correzioni tecniche. Regole in [DESIGN.md](DESIGN.md), nuova sezione «Dati limite e accessibilità (percorso 1)». Le regole toccate sono segnate come cambiate: «Tessera digitale», «Mesi passati», «Lavoro in coda», «Contrasti misurati». Il testo che segue il telefono è anche in [ARCHITECTURE.md](ARCHITECTURE.md), «Cosa vincolerà la scelta».
+- Controllo rifatto con le correzioni attive, sulle stesse combinazioni: restano solo i falsi allarmi già spiegati.
+- Non fatto: prove con screen reader veri (VoiceOver, NVDA), su un iPhone vero e con persone. Vanno fatte sulla prima versione.
+- Non applicabili: build, test e revisione OCR (non c'è codice applicativo; il programma `ocr` non è nell'ambiente).
 
 ## Fatto (25 ottobre 2026, testi dell'interfaccia e tessere fisiche)
 - Ticket [Testi dell'interfaccia del percorso 1](.scratch/design-percorso-1/issues/14-testi-interfaccia.md) rivendicato e chiuso, con le skill `ux-writing`, `grilling` e `domain-modeling`.
