@@ -19,7 +19,8 @@ Dal 25/10 è decisa anche la **tessera fisica del pilota** ([PRODUCT.md](PRODUCT
 La voce è al **«tu»** anche per i clienti ([DESIGN.md](DESIGN.md)).
 
 Prossimi passi:
-- **Prossima sessione, proposta:** come si genera l'illustrazione di ogni casa, oppure il pacchetto per il controllo B (mappa, «Non ancora specificato»). I messaggi sono in START_HERE.md.
+- **Foto della casa** (decisione dell'utente del 26/10/2026, [PRODUCT.md](PRODUCT.md) §12): una o più foto della facciata, facoltative, da agenzia o proprietario; il disegno solo senza foto. Le foto interne vengono dopo la prima versione.
+- **Prossima sessione, proposta:** foto e illustrazione della casa, oppure il pacchetto per il controllo B (mappa, «Non ancora specificato»). I messaggi sono in START_HERE.md.
 - **Parere unico prima del lancio:** al parere sul nome Connetto si aggiungono sei domande su immagini ChatGPT, AI Act, scritta del nome e logo di ƎE ([ticket](.scratch/design-percorso-1/issues/08-parere-nome-connetto.md)). Le condizioni OpenAI per Plus/Italia e le policy sono state lette il 26/10/2026 ([ricerca](docs/ricerca/licenze-grafiche.md), §3, con date e distinzione delle Usage Policies efficaci dal 20/11/2026). Restano la ricerca per immagini simili alla stanza e alla tessera, il parere su diritti, trasparenza e modifiche dei segnali di provenienza, e il ricontrollo delle policy prima del lancio. Immagini solo nei prototipi fino al parere, come già deciso.
 - **Preventivo delle tessere:** la richiesta è pronta nel ticket [Ricerca: tessere fisiche](.scratch/controllo-a/issues/12-ricerca-tessere-fisiche.md); la manda l'utente o ƎE. Con le risposte si decidono quantità, lamina e campione.
 - **Collaboratore di ƎE:** ticket rivendicato, con cinque domande pronte; si aspettano le risposte. L'utente incontra il collaboratore la sera del 25/10/2026: porta le cinque domande e i sei chiarimenti di ƎE, e chiede una piantina per la vista 3D.

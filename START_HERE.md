@@ -27,12 +27,12 @@ Il 26/10/2026 è deciso anche il **disegno del logo di ƎE** ([DESIGN.md](DESIGN
 Il 26/10/2026 sono decise anche le **ricevute stampate** del canone e della consegna ([DESIGN.md](DESIGN.md), «Ricevute stampate (percorso 1)»): una lettera su un foglio A4, uguale nel PDF; ƎE in testa e Connetto piccolo in fondo; un'annullata con fascia ambra e timbro; il PDF fatto dai dati, che si legge con lo screen reader. Il testo legale aspetta il parere; le domande per i pareri legale e fiscale sono nella stessa sezione. Pagina di prova: https://claude.ai/artifact/EoCKVfNQG4mXr1bXNJzn1g.
 
 **Prossima sessione, proposta dall'agente:** un nuovo ticket dal «Non ancora specificato» della mappa, a scelta dell'utente:
-- l'**illustrazione di ogni casa**: lo stile adatto alle case di ƎE;
+- **foto e illustrazione della casa** (decisione dell'utente del 26/10/2026, PRODUCT.md §12, «Foto della casa»): come si caricano e si mostrano le foto della facciata, la copertina, chi le vede, le email, e lo stile del disegno per le case senza foto;
 - il **pacchetto per il controllo B**.
 
 Messaggio:
 
-/wayfinder .scratch/design-percorso-1/map.md — apri e lavora un ticket dal «Non ancora specificato»: <illustrazione di ogni casa | pacchetto per il controllo B>.
+/wayfinder .scratch/design-percorso-1/map.md — apri e lavora un ticket dal «Non ancora specificato»: <foto e illustrazione della casa | pacchetto per il controllo B>.
 
 Leggi AGENTS.md, STATUS.md, la mappa e le sezioni di DESIGN.md pertinenti. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
 
