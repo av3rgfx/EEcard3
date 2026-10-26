@@ -41,3 +41,5 @@ Come si lavora (HITL): skill `grilling` e `domain-modeling`; le scelte all'utent
   - operatore: tre numeri del giorno; avanzamento «6 di 10»; anteprima della ricevuta accanto al modulo;
   - accesso: pagina con la stanza;
   - documenti: ricevuta A4 e PDF.
+
+4. *Come si registrano componenti e token:* **A, tabelle brevi più un elenco di nomi** (consigliata). Una tabella dei token in chiaro e in scuro, con i valori mancanti presi dall'ultima prova; grandezze del testo e angoli ridotti a una scala corta; i circa 35 componenti, una riga ciascuno con il rimando alla sezione che li descrive. La pagina del pacchetto usa esattamente questi valori e lì si rimisurano i contrasti. *Scartate:* B, una scheda completa per componente (ripete le sezioni: un fatto in due posti); C, solo i nomi (verde, ambra e scala resterebbero solo nelle prove). *Motivo:* fissa ciò che manca senza duplicare le regole; per l'architettura i token sono una lista sola.
