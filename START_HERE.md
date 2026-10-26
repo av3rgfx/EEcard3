@@ -22,19 +22,21 @@ Il 26/10/2026, dopo la [ricerca sulle licenze](docs/ricerca/licenze-grafiche.md)
 - «ƎE» diventa un disegno ovunque nelle schermate, e lo ridisegniamo noi perché l'agenzia non ha più il file;
 - le immagini fatte con ChatGPT restano nei prototipi fino al parere, chiesto insieme a quello sul nome.
 
-Le condizioni di OpenAI non si sono potute aprire: prima del lancio l'utente le legge sul sito di OpenAI (condizioni europee, piano Plus).
+Il 26/10/2026 è deciso anche il **disegno del logo di ƎE** ([DESIGN.md](DESIGN.md), «Identità»; [assets/marchio/](assets/marchio/README.md)). È la «E» di Manrope ripetuta e specchiata. Nelle frasi si usano due «E» del testo, la prima girata; da solo c'è il disegno fisso `ee.svg` al peso 700, inciso sulla tessera. Lo screen reader dice «Enrico Erca». Approvato dall'utente insieme al collaboratore di ƎE. Pagina di prova: https://claude.ai/artifact/GRs9QZVLmBR7q6yx5VS2xQ.
 
-**Prima della prossima sessione:** unire in `main` la PR del branch `claude/research-icon-font-image-licenses-gj2soe`. Se non è ancora unita, la sessione deve partire da quel branch.
+**Prossima sessione, proposta dall'agente:** un nuovo ticket dal «Non ancora specificato» della mappa, a scelta dell'utente:
+- le **ricevute stampate** (canone e consegna): impaginazione e campi di PRODUCT.md §10.3, ora che il logo di ƎE c'è; il testo legale aspetta il parere;
+- l'**illustrazione di ogni casa**: lo stile adatto alle case di ƎE;
+- il **pacchetto per il controllo B**.
 
-**Prossima sessione, proposta dall'agente: il logo di ƎE ridisegnato in SVG.** Serve una foto o una scansione nitida del logo attuale (insegna, carta intestata, biglietto da visita o pagina del sito), da allegare al messaggio. Senza riferimento, l'utente può scegliere un altro passo, per esempio il pacchetto per il controllo B o l'illustrazione di ogni casa (mappa, «Non ancora specificato»). Messaggio:
+Messaggio:
 
-/wayfinder .scratch/design-percorso-1/map.md — ticket «Logo di ƎE ridisegnato in SVG» (.scratch/design-percorso-1/issues/18-logo-ee-svg.md): allego la foto del logo attuale dell'agenzia.
+/wayfinder .scratch/design-percorso-1/map.md — apri e lavora un ticket dal «Non ancora specificato»: <ricevute stampate | illustrazione di ogni casa | pacchetto per il controllo B>.
 
-Leggi AGENTS.md, STATUS.md, la mappa, il ticket e, in DESIGN.md, «Identità» (logo di ƎE e simbolo C–Legame), «Accesso, tessera e situazioni comuni (percorso 1)» (la tessera) e «Dati limite e accessibilità (percorso 1)»; poi assets/marchio/README.md. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+Leggi AGENTS.md, STATUS.md, la mappa e le sezioni di DESIGN.md pertinenti. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
 
-- Rivendica il ticket (`Status: claimed`) e lavora solo su quello, con la skill `prototype` (ramo UI). Ridisegna il logo dalla foto allegata, in un solo colore (`currentColor`), senza cercarlo altrove.
-- Pagina usa e getta, privata, con solo dati inventati: il logo dentro le frasi a varie grandezze e con il testo ingrandito, sulla tessera di rame e nella barra laterale, in chiaro e in scuro. Controllala a 360, 390, 768, 1024 e 1366 px. Lo screen reader deve leggere «ƎE».
-- Le scelte me le fai una alla volta, in parole semplici, con una raccomandazione motivata. Il disegno approvato va in assets/marchio/ con le regole d'uso; la conferma dell'agenzia va annotata nel ticket.
+- Apri il ticket nella mappa, rivendicalo (`Status: claimed`) e lavora solo su quello, con la skill adatta al tipo di ticket. Solo dati inventati.
+- Le scelte me le fai una alla volta, in parole semplici, con una raccomandazione motivata; le regole decise vanno in DESIGN.md con data e motivo.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 
