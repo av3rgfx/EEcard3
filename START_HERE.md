@@ -14,18 +14,19 @@ Voce al «tu» anche per i clienti. Nome di lavoro **Connetto**, simbolo **C–L
 
 Il 26/10/2026 sono decisi i **dati limite e l'accessibilità** ([DESIGN.md](DESIGN.md), «Dati limite e accessibilità (percorso 1)»): più mesi aperti con elenco e totale, targhetta satinata sulla tessera, icone nei mesi a pillola, contorno dei campi a 3:1, testo che segue il telefono e altre cinque correzioni. Pagina di prova: https://claude.ai/artifact/RtwaFRWDmVNnrr5XQnJTh9.
 
-**Prima della prossima sessione:** unire in `main` la PR del branch `claude/percorso-1-accessibility-audit-kt3yp7`. Se non è ancora unita, la sessione deve partire da quel branch.
+Il 26/10/2026 sono decisi anche le **interazioni e gli stati** ([DESIGN.md](DESIGN.md), «Interazioni e stati (percorso 1)»): conferma al suo posto, «Annulla» per 8 secondi sul «Ricevuto», pulsanti spenti con il perché, movimento ridotto fatto solo di dissolvenze, «Di nuovo in linea» per 4 secondi e otto dettagli su attesa, errori e annunci. Pagina di prova: https://claude.ai/artifact/MvrdhkTegSQ5eUUGC4XzeY.
 
-**Prossima sessione, proposta dall'agente: interazioni e stati del percorso 1.** È nel «Non ancora specificato» della mappa («Rifinitura e revisione»); DESIGN.md, «Interazioni e stati», dice che mancano successo e disabilitato. L'utente può scegliere un altro passo, per esempio componenti e token. Messaggio:
+**Prima della prossima sessione:** unire in `main` la PR del branch `claude/percorso-1-interazioni-stati-inobxl`. Se non è ancora unita, la sessione deve partire da quel branch.
 
-/wayfinder .scratch/design-percorso-1/map.md — apri e lavora un ticket «Interazioni e stati del percorso 1» dal «Non ancora specificato» («Rifinitura e revisione»).
+**Prossima sessione, proposta dall'agente: licenze di icone, carattere e immagini (componenti e token).** È nel «Non ancora specificato» della mappa («Componenti e token»): prima di registrare i componenti servono fatti letti sulle fonti ufficiali (licenza di Manrope, un set di icone con licenza libera, condizioni d'uso delle immagini generate con ChatGPT). È una ricerca che l'agente fa da solo; le decisioni arrivano dopo. L'utente può scegliere un altro passo, per esempio il pacchetto per il controllo B. Messaggio:
 
-Leggi AGENTS.md, STATUS.md, la mappa e, in DESIGN.md, «Direzione del percorso 1», «Accesso, tessera e situazioni comuni (percorso 1)» («Stati comuni» e «Benvenuto»), «Rifinitura delle schermate interne (percorso 1)» («Movimento»), «Testi dell'interfaccia (percorso 1)», «Dati limite e accessibilità (percorso 1)» e «Interazioni e stati». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+/wayfinder .scratch/design-percorso-1/map.md — apri e lavora un ticket «Ricerca: licenze di icone, carattere e immagini» dal «Non ancora specificato» («Componenti e token»).
 
-- Crea il ticket (tipo `prototype`), rivendicalo e lavora solo su quello, con le skill `prototype` (ramo UI), `emil-design-eng` e `apple-design`; `accessibility-audit` per il movimento ridotto e gli annunci allo screen reader.
-- Leggi con lo strumento Artifact la pagina dei dati limite (https://claude.ai/artifact/RtwaFRWDmVNnrr5XQnJTh9, con «Proposta») e la prova su iPhone (https://claude.ai/artifact/5ousKXbFpFsGqd5mrtcH7t). Prepara una pagina usa e getta con i momenti che cambiano lo stato: «Ricevuto», contabile inviata, incasso registrato, disdetta, pulsanti spenti, caricamento, errore e ritorno della rete. Ogni momento con e senza movimento ridotto. Solo dati inventati.
-- Controllala nel browser a 360, 390, 768, 900, 1024, 1180 e 1366 px, in chiaro e in scuro, ricaricando per ogni schermata.
-- Le scelte me le porti una alla volta, in parole semplici, con una raccomandazione motivata. Un cambio delle regole già approvate va in DESIGN.md come cambiato, non cancellato.
+Leggi AGENTS.md, STATUS.md, la mappa e, in DESIGN.md, «Direzione del percorso 1» («Caratteri» e «Forme»), «Accesso, tessera e situazioni comuni (percorso 1)» (le immagini della stanza e della tessera) e «Componenti e token». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+
+- Crea il ticket (tipo `research`), rivendicalo e lavora solo su quello, con la skill `research`. Un file per tema in docs/ricerca/, con la data di lettura e il link a ogni fonte primaria.
+- Domande: cosa permette la licenza di Manrope (uso nel prodotto, nelle email, incorporato); due o tre set di icone a tratto con licenza libera, adatti alle icone già disegnate, con le condizioni; cosa dicono le condizioni d'uso di OpenAI sulle immagini generate dall'utente con ChatGPT (stanza e tessera di rame) per un prodotto commerciale. Segnala dove serve un parere professionale.
+- Nessun account, download di pagamento o contatto con fornitori. Alla fine portami le scelte una alla volta, in parole semplici, con una raccomandazione motivata.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 

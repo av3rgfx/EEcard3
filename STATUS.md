@@ -1,6 +1,6 @@
 # Stato del progetto
 
-## Punto di ripresa (26 ottobre 2026, dati limite e accessibilità decisi)
+## Punto di ripresa (26 ottobre 2026, interazioni e stati decisi)
 **Fase: design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6), nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md). Approvati:
 - la direzione **«Terracotta»**, con il chiaro in vetrina;
 - lo spazio dell'operatore;
@@ -9,13 +9,14 @@
 - dal 24/10 la **rifinitura estetica delle schermate interne dei clienti**, la «via di mezzo». Pannello bianco, un solo riquadro in cima con la casa ridisegnata e i dettagli del mese, sotto elenchi puliti; caratteri più leggeri e il rame come accento;
 - dal 25/10 i **testi dell'interfaccia** ([DESIGN.md](DESIGN.md), «Testi dell'interfaccia (percorso 1)»): «in agenzia», «tu» anche nei titoli, frasi senza genere, «entro» per il canone, «Spese», titolo «Mese: il fatto»;
 - dal 26/10 i **dati limite e l'accessibilità** ([DESIGN.md](DESIGN.md), «Dati limite e accessibilità (percorso 1)»): più mesi aperti con elenco e totale, targhetta satinata sulla tessera, icone nei mesi a pillola, contorno dei campi a 3:1, testo che segue il telefono e altre cinque correzioni.
+- dal 26/10 anche le **interazioni e gli stati** ([DESIGN.md](DESIGN.md), «Interazioni e stati (percorso 1)»): conferma al suo posto, «Annulla» per 8 secondi sul «Ricevuto», pulsanti spenti con il perché, movimento ridotto fatto solo di dissolvenze, «Di nuovo in linea» per 4 secondi.
 
 Dal 25/10 è decisa anche la **tessera fisica del pilota** ([PRODUCT.md](PRODUCT.md) §12): plastica con lamina arancione, chip DESFire EV3 spento, solo un codice suo, consegna in agenzia.
 
 La voce è al **«tu»** anche per i clienti ([DESIGN.md](DESIGN.md)).
 
 Prossimi passi:
-- **Prossima sessione, proposta:** interazioni e stati del percorso 1 (successo, disabilitato, movimento), dal «Non ancora specificato» della mappa (skill `emil-design-eng` e `apple-design`). Il messaggio è in START_HERE.md; l'utente può scegliere altro, per esempio componenti e token.
+- **Prossima sessione, proposta:** ricerca sulle licenze di icone, carattere e immagini, per i componenti e token (mappa, «Non ancora specificato»). Il messaggio è in START_HERE.md; l'utente può scegliere altro, per esempio il pacchetto per il controllo B.
 - **Preventivo delle tessere:** la richiesta è pronta nel ticket [Ricerca: tessere fisiche](.scratch/controllo-a/issues/12-ricerca-tessere-fisiche.md); la manda l'utente o ƎE. Con le risposte si decidono quantità, lamina e campione.
 - **Collaboratore di ƎE:** ticket rivendicato, con cinque domande pronte; si aspettano le risposte. L'utente incontra il collaboratore la sera del 25/10/2026: porta le cinque domande e i sei chiarimenti di ƎE, e chiede una piantina per la vista 3D.
 - **Prova su iPhone:** ticket rivendicato, pagina di prova pubblicata (https://claude.ai/artifact/5ousKXbFpFsGqd5mrtcH7t) con l'elenco dei controlli nel ticket. Primo riscontro: «sembra andare bene», ma la barra delle schede finisce sotto lo schermo dentro la cornice di claude.ai. Scelta dell'utente (A): la pagina resta com'è. Schede sopra l'area sicura, colore in alto, schermata Home e gesto dal bordo si verificano sulla prima versione della piattaforma. In pausa dal 24/10/2026 per scelta dell'utente («ci penseremo poi»): restano gli altri controlli, la versione di iOS e la diagnosi.
@@ -25,7 +26,7 @@ Prossimi passi:
   - esito buono, ma la vista entra nella prima versione solo dopo la [prova su una planimetria vera dei fondatori](.scratch/controllo-a/issues/17-prova-planimetria-fondatori.md), che aspetta il caricamento con il loro consenso scritto. In pausa dal 25/10/2026: l'utente chiede una piantina al collaboratore di ƎE; deve essere di una casa dei fondatori o del collaboratore, non di un cliente. Il messaggio è in START_HERE.md.
 - Facoltativo, solo se l'utente lo chiede: rivedere lo spazio dell'operatore con le regole della rifinitura (mappa, «Non ancora specificato»).
 - Promemoria dell'utente (23/10/2026): Animate UI e Watermelon UI si valutano all'architettura, in [ARCHITECTURE.md](ARCHITECTURE.md), «Da valutare al passo 7»; nessuna installazione prima.
-- Dopo: email e SMS (aspettano il parere sul nome), ricevute stampate, componenti, interazioni, pacchetto per il controllo B (mappa, «Non ancora specificato»). Il totem in agenzia, con wallet e pagamenti, resta dopo la prima versione.
+- Dopo: email e SMS (aspettano il parere sul nome), ricevute stampate, componenti, pacchetto per il controllo B (mappa, «Non ancora specificato»). Il totem in agenzia, con wallet e pagamenti, resta dopo la prima versione.
 
 **Prototipi pubblicati** (pagine private dell'utente, usa e getta). Il sorgente sta nella cartella temporanea della sessione e si perde; una sessione nuova può leggerli con lo strumento Artifact, azione «read». Servono come riferimento di stile e non entrano nel repository.
 - Direzioni, primo giro: https://claude.ai/artifact/3qFHoy8XyHydtvetDPosmU
@@ -38,8 +39,25 @@ Prossimi passi:
 - Rifinitura delle case di inquilino e proprietario (versione 2, «via di mezzo» approvata): https://claude.ai/artifact/9CQ4BtLZxYXJRBKiEfpZGj. Con «Prima», i due «dopo» scartati e la «via di mezzo»; il livello delle ombre di foglie è ricavato dalla stanza dell'accesso.
 - Titolo del mese e date, «Prima / Dopo» (25/10/2026, «Dopo» scelto): https://claude.ai/artifact/2A1w9suz98aQk9YDkTCsNv. I prototipi precedenti mostrano ancora i testi di prima: valgono le regole di DESIGN.md.
 - Dati limite e accessibilità (26/10/2026): https://claude.ai/artifact/RtwaFRWDmVNnrr5XQnJTh9. Dieci schermate con «Dati d'esempio / Caso peggiore» e «Com'è / Proposta / Alternativa»; con «Proposta» si vedono le correzioni decise.
+- Interazioni e stati (26/10/2026, versione 2): https://claude.ai/artifact/MvrdhkTegSQ5eUUGC4XzeY. Otto momenti che cambiano lo stato, con le varianti, tre livelli di movimento e il registro di cosa sente lo screen reader; all'apertura mostra le scelte fatte.
 
 Prodotto: **Connetto**, nome di lavoro in attesa del parere sul marchio. Non c'è codice applicativo; architettura e stack non sono decisi.
+
+## Fatto (26 ottobre 2026, interazioni e stati)
+- Ticket [Interazioni e stati del percorso 1](.scratch/design-percorso-1/issues/16-interazioni-stati.md) aperto dal «Non ancora specificato» della mappa, rivendicato e chiuso, con le skill `prototype` (ramo UI), `emil-design-eng`, `apple-design` e `accessibility-audit`.
+- Lette con lo strumento Artifact la pagina dei dati limite (con «Proposta») e la prova su iPhone. Pagina usa e getta, privata, solo dati inventati: https://claude.ai/artifact/MvrdhkTegSQ5eUUGC4XzeY.
+  - Otto momenti: «Ricevuto», contabile inviata, incasso registrato, disdetta, pulsanti spenti, caricamento, errore ed esito incerto, ritorno della rete.
+  - Movimento normale, ridotto con sole dissolvenze e ridotto fermo; un registro mostra annunci allo screen reader e spostamenti del fuoco.
+- Verifiche nel Chromium disponibile, pagina ricaricata ogni volta:
+  - 308 controlli: 8 momenti a 7 larghezze, in chiaro e in scuro, prima e dopo l'azione principale, più i due livelli di movimento ridotto a 390 e 1366 px;
+  - nessuno scorrimento orizzontale, niente fuori dai riquadri, nessun testo tagliato, nessun errore; schermate guardate anche a occhio;
+  - percorsi provati: secondo tocco ignorato, «Annulla» e invio dopo 8 secondi, esito incerto senza nuovo invio, Tab sui pulsanti spenti;
+  - contrasti dei colori nuovi misurati con la formula WCAG, tutti sopra 4,5:1.
+- Sei scelte dell'utente, una alla volta, tutte sull'opzione consigliata; l'ultima raccoglie otto dettagli tecnici. Regole in [DESIGN.md](DESIGN.md), nuova sezione «Interazioni e stati (percorso 1)». Regole segnate come cambiate: «Incasso al banco» (pulsante spento) e «Movimento» della rifinitura (movimento ridotto); rimandi in «Benvenuto», «Stati comuni» e «Interazioni e stati».
+- Pagina di prova aggiornata alle scelte (versione 2) e ricontrollata.
+- Errore dell'agente: in una domanda all'utente il nome «ƎE» è uscito come «E» per un carattere sbagliato; il senso non cambiava ed è annotato nel ticket.
+- Non fatto: ascolto con screen reader veri (VoiceOver, NVDA) e prova del movimento su un iPhone vero. Vanno fatte sulla prima versione.
+- Non applicabili: build, test e revisione OCR (non c'è codice applicativo; il programma `ocr` non è nell'ambiente).
 
 ## Fatto (26 ottobre 2026, dati limite e accessibilità)
 - Ticket [Dati limite e accessibilità del percorso 1](.scratch/design-percorso-1/issues/15-dati-limite-accessibilita.md) aperto dal «Non ancora specificato» della mappa, rivendicato e chiuso, con le skill `break-ui`, `accessibility-audit` e `prototype`.
