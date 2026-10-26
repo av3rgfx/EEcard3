@@ -21,11 +21,11 @@ Regole d'uso, indicate dall'utente:
 
 ## Logo di ƎE
 
-Logo dell'agenzia: due E che si danno la schiena, una E specchiata seguita da una E normale. È stato ridisegnato da noi il 26/10/2026, perché l'agenzia non ha più il file originale ([DESIGN.md](../../DESIGN.md), «Identità»; [ticket](../../.scratch/design-percorso-1/issues/18-logo-ee-svg.md)). **Il disegno va ancora mostrato all'agenzia**, perché è il suo marchio.
+Logo dell'agenzia: due E che si danno la schiena, una E specchiata seguita da una E normale. È stato ridisegnato da noi il 26/10/2026, perché l'agenzia non ha più il file originale ([DESIGN.md](../../DESIGN.md), «Identità»; [ticket](../../.scratch/design-percorso-1/issues/18-logo-ee-svg.md)). **Approvato** dall'utente insieme al collaboratore di ƎE, per l'agenzia (riferito dall'utente il 26/10/2026).
 
 | File | Uso |
 | --- | --- |
-| `ee.svg` | ƎE da solo, come marchio: tessera di rame, ricevute stampate e PDF, file da mostrare all'agenzia. Almeno 10 px di altezza. |
+| `ee.svg` | ƎE da solo, come marchio: tessera di rame, ricevute stampate e PDF, file per l'agenzia. Almeno 10 px di altezza. |
 
 Come è fatto:
 - è la «E» di Manrope 4.505 al peso 700, ripetuta e specchiata a sinistra. I contorni vengono dal file `Manrope[wght].ttf` di Google Fonts (sha256 `3ae11c49…9d6ae6`), letto con fontTools. La licenza OFL 1.1 permette di usare il carattere in un logo; il logo resta nostro e non diventa OFL ([ricerca](../../docs/ricerca/licenze-grafiche.md), §1.2);
@@ -40,7 +40,7 @@ Regole d'uso (decise dall'utente il 26/10/2026, una scelta alla volta):
   `.ee-specchio` ha `display: inline-block` e `transform: scaleX(-1)`. `.vh` è il testo nascosto alla vista ma letto dallo screen reader. `.ee-segno` ha `user-select: none` e `white-space: nowrap`.
 - **Lo screen reader dice «Enrico Erca»**, di seguito alla frase («Chiama Enrico Erca», «Ricevuto da Enrico Erca in agenzia»). Non dice «immagine» e non dice la «Ǝ», che alcuni telefoni leggono come una lettera strana. Lo stesso vale quando si usa il file: testo nascosto «Enrico Erca» e disegno con `aria-hidden="true"`. Nelle frasi la parola «agenzia» si scrive solo quando serve al senso, così non si ripete.
 - Un solo colore pieno: il file usa `currentColor` e prende il colore del testo intorno. Non si ruota e non si deforma; le due E non si uniscono e non cambiano distanza. Niente gradienti, ombre o contorni.
-- Intorno al logo da solo resta libero almeno metà della sua altezza (proposta dell'agente, da mostrare all'agenzia).
+- Intorno al logo da solo resta libero almeno metà della sua altezza (proposta dell'agente, approvata con il disegno).
 - **Eccezione, come per il simbolo:** sulla tessera di rame, vista come oggetto, ƎE è inciso nel metallo, scuro e con un filo di luce sotto, con la forma identica. Sul rame del prototipo il contrasto è fra circa 4,2:1 e 5,3:1. I loghi non hanno un minimo di contrasto in WCAG (criterio 1.4.3), ma qui resta sopra 3:1.
 - Nelle email e negli SMS ƎE resta in lettere, perché un disegno non sempre si vede.
 - Non è stata fatta una ricerca di marchi simili e il marchio non è registrato: è dell'agenzia, che decide se e come tutelarlo.

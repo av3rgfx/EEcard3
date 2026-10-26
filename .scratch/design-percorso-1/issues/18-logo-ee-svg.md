@@ -26,7 +26,7 @@ Deciso dall'utente il 26/10/2026, con cinque scelte (più una conferma) su un pr
 - Lo **screen reader** dice «Enrico Erca», di seguito alla frase.
 - Sulla **tessera di rame** ƎE è **inciso**, come il simbolo C–Legame.
 
-File e regole d'uso in [assets/marchio/](../../../assets/marchio/README.md); regola in [DESIGN.md](../../../DESIGN.md), «Identità». **Resta da fare: mostrare il disegno all'agenzia**, perché è il suo marchio, e annotare qui la sua risposta.
+File e regole d'uso in [assets/marchio/](../../../assets/marchio/README.md); regola in [DESIGN.md](../../../DESIGN.md), «Identità». **Approvato** dall'utente insieme al collaboratore di ƎE, per l'agenzia (riferito dall'utente il 26/10/2026).
 
 ## Commenti (Comments)
 
@@ -59,3 +59,5 @@ File e regole d'uso in [assets/marchio/](../../../assets/marchio/README.md); reg
 **Correzione:** nella quinta domanda l'agente ha detto «contrasto circa 5:1» sul rame. Misurato poi sui toni del prototipo è fra circa 4,2:1 e 5,3:1. Per un logo WCAG non chiede un minimo (1.4.3), e resta sopra 3:1.
 
 **Revisione:** nessun codice applicativo. Il programma `ocr` non c'è nell'ambiente, quindi niente revisione OCR. Revisione diretta del file `ee.svg`: forme, verso delle E e controllo d'integrità.
+
+**Conferma dell'agenzia, 26/10/2026:** l'utente scrive «il logo va bene, lo confermo insieme al mio collaboratore». Il collaboratore di ƎE conferma per l'agenzia (riferito dall'utente). Nessun cambio al disegno.

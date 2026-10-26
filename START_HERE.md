@@ -22,22 +22,7 @@ Il 26/10/2026, dopo la [ricerca sulle licenze](docs/ricerca/licenze-grafiche.md)
 - «ƎE» diventa un disegno ovunque nelle schermate, e lo ridisegniamo noi perché l'agenzia non ha più il file;
 - le immagini fatte con ChatGPT restano nei prototipi fino al parere, chiesto insieme a quello sul nome.
 
-Il 26/10/2026 è deciso anche il **disegno del logo di ƎE** ([DESIGN.md](DESIGN.md), «Identità»; [assets/marchio/](assets/marchio/README.md)). È la «E» di Manrope ripetuta e specchiata. Nelle frasi si usano due «E» del testo, la prima girata; da solo c'è il disegno fisso `ee.svg` al peso 700, inciso sulla tessera. Lo screen reader dice «Enrico Erca». Pagina di prova: https://claude.ai/artifact/GRs9QZVLmBR7q6yx5VS2xQ.
-
-**Da fare dall'utente: mostrare il logo all'agenzia.** Il disegno è suo e va approvato da ƎE. Si condivide la pagina di prova dal menu «Condividi», oppure si manda il file `assets/marchio/ee.svg`. Quando arriva la risposta:
-
-/wayfinder .scratch/design-percorso-1/map.md — ticket chiuso «Logo di ƎE ridisegnato in SVG» (.scratch/design-percorso-1/issues/18-logo-ee-svg.md): la risposta dell'agenzia sul disegno è in fondo a questo messaggio.
-
-Leggi AGENTS.md, STATUS.md, la mappa, il ticket, in DESIGN.md «Identità» e assets/marchio/README.md. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
-
-- Annota la risposta nel ticket, in sintesi e senza nomi. Se l'agenzia approva, togli «va ancora mostrato all'agenzia» da DESIGN.md, dal README dei marchi e da STATUS.md.
-- Se chiede cambi, riapri il ticket e portameli una alla volta, in parole semplici, con una raccomandazione; il prototipo si recupera con lo strumento Artifact, azione «read».
-
-Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
-
-Risposta dell'agenzia:
-
----
+Il 26/10/2026 è deciso anche il **disegno del logo di ƎE** ([DESIGN.md](DESIGN.md), «Identità»; [assets/marchio/](assets/marchio/README.md)). È la «E» di Manrope ripetuta e specchiata. Nelle frasi si usano due «E» del testo, la prima girata; da solo c'è il disegno fisso `ee.svg` al peso 700, inciso sulla tessera. Lo screen reader dice «Enrico Erca». Approvato dall'utente insieme al collaboratore di ƎE. Pagina di prova: https://claude.ai/artifact/GRs9QZVLmBR7q6yx5VS2xQ.
 
 **Prossima sessione, proposta dall'agente:** un nuovo ticket dal «Non ancora specificato» della mappa, a scelta dell'utente:
 - le **ricevute stampate** (canone e consegna): impaginazione e campi di PRODUCT.md §10.3, ora che il logo di ƎE c'è; il testo legale aspetta il parere;

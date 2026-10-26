@@ -11,14 +11,13 @@
 - dal 26/10 i **dati limite e l'accessibilità** ([DESIGN.md](DESIGN.md), «Dati limite e accessibilità (percorso 1)»): più mesi aperti con elenco e totale, targhetta satinata sulla tessera, icone nei mesi a pillola, contorno dei campi a 3:1, testo che segue il telefono e altre cinque correzioni.
 - dal 26/10 anche le **interazioni e gli stati** ([DESIGN.md](DESIGN.md), «Interazioni e stati (percorso 1)»): conferma al suo posto, «Annulla» per 8 secondi sul «Ricevuto», pulsanti spenti con il perché, movimento ridotto fatto solo di dissolvenze, «Di nuovo in linea» per 4 secondi.
 - dal 26/10, dopo la [ricerca sulle licenze](docs/ricerca/licenze-grafiche.md), anche **carattere, icone, logo di ƎE e immagini** ([DESIGN.md](DESIGN.md), «Componenti e token»): Manrope dal nostro sito, icone Lucide a tratto 1,6, «ƎE» come disegno ovunque nelle schermate (lo ridisegniamo noi), immagini ChatGPT solo nei prototipi fino al parere.
-- dal 26/10 il **disegno del logo di ƎE** ([DESIGN.md](DESIGN.md), «Identità»; [assets/marchio/](assets/marchio/README.md)): la «E» di Manrope ripetuta e specchiata. Nelle frasi due «E» del testo, la prima girata; da solo il disegno fisso `ee.svg` al peso 700, inciso sulla tessera. Lo screen reader dice «Enrico Erca». **Va ancora mostrato all'agenzia.**
+- dal 26/10 il **disegno del logo di ƎE** ([DESIGN.md](DESIGN.md), «Identità»; [assets/marchio/](assets/marchio/README.md)): la «E» di Manrope ripetuta e specchiata. Nelle frasi due «E» del testo, la prima girata; da solo il disegno fisso `ee.svg` al peso 700, inciso sulla tessera. Lo screen reader dice «Enrico Erca». Approvato dall'utente insieme al collaboratore di ƎE.
 
 Dal 25/10 è decisa anche la **tessera fisica del pilota** ([PRODUCT.md](PRODUCT.md) §12): plastica con lamina arancione, chip DESFire EV3 spento, solo un codice suo, consegna in agenzia.
 
 La voce è al **«tu»** anche per i clienti ([DESIGN.md](DESIGN.md)).
 
 Prossimi passi:
-- **Logo di ƎE all'agenzia:** l'utente mostra il disegno all'agenzia (pagina di prova https://claude.ai/artifact/GRs9QZVLmBR7q6yx5VS2xQ, da condividere dal menu «Condividi», oppure il file [assets/marchio/ee.svg](assets/marchio/ee.svg)). La risposta si annota nel [ticket](.scratch/design-percorso-1/issues/18-logo-ee-svg.md); se chiede cambi, si riapre.
 - **Prossima sessione, proposta:** come si genera l'illustrazione di ogni casa, oppure il pacchetto per il controllo B (mappa, «Non ancora specificato»). I messaggi sono in START_HERE.md.
 - **Parere unico prima del lancio:** al parere sul nome Connetto si aggiungono sei domande su immagini ChatGPT, AI Act, scritta del nome e logo di ƎE ([ticket](.scratch/design-percorso-1/issues/08-parere-nome-connetto.md)). Le condizioni OpenAI per Plus/Italia e le policy sono state lette il 26/10/2026 ([ricerca](docs/ricerca/licenze-grafiche.md), §3, con date e distinzione delle Usage Policies efficaci dal 20/11/2026). Restano la ricerca per immagini simili alla stanza e alla tessera, il parere su diritti, trasparenza e modifiche dei segnali di provenienza, e il ricontrollo delle policy prima del lancio. Immagini solo nei prototipi fino al parere, come già deciso.
 - **Preventivo delle tessere:** la richiesta è pronta nel ticket [Ricerca: tessere fisiche](.scratch/controllo-a/issues/12-ricerca-tessere-fisiche.md); la manda l'utente o ƎE. Con le risposte si decidono quantità, lamina e campione.
@@ -49,13 +48,14 @@ Prossimi passi:
 Prodotto: **Connetto**, nome di lavoro in attesa del parere sul marchio. Non c'è codice applicativo; architettura e stack non sono decisi.
 
 ## Fatto (26 ottobre 2026, logo di ƎE)
-- Ticket [Logo di ƎE ridisegnato in SVG](.scratch/design-percorso-1/issues/18-logo-ee-svg.md) rivendicato e chiuso con la skill `prototype` (ramo UI). Precisazione dell'utente: niente foto, il logo è «ƎE», una E specchiata seguita da una E normale. Annotati la conferma del collaboratore di ƎE (riferita dall'utente) e il fatto che il disegno va mostrato all'agenzia.
+- Ticket [Logo di ƎE ridisegnato in SVG](.scratch/design-percorso-1/issues/18-logo-ee-svg.md) rivendicato e chiuso con la skill `prototype` (ramo UI). Precisazione dell'utente: niente foto, il logo è «ƎE», una E specchiata seguita da una E normale. Annotata la conferma del collaboratore di ƎE al ridisegno (riferita dall'utente).
 - Manrope 4.505 scaricato da Google Fonts solo nella sessione, per leggere la «E» con fontTools: è fatta di rettangoli e le misure cambiano in modo lineare col peso. Il file del carattere non entra nel repository.
 - Prototipo con tre metodi (SVG fisso, E specchiata nel testo, misto) e i comandi per peso, distanza, lettura, tema e testo. Verificato in Chromium:
   - 60 combinazioni a 360, 390, 768, 1024 e 1366 px, in chiaro e in scuro, con il testo al 100 e al 200%, senza scorrimento orizzontale né errori, dopo una correzione della barra laterale;
   - nell'albero di accessibilità la frase si legge intera, per esempio «Chiama Enrico Erca».
 - Scelte dell'utente, una alla volta: metodo misto, peso 700, distanza come nel testo, «Enrico Erca» per lo screen reader (proposta dell'utente, rifinita), inciso sulla tessera. File `ee.svg` e regole in [assets/marchio/](assets/marchio/README.md); regola in [DESIGN.md](DESIGN.md), «Identità».
 - Correzione: in una domanda l'agente ha detto «contrasto circa 5:1» per ƎE sul rame; misurato è fra 4,2:1 e 5,3:1. Per un logo WCAG non chiede un minimo, e resta sopra 3:1.
+- Dopo la chiusura: l'utente ha confermato il disegno insieme al collaboratore di ƎE, che lo approva per l'agenzia (riferito dall'utente). Tolte le note «va mostrato all'agenzia».
 - Non fatte: prove con screen reader veri e su iPhone (con la prima versione); revisione OCR (non c'è codice applicativo e il programma `ocr` non è nell'ambiente).
 
 ## Fatto (26 ottobre 2026, licenze di carattere, icone e immagini)
