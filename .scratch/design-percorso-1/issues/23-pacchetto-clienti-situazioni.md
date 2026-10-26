@@ -17,4 +17,6 @@ La pagina «Connetto, percorso 1» è completa e pronta per il controllo B? Si a
 
 Regole: [DESIGN.md](../../../DESIGN.md), «Pacchetto per il controllo B (percorso 1)», «Componenti e token» e le sezioni di ogni schermata.
 
+Revisione dell'esperienza (decisione dell'utente del 26/10/2026, [DESIGN.md](../../../DESIGN.md), «Pacchetto per il controllo B»): prima di ridisegnare ogni tappa, una scheda breve per compito (passi, cosa deve sapere la persona, dove può sbagliare, cosa togliere o anticipare, proposte), con le skill `ux-research` (valutazione euristica) e `ux-strategy`. Le proposte all'utente come «prima e dopo», una alla volta; le schede restano qui sotto «Commenti». Se il ticket supera una sessione resta `claimed` e la sessione seguente riprende dalla tappa successiva.
+
 Come si lavora (HITL): come il ticket precedente (skill `prototype`, poi `accessibility-audit` per un controllo finale sull'intera pagina). Chiuso questo ticket, la pagina è il pacchetto: il controllo B si fa quando ci sono anche le risposte del collaboratore di ƎE e l'architettura (METODO.md, passo 7).

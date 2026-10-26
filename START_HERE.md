@@ -35,7 +35,7 @@ Il 26/10/2026 sono decisi anche il **pacchetto per il controllo B** e **componen
 - la scala è corta: 6 grandezze del testo e 4 angoli; i valori mancanti sono presi dalle prove;
 - prima del controllo B serve solo il collaboratore di ƎE; email e SMS vengono dopo il parere sul nome, prima del pilota.
 
-La pagina si costruisce in due sessioni.
+La pagina si costruisce in due parti, circa tre sessioni: durante la costruzione si fa anche una revisione dell'esperienza, tappa per tappa, con proposte «prima e dopo» (scelta dell'utente del 26/10/2026).
 
 **Prossima sessione, proposta dall'agente:** la prima metà della pagina, ticket «Pagina del pacchetto: telaio, operatore e ricevute».
 
@@ -47,6 +47,7 @@ Leggi AGENTS.md, STATUS.md, la mappa e il ticket; in DESIGN.md «Pacchetto per i
 
 - Rivendica il ticket (`Status: claimed`) e lavora solo su quello, con la skill `prototype` (ramo UI). Solo dati inventati; pagina privata, sorgente fuori dal repository.
 - Leggi con lo strumento Artifact le prove dell'operatore (https://claude.ai/artifact/8uYkEqTXrp27KWmc698JK9) e delle ricevute (https://claude.ai/artifact/EoCKVfNQG4mXr1bXNJzn1g); usa i valori esatti di «Componenti e token».
+- Prima di ridisegnare ogni tappa fai la revisione dell'esperienza descritta nel ticket (skill `ux-research` e `ux-strategy`) e portami le proposte come «prima e dopo».
 - Mostrami prima il telaio con le tappe proposte nel ticket; le scelte me le fai una alla volta, in parole semplici, con una raccomandazione motivata e, quando serve, un confronto affiancato in un'immagine. Gli spazi fra gli elementi vanno in «Componenti e token» con data e motivo.
 - Controlla la pagina in Chromium a 360, 390, 768, 900, 1024, 1180 e 1366 px, in chiaro e in scuro, ricaricando per ogni schermata.
 
