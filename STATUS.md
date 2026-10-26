@@ -1,6 +1,6 @@
 # Stato del progetto
 
-## Punto di ripresa (26 ottobre 2026, logo di ƎE disegnato)
+## Punto di ripresa (26 ottobre 2026, ricevute stampate decise)
 **Fase: design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6), nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md). Approvati:
 - la direzione **«Terracotta»**, con il chiaro in vetrina;
 - lo spazio dell'operatore;
@@ -12,13 +12,15 @@
 - dal 26/10 anche le **interazioni e gli stati** ([DESIGN.md](DESIGN.md), «Interazioni e stati (percorso 1)»): conferma al suo posto, «Annulla» per 8 secondi sul «Ricevuto», pulsanti spenti con il perché, movimento ridotto fatto solo di dissolvenze, «Di nuovo in linea» per 4 secondi.
 - dal 26/10, dopo la [ricerca sulle licenze](docs/ricerca/licenze-grafiche.md), anche **carattere, icone, logo di ƎE e immagini** ([DESIGN.md](DESIGN.md), «Componenti e token»): Manrope dal nostro sito, icone Lucide a tratto 1,6, «ƎE» come disegno ovunque nelle schermate (lo ridisegniamo noi), immagini ChatGPT solo nei prototipi fino al parere.
 - dal 26/10 il **disegno del logo di ƎE** ([DESIGN.md](DESIGN.md), «Identità»; [assets/marchio/](assets/marchio/README.md)): la «E» di Manrope ripetuta e specchiata. Nelle frasi due «E» del testo, la prima girata; da solo il disegno fisso `ee.svg` al peso 700, inciso sulla tessera. Lo screen reader dice «Enrico Erca». Approvato dall'utente insieme al collaboratore di ƎE.
+- dal 26/10 le **ricevute stampate** del canone e della consegna ([DESIGN.md](DESIGN.md), «Ricevute stampate (percorso 1)»): lettera su un foglio A4, uguale nel PDF; ƎE in testa e Connetto piccolo in fondo; un'annullata con fascia ambra e timbro di traverso; PDF fatto dai dati, con il fatto scritto al posto di firma e marca; campi, due numerazioni, bollo del canone sopra 77,47 €. Il testo legale aspetta il parere.
 
 Dal 25/10 è decisa anche la **tessera fisica del pilota** ([PRODUCT.md](PRODUCT.md) §12): plastica con lamina arancione, chip DESFire EV3 spento, solo un codice suo, consegna in agenzia.
 
 La voce è al **«tu»** anche per i clienti ([DESIGN.md](DESIGN.md)).
 
 Prossimi passi:
-- **Prossima sessione, proposta:** come si genera l'illustrazione di ogni casa, oppure il pacchetto per il controllo B (mappa, «Non ancora specificato»). I messaggi sono in START_HERE.md.
+- **Foto della casa** (decisione dell'utente del 26/10/2026, [PRODUCT.md](PRODUCT.md) §12): una o più foto della facciata, facoltative, da agenzia o proprietario; il disegno solo senza foto. Le foto interne vengono dopo la prima versione.
+- **Prossima sessione, proposta:** foto e illustrazione della casa, oppure il pacchetto per il controllo B (mappa, «Non ancora specificato»). I messaggi sono in START_HERE.md.
 - **Parere unico prima del lancio:** al parere sul nome Connetto si aggiungono sei domande su immagini ChatGPT, AI Act, scritta del nome e logo di ƎE ([ticket](.scratch/design-percorso-1/issues/08-parere-nome-connetto.md)). Le condizioni OpenAI per Plus/Italia e le policy sono state lette il 26/10/2026 ([ricerca](docs/ricerca/licenze-grafiche.md), §3, con date e distinzione delle Usage Policies efficaci dal 20/11/2026). Restano la ricerca per immagini simili alla stanza e alla tessera, il parere su diritti, trasparenza e modifiche dei segnali di provenienza, e il ricontrollo delle policy prima del lancio. Immagini solo nei prototipi fino al parere, come già deciso.
 - **Preventivo delle tessere:** la richiesta è pronta nel ticket [Ricerca: tessere fisiche](.scratch/controllo-a/issues/12-ricerca-tessere-fisiche.md); la manda l'utente o ƎE. Con le risposte si decidono quantità, lamina e campione.
 - **Collaboratore di ƎE:** ticket rivendicato, con cinque domande pronte; si aspettano le risposte. L'utente incontra il collaboratore la sera del 25/10/2026: porta le cinque domande e i sei chiarimenti di ƎE, e chiede una piantina per la vista 3D.
@@ -29,7 +31,8 @@ Prossimi passi:
   - esito buono, ma la vista entra nella prima versione solo dopo la [prova su una planimetria vera dei fondatori](.scratch/controllo-a/issues/17-prova-planimetria-fondatori.md), che aspetta il caricamento con il loro consenso scritto. In pausa dal 25/10/2026: l'utente chiede una piantina al collaboratore di ƎE; deve essere di una casa dei fondatori o del collaboratore, non di un cliente. Il messaggio è in START_HERE.md.
 - Facoltativo, solo se l'utente lo chiede: rivedere lo spazio dell'operatore con le regole della rifinitura (mappa, «Non ancora specificato»).
 - Promemoria dell'utente (23/10/2026): Animate UI e Watermelon UI si valutano all'architettura, in [ARCHITECTURE.md](ARCHITECTURE.md), «Da valutare al passo 7»; nessuna installazione prima.
-- Dopo: email e SMS (aspettano il parere sul nome), ricevute stampate, componenti, pacchetto per il controllo B (mappa, «Non ancora specificato»). Il totem in agenzia, con wallet e pagamenti, resta dopo la prima versione.
+- **Pareri prima del pilota sulle ricevute:** legale (testo, valore del PDF senza firma a penna, codice fiscale ed estremi del contratto, numerazione) e fiscale (bollo sulla consegna, soglia e chi paga la marca, bollo delle ricevute dei bonifici). Elenco in DESIGN.md, «Ricevute stampate (percorso 1)»; al collaboratore di ƎE si chiede chi firma e se vanno bene le due copie della consegna in contanti.
+- Dopo: email e SMS (aspettano il parere sul nome), componenti, pacchetto per il controllo B (mappa, «Non ancora specificato»). Il totem in agenzia, con wallet e pagamenti, resta dopo la prima versione.
 
 **Prototipi pubblicati** (pagine private dell'utente, usa e getta). Il sorgente sta nella cartella temporanea della sessione e si perde; una sessione nuova può leggerli con lo strumento Artifact, azione «read». Servono come riferimento di stile e non entrano nel repository.
 - Direzioni, primo giro: https://claude.ai/artifact/3qFHoy8XyHydtvetDPosmU
@@ -44,8 +47,30 @@ Prossimi passi:
 - Dati limite e accessibilità (26/10/2026): https://claude.ai/artifact/RtwaFRWDmVNnrr5XQnJTh9. Dieci schermate con «Dati d'esempio / Caso peggiore» e «Com'è / Proposta / Alternativa»; con «Proposta» si vedono le correzioni decise.
 - Interazioni e stati (26/10/2026, versione 2): https://claude.ai/artifact/MvrdhkTegSQ5eUUGC4XzeY. Otto momenti che cambiano lo stato, con le varianti, tre livelli di movimento e il registro di cosa sente lo screen reader; all'apertura mostra le scelte fatte.
 - Logo di ƎE (26/10/2026, versione 2): https://claude.ai/artifact/GRs9QZVLmBR7q6yx5VS2xQ. Tre metodi dietro il selettore, pesi, distanze, nome letto dallo screen reader, tessera e barra laterale in chiaro e in scuro; all'apertura mostra le scelte fatte.
+- Ricevute stampate (26/10/2026, versione 2): https://claude.ai/artifact/EoCKVfNQG4mXr1bXNJzn1g. Canone e consegna, tre impaginazioni, tutti i casi limite, foglio da stampare e due forme di PDF; all'apertura mostra le scelte fatte (lettera, Connetto in fondo, fascia e timbro, PDF dai dati).
 
 Prodotto: **Connetto**, nome di lavoro in attesa del parere sul marchio. Non c'è codice applicativo; architettura e stack non sono decisi.
+
+## Fatto (26 ottobre 2026, ricevute stampate)
+- Ticket [Ricevute stampate: canone e consegna](.scratch/design-percorso-1/issues/19-ricevute-stampate.md) aperto dalla voce «Documenti stampati dalla piattaforma» della mappa, rivendicato e chiuso con la skill `prototype` (ramo UI).
+- Prototipo con dati inventati: canone e consegna, tre impaginazioni (lettera, modulo a riquadri, due copie sul foglio), 15 casi limite, foglio da stampare e due forme di PDF (dai dati e scansione), posto di Connetto e segno dell'annullamento. Il posto del testo legale è segnato in giallo, senza testo.
+- Su richiesta dell'utente («posso vedere la differenza visivamente prima di decidere?»), per ogni scelta un confronto affiancato in un'immagine.
+- Scelte dell'utente, una alla volta, tutte sull'opzione consigliata:
+  - lettera;
+  - Connetto piccolo in fondo;
+  - fascia e timbro per l'annullata;
+  - PDF fatto dai dati;
+  - sette dettagli approvati insieme: campi, numerazioni, bollo, piede, PDF per lo screen reader, timbro al 65%, foglio bianco.
+
+  Regole in [DESIGN.md](DESIGN.md), «Ricevute stampate (percorso 1)», con le domande per i pareri legale e fiscale e per il collaboratore di ƎE.
+- Verificato in Chromium:
+  - 675 combinazioni a 360, 390, 768, 1024 e 1366 px, in chiaro e in scuro, senza errori, scorrimento orizzontale o contenuto fuori dal foglio;
+  - anteprima di stampa A4 con 20 PDF, tutti su una pagina;
+  - PDF etichettato con la lingua italiana, il titolo, il titolo principale e la tabella con le intestazioni;
+  - ordine di lettura ricostruito dai tag, giusto e completo;
+  - contrasti misurati.
+- Due difetti trovati nel PDF e corretti: «Enrico Erca» non arrivava nel PDF (si leggeva «Per E E») e le lettere del timbro finivano sparse nel testo. Regola aggiunta in [assets/marchio/](assets/marchio/README.md).
+- Non fatte: prove con screen reader veri e su una stampante vera (con la prima versione); revisione OCR (non c'è codice applicativo e il programma `ocr` non è nell'ambiente). Manrope e fontTools usati solo nella sessione, nulla nel repository.
 
 ## Fatto (26 ottobre 2026, logo di ƎE)
 - Ticket [Logo di ƎE ridisegnato in SVG](.scratch/design-percorso-1/issues/18-logo-ee-svg.md) rivendicato e chiuso con la skill `prototype` (ramo UI). Precisazione dell'utente: niente foto, il logo è «ƎE», una E specchiata seguita da una E normale. Annotata la conferma del collaboratore di ƎE al ridisegno (riferita dall'utente).
