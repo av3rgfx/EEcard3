@@ -28,16 +28,28 @@ Il 26/10/2026 sono decise anche le **ricevute stampate** del canone e della cons
 
 Il 26/10/2026 sono decise anche le **foto e l'illustrazione della casa** ([DESIGN.md](DESIGN.md), «Foto e illustrazione della casa (percorso 1)»): in cima una copertina scelta e le altre foto nel visore; operatore e proprietari aggiungono e tolgono qualsiasi foto (togliere cancella, con «Annulla»); l'ex inquilino vede solo il disegno; anteprima con inquadratura e promemoria su persone e targhe; nelle email sempre il disegno; il disegno ha tre tipi di casa scelti dall'operatore. Pagina di prova: https://claude.ai/artifact/7VdfMJoY6897vcnoyw17qP.
 
-**Prossima sessione, proposta dall'agente:** il **pacchetto per il controllo B** (mappa, «Non ancora specificato»): cosa l'utente guarda per confermare la direzione di design insieme all'architettura, con l'elenco dei componenti e dei token che servono al percorso.
+Il 26/10/2026 sono decisi anche il **pacchetto per il controllo B** e **componenti e token** ([DESIGN.md](DESIGN.md), «Pacchetto per il controllo B (percorso 1)» e «Componenti e token»):
+- il pacchetto è una pagina nuova, «Connetto, percorso 1». Contiene tutte le schermate decise, ridisegnate con le regole di oggi;
+- ci si muove seguendo il mese di una casa in circa 14 tappe, con un indice per ruolo;
+- lo spazio dell'operatore resta com'è approvato;
+- la scala è corta: 6 grandezze del testo e 4 angoli; i valori mancanti sono presi dalle prove;
+- prima del controllo B serve solo il collaboratore di ƎE; email e SMS vengono dopo il parere sul nome, prima del pilota.
+
+La pagina si costruisce in due parti, circa tre sessioni: durante la costruzione si fa anche una revisione dell'esperienza, tappa per tappa, con proposte «prima e dopo» (scelta dell'utente del 26/10/2026).
+
+**Prossima sessione, proposta dall'agente:** la prima metà della pagina, ticket «Pagina del pacchetto: telaio, operatore e ricevute».
 
 Messaggio:
 
-/wayfinder .scratch/design-percorso-1/map.md — apri e lavora un ticket dal «Non ancora specificato»: pacchetto per il controllo B.
+/wayfinder .scratch/design-percorso-1/map.md — ticket «Pagina del pacchetto: telaio, operatore e ricevute» (.scratch/design-percorso-1/issues/22-pacchetto-operatore-ricevute.md)
 
-Leggi AGENTS.md, STATUS.md, la mappa e le sezioni di DESIGN.md pertinenti. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+Leggi AGENTS.md, STATUS.md, la mappa e il ticket; in DESIGN.md «Pacchetto per il controllo B (percorso 1)», «Componenti e token», «Spazio dell'operatore (percorso 1)», «Ricevute stampate (percorso 1)» e le sezioni che le correggono («Testi dell'interfaccia», «Dati limite e accessibilità», «Interazioni e stati», «Foto e illustrazione della casa»). Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
 
-- Apri il ticket nella mappa, rivendicalo (`Status: claimed`) e lavora solo su quello, con la skill adatta al tipo di ticket. Solo dati inventati.
-- Le scelte me le fai una alla volta, in parole semplici, con una raccomandazione motivata; le regole decise vanno in DESIGN.md con data e motivo.
+- Rivendica il ticket (`Status: claimed`) e lavora solo su quello, con la skill `prototype` (ramo UI). Solo dati inventati; pagina privata, sorgente fuori dal repository.
+- Leggi con lo strumento Artifact le prove dell'operatore (https://claude.ai/artifact/8uYkEqTXrp27KWmc698JK9) e delle ricevute (https://claude.ai/artifact/EoCKVfNQG4mXr1bXNJzn1g); usa i valori esatti di «Componenti e token».
+- Prima di ridisegnare ogni tappa fai la revisione dell'esperienza descritta nel ticket (skill `ux-research` e `ux-strategy`) e portami le proposte come «prima e dopo».
+- Mostrami prima il telaio con le tappe proposte nel ticket; le scelte me le fai una alla volta, in parole semplici, con una raccomandazione motivata e, quando serve, un confronto affiancato in un'immagine. Gli spazi fra gli elementi vanno in «Componenti e token» con data e motivo.
+- Controlla la pagina in Chromium a 360, 390, 768, 900, 1024, 1180 e 1366 px, in chiaro e in scuro, ricaricando per ogni schermata.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 

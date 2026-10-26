@@ -1,0 +1,65 @@
+# Pacchetto per il controllo B
+
+Type: grilling
+Status: resolved
+Blocked by:
+Mappa: [Design del percorso 1](../map.md)
+
+## Domanda (Question)
+
+Cosa guarda l'utente per confermare la direzione di design insieme all'architettura, al controllo B ([docs/METODO.md](../../../docs/METODO.md), passi 6 e 7)?
+- quali schermate e situazioni del percorso 1 si mostrano, per operatore di ƎE, proprietario e inquilino, su telefono e desktop;
+- l'elenco dei componenti e dei token che servono davvero al percorso, da registrare in [DESIGN.md](../../../DESIGN.md), «Componenti e token»;
+- cosa resta aperto e aspetta pareri o persone: collaboratore di ƎE, pareri su marchio, legale, fiscale e privacy, tessere;
+- in che forma l'utente vede il pacchetto (per esempio una pagina privata che raccoglie i prototipi approvati).
+
+Contesto: voce «Pacchetto per il controllo B» del «Non ancora specificato» della mappa, diventata ticket il 26/10/2026 su richiesta dell'utente. Assorbe la parte della voce «Componenti e token» che restava aperta (l'elenco per il controllo B). La promessa è la riga «Controllo A» di [PRODUCT.md](../../../PRODUCT.md) §12; le misure del pilota in §13.
+
+Come si lavora (HITL): skill `grilling` e `domain-modeling`; le scelte all'utente una alla volta, in parole semplici, con una raccomandazione motivata e, quando serve, un confronto affiancato in un'immagine. Le regole decise vanno in DESIGN.md con data e motivo. Solo dati inventati.
+
+## Risposta (Answer)
+
+Chiuso il 26/10/2026. Sette scelte dell'utente; sei sull'opzione consigliata, la settima (spazio dell'operatore) sulla raccomandazione di partenza, dopo un confronto affiancato:
+1. il pacchetto è **una pagina nuova «Connetto, percorso 1»**, che ridisegna le schermate decise con le regole di oggi; le 12 prove restano come archivio;
+2. **tutte le schermate decise** (circa 45), con varianti e casi difficili dietro «Situazioni»; email, SMS e scritta del nome come posti «in attesa del parere»;
+3. **il mese di una casa**, circa 14 tappe con le schermate di chi è coinvolto affiancate, più l'indice «Per ruolo»;
+4. **componenti e token** come tabelle brevi più un elenco di nomi con il rimando alla sezione;
+5. **una scala corta**: 6 grandezze del testo, 3 pesi, 4 angoli più la pillola;
+6. **prima del controllo B solo il collaboratore di ƎE**; email e SMS dopo il parere sul nome, prima del pilota; una sezione «Cosa resta aperto»;
+7. **lo spazio dell'operatore com'è approvato**, senza la rifinitura dei clienti.
+
+Regole in [DESIGN.md](../../../DESIGN.md), «Pacchetto per il controllo B (percorso 1)» e «Componenti e token». Nessun cambio di prodotto: la destinazione della mappa è precisata (email e SMS non servono al controllo B). Ne nascono i ticket [Pagina del pacchetto: telaio, operatore e ricevute](22-pacchetto-operatore-ricevute.md) e [Pagina del pacchetto: clienti, accesso e situazioni comuni](23-pacchetto-clienti-situazioni.md).
+
+Verifiche: i valori «dalle prove» vengono dal foglio di stile della prova «Foto e illustrazione della casa», letta con lo strumento Artifact; contrasti dei colori nuovi misurati con la formula WCAG (tutti sopra 4,5:1 sui loro fondi). I confronti sono immagini fatte in Chromium nella cartella temporanea della sessione, fuori dal repository. Non fatta la revisione OCR: non c'è codice applicativo e il programma `ocr` non è nell'ambiente.
+
+## Commenti (Comments)
+
+**26/10/2026, scelte dell'utente, una alla volta.**
+1. *Forma del pacchetto:* **A, una pagina nuova «Connetto, percorso 1»** (consigliata), che ridisegna le schermate scelte con le regole di oggi, tutte nello stesso stato, con selettore dei ruoli, telefono e computer, chiaro e scuro, e accanto a ogni schermata le regole che applica. Le 12 pagine di prova restano come archivio. La pagina si costruisce in un ticket successivo. *Scartate:* B, una pagina indice con i link alle prove e l'elenco di cosa è cambiato dopo (le prime prove mostrano testi e regole superati: le differenze andrebbero ricostruite a mente); C, solo un documento con alcune immagini (non si prova sul telefono). *Motivo:* al controllo B si conferma una cosa sola, coerente, che serve anche da riferimento a chi costruirà.
+2. *Quante schermate:* **A, tutte le schermate decise** (consigliata), circa 45 (operatore 11, proprietario 10, inquilino 11, accesso e situazioni comuni 9 gruppi, le 2 ricevute stampate, la gestione delle foto), con le varianti e i casi difficili dietro un interruttore «Situazioni». Email, SMS e scritta del nome compaiono come posti segnati «in attesa del parere». La costruzione si divide in due sessioni: prima operatore e ricevute, poi clienti, accesso e situazioni comuni. *Scartata:* B, circa 15 momenti chiave (le altre 30 schermate resterebbero confermate solo sulle prove vecchie). *Motivo:* la meta della mappa è ogni schermata e situazione del percorso 1; una pagina parziale lascerebbe due fonti in disaccordo.
+3. *Come ci si muove nella pagina:* **A, il mese di una casa con l'indice per ruolo** (consigliata). Si segue una casa inventata per circa 14 tappe, dall'attivazione alla fine della locazione; a ogni tappa le schermate di chi è coinvolto, affiancate sul computer e una sotto l'altra sul telefono; un tocco apre la schermata grande. Un menu «Per ruolo» porta a ogni schermata, anche a quelle fuori dalla storia (profilo, disdetta, «Oggi»). *Scartata:* B, per ruolo come le prove di finora (per vedere l'effetto di un'azione sugli altri bisogna cambiare ruolo e cercare). *Motivo:* il controllo B conferma design e architettura insieme, e l'architettura deve reggere il passaggio dei fatti del denaro fra le persone (PRODUCT.md §7). Confronto affiancato mostrato in un'immagine (schizzo con dati inventati, nella cartella temporanea della sessione).
+
+**26/10/2026, bozza dell'agente per la domanda 4 (componenti e token).** Ricavata da DESIGN.md e dal foglio di stile dell'ultima prova approvata (Foto e illustrazione della casa, letta con lo strumento Artifact). È un'osservazione sulle prove, non ancora una regola.
+- *Valori usati nelle prove ma non scritti in DESIGN.md:* verde degli stati #1f7a45 su #eaf5ee (scuro #86e0a8 su #12261a); ambra #8a4f00 su #fdf3e2 (scuro #ffbf5a su #2a2112); fondo dei pulsanti secondari #f3efea (scuro #242424); fondo tenue dei riquadri interni #faf6f3 (scuro #1b1b1b); linea leggera fra le righe #f3efea (scuro #232323), linea dello scuro #2c2c2c.
+- *Grandezze del testo:* nell'ultima prova ce ne sono dodici (12, 12,5, 13, 13,5, 14, 14,5, 15, 15,5, 16, 17, 19, 28 e 42 px); i pesi sono 450, 550–650, 560 e 620. Gli angoli sono di nove misure (6–34 px, più la pillola).
+- *Componenti che il percorso usa davvero* (circa 35), raggruppati:
+  - telaio: pannello con barra laterale; intestazione con schede in basso; elenco e dettaglio dell'operatore; «Indietro»;
+  - casa: riquadro in cima; immagine della casa (foto o disegno, etichetta dell'indirizzo, pulsante delle foto); miniatura (56, 44 e 34 px); visore; griglia delle foto; disegno nei tre tipi;
+  - testi: occhiello di rame; titolo del mese; importo grande;
+  - elenchi: titolo di sezione; riga nome e valore; riga che porta altrove; riga della coda; scheda della casa e interruttore schede/righe; «Da fare»;
+  - azioni: pulsante principale, secondario e a testo; pulsante spento con il perché; attesa nel pulsante; «Copia»;
+  - stati: etichetta di stato (parola e icona); mesi a pillola con l'anno; linea del tempo del mese; conferma al suo posto con «Annulla»; errore al suo posto; fascia senza rete e «Di nuovo in linea»; segnaposto che respira; vuoto;
+  - moduli: campo; campo del codice di 6 cifre; caricamento di un file con anteprima e barra; spunta;
+  - fogli: foglio dal basso sul telefono e finestra sul computer;
+  - tessera: tessera di rame (fronte, retro, targhetta); tessera piccola nella barra laterale; tessera arancione di «Al banco»;
+  - marchio: simbolo C–Legame; logo di ƎE (nelle frasi e `ee.svg`);
+  - operatore: tre numeri del giorno; avanzamento «6 di 10»; anteprima della ricevuta accanto al modulo;
+  - accesso: pagina con la stanza;
+  - documenti: ricevuta A4 e PDF.
+
+4. *Come si registrano componenti e token:* **A, tabelle brevi più un elenco di nomi** (consigliata). Una tabella dei token in chiaro e in scuro, con i valori mancanti presi dall'ultima prova; grandezze del testo e angoli ridotti a una scala corta; i circa 35 componenti, una riga ciascuno con il rimando alla sezione che li descrive. La pagina del pacchetto usa esattamente questi valori e lì si rimisurano i contrasti. *Scartate:* B, una scheda completa per componente (ripete le sezioni: un fatto in due posti); C, solo i nomi (verde, ambra e scala resterebbero solo nelle prove). *Motivo:* fissa ciò che manca senza duplicare le regole; per l'architettura i token sono una lista sola.
+5. *Scala di testo e angoli:* **A, la scala proposta** (consigliata; «sì va bene A»). Testo in 6 grandezze (42, 28, 19, 16, 14,5 e 13 px) e 3 pesi (450; 600, con 560 per l'importo grande; 650); angoli di 26, 20, 14 e 10 px più la pillola, con l'immagine nel riquadro a 14 px e 12 px di margine. *Scartata:* B, i valori delle prove così come sono (12 grandezze, 9 angoli). *Motivo:* nessun cambio visibile a ciò che è approvato; chi costruisce non inventa misure. Confronto affiancato mostrato in un'immagine (stessa schermata con le due scale, dati inventati).
+6. *Cosa arriva prima del controllo B:* **A, solo il collaboratore di ƎE** (consigliata), come deciso il 23/10/2026. Email e SMS si disegnano dopo il parere sul nome, prima del pilota: restano nella mappa ma escono da ciò che serve al controllo B. Pareri legale, fiscale e privacy, preventivo delle tessere, prezzo dell'adesione, prova su iPhone e vista 3D arrivano prima del pilota o del lancio. Il pacchetto ha una sezione «Cosa resta aperto» con, per ogni voce, chi la aspetta, cosa tocca e cosa ferma (pilota, lancio, niente). *Scartate:* B, il controllo B aspetta anche il parere sul nome (l'architettura resterebbe ferma su tempi che non dipendono da noi); C, nessuna attesa, nemmeno il collaboratore (cambierebbe la scelta del 23/10). *Motivo:* all'architettura di email e SMS basta sapere che si mandano e a chi (PRODUCT.md §10.5); testo, mittente e nome non la cambiano. Il collaboratore invece può cambiare il lavoro al banco, e quindi i dati.
+7. *Spazio dell'operatore nel pacchetto:* **A, resta com'è approvato** (consigliata in partenza), con le regole che già lo riguardano (testi, dati limite, interazioni, foto) e la nuova scala di testo e angoli. Prima di decidere l'utente ha chiesto di vedere le due versioni: confronto affiancato in due immagini, «Coda» e «Al banco» sul computer e «Al banco» sul telefono, ricavate dalla prova approvata dell'operatore (letta con lo strumento Artifact, con i testi e le correzioni decisi dopo il 23/10) e da una bozza con la «via di mezzo» applicata (niente riquadri sotto quello in cima, icone senza cerchi, caratteri più leggeri, occhiello di rame, gruppi della coda senza maiuscolo e senza bollino). Dopo il confronto l'agente aveva proposto anche C, la rifinitura su «Al banco» e sui dettagli con la coda com'è. *Scartate:* B, la rifinitura ovunque; C, la via di mezzo. *Motivo:* il pacchetto mostra ciò che è deciso, il collaboratore di ƎE commenta quella versione, e nella coda i gruppi in riquadro si distinguono meglio scorrendo in fretta. La rifinitura dell'operatore resta una scelta futura, solo su richiesta.
+
+**26/10/2026, dopo la chiusura.** L'utente ha chiesto se analizzare l'esperienza di ogni pagina, se usare componenti già fatti (Animate UI) e se installare la skill Agent-Reach. Scelta dell'utente: **A, revisione dell'esperienza durante la costruzione, tappa per tappa** (consigliata), registrata in DESIGN.md e nei ticket 22 e 23. *Scartate:* B, un ticket prima, sulle prove superate; C, dopo, sulla pagina finita. Sulle altre due domande l'agente ha dato un parere, senza decisione: le librerie di componenti si valutano al passo 7, come già scritto in ARCHITECTURE.md, con l'elenco dei componenti come base; Agent-Reach non si installa per ora (legge soprattutto social e piattaforme, copia gli accessi dal browser, si installa per tutto il computer; per norme e fornitori bastano gli strumenti di ricerca già presenti). Pagina letta il 26/10/2026: https://github.com/Panniantong/agent-reach.

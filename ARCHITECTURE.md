@@ -18,6 +18,7 @@ Promemoria chiesti dall'utente, non decisioni. Si riprendono quando si sceglie l
   - [Animate UI](https://github.com/imskyleen/animate-ui): versioni animate (Motion) dei componenti comuni di Radix UI, Base UI e React Aria, per esempio fogli, menu, schede e interruttori. Licenza MIT con Commons Clause: si usa nel prodotto, ma non si rivendono i componenti. Il progetto ha la skill `animate-ui` per questo caso.
   - [Watermelon UI](https://ui.watermelon.sh/installation): raccolta di componenti, blocchi e pagine animati da copiare nel progetto. La licenza non è indicata nella pagina d'installazione: leggere condizioni d'uso e attribuzione prima di usarla.
   - *Perché non prima:* sceglierle significa scegliere lo stack. Non risolvono l'estetica delle schermate, che dipende da impaginazione e stile. Le animazioni su misura della tessera non sono nelle librerie. Fino ad allora Watermelon si usa solo come vetrina di idee, quando l'utente manda un link: l'idea si ridisegna nello stile di Connetto, senza installare né copiare codice.
+  - *Base per la valutazione* (26/10/2026): l'elenco dei componenti del percorso 1 in [DESIGN.md](DESIGN.md), «Componenti e token». Per ognuno si dice se una libreria lo ha già e quanto va adattato ai token; quelli solo nostri (tessera di rame, riquadro della casa, mesi a pillola, linea del tempo del mese) si fanno comunque.
 
 ## Confini
 DA DEFINIRE: client web, app, backend, dati e servizi esterni.
