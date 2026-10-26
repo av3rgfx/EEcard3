@@ -1,6 +1,6 @@
 # Stato del progetto
 
-## Punto di ripresa (26 ottobre 2026, foto e illustrazione della casa decise)
+## Punto di ripresa (26 ottobre 2026, pacchetto per il controllo B deciso)
 **Fase: design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6), nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md). Approvati:
 - la direzione **«Terracotta»**, con il chiaro in vetrina;
 - lo spazio dell'operatore;
@@ -14,13 +14,15 @@
 - dal 26/10 il **disegno del logo di ƎE** ([DESIGN.md](DESIGN.md), «Identità»; [assets/marchio/](assets/marchio/README.md)): la «E» di Manrope ripetuta e specchiata. Nelle frasi due «E» del testo, la prima girata; da solo il disegno fisso `ee.svg` al peso 700, inciso sulla tessera. Lo screen reader dice «Enrico Erca». Approvato dall'utente insieme al collaboratore di ƎE.
 - dal 26/10 le **ricevute stampate** del canone e della consegna ([DESIGN.md](DESIGN.md), «Ricevute stampate (percorso 1)»): lettera su un foglio A4, uguale nel PDF; ƎE in testa e Connetto piccolo in fondo; un'annullata con fascia ambra e timbro di traverso; PDF fatto dai dati, con il fatto scritto al posto di firma e marca; campi, due numerazioni, bollo del canone sopra 77,47 €. Il testo legale aspetta il parere.
 - dal 26/10 le **foto e l'illustrazione della casa** ([DESIGN.md](DESIGN.md), «Foto e illustrazione della casa (percorso 1)»): copertina scelta e visore; operatore e proprietari aggiungono e tolgono qualsiasi foto, togliere cancella; l'ex inquilino vede solo il disegno; anteprima con promemoria; email con il disegno; tre tipi di casa nel disegno.
+- dal 26/10 il **pacchetto per il controllo B** e **componenti e token** ([DESIGN.md](DESIGN.md), «Pacchetto per il controllo B (percorso 1)» e «Componenti e token»): una pagina nuova «Connetto, percorso 1» con tutte le schermate decise, ridisegnate con le regole di oggi e ordinate come il mese di una casa, più l'indice per ruolo; operatore com'è approvato; scala corta di testo (6 grandezze) e angoli (4); valori mancanti presi dalle prove; prima del controllo B solo il collaboratore di ƎE, email e SMS dopo il parere sul nome.
 
 Dal 25/10 è decisa anche la **tessera fisica del pilota** ([PRODUCT.md](PRODUCT.md) §12): plastica con lamina arancione, chip DESFire EV3 spento, solo un codice suo, consegna in agenzia.
 
 La voce è al **«tu»** anche per i clienti ([DESIGN.md](DESIGN.md)).
 
 Prossimi passi:
-- **Prossima sessione, proposta:** il pacchetto per il controllo B (mappa, «Non ancora specificato»), con l'elenco dei componenti e dei token. Il messaggio è in START_HERE.md.
+- **Prossima sessione, proposta:** costruire la prima metà della pagina del pacchetto, ticket [Pagina del pacchetto: telaio, operatore e ricevute](.scratch/design-percorso-1/issues/22-pacchetto-operatore-ricevute.md); poi [Pagina del pacchetto: clienti, accesso e situazioni comuni](.scratch/design-percorso-1/issues/23-pacchetto-clienti-situazioni.md). Il messaggio è in START_HERE.md.
+- **Controllo B:** si fa con la pagina del pacchetto finita, le risposte del collaboratore di ƎE e l'architettura (METODO.md, passo 7). Email e SMS non servono al controllo B: si disegnano dopo il parere sul nome, prima del pilota.
 - **Pareri sulle foto della facciata, prima del pilota:** privacy (persone e targhe, informativa, durata dopo la fine della gestione, cancellazione vera) e legale (diritti di chi aggiunge una foto). Elenco in DESIGN.md, «Foto e illustrazione della casa (percorso 1)». Al collaboratore di ƎE si chiede se i tre tipi di casa del disegno coprono le case gestite.
 - **Parere unico prima del lancio:** al parere sul nome Connetto si aggiungono sei domande su immagini ChatGPT, AI Act, scritta del nome e logo di ƎE ([ticket](.scratch/design-percorso-1/issues/08-parere-nome-connetto.md)). Le condizioni OpenAI per Plus/Italia e le policy sono state lette il 26/10/2026 ([ricerca](docs/ricerca/licenze-grafiche.md), §3, con date e distinzione delle Usage Policies efficaci dal 20/11/2026). Restano la ricerca per immagini simili alla stanza e alla tessera, il parere su diritti, trasparenza e modifiche dei segnali di provenienza, e il ricontrollo delle policy prima del lancio. Immagini solo nei prototipi fino al parere, come già deciso.
 - **Preventivo delle tessere:** la richiesta è pronta nel ticket [Ricerca: tessere fisiche](.scratch/controllo-a/issues/12-ricerca-tessere-fisiche.md); la manda l'utente o ƎE. Con le risposte si decidono quantità, lamina e campione.
@@ -33,7 +35,7 @@ Prossimi passi:
 - Facoltativo, solo se l'utente lo chiede: rivedere lo spazio dell'operatore con le regole della rifinitura (mappa, «Non ancora specificato»).
 - Promemoria dell'utente (23/10/2026): Animate UI e Watermelon UI si valutano all'architettura, in [ARCHITECTURE.md](ARCHITECTURE.md), «Da valutare al passo 7»; nessuna installazione prima.
 - **Pareri prima del pilota sulle ricevute:** legale (testo, valore del PDF senza firma a penna, codice fiscale ed estremi del contratto, numerazione) e fiscale (bollo sulla consegna, soglia e chi paga la marca, bollo delle ricevute dei bonifici). Elenco in DESIGN.md, «Ricevute stampate (percorso 1)»; al collaboratore di ƎE si chiede chi firma e se vanno bene le due copie della consegna in contanti.
-- Dopo: email e SMS (aspettano il parere sul nome), componenti, pacchetto per il controllo B (mappa, «Non ancora specificato»). Il totem in agenzia, con wallet e pagamenti, resta dopo la prima versione.
+- Dopo: email e SMS (aspettano il parere sul nome, prima del pilota). Il totem in agenzia, con wallet e pagamenti, resta dopo la prima versione.
 
 **Prototipi pubblicati** (pagine private dell'utente, usa e getta). Il sorgente sta nella cartella temporanea della sessione e si perde; una sessione nuova può leggerli con lo strumento Artifact, azione «read». Servono come riferimento di stile e non entrano nel repository.
 - Direzioni, primo giro: https://claude.ai/artifact/3qFHoy8XyHydtvetDPosmU
@@ -52,6 +54,22 @@ Prossimi passi:
 - Foto e illustrazione della casa (26/10/2026): https://claude.ai/artifact/7VdfMJoY6897vcnoyw17qP. Dieci schermate, tre varianti delle foto, tre stili del disegno, l'immagine dell'email e nove casi limite; le «foto» sono scene disegnate al computer. All'apertura mostra le scelte fatte.
 
 Prodotto: **Connetto**, nome di lavoro in attesa del parere sul marchio. Non c'è codice applicativo; architettura e stack non sono decisi.
+
+## Fatto (26 ottobre 2026, pacchetto per il controllo B)
+- Ticket [Pacchetto per il controllo B](.scratch/design-percorso-1/issues/21-pacchetto-controllo-b.md) aperto dalle voci «Pacchetto per il controllo B» e «Componenti e token» della mappa, rivendicato e chiuso con le skill `grilling` e `domain-modeling`.
+- Sette scelte dell'utente, una alla volta, sei sull'opzione consigliata:
+  - pagina nuova «Connetto, percorso 1»;
+  - tutte le schermate decise;
+  - il mese di una casa con l'indice per ruolo;
+  - componenti e token come tabelle brevi più un elenco di nomi;
+  - scala corta di testo e angoli;
+  - prima del controllo B solo il collaboratore di ƎE.
+
+  La settima, lo spazio dell'operatore com'è approvato, è stata decisa dopo un confronto affiancato chiesto dall'utente.
+- Tre confronti affiancati in immagini, fatti in Chromium con dati inventati nella cartella temporanea della sessione: come si gira nella pagina; la scala sulla stessa schermata; l'operatore com'è e con la rifinitura («Coda» e «Al banco», computer e telefono). L'ultimo parte dalla prova approvata dell'operatore, letta con lo strumento Artifact.
+- Valori mancanti (verde, ambra, pulsante secondario, fondo tenue, linea leggera) presi dal foglio di stile dell'ultima prova approvata; contrasti misurati con la formula WCAG, tutti sopra 4,5:1 sui loro fondi.
+- Regole in [DESIGN.md](DESIGN.md), «Pacchetto per il controllo B (percorso 1)» e «Componenti e token»; cambia un valore: l'angolo dell'immagine nel riquadro (14 px). Mappa: destinazione precisata (il controllo B non aspetta email e SMS), due ticket nuovi.
+- Non fatte: la pagina del pacchetto (prossimi due ticket); gli spazi fra gli elementi (si fissano nella pagina); revisione OCR (non c'è codice applicativo e il programma `ocr` non è nell'ambiente).
 
 ## Fatto (26 ottobre 2026, foto e illustrazione della casa)
 - Ticket [Foto e illustrazione della casa](.scratch/design-percorso-1/issues/20-foto-illustrazione-casa.md) aperto dalla voce «Componenti e token» della mappa, rivendicato e chiuso con la skill `prototype` (ramo UI).

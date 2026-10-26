@@ -1,7 +1,7 @@
 # Pacchetto per il controllo B
 
 Type: grilling
-Status: claimed
+Status: resolved
 Blocked by:
 Mappa: [Design del percorso 1](../map.md)
 
@@ -16,6 +16,21 @@ Cosa guarda l'utente per confermare la direzione di design insieme all'architett
 Contesto: voce «Pacchetto per il controllo B» del «Non ancora specificato» della mappa, diventata ticket il 26/10/2026 su richiesta dell'utente. Assorbe la parte della voce «Componenti e token» che restava aperta (l'elenco per il controllo B). La promessa è la riga «Controllo A» di [PRODUCT.md](../../../PRODUCT.md) §12; le misure del pilota in §13.
 
 Come si lavora (HITL): skill `grilling` e `domain-modeling`; le scelte all'utente una alla volta, in parole semplici, con una raccomandazione motivata e, quando serve, un confronto affiancato in un'immagine. Le regole decise vanno in DESIGN.md con data e motivo. Solo dati inventati.
+
+## Risposta (Answer)
+
+Chiuso il 26/10/2026. Sette scelte dell'utente; sei sull'opzione consigliata, la settima (spazio dell'operatore) sulla raccomandazione di partenza, dopo un confronto affiancato:
+1. il pacchetto è **una pagina nuova «Connetto, percorso 1»**, che ridisegna le schermate decise con le regole di oggi; le 12 prove restano come archivio;
+2. **tutte le schermate decise** (circa 45), con varianti e casi difficili dietro «Situazioni»; email, SMS e scritta del nome come posti «in attesa del parere»;
+3. **il mese di una casa**, circa 14 tappe con le schermate di chi è coinvolto affiancate, più l'indice «Per ruolo»;
+4. **componenti e token** come tabelle brevi più un elenco di nomi con il rimando alla sezione;
+5. **una scala corta**: 6 grandezze del testo, 3 pesi, 4 angoli più la pillola;
+6. **prima del controllo B solo il collaboratore di ƎE**; email e SMS dopo il parere sul nome, prima del pilota; una sezione «Cosa resta aperto»;
+7. **lo spazio dell'operatore com'è approvato**, senza la rifinitura dei clienti.
+
+Regole in [DESIGN.md](../../../DESIGN.md), «Pacchetto per il controllo B (percorso 1)» e «Componenti e token». Nessun cambio di prodotto: la destinazione della mappa è precisata (email e SMS non servono al controllo B). Ne nascono i ticket [Pagina del pacchetto: telaio, operatore e ricevute](22-pacchetto-operatore-ricevute.md) e [Pagina del pacchetto: clienti, accesso e situazioni comuni](23-pacchetto-clienti-situazioni.md).
+
+Verifiche: i valori «dalle prove» vengono dal foglio di stile della prova «Foto e illustrazione della casa», letta con lo strumento Artifact; contrasti dei colori nuovi misurati con la formula WCAG (tutti sopra 4,5:1 sui loro fondi). I confronti sono immagini fatte in Chromium nella cartella temporanea della sessione, fuori dal repository. Non fatta la revisione OCR: non c'è codice applicativo e il programma `ocr` non è nell'ambiente.
 
 ## Commenti (Comments)
 
@@ -45,3 +60,4 @@ Come si lavora (HITL): skill `grilling` e `domain-modeling`; le scelte all'utent
 4. *Come si registrano componenti e token:* **A, tabelle brevi più un elenco di nomi** (consigliata). Una tabella dei token in chiaro e in scuro, con i valori mancanti presi dall'ultima prova; grandezze del testo e angoli ridotti a una scala corta; i circa 35 componenti, una riga ciascuno con il rimando alla sezione che li descrive. La pagina del pacchetto usa esattamente questi valori e lì si rimisurano i contrasti. *Scartate:* B, una scheda completa per componente (ripete le sezioni: un fatto in due posti); C, solo i nomi (verde, ambra e scala resterebbero solo nelle prove). *Motivo:* fissa ciò che manca senza duplicare le regole; per l'architettura i token sono una lista sola.
 5. *Scala di testo e angoli:* **A, la scala proposta** (consigliata; «sì va bene A»). Testo in 6 grandezze (42, 28, 19, 16, 14,5 e 13 px) e 3 pesi (450; 600, con 560 per l'importo grande; 650); angoli di 26, 20, 14 e 10 px più la pillola, con l'immagine nel riquadro a 14 px e 12 px di margine. *Scartata:* B, i valori delle prove così come sono (12 grandezze, 9 angoli). *Motivo:* nessun cambio visibile a ciò che è approvato; chi costruisce non inventa misure. Confronto affiancato mostrato in un'immagine (stessa schermata con le due scale, dati inventati).
 6. *Cosa arriva prima del controllo B:* **A, solo il collaboratore di ƎE** (consigliata), come deciso il 23/10/2026. Email e SMS si disegnano dopo il parere sul nome, prima del pilota: restano nella mappa ma escono da ciò che serve al controllo B. Pareri legale, fiscale e privacy, preventivo delle tessere, prezzo dell'adesione, prova su iPhone e vista 3D arrivano prima del pilota o del lancio. Il pacchetto ha una sezione «Cosa resta aperto» con, per ogni voce, chi la aspetta, cosa tocca e cosa ferma (pilota, lancio, niente). *Scartate:* B, il controllo B aspetta anche il parere sul nome (l'architettura resterebbe ferma su tempi che non dipendono da noi); C, nessuna attesa, nemmeno il collaboratore (cambierebbe la scelta del 23/10). *Motivo:* all'architettura di email e SMS basta sapere che si mandano e a chi (PRODUCT.md §10.5); testo, mittente e nome non la cambiano. Il collaboratore invece può cambiare il lavoro al banco, e quindi i dati.
+7. *Spazio dell'operatore nel pacchetto:* **A, resta com'è approvato** (consigliata in partenza), con le regole che già lo riguardano (testi, dati limite, interazioni, foto) e la nuova scala di testo e angoli. Prima di decidere l'utente ha chiesto di vedere le due versioni: confronto affiancato in due immagini, «Coda» e «Al banco» sul computer e «Al banco» sul telefono, ricavate dalla prova approvata dell'operatore (letta con lo strumento Artifact, con i testi e le correzioni decisi dopo il 23/10) e da una bozza con la «via di mezzo» applicata (niente riquadri sotto quello in cima, icone senza cerchi, caratteri più leggeri, occhiello di rame, gruppi della coda senza maiuscolo e senza bollino). Dopo il confronto l'agente aveva proposto anche C, la rifinitura su «Al banco» e sui dettagli con la coda com'è. *Scartate:* B, la rifinitura ovunque; C, la via di mezzo. *Motivo:* il pacchetto mostra ciò che è deciso, il collaboratore di ƎE commenta quella versione, e nella coda i gruppi in riquadro si distinguono meglio scorrendo in fretta. La rifinitura dell'operatore resta una scelta futura, solo su richiesta.
