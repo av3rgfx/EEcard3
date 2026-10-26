@@ -1,6 +1,6 @@
 # Stato del progetto
 
-## Punto di ripresa (26 ottobre 2026, ricevute stampate decise)
+## Punto di ripresa (26 ottobre 2026, foto e illustrazione della casa decise)
 **Fase: design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6), nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md). Approvati:
 - la direzione **«Terracotta»**, con il chiaro in vetrina;
 - lo spazio dell'operatore;
@@ -13,14 +13,15 @@
 - dal 26/10, dopo la [ricerca sulle licenze](docs/ricerca/licenze-grafiche.md), anche **carattere, icone, logo di ƎE e immagini** ([DESIGN.md](DESIGN.md), «Componenti e token»): Manrope dal nostro sito, icone Lucide a tratto 1,6, «ƎE» come disegno ovunque nelle schermate (lo ridisegniamo noi), immagini ChatGPT solo nei prototipi fino al parere.
 - dal 26/10 il **disegno del logo di ƎE** ([DESIGN.md](DESIGN.md), «Identità»; [assets/marchio/](assets/marchio/README.md)): la «E» di Manrope ripetuta e specchiata. Nelle frasi due «E» del testo, la prima girata; da solo il disegno fisso `ee.svg` al peso 700, inciso sulla tessera. Lo screen reader dice «Enrico Erca». Approvato dall'utente insieme al collaboratore di ƎE.
 - dal 26/10 le **ricevute stampate** del canone e della consegna ([DESIGN.md](DESIGN.md), «Ricevute stampate (percorso 1)»): lettera su un foglio A4, uguale nel PDF; ƎE in testa e Connetto piccolo in fondo; un'annullata con fascia ambra e timbro di traverso; PDF fatto dai dati, con il fatto scritto al posto di firma e marca; campi, due numerazioni, bollo del canone sopra 77,47 €. Il testo legale aspetta il parere.
+- dal 26/10 le **foto e l'illustrazione della casa** ([DESIGN.md](DESIGN.md), «Foto e illustrazione della casa (percorso 1)»): copertina scelta e visore; operatore e proprietari aggiungono e tolgono qualsiasi foto, togliere cancella; l'ex inquilino vede solo il disegno; anteprima con promemoria; email con il disegno; tre tipi di casa nel disegno.
 
 Dal 25/10 è decisa anche la **tessera fisica del pilota** ([PRODUCT.md](PRODUCT.md) §12): plastica con lamina arancione, chip DESFire EV3 spento, solo un codice suo, consegna in agenzia.
 
 La voce è al **«tu»** anche per i clienti ([DESIGN.md](DESIGN.md)).
 
 Prossimi passi:
-- **Foto della casa** (decisione dell'utente del 26/10/2026, [PRODUCT.md](PRODUCT.md) §12): una o più foto della facciata, facoltative, da agenzia o proprietario; il disegno solo senza foto. Le foto interne vengono dopo la prima versione.
-- **Prossima sessione, proposta:** foto e illustrazione della casa, oppure il pacchetto per il controllo B (mappa, «Non ancora specificato»). I messaggi sono in START_HERE.md.
+- **Prossima sessione, proposta:** il pacchetto per il controllo B (mappa, «Non ancora specificato»), con l'elenco dei componenti e dei token. Il messaggio è in START_HERE.md.
+- **Pareri sulle foto della facciata, prima del pilota:** privacy (persone e targhe, informativa, durata dopo la fine della gestione, cancellazione vera) e legale (diritti di chi aggiunge una foto). Elenco in DESIGN.md, «Foto e illustrazione della casa (percorso 1)». Al collaboratore di ƎE si chiede se i tre tipi di casa del disegno coprono le case gestite.
 - **Parere unico prima del lancio:** al parere sul nome Connetto si aggiungono sei domande su immagini ChatGPT, AI Act, scritta del nome e logo di ƎE ([ticket](.scratch/design-percorso-1/issues/08-parere-nome-connetto.md)). Le condizioni OpenAI per Plus/Italia e le policy sono state lette il 26/10/2026 ([ricerca](docs/ricerca/licenze-grafiche.md), §3, con date e distinzione delle Usage Policies efficaci dal 20/11/2026). Restano la ricerca per immagini simili alla stanza e alla tessera, il parere su diritti, trasparenza e modifiche dei segnali di provenienza, e il ricontrollo delle policy prima del lancio. Immagini solo nei prototipi fino al parere, come già deciso.
 - **Preventivo delle tessere:** la richiesta è pronta nel ticket [Ricerca: tessere fisiche](.scratch/controllo-a/issues/12-ricerca-tessere-fisiche.md); la manda l'utente o ƎE. Con le risposte si decidono quantità, lamina e campione.
 - **Collaboratore di ƎE:** ticket rivendicato, con cinque domande pronte; si aspettano le risposte. L'utente incontra il collaboratore la sera del 25/10/2026: porta le cinque domande e i sei chiarimenti di ƎE, e chiede una piantina per la vista 3D.
@@ -48,8 +49,25 @@ Prossimi passi:
 - Interazioni e stati (26/10/2026, versione 2): https://claude.ai/artifact/MvrdhkTegSQ5eUUGC4XzeY. Otto momenti che cambiano lo stato, con le varianti, tre livelli di movimento e il registro di cosa sente lo screen reader; all'apertura mostra le scelte fatte.
 - Logo di ƎE (26/10/2026, versione 2): https://claude.ai/artifact/GRs9QZVLmBR7q6yx5VS2xQ. Tre metodi dietro il selettore, pesi, distanze, nome letto dallo screen reader, tessera e barra laterale in chiaro e in scuro; all'apertura mostra le scelte fatte.
 - Ricevute stampate (26/10/2026, versione 2): https://claude.ai/artifact/EoCKVfNQG4mXr1bXNJzn1g. Canone e consegna, tre impaginazioni, tutti i casi limite, foglio da stampare e due forme di PDF; all'apertura mostra le scelte fatte (lettera, Connetto in fondo, fascia e timbro, PDF dai dati).
+- Foto e illustrazione della casa (26/10/2026): https://claude.ai/artifact/7VdfMJoY6897vcnoyw17qP. Dieci schermate, tre varianti delle foto, tre stili del disegno, l'immagine dell'email e nove casi limite; le «foto» sono scene disegnate al computer. All'apertura mostra le scelte fatte.
 
 Prodotto: **Connetto**, nome di lavoro in attesa del parere sul marchio. Non c'è codice applicativo; architettura e stack non sono decisi.
+
+## Fatto (26 ottobre 2026, foto e illustrazione della casa)
+- Ticket [Foto e illustrazione della casa](.scratch/design-percorso-1/issues/20-foto-illustrazione-casa.md) aperto dalla voce «Componenti e token» della mappa, rivendicato e chiuso con la skill `prototype` (ramo UI).
+- Prototipo con dati e immagini inventati: le «foto» sono scene di facciate disegnate e rese come fotografie in Chromium, nella sessione; nessuna casa, persona o targa vera. Il disegno approvato il 24/10 è ripreso dalla pagina della rifinitura con lo strumento Artifact.
+- Per ogni scelta un confronto affiancato in un'immagine. Scelte dell'utente, una alla volta, tutte sull'opzione consigliata:
+  - copertina scelta, le altre foto nel visore;
+  - operatore e proprietari tolgono qualsiasi foto, e togliere cancella;
+  - anteprima con inquadratura e promemoria su persone, targhe e interni;
+  - la copertina al posto del disegno ovunque, la foto verticale tagliata;
+  - nelle email sempre il disegno;
+  - tre tipi di casa nello stile dipinto, scelti dall'operatore.
+
+  Regole in [DESIGN.md](DESIGN.md), «Foto e illustrazione della casa (percorso 1)»; cambiano due righe di «Direzione del percorso 1» («Illustrazione della casa», «Email»).
+- Verificato in Chromium: controllo automatico a 360, 390, 768, 1024 e 1366 px, in chiaro e in scuro (numeri nel ticket); albero di accessibilità letto per i testi alternativi delle foto e dei disegni.
+- Otto difetti del prototipo trovati guardando i confronti e il controllo, e corretti (elenco nel ticket).
+- Non fatte: prove con screen reader veri e con la fotocamera di un iPhone vero (con la prima versione); revisione OCR (non c'è codice applicativo e il programma `ocr` non è nell'ambiente). Manrope, fontTools e le immagini restano fuori dal repository.
 
 ## Fatto (26 ottobre 2026, ricevute stampate)
 - Ticket [Ricevute stampate: canone e consegna](.scratch/design-percorso-1/issues/19-ricevute-stampate.md) aperto dalla voce «Documenti stampati dalla piattaforma» della mappa, rivendicato e chiuso con la skill `prototype` (ramo UI).
