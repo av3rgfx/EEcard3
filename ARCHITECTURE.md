@@ -9,6 +9,7 @@
 - Le domande tecniche elencate in [docs/STUDIO.md](docs/STUDIO.md), area O.
 - Ordine confermato: prima la piattaforma web, poi l'app iPhone sullo stesso servizio.
 - Vista 3D indicativa, se la prova va bene: ricalco e riconoscimento automatico dentro la piattaforma, senza servizi esterni per le planimetrie ([PRODUCT.md](PRODUCT.md) §12, 24/10/2026). Le licenze dei modelli di ricerca vanno chiarite prima di usarli ([ricerca](docs/ricerca/vista-3d.md), §2.3 e §8).
+- Il testo segue la dimensione scelta nelle impostazioni del telefono, non solo lo zoom del browser. Le schermate reggono il testo fino al doppio (decisione dell'utente del 26/10/2026, [DESIGN.md](DESIGN.md), «Dati limite e accessibilità»). Il modo dipende dallo stack e va provato su un iPhone vero.
 - Regole generali in [docs/rules/BACKEND.md](docs/rules/BACKEND.md).
 
 ## Da valutare al passo 7

@@ -2,7 +2,7 @@
 
 ## Stato
 Direzione del percorso 1 approvata dall'utente il 23/10/2026: **«Terracotta»** (sezione «Direzione del percorso 1»). Non si eredita alcun layout, menu, palette, font o componente da tentativi precedenti: il design si progetta da zero (vedi [docs/METODO.md](docs/METODO.md), passo 6).
-Il design del percorso 1 è in corso dal 23/10/2026 nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md): ora si disegna il percorso intero in questa direzione. Le schermate per ruolo e quelle comuni sono approvate. Dal 24/10/2026 è approvata anche la rifinitura estetica delle schermate interne dei clienti, la «via di mezzo» (sezione «Rifinitura delle schermate interne (percorso 1)»). Dal 25/10/2026 sono decisi anche i testi dell'interfaccia (sezione «Testi dell'interfaccia (percorso 1)»), che prevalgono sui testi citati nelle sezioni per ruolo. Le scelte arrivano qui man mano che l'utente le conferma.
+Il design del percorso 1 è in corso dal 23/10/2026 nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md): ora si disegna il percorso intero in questa direzione. Le schermate per ruolo e quelle comuni sono approvate. Dal 24/10/2026 è approvata anche la rifinitura estetica delle schermate interne dei clienti, la «via di mezzo» (sezione «Rifinitura delle schermate interne (percorso 1)»). Dal 25/10/2026 sono decisi anche i testi dell'interfaccia (sezione «Testi dell'interfaccia (percorso 1)»), che prevalgono sui testi citati nelle sezioni per ruolo. Dal 26/10/2026 c'è anche la revisione dei dati limite e dell'accessibilità (sezione «Dati limite e accessibilità (percorso 1)»). Le scelte arrivano qui man mano che l'utente le conferma.
 
 ## Riferimento confermato dall'utente
 - Le **Apple Human Interface Guidelines** sono il riferimento di design più importante (16/10/2026), adattate alla piattaforma effettiva. Sintesi e fonti: [docs/rules/APPLE_DESIGN.md](docs/rules/APPLE_DESIGN.md). In caso di dubbio si rilegge la pagina ufficiale del componente.
@@ -71,7 +71,7 @@ Scelta dall'utente il 23/10/2026: **«Terracotta»**, dopo tre giri di prototipo
   - Fondo #0a0a0a, pannello #141414, carte #1b1b1b e #242424.
   - Testo #f4f4f4 e #b3b3b3.
   - Arancio solo come accento: pulsante #ff7a45 con testo quasi nero, testo e icone #ff8a57.
-- **Contrasti misurati** con la formula WCAG il 23/10/2026, tutti sopra 4,5:1. Sono valori del prototipo e si ricontrollano nella revisione dell'accessibilità.
+- **Contrasti misurati** con la formula WCAG il 23/10/2026, tutti sopra 4,5:1. Sono valori del prototipo e si ricontrollano nella revisione dell'accessibilità. *Ricontrollati il 26/10/2026* sui pixel del fondo, in chiaro e in scuro: questi colori reggono; le eccezioni trovate (tessera di rame, contorno dei campi, tessera arancione dell'operatore) sono corrette in «Dati limite e accessibilità».
   - Chiaro: pulsante 4,96:1; arancio su bianco 5,53:1, sul fondo tenue 4,95:1; testo secondario 7,3:1.
   - Scuro: pulsante 7,6:1; arancio 7,4:1; testo secondario 8,21:1.
 - **Stati.** Pagato in verde con la spunta, in attesa nel colore d'accento, in ritardo in ambra con l'orologio, contestata in grigio corsivo con il fumetto. Sempre parola e icona, mai il solo colore. La scadenza passata dell'inquilino resta detta con calma (punti fermi).
@@ -88,7 +88,7 @@ Scelta dall'utente il 23/10/2026: **«Terracotta»**, dopo tre giri di prototipo
 Approvato dall'utente il 23/10/2026 nel ticket [Schermate dell'operatore di ƎE](.scratch/design-percorso-1/issues/09-schermate-operatore.md), che conserva le domande e le alternative scartate. Applica «Direzione del percorso 1» e i punti fermi; voce al «tu», con frasi brevi. Ambito: tutte le schermate dell'operatore di ƎE, su telefono, tablet e desktop.
 
 - **Larghezze.** Sotto gli 860 px una colonna con le schede in basso; da 860 px la barra laterale, con un pannello alla volta e «Indietro»; da 1120 px elenco e dettaglio affiancati e contenuti su due colonne. Pulsanti ed etichette vanno a capo, mai fuori dal loro riquadro. *Motivo:* il primo giro, con le due colonne già a 860 px, faceva uscire i pulsanti dai riquadri sui tablet e sui portatili piccoli (segnalazione dell'utente, verificata nel browser).
-- **Lavoro in coda.** Ordine fisso dei punti fermi; ogni voce ha la miniatura della casa, «cosa · casa» e «persona · stato». In cima «Trova cliente o casa» e tre numeri: voci in coda, incassi di oggi, registrato oggi. Con la coda vuota la pagina dice «Niente in coda» e mostra il registrato di oggi e le consegne e scadenze della settimana.
+- **Lavoro in coda.** Ordine fisso dei punti fermi; ogni voce ha la miniatura della casa, «cosa · casa» e «persona · stato» (dal 26/10/2026 «cosa · casa» va a capo, vedi «Dati limite e accessibilità»). In cima «Trova cliente o casa» e tre numeri: voci in coda, incassi di oggi, registrato oggi. Con la coda vuota la pagina dice «Niente in coda» e mostra il registrato di oggi e le consegne e scadenze della settimana.
 - **Al banco** (decisione dell'utente): chi è trovato con la ricerca ha una pagina sua, con la tessera digitale («serve solo a trovarlo»). In cima, con l'illustrazione della casa, c'è l'azione più probabile (per l'inquilino «Registra l'incasso» del mese più vecchio aperto). Sotto «Da chiudere con lui/lei», con il conto «2 di 5 fatte» e un pulsante per riga: firme, informativa, luogo del pagamento, verifica dell'accesso, tessera. Poi gli ultimi pagamenti, «Apri la casa» e «Apri una contestazione» per conto della persona, con la fonte.
 - **Incasso al banco** (decisione dell'utente).
   - Il modulo contiene i mesi aperti, già spuntati dal più vecchio, l'importo ricevuto e il mezzo (contanti o carta). Accanto c'è l'anteprima della ricevuta, che si aggiorna mentre si scrive.
@@ -120,7 +120,7 @@ Approvate dall'utente il 23/10/2026 nel ticket [Schermate del proprietario](.scr
   - Se non c'è ancora, non si deve fare nulla e non parte alcun ritardo.
 - **Nuovo canone da approvare.** Il confronto «oggi» e «dal 1° dicembre», il calcolo con fonte e controllo di ƎE. «Approva» è l'azione principale, «Non lo chiedo» la secondaria (§10.4); se il calcolo non torna, «Contesta».
 - **Mesi passati** (sugli esempi dell'utente).
-  - Una fila di mesi a pillola da scorrere, con il nome intero del mese e un pallino dello stato; il mese scelto è pieno in arancio.
+  - Una fila di mesi a pillola da scorrere, con il nome intero del mese e un pallino dello stato; il mese scelto è pieno in arancio. *Cambiato il 26/10/2026:* il pallino diventa l'icona dello stato e sul computer i mesi vanno a capo (vedi «Dati limite e accessibilità»).
   - Accanto al titolo, un selettore dell'anno a pillola, con un menu nativo, dagli anni della locazione a oggi.
   - Sotto, la linea del tempo del mese: la data con il giorno della settimana e un riquadro tenue per ogni fatto, cioè canone pagato, scadenza («pagato 2 giorni prima»), consegna inviata e confermata, contestazione. Quando serve, «Ricevuto» sta nel riquadro.
   - Scartati la striscia di dodici caselle e il calendario a griglia («non mi piace affatto»).
@@ -162,7 +162,7 @@ Approvati dall'utente il 23/10/2026 nel ticket [Accesso, adesione e situazioni c
   - Le immagini sono livelli separati (stanza, tessera in posa, ombra); restano fuori dal repository e le loro condizioni d'uso vanno lette prima dell'uso nel prodotto.
 - **Tessera digitale** (decisioni dell'utente): un oggetto di rame spazzolato, formato carta (rapporto 1,586).
   - *Fronte:* simbolo piccolo e «Connetto» in alto a sinistra, «ƎE» in alto a destra, il simbolo grande inciso a destra.
-  - *Dati:* testo vero inciso, mai scritto dentro l'immagine. Solo ruolo, nome e cognome, codice breve (per esempio «EE-7730-15») e «da» con mese e anno dell'adesione (era «dal», corretto il 25/10/2026). Niente indirizzo, telefono o email, perché la tessera si mostra in pubblico; niente chip o numeri lunghi, perché non è una carta di pagamento.
+  - *Dati:* testo vero inciso, mai scritto dentro l'immagine. *Dal 26/10/2026* su una targhetta satinata e con il nome in due righe al massimo (vedi «Dati limite e accessibilità»). Solo ruolo, nome e cognome, codice breve (per esempio «EE-7730-15») e «da» con mese e anno dell'adesione (era «dal», corretto il 25/10/2026). Niente indirizzo, telefono o email, perché la tessera si mostra in pubblico; niente chip o numeri lunghi, perché non è una carta di pagamento.
   - *Retro:* il codice in grande e a cosa serve. La tessera si gira con un tocco.
   - **Rame per tutti**, inquilini compresi; la personalizzazione verrà più avanti, dopo la prima versione. Chi ha due ruoli ha due tessere, una per adesione.
 - **Scheda «Tessera»** (decisione dell'utente): la quinta scheda dei clienti, fra Ricevute e Documenti, e una voce nella barra laterale. Mostra la tessera grande, a cosa serve, cosa non fa, l'adesione e la tessera fisica, se ƎE la prevede. *Precisato il 25/10/2026* (PRODUCT.md §12, «Tessera fisica nel pilota»): la tessera fisica c'è e ha un codice suo; la riga dice «La tessera fisica te la danno in agenzia: ha un codice suo e porta l'operatore a te come questa», e dopo la consegna mostra il suo codice accanto alla digitale. Nello spazio dell'operatore, in «Da chiudere con», la riga «Tessera fisica» ha «Collega una tessera»: l'operatore prende una tessera dalla scorta e ne scrive o legge il codice. *Motivo:* al banco la tessera è a un tocco.
@@ -261,6 +261,49 @@ Decisi dall'utente il 25/10/2026, una scelta alla volta, nel ticket [Testi dell'
 - Operatore: «Da chiudere con lui» diventa «Da chiudere con» seguito dal nome; «serve solo a trovarlo» diventa «serve solo a trovare la persona».
 - *Evidenza:* scelte dell'utente sui testi dei prototipi e su un confronto con dati inventati. Nessuna prova con persone; la lettura del collaboratore di ƎE può correggerli.
 
+## Dati limite e accessibilità (percorso 1)
+Decisi dall'utente il 26/10/2026, una scelta alla volta, nel ticket [Dati limite e accessibilità del percorso 1](.scratch/design-percorso-1/issues/15-dati-limite-accessibilita.md). Il ticket conserva il metodo, le misure, le alternative scartate e ciò che regge.
+
+La prova è una pagina usa e getta con le schermate approvate e i dati peggiori: https://claude.ai/artifact/RtwaFRWDmVNnrr5XQnJTh9 (privata, dati inventati). Verificata in Chromium:
+- a 7 larghezze, in chiaro e in scuro;
+- con lo zoom al 200%, a 320 px, con la spaziatura del testo di WCAG 1.4.12 e con la tastiera;
+- con i contrasti misurati sui pixel del fondo.
+
+Obiettivo: WCAG 2.2 livello AA. Ambito: tutte le schermate del percorso 1, su telefono e desktop. Dove le sezioni sopra dicono altro, vale questa sezione.
+
+- **Più mesi aperti dell'inquilino** (decisione dell'utente). Con due o più mesi da pagare, in cima alla casa c'è:
+  - il titolo «Da maggio a novembre: 7 mesi da pagare» e il totale in grande;
+  - un mese per riga con il suo importo, e sotto «Da pagare in tutto»;
+  - la frase «Puoi pagare anche un mese alla volta: si salda per primo il più vecchio» (PRODUCT.md §10.3).
+
+  Sotto, «Ultimo pagamento» prende il posto di «Mese scorso». Il tono resta quello della scadenza passata: niente colore d'allarme. *Motivo:* mostrare solo il mese più vecchio lasciava credere di essere a posto pagando un mese.
+- **Tessera di rame: targhetta satinata** (decisione dell'utente). Dietro i dati incisi c'è una targhetta di rame più chiaro, con il testo quasi nero #1f0a01, sul fronte e sul retro. Contrasto misurato da 8,6:1 a 9,2:1.
+  - *Cambiato il 26/10/2026* («Tessera digitale», «Dati»): *prima* i dati erano incisi direttamente sul rame, con un contrasto fra 2,2:1 e 3,4:1.
+  - *Motivo:* il rame è un colore di mezzo e nessun colore del testo arriva a 4,5:1 su tutta la tessera. Scartata la targhetta brunita, più scura.
+- **Nome lungo sulla tessera** (decisione dell'utente): il nome resta intero, in due righe al massimo. Se non ci sta, i caratteri si rimpiccioliscono un poco alla volta finché ci stanno. Non sale mai sulla scritta «Connetto» né sul simbolo grande.
+- **Mesi a pillola: un'icona nel pallino** (decisione dell'utente). Spunta per pagato, trattino per in attesa, orologio per in ritardo, fumetto per contestato: le icone degli stati, nel loro colore.
+  - *Cambiato il 26/10/2026* («Mesi passati» del proprietario e «Ricevute» dell'inquilino): *prima* era un pallino colorato, e lo stato si vedeva solo dal colore (WCAG 1.4.1).
+  - *Sul computer*, da 860 px, i mesi vanno a capo invece di scorrere; sul telefono la fila scorre e il mese scelto sta al centro. *Motivo:* senza barra il mouse non raggiungeva gli ultimi mesi, e a 1366 px il mese scelto restava fuori vista.
+- **Contorno dei campi** (decisione dell'utente): #8f857c in chiaro e #8a817a in scuro, almeno 3:1 sul fondo (WCAG 1.4.11).
+  - *Cambiato il 26/10/2026:* *prima* era #d9d2cb nell'accesso e #ece7e2 nello spazio dell'operatore, fra 1,2:1 e 2,1:1.
+- **Testo più grande del telefono** (decisione dell'utente): la piattaforma segue la dimensione del testo scelta nelle impostazioni dell'iPhone, non solo lo zoom del browser. Le schermate reggono il testo fino al doppio. È una regola per la costruzione (ARCHITECTURE.md, passo 7), da provare su un iPhone vero con la prima versione.
+- **Molte case nella barra laterale** (decisione dell'utente). Al massimo 5 case: prima quella aperta, poi quelle con qualcosa da fare. Poi la voce «Tutte le case (14)», che apre l'elenco completo. *Motivo:* con 14 case la tessera e la persona finivano in fondo dopo 14 righe.
+- **Righe della coda dell'operatore** (decisione dell'utente): «cosa · casa» va a capo e si legge intero, mai tagliato con i puntini. *Cambiato il 26/10/2026:* *prima* stava su una riga sola, con i puntini, e si perdeva l'indirizzo.
+- **Correzioni dell'agente**, approvate dall'utente tutte insieme:
+  - il modulo d'accesso sta sopra la sfumatura in fondo alla stanza, così il pulsante «Entra» non sparisce con il messaggio d'errore;
+  - «Trova cliente o casa» mostra il fuoco (WCAG 2.4.7);
+  - la coda dell'operatore ha un titolo principale per lo screen reader;
+  - i tre numeri del giorno vanno a capo quando non stanno;
+  - la tessera arancione di «Al banco» va da #8f3009 a #b8410e, con la riga piccola senza trasparenza, e supera 4,5:1. *Prima* andava da #c4460f a #e0743d, con 3,1:1 sulla riga piccola;
+  - nell'anteprima della ricevuta c'è spazio per il bollo;
+  - sulla stanza del computer «Cambia email o cellulare» è in rame #97502a (5,2:1; prima 4,25:1);
+  - «Hai bisogno di aiuto?» è alto almeno 44 px;
+  - l'importo grande si stringe fino a 30 px invece di uscire dallo schermo.
+- **Regole per i dati lunghi**, ricavate dalla prova:
+  - nomi, indirizzi, email, IBAN e causali vanno a capo e non si tagliano mai;
+  - gli importi non vanno a capo e non si tagliano.
+- *Evidenza:* scelte dell'utente su una prova con dati inventati; misure automatiche nel browser, guardate anche a occhio. Nessuna prova con persone, con screen reader veri (VoiceOver, NVDA) o su un iPhone vero. Quelle prove restano da fare sulla prima versione.
+
 ## Vista 3D indicativa (stile)
 Scelta dall'utente il 24/10/2026 nella [prova della vista 3D](.scratch/controllo-a/issues/15-prova-vista-3d.md), seconda versione, fra tre stili affiancati sulla stessa casa inventata. Vale solo se la vista resta nella prima versione (PRODUCT.md §12). Le regole di contenuto (nomi senza metri quadri, nord e luce da sud, viste pronte, avvertenza sempre visibile) sono in PRODUCT.md §12, «Vista 3D indicativa: resa da provare».
 
@@ -275,7 +318,7 @@ DA DEFINIRE dopo il primo percorso. Riutilizzare e documentare solo ciò che ser
 
 ## Interazioni e stati
 Caricamento, vuoto, senza rete, errore e recupero del percorso 1: «Accesso, tessera e situazioni comuni» (23/10/2026). Il riscontro alla pressione dei pulsanti è in «Rifinitura delle schermate interne» (24/10/2026). Da registrare con la rifinitura di interazioni e movimento: successo, disabilitato.
-Registrare comportamento mobile, tastiera, testo ingrandito e movimento ridotto.
+Registrare comportamento mobile, tastiera, testo ingrandito e movimento ridotto. Testo ingrandito, tastiera e campi: «Dati limite e accessibilità» (26/10/2026).
 
 ## Decisioni confermate
-Per ogni scelta: decisione, motivo, evidenza o ipotesi, ambito e data. Finora: il riferimento Apple, il formato degli importi, il simbolo C–Legame (sezione «Identità»), i punti fermi del percorso 1 (con la voce passata al «tu»), la direzione «Terracotta» con il chiaro in vetrina, lo spazio dell'operatore, le schermate del proprietario e quelle dell'inquilino, con le ricevute in forma provvisoria; accesso, tessera digitale di rame, benvenuto, disdetta e situazioni comuni, con l'eccezione del simbolo sulla tessera (23/10/2026); la rifinitura delle schermate interne dei clienti, la «via di mezzo», con tre regole cambiate: la casa in cima con i dettagli del mese, le icone senza cerchi e i fatti senza riquadri (24/10/2026); lo stile della vista 3D indicativa, l'isometrica illustrata (24/10/2026); i testi dell'interfaccia del percorso 1 (25/10/2026).
+Per ogni scelta: decisione, motivo, evidenza o ipotesi, ambito e data. Finora: il riferimento Apple, il formato degli importi, il simbolo C–Legame (sezione «Identità»), i punti fermi del percorso 1 (con la voce passata al «tu»), la direzione «Terracotta» con il chiaro in vetrina, lo spazio dell'operatore, le schermate del proprietario e quelle dell'inquilino, con le ricevute in forma provvisoria; accesso, tessera digitale di rame, benvenuto, disdetta e situazioni comuni, con l'eccezione del simbolo sulla tessera (23/10/2026); la rifinitura delle schermate interne dei clienti, la «via di mezzo», con tre regole cambiate: la casa in cima con i dettagli del mese, le icone senza cerchi e i fatti senza riquadri (24/10/2026); lo stile della vista 3D indicativa, l'isometrica illustrata (24/10/2026); i testi dell'interfaccia del percorso 1 (25/10/2026); i dati limite e l'accessibilità del percorso 1, con cinque regole cambiate: la tessera con la targhetta satinata, i mesi a pillola con l'icona e a capo sul computer, il contorno dei campi, le righe della coda a capo, la tessera arancione dell'operatore (26/10/2026).
