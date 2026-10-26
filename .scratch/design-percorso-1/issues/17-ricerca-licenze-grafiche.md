@@ -37,3 +37,12 @@ Ricerca chiusa il 26/10/2026, svolta da un agente in background con la skill `re
 5. **Parere:** insieme a quello sul nome Connetto (consigliata). Le domande in più sono nel ticket [Parere di un consulente in marchi sul nome Connetto](08-parere-nome-connetto.md).
 
 Regole in [DESIGN.md](../../../DESIGN.md): «Direzione del percorso 1» («Caratteri», «Forme»), «Identità» (logo di ƎE), «Accesso, tessera e situazioni comuni» (immagini) e «Componenti e token».
+
+**Verifica delle fonti OpenAI, 26/10/2026 (integrazione, ticket ancora risolto).** Usata la skill `research`, con lettura in background e controllo della sessione principale. Tutte le sette pagine pubbliche richieste sono ora raggiunte, senza account o aggiramenti; aggiornati il §3, «In breve», fonti e limiti nella [ricerca](../../../docs/ricerca/licenze-grafiche.md). Le precedenti affermazioni basate su estratti restano qui come storia della prima lettura, non come esito attuale.
+
+- Plus/Italia chiariti; conclusioni su proprietà e uso commerciale nel §3.2, copertura dell’indennizzo e tutele di legge nel §3.3. Corrette le formule assolute su garanzie e assenza di rischi nei prototipi.
+- Non basta presumere che una nota legale nascosta assolva ogni dichiarazione dell’origine IA (§3.4); separare i livelli e convertire in WebP non prova la perdita di C2PA/SynthID e non autorizza a nascondere l’origine (§3.5). Nessuna verifica dei file o ricerca inversa eseguita.
+- Date riportate senza inventare efficacia dove la pagina dà solo aggiornamento. Le Usage Policies attuali annunciano efficacia futura, 20/11/2026: letta anche la revisione ufficiale efficace dal 29/10/2025, applicabile alla data di verifica (§3.6).
+- **Nessuna modifica alle scelte in DESIGN.md:** immagini solo nei prototipi fino al parere. Raccomandazione confermata: la lettura risolve il dubbio sulle condizioni pubbliche, ma restano somiglianze, protezione dei diritti, dichiarazione visibile nel contesto, AI Act e differenza fra tessera mostrata e reale. Questi punti richiedono il professionista già previsto. Prima del lancio ricontrollare le policy.
+
+Aggiornata solo la riga «Parere unico prima del lancio» nei prossimi passi di STATUS.md. Nessun codice applicativo, nessuna riapertura del ticket.
