@@ -24,14 +24,15 @@ Il 26/10/2026, dopo la [ricerca sulle licenze](docs/ricerca/licenze-grafiche.md)
 
 Il 26/10/2026 è deciso anche il **disegno del logo di ƎE** ([DESIGN.md](DESIGN.md), «Identità»; [assets/marchio/](assets/marchio/README.md)). È la «E» di Manrope ripetuta e specchiata. Nelle frasi si usano due «E» del testo, la prima girata; da solo c'è il disegno fisso `ee.svg` al peso 700, inciso sulla tessera. Lo screen reader dice «Enrico Erca». Approvato dall'utente insieme al collaboratore di ƎE. Pagina di prova: https://claude.ai/artifact/GRs9QZVLmBR7q6yx5VS2xQ.
 
+Il 26/10/2026 sono decise anche le **ricevute stampate** del canone e della consegna ([DESIGN.md](DESIGN.md), «Ricevute stampate (percorso 1)»): una lettera su un foglio A4, uguale nel PDF; ƎE in testa e Connetto piccolo in fondo; un'annullata con fascia ambra e timbro; il PDF fatto dai dati, che si legge con lo screen reader. Il testo legale aspetta il parere; le domande per i pareri legale e fiscale sono nella stessa sezione. Pagina di prova: https://claude.ai/artifact/EoCKVfNQG4mXr1bXNJzn1g.
+
 **Prossima sessione, proposta dall'agente:** un nuovo ticket dal «Non ancora specificato» della mappa, a scelta dell'utente:
-- le **ricevute stampate** (canone e consegna): impaginazione e campi di PRODUCT.md §10.3, ora che il logo di ƎE c'è; il testo legale aspetta il parere;
 - l'**illustrazione di ogni casa**: lo stile adatto alle case di ƎE;
 - il **pacchetto per il controllo B**.
 
 Messaggio:
 
-/wayfinder .scratch/design-percorso-1/map.md — apri e lavora un ticket dal «Non ancora specificato»: <ricevute stampate | illustrazione di ogni casa | pacchetto per il controllo B>.
+/wayfinder .scratch/design-percorso-1/map.md — apri e lavora un ticket dal «Non ancora specificato»: <illustrazione di ogni casa | pacchetto per il controllo B>.
 
 Leggi AGENTS.md, STATUS.md, la mappa e le sezioni di DESIGN.md pertinenti. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
 

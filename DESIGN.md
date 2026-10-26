@@ -2,7 +2,7 @@
 
 ## Stato
 Direzione del percorso 1 approvata dall'utente il 23/10/2026: **«Terracotta»** (sezione «Direzione del percorso 1»). Non si eredita alcun layout, menu, palette, font o componente da tentativi precedenti: il design si progetta da zero (vedi [docs/METODO.md](docs/METODO.md), passo 6).
-Il design del percorso 1 è in corso dal 23/10/2026 nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md): ora si disegna il percorso intero in questa direzione. Le schermate per ruolo e quelle comuni sono approvate. Dal 24/10/2026 è approvata anche la rifinitura estetica delle schermate interne dei clienti, la «via di mezzo» (sezione «Rifinitura delle schermate interne (percorso 1)»). Dal 25/10/2026 sono decisi anche i testi dell'interfaccia (sezione «Testi dell'interfaccia (percorso 1)»), che prevalgono sui testi citati nelle sezioni per ruolo. Dal 26/10/2026 c'è anche la revisione dei dati limite e dell'accessibilità (sezione «Dati limite e accessibilità (percorso 1)»), e sono decisi le interazioni e gli stati (sezione «Interazioni e stati (percorso 1)»). Sempre il 26/10/2026, dopo la ricerca sulle licenze, sono fissati carattere, icone, logo di ƎE e uso delle immagini generate (sezione «Componenti e token»). Le scelte arrivano qui man mano che l'utente le conferma.
+Il design del percorso 1 è in corso dal 23/10/2026 nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md): ora si disegna il percorso intero in questa direzione. Le schermate per ruolo e quelle comuni sono approvate. Dal 24/10/2026 è approvata anche la rifinitura estetica delle schermate interne dei clienti, la «via di mezzo» (sezione «Rifinitura delle schermate interne (percorso 1)»). Dal 25/10/2026 sono decisi anche i testi dell'interfaccia (sezione «Testi dell'interfaccia (percorso 1)»), che prevalgono sui testi citati nelle sezioni per ruolo. Dal 26/10/2026 c'è anche la revisione dei dati limite e dell'accessibilità (sezione «Dati limite e accessibilità (percorso 1)»), e sono decisi le interazioni e gli stati (sezione «Interazioni e stati (percorso 1)»). Sempre il 26/10/2026, dopo la ricerca sulle licenze, sono fissati carattere, icone, logo di ƎE e uso delle immagini generate (sezione «Componenti e token»). Lo stesso giorno sono decise le ricevute stampate del canone e della consegna, senza il testo legale (sezione «Ricevute stampate (percorso 1)»). Le scelte arrivano qui man mano che l'utente le conferma.
 
 ## Riferimento confermato dall'utente
 - Le **Apple Human Interface Guidelines** sono il riferimento di design più importante (16/10/2026), adattate alla piattaforma effettiva. Sintesi e fonti: [docs/rules/APPLE_DESIGN.md](docs/rules/APPLE_DESIGN.md). In caso di dubbio si rilegge la pagina ufficiale del componente.
@@ -116,7 +116,7 @@ Approvato dall'utente il 23/10/2026 nel ticket [Schermate dell'operatore di ƎE]
   - In cima dice cosa manca per attivarla, con un avanzamento («6 di 10») e il pulsante per aprire «Al banco» del proprietario.
   - Sotto c'è l'elenco dei mancanti, con «Carica» e «Non serve» (con il motivo).
   - Poi persone e rapporti, con lo stato di ciascuno, e i dati della locazione, con «Modifica».
-- **Correzione di una ricevuta.** Si sceglie «Annulla» o «Sostituisci» e il motivo è obbligatorio. La ricevuta annullata resta visibile, timbrata «annullata», accanto alla nuova che la sostituisce.
+- **Correzione di una ricevuta.** Si sceglie «Annulla» o «Sostituisci» e il motivo è obbligatorio. La ricevuta annullata resta visibile, timbrata «annullata», accanto alla nuova che la sostituisce. Il foglio e il PDF di entrambe sono in «Ricevute stampate (percorso 1)» (26/10/2026).
 - **Nuovo canone ISTAT.** Il calcolo è in chiaro: canone attuale, variazione, misura del contratto, aumento, nuovo canone, fonte e data. Due pulsanti: «Controllato: invia alla proprietaria» e «Inserisci il dato a mano». Un avviso ricorda che un indice uscito tardi dà una differenza, mai un ritardo.
 - **Contestazione.** Mostra la frase della persona come citazione, gli importi, la prova e la fonte. L'esito si sceglie fra tre: confermato, corretto (crea una nuova versione) o non risolto, con il motivo.
 - **Oggi.** Le chiamate avviate da Connetto, con «Scrivi l'esito», e i messaggi partiti. Una nota dice che si registra solo l'avvio della chiamata.
@@ -358,6 +358,77 @@ Scelta dall'utente il 24/10/2026 nella [prova della vista 3D](.scratch/controllo
 - **Zoom e movimento semplici** (richiesta dell'utente, 24/10/2026): si ingrandisce verso il centro e si gira sempre attorno alla casa. Lo zoom verso il punto indicato e lo spostamento toccando il nome di una stanza sono stati provati e tolti: rendevano strani zoom e rotazione. Niente scorrimento di lato con due dita (decisione dell'utente, 25/10/2026).
 - *Evidenza:* preferenza dell'utente su un prototipo con dati inventati. Nessuna prova con persone.
 
+## Ricevute stampate (percorso 1)
+Decise dall'utente il 26/10/2026, una scelta alla volta, nel ticket [Ricevute stampate: canone e consegna](.scratch/design-percorso-1/issues/19-ricevute-stampate.md), che conserva le varianti scartate, le misure e i motivi. La prova è una pagina usa e getta: https://claude.ai/artifact/EoCKVfNQG4mXr1bXNJzn1g (privata, dati inventati; all'apertura mostra le scelte fatte). Ambito: la ricevuta del canone e quella della consegna di [PRODUCT.md](PRODUCT.md) §10.3, sia il foglio A4 stampato in agenzia sia il PDF che proprietario e inquilino scaricano. **Il testo legale non c'è**: aspetta il parere (§10.10), e il design ne lascia solo il posto.
+
+- **Impaginazione: la lettera** (decisione dell'utente). Una ricevuta per foglio A4, uguale sul foglio e nel PDF, da leggere dall'alto in basso:
+  - in cima l'intestazione di ƎE: il logo fisso `ee.svg` e i dati dell'agenzia;
+  - poi il titolo con numero e data;
+  - poi chi e cosa, in coppie etichetta e valore;
+  - poi la tabella dei mesi e, a destra, il totale grande con l'importo in lettere sotto;
+  - poi il mezzo e il posto del testo legale;
+  - in fondo bollo e firme e, nel piede, chi ha registrato.
+
+  Manrope, foglio sempre bianco anche con il tema scuro, perché è carta; corpo fra 9 e 10 pt, titolo 20 pt, piede almeno 7,5 pt.
+  - *Scartate:* il modulo a riquadri, più fitto con nomi e indirizzi lunghi; due copie su mezzo foglio da tagliare, dove le consegne annullate o sostituite non stanno già senza testo legale.
+  - *Motivo:* è la forma più leggibile, regge nomi lunghi e tre mesi senza stringere i caratteri e lascia spazio al testo legale.
+- **ƎE in testa, Connetto piccolo in fondo** (decisione dell'utente). Il piede dice «Preparata con», il simbolo C–Legame e «Connetto». *Scartati:* Connetto in testa accanto a ƎE, che su un documento del denaro può far pensare che a ricevere sia Connetto; Connetto assente. *Motivo:* la ricevuta è di ƎE, che riceve il denaro e firma. Il nome aspetta il parere sul marchio e in fondo si toglie facilmente.
+- **Ricevuta annullata: fascia e timbro** (decisione dell'utente). In cima una fascia ambra con l'icona dice «Annullata il 23 ottobre 2026 alle 9:20 da Giulia Neri. Motivo: … Sostituita dalla ricevuta n. 442/2026. Non vale come ricevuta; resta nello storico.» È la prima cosa letta dallo screen reader.
+  - Sul foglio c'è il timbro «Annullata» di traverso, ambra al 65%: è un disegno senza lettere, nascosto allo screen reader, come il timbro dello spazio dell'operatore.
+  - La ricevuta nuova ha in cima una fascia grigia: «Sostituisce la ricevuta n. 437/2026 del 23 ottobre 2026, annullata. Motivo: …».
+  - *Scartate:* solo la fascia, che si nota meno; gli importi barrati, che rendono difficile leggere le cifre sbagliate. *Motivo:* chi guarda di sfuggita o in miniatura capisce subito, e la correzione resta leggibile (§7.3).
+- **Il PDF da scaricare è fatto dai dati** (decisione dell'utente). Ha la stessa impaginazione del foglio; al posto delle firme e della marca c'è il fatto scritto, con la spunta: «Firmata in agenzia da Giulia Neri per ƎE il 23 ottobre 2026», «Bollo 2,00 € applicato sull'originale». Per la consegna con bonifico: «Consegna confermata da Paolo Grandi il 24 ottobre 2026 con «Ricevuto»», oppure, con l'icona dell'attesa, «Consegna inviata, in attesa del «Ricevuto» di …».
+  - *Scartate:* la scansione del foglio firmato, che è un'immagine muta per lo screen reader e chiede una scansione per ogni ricevuta; il PDF con la scansione in seconda pagina, con lo stesso lavoro in più.
+  - *Da rivedere* dopo il parere legale su quanto vale il PDF senza firma a penna.
+- **Campi della ricevuta del canone** (proposta dell'agente, approvata dall'utente):
+  - titolo «Ricevuta del canone», numero «n. 437/2026» e data per intero;
+  - «Chi paga», con nome e ruolo;
+  - «Per conto di», con tutti i proprietari del contratto e il ruolo di ciascuno;
+  - «Casa», con l'indirizzo intero e il CAP;
+  - la tabella «Mesi pagati con questa ricevuta», un mese per riga, con canone, spese e totale in colonne distinte (§10.4). Con un pagamento parziale ci sono anche dovuto, pagato e residuo; sopra il totale stanno «Dovuto» e «Residuo, ancora da pagare»;
+  - il totale grande «Pagato», con l'importo in lettere sotto («euro milleduecentosettantacinque/00»);
+  - il «Mezzo»: «Contanti, in agenzia», «Carta, in agenzia» o «Bonifico sul conto di ƎE, arrivato il 22 ottobre 2026»;
+  - la firma «Per ƎE», con sotto il nome di chi firma.
+- **Campi della ricevuta della consegna** (proposta dell'agente, approvata):
+  - titolo «Ricevuta della consegna», numero e data;
+  - «Consegnata a», con la persona indicata nell'incarico. Con più proprietari si aggiungono «indicato nell'incarico» e la riga «Proprietari» con tutti;
+  - «Casa»;
+  - la tabella «Canoni consegnati con questa ricevuta»: mese, numero e data della ricevuta del canone, incassato, compenso e netto. Se il compenso non si trattiene si scrive «nessuno»;
+  - «Incassato» e «Compenso di ƎE trattenuto, fattura n. 91/2026», con il segno meno vero, poi il totale grande «Consegnato» con l'importo in lettere;
+  - il «Mezzo».
+  - *Contanti:* due firme, «Per ƎE» e il proprietario «per ricevuta», con sotto «la firma vale come conferma della consegna» (§10.3). Si stampano due copie: una al proprietario, una firmata resta in agenzia.
+  - *Bonifico:* nessuna firma in agenzia. Al suo posto «Conferma del proprietario», che sul foglio dice di confermare con «Ricevuto» in Connetto.
+- **Numeri** (proposta dell'agente, approvata): due serie distinte, una per il canone e una per la consegna; il titolo dice sempre quale. La ricevuta che ne sostituisce un'altra prende un numero nuovo; quella annullata tiene il suo.
+- **Bollo** (proposta dell'agente, approvata):
+  - *Canone:* il riquadro per la marca da bollo, 26 × 30 mm, a sinistra delle firme, compare solo sopra 77,47 € ([ricerca](docs/ricerca/incasso-canoni.md), §3).
+  - *Consegna:* un posto segnato «Bollo?» finché non decide il parere fiscale.
+  - Nel PDF il riquadro dice «Bollo 2,00 € applicato sull'originale».
+- **Piede** (proposta dell'agente, approvata): «Registrata da Giulia Neri il 23 ottobre 2026 alle 9:12» (§7.8), «Preparata con Connetto», titolo, numero e pagina.
+- **Posto del testo legale:** un riquadro di 4–5 righe fra il mezzo e le firme, senza testo provvisorio. Nella prova è giallo a righe con «Posto del testo legale · in attesa del parere legale». Anche i dati veri di ƎE (ragione sociale, P. IVA, sede) sono segnati «da inserire».
+- **Il PDF si legge con lo screen reader** (regole per la costruzione, approvate; ARCHITECTURE.md, passo 7):
+  - PDF etichettato, con la lingua italiana e il titolo del documento («Ricevuta del canone n. 437/2026», con «, annullata» quando lo è), mostrato al posto del nome del file;
+  - titolo principale, tabella con le intestazioni di colonna e di riga; meglio un elenco vero per le coppie etichetta e valore, che la prova lascia come blocchi generici;
+  - ƎE si legge «Enrico Erca» come parola della frase. Nel PDF il nome nascosto deve essere testo vero, trasparente: un testo ritagliato non arriva nel PDF, e un disegno con il nome alternativo verrebbe letto come «immagine» ([assets/marchio/](assets/marchio/README.md));
+  - il timbro è un disegno senza lettere, così non finisce sparso nel testo copiato o letto.
+- **Contrasti** misurati con la formula WCAG il 26/10/2026, sul bianco del foglio salvo dove è detto:
+  - testo 17,8:1; testo secondario 7,3:1; rame 5,5:1;
+  - fascia dell'annullata 16,3:1, con icona e bordo a 6,0:1; fascia della sostituita 15,6:1;
+  - riquadro del bollo nel PDF 6,8:1; spunta 5,4:1;
+  - righe e bordi 3,6:1; timbro al 65% 3,1:1, ed è solo una decorazione, perché il fatto è nella fascia.
+- *Da chiedere nei pareri* (§10.10):
+  - *legale:* il testo della ricevuta (in nome e per conto del proprietario, con o senza rappresentanza); quanto vale il PDF senza firma a penna; se servono codice fiscale delle parti o estremi del contratto; la numerazione;
+  - *fiscale:* il bollo sulla ricevuta della consegna; la soglia di 77,47 € e chi paga la marca (art. 1199 c.c.); il bollo delle ricevute dei bonifici, che la persona non ritira in agenzia.
+- *Da verificare con il collaboratore di ƎE:*
+  - chi firma la ricevuta: la prova assume che firmi chi registra l'incasso, perché il PDF lo scrive;
+  - le due copie della consegna in contanti;
+  - com'è fatta oggi la ricevuta di ƎE (domande già nella [ricerca](docs/ricerca/incasso-canoni.md), §9).
+- *Evidenza:* scelte dell'utente su una prova con dati inventati, con quattro confronti affiancati chiesti dall'utente. Verifiche in Chromium il 26/10/2026:
+  - 675 combinazioni a 360, 390, 768, 1024 e 1366 px, in chiaro e in scuro, senza errori, senza scorrimento orizzontale e senza contenuto fuori dal foglio;
+  - anteprima di stampa A4: 20 PDF, tutti su una pagina A4;
+  - ordine di lettura ricostruito dai tag del PDF.
+
+  Nessuna prova con persone, con screen reader veri (VoiceOver, NVDA, lettore PDF) o su una stampante vera.
+
 ## Componenti e token
 DA DEFINIRE dopo il primo percorso. Riutilizzare e documentare solo ciò che serve.
 - **Fissati il 26/10/2026** ([ricerca sulle licenze](docs/ricerca/licenze-grafiche.md)): carattere Manrope dal nostro sito, con la licenza accanto («Direzione del percorso 1», «Caratteri»); icone Lucide a tratto 1,6 e 2,2 («Forme»); «ƎE» come disegno, dal 26/10/2026 con il disegno deciso («Identità»); immagini della stanza e della tessera solo nei prototipi fino al parere («Accesso, tessera e situazioni comuni»).
@@ -368,4 +439,4 @@ Caricamento, vuoto, senza rete, errore e recupero del percorso 1: «Accesso, tes
 Registrare comportamento mobile, tastiera, testo ingrandito e movimento ridotto. Testo ingrandito, tastiera e campi: «Dati limite e accessibilità» (26/10/2026).
 
 ## Decisioni confermate
-Per ogni scelta: decisione, motivo, evidenza o ipotesi, ambito e data. Finora: il riferimento Apple, il formato degli importi, il simbolo C–Legame (sezione «Identità»), i punti fermi del percorso 1 (con la voce passata al «tu»), la direzione «Terracotta» con il chiaro in vetrina, lo spazio dell'operatore, le schermate del proprietario e quelle dell'inquilino, con le ricevute in forma provvisoria; accesso, tessera digitale di rame, benvenuto, disdetta e situazioni comuni, con l'eccezione del simbolo sulla tessera (23/10/2026); la rifinitura delle schermate interne dei clienti, la «via di mezzo», con tre regole cambiate: la casa in cima con i dettagli del mese, le icone senza cerchi e i fatti senza riquadri (24/10/2026); lo stile della vista 3D indicativa, l'isometrica illustrata (24/10/2026); i testi dell'interfaccia del percorso 1 (25/10/2026); i dati limite e l'accessibilità del percorso 1, con cinque regole cambiate: la tessera con la targhetta satinata, i mesi a pillola con l'icona e a capo sul computer, il contorno dei campi, le righe della coda a capo, la tessera arancione dell'operatore (26/10/2026); le interazioni e gli stati del percorso 1, con due regole cambiate: il pulsante spento dell'incasso al banco e il movimento ridotto, ora solo dissolvenze (26/10/2026); carattere Manrope dal nostro sito, icone Lucide, «ƎE» come disegno e immagini ChatGPT solo nei prototipi fino al parere (26/10/2026); il disegno del logo di ƎE, approvato anche per l'agenzia (26/10/2026).
+Per ogni scelta: decisione, motivo, evidenza o ipotesi, ambito e data. Finora: il riferimento Apple, il formato degli importi, il simbolo C–Legame (sezione «Identità»), i punti fermi del percorso 1 (con la voce passata al «tu»), la direzione «Terracotta» con il chiaro in vetrina, lo spazio dell'operatore, le schermate del proprietario e quelle dell'inquilino, con le ricevute in forma provvisoria; accesso, tessera digitale di rame, benvenuto, disdetta e situazioni comuni, con l'eccezione del simbolo sulla tessera (23/10/2026); la rifinitura delle schermate interne dei clienti, la «via di mezzo», con tre regole cambiate: la casa in cima con i dettagli del mese, le icone senza cerchi e i fatti senza riquadri (24/10/2026); lo stile della vista 3D indicativa, l'isometrica illustrata (24/10/2026); i testi dell'interfaccia del percorso 1 (25/10/2026); i dati limite e l'accessibilità del percorso 1, con cinque regole cambiate: la tessera con la targhetta satinata, i mesi a pillola con l'icona e a capo sul computer, il contorno dei campi, le righe della coda a capo, la tessera arancione dell'operatore (26/10/2026); le interazioni e gli stati del percorso 1, con due regole cambiate: il pulsante spento dell'incasso al banco e il movimento ridotto, ora solo dissolvenze (26/10/2026); carattere Manrope dal nostro sito, icone Lucide, «ƎE» come disegno e immagini ChatGPT solo nei prototipi fino al parere (26/10/2026); il disegno del logo di ƎE, approvato anche per l'agenzia (26/10/2026); le ricevute stampate del canone e della consegna, foglio A4 e PDF, senza il testo legale (26/10/2026).

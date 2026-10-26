@@ -42,6 +42,7 @@ Regole d'uso (decise dall'utente il 26/10/2026, una scelta alla volta):
 - Un solo colore pieno: il file usa `currentColor` e prende il colore del testo intorno. Non si ruota e non si deforma; le due E non si uniscono e non cambiano distanza. Niente gradienti, ombre o contorni.
 - Intorno al logo da solo resta libero almeno metà della sua altezza (proposta dell'agente, approvata con il disegno).
 - **Eccezione, come per il simbolo:** sulla tessera di rame, vista come oggetto, ƎE è inciso nel metallo, scuro e con un filo di luce sotto, con la forma identica. Sul rame del prototipo il contrasto è fra circa 4,2:1 e 5,3:1. I loghi non hanno un minimo di contrasto in WCAG (criterio 1.4.3), ma qui resta sopra 3:1.
+- **Nei PDF** (ricevute stampate, 26/10/2026) il testo nascosto «Enrico Erca» deve essere testo vero, trasparente, non ritagliato: un testo ritagliato non arriva nel PDF, e con il nome alternativo del disegno si sentirebbe «immagine» ([DESIGN.md](../../DESIGN.md), «Ricevute stampate (percorso 1)»).
 - Nelle email e negli SMS ƎE resta in lettere, perché un disegno non sempre si vede.
 - Non è stata fatta una ricerca di marchi simili e il marchio non è registrato: è dell'agenzia, che decide se e come tutelarlo.
 
