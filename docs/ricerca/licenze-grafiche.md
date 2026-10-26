@@ -4,7 +4,7 @@ Ricerca del 26 ottobre 2026, svolta da un agente in background (skill research) 
 
 **Non è un parere legale.** Dice cosa scrivono oggi le licenze, le condizioni e le norme che si sono potute leggere. Se un uso è lecito nel caso concreto lo valuta un avvocato esperto di diritto d'autore e proprietà intellettuale. Nessun account è stato creato, nessun file a pagamento scaricato, nessun fornitore contattato.
 
-**Controllo a campione** della sessione principale (26/10/2026), sulle fonti originali: il file `OFL.txt` di Manrope in Google Fonts (OFL 1.1, nessun nome riservato); il file `Manrope[wght].ttf` riletto con fontTools (versione 4.505, asse 200–800, `tnum` presente, «€», lettere accentate e «« »» presenti, «Ǝ» assente, `fsType` 0); il file `LICENSE` di Lucide (ISC più l'elenco delle icone derivate da Feather); l'art. 50, par. 4, dell'AI Act sull'AI Act Service Desk; il nuovo art. 1 della legge 633/1941 nella Gazzetta Ufficiale (legge 132/2025, in vigore dal 10/10/2025). Tutto confermato. Le pagine delle condizioni di OpenAI rispondono 403 anche alla sessione principale: il §3.2–3.6 resta **Da verificare**.
+**Controllo a campione** della sessione principale (26/10/2026), sulle fonti originali: il file `OFL.txt` di Manrope in Google Fonts (OFL 1.1, nessun nome riservato); il file `Manrope[wght].ttf` riletto con fontTools (versione 4.505, asse 200–800, `tnum` presente, «€», lettere accentate e «« »» presenti, «Ǝ» assente, `fsType` 0); il file `LICENSE` di Lucide (ISC più l'elenco delle icone derivate da Feather); l'art. 50, par. 4, dell'AI Act sull'AI Act Service Desk; il nuovo art. 1 della legge 633/1941 nella Gazzetta Ufficiale (legge 132/2025, in vigore dal 10/10/2025). Tutto confermato. Nella prima lettura le pagine OpenAI rispondevano 403. **Verifica successiva del 26/10/2026 con la skill `research`:** lette direttamente tutte le sette pagine pubbliche richieste e la precedente versione ufficiale delle Usage Policies; esiti e date nel §3. Nessun accesso all’account dell’utente né aggiramento dei controlli anti-bot.
 
 Legenda: **Fonte** = ciò che dice la fonte; **Inferenza** = ciò che ne deduce l'agente; **Da verificare** = non confermato.
 
@@ -14,11 +14,11 @@ Legenda: **Fonte** = ciò che dice la fonte; **Inferenza** = ciò che ne deduce 
 - **Manrope non contiene la lettera «Ǝ» (U+018E) del nome ƎE.** Contiene «€», le lettere accentate italiane, le virgolette «» e le cifre in colonna (`tnum`). È variabile, peso 200–800, versione 4.505 [4]. Il browser prenderà «Ǝ» da un altro carattere (**Inferenza**).
 - **Meglio servire Manrope dal nostro server, non dal servizio di Google.** Con il servizio di Google l'indirizzo IP di ogni visitatore arriva a Google [8]. Un tribunale tedesco (LG München I, 20/1/2022) ha condannato un sito per questo, senza consenso [9]. Con i file sul nostro server Google non riceve nulla [8].
 - **Icone: Lucide è la scelta più adatta.** Licenza ISC più MIT per le icone ereditate da Feather; griglia 24×24, tratto regolabile, estremità arrotondate, nessun logo di marchi; tutte le icone del percorso ci sono [10][11][12][13][14]. Alternative: Tabler (MIT) e Phosphor «light» (MIT).
-- **Le condizioni di OpenAI non si sono potute aprire** (errore 403 a ogni lettura automatica). Gli estratti del motore di ricerca dicono che l'output appartiene all'utente «nei limiti consentiti dalla legge», che può non essere unico e che non si può presentare come fatto da una persona. Tutto **Da verificare** sulla pagina.
-- **Nessuna garanzia da OpenAI sui diritti di terzi per i piani personali** (**Da verificare**). Dagli estratti, la tutela contro le contestazioni sui diritti di terzi copre solo i clienti API ed «Enterprise» (ChatGPT Enterprise, Edu, Healthcare). Il piano usato per le immagini non è noto.
+- **OpenAI: pagine ora lette**, con versioni e limiti nel §3.1. Il piano dichiarato è Plus, la residenza Italia: condizioni europee, compreso l’addendum per uso commerciale. L’uso delle immagini in accesso pubblico, interfaccia e promozione è compatibile in linea di principio, rispettando diritti altrui e policy (§3.2).
+- **Plus non offre l’indennizzo sull’output dei piani coperti** [27]. Non equivale a perdere le tutele inderogabili (§3.3). Per dichiarazione dell’origine IA e perdita dei segnali di provenienza valgono le distinzioni dei §3.4–3.5: una riga nascosta nelle note legali non è una soluzione già verificata.
 - **In Italia sono protette solo le opere dell'ingegno umano**, anche se create con l'aiuto dell'IA, purché siano «risultato del lavoro intellettuale dell'autore» (legge 132/2025, art. 25) [23]. Un'immagine nata da una semplice richiesta potrebbe non essere protetta: altri potrebbero copiarla (**Inferenza**, serve parere).
 - **AI Act, art. 50, in vigore dal 2/8/2026.** L'obbligo di etichettare riguarda i «deep fake», cioè contenuti che sembrano autentici e somigliano a persone, luoghi o oggetti esistenti [22]. Una stanza e una tessera decorative probabilmente non lo sono, ma è un punto da parere (**Inferenza**).
-- **Raccomandazione dell'agente:** Manrope dal nostro server; Lucide; le immagini ChatGPT solo nei prototipi finché l'utente non ha letto le condizioni del suo piano e non c'è un parere, da chiedere insieme a quello sul marchio Connetto.
+- **Raccomandazione dell'agente:** Manrope dal nostro server; Lucide; le immagini ChatGPT restano solo nei prototipi fino al parere, insieme a quello sul marchio Connetto. La lettura delle condizioni è completata; restano la ricerca di somiglianze e il parere, anche su trasparenza e immagini modificate.
 
 ## 1. Carattere Manrope
 
@@ -151,40 +151,56 @@ Nomi verificati il 26/10/2026 sui file dei repository ufficiali (risposta 200) [
 
 ## 3. Immagini generate con ChatGPT
 
-### 3.1 Cosa si è potuto leggere
+### 3.1 Pagine lette e versioni
 
-- **Le pagine di OpenAI non si sono aperte.** `openai.com/policies/...` e il centro assistenza `help.openai.com` rispondono 403 a ogni lettura automatica. Un rendering con browser senza interfaccia è stato bloccato dalle regole dell'ambiente, perché aggirerebbe un controllo anti-bot. L'agente non ha insistito.
-- **I punti 3.2–3.6 vengono dagli estratti del motore di ricerca** di quelle pagine. Sono tutti **Da verificare**: l'utente può aprire le pagine nel proprio browser in pochi minuti (elenco in «Fonti non raggiunte»).
-- Le norme UE e italiane (3.7, 3.8) sono state lette su fonti ufficiali.
+Verifica del **26/10/2026**, con la skill `research` e controllo della sessione principale sui passaggi decisivi. Solo pagine pubbliche ufficiali, lette direttamente tramite lo strumento web; nessun account o aggiramento anti-bot. Gli estratti del motore di ricerca non sono più la base del §3.2–3.6. Le norme dei §3.7–3.8 non sono state riverificate in questo aggiornamento.
 
-### 3.2 Proprietà e uso commerciale (Da verificare)
+| Pagina ufficiale | Versione mostrata alla lettura del 26/10/2026 | Entrata in vigore dichiarata |
+| --- | --- | --- |
+| [Europe Terms of Use](https://openai.com/policies/eu-terms-of-use/) [25] | Aggiornata 16/1/2026 | Non esplicitata separatamente: non scambiare aggiornamento ed efficacia |
+| [Terms of Use](https://openai.com/policies/terms-of-use/) [26] | Pubblicata 1/1/2026 | 1/1/2026 |
+| [Service Terms](https://openai.com/policies/service-terms/) [27] | Aggiornata 16/10/2026 | Non esplicitata separatamente |
+| [Services Agreement](https://openai.com/policies/services-agreement/) [28] | Aggiornato 1/12/2025 | 1/1/2026 |
+| [Usage Policies, pagina attuale](https://openai.com/policies/usage-policies/) [29] | Modifica annunciata nel changelog 21/10/2026 | **20/11/2026, futura rispetto alla lettura** |
+| [Usage Policies, versione precedente ufficiale](https://openai.com/policies/usage-policies/revisions/2025-10-29/) [30] | Raggiunta dal collegamento Previous Version di [29] | **29/10/2025: riferimento applicabile al 26/10/2026** |
+| [Sharing & publication policy](https://openai.com/policies/sharing-publication-policy) [31] | Aggiornata 14/11/2022 | Non esplicitata separatamente |
+| [Articolo C2PA richiesto](https://help.openai.com/en/articles/8912793-c2pa-in-chatgpt-images) → [Provenance signals in OpenAI-generated content](https://help.openai.com/en/articles/8912793-provenance-signals-in-openai-generated-content) [32] | Aggiornamento indicato solo in ore, nella giornata di lettura | Nessuna data di efficacia: articolo tecnico, non condizioni contrattuali |
 
-- **Quali condizioni valgono.** Le «Europe Terms of Use» valgono per chi risiede nello SEE, in Svizzera o nel Regno Unito. L'uso aziendale segue condizioni separate. Il «Services Agreement» (aggiornato l'1/12/2025, in vigore dall'1/1/2026) copre le API, ChatGPT Business, ChatGPT Enterprise e gli altri servizi per aziende. **Inferenza:** con un piano gratuito o Plus valgono le condizioni europee per i consumatori; con Business o Enterprise il Services Agreement.
-- **Proprietà dell'output.** Nelle condizioni europee: «as between you and OpenAI, and to the extent permitted by applicable law, you (a) retain your ownership rights in Input and (b) own the Output. We hereby assign to you all our right, title, and interest, if any, in and to Output.» Il Services Agreement (sezione 4.1) ha una frase quasi uguale.
-- **Uso commerciale.** Negli estratti non c'è un divieto. **Inferenza:** chi riceve tutti i diritti sull'output può usarlo anche a fini commerciali, nei limiti delle Usage Policies (non lette).
-- **«If any».** OpenAI cede solo i diritti che ha, se ne ha. Se l'immagine non è protetta (3.8), non c'è nulla da cedere (**Inferenza**).
+La pagina pubblica non prova quali notifiche o versioni l’utente abbia accettato alla generazione: conservare anche date e originali delle due immagini. Le date non dichiarate restano elencate in «Fonti non raggiunte» come dati non confermati.
 
-### 3.3 Somiglianza, garanzie e indennizzo (Da verificare)
+### 3.2 Proprietà e uso commerciale
 
-- **Output non unico.** La sezione «Similarity of content» dice che l'output può non essere unico. Altri utenti possono ottenere risultati simili. La cessione non copre l'output di altri utenti né l'output di terzi.
-- **Nessuna garanzia per i consumatori.** Gli estratti non mostrano alcun impegno di OpenAI verso l'utente se un'immagine viola diritti altrui. Secondo raccolte di terzi (non ufficiali), le condizioni europee prevedono anzi che sia l'utente a tenere indenne OpenAI.
-- **Indennizzo solo per alcuni piani aziendali.** Le «Service Terms» definiscono «Enterprise» come «ChatGPT Enterprise, ChatGPT Edu, and ChatGPT for Healthcare». Per questi, e per le API, OpenAI si impegna a difendere il cliente se l'uso dell'output viola la proprietà intellettuale di terzi. Ci sono esclusioni: cliente che sapeva o doveva sapere, filtri di sicurezza disattivati, output modificato o combinato con altri prodotti, contestazioni di marchio. **Inferenza:** ChatGPT Business, Plus e gratuito non sembrano coperti. Le immagini della pagina d'accesso sono state separate in livelli e convertite, quindi «modificate»: anche con Enterprise la copertura sarebbe incerta.
+- **Fonte e applicazione al caso:** i testi distinguono servizi individuali e aziendali, e rinviano allo SEE per la residenza [25][26]; con Plus/Italia dichiarati dall’utente si applicano le condizioni europee. Il Services Agreement esclude i servizi per individui salvo eccezioni nominate, fra cui **non c’è Plus**: “does not apply to OpenAI services used by consumers or individuals unless specified above” ([28](https://openai.com/policies/services-agreement/), introduzione; letto 26/10/2026).
+- **Fonte:** fra utente e OpenAI, “to the extent permitted by applicable law”, l’output è dell’utente: “own the Output” ([25](https://openai.com/policies/eu-terms-of-use/), Content; letto 26/10/2026). OpenAI cede gli eventuali propri diritti; non attribuisce quelli di terzi. I Terms generali confermano la stessa struttura [26].
+- **Inferenza:** usare stanza e tessera in accesso pubblico, interfaccia o promozione è compatibile in linea di principio: nessun divieto commerciale delle immagini nei testi letti. Restano diritti altrui, policy e limiti legali; questa cessione non crea da sola un diritto d’autore (§3.8).
 
-### 3.4 Dire che è fatto con l'IA (Da verificare)
+### 3.3 Somiglianza, garanzie e indennizzo
 
-- **Divieto.** Fra gli usi vietati c'è «representing that Output was human-generated when it was not» (condizioni europee e mondiali).
-- **Sharing & publication policy.** Chiede di rivedere l'output prima di pubblicarlo e di indicare il ruolo dell'IA in modo che nessuno possa non vederlo. Gli estratti si riferiscono soprattutto a testi e post; per le immagini di un'interfaccia non è chiaro.
-- **Inferenza.** Nessun testo letto obbliga a scrivere «generata con IA» sotto un'immagine decorativa. Non si deve però dire o far intendere che sia una foto o il lavoro di un illustratore. Una riga nelle note legali o nei crediti costa poco e toglie il dubbio.
+- **Fonte:** “Output may not be unique” ([25](https://openai.com/policies/eu-terms-of-use/), Similarity of content; letto 26/10/2026). Altri utenti possono ottenere risultati simili; la cessione esclude il loro output e quello di terzi [26].
+- **Fonte:** le condizioni europee promettono diligenza professionale, preservano diritti inderogabili e garanzia legale dei consumatori SEE; non promettono unicità o assenza di violazioni [25, Our commitments to you]. Il disclaimer generale “NON-INFRINGEMENT” ([26](https://openai.com/policies/terms-of-use/), Disclaimer of warranties; letto 26/10/2026) non va trasferito alle condizioni UE.
+- **Fonte:** l’indennizzo sull’output riguarda clienti API (§1(a)) ed Enterprise (§3(b)), definito come Enterprise, Edu e Healthcare: “ChatGPT Enterprise, ChatGPT Edu, and ChatGPT for Healthcare” ([27](https://openai.com/policies/service-terms/), §3(a); letto 26/10/2026). **Plus non è coperto**; Business non rientra in quella definizione, anche se compare nel titolo del §3. Esclusioni: violazione conosciuta o riconoscibile, protezioni ignorate, modifiche/trasformazioni/combinazioni, input senza diritti, marchi nell’uso commerciale, output di terzi. Separazione in livelli e conversione non danno copertura a immagini nate con Plus; per piani coperti andrebbero valutate anche le esclusioni.
+- **Corretto il 26/10/2026:** prima diceva «Nessuna garanzia per i consumatori» e richiamava raccolte di terzi sulla manleva. La mancanza dell’indennizzo Plus non annulla le tutele di legge; per l’uso commerciale conta anche il §3.6.
 
-### 3.5 Metadati C2PA e filigrana (Da verificare)
+### 3.4 Dire che è fatto con l’IA
 
-- **Cosa aggiunge OpenAI.** Secondo gli estratti dell'articolo del centro assistenza, le immagini di ChatGPT e delle API portano metadati **C2PA** e una filigrana invisibile **SynthID** nei pixel. La verifica si fa su `openai.com/verify`. L'annuncio originale diceva che i metadati si perdono facilmente, per esempio con uno screenshot o sui social.
-- **WebP.** La specifica C2PA 2.2 prevede i metadati anche nei file WebP, in un blocco chiamato «C2PA» [24]. **Inferenza:** il formato WebP non li toglie da solo. Li toglie quasi sempre la conversione con i programmi comuni, e di certo la separazione in livelli. La filigrana nei pixel può restare in parte. Si può controllare caricando i file su `openai.com/verify` (a cura dell'utente).
-- **Si possono togliere?** Negli estratti non c'è un divieto. L'obbligo di marcatura dell'AI Act (art. 50, par. 2) è del fornitore, cioè di OpenAI [22]. Le Usage Policies non sono state lette: un eventuale divieto di aggirare le misure di sicurezza è **Da verificare**.
+- **Fonte:** è vietato “Representing that Output was human-generated when it was not.” ([25](https://openai.com/policies/eu-terms-of-use/), Using our Services; letto 26/10/2026). Stesso divieto nei Terms generali [26].
+- **Fonte:** per social media, dirette e dimostrazioni la Sharing & publication policy richiede controllo manuale, attribuzione a sé/alla propria azienda e: “Indicate that the content is AI-generated in a way no user could reasonably miss or misunderstand.” ([31](https://openai.com/policies/sharing-publication-policy/), Social media, livestreaming, and demonstrations; letto 26/10/2026). La parte successiva sui testi coautoriali via API non disciplina specificamente queste immagini Plus.
+- **Inferenza:** non emerge una prescrizione universale di didascalia sotto ogni immagine decorativa; l’estensione della policy all’accesso/interfaccia va chiarita nel parere. Per promozione sui social e dimostrazioni serve una segnalazione evidente nel contesto. Non presentarle come foto reali o illustrazioni realizzate interamente da una persona. **Raccomandazione:** prevedere un’indicazione visibile e comprensibile dove si mostrano, con collocazione da valutare nel parere anche rispetto all’AI Act.
+- **Corretto il 26/10/2026:** prima diceva che una riga nelle note legali «toglie il dubbio». Non è sufficiente se l’indicazione richiesta deve essere evidente. La scelta in DESIGN.md resta invariata, in attesa del parere.
 
-### 3.6 Il piano usato per le immagini
+### 3.5 Metadati C2PA e filigrana
 
-- Non si sa con quale piano l'utente abbia generato le immagini. Dagli estratti, **il piano cambia due cose**: quali condizioni valgono (consumatori o Services Agreement) e se c'è l'indennizzo di OpenAI (solo Enterprise, Edu, Healthcare e API). La proprietà dell'output è descritta allo stesso modo nei due testi (**Da verificare**).
+- **Fonte:** l’articolo ora intitolato *Provenance signals in OpenAI-generated content* [32] descrive Content Credentials (C2PA) nei metadati e SynthID invisibile nel contenuto; la copertura dipende anche da modello, formato, esportazione e data di creazione. Le Content Credentials “can be lost through everyday actions”, comprese conversioni; raccomanda “preserve existing C2PA metadata” dove possibile ([32](https://help.openai.com/en/articles/8912793-provenance-signals-in-openai-generated-content), How robust… e Will signals remain…; letto 26/10/2026). La filigrana può resistere ad alcune modifiche o diventare non rilevabile. Il verificatore non certifica proprietà o liceità e un risultato negativo non esclude origine IA.
+- **Inferenza sul caso:** livelli separati e WebP **possono** perdere i metadati o degradare il segnale; non prova che sia successo a questi file, non esaminati. WebP supporta C2PA [24]. Conservare originali e storia delle modifiche; eventuale controllo su `openai.com/verify` a cura dell’utente, non eseguito qui.
+- **Fonte / limite della verifica:** nessun divieto specifico di rimuovere C2PA/SynthID **dalle immagini** trovato nei testi letti. Resta il divieto generale di aggirare protezioni [25][30]. Il divieto esplicito di rimozione degli indicatori nel §1(b) dei Service Terms riguarda **Prompt-to-Voice**, non queste immagini [27]. L’articolo raccomanda conservazione e chiarisce che i segnali non sostituiscono le dichiarazioni visibili eventualmente dovute [32].
+- **Corretto il 26/10/2026:** prima diceva che la separazione in livelli li toglie «di certo» e che la conversione li toglie «quasi sempre»: non accertato. La possibilità tecnica di perdita non è un’autorizzazione generale alla rimozione intenzionale per nascondere l’origine. Questa intenzione e gli obblighi di legge vanno distinti nel parere.
+
+### 3.6 Plus, uso commerciale e Usage Policies pertinenti
+
+- **Dato dell’utente:** immagini generate con **ChatGPT Plus**, residenza **Italia**. **Corretto il 26/10/2026:** prima diceva che il piano non era noto.
+- **Fonte:** l’addendum Business use **interno alle condizioni europee** si applica all’uso commerciale; limita responsabilità nel massimo consentito e, per imprese/organizzazioni, prevede manleva **dell’utente verso OpenAI**, non viceversa [25, addendum]. Il passaggio a un uso commerciale non trasforma Plus nel Services Agreement. **Corretto il 26/10/2026:** prima diceva «L’uso aziendale segue condizioni separate», senza distinguere l’addendum per Plus. **Parere:** applicazione a chi genera e a chi pubblica per ƎE.
+- **Fonte:** le Usage Policies applicabili alla data di lettura [30] vietano violazioni di proprietà intellettuale, inganno/frode/impersonificazione, uso dell’immagine altrui senza consenso che confonda sull’autenticità, violazioni della privacy e aggiramento delle protezioni: “circumventing our safeguards” ([30](https://openai.com/policies/usage-policies/revisions/2025-10-29/), Protect people; letto 26/10/2026). Vietano anche decisioni automatizzate importanti senza controllo umano, incluso l’alloggio; non vietano per questo un’immagine decorativa in un prodotto immobiliare (**Inferenza**). Restano i divieti sui contenuti dannosi e di sfruttamento dei minori; non emergono dal caso descritto.
+- **Fonte:** la pagina attuale [29] annuncia efficacia **20/11/2026**. Mantiene questi limiti pertinenti, amplia la formulazione sulle azioni importanti e chiarisce altri usi, fra cui addestramento di modelli. Non la si presenta come già vigente il 26/10. **Raccomandazione:** ricontrollare le policy prima del lancio; per stanza e tessera non emerge un divieto specifico dall’uso descritto, ma i file e le somiglianze non sono stati verificati.
 
 ### 3.7 AI Act, articolo 50
 
@@ -214,7 +230,7 @@ Letto sul testo consolidato al 27/7/2026, pubblicato dall'AI Act Service Desk de
 
 Un avvocato esperto di diritto d'autore e proprietà intellettuale, con attenzione a consumatori e AI Act. Conviene un solo incarico, insieme al parere sul marchio «Connetto» già previsto ([ticket 08](../../.scratch/design-percorso-1/issues/08-parere-nome-connetto.md)).
 
-1. Se le immagini ChatGPT si possono usare nel prodotto e nei materiali promozionali con il piano effettivamente usato, e con quali rischi in assenza di indennizzo.
+1. Come applicare al caso Plus/Italia le condizioni lette (§3): uso commerciale per ƎE, diritti altrui e rischi senza indennizzo; dove e come dichiarare l’origine IA e come trattare i segnali di provenienza dopo le modifiche.
 2. Se le immagini sono protette dalla legge 633/1941 come modificata nel 2025, e come proteggere comunque la stanza e la tessera (diritto d'autore, disegno, marchio).
 3. Se l'art. 50 dell'AI Act si applica a immagini decorative di un'interfaccia, e chi sarebbe il deployer.
 4. Se mostrare una tessera generata diversa da quella vera è un problema verso i consumatori.
@@ -246,11 +262,11 @@ Un avvocato esperto di diritto d'autore e proprietà intellettuale, con attenzio
 
 ### 5.4 Le immagini generate con ChatGPT
 
-- **Opzione A: usarle nel prodotto pubblico.** Con una riga «immagini generate con IA» nelle note legali, la ricerca inversa e le prove di provenienza conservate. Resta il rischio che non siano protette e che nessuno copra eventuali contestazioni.
-- **Opzione B: usarle solo nei prototipi per ora.** Si decide dopo aver letto le condizioni del proprio piano e avuto il parere. Nessun rischio oggi, perché il prodotto non è pubblico.
+- **Opzione A: usarle nel prodotto pubblico.** Dopo il parere sulla dichiarazione visibile appropriata (§3.4), la ricerca inversa e le prove di provenienza conservate. Resta il rischio che non siano protette e che nessuno copra eventuali contestazioni.
+- **Opzione B: usarle solo nei prototipi per ora (scelta confermata).** Le condizioni sono state lette; restano ricerca di somiglianze e parere. **Corretto il 26/10/2026:** prima diceva «Nessun rischio oggi»: un prototipo non rende nulli i rischi di diritti altrui o condivisione. Non si modifica la decisione in DESIGN.md.
 - **Opzione C: sostituirle con immagini commissionate** a un illustratore o un fotografo, con un contratto di cessione dei diritti. Immagini protette ed esclusive, ma con un costo.
 - **Raccomandazione: B adesso.** Prima del lancio: A per l'interfaccia se il parere è favorevole; C per i materiali promozionali e per la tessera, se si vuole un'immagine esclusiva e difendibile.
-- **Una domanda per l'utente:** con quale piano ChatGPT hai generato le due immagini (gratuito, Plus, Business, Enterprise)? Cambia le condizioni che valgono.
+- **Dato chiarito:** Plus, residente in Italia (§3.6). Nessuna nuova decisione sull’uso pubblico è presa con questa verifica.
 
 ### 5.5 Chiedere un parere
 
@@ -286,12 +302,19 @@ Tutte lette il 26/10/2026.
 22. Commissione europea, AI Act Service Desk, testo consolidato al 27/7/2026: art. 50 https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50 ; art. 3 https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-3 ; art. 111 https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-111 ; art. 113 https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-113 — obblighi di trasparenza, definizione di «deep fake», date.
 23. Gazzetta Ufficiale, legge 23 settembre 2025, n. 132, art. 25 e note: https://www.gazzettaufficiale.it/eli/id/2025/09/25/25G00143/sg — testo modificato dell'art. 1 della legge 633/1941 e nuovo art. 70-septies; entrata in vigore 10/10/2025.
 24. C2PA, «Content Credentials: C2PA Technical Specification» 2.2: https://spec.c2pa.org/specifications/specifications/2.2/specs/C2PA_Specification.html — incorporamento dei metadati nei file RIFF, compreso WebP.
+25. OpenAI, [Europe Terms of Use](https://openai.com/policies/eu-terms-of-use/) — letta 26/10/2026; ambito, Content, Our commitments to you, addendum Business use; aggiornamento ed efficacia distinti nel §3.1.
+26. OpenAI, [Terms of Use](https://openai.com/policies/terms-of-use/) — letta 26/10/2026; rinvio all’UE, Content, Disclaimer of warranties; date nel §3.1.
+27. OpenAI, [Service Terms](https://openai.com/policies/service-terms/) — letta 26/10/2026; §1(a) API, §1(b) Prompt-to-Voice, §3(a)–(b) Enterprise e §6 immagini; data nel §3.1.
+28. OpenAI, [Services Agreement](https://openai.com/policies/services-agreement/) — letto 26/10/2026, solo introduzione per confermare l’esclusione di Plus; date nel §3.1.
+29. OpenAI, [Usage Policies, pagina attuale](https://openai.com/policies/usage-policies/) — letta 26/10/2026, compreso changelog: versione annunciata, efficacia futura nel §3.1.
+30. OpenAI, [Usage Policies, revisione 29/10/2025](https://openai.com/policies/usage-policies/revisions/2025-10-29/) — letta 26/10/2026 dal collegamento ufficiale di [29]; riferimento applicabile a questa verifica.
+31. OpenAI, [Sharing & publication policy](https://openai.com/policies/sharing-publication-policy) — letta 26/10/2026; social/dirette/dimostrazioni e distinta sezione sui testi via API; data nel §3.1.
+32. OpenAI Help Center, [Provenance signals in OpenAI-generated content](https://help.openai.com/en/articles/8912793-provenance-signals-in-openai-generated-content) — letto 26/10/2026 tramite reindirizzamento dell’[URL richiesto](https://help.openai.com/en/articles/8912793-c2pa-in-chatgpt-images); sezioni su immagini, modifiche, verifica e dichiarazioni visibili; data nel §3.1.
 
 ## Fonti non raggiunte
 
-- **OpenAI, condizioni e policy**: «Europe Terms of Use» https://openai.com/policies/eu-terms-of-use/, «Terms of Use» https://openai.com/policies/terms-of-use/, «Services Agreement» https://openai.com/policies/services-agreement/, «Service Terms» https://openai.com/policies/service-terms/, «Usage Policies» https://openai.com/policies/usage-policies/, «Sharing & publication policy» https://openai.com/policies/sharing-publication-policy. Risposta 403 a ogni lettura automatica; il rendering con browser è stato bloccato dalle regole dell'ambiente come aggiramento di un controllo anti-bot. Lette solo negli estratti del motore di ricerca: tutto il §3.2–3.6 è **Da verificare**. Le Usage Policies non sono state lette affatto.
-- **OpenAI, centro assistenza**, articolo su C2PA e SynthID: https://help.openai.com/en/articles/8912793-c2pa-in-chatgpt-images (e la copia `help-lb.openai.com`): 403. Letto solo negli estratti del motore di ricerca.
-- **Data di entrata in vigore della versione attuale delle condizioni europee di OpenAI**: non confermata. Un estratto mostra una versione dell'11/12/2024; raccolte di terzi parlano di aggiornamenti nel 2026.
+- **OpenAI: nessuna delle sette pagine richieste è rimasta non raggiunta nella verifica del 26/10/2026.** Il precedente 403 è un limite della prima lettura, ora superato con la normale apertura pubblica tramite lo strumento web, senza aggiramenti. Anche la versione precedente ufficiale delle Usage Policies è stata raggiunta.
+- **Date non confermate:** [25], [27] e [31] mostrano un aggiornamento ma non una distinta entrata in vigore; [32] mostra solo un aggiornamento relativo in ore, non una data assoluta o di efficacia. Non si ricavano date mancanti da estratti o raccolte di terzi. Le condizioni accettate alla generazione e le eventuali notifiche individuali non sono accertate: nessun accesso all’account. Per [29] la data futura è invece esplicita, non una fonte irraggiungibile (§3.1).
 - **EUR-Lex**, Regolamento (UE) 2024/1689: https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32024R1689 — controllo anti-bot (risposta 202 vuota). Il testo è stato letto sull'AI Act Service Desk della Commissione [22], che riproduce il consolidato di EUR-Lex.
 - **Normattiva**, legge 132/2025: connessione interrotta. Il testo è stato letto sulla Gazzetta Ufficiale [23].
 - **Repository dell'autore di Manrope** `github.com/sharanda/manrope`: «non trovato». Il file della licenza è stato letto nei repository di Google Fonts [4][5].
