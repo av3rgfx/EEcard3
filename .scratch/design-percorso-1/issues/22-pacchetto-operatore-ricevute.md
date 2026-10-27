@@ -37,3 +37,13 @@ Come si lavora (HITL): skill `prototype` (ramo UI); pagina privata usa e getta, 
   2. **Riquadro con la casa sul computer:** A, in tutta la larghezza sopra le due colonne, disegno a sinistra alto quanto il testo (consigliata, come il riquadro in cima dei clienti); B, nella colonna con il disegno sopra e il testo sotto. Scelta: **A**, per la scheda della casa e «Al banco».
   3. **Tutti i dati della locazione** (consigliata): quattro gruppi (contratto, canone del mese, fisco e registro, deposito) con i mancanti «da inserire» e la riga «Dall'incarico». Scelta: **Dopo**.
   4. **Anteprima prima di salvare un documento** (consigliata): prima pagina con il nome del documento e la casa, «Salva il documento» e «Scegline un altro», come la contabile. Scelta: **sì**.
+- **Spazi fra gli elementi** (stessa schermata con tre scale, al computer e al telefono): A 4, 8, 12, 16, 24, 32, 48 (consigliata, vicina alle prove approvate); B 4, 8, 16, 24, 32, 48, 64, più aria, che sul telefono manda a capo pulsanti e scelte; C 4, 6, 10, 14, 20, 28, 40, più fitta. Scelta: **A**, registrata in DESIGN.md, «Componenti e token».
+
+**Scheda di revisione, tappa 2: in agenzia con la proprietaria** («Al banco» per Marta Ferri).
+- *Compito:* in una visita, con la persona che aspetta: incarico con i suoi dati, adesione su un foglio separato, informativa, verifica dell'email e account, tessera fisica (§10.2.2). *Esito che conta:* la casa attiva in una visita, con un foglio firmato uguale ai dati che usa Connetto.
+- *Cosa deve sapere:* cosa fare adesso e in che ordine; quando la casa diventa attiva.
+- *Dove può sbagliare:* (3) i dati dell'incarico (termine di consegna, parziali, compenso, dove paga, a chi si consegna, numero visibile) non hanno un posto prima della firma: il foglio firmato e i dati possono divergere, e un termine sbagliato fa scattare ritardi falsi; (2) l'elenco «Da chiudere con» non ha ordine, mentre all'attivazione l'incarico viene prima; (2) il momento in cui la casa diventa attiva non si vede (regola già decisa: conferma al suo posto); (1) la tessera esiste solo dopo l'adesione.
+- *Proposte e scelte dell'utente:*
+  1. **I dati dell'incarico prima della firma** (consigliata): sei campi nella riga, poi «Stampa l'incarico». Scelta: **Dopo**.
+  2. **Le cose da chiudere in ordine** (consigliata): numerate, con «Adesso:» in cima, solo all'attivazione. Scelta: **Dopo**.
+  - Applicata come regola già decisa, nella situazione «Dopo le due firme»: conferma «Via dei Tigli 14 è attiva» e tessera arancione.
