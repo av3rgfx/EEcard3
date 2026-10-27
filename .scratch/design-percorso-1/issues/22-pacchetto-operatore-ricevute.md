@@ -60,3 +60,10 @@ Come si lavora (HITL): skill `prototype` (ramo UI); pagina privata usa e getta, 
 - *Compito:* entro il termine dell'incarico, registrare la consegna con riepilogo, compenso e fattura, scegliere il mezzo dell'incarico, caricare la contabile del bonifico (§10.3, D15). *Esito che conta:* «Inviata» solo con la prova, ricevuta completa, nessun ritardo falso.
 - *Dove può sbagliare:* (3) si registra senza contabile: Marta riceve «Inviata» senza prova; (2) il numero della fattura del compenso non ha un controllo e la ricevuta può uscire senza; (1) «Contanti in agenzia» va a capo nel pulsante stretto.
 - *Proposta e scelta dell'utente:* **Niente consegna senza contabile e fattura** (consigliata): pulsante spento con il perché, fattura «da inserire». Scelta: **Dopo**. Correzione dell'agente: etichetta «Contanti».
+
+**Scheda di revisione, tappe 8 e 9: la scadenza passata e la consegna in ritardo** (la coda e i suoi dettagli).
+- *Compito:* a inizio giornata, scorrere la coda in ordine fisso, aprire la voce, fare la cosa giusta. *Esito che conta:* nessuna voce che tocca la fiducia della proprietaria resta ferma; nessun sollecito all'inquilino (§10.5).
+- *Dove può sbagliare:* (2) la voce «canone non pagato» non ha un dettaglio nella prova approvata: Giulia non vede che Marta è già stata avvisata né che a Luca non si scrive; con il modello della consegna avrebbe in vista «Registra l'incasso» senza la persona al banco; (1) il numero della coda nella barra laterale non coincideva con quello della pagina (corretto).
+- *Proposta e scelta dell'utente:* **Il canone non pagato: cosa è successo e cosa no** (consigliata). Scelta: **Dopo**. La consegna in ritardo usa la pagina della consegna con l'avviso ambra già approvato.
+
+**Fine della sessione 1 (27/10/2026).** Fatte le tappe 1, 2, 5, 6, 8 e 9 dell'operatore e la ricevuta del canone e della consegna (lettera A4 approvata, foglio e PDF). Restano per la sessione 2: tappa 10 (contestazione, correzione di una ricevuta, ricevuta annullata e sostituita), tappa 11 (nuovo canone ISTAT), «Fuori dalla storia» per l'operatore (coda vuota, «Oggi»). Il ticket resta `claimed`.

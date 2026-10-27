@@ -1,6 +1,6 @@
 # Stato del progetto
 
-## Punto di ripresa (26 ottobre 2026, pacchetto per il controllo B deciso)
+## Punto di ripresa (27 ottobre 2026, pagina del pacchetto: prima sessione dell'operatore)
 **Fase: design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6), nella mappa [Design del percorso 1](.scratch/design-percorso-1/map.md). Approvati:
 - la direzione **«Terracotta»**, con il chiaro in vetrina;
 - lo spazio dell'operatore;
@@ -16,12 +16,14 @@
 - dal 26/10 le **foto e l'illustrazione della casa** ([DESIGN.md](DESIGN.md), «Foto e illustrazione della casa (percorso 1)»): copertina scelta e visore; operatore e proprietari aggiungono e tolgono qualsiasi foto, togliere cancella; l'ex inquilino vede solo il disegno; anteprima con promemoria; email con il disegno; tre tipi di casa nel disegno.
 - dal 26/10 il **pacchetto per il controllo B** e **componenti e token** ([DESIGN.md](DESIGN.md), «Pacchetto per il controllo B (percorso 1)» e «Componenti e token»): una pagina nuova «Connetto, percorso 1» con tutte le schermate decise, ridisegnate con le regole di oggi e ordinate come il mese di una casa, più l'indice per ruolo; operatore com'è approvato; scala corta di testo (6 grandezze) e angoli (4); valori mancanti presi dalle prove; prima del controllo B solo il collaboratore di ƎE, email e SMS dopo il parere sul nome.
 
+- dal 27/10 la **pagina del pacchetto** «Connetto, percorso 1» ha il telaio e le tappe 1, 2, 5, 6, 8 e 9 dell'operatore, con la ricevuta del canone e della consegna: https://claude.ai/artifact/9KwvBBmgGc859wN67hWbAF. Dalla revisione dell'esperienza dieci scelte dell'utente, tutte sull'opzione consigliata ([ticket](.scratch/design-percorso-1/issues/22-pacchetto-operatore-ricevute.md)); **spazi fra gli elementi** fissati: 4, 8, 12, 16, 24, 32 e 48 px ([DESIGN.md](DESIGN.md), «Componenti e token»).
+
 Dal 25/10 è decisa anche la **tessera fisica del pilota** ([PRODUCT.md](PRODUCT.md) §12): plastica con lamina arancione, chip DESFire EV3 spento, solo un codice suo, consegna in agenzia.
 
 La voce è al **«tu»** anche per i clienti ([DESIGN.md](DESIGN.md)).
 
 Prossimi passi:
-- **Prossima sessione, proposta:** costruire la prima metà della pagina del pacchetto, ticket [Pagina del pacchetto: telaio, operatore e ricevute](.scratch/design-percorso-1/issues/22-pacchetto-operatore-ricevute.md); poi [Pagina del pacchetto: clienti, accesso e situazioni comuni](.scratch/design-percorso-1/issues/23-pacchetto-clienti-situazioni.md). Il messaggio è in START_HERE.md.
+- **Prossima sessione, proposta:** seconda sessione del ticket [Pagina del pacchetto: telaio, operatore e ricevute](.scratch/design-percorso-1/issues/22-pacchetto-operatore-ricevute.md), che resta rivendicato: tappa 10 (contestazione, correzione di una ricevuta, ricevuta annullata e sostituita), tappa 11 (nuovo canone ISTAT), coda vuota e «Oggi»; poi si chiude il ticket. Dopo, [Pagina del pacchetto: clienti, accesso e situazioni comuni](.scratch/design-percorso-1/issues/23-pacchetto-clienti-situazioni.md). Il messaggio è in START_HERE.md.
 - **Revisione dell'esperienza** (scelta dell'utente del 26/10/2026): si fa durante la costruzione della pagina, tappa per tappa, con proposte «prima e dopo» decise una alla volta; la costruzione passa a circa tre sessioni. Pareri dell'agente, non decisioni: librerie di componenti come Animate UI al passo 7, con l'elenco dei componenti come base (ARCHITECTURE.md); la skill Agent-Reach non si installa per ora (ticket «Pacchetto per il controllo B», «Commenti»).
 - **Controllo B:** si fa con la pagina del pacchetto finita, le risposte del collaboratore di ƎE e l'architettura (METODO.md, passo 7). Email e SMS non servono al controllo B: si disegnano dopo il parere sul nome, prima del pilota.
 - **Pareri sulle foto della facciata, prima del pilota:** privacy (persone e targhe, informativa, durata dopo la fine della gestione, cancellazione vera) e legale (diritti di chi aggiunge una foto). Elenco in DESIGN.md, «Foto e illustrazione della casa (percorso 1)». Al collaboratore di ƎE si chiede se i tre tipi di casa del disegno coprono le case gestite.
@@ -52,9 +54,25 @@ Prossimi passi:
 - Interazioni e stati (26/10/2026, versione 2): https://claude.ai/artifact/MvrdhkTegSQ5eUUGC4XzeY. Otto momenti che cambiano lo stato, con le varianti, tre livelli di movimento e il registro di cosa sente lo screen reader; all'apertura mostra le scelte fatte.
 - Logo di ƎE (26/10/2026, versione 2): https://claude.ai/artifact/GRs9QZVLmBR7q6yx5VS2xQ. Tre metodi dietro il selettore, pesi, distanze, nome letto dallo screen reader, tessera e barra laterale in chiaro e in scuro; all'apertura mostra le scelte fatte.
 - Ricevute stampate (26/10/2026, versione 2): https://claude.ai/artifact/EoCKVfNQG4mXr1bXNJzn1g. Canone e consegna, tre impaginazioni, tutti i casi limite, foglio da stampare e due forme di PDF; all'apertura mostra le scelte fatte (lettera, Connetto in fondo, fascia e timbro, PDF dai dati).
+- **Pagina del pacchetto «Connetto, percorso 1»** (27/10/2026, versione 5, in costruzione): https://claude.ai/artifact/9KwvBBmgGc859wN67hWbAF. Telaio con le 14 tappe, l'indice «Per ruolo», «Situazioni», telefono e computer, chiaro e scuro; schermate vere per le tappe 1, 2, 5, 6, 8 e 9 dell'operatore e le due ricevute; le altre sono segnaposto. Le proposte della revisione hanno «Prima / Dopo» nella pagina, con la scelta fatta. Il disegno della casa e le foglie vengono dalla prova delle foto; la lettera A4 dalla prova delle ricevute; le icone sono quelle di Lucide (ISC).
 - Foto e illustrazione della casa (26/10/2026): https://claude.ai/artifact/7VdfMJoY6897vcnoyw17qP. Dieci schermate, tre varianti delle foto, tre stili del disegno, l'immagine dell'email e nove casi limite; le «foto» sono scene disegnate al computer. All'apertura mostra le scelte fatte.
 
 Prodotto: **Connetto**, nome di lavoro in attesa del parere sul marchio. Non c'è codice applicativo; architettura e stack non sono decisi.
+
+## Fatto (27 ottobre 2026, pagina del pacchetto, sessione 1)
+- Ticket [Pagina del pacchetto: telaio, operatore e ricevute](.scratch/design-percorso-1/issues/22-pacchetto-operatore-ricevute.md) rivendicato e lavorato con la skill `prototype` (ramo UI); revisione dell'esperienza con `ux-research` (valutazione euristica) e `ux-strategy`. Le schede di revisione stanno nel ticket, sotto «Commenti».
+- Telaio mostrato per primo; poi undici scelte dell'utente, una alla volta, ciascuna con un confronto affiancato in un'immagine e la raccomandazione dell'agente:
+  - 14 tappe, con la tappa 7 nell'altra casa di Marta;
+  - tappa 1: in cima le 2 cose che bloccano l'attivazione; riquadro con la casa in tutta la larghezza sul computer (dopo una segnalazione dell'utente sulla formattazione); tutti i dati della locazione; anteprima prima di salvare un documento;
+  - spazi fra gli elementi: 4, 8, 12, 16, 24, 32, 48;
+  - tappa 2: dati dell'incarico prima della firma; cose da chiudere numerate all'attivazione;
+  - tappa 5: mezzo da scegliere a ogni incasso; quattro passi sul foglio con il bollo deciso da Connetto;
+  - tappa 6: consegna con bonifico solo con contabile e numero della fattura;
+  - tappe 8 e 9: il canone non pagato dice cosa è già successo e che all'inquilino non arrivano solleciti.
+- Segnalazione dell'utente: l'icona `receipt` di Lucide porta il dollaro; sostituita con `receipt-text` e regola scritta in DESIGN.md («Forme»).
+- Regole in DESIGN.md: «Spazio dell'operatore (percorso 1)» (attivazione, «Al banco», incasso, consegna, coda, come cambiate) e «Componenti e token» (spazi). Nessun cambio di prodotto.
+- Verifiche in Chromium, ricaricando la pagina per ogni schermata, su una copia con l'intestazione `<!doctype html>` come la pagina pubblicata: 224 combinazioni (tappe 1, 2, 5, 6, 8, 9, 10 e «Fuori dalla storia» × 7 larghezze × chiaro e scuro × telefono e computer, con «Situazioni» acceso): nessun errore, nessuno scorrimento orizzontale, nessun elemento della pagina fuori dal bordo, Manrope caricato. Il controllo automatico guarda la pagina, non l'interno delle cornici ridotte: le schermate le ho guardate a occhio nelle immagini dei confronti, al computer e al telefono, in chiaro e in scuro. Lì ho trovato e corretto tre difetti: la testata della ricevuta scura nel tema scuro (nome di classe in comune con la pagina), l'anteprima della ricevuta tagliata nella colonna stretta, «Contanti in agenzia» a capo nel pulsante. Nessuna prova con persone, con screen reader veri o su un iPhone vero.
+- Non fatte: tappe 10 e 11, coda vuota, «Oggi» (sessione 2); schermate dei clienti (ticket successivo); revisione OCR (non c'è codice applicativo e il programma `ocr` non è nell'ambiente); contrasti nuovi da rimisurare: i colori sono quelli di «Componenti e token», già misurati.
 
 ## Fatto (26 ottobre 2026, pacchetto per il controllo B)
 - Ticket [Pacchetto per il controllo B](.scratch/design-percorso-1/issues/21-pacchetto-controllo-b.md) aperto dalle voci «Pacchetto per il controllo B» e «Componenti e token» della mappa, rivendicato e chiuso con le skill `grilling` e `domain-modeling`.
