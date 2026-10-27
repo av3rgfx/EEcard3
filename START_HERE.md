@@ -37,19 +37,20 @@ Il 26/10/2026 sono decisi anche il **pacchetto per il controllo B** e **componen
 
 La pagina si costruisce in due parti, circa tre sessioni: durante la costruzione si fa anche una revisione dell'esperienza, tappa per tappa, con proposte «prima e dopo» (scelta dell'utente del 26/10/2026).
 
-**Prossima sessione, proposta dall'agente:** la prima metà della pagina, ticket «Pagina del pacchetto: telaio, operatore e ricevute».
+Il 27/10/2026 la prima sessione della pagina ha costruito il **telaio** e le tappe **1, 2, 5, 6, 8 e 9** dell'operatore, con le due ricevute: https://claude.ai/artifact/9KwvBBmgGc859wN67hWbAF. Dalla revisione dell'esperienza sono uscite dieci scelte dell'utente (in DESIGN.md, «Spazio dell'operatore (percorso 1)») e gli **spazi fra gli elementi**: 4, 8, 12, 16, 24, 32 e 48 px («Componenti e token»). Il ticket resta rivendicato.
+
+**Prossima sessione, proposta dall'agente:** la seconda sessione dello stesso ticket, con le tappe 10 e 11 dell'operatore, la coda vuota e «Oggi»; poi si chiude il ticket.
 
 Messaggio:
 
-/wayfinder .scratch/design-percorso-1/map.md — ticket «Pagina del pacchetto: telaio, operatore e ricevute» (.scratch/design-percorso-1/issues/22-pacchetto-operatore-ricevute.md)
+/wayfinder .scratch/design-percorso-1/map.md — ticket «Pagina del pacchetto: telaio, operatore e ricevute» (.scratch/design-percorso-1/issues/22-pacchetto-operatore-ricevute.md), seconda sessione
 
-Leggi AGENTS.md, STATUS.md, la mappa e il ticket; in DESIGN.md «Pacchetto per il controllo B (percorso 1)», «Componenti e token», «Spazio dell'operatore (percorso 1)», «Ricevute stampate (percorso 1)» e le sezioni che le correggono («Testi dell'interfaccia», «Dati limite e accessibilità», «Interazioni e stati», «Foto e illustrazione della casa»). Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+Leggi AGENTS.md, STATUS.md, la mappa e il ticket, compresi i «Commenti» con le schede di revisione della prima sessione; in DESIGN.md «Spazio dell'operatore (percorso 1)», «Componenti e token», «Ricevute stampate (percorso 1)» e le sezioni che le correggono («Testi dell'interfaccia», «Dati limite e accessibilità», «Interazioni e stati», «Foto e illustrazione della casa»). Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
 
-- Rivendica il ticket (`Status: claimed`) e lavora solo su quello, con la skill `prototype` (ramo UI). Solo dati inventati; pagina privata, sorgente fuori dal repository.
-- Leggi con lo strumento Artifact le prove dell'operatore (https://claude.ai/artifact/8uYkEqTXrp27KWmc698JK9) e delle ricevute (https://claude.ai/artifact/EoCKVfNQG4mXr1bXNJzn1g); usa i valori esatti di «Componenti e token».
-- Prima di ridisegnare ogni tappa fai la revisione dell'esperienza descritta nel ticket (skill `ux-research` e `ux-strategy`) e portami le proposte come «prima e dopo».
-- Mostrami prima il telaio con le tappe proposte nel ticket; le scelte me le fai una alla volta, in parole semplici, con una raccomandazione motivata e, quando serve, un confronto affiancato in un'immagine. Gli spazi fra gli elementi vanno in «Componenti e token» con data e motivo.
-- Controlla la pagina in Chromium a 360, 390, 768, 900, 1024, 1180 e 1366 px, in chiaro e in scuro, ricaricando per ogni schermata.
+- Il ticket è già `claimed`: lavora solo su quello, con la skill `prototype` (ramo UI). Solo dati inventati; pagina privata, sorgente fuori dal repository.
+- Riprendi il sorgente della pagina con lo strumento Artifact, azione «read» (https://claude.ai/artifact/9KwvBBmgGc859wN67hWbAF), e pubblica gli aggiornamenti sullo stesso indirizzo. Le prove dell'operatore (https://claude.ai/artifact/8uYkEqTXrp27KWmc698JK9) e delle ricevute (https://claude.ai/artifact/EoCKVfNQG4mXr1bXNJzn1g) servono per le schermate che mancano.
+- Restano: tappa 10 (contestazione con l'esito, correzione di una ricevuta, ricevuta annullata e quella che la sostituisce, foglio e PDF), tappa 11 (nuovo canone ISTAT), coda vuota e «Oggi». Prima di ridisegnare ogni tappa fai la revisione dell'esperienza (skill `ux-research` e `ux-strategy`) e portami le proposte come «prima e dopo», una alla volta, in parole semplici, con una raccomandazione motivata e un confronto affiancato in un'immagine.
+- Controlla la pagina in Chromium a 360, 390, 768, 900, 1024, 1180 e 1366 px, in chiaro e in scuro, ricaricando per ogni schermata, su una copia con `<!doctype html>` come la pagina pubblicata. Chiuse le tappe, chiudi il ticket e aggiorna la mappa.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 
