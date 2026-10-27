@@ -20,6 +20,8 @@ Promemoria chiesti dall'utente, non decisioni. Si riprendono quando si sceglie l
   - *Perché non prima:* sceglierle significa scegliere lo stack. Non risolvono l'estetica delle schermate, che dipende da impaginazione e stile. Le animazioni su misura della tessera non sono nelle librerie. Fino ad allora Watermelon si usa solo come vetrina di idee, quando l'utente manda un link: l'idea si ridisegna nello stile di Connetto, senza installare né copiare codice.
   - *Base per la valutazione* (26/10/2026): l'elenco dei componenti del percorso 1 in [DESIGN.md](DESIGN.md), «Componenti e token». Per ognuno si dice se una libreria lo ha già e quanto va adattato ai token; quelli solo nostri (tessera di rame, riquadro della casa, mesi a pillola, linea del tempo del mese) si fanno comunque.
 
+- **Sapere se un messaggio non è arrivato** (27/10/2026, da DESIGN.md, «Spazio dell'operatore», «Oggi»). La pagina «Oggi» dell'operatore mostra i messaggi non arrivati con il motivo. Al passo 7 si verifica cosa segnalano i servizi d'invio scelti (SMS non consegnato, email rifiutata) e come arriva a Connetto; ciò che non si sa (un'email nello spam) non si mostra come «arrivato».
+
 ## Confini
 DA DEFINIRE: client web, app, backend, dati e servizi esterni.
 
