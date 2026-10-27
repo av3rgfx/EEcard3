@@ -113,6 +113,10 @@ Approvato dall'utente il 23/10/2026 nel ticket [Schermate dell'operatore di ƎE]
   - Il modulo contiene i mesi aperti, già spuntati dal più vecchio, l'importo ricevuto e il mezzo (contanti o carta). Accanto c'è l'anteprima della ricevuta, che si aggiorna mentre si scrive.
   - C'è un solo pulsante, «Registra e prepara la ricevuta», senza finestra di conferma.
   - Dopo, la pagina «Incasso registrato» offre «Stampa la ricevuta» e «Torna alla coda», ricorda la firma e il bollo quando serve e mostra la consegna che ora è da fare.
+  - *Cambiato dall'utente il 27/10/2026* (revisione dell'esperienza, ticket [Pagina del pacchetto: telaio, operatore e ricevute](.scratch/design-percorso-1/issues/22-pacchetto-operatore-ricevute.md)):
+    - il mezzo non è già scelto: «Registra e prepara la ricevuta» resta spento con il perché («Il pulsante si accende quando scegli il mezzo: va scritto sulla ricevuta») finché non si tocca «Contanti» o «Carta»; nell'anteprima il mezzo è «da scegliere». *Prima* era già scelto «Contanti», e un pagamento con carta poteva uscire sulla ricevuta come contanti;
+    - «Incasso registrato» elenca i passi sul foglio: stampa la ricevuta, firma per ƎE, applica una marca da bollo da 2,00 € (solo sopra 77,47 €, lo decide Connetto), consegna il foglio. *Prima:* «firma e, se serve, il bollo»;
+    - l'anteprima accanto al modulo e nella pagina dopo è la lettera A4 di «Ricevute stampate (percorso 1)», in piccolo, non più un riassunto.
   - Casi:
     - più mesi: una ricevuta sola divisa sui mesi;
     - pagamento parziale: solo se l'incarico lo ammette, con il residuo;
