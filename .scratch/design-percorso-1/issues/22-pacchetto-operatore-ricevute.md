@@ -1,7 +1,7 @@
 # Pagina del pacchetto: telaio, operatore e ricevute
 
 Type: prototype
-Status: claimed
+Status: resolved
 Blocked by: 21
 Mappa: [Design del percorso 1](../map.md)
 
@@ -20,6 +20,16 @@ Proposta di partenza per le tappe (dell'agente, da confermare con l'utente nella
 Revisione dell'esperienza (decisione dell'utente del 26/10/2026, [DESIGN.md](../../../DESIGN.md), «Pacchetto per il controllo B»): prima di ridisegnare ogni tappa, una scheda breve per compito (passi, cosa deve sapere la persona, dove può sbagliare, cosa togliere o anticipare, proposte), con le skill `ux-research` (valutazione euristica) e `ux-strategy`. Le proposte all'utente come «prima e dopo», una alla volta; le schede restano qui sotto «Commenti». Se il ticket supera una sessione resta `claimed` e la sessione seguente riprende dalla tappa successiva.
 
 Come si lavora (HITL): skill `prototype` (ramo UI); pagina privata usa e getta, sorgente fuori dal repository, solo dati inventati. I sorgenti delle prove si leggono con lo strumento Artifact (link in [STATUS.md](../../../STATUS.md)). Verifica in Chromium a 360, 390, 768, 900, 1024, 1180 e 1366 px, in chiaro e in scuro, ricaricando per ogni schermata; contrasti rimisurati con i valori di «Componenti e token». Un problema trovato si porta all'utente come conflitto, una scelta alla volta.
+
+## Risposta (Answer)
+
+**Sì, regge** (27/10/2026, dopo due sessioni). La prima metà della pagina «Connetto, percorso 1» è costruita: https://claude.ai/artifact/9KwvBBmgGc859wN67hWbAF (privata, usa e getta, solo dati inventati; versione 6).
+- *Telaio:* la storia di Via dei Tigli 14 in 14 tappe (la 7 nell'altra casa di Marta), con «Il denaro» a ogni tappa, l'indice «Per ruolo», l'interruttore «Situazioni», telefono e computer, chiaro e scuro, e accanto a ogni schermata le regole che applica.
+- *Operatore:* tutte le schermate approvate, ridisegnate con le regole venute dopo: attivazione e documento (tappa 1), «Al banco» della proprietaria (2), «Al banco» dell'inquilino, incasso e incasso registrato (5), consegna (6 e 9), coda con il canone non pagato e la consegna in ritardo (8 e 9), contestazione e correzione di una ricevuta (10), nuovo canone ISTAT (11), coda vuota e «Oggi» (fuori dalla storia).
+- *Ricevute:* canone e consegna come lettera A4, foglio e PDF; la ricevuta annullata e quella che la sostituisce, per il canone e per la consegna corretta.
+- *Revisione dell'esperienza:* una scheda per tappa (sotto «Commenti»), le scelte dell'utente una alla volta, ciascuna con un confronto affiancato in un'immagine (nove nella sessione 2), tutte sull'opzione consigliata; il riquadro della casa sul computer è nato da una segnalazione dell'utente. Le regole cambiate sono in [DESIGN.md](../../../DESIGN.md), «Spazio dell'operatore (percorso 1)», con data e motivo; gli spazi in «Componenti e token». Nessun cambio di prodotto.
+- *Domande nuove, non di design:* la marca sulla ricevuta che ne sostituisce un'altra (parere fiscale); il ritiro del foglio annullato e la proprietaria che non risponde sul nuovo canone prima della decorrenza (collaboratore di ƎE); cosa segnalano i servizi d'invio sui messaggi non arrivati (architettura, passo 7).
+- *Verifiche:* in Chromium, ricaricando per ogni schermata, su una copia con `<!doctype html>`: 420 combinazioni nella sessione 2 (15 viste × 7 larghezze × chiaro e scuro × telefono e computer, «Situazioni» acceso), senza errori, senza scorrimento orizzontale, senza elementi della pagina fuori dal bordo, Manrope caricato. L'interno delle cornici guardato a occhio nelle immagini. Nessuna prova con persone, screen reader veri o iPhone vero.
 
 ## Commenti (Comments)
 
@@ -67,3 +77,52 @@ Come si lavora (HITL): skill `prototype` (ramo UI); pagina privata usa e getta, 
 - *Proposta e scelta dell'utente:* **Il canone non pagato: cosa è successo e cosa no** (consigliata). Scelta: **Dopo**. La consegna in ritardo usa la pagina della consegna con l'avviso ambra già approvato.
 
 **Fine della sessione 1 (27/10/2026).** Fatte le tappe 1, 2, 5, 6, 8 e 9 dell'operatore e la ricevuta del canone e della consegna (lettera A4 approvata, foglio e PDF). Restano per la sessione 2: tappa 10 (contestazione, correzione di una ricevuta, ricevuta annullata e sostituita), tappa 11 (nuovo canone ISTAT), «Fuori dalla storia» per l'operatore (coda vuota, «Oggi»). Il ticket resta `claimed`.
+
+**27/10/2026, sessione 2.** Ripresa la pagina del pacchetto con lo strumento Artifact (azione «read»); stesso indirizzo. Le schermate che mancavano vengono dalla prova approvata dell'operatore e dalla prova delle ricevute, ridisegnate con le regole di oggi.
+
+**Scheda di revisione, tappa 10: la contestazione e la ricevuta corretta** (skill `ux-research`, valutazione euristica di Nielsen; `ux-strategy`, il compito dell'operatore). Parere esperto, non evidenza con persone.
+- *Compiti:* (a) chiudere una contestazione di Marta Ferri sulla consegna di gennaio con un esito (confermato, corretto con una nuova versione, non risolto) e il motivo (PRODUCT.md §10.6); (b) correggere la ricevuta del canone n. 512/2027 uscita con il mezzo sbagliato, annullandola o sostituendola con il motivo (§10.3, §7.3). *Esito che conta:* la fiducia della proprietaria torna con una risposta chiara e una prova del denaro; lo storico resta leggibile e non nasce un doppio importo (§7.3–7.5).
+- *Cosa deve sapere:* cosa fa ciascun esito e chi riceve cosa; con «corretto», cosa cambia nei conti e quanto denaro deve ancora passare; nella correzione, quale dato cambia e cosa fare con il foglio.
+- *Dove può sbagliare:*
+  - (3, grave) nella contestazione «Corretto» è già scelto all'apertura: un clic su «Registra l'esito» chiude la contestazione con l'esito sbagliato (lo stesso schema del mezzo già scelto, corretto nella tappa 5); i tre esiti non dicono cosa succede né a chi;
+  - (2) «Non risolto» vale per un disaccordo fra proprietario e inquilino che ƎE non decide (§10.6, §9): su una consegna di ƎE non ha senso, ma è scelto come gli altri;
+  - (3, grave) con «Corretto» la nuova versione si vede solo nel motivo scritto a mano: mancano i conti prima e dopo, la differenza da mandare e la sua prova; la ricevuta della consegna resta quella sbagliata (§7.4, i passaggi del denaro distinti);
+  - (3, grave) nella correzione il pulsante «Annulla» (esci) sta accanto alla scelta «Annulla» (annulla la ricevuta): la stessa parola per due azioni opposte, una delle quali non si torna indietro;
+  - (2) «Sostituisci» chiede solo il motivo: il dato giusto (il mezzo) non si corregge da nessuna parte, e la nuova ricevuta lo prende da chissà dove;
+  - (2) dopo la sostituzione c'era solo un avviso che sparisce: niente passi sul foglio (stampa, firma, bollo, il foglio vecchio) né chi vede cosa;
+  - (regola già decisa, non proposta) anteprime delle due ricevute come lettere A4 con fascia e timbro; conferma al suo posto dopo l'esito e dopo la sostituzione.
+- *Proposte e scelte dell'utente*, «prima e dopo» con confronti affiancati in immagini, al computer:
+  1. **L'esito si sceglie ogni volta** (consigliata): nessun esito scelto all'apertura, pulsante spento con il perché finché mancano esito e motivo; sotto ogni esito la conseguenza e chi riceve il messaggio; «Non risolto» spento con il perché sulle consegne di ƎE (vale per un disaccordo fra proprietario e inquilino). Scelta: **Dopo**. *Scartate:* «Non risolto» sempre acceso; com'era.
+  2. **«Corretto»: la nuova versione e la prova del denaro** (consigliata): conti prima e dopo, quanto è già arrivato e quanto va mandato adesso, contabile obbligatoria della differenza, ricevuta della consegna annullata e sostituita (con l'anteprima), consegna di nuovo «Inviata» fino al «Ricevuto». Scelta: **Dopo**. *Scartate:* senza sostituire la ricevuta; com'era.
+  3. **Annullare o sostituire, senza equivoci** (consigliata): «Annulla la ricevuta» e «Sostituisci la ricevuta» con la riga di quando si usa e cosa succede al canone; con «Sostituisci» mese, importo e mezzo già compilati, con il cambiamento segnato; «Lascia com'è» per uscire. Scelta: **Dopo**. *Scartate:* solo i nomi distinti; com'era.
+  4. **Dopo la sostituzione, i passi sul foglio** (consigliata): stampa la nuova, firma, marca da bollo sopra 77,47 €, dalla alla persona e ritira il foglio vecchio, che resta in agenzia; poi chi vede cosa. Due punti restano da verificare: la marca sulla ricevuta che ne sostituisce un'altra (parere fiscale) e il ritiro del foglio vecchio (collaboratore di ƎE). Scelta: **Dopo**. *Scartate:* senza il ritiro; com'era.
+- Correzione dell'agente trovata guardando le immagini: nella ricevuta il nome nascosto «Enrico Erca» si vedeva sopra il testo del mezzo quando conteneva «ƎE» (anche nella ricevuta della consegna della tappa 6), perché lo stile dell'etichetta «Mezzo» prendeva tutti i testi della riga. Corretto nella pagina.
+
+**Scheda di revisione, tappa 11: il nuovo canone ISTAT** (la voce della coda e il suo dettaglio).
+- *Compito:* all'anniversario, controllare il nuovo canone che Connetto calcola con la variazione ufficiale dell'ISTAT, o inserire il dato a mano se manca, e mandarlo alla proprietaria, che lo approva prima che valga o sceglie di non chiederlo; l'inquilino è avvisato prima (PRODUCT.md §10.4, D18). *Esito che conta:* un canone giusto per un anno intero di ricevute e consegne; nessun ritardo falso se l'indice esce tardi.
+- *Cosa deve sapere:* cosa vuol dire «Controllato»: le condizioni (clausola e misura, regime non in cedolare, anniversario), il calcolo e la fonte; cosa succede dopo e a chi.
+- *Dove può sbagliare:*
+  - (3, grave) «Controllato» chiede di confermare senza mostrare cosa controllare: le condizioni del contratto sono una frase in fondo, la formula non c'è e la fonte è un testo senza collegamento;
+  - (2) «Inserisci il dato a mano» ha lo stesso peso del pulsante principale, ma serve solo se il dato manca o è diverso dalla fonte; il dato a mano non chiede da dove viene (§7.8);
+  - (2) dopo il controllo non si vede cosa succede: approvazione della proprietaria (che può non chiederlo), avviso all'inquilino prima della decorrenza, nuovo totale del mese con le spese;
+  - (1) la data della tappa e la fonte: l'indice del mese indicato nel contratto esce a metà del mese dopo, quindi il controllo si sposta dal 20 ottobre al 16 novembre 2027 (correzione dell'agente nella storia, dati inventati);
+  - (regola già decisa, non proposta) l'avviso «mai un ritardo» per l'indice uscito tardi; conferma al suo posto dopo l'invio.
+- *Domanda aperta, non di design:* cosa succede se la proprietaria non risponde prima della decorrenza (il canone resta quello di prima? si avvisa ƎE?). Da chiedere al collaboratore di ƎE.
+- *Proposte e scelte dell'utente:*
+  1. **Cosa vuol dire «Controllato»** (consigliata): tre parti numerate, cioè il contratto lo prevede (clausola e misura, regime non in cedolare, anniversario), il calcolo scritto per intero e la fonte con «Apri la fonte»; «Inserisci il dato a mano» diventa una riga sotto il pulsante, da usare se il dato manca o è diverso, e chiede da dove viene. Scelta: **Dopo**. *Scartate:* calcolo in chiaro con i due pulsanti uguali; com'era.
+  2. **Cosa succede dopo il controllo** (consigliata): quattro passi, cioè il controllo di oggi, la proprietaria che approva o sceglie di non chiederlo (il canone resta quello di prima), l'avviso all'inquilino prima della decorrenza, il nuovo totale del mese con le spese e il canone vecchio nello storico. Scelta: **Dopo**. La mancata risposta della proprietaria prima della decorrenza resta una domanda per il collaboratore di ƎE. *Scartate:* senza il totale; com'era.
+
+**Scheda di revisione, fuori dalla storia: coda vuota e «Oggi»** (venerdì 13 novembre 2026, dati inventati).
+- *Compiti:* capire a colpo d'occhio che non resta nulla da fare e cosa arriva in settimana; a fine giornata scrivere l'esito delle chiamate avviate da Connetto e controllare i messaggi partiti (PRODUCT.md §10.5, §10.6). *Esito che conta:* nessuna persona che ha chiamato resta senza risposta; nessun fatto del denaro annunciato a chi non l'ha ricevuto senza che ƎE lo sappia.
+- *Dove può sbagliare:*
+  - (2) «Niente in coda» con la spunta verde, mentre in «Oggi» restano chiamate senza esito: le chiamate non sono voci della coda (§10.1) e Giulia può chiudere la giornata convinta di aver finito;
+  - (2) «Paolo Grandi ha chiamato ƎE»: Connetto registra solo il tocco su «Chiama» (§10.6, «chiamata avviata»), non che la telefonata ci sia stata; la nota che lo spiega sta sotto l'elenco;
+  - (2) «Messaggi partiti» non dice se un messaggio non è arrivato (email rifiutata, SMS a un numero non raggiungibile): la proprietaria può non sapere che il canone è pagato e nessuno se ne accorge;
+  - (1) «Questa settimana» nella prova approvata elencava consegne che, se il canone è incassato, sono già voci della coda: ora ogni riga dice perché non è ancora da fare («aspetta il canone di Elena Russo»). Correzione dell'agente nei dati;
+  - (1) il numero della coda nella barra laterale restava 8 in tutte le schermate: ora è quello della pagina, e sparisce con la coda vuota. Correzione dell'agente, anche nelle tappe 9, 10 e 11.
+- *Proposte e scelte dell'utente:*
+  1. **La coda vuota ricorda le chiamate senza esito** (consigliata): sotto «Niente in coda» la riga «2 chiamate senza esito · le trovi in «Oggi»» con il pulsante, solo quando ce ne sono. Scelta: **Dopo**. *Scartate:* le chiamate come gruppo della coda (cambierebbe l'elenco dei gruppi); com'era.
+  2. **Le chiamate dette per quello che si sa** (consigliata): «Paolo Grandi ha toccato «Chiama ƎE»», da dove, con lo stato «Senza esito» o «Esito scritto»; la spiegazione in cima, sotto «Chiamate avviate da Connetto». Scelta: **Dopo**. *Scartate:* solo la spiegazione in cima; com'era.
+  3. **I messaggi non arrivati** (consigliata): in cima a destra il riquadro «Messaggi non arrivati», solo quando ce ne sono, con il motivo, «Controlla il numero» e «Chiamalo»; nell'elenco il messaggio segnato «Non arrivato a uno». Limite detto all'utente: Connetto lo sa solo quando il servizio d'invio lo segnala (numero inesistente, email rifiutata; non lo spam); come, lo decide l'architettura (passo 7). Scelta: **Dopo**. *Scartate:* solo il segno nella riga; com'era.
+
+**Fine della sessione 2 (27/10/2026).** Fatte la tappa 10, la tappa 11, la coda vuota e «Oggi»; nove scelte dell'utente, tutte sull'opzione consigliata. Pagina pubblicata sullo stesso indirizzo (versione 6). Ticket chiuso; il seguito è [Pagina del pacchetto: clienti, accesso e situazioni comuni](23-pacchetto-clienti-situazioni.md).
