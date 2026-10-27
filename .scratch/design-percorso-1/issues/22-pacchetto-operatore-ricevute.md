@@ -55,3 +55,8 @@ Come si lavora (HITL): skill `prototype` (ramo UI); pagina privata usa e getta, 
 - *Proposte e scelte dell'utente:*
   1. **Il mezzo si sceglie ogni volta** (consigliata): nessun mezzo scelto, pulsante spento con il perché, nell'anteprima «da scegliere». Scelta: **Dopo**. Nella stessa risposta l'utente ha notato che l'icona della ricevuta (`receipt` di Lucide) porta il dollaro: sostituita con `receipt-text` e regola scritta in DESIGN.md, «Forme».
   2. **Cosa fare sul foglio, detto per intero** (consigliata): quattro passi dopo la registrazione, con il bollo deciso da Connetto sopra 77,47 €. Scelta: **Dopo**.
+
+**Scheda di revisione, tappa 6: la consegna e il «Ricevuto»** (lato operatore: registrare la consegna; ricevuta della consegna).
+- *Compito:* entro il termine dell'incarico, registrare la consegna con riepilogo, compenso e fattura, scegliere il mezzo dell'incarico, caricare la contabile del bonifico (§10.3, D15). *Esito che conta:* «Inviata» solo con la prova, ricevuta completa, nessun ritardo falso.
+- *Dove può sbagliare:* (3) si registra senza contabile: Marta riceve «Inviata» senza prova; (2) il numero della fattura del compenso non ha un controllo e la ricevuta può uscire senza; (1) «Contanti in agenzia» va a capo nel pulsante stretto.
+- *Proposta e scelta dell'utente:* **Niente consegna senza contabile e fattura** (consigliata): pulsante spento con il perché, fattura «da inserire». Scelta: **Dopo**. Correzione dell'agente: etichetta «Contanti».
