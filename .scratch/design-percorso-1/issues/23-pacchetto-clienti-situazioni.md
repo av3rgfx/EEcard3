@@ -42,3 +42,16 @@ Come si lavora (HITL): come il ticket precedente (skill `prototype`, poi `access
   1. **Il codice detto senza allarmare** (consigliata): «Il codice di 6 cifre parte verso marta.ferri@esempio.it, se è l'email che hai lasciato in agenzia. Di solito arriva entro un minuto». Non rivela comunque chi è iscritto. Scelta: **Dopo**.
   2. **Al telefono «Entra» si vede** (consigliata): dal passo del codice la tessera è più piccola e sale, come nel prototipo dell'accesso. Scelta: **Dopo**.
   3. **Quale tessera mostrare e se la perdi** (consigliata): «In agenzia mostra quella che hai in mano: portano tutte e due a te»; «Se perdi la tessera fisica: chiama ƎE o passa in agenzia, la spengono e te ne danno un'altra subito. Con la tessera nessuno entra in Connetto e nessuno vede i tuoi dati». Scelta: **Dopo**.
+
+**Scheda di revisione, tappa 4: la casa a inizio mese** (casa di Marta e casa di Luca, domenica 1° novembre 2026).
+- *Compiti:* Marta vuole sapere a colpo d'occhio come va il mese senza chiedere in agenzia; Luca vuole sapere quanto, entro quando e dove pagare (punti fermi, «Cosa vede per primo ciascuno»). *Esito che conta:* nessuna telefonata in agenzia per sapere come va; Luca in agenzia al primo colpo.
+- *Dove può sbagliare:* (2) «Novembre: il canone è da pagare entro giovedì 5» si può leggere come un compito della proprietaria; (2) nel riquadro il canone vale 1.275,00 € mentre sotto si legge 1.180,00 €, e la consegna non ha un importo: il bonifico di 1.211,25 € arriva come una sorpresa (§7, i passaggi del denaro distinti); (2) la casa di Luca non gli ricorda di mostrare la tessera, che serve proprio a trovarlo in agenzia.
+- *Proposte e scelte dell'utente:*
+  1. **Per Marta non è un compito** (consigliata): «Novembre: Luca Benassi paga entro giovedì 5» e «Per ora non devi fare nulla». Scelta: **Dopo**.
+  2. **Il denaro del mese detto per intero** (consigliata): «canone 1.180,00 € e spese 95,00 €»; la consegna con l'importo che arriverà, 1.211,25 €, «1.275,00 € meno il compenso di ƎE, 63,75 €». Scelta: **Dopo**. *Scartate:* solo l'importo della consegna; com'era.
+  3. **In agenzia mostra la tessera** (consigliata): in «Dove pagare» di Luca «Mostra la tessera: ti trovano subito» e «Apri la tessera». Scelta: **Dopo**.
+
+**Scheda di revisione, tappa 5: dopo il pagamento e le ricevute** (Luca, martedì 3 novembre 2026).
+- *Compito:* sapere che novembre è chiuso, ritrovare la ricevuta, sapere il prossimo pagamento. *Esito che conta:* nessun dubbio di aver pagato due volte o di aver perso una ricevuta (§7.5).
+- *Dove può sbagliare:* (regola già decisa, applicata) il prossimo pagamento stava sotto il riquadro: ora è nel riquadro, «Prossimo: dicembre, 1.275,00 €, entro il 5 dicembre» (Schermate dell'inquilino, «Dopo il pagamento»); (2) in «Ricevute» c'è solo novembre: ottobre e i mesi prima, pagati su carta prima di Connetto, sembrano spariti.
+- *Proposta e scelta dell'utente:* **Le ricevute di prima di Connetto** (consigliata): sotto i mesi «Prima di novembre 2026 le ricevute sono quelle di carta che ti ha dato ƎE: Connetto non le ha»; nella pagina del pagamento «È la stessa ricevuta che ti hanno dato in agenzia». Scelta: **Dopo**.
