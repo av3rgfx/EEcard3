@@ -47,3 +47,10 @@ Come si lavora (HITL): skill `prototype` (ramo UI); pagina privata usa e getta, 
   1. **I dati dell'incarico prima della firma** (consigliata): sei campi nella riga, poi «Stampa l'incarico». Scelta: **Dopo**.
   2. **Le cose da chiudere in ordine** (consigliata): numerate, con «Adesso:» in cima, solo all'attivazione. Scelta: **Dopo**.
   - Applicata come regola già decisa, nella situazione «Dopo le due firme»: conferma «Via dei Tigli 14 è attiva» e tessera arancione.
+
+**Scheda di revisione, tappa 5: l'inquilino paga in agenzia** («Al banco» per Luca, incasso, incasso registrato, ricevuta del canone).
+- *Compito:* trovare Luca con la tessera, registrare l'incasso del mese più vecchio, stampare, firmare, applicare il bollo quando serve e consegnare la ricevuta (§10.3). *Esito che conta:* una ricevuta giusta al primo colpo, perché una sbagliata va annullata e sostituita (§7.3), e pochi minuti al banco.
+- *Cosa deve sapere:* quale mese paga, quanto, con che mezzo; cosa fare sul foglio dopo.
+- *Dove può sbagliare:* (3) il mezzo è già scelto su «Contanti»: con un pagamento in carta la ricevuta esce sbagliata (è proprio l'esempio di correzione della prova approvata); (2) dopo la registrazione «firma e, se serve, il bollo» lascia a Giulia decidere se serve il bollo, che Connetto sa già (sopra 77,47 €); (regola già decisa) l'anteprima accanto al modulo era un riassunto, ora è la lettera A4 approvata in piccolo; (1) «Ultimi pagamenti» vuoto al primo mese: ora dice perché.
+- *Proposte e scelte dell'utente:*
+  1. **Il mezzo si sceglie ogni volta** (consigliata): nessun mezzo scelto, pulsante spento con il perché, nell'anteprima «da scegliere». Scelta: **Dopo**. Nella stessa risposta l'utente ha notato che l'icona della ricevuta (`receipt` di Lucide) porta il dollaro: sostituita con `receipt-text` e regola scritta in DESIGN.md, «Forme».
