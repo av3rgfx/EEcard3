@@ -41,21 +41,67 @@ Il 27/10/2026, in due sessioni, è stata costruita e chiusa la **prima metà del
 
 Il 27/10/2026, nella prima sessione del ticket [Pagina del pacchetto: clienti, accesso e situazioni comuni](.scratch/design-percorso-1/issues/23-pacchetto-clienti-situazioni.md), sono fatte le **schermate dei clienti delle tappe 2–9** (versione 9 della pagina). Dalla revisione dell'esperienza sedici scelte dell'utente, scritte in DESIGN.md nelle sezioni delle schermate; fra queste l'invito senza indirizzo, il denaro del mese detto per intero, «Vedi la contabile» accanto ai due «Ricevuto». Su segnalazione dell'utente la **tessera di rame non ha più la targhetta chiara**: i dati sono incisi sul rame e ripetuti in testo sotto la tessera.
 
-**Prossima sessione, proposta dall'agente:** la seconda sessione dello stesso ticket, con le schermate dei clienti delle tappe 10–14 e «Fuori dalla storia». «Cosa resta aperto» e il controllo di accessibilità sull'intera pagina vengono dopo, nella stessa sessione se c'è spazio, altrimenti in una terza.
+Il 30/10/2026, nella seconda sessione dello stesso ticket, sono fatte le **schermate dei clienti delle tappe 10–14 e fuori dalla storia** (versione 11 della pagina). Dalla revisione dell'esperienza dodici scelte dell'utente, scritte in DESIGN.md: si contesta dalla voce, con i conti; l'esito «corretto» con i conti prima e dopo; il nuovo canone con le scelte spiegate e l'ISTAT in parole semplici; chi vede ogni documento; la disdetta che dice quali case tocca; il deposito a fine locazione. Due regole di prodotto precisate in PRODUCT.md §12: la casa che esce non toglie l'adesione per le altre case; con più proprietari il nuovo canone lo approva chi è nell'incarico.
+
+**Prossima sessione, proposta dall'agente:** la terza e ultima sessione dello stesso ticket, con la sezione «Cosa resta aperto» e il controllo di accessibilità sull'intera pagina; poi il ticket si chiude e la pagina è il pacchetto per il controllo B.
 
 Messaggio:
 
-/wayfinder .scratch/design-percorso-1/map.md — ticket «Pagina del pacchetto: clienti, accesso e situazioni comuni» (.scratch/design-percorso-1/issues/23-pacchetto-clienti-situazioni.md), seconda sessione
+/wayfinder .scratch/design-percorso-1/map.md — ticket «Pagina del pacchetto: clienti, accesso e situazioni comuni» (.scratch/design-percorso-1/issues/23-pacchetto-clienti-situazioni.md), terza sessione
 
-Leggi AGENTS.md, STATUS.md, la mappa e il ticket, con i «Commenti» della sessione 1 (come si è lavorato e cosa è stato deciso). In DESIGN.md leggi «Pacchetto per il controllo B (percorso 1)», «Componenti e token», «Schermate del proprietario», «Schermate dell'inquilino», «Accesso, tessera e situazioni comuni», «Rifinitura delle schermate interne» e le sezioni che le correggono («Testi dell'interfaccia», «Dati limite e accessibilità», «Interazioni e stati», «Foto e illustrazione della casa»). Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+Leggi AGENTS.md, STATUS.md, la mappa e il ticket, con i «Commenti» delle sessioni 1 e 2. In DESIGN.md leggi «Pacchetto per il controllo B (percorso 1)», «Componenti e token», «Dati limite e accessibilità (percorso 1)» e «Interazioni e stati (percorso 1)»; per «Cosa resta aperto» anche le voci aperte di STATUS.md («Prossimi passi»), PRODUCT.md §10.10 e i pareri elencati in DESIGN.md (ricevute, foto, accesso). Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
 
 - Il ticket è già `claimed`: lavora solo su quello, con la skill `prototype` (ramo UI). Solo dati inventati; pagina privata, sorgente fuori dal repository.
-- Riprendi il sorgente della pagina con lo strumento Artifact, azione «read» (https://claude.ai/artifact/9KwvBBmgGc859wN67hWbAF), e pubblica gli aggiornamenti sullo stesso indirizzo, con le immagini che la pagina ha già. Le schermate dei clienti stanno nel blocco «schermate dei clienti»: riusa il loro telaio, il riquadro in cima e la tessera. Le nuove si ridisegnano dalle prove approvate, i cui indirizzi sono in STATUS.md (proprietario, inquilino, accesso e tessera, rifinitura «via di mezzo», foto della casa). Valgono le regole di DESIGN.md, non i testi vecchi delle prove.
-- In questa sessione: le schermate dei clienti delle tappe 10–14 (contestare; nuovo canone da approvare e in arrivo; documenti, scadenze e foto della facciata; disdetta dell'adesione; case dove abitavi e casa fuori gestione) e «Fuori dalla storia» per i clienti (profilo, «Chiama», più case, inquilino e proprietario, più proprietari, stati comuni, email, SMS e scritta del nome in attesa del parere). Prima di ridisegnare ogni tappa fai la revisione dell'esperienza (skill `ux-research` e `ux-strategy`) e portami le proposte come «prima e dopo», una alla volta, in parole semplici, con una raccomandazione motivata e un confronto affiancato in un'immagine, al telefono e al computer. Applica le scelte della sessione 1 dove la situazione è la stessa (per esempio «Vedi la contabile» accanto a un «Ricevuto»), dicendomelo.
-- Se resta spazio: la sezione «Cosa resta aperto» (per ogni voce chi la aspetta, cosa tocca, cosa ferma: pilota, lancio, niente) e il controllo `accessibility-audit` sull'intera pagina; altrimenti restano per la terza sessione e il ticket resta `claimed`.
+- Riprendi il sorgente della pagina con lo strumento Artifact, azione «read» (https://claude.ai/artifact/9KwvBBmgGc859wN67hWbAF), e pubblica gli aggiornamenti sullo stesso indirizzo, con le immagini che la pagina ha già. Il sorgente letto è avvolto in uno scheletro `<!doctype html>…<body>`: per pubblicare togli quell'involucro, per provare in Chromium tienilo.
+- In questa sessione: la sezione **«Cosa resta aperto»** della pagina (al posto di «Poi, nella seconda parte» nell'indice delle tappe): per ogni voce chi la aspetta, cosa tocca nella pagina e cosa ferma (pilota, lancio, niente), senza ripetere i dettagli che stanno nei documenti. Portami prima la forma della sezione come «prima e dopo» in un'immagine, una proposta alla volta, in parole semplici e con una raccomandazione motivata.
+- Poi il controllo **`accessibility-audit`** (WCAG 2.2 AA) sull'intera pagina: contrasti misurati, tastiera, fuoco, nomi per lo screen reader, testo ingrandito al 200%, spaziatura del testo, movimento ridotto. Le correzioni che cambiano una regola di DESIGN.md me le porti una alla volta; le altre le applichi e me le dici.
 - Controlla la pagina in Chromium a 360, 390, 768, 900, 1024, 1180 e 1366 px, in chiaro e in scuro, ricaricando per ogni schermata, su una copia con `<!doctype html>` come la pagina pubblicata; guarda a occhio l'interno delle cornici.
+- Se ti carico le immagini nuove fatte con Codex (sezione «Da dare a Codex» di START_HERE.md): mettile nella pagina, con le notturne per lo scuro al posto del velo, le misure giuste per ogni schermo (`srcset`/`image-set`) e le posizioni di tessera e ombra ricontrollate; mostrami la pagina d'accesso in scuro, prima e dopo, e misura i contrasti del modulo sopra la stanza.
+- Alla fine chiudi il ticket con la risposta, aggiorna la mappa (Decisioni finora) e DESIGN.md, «Pacchetto per il controllo B».
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
+
+
+---
+
+## Da dare a Codex: le immagini della pagina d'accesso, scuro e alta risoluzione
+
+Segnalazione dell'utente del 30/10/2026: la pagina d'accesso in scuro «fa schifo» e sui computer con schermi ad alta risoluzione la stanza, la tessera e le altre immagini generate si vedono sgranate. *Perché succede:* in scuro la pagina mette un velo grigio all'80% sopra la stanza di giorno, quindi non c'è una vera scena notturna. Inoltre le immagini sono piccole e molto compresse: la stanza del computer è 1440×900 px in 34 KB, la tessera in posa del computer è larga 638 px, e su uno schermo Retina servono almeno il doppio e il triplo.
+
+Prima di aprire Codex: allega le immagini di oggi, cioè gli originali dalla cartella Drive se li hai, altrimenti il file `immagini-attuali.zip` che l'agente ti ha mandato il 30/10/2026. Vale ancora la regola di DESIGN.md: le immagini generate con IA si usano **solo nei prototipi** fino al parere, anche se le rifà Codex. Se la tua versione di Codex non genera immagini, lo stesso prompt si usa in ChatGPT.
+
+Messaggio:
+
+Rifai le immagini della pagina d'accesso di Connetto (prototipo, dati inventati). Leggi prima AGENTS.md e, in DESIGN.md, «Accesso, tessera e situazioni comuni (percorso 1)», «Rifinitura delle schermate interne (percorso 1)» e «Componenti e token». Le immagini allegate sono quelle di oggi: sono il riferimento di inquadratura, proporzioni e stile e non vanno cambiate di composizione, perché la pagina posiziona tessera e ombra a coordinate fisse sopra la stanza.
+
+Regole:
+- Le immagini **non entrano nel repository**: salvale in una cartella fuori, per esempio `~/Connetto-immagini/2026-10-30/`. Per ogni immagine un PNG di qualità piena e un WebP di qualità 90. Niente installazioni globali; se ti serve un programma, chiedimelo prima.
+- Stessi nomi dei file di oggi; le versioni notturne con `-notte` prima dell'estensione.
+- Proporzioni identiche all'originale e, per tessera e ombra, lo stesso ritaglio stretto attorno all'oggetto, su fondo trasparente. Se il generatore non arriva alla misura richiesta, genera alla massima misura possibile e poi ingrandisci con un programma di ingrandimento; dimmi quale e per quali file.
+- Parti dall'immagine di oggi in modifica, non da zero, e cambia solo luce e risoluzione. Sulla tessera i segni devono restare intatti: il simbolo C–Legame, «Connetto» e «ƎE» con la prima E girata. Se escono deformati, scarta e rifai. Nessun altro testo, persona o marchio nelle immagini.
+- Alla fine un foglio di confronto, prima e dopo, per ogni immagine, e un elenco con nome, misura in pixel e peso di ogni file.
+
+1. **La stanza di notte, prima di tutto.** Tre varianti della stessa stanza, stessa inquadratura di `stanza2-computer` e `stanza2-telefono`, da mostrarmi affiancate per sceglierne una. Prompt in inglese per il generatore:
+   - A, lampada calda (consigliata): «Same minimalist warm room, same camera, same arched doorway on the right, now at night. Interior lit by a single warm lamp off-frame on the left (2700K), soft amber pools of light on the wall and floor, faint cool moonlight through the arch, soft leaf shadows on the wall, deep near-black neutral greys, no blue cast, calm and premium, photographic, no people, no text.»
+   - B, ora blu: «Same room and camera at dusk, blue-hour light through the arch, warm lamp glow on the floor, muted charcoal walls, no people, no text.»
+   - C, luna: «Same room and camera at night, only cool moonlight from the arch casting soft leaf shadows, very dark neutral walls, a thin warm reflection on the floor, no people, no text.»
+   Le zone dove stanno il modulo (a destra sul computer, in basso sul telefono) devono restare scure e uniformi, perché ci va sopra testo chiaro con contrasto almeno 4,5:1.
+2. **Con la variante scelta**, le immagini notturne alle misure della tabella: `stanza2-computer-notte`, `stanza2-telefono-notte`, `stanza-computer-notte` (fondo delle schermate interne in scuro), `tessera-posa-computer-notte` e `tessera-posa-telefono-notte` (la tessera di rame illuminata dalla stessa lampada, riflessi caldi più bassi, stesso angolo), `ombra-posa-computer-notte` e `ombra-posa-telefono-notte`.
+3. **Le immagini di giorno ad alta risoluzione**, stessa scena di oggi:
+
+| File | Oggi | Da fare |
+| --- | --- | --- |
+| stanza2-computer, stanza-computer | 1440×900 e 2400×1500 | 3840×2400 |
+| stanza2-telefono | 1290×2796, molto compressa | 1290×2796 con qualità piena, meglio 1935×4194 |
+| tessera-posa-computer | 638×434 | 1914×1302 |
+| tessera-posa-telefono | 1010×787 | 2020×1574 |
+| ombra-posa-computer, ombra-posa-telefono | 742×128 e 1108×374 | il triplo e il doppio, trasparenti |
+| tessera-rame-fronte, tessera-rame-retro | 1400×883 | 2800×1766 |
+| foglie | 900×810 | 1800×1620 |
+
+Le versioni notturne hanno le stesse misure delle diurne. Non toccare la pagina e non fare commit: le immagini le porto io in una sessione di Claude, che le mette nella pagina del pacchetto.
+
+Dopo: carica la cartella in una sessione di Claude Code con la terza sessione del ticket «Pagina del pacchetto: clienti, accesso e situazioni comuni» (messaggio sopra). L'agente toglie il velo, mette le immagini notturne in scuro e quelle nuove in chiaro con le misure giuste per ogni schermo, ricontrolla le posizioni di tessera e ombra e misura i contrasti.
 
 ---
 
