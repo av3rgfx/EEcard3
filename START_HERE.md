@@ -61,6 +61,7 @@ Leggi AGENTS.md, STATUS.md, PRODUCT.md (§7, §10, §12 e §13), docs/METODO.md 
 
 - Fissa con me la destinazione (skill `grilling` e `domain-modeling`), poi apri la mappa con i ticket che si possono già scrivere; le ricerche sulle fonti ufficiali le salvi in `docs/ricerca/`, nel branch della sessione.
 - Skill `ponytail`: poche alternative reali, nessuna infrastruttura per esigenze ipotetiche. Nessun codice applicativo e nessuno stack scelto prima delle mie decisioni, una alla volta, in parole semplici, con una raccomandazione motivata.
+- L'architettura è per il percorso 1, ma dopo arrivano la richiesta d'aiuto (percorso 2) e le bollette dell'inquilino (percorso 3, spazio privato; PRODUCT.md §12, 18–20/10/2026): le scelte di oggi non devono renderle difficili, senza costruire nulla in anticipo. L'ordine dei percorsi resta quello deciso (riconfermato dall'utente il 30/10/2026).
 - Nessun account, servizio o messaggio reale senza la mia autorizzazione.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
