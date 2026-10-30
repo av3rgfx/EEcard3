@@ -19,3 +19,5 @@ Limiti: ponytail, cioè dipendenze solo se un bisogno concreto le giustifica. Ne
 ## Commenti (Comments)
 
 **30/10/2026, da [Chi costruisce e tiene in funzione la piattaforma](01-chi-costruisce-e-mantiene.md).** L'utente non legge e non cambia il codice: tecnologia molto diffusa, un solo linguaggio se possibile, controlli automatici che fermano gli errori (tipi, test, revisione OCR).
+
+**30/10/2026, da [Com'è fatta la piattaforma e dove gira](08-forma-e-dove-gira.md).** Applicazione unica su Scalingo con PostgreSQL ([ADR 0001](../../../docs/adr/0001-applicazione-unica-su-scalingo.md)). Il linguaggio deve avere una **libreria di accesso matura** con codice via email o SMS e passkey (per esempio Better Auth in JavaScript/TypeScript, passkey su SimpleWebAuthn; da verificare con le alternative) e girare bene in un contenitore piccolo (256–512 MB). Sviluppo sul computer con PostgreSQL.

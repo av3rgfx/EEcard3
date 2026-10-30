@@ -27,3 +27,5 @@ Limiti: nessun account o servizio. Scelta in ARCHITECTURE.md.
 - Il DISCLAIMER di REA esclude la copia di software proprietario e lascia a chi lo usa il rispetto delle licenze. Le condizioni d'uso di Adobe non sono state lette (*da verificare*), ma di solito i programmi commerciali vietano di smontarli. AGENTS.md chiede soluzioni cercate da capo.
 - REA installa un server MCP con Node.js e, per le app native, strumenti di analisi come Ghidra o Hopper: un costo in più senza bisogno.
 - *Nuovo ticket:* [Ricerca: scanner di documenti già pronti](15-ricerca-scanner-documenti.md), prima del grilling di questo ticket.
+
+**30/10/2026, da [Com'è fatta la piattaforma e dove gira](08-forma-e-dove-gira.md).** Documenti, foto e ricevute in PDF stanno **dentro il database** nel pilota: foto ridotte al caricamento, oltre circa 5 GB passano a un archivio a parte compatibile S3. Le versioni conservate le tiene la piattaforma, non i backup.

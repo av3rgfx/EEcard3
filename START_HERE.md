@@ -55,20 +55,23 @@ Il 30/10/2026 è chiusa anche la [ricerca sulle skill per la sicurezza e lo svil
 
 Il 30/10/2026 è chiuso anche [Entrare con un codice via email: il conflitto con le fonti](.scratch/architettura-percorso-1/issues/13-codice-email-conflitto.md). I clienti tengono il **codice via email o SMS** senza password, con regole più severe e avvisi, e possono aggiungere una **passkey** dal profilo. L'operatore entra con la passkey da un **account di lavoro** a parte; se perde il dispositivo lo riattiva l'utente. Tre domande vanno al parere privacy; il controllo di sicurezza dell'accesso lo fa l'utente con gli agenti su una lista. Dettagli in PRODUCT.md §12, ARCHITECTURE.md e DESIGN.md (voce del profilo, avvisi e accesso dell'operatore da disegnare).
 
-**Prossima sessione:** il ticket 08, [Com'è fatta la piattaforma e dove gira](.scratch/architettura-percorso-1/issues/08-forma-e-dove-gira.md), ora sbloccato: è la scelta più difficile da invertire e sblocca linguaggio, accesso e documenti; il suo messaggio è sotto. In parallelo la ricerca sugli scanner (ticket 15) e il ticket 02, [Modello dei dati e dei permessi del percorso 1](.scratch/architettura-percorso-1/issues/02-modello-dati-permessi.md), cambiando nome e file nel messaggio dell'08 (le righe da leggere sono la mappa e PRODUCT.md §7, §10 e §12). Poi il ticket 11, [Servizi esterni: email, SMS e ISTAT](.scratch/architettura-percorso-1/issues/11-servizi-esterni.md). Una scelta sulle skill si può chiedere quando si vuole, una alla volta.
+Il 30/10/2026 è chiuso anche [Com'è fatta la piattaforma e dove gira](.scratch/architettura-percorso-1/issues/08-forma-e-dove-gira.md). La piattaforma è un'**applicazione unica su Scalingo** (Parigi), con PostgreSQL che tiene anche documenti e foto; codice e passkey li dà una libreria matura dentro l'applicazione. Copie di Scalingo più una copia cifrata al mese su un disco di ƎE, prova di ripristino prima del pilota e ogni 3 mesi. Dettagli in ARCHITECTURE.md («Decisioni confermate») e nell'[ADR 0001](docs/adr/0001-applicazione-unica-su-scalingo.md).
+
+**Prossima sessione:** il ticket 09, [Linguaggio, framework e componenti](.scratch/architettura-percorso-1/issues/09-linguaggio-framework-componenti.md), ora sbloccato; il suo messaggio è sotto. Poi il ticket 10, [Accesso: come entrano clienti e operatori](.scratch/architettura-percorso-1/issues/10-accesso.md), che usa la libreria scelta. In parallelo la ricerca sugli scanner (ticket 15), il ticket 02, [Modello dei dati e dei permessi del percorso 1](.scratch/architettura-percorso-1/issues/02-modello-dati-permessi.md), e il ticket 11, [Servizi esterni: email, SMS e ISTAT](.scratch/architettura-percorso-1/issues/11-servizi-esterni.md), cambiando nome e file nel messaggio del 09 (per il 02 le righe da leggere sono la mappa e PRODUCT.md §7, §10 e §12). Una scelta sulle skill si può chiedere quando si vuole, una alla volta.
 
 ---
 
-## Architettura del percorso 1: com'è fatta la piattaforma e dove gira
+## Architettura del percorso 1: linguaggio, framework e componenti
 
-/wayfinder .scratch/architettura-percorso-1/map.md — ticket «Com'è fatta la piattaforma e dove gira» (.scratch/architettura-percorso-1/issues/08-forma-e-dove-gira.md).
+/wayfinder .scratch/architettura-percorso-1/map.md — ticket «Linguaggio, framework e componenti» (.scratch/architettura-percorso-1/issues/09-linguaggio-framework-componenti.md).
 
-Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora) e il ticket, compresi i «Commenti»; poi ARCHITECTURE.md, «Cosa vincolerà la scelta» (chi costruisce e mantiene, accesso), docs/ricerca/piattaforma-dati.md e docs/rules/BACKEND.md. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora) e il ticket, compresi i «Commenti»; poi ARCHITECTURE.md («Cosa vincolerà la scelta», «Confini», «Decisioni confermate», «Da valutare al passo 7»), docs/adr/0001-applicazione-unica-su-scalingo.md, DESIGN.md («Componenti e token», «Interazioni e stati (percorso 1)») e docs/rules/BACKEND.md. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
 
 - Rivendica il ticket (`Status: claimed`) e lavora solo su questo, con le skill `grilling`, `domain-modeling` e `ponytail`.
-- Le domande una alla volta, in parole semplici, con una raccomandazione motivata e cosa comporta ogni opzione; le alternative sono quelle della ricerca. Il servizio scelto deve offrire codice via email o SMS e passkey, stare nei circa 20 € al mese e tenere i dati nell'UE.
+- Prima dei fatti: verifica sulle fonti ufficiali aggiornate, per due o tre alternative reali, la libreria di accesso con codice via email o SMS e passkey, la sua stabilità, quanto gira in un contenitore piccolo su Scalingo e le licenze dei componenti. Annota i fatti con data e link in docs/ricerca/.
+- Le domande una alla volta, in parole semplici, con una raccomandazione motivata e cosa comporta ogni opzione. Io scrivo il codice con gli agenti e non lo leggo: conta quanto la tecnologia è diffusa e conosciuta dagli agenti, un solo linguaggio se possibile, pochi pezzi, controlli automatici.
 - Scelta in ARCHITECTURE.md con data e motivo, ADR in docs/adr/ se è difficile da invertire. Chiudi il ticket con la risposta e la riga in «Decisioni finora».
-- Nessun account, servizio o messaggio reale senza la mia autorizzazione.
+- Nessuna installazione, nessun account, servizio o messaggio reale senza la mia autorizzazione.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 

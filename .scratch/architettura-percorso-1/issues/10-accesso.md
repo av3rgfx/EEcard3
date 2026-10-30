@@ -2,7 +2,7 @@
 
 Type: grilling
 Status: open
-Blocked by: 04, 08, 13
+Blocked by: 04, 08, 09, 13
 Mappa: [Architettura del percorso 1](../map.md)
 
 ## Domanda (Question)
@@ -16,3 +16,7 @@ Con i fatti della [ricerca sull'accesso](04-ricerca-accesso-codice.md) e la form
 5. **Conflitti:** il conflitto con le fonti è chiuso il 30/10/2026 (ticket 13): codice per i clienti con regole più severe, passkey facoltativa per i clienti, lista di controllo della sicurezza dell'accesso (limiti a tentativi e invii, sessioni, consultazione in serie, recupero dell'account di lavoro). Qui si fissano i valori.
 
 Limiti: nessun account o servizio. Scelta in ARCHITECTURE.md («Integrazioni»); un cambio di prodotto in PRODUCT.md §12.
+
+## Commenti (Comments)
+
+**30/10/2026, da [Com'è fatta la piattaforma e dove gira](08-forma-e-dove-gira.md).** Punto 1 in parte risolto: l'accesso non è un servizio del fornitore, sta dentro l'applicazione con una libreria matura scelta con il linguaggio ([ticket 09](09-linguaggio-framework-componenti.md)). Qui restano regole, valori e invio dei codici.
