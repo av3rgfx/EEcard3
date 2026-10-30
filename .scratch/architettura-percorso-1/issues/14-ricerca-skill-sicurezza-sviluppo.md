@@ -1,7 +1,7 @@
 # Ricerca: skill per la sicurezza e lo sviluppo con gli agenti
 
 Type: research
-Status: claimed
+Status: resolved
 Blocked by:
 Mappa: [Architettura del percorso 1](../map.md)
 
@@ -15,6 +15,18 @@ L'utente scrive la piattaforma con gli agenti, senza esperti esterni e quasi sen
 3. **Per ogni skill:** provenienza, autore, licenza, cosa fa davvero, cosa installa o esegue, conflitti con le skill del progetto. Le opinioni dei social sono indizi, non prove: si verificano sul sorgente.
 
 Limiti: nessuna installazione durante la ricerca; ogni installazione la decide l'utente, con le copie Claude e Codex allineate (AGENTS.md, «Confini operativi»). Risultati in `docs/ricerca/`, con la data di lettura e i link. Prima del controllo B.
+
+## Risposta (Answer)
+
+Ricerca del 30/10/2026 in [docs/ricerca/skill-sicurezza-sviluppo.md](../../../docs/ricerca/skill-sicurezza-sviluppo.md), con gli strumenti già presenti (scelta dell'utente, «Commenti»). Nessuna skill installata, nessuno script eseguito, nessun account.
+
+- **Già presente:** `/security-review` di Claude Code guarda solo le modifiche e per regola esclude limiti ai tentativi, librerie vecchie, registri delle operazioni e rinforzi mancanti. Per EECard3 i buchi veri sono tre: tentativi sul codice d'accesso, versioni conservate, dipendenze.
+- **Candidate di sola istruzione, copiabili uguali in `.claude/skills` e `.agents/skills`:** `security-review` di Sentry, da rinominare per lo stesso nome del comando; `skill-scanner` di Sentry, per controllare una skill prima di adottarla; `differential-review` e `property-based-testing` di Trail of Bits; `test-driven-development` di superpowers, da sola, senza il pacchetto.
+- **Solo dopo la scelta dello stack:** le skill di Supabase o di Firebase.
+- **Da non prendere ora:** il pacchetto superpowers intero (si avvia a ogni sessione), Semgrep Guardian (manda i file al fornitore, chiede un account), Codex Security (server MCP e chiavi).
+- **Nessuna skill copre** la prova di attacco sul sistema acceso né la verifica del ripristino: rischio da dichiarare al controllo B, con un parere professionale se il budget lo permette.
+
+Cinque scelte per l'utente, da fare una alla volta, nella ricerca, «Cosa resta all'utente». Sono passate alla mappa, «Non ancora specificato», voce «Verifica operativa»; la terza, le skill del fornitore, aspetta [Com'è fatta la piattaforma e dove gira](08-forma-e-dove-gira.md). L'utente può chiederne una anche prima.
 
 ## Commenti (Comments)
 

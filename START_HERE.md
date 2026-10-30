@@ -51,22 +51,9 @@ Il 30/10/2026 è aperta la mappa [Architettura del percorso 1](.scratch/architet
 
 Il 30/10/2026 è chiuso il primo ticket, [Chi costruisce e tiene in funzione la piattaforma](.scratch/architettura-percorso-1/issues/01-chi-costruisce-e-mantiene.md). Il codice lo scrive l'utente con gli agenti, senza esperti esterni, e quasi non lo legge. Nel pilota la piattaforma la tiene in funzione l'utente, con il **piano carta** se non va. Si usano **servizi gestiti**, a nome di ƎE che li paga, per circa **20 € al mese**. Dettagli in ARCHITECTURE.md («Cosa vincolerà la scelta») e PRODUCT.md §12. Nuovo ticket: [Ricerca: skill per la sicurezza e lo sviluppo con gli agenti](.scratch/architettura-percorso-1/issues/14-ricerca-skill-sicurezza-sviluppo.md). L'utente ha mandato il link ad [Agent-Reach](https://github.com/Panniantong/agent-reach) e non sa se ci sono strumenti migliori per cercare online.
 
-**Prossima sessione:** la ricerca sulle skill (ticket 14), scelta dell'utente. Il messaggio è sotto. In parallelo, o subito dopo, il ticket 13, che sblocca la forma della piattaforma e dice quanti SMS servono; il suo messaggio è il secondo. Il ticket 02, [Modello dei dati e dei permessi del percorso 1](.scratch/architettura-percorso-1/issues/02-modello-dati-permessi.md), si può fare in parallelo cambiando nome e file nel messaggio del 13. Il ticket 11, [Servizi esterni: email, SMS e ISTAT](.scratch/architettura-percorso-1/issues/11-servizi-esterni.md), è sbloccato, ma conviene dopo il 13.
+Il 30/10/2026 è chiusa anche la [ricerca sulle skill per la sicurezza e lo sviluppo](.scratch/architettura-percorso-1/issues/14-ricerca-skill-sicurezza-sviluppo.md) ([docs/ricerca/skill-sicurezza-sviluppo.md](docs/ricerca/skill-sicurezza-sviluppo.md)). Per cercare l'utente ha scelto gli strumenti già presenti: Agent-Reach per Reddit e X chiede un account social e installa programmi in tutto il computer. Nessuna skill è installata; le cinque scelte sono nella ricerca, «Cosa resta all'utente», e nella mappa, «Verifica operativa». Nella stessa sessione l'utente ha chiesto uno **scanner automatico** quando si carica un file, come Adobe Scan (PRODUCT.md §12): si parte dagli scanner già pronti, senza smontare app di altri, con il ticket [Ricerca: scanner di documenti già pronti](.scratch/architettura-percorso-1/issues/15-ricerca-scanner-documenti.md).
 
----
-
-## Architettura del percorso 1: ricerca sulle skill per la sicurezza e lo sviluppo
-
-/wayfinder .scratch/architettura-percorso-1/map.md — ticket «Ricerca: skill per la sicurezza e lo sviluppo con gli agenti» (.scratch/architettura-percorso-1/issues/14-ricerca-skill-sicurezza-sviluppo.md). Il link per cercare sui social è https://github.com/Panniantong/agent-reach; non so se ci sono skill migliori per fare ricerche online.
-
-Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora) e il ticket; poi il ticket «Chi costruisce e tiene in funzione la piattaforma» (risposta) e, in AGENTS.md, «Confini operativi». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
-
-- Rivendica il ticket (`Status: claimed`) e lavora solo su questo, con le skill `research` e `ponytail`.
-- Punto 0 prima di tutto: leggi sorgente e istruzioni attuali di Agent-Reach (cosa installa, cosa esegue, quali accessi chiede, licenza) e confrontalo con due o tre alternative, compresi gli strumenti di ricerca che hai già. Poi chiedimi quale usare, in parole semplici, con una raccomandazione. Non installare nulla e non usare miei account prima della mia risposta.
-- Poi la ricerca: un file in docs/ricerca/ con la data di lettura e i link alle fonti; le opinioni dei social sono indizi da verificare sul sorgente. Nessuna skill si installa nel progetto senza la mia scelta, una alla volta.
-- Nessun account, servizio o messaggio reale senza la mia autorizzazione.
-
-Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
+**Prossima sessione:** il ticket 13, che sblocca la forma della piattaforma e dice quanti SMS servono; il suo messaggio è sotto. In parallelo la ricerca sugli scanner (ticket 15, secondo messaggio) e il ticket 02, [Modello dei dati e dei permessi del percorso 1](.scratch/architettura-percorso-1/issues/02-modello-dati-permessi.md), cambiando nome e file nel messaggio del 13. Il ticket 11, [Servizi esterni: email, SMS e ISTAT](.scratch/architettura-percorso-1/issues/11-servizi-esterni.md), è sbloccato, ma conviene dopo il 13. Una scelta sulle skill si può chiedere quando si vuole, una alla volta.
 
 ---
 
@@ -80,6 +67,20 @@ Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora) e il
 - Le domande una alla volta, in parole semplici, con una raccomandazione motivata e cosa comporta ogni opzione. Nessuno stack scelto e nessun codice applicativo.
 - Un cambio di prodotto va in PRODUCT.md §12, una scelta tecnica in ARCHITECTURE.md; se cambia una schermata, la nota in DESIGN.md. Chiudi il ticket con la risposta e la riga in «Decisioni finora».
 - Nessun account, servizio o messaggio reale senza la mia autorizzazione.
+
+Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
+
+---
+
+## Architettura del percorso 1: ricerca sugli scanner di documenti
+
+/wayfinder .scratch/architettura-percorso-1/map.md — ticket «Ricerca: scanner di documenti già pronti» (.scratch/architettura-percorso-1/issues/15-ricerca-scanner-documenti.md).
+
+Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora) e il ticket; poi PRODUCT.md §12, riga del 30/10/2026 «Scansione automatica al caricamento», e il ticket «Documenti, foto e ricevute in PDF» (commenti del 30/10/2026). Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+
+- Rivendica il ticket (`Status: claimed`) e lavora solo su questo, con le skill `research` e `ponytail`.
+- Fonti ufficiali (Apple, Google, documentazione dei browser, sorgente delle librerie) con la data di lettura, in un file di docs/ricerca/. Non smontare app di altri.
+- Nessuna installazione e nessun account; una prova usa e getta con fogli inventati solo se serve a rispondere, e nessuna immagine a servizi esterni.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 
