@@ -49,9 +49,24 @@ Il 30/10/2026, in una sessione breve, la pagina ha le **immagini nuove dell'acce
 
 Il 30/10/2026 è aperta la mappa [Architettura del percorso 1](.scratch/architettura-percorso-1/map.md) (METODO.md, passo 7). Destinazione scelta dall'utente: le scelte tecniche del percorso 1 scritte in ARCHITECTURE.md, **pronte per il controllo B**, senza rendere difficili i percorsi 2 e 3; il controllo B è un passo a parte. Tredici ticket; cinque ricerche sulle fonti ufficiali già chiuse ([piattaforma e dati](docs/ricerca/piattaforma-dati.md), [accesso con codice](docs/ricerca/accesso-codice.md), [email e SMS](docs/ricerca/invio-email-sms.md), [PDF delle ricevute](docs/ricerca/pdf-ricevute.md), [ISTAT](docs/ricerca/istat-variazione.md)). La ricerca sull'accesso ha trovato un **possibile conflitto** con la decisione del 23/10/2026: NIST vieta l'email come modo di entrare e chiede di più per l'operatore. Si decide nel ticket 13. Nessuno stack è scelto.
 
-Il 30/10/2026 è chiuso il primo ticket, [Chi costruisce e tiene in funzione la piattaforma](.scratch/architettura-percorso-1/issues/01-chi-costruisce-e-mantiene.md). Il codice lo scrive l'utente con gli agenti, senza esperti esterni, e quasi non lo legge. Nel pilota la piattaforma la tiene in funzione l'utente, con il **piano carta** se non va. Si usano **servizi gestiti**, a nome di ƎE che li paga, per circa **20 € al mese**. Dettagli in ARCHITECTURE.md («Cosa vincolerà la scelta») e PRODUCT.md §12. Nuovo ticket: [Ricerca: skill per la sicurezza e lo sviluppo con gli agenti](.scratch/architettura-percorso-1/issues/14-ricerca-skill-sicurezza-sviluppo.md); parte quando l'utente manda il link alla skill per cercare sui social.
+Il 30/10/2026 è chiuso il primo ticket, [Chi costruisce e tiene in funzione la piattaforma](.scratch/architettura-percorso-1/issues/01-chi-costruisce-e-mantiene.md). Il codice lo scrive l'utente con gli agenti, senza esperti esterni, e quasi non lo legge. Nel pilota la piattaforma la tiene in funzione l'utente, con il **piano carta** se non va. Si usano **servizi gestiti**, a nome di ƎE che li paga, per circa **20 € al mese**. Dettagli in ARCHITECTURE.md («Cosa vincolerà la scelta») e PRODUCT.md §12. Nuovo ticket: [Ricerca: skill per la sicurezza e lo sviluppo con gli agenti](.scratch/architettura-percorso-1/issues/14-ricerca-skill-sicurezza-sviluppo.md). L'utente ha mandato il link ad [Agent-Reach](https://github.com/Panniantong/agent-reach) e non sa se ci sono strumenti migliori per cercare online.
 
-**Prossima sessione:** il ticket 13, che sblocca la forma della piattaforma e dice quanti SMS servono. Il messaggio è sotto. In parallelo si può fare il ticket 02, [Modello dei dati e dei permessi del percorso 1](.scratch/architettura-percorso-1/issues/02-modello-dati-permessi.md), cambiando nome e file nel messaggio. Il ticket 11, [Servizi esterni: email, SMS e ISTAT](.scratch/architettura-percorso-1/issues/11-servizi-esterni.md), è sbloccato, ma conviene dopo il 13.
+**Prossima sessione:** la ricerca sulle skill (ticket 14), scelta dell'utente. Il messaggio è sotto. In parallelo, o subito dopo, il ticket 13, che sblocca la forma della piattaforma e dice quanti SMS servono; il suo messaggio è il secondo. Il ticket 02, [Modello dei dati e dei permessi del percorso 1](.scratch/architettura-percorso-1/issues/02-modello-dati-permessi.md), si può fare in parallelo cambiando nome e file nel messaggio del 13. Il ticket 11, [Servizi esterni: email, SMS e ISTAT](.scratch/architettura-percorso-1/issues/11-servizi-esterni.md), è sbloccato, ma conviene dopo il 13.
+
+---
+
+## Architettura del percorso 1: ricerca sulle skill per la sicurezza e lo sviluppo
+
+/wayfinder .scratch/architettura-percorso-1/map.md — ticket «Ricerca: skill per la sicurezza e lo sviluppo con gli agenti» (.scratch/architettura-percorso-1/issues/14-ricerca-skill-sicurezza-sviluppo.md). Il link per cercare sui social è https://github.com/Panniantong/agent-reach; non so se ci sono skill migliori per fare ricerche online.
+
+Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora) e il ticket; poi il ticket «Chi costruisce e tiene in funzione la piattaforma» (risposta) e, in AGENTS.md, «Confini operativi». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+
+- Rivendica il ticket (`Status: claimed`) e lavora solo su questo, con le skill `research` e `ponytail`.
+- Punto 0 prima di tutto: leggi sorgente e istruzioni attuali di Agent-Reach (cosa installa, cosa esegue, quali accessi chiede, licenza) e confrontalo con due o tre alternative, compresi gli strumenti di ricerca che hai già. Poi chiedimi quale usare, in parole semplici, con una raccomandazione. Non installare nulla e non usare miei account prima della mia risposta.
+- Poi la ricerca: un file in docs/ricerca/ con la data di lettura e i link alle fonti; le opinioni dei social sono indizi da verificare sul sorgente. Nessuna skill si installa nel progetto senza la mia scelta, una alla volta.
+- Nessun account, servizio o messaggio reale senza la mia autorizzazione.
+
+Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 
 ---
 
