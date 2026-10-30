@@ -1,7 +1,7 @@
 # Ricerca: skill per la sicurezza e lo sviluppo con gli agenti
 
 Type: research
-Status: open
+Status: claimed
 Blocked by:
 Mappa: [Architettura del percorso 1](../map.md)
 
@@ -15,3 +15,13 @@ L'utente scrive la piattaforma con gli agenti, senza esperti esterni e quasi sen
 3. **Per ogni skill:** provenienza, autore, licenza, cosa fa davvero, cosa installa o esegue, conflitti con le skill del progetto. Le opinioni dei social sono indizi, non prove: si verificano sul sorgente.
 
 Limiti: nessuna installazione durante la ricerca; ogni installazione la decide l'utente, con le copie Claude e Codex allineate (AGENTS.md, «Confini operativi»). Risultati in `docs/ricerca/`, con la data di lettura e i link. Prima del controllo B.
+
+## Commenti (Comments)
+
+**30/10/2026, punto 0: lo strumento per cercare.** Letti il sorgente e le istruzioni di Agent-Reach 1.6.0 (commit `14c2134` del 25/10/2026) e di last30days (commit `7efc0ef` del 28/10/2026), solo in lettura, senza installare né eseguire nulla; provati gli strumenti già presenti. Dettaglio e fonti in [docs/ricerca/skill-sicurezza-sviluppo.md](../../../docs/ricerca/skill-sicurezza-sviluppo.md), §0.
+
+- *Agent-Reach:* licenza MIT. Per Reddit e X serve un account: copia l'accesso al sito dal Chrome dell'utente (con l'estensione OpenCLI) o l'utente entra nel suo browser. Installa uv, Node.js, OpenCLI con estensione per Chrome e CloakBrowser, un browser che non si fa riconoscere come automatico, con licenza non libera. Mette la skill in `~/.agents/skills` e la collega a ogni AI del computer. Senza account fa le stesse ricerche pubbliche degli strumenti già presenti; il canale web passa da Exa e Jina.
+- *last30days:* licenza MIT. Reddit senza chiave, ma dal contenitore reddit.com risponde 403; X richiede chiavi o i cookie del browser; propone l'iscrizione a ScrapeCreators.
+- *Strumenti già presenti:* Reddit è bloccato per la ricerca e la lettura degli agenti e per `curl` (403); X rimanda all'accesso; GitHub e l'API pubblica di Hacker News rispondono senza account.
+
+Proposte all'utente: strumenti già presenti (consigliata); già presenti più post incollati dall'utente; Agent-Reach nel contenitore senza account; Agent-Reach con account. **Risposta dell'utente:** strumenti già presenti (consigliata). Nessuna installazione, nessun account. Reddit e X restano fuori; un loro post citato altrove vale come indizio.
