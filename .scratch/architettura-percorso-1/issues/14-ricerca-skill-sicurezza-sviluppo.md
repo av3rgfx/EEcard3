@@ -37,3 +37,5 @@ Cinque scelte per l'utente, da fare una alla volta, nella ricerca, «Cosa resta 
 - *Strumenti già presenti:* Reddit è bloccato per la ricerca e la lettura degli agenti e per `curl` (403); X rimanda all'accesso; GitHub e l'API pubblica di Hacker News rispondono senza account.
 
 Proposte all'utente: strumenti già presenti (consigliata); già presenti più post incollati dall'utente; Agent-Reach nel contenitore senza account; Agent-Reach con account. **Risposta dell'utente:** strumenti già presenti (consigliata). Nessuna installazione, nessun account. Reddit e X restano fuori; un loro post citato altrove vale come indizio.
+
+**30/10/2026, da [Linguaggio, framework e componenti](09-linguaggio-framework-componenti.md).** La voce «Verifica operativa» della mappa è diventata il ticket [Verifica operativa del percorso 1](16-verifica-operativa.md): ci passano le cinque scelte sulle skill e i tre buchi di `/security-review`.

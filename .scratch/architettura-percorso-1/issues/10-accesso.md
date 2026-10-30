@@ -20,3 +20,5 @@ Limiti: nessun account o servizio. Scelta in ARCHITECTURE.md («Integrazioni»);
 ## Commenti (Comments)
 
 **30/10/2026, da [Com'è fatta la piattaforma e dove gira](08-forma-e-dove-gira.md).** Punto 1 in parte risolto: l'accesso non è un servizio del fornitore, sta dentro l'applicazione con una libreria matura scelta con il linguaggio ([ticket 09](09-linguaggio-framework-componenti.md)). Qui restano regole, valori e invio dei codici.
+
+**30/10/2026, da [Linguaggio, framework e componenti](09-linguaggio-framework-componenti.md).** Libreria scelta: **Better Auth**, con i plugin del codice via email, del codice via SMS e delle passkey (SimpleWebAuthn), su React Router. Le impostazioni predefinite vanno strette: 5 minuti e 3 tentativi per codice, codice salvato in chiaro, registrazione automatica di chi non ha un account, limiti alle richieste in memoria. Servono 10 minuti, il codice come impronta, tentativi per account non azzerati da un codice nuovo, limiti agli invii nel database, nessuna registrazione automatica. Corregge solo l'ultima versione. Fatti in [docs/ricerca/stack-web.md](../../../docs/ricerca/stack-web.md).
