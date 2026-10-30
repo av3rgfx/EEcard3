@@ -1,7 +1,7 @@
 # Com'è fatta la piattaforma e dove gira
 
 Type: grilling
-Status: open
+Status: claimed
 Blocked by: 01, 03, 13
 Mappa: [Architettura del percorso 1](../map.md)
 
