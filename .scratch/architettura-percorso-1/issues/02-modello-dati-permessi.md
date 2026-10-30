@@ -17,3 +17,7 @@ Che cosa conserva la piattaforma per il percorso 1, come si collegano le cose e 
 6. **Il posto per dopo, senza costruirlo:** il tecnico con l'accesso dato dall'incarico (percorso 2), lo spazio delle bollette che il personale di ƎE non vede mai (percorso 3), più agenzie con dati separati. Si decide solo se il modello di oggi lascia il posto, per esempio se ogni dato porta fin da subito la sua agenzia.
 
 Limiti: le parole nuove decise vanno in GLOSSARY.md; il modello in ARCHITECTURE.md («Dati e autorizzazioni»); un ADR solo per una scelta difficile da invertire. Se il ticket è troppo grande per una sessione si divide alla chiusura della prima parte. Si usano solo dati inventati negli esempi.
+
+## Commenti (Comments)
+
+**30/10/2026, da [Chi costruisce e tiene in funzione la piattaforma](01-chi-costruisce-e-mantiene.md).** Il **piano carta**: se la piattaforma non va, il banco dà ricevute di carta e l'operatore registra dopo. Il modello deve accogliere un incasso registrato in ritardo, con la data vera dell'incasso e la ricevuta di carta già data, senza contarlo due volte (§7).

@@ -38,3 +38,5 @@ Non c'è proposta di pre-adesione: le adesioni si contano nel pilota (PRODUCT.md
 - cosa dicono le condizioni sulla disdetta fatta online.
 
 Il parere legale sull'art. 54-bis del Codice del consumo (funzione di recesso) è in PRODUCT.md §10.10.
+
+**30/10/2026, dalla mappa dell'architettura** ([Chi costruisce e tiene in funzione la piattaforma](../../architettura-percorso-1/issues/01-chi-costruisce-e-mantiene.md)). I servizi del pilota costano circa 20 € al mese, pagati da ƎE; l'utente è disposto a salire se il prezzo, con una media ipotetica di 10–20 proprietari paganti, lo copre. Il prezzo deve tenerne conto.

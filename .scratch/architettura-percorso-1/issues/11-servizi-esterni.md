@@ -16,3 +16,7 @@ Con i fatti delle ricerche su [email e SMS](05-ricerca-invio-email-sms.md) e sul
 5. **Per dopo:** se il servizio email scelto può anche ricevere, per l'indirizzo per le bollette del percorso 3, senza attivarlo ora.
 
 Limiti: nessun account, nessun messaggio vero senza l'autorizzazione dell'utente; le prove usano ambienti di prova. Scelta in ARCHITECTURE.md («Integrazioni»).
+
+## Commenti (Comments)
+
+**30/10/2026, da [Chi costruisce e tiene in funzione la piattaforma](01-chi-costruisce-e-mantiene.md).** Budget del pilota circa **20 € al mese in tutto**: gli SMS (circa 25–30 € ogni 300) da soli lo superano. Serve una stima dei messaggi, sapendo che l'SMS è solo per chi non ha l'email (§12, 23/10/2026) e che il ticket 13 può cambiare l'uso dei codici. I servizi sono a nome di ƎE e li paga l'agenzia.

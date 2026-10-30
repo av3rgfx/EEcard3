@@ -7,6 +7,11 @@ Dal 30/10/2026 le scelte si prendono nella mappa [Architettura del percorso 1](.
 
 ## Cosa vincolerà la scelta
 - Le regole del dominio in [PRODUCT.md](PRODUCT.md) §7: accesso legato al rapporto con la casa e alla sua durata, passaggi del denaro distinti, versioni conservate, nessun doppio pagamento, tracciabilità, permessi uguali anche sui dati derivati.
+- **Chi costruisce e mantiene** (decisione dell'utente del 30/10/2026, [ticket](.scratch/architettura-percorso-1/issues/01-chi-costruisce-e-mantiene.md); chi paga, piano carta e contratto sui dati in [PRODUCT.md](PRODUCT.md) §12):
+  - il codice lo scrive l'utente con gli agenti (Claude Code, Codex), senza esperti esterni, e quasi non lo legge: tecnologia molto diffusa e ben conosciuta dagli agenti, un solo linguaggio se possibile, pochi pezzi, controlli automatici che fermano gli errori prima dei clienti, revisione OCR a ogni incremento. Le skill di sicurezza e sviluppo si cercano nel [ticket di ricerca](.scratch/architettura-percorso-1/issues/14-ricerca-skill-sicurezza-sviluppo.md);
+  - **servizi gestiti**, che aggiornano il sistema, fanno le copie e permettono il ripristino; il server da curare a mano è scartato. All'utente restano codice, permessi, avvisi e prove di ripristino;
+  - nel pilota circa **20 € al mese** in tutto (ospitare, file, email, SMS); di più solo se il prezzo dell'adesione lo copre. Sviluppo e ambiente di prova al minimo: sul computer o con piani gratuiti, solo dati inventati;
+  - gli avvisi di guasto arrivano all'utente, che risponde nei giorni feriali; la piattaforma deve accogliere gli incassi registrati dopo un guasto (piano carta) senza contarli due volte.
 - Le decisioni di prodotto che usciranno dallo studio: primo cliente, primo percorso, canali, integrazioni davvero necessarie.
 - Le domande tecniche elencate in [docs/STUDIO.md](docs/STUDIO.md), area O.
 - Ordine confermato: prima la piattaforma web, poi l'app iPhone sullo stesso servizio.

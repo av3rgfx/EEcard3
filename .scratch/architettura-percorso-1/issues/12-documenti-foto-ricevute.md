@@ -15,3 +15,7 @@ Dove stanno e come si servono i file del percorso 1, e come si producono le rice
 4. **Conservazione:** quanto restano i file dopo la fine dei rapporti, per quello che è già deciso (§10.8); il resto aspetta il parere privacy.
 
 Limiti: nessun account o servizio. Scelta in ARCHITECTURE.md.
+
+## Commenti (Comments)
+
+**30/10/2026, da [Chi costruisce e tiene in funzione la piattaforma](01-chi-costruisce-e-mantiene.md).** Con il **piano carta** un incasso può avere già una ricevuta di carta, data durante un guasto. Da decidere: la piattaforma la richiama (numero, data) oppure ne fa una sua; mai due ricevute numerate per lo stesso incasso. Le due numerazioni sono in DESIGN.md, «Ricevute stampate (percorso 1)».
