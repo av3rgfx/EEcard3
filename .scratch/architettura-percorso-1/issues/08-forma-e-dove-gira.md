@@ -2,7 +2,7 @@
 
 Type: grilling
 Status: open
-Blocked by: 01, 03
+Blocked by: 01, 03, 13
 Mappa: [Architettura del percorso 1](../map.md)
 
 ## Domanda (Question)

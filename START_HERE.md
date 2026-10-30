@@ -47,21 +47,21 @@ Il 30/10/2026, nella terza sessione, la **pagina del pacchetto è completa** (ve
 
 Il 30/10/2026, in una sessione breve, la pagina ha le **immagini nuove dell'accesso** (versioni 13 e 14). In scuro accesso e benvenuto mostrano la stanza di notte, senza velo, con un alone tenue dietro il modulo dove serve a leggere. Le immagini hanno più misure, per gli schermi ad alta risoluzione. La stanza di notte del computer non si usa nelle schermate interne (scelta dell'utente, DESIGN.md, «Rifinitura»). Al telefono, di giorno, resta la tessera di prima, perché quella nuova ha un angolo tagliato. «Cosa resta aperto» ha 16 voci. Dettagli in STATUS.md.
 
-**Prossima sessione:** quando vuoi, l'**architettura** (METODO.md, passo 7): con la pagina del pacchetto e le risposte del collaboratore di ƎE porta al controllo B. Il messaggio è sotto.
+Il 30/10/2026 è aperta la mappa [Architettura del percorso 1](.scratch/architettura-percorso-1/map.md) (METODO.md, passo 7). Destinazione scelta dall'utente: le scelte tecniche del percorso 1 scritte in ARCHITECTURE.md, **pronte per il controllo B**, senza rendere difficili i percorsi 2 e 3; il controllo B è un passo a parte. Tredici ticket; cinque ricerche sulle fonti ufficiali già chiuse ([piattaforma e dati](docs/ricerca/piattaforma-dati.md), [accesso con codice](docs/ricerca/accesso-codice.md), [email e SMS](docs/ricerca/invio-email-sms.md), [PDF delle ricevute](docs/ricerca/pdf-ricevute.md), [ISTAT](docs/ricerca/istat-variazione.md)). La ricerca sull'accesso ha trovato un **possibile conflitto** con la decisione del 23/10/2026: NIST vieta l'email come modo di entrare e chiede di più per l'operatore. Si decide nel ticket 13. Nessuno stack è scelto.
+
+**Prossima sessione:** il primo ticket della frontiera. Il messaggio è sotto. Gli altri due ticket aperti e sbloccati (02 e 13) si possono fare in sessioni parallele, cambiando nome e file del ticket nel messaggio.
 
 ---
 
-## Architettura del percorso 1 (METODO.md, passo 7)
+## Architettura del percorso 1: chi costruisce e tiene in funzione la piattaforma
 
-Il design del percorso 1 ha la sua pagina del pacchetto completa; il controllo B conferma design e architettura insieme. Messaggio:
+/wayfinder .scratch/architettura-percorso-1/map.md — ticket «Chi costruisce e tiene in funzione la piattaforma» (.scratch/architettura-percorso-1/issues/01-chi-costruisce-e-mantiene.md).
 
-/wayfinder Architettura del percorso 1 (docs/METODO.md, passo 7): apri la mappa.
+Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora) e il ticket; poi PRODUCT.md §12 (riga del 20/10/2026 «Chi offre la piattaforma nel pilota») e docs/METODO.md, passo 7. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
 
-Leggi AGENTS.md, STATUS.md, PRODUCT.md (§7, §10, §12 e §13), docs/METODO.md (passo 7 e controllo B), ARCHITECTURE.md e, in DESIGN.md, «Pacchetto per il controllo B (percorso 1)» e «Componenti e token». La pagina del pacchetto (https://claude.ai/artifact/9KwvBBmgGc859wN67hWbAF, sezione «Cosa resta aperto») dice cosa aspetta ancora. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
-
-- Fissa con me la destinazione (skill `grilling` e `domain-modeling`), poi apri la mappa con i ticket che si possono già scrivere; le ricerche sulle fonti ufficiali le salvi in `docs/ricerca/`, nel branch della sessione.
-- Skill `ponytail`: poche alternative reali, nessuna infrastruttura per esigenze ipotetiche. Nessun codice applicativo e nessuno stack scelto prima delle mie decisioni, una alla volta, in parole semplici, con una raccomandazione motivata.
-- L'architettura è per il percorso 1, ma dopo arrivano la richiesta d'aiuto (percorso 2) e le bollette dell'inquilino (percorso 3, spazio privato; PRODUCT.md §12, 18–20/10/2026): le scelte di oggi non devono renderle difficili, senza costruire nulla in anticipo. L'ordine dei percorsi resta quello deciso (riconfermato dall'utente il 30/10/2026).
+- Rivendica il ticket (`Status: claimed`) e lavora solo su questo, con le skill `grilling`, `domain-modeling` e `ponytail`.
+- Le domande una alla volta, in parole semplici, con una raccomandazione motivata e cosa comporta ogni opzione. Nessuno stack scelto e nessun codice applicativo.
+- Le risposte vanno in ARCHITECTURE.md («Cosa vincolerà la scelta»), un cambio di prodotto in PRODUCT.md §12. Chiudi il ticket con la risposta e la riga in «Decisioni finora».
 - Nessun account, servizio o messaggio reale senza la mia autorizzazione.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
