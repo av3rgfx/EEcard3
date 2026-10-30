@@ -16,3 +16,7 @@ Con chi costruisce e mantiene ([ticket](01-chi-costruisce-e-mantiene.md)) e i fa
 5. **Uscita:** come si portano via dati e file se si cambia fornitore.
 
 Limiti: nessun account o servizio creato senza l'autorizzazione dell'utente. Scelta in ARCHITECTURE.md («Confini», «Decisioni confermate»), ADR in `docs/adr/` se serve.
+
+## Commenti (Comments)
+
+**30/10/2026, da [Chi costruisce e tiene in funzione la piattaforma](01-chi-costruisce-e-mantiene.md).** Vincoli decisi: **servizi gestiti** (il server da curare a mano è scartato); circa **20 € al mese** nel pilota, compresi i servizi esterni, di più solo se il prezzo dell'adesione lo copre; ambiente di prova sul computer o con piani gratuiti; servizi a nome di ƎE; l'utente scrive con gli agenti e non legge il codice, quindi conta quanto la forma è diffusa e quanto gli agenti la conoscono.

@@ -15,3 +15,7 @@ Dentro la forma scelta ([Com'è fatta la piattaforma e dove gira](08-forma-e-dov
 4. **Carattere e icone:** Manrope dal nostro sito, icone Lucide a tratto 1,6 (DESIGN.md, «Componenti e token»): come entrano nello stack.
 
 Limiti: ponytail, cioè dipendenze solo se un bisogno concreto le giustifica. Nessuna installazione prima della decisione. Scelta in ARCHITECTURE.md.
+
+## Commenti (Comments)
+
+**30/10/2026, da [Chi costruisce e tiene in funzione la piattaforma](01-chi-costruisce-e-mantiene.md).** L'utente non legge e non cambia il codice: tecnologia molto diffusa, un solo linguaggio se possibile, controlli automatici che fermano gli errori (tipi, test, revisione OCR).

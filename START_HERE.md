@@ -49,19 +49,21 @@ Il 30/10/2026, in una sessione breve, la pagina ha le **immagini nuove dell'acce
 
 Il 30/10/2026 è aperta la mappa [Architettura del percorso 1](.scratch/architettura-percorso-1/map.md) (METODO.md, passo 7). Destinazione scelta dall'utente: le scelte tecniche del percorso 1 scritte in ARCHITECTURE.md, **pronte per il controllo B**, senza rendere difficili i percorsi 2 e 3; il controllo B è un passo a parte. Tredici ticket; cinque ricerche sulle fonti ufficiali già chiuse ([piattaforma e dati](docs/ricerca/piattaforma-dati.md), [accesso con codice](docs/ricerca/accesso-codice.md), [email e SMS](docs/ricerca/invio-email-sms.md), [PDF delle ricevute](docs/ricerca/pdf-ricevute.md), [ISTAT](docs/ricerca/istat-variazione.md)). La ricerca sull'accesso ha trovato un **possibile conflitto** con la decisione del 23/10/2026: NIST vieta l'email come modo di entrare e chiede di più per l'operatore. Si decide nel ticket 13. Nessuno stack è scelto.
 
-**Prossima sessione:** il primo ticket della frontiera. Il messaggio è sotto. Gli altri due ticket aperti e sbloccati (02 e 13) si possono fare in sessioni parallele, cambiando nome e file del ticket nel messaggio.
+Il 30/10/2026 è chiuso il primo ticket, [Chi costruisce e tiene in funzione la piattaforma](.scratch/architettura-percorso-1/issues/01-chi-costruisce-e-mantiene.md). Il codice lo scrive l'utente con gli agenti, senza esperti esterni, e quasi non lo legge. Nel pilota la piattaforma la tiene in funzione l'utente, con il **piano carta** se non va. Si usano **servizi gestiti**, a nome di ƎE che li paga, per circa **20 € al mese**. Dettagli in ARCHITECTURE.md («Cosa vincolerà la scelta») e PRODUCT.md §12. Nuovo ticket: [Ricerca: skill per la sicurezza e lo sviluppo con gli agenti](.scratch/architettura-percorso-1/issues/14-ricerca-skill-sicurezza-sviluppo.md); parte quando l'utente manda il link alla skill per cercare sui social.
+
+**Prossima sessione:** il ticket 13, che sblocca la forma della piattaforma e dice quanti SMS servono. Il messaggio è sotto. In parallelo si può fare il ticket 02, [Modello dei dati e dei permessi del percorso 1](.scratch/architettura-percorso-1/issues/02-modello-dati-permessi.md), cambiando nome e file nel messaggio. Il ticket 11, [Servizi esterni: email, SMS e ISTAT](.scratch/architettura-percorso-1/issues/11-servizi-esterni.md), è sbloccato, ma conviene dopo il 13.
 
 ---
 
-## Architettura del percorso 1: chi costruisce e tiene in funzione la piattaforma
+## Architettura del percorso 1: entrare con un codice via email
 
-/wayfinder .scratch/architettura-percorso-1/map.md — ticket «Chi costruisce e tiene in funzione la piattaforma» (.scratch/architettura-percorso-1/issues/01-chi-costruisce-e-mantiene.md).
+/wayfinder .scratch/architettura-percorso-1/map.md — ticket «Entrare con un codice via email: il conflitto con le fonti» (.scratch/architettura-percorso-1/issues/13-codice-email-conflitto.md).
 
-Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora) e il ticket; poi PRODUCT.md §12 (riga del 20/10/2026 «Chi offre la piattaforma nel pilota») e docs/METODO.md, passo 7. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora) e il ticket; poi PRODUCT.md §12 (righe del 23/10/2026 «Accesso, adesione e tessera digitale» e del 30/10/2026 «Chi costruisce e tiene in funzione la piattaforma») e docs/ricerca/accesso-codice.md, sezione «Possibile conflitto con una decisione confermata». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
 
 - Rivendica il ticket (`Status: claimed`) e lavora solo su questo, con le skill `grilling`, `domain-modeling` e `ponytail`.
 - Le domande una alla volta, in parole semplici, con una raccomandazione motivata e cosa comporta ogni opzione. Nessuno stack scelto e nessun codice applicativo.
-- Le risposte vanno in ARCHITECTURE.md («Cosa vincolerà la scelta»), un cambio di prodotto in PRODUCT.md §12. Chiudi il ticket con la risposta e la riga in «Decisioni finora».
+- Un cambio di prodotto va in PRODUCT.md §12, una scelta tecnica in ARCHITECTURE.md; se cambia una schermata, la nota in DESIGN.md. Chiudi il ticket con la risposta e la riga in «Decisioni finora».
 - Nessun account, servizio o messaggio reale senza la mia autorizzazione.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
