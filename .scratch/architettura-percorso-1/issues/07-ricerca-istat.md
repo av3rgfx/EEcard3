@@ -1,7 +1,7 @@
 # Ricerca: la variazione ISTAT dalla fonte ufficiale
 
 Type: research
-Status: open
+Status: resolved
 Blocked by:
 Mappa: [Architettura del percorso 1](../map.md)
 
@@ -15,3 +15,14 @@ Mappa: [Architettura del percorso 1](../map.md)
 4. **Cosa fa l'operatore se il servizio non risponde:** dove trova lo stesso numero a mano, con il link.
 
 Limiti: solo fonti ufficiali dell'ISTAT, con la data di lettura e il link. Si può fare una richiesta di lettura pubblica all'interfaccia, se è aperta e non chiede registrazione, dichiarandolo; nessun account. Non si consultano repository o decisioni di tentativi precedenti. Nessuna scelta. Risultati in `docs/ricerca/istat-variazione.md`.
+
+## Risposta (Answer)
+
+Ricerca chiusa il 30/10/2026, svolta da un agente in background con la skill `research`: [docs/ricerca/istat-variazione.md](../../../docs/ricerca/istat-variazione.md).
+
+- Il numero sta nella pagina ISTAT «Indice dei prezzi per le rivalutazioni monetarie», con le variazioni su un anno e su due anni (settembre 2026: indice 104,3, +4,0%, +5,5%).
+- L'interfaccia SDMX di IstatData è pubblica, gratuita e senza registrazione, con un limite di 5 richieste al minuto (oltre: blocco da 1 a 2 giorni). Una richiesta di prova ha restituito gli stessi valori di settembre 2026. La serie ha la base nel nome e cambierà alla prossima base.
+- La variazione su due anni non è nell'interfaccia: si calcola dagli indici con il coefficiente 1,214 (prova: +5,5%, come la pagina).
+- Licenza CC BY 4.0 dei contenuti ISTAT, salvo diversa indicazione; da verificare che copra anche IstatData.
+- Il FOI esce solo come dato definitivo, verso metà del mese dopo (ottobre 2026: 17/11). Secondo una scheda ISTAT del 2015 non viene rivisto, salvo errori: da verificare. Dal 2026 la base è il 2025.
+- Se il servizio non risponde: pagina delle rivalutazioni, comunicato mensile (Prospetto 1), Rivaluta, IstatData.
