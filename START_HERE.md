@@ -53,19 +53,21 @@ Il 30/10/2026 è chiuso il primo ticket, [Chi costruisce e tiene in funzione la 
 
 Il 30/10/2026 è chiusa anche la [ricerca sulle skill per la sicurezza e lo sviluppo](.scratch/architettura-percorso-1/issues/14-ricerca-skill-sicurezza-sviluppo.md) ([docs/ricerca/skill-sicurezza-sviluppo.md](docs/ricerca/skill-sicurezza-sviluppo.md)). Per cercare l'utente ha scelto gli strumenti già presenti: Agent-Reach per Reddit e X chiede un account social e installa programmi in tutto il computer. Nessuna skill è installata; le cinque scelte sono nella ricerca, «Cosa resta all'utente», e nella mappa, «Verifica operativa». Nella stessa sessione l'utente ha chiesto uno **scanner automatico** quando si carica un file, come Adobe Scan (PRODUCT.md §12): si parte dagli scanner già pronti, senza smontare app di altri, con il ticket [Ricerca: scanner di documenti già pronti](.scratch/architettura-percorso-1/issues/15-ricerca-scanner-documenti.md).
 
-**Prossima sessione:** il ticket 13, che sblocca la forma della piattaforma e dice quanti SMS servono; il suo messaggio è sotto. In parallelo la ricerca sugli scanner (ticket 15, secondo messaggio) e il ticket 02, [Modello dei dati e dei permessi del percorso 1](.scratch/architettura-percorso-1/issues/02-modello-dati-permessi.md), cambiando nome e file nel messaggio del 13. Il ticket 11, [Servizi esterni: email, SMS e ISTAT](.scratch/architettura-percorso-1/issues/11-servizi-esterni.md), è sbloccato, ma conviene dopo il 13. Una scelta sulle skill si può chiedere quando si vuole, una alla volta.
+Il 30/10/2026 è chiuso anche [Entrare con un codice via email: il conflitto con le fonti](.scratch/architettura-percorso-1/issues/13-codice-email-conflitto.md). I clienti tengono il **codice via email o SMS** senza password, con regole più severe e avvisi, e possono aggiungere una **passkey** dal profilo. L'operatore entra con la passkey da un **account di lavoro** a parte; se perde il dispositivo lo riattiva l'utente. Tre domande vanno al parere privacy; il controllo di sicurezza dell'accesso lo fa l'utente con gli agenti su una lista. Dettagli in PRODUCT.md §12, ARCHITECTURE.md e DESIGN.md (voce del profilo, avvisi e accesso dell'operatore da disegnare).
+
+**Prossima sessione:** il ticket 08, [Com'è fatta la piattaforma e dove gira](.scratch/architettura-percorso-1/issues/08-forma-e-dove-gira.md), ora sbloccato: è la scelta più difficile da invertire e sblocca linguaggio, accesso e documenti; il suo messaggio è sotto. In parallelo la ricerca sugli scanner (ticket 15) e il ticket 02, [Modello dei dati e dei permessi del percorso 1](.scratch/architettura-percorso-1/issues/02-modello-dati-permessi.md), cambiando nome e file nel messaggio dell'08 (le righe da leggere sono la mappa e PRODUCT.md §7, §10 e §12). Poi il ticket 11, [Servizi esterni: email, SMS e ISTAT](.scratch/architettura-percorso-1/issues/11-servizi-esterni.md). Una scelta sulle skill si può chiedere quando si vuole, una alla volta.
 
 ---
 
-## Architettura del percorso 1: entrare con un codice via email
+## Architettura del percorso 1: com'è fatta la piattaforma e dove gira
 
-/wayfinder .scratch/architettura-percorso-1/map.md — ticket «Entrare con un codice via email: il conflitto con le fonti» (.scratch/architettura-percorso-1/issues/13-codice-email-conflitto.md).
+/wayfinder .scratch/architettura-percorso-1/map.md — ticket «Com'è fatta la piattaforma e dove gira» (.scratch/architettura-percorso-1/issues/08-forma-e-dove-gira.md).
 
-Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora) e il ticket; poi PRODUCT.md §12 (righe del 23/10/2026 «Accesso, adesione e tessera digitale» e del 30/10/2026 «Chi costruisce e tiene in funzione la piattaforma») e docs/ricerca/accesso-codice.md, sezione «Possibile conflitto con una decisione confermata». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora) e il ticket, compresi i «Commenti»; poi ARCHITECTURE.md, «Cosa vincolerà la scelta» (chi costruisce e mantiene, accesso), docs/ricerca/piattaforma-dati.md e docs/rules/BACKEND.md. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
 
 - Rivendica il ticket (`Status: claimed`) e lavora solo su questo, con le skill `grilling`, `domain-modeling` e `ponytail`.
-- Le domande una alla volta, in parole semplici, con una raccomandazione motivata e cosa comporta ogni opzione. Nessuno stack scelto e nessun codice applicativo.
-- Un cambio di prodotto va in PRODUCT.md §12, una scelta tecnica in ARCHITECTURE.md; se cambia una schermata, la nota in DESIGN.md. Chiudi il ticket con la risposta e la riga in «Decisioni finora».
+- Le domande una alla volta, in parole semplici, con una raccomandazione motivata e cosa comporta ogni opzione; le alternative sono quelle della ricerca. Il servizio scelto deve offrire codice via email o SMS e passkey, stare nei circa 20 € al mese e tenere i dati nell'UE.
+- Scelta in ARCHITECTURE.md con data e motivo, ADR in docs/adr/ se è difficile da invertire. Chiudi il ticket con la risposta e la riga in «Decisioni finora».
 - Nessun account, servizio o messaggio reale senza la mia autorizzazione.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.

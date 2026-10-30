@@ -28,7 +28,7 @@ Legenda: **Fonte** = ciò che dice la fonte; **Inferenza** = ciò che ne deduce 
 
 ## Possibile conflitto con una decisione confermata
 
-Decisione ([PRODUCT.md](../../PRODUCT.md) §12, 23/10/2026): **si entra con un codice di verifica via email o via SMS, per tutti, senza password.** Alcune fonti di riferimento la sconsigliano, del tutto o in parte. **La decisione resta all'utente.**
+Decisione ([PRODUCT.md](../../PRODUCT.md) §12, 23/10/2026): **si entra con un codice di verifica via email o via SMS, per tutti, senza password.** Alcune fonti di riferimento la sconsigliano, del tutto o in parte. **La decisione resta all'utente.** *Decisa il 30/10/2026* (PRODUCT.md §12, «Accesso: codice per i clienti, passkey per l'operatore»).
 
 | Fonte | Cosa dice esattamente | Per quale livello |
 | --- | --- | --- |

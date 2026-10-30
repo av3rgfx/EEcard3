@@ -20,6 +20,10 @@ _Da evitare_: carta (si confonde con la carta di pagamento), badge
 Il passaggio con cui una casa gestita entra nel servizio: scheda della casa, documenti, incarico di gestione e adesione del proprietario. Le adesioni delle altre persone possono arrivare dopo.
 _Da evitare_: iscrizione (è della persona, non della casa), onboarding, registrazione (è quella del contratto)
 
+**Account di lavoro**:
+L'accesso personale di chi lavora per l'agenzia allo spazio di lavoro, con i dati di tutte le case. È distinto dall'account da cliente della stessa persona: chiuderne uno non tocca l'altro.
+_Da evitare_: account dell'operatore (non dice se è quello di lavoro o da cliente), profilo admin
+
 **Casa gestita**:
 Una casa in affitto che il proprietario ha affidato in gestione all'agenzia, che segue l'inquilino e riceve il canone per suo conto.
 _Da evitare_: casa mediata (la sola mediazione non è gestione), immobile in gestione
