@@ -45,7 +45,7 @@ Il 30/10/2026, nella seconda sessione dello stesso ticket, sono fatte le **scher
 
 Il 30/10/2026, nella terza sessione, la **pagina del pacchetto è completa** (versione 12) e il ticket è chiuso. Nuova sezione **«Cosa resta aperto»**, dall'indice: 17 voci divise per cosa fermano (controllo B, pilota, lancio, niente), con chi le aspetta, cosa toccano e dove sono i dettagli; in ogni tappa la riga «Può ancora cambiare qui» ([DESIGN.md](DESIGN.md), «Pacchetto per il controllo B»). Il controllo di accessibilità WCAG 2.2 AA sull'intera pagina non lascia difetti misurabili nel browser; le prove con screen reader veri e su un iPhone vero restano per la prima versione e fermano il pilota.
 
-**Prossima sessione, proposta dall'agente:** se hai lo ZIP delle immagini dell'accesso, la sessione breve qui sotto. Poi, quando vuoi, l'**architettura** (METODO.md, passo 7): con la pagina del pacchetto e le risposte del collaboratore di ƎE porta al controllo B. Il messaggio è sotto, «Architettura del percorso 1».
+**Prossima sessione, decisa dall'utente:** la sessione breve qui sotto, con lo ZIP delle immagini dell'accesso da Google Drive. Poi, quando vuoi, l'**architettura** (METODO.md, passo 7): con la pagina del pacchetto e le risposte del collaboratore di ƎE porta al controllo B. Il messaggio è sotto, «Architettura del percorso 1».
 
 ---
 
@@ -53,15 +53,15 @@ Il 30/10/2026, nella terza sessione, la **pagina del pacchetto è completa** (ve
 
 Il lavoro di generazione è terminato il 30/10/2026. La scelta visiva è in DESIGN.md, «Accesso, tessera e situazioni comuni»; consegna, verifiche e limiti sono in STATUS.md, «Immagini dell'accesso».
 
-**Prima della sessione in Claude:** scarica dalla conversazione Codex e allega `Connetto-immagini-A-complete.zip`. Il repository non contiene le immagini e il percorso dell'ambiente Codex non è accessibile automaticamente da Claude.
+**Dal 30/10/2026 lo ZIP è sul Google Drive dell'utente**; il link non sta nel repository e si incolla nel messaggio. Il repository non contiene le immagini (la PR di Codex registra solo scelta e consegna). Il file su Drive deve essere apribile con il link; se la sessione non riesce a scaricarlo, l'utente lo allega.
 
 Messaggio (sessione breve, sulla pagina del pacchetto):
 
-/wayfinder .scratch/design-percorso-1/map.md — immagini nuove della pagina d'accesso nella pagina del pacchetto (https://claude.ai/artifact/9KwvBBmgGc859wN67hWbAF). Allego lo ZIP delle immagini di Connetto.
+/wayfinder .scratch/design-percorso-1/map.md — immagini nuove della pagina d'accesso nella pagina del pacchetto (https://claude.ai/artifact/9KwvBBmgGc859wN67hWbAF). Lo ZIP delle immagini di Connetto è su Google Drive: [incolla qui il link del file]. Se non riesci a scaricarlo, dimmelo e te lo allego.
 
 Leggi AGENTS.md, STATUS.md («Immagini dell'accesso») e, in DESIGN.md, «Accesso, tessera e situazioni comuni (percorso 1)», «Rifinitura delle schermate interne (percorso 1)» e «Pacchetto per il controllo B (percorso 1)». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
 
-- Usa i file in `finali/`; leggi `Consegna.md`, `Elenco-file.csv` e `Verifiche.txt` nello ZIP e confronta i fogli in `confronti-finali/`. Le immagini restano fuori dal repository e solo nei prototipi fino al parere.
+- Scarica lo ZIP nella cartella temporanea della sessione, in una cartella nuova e vuota, e controllane le impronte SHA-256 con `Verifiche.txt`. Usa i file in `finali/`; leggi `Consegna.md`, `Elenco-file.csv` e `Verifiche.txt` nello ZIP e confronta i fogli in `confronti-finali/`. Le immagini restano fuori dal repository e solo nei prototipi fino al parere.
 - Riprendi la pagina con lo strumento Artifact, azione «read», e pubblica sullo stesso indirizzo. Il sorgente letto è avvolto in uno scheletro `<!doctype html>…<body>`: per pubblicare togli quell'involucro, per provare in Chromium tienilo.
 - Sostituisci le immagini diurne e usa quelle con `-notte` nell'accesso in scuro al posto del velo, con le misure giuste per ogni schermo (`srcset`/`image-set`). Controlla a occhio ritaglio, angolo, allineamento di tessera e ombra e i segni C–Legame, Connetto e ƎE. Per `stanza-computer-notte` verifica prima la collocazione rispetto a «Rifinitura», che finora esclude la stanza in scuro; non cambiare pannelli o carte senza chiedermelo.
 - Mostrami l'accesso in scuro, prima e dopo. Misura i contrasti del modulo renderizzato sopra la stanza, anche del testo secondario, con il testo nascosto e i pixel del fondo. Togli dalla sezione «Cosa resta aperto» la voce «Le immagini nuove della pagina d'accesso».
