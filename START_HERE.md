@@ -56,9 +56,52 @@ Leggi AGENTS.md, STATUS.md, la mappa e il ticket, con i «Commenti» delle sessi
 - In questa sessione: la sezione **«Cosa resta aperto»** della pagina (al posto di «Poi, nella seconda parte» nell'indice delle tappe): per ogni voce chi la aspetta, cosa tocca nella pagina e cosa ferma (pilota, lancio, niente), senza ripetere i dettagli che stanno nei documenti. Portami prima la forma della sezione come «prima e dopo» in un'immagine, una proposta alla volta, in parole semplici e con una raccomandazione motivata.
 - Poi il controllo **`accessibility-audit`** (WCAG 2.2 AA) sull'intera pagina: contrasti misurati, tastiera, fuoco, nomi per lo screen reader, testo ingrandito al 200%, spaziatura del testo, movimento ridotto. Le correzioni che cambiano una regola di DESIGN.md me le porti una alla volta; le altre le applichi e me le dici.
 - Controlla la pagina in Chromium a 360, 390, 768, 900, 1024, 1180 e 1366 px, in chiaro e in scuro, ricaricando per ogni schermata, su una copia con `<!doctype html>` come la pagina pubblicata; guarda a occhio l'interno delle cornici.
+- Se ti carico le immagini nuove fatte con Codex (sezione «Da dare a Codex» di START_HERE.md): mettile nella pagina, con le notturne per lo scuro al posto del velo, le misure giuste per ogni schermo (`srcset`/`image-set`) e le posizioni di tessera e ombra ricontrollate; mostrami la pagina d'accesso in scuro, prima e dopo, e misura i contrasti del modulo sopra la stanza.
 - Alla fine chiudi il ticket con la risposta, aggiorna la mappa (Decisioni finora) e DESIGN.md, «Pacchetto per il controllo B».
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
+
+
+---
+
+## Da dare a Codex: le immagini della pagina d'accesso, scuro e alta risoluzione
+
+Segnalazione dell'utente del 30/10/2026: la pagina d'accesso in scuro «fa schifo» e sui computer con schermi ad alta risoluzione la stanza, la tessera e le altre immagini generate si vedono sgranate. *Perché succede:* in scuro la pagina mette un velo grigio all'80% sopra la stanza di giorno, quindi non c'è una vera scena notturna. Inoltre le immagini sono piccole e molto compresse: la stanza del computer è 1440×900 px in 34 KB, la tessera in posa del computer è larga 638 px, e su uno schermo Retina servono almeno il doppio e il triplo.
+
+Prima di aprire Codex: allega le immagini di oggi, cioè gli originali dalla cartella Drive se li hai, altrimenti il file `immagini-attuali.zip` che l'agente ti ha mandato il 30/10/2026. Vale ancora la regola di DESIGN.md: le immagini generate con IA si usano **solo nei prototipi** fino al parere, anche se le rifà Codex. Se la tua versione di Codex non genera immagini, lo stesso prompt si usa in ChatGPT.
+
+Messaggio:
+
+Rifai le immagini della pagina d'accesso di Connetto (prototipo, dati inventati). Leggi prima AGENTS.md e, in DESIGN.md, «Accesso, tessera e situazioni comuni (percorso 1)», «Rifinitura delle schermate interne (percorso 1)» e «Componenti e token». Le immagini allegate sono quelle di oggi: sono il riferimento di inquadratura, proporzioni e stile e non vanno cambiate di composizione, perché la pagina posiziona tessera e ombra a coordinate fisse sopra la stanza.
+
+Regole:
+- Le immagini **non entrano nel repository**: salvale in una cartella fuori, per esempio `~/Connetto-immagini/2026-10-30/`. Per ogni immagine un PNG di qualità piena e un WebP di qualità 90. Niente installazioni globali; se ti serve un programma, chiedimelo prima.
+- Stessi nomi dei file di oggi; le versioni notturne con `-notte` prima dell'estensione.
+- Proporzioni identiche all'originale e, per tessera e ombra, lo stesso ritaglio stretto attorno all'oggetto, su fondo trasparente. Se il generatore non arriva alla misura richiesta, genera alla massima misura possibile e poi ingrandisci con un programma di ingrandimento; dimmi quale e per quali file.
+- Parti dall'immagine di oggi in modifica, non da zero, e cambia solo luce e risoluzione. Sulla tessera i segni devono restare intatti: il simbolo C–Legame, «Connetto» e «ƎE» con la prima E girata. Se escono deformati, scarta e rifai. Nessun altro testo, persona o marchio nelle immagini.
+- Alla fine un foglio di confronto, prima e dopo, per ogni immagine, e un elenco con nome, misura in pixel e peso di ogni file.
+
+1. **La stanza di notte, prima di tutto.** Tre varianti della stessa stanza, stessa inquadratura di `stanza2-computer` e `stanza2-telefono`, da mostrarmi affiancate per sceglierne una. Prompt in inglese per il generatore:
+   - A, lampada calda (consigliata): «Same minimalist warm room, same camera, same arched doorway on the right, now at night. Interior lit by a single warm lamp off-frame on the left (2700K), soft amber pools of light on the wall and floor, faint cool moonlight through the arch, soft leaf shadows on the wall, deep near-black neutral greys, no blue cast, calm and premium, photographic, no people, no text.»
+   - B, ora blu: «Same room and camera at dusk, blue-hour light through the arch, warm lamp glow on the floor, muted charcoal walls, no people, no text.»
+   - C, luna: «Same room and camera at night, only cool moonlight from the arch casting soft leaf shadows, very dark neutral walls, a thin warm reflection on the floor, no people, no text.»
+   Le zone dove stanno il modulo (a destra sul computer, in basso sul telefono) devono restare scure e uniformi, perché ci va sopra testo chiaro con contrasto almeno 4,5:1.
+2. **Con la variante scelta**, le immagini notturne alle misure della tabella: `stanza2-computer-notte`, `stanza2-telefono-notte`, `stanza-computer-notte` (fondo delle schermate interne in scuro), `tessera-posa-computer-notte` e `tessera-posa-telefono-notte` (la tessera di rame illuminata dalla stessa lampada, riflessi caldi più bassi, stesso angolo), `ombra-posa-computer-notte` e `ombra-posa-telefono-notte`.
+3. **Le immagini di giorno ad alta risoluzione**, stessa scena di oggi:
+
+| File | Oggi | Da fare |
+| --- | --- | --- |
+| stanza2-computer, stanza-computer | 1440×900 e 2400×1500 | 3840×2400 |
+| stanza2-telefono | 1290×2796, molto compressa | 1290×2796 con qualità piena, meglio 1935×4194 |
+| tessera-posa-computer | 638×434 | 1914×1302 |
+| tessera-posa-telefono | 1010×787 | 2020×1574 |
+| ombra-posa-computer, ombra-posa-telefono | 742×128 e 1108×374 | il triplo e il doppio, trasparenti |
+| tessera-rame-fronte, tessera-rame-retro | 1400×883 | 2800×1766 |
+| foglie | 900×810 | 1800×1620 |
+
+Le versioni notturne hanno le stesse misure delle diurne. Non toccare la pagina e non fare commit: le immagini le porto io in una sessione di Claude, che le mette nella pagina del pacchetto.
+
+Dopo: carica la cartella in una sessione di Claude Code con la terza sessione del ticket «Pagina del pacchetto: clienti, accesso e situazioni comuni» (messaggio sopra). L'agente toglie il velo, mette le immagini notturne in scuro e quelle nuove in chiaro con le misure giuste per ogni schermo, ricontrolla le posizioni di tessera e ombra e misura i contrasti.
 
 ---
 
