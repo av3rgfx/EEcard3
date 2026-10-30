@@ -1,7 +1,7 @@
 # Decisioni tecniche
 
 ## Stato
-**Nessuna scelta, per decisione dell'utente.** Stack, servizi, fornitori e struttura del codice si scelgono dopo le decisioni di prodotto ([docs/METODO.md](docs/METODO.md), passo 7, dopo il controllo A). Nessuna soluzione tecnica dei tentativi precedenti è un punto di partenza.
+Scelte in corso al passo 7 ([docs/METODO.md](docs/METODO.md)). Dal 30/10/2026 sono decise la forma della piattaforma e il posto in cui gira («Decisioni confermate»); linguaggio, framework e servizi esterni non sono ancora scelti. Nessuna soluzione tecnica dei tentativi precedenti è un punto di partenza.
 
 Dal 30/10/2026 le scelte si prendono nella mappa [Architettura del percorso 1](.scratch/architettura-percorso-1/map.md), una alla volta con l'utente. Destinazione confermata: le scelte tecniche del percorso 1 scritte qui, **pronte per il controllo B**, senza rendere difficili i percorsi 2 e 3; il controllo B è un passo a parte.
 
@@ -31,7 +31,10 @@ Promemoria chiesti dall'utente, non decisioni. Si riprendono quando si sceglie l
 - **Sapere se un messaggio non è arrivato** (27/10/2026, da DESIGN.md, «Spazio dell'operatore», «Oggi»). La pagina «Oggi» dell'operatore mostra i messaggi non arrivati con il motivo. Al passo 7 si verifica cosa segnalano i servizi d'invio scelti (SMS non consegnato, email rifiutata) e come arriva a Connetto; ciò che non si sa (un'email nello spam) non si mostra come «arrivato».
 
 ## Confini
-DA DEFINIRE: client web, app, backend, dati e servizi esterni.
+- **Una sola applicazione** fa pagine web, regole e permessi, ospitata da Scalingo (Parigi), con un database PostgreSQL gestito che contiene dati, documenti e foto (30/10/2026, «Decisioni confermate»).
+- L'**accesso** sta dentro l'applicazione, con una libreria matura che offre il codice via email o SMS e le passkey; la libreria si sceglie con il linguaggio.
+- L'**app iPhone** futura parlerà con la stessa applicazione; ora non si costruisce nulla per lei.
+- DA DEFINIRE: linguaggio e framework, servizi di email e SMS, lettura ISTAT.
 
 ## Dati e autorizzazioni
 DA DEFINIRE: entità, ruoli, agenzie (più agenzie è una direzione confermata, non un requisito della prima versione).
@@ -43,5 +46,18 @@ DA DEFINIRE: autenticazione, pagamenti, email e messaggi, documenti, notifiche, 
 Annotare alternative, motivi, vincoli e conseguenze.
 Creare un ADR solo per decisioni difficili da invertire e con un vero compromesso.
 
+### Forma della piattaforma e dove gira (30/10/2026, decisione dell'utente)
+[ADR 0001](docs/adr/0001-applicazione-unica-su-scalingo.md); discussione nel [ticket](.scratch/architettura-percorso-1/issues/08-forma-e-dove-gira.md); fatti in [docs/ricerca/piattaforma-dati.md](docs/ricerca/piattaforma-dati.md).
+- **Forma:** applicazione unica scritta da noi su **Scalingo**, regione Parigi normale (non quella SecNumCloud), con PostgreSQL gestito. Il codice via email o SMS e le passkey li dà una libreria matura dentro l'applicazione, non il fornitore.
+- **Contratto:** account e contratto sui dati a nome di ƎE, che paga; il contratto si accetta online all'apertura dell'account e la sua lettura va al parere sui contratti standard dei fornitori. Per i dati ospitati l'unico sub-responsabile è Outscale, in Francia. Nessun account si apre senza l'autorizzazione dell'utente.
+- **Costo:** circa 14–22 € al mese per ospitare (contenitore S o M più PostgreSQL Starter). Email e SMS si decidono nel [ticket dei servizi esterni](.scratch/architettura-percorso-1/issues/11-servizi-esterni.md), dove si vede se i 20 € reggono.
+- **File:** documenti e foto dentro il database, foto ridotte al caricamento; oltre circa 5 GB passano a un archivio a parte compatibile S3 (per esempio Outscale). Le versioni conservate (§7) le tiene la piattaforma, non i backup.
+- **Copie:** quelle di Scalingo (7 giornaliere, 4 settimanali, ritorno a un momento degli ultimi 7 giorni), più **una copia cifrata al mese** scaricata dall'utente su un disco cifrato di ƎE in agenzia, ultime 12 copie, con la chiave tenuta da ƎE e dall'utente fuori da quel disco. **Prova di ripristino** fatta dall'utente prima del pilota e poi ogni 3 mesi, su una copia temporanea dentro Scalingo, annotata con data ed esito.
+- **Sviluppo e prove:** sul computer dell'utente, gratis, con dati inventati e PostgreSQL come in produzione. Per le passkey su un iPhone vero si accende per qualche giorno una seconda applicazione su Scalingo (circa 14 € al mese finché resta accesa).
+- **Andarsene:** PostgreSQL si esporta per intero, file compresi; il codice è nostro; la copia mensile è già una via d'uscita.
+- *Scartati:* Supabase (passkey ancora sperimentali, 28/5/2026, e obbligatorie per l'operatore; circa 21–23 € prima di email e SMS; file fuori dai backup; contratto con Singapore e sub-responsabili quasi tutti statunitensi); Firebase (accesso solo negli Stati Uniti); server virtuale (ticket 01); Clever Cloud (listino e contratto non leggibili); archivio dei file a parte per ora (fornitore e copie in più); solo le copie di Scalingo (se si perde l'account si perdono anche le copie).
+- *Motivo:* è l'unica forma con dati in Francia, circa 20 € al mese e passkey stabili; una sola prova di ripristino copre tutto, e conta per chi tiene in funzione la piattaforma da solo. Il compromesso è più codice delicato per l'accesso, coperto dalla lista di controllo del [ticket](.scratch/architettura-percorso-1/issues/13-codice-email-conflitto.md).
+
 ## Verifica operativa
-DA DEFINIRE: controlli del codice, migrazioni, ripristino, log e monitoraggio adeguati alla prima versione.
+- Copie e prova di ripristino: decise il 30/10/2026 («Decisioni confermate», «Forma della piattaforma e dove gira»).
+- DA DEFINIRE: controlli del codice, migrazioni, log e avvisi di guasto adeguati alla prima versione.

@@ -159,6 +159,23 @@ Solo **Inferenze**: la scelta è dell'utente nel ticket 08.
 - Disponibilità reale dei server Hetzner («currently unavailable» sulla pagina); sedi UE e impegno minimo del VPS OVHcloud.
 - Certificati effettivi e loro perimetro: per tutti i fornitori sono stati letti solo i dichiarati.
 
+## Aggiunta del 30/10/2026 (ticket 08)
+
+Letture fatte dalla sessione del ticket [08 «Com'è fatta la piattaforma e dove gira»](../../.scratch/architettura-percorso-1/issues/08-forma-e-dove-gira.md), per il vincolo dell'utente: il modo di entrare deve offrire codice via email o SMS e passkey. Solo pagine pubbliche, nessun account.
+
+- **Supabase, passkey (Fonte)** [49][50]. Annunciate il 28/5/2026 come «beta»; la guida dice: «Passkey support is experimental. The API may change without notice», con un'attivazione esplicita nel client. La passkey si registra solo su un utente già confermato; si configurano il dominio (un nome «nudo», senza schema né percorso) e fino a 5 origini. Piani e prezzo non indicati.
+- **Better Auth, passkey (Fonte)** [51]. Libreria di accesso per applicazioni JavaScript/TypeScript; le passkey sono un'estensione (`@better-auth/passkey`) costruita su SimpleWebAuthn. La pagina non indica né data né stato di stabilità. **Inferenza:** nella forma 2 codice via email e passkey li offre una libreria dentro l'applicazione, non il fornitore; quale libreria dipende dal linguaggio ([ticket 09](../../.scratch/architettura-percorso-1/issues/09-linguaggio-framework-componenti.md)).
+- **Outscale, archivio dei file (Fonte)** [52]. Object Storage nella regione europea `eu-west-2` a 0,025 € per GiB al mese; traffico in ingresso incluso.
+- **Clever Cloud, listino (Fonte)** [53]. La pagina dei prezzi non riporta cifre: rimanda a un calcolatore e al commerciale; fatturazione al secondo. Il costo resta **Da verificare**.
+
+Fonti dell'aggiunta, lette il 30/10/2026:
+
+49. Supabase, Passkey authentication: https://supabase.com/docs/guides/auth/passkeys
+50. Supabase, Passkeys for Supabase Auth (Beta), changelog del 28/5/2026: https://supabase.com/changelog/46458-passkeys-for-supabase-auth-beta
+51. Better Auth, Passkey: https://www.better-auth.com/docs/plugins/passkey
+52. Outscale, prezzi: https://en.outscale.com/?p=2075 (letto attraverso un motore di ricerca; la tabella va riletta sulla pagina prima di usarla)
+53. Clever Cloud, Pricing: https://www.clever.cloud/pricing/
+
 ## Fonti
 
 Tutte lette il 30 ottobre 2026, salvo dove indicato. Le pagine caricate solo nel browser sono state lette scaricando l'HTML pubblico ed estraendone il testo; i PDF sono stati scaricati e convertiti in testo.

@@ -21,3 +21,5 @@ Limiti: le parole nuove decise vanno in GLOSSARY.md; il modello in ARCHITECTURE.
 ## Commenti (Comments)
 
 **30/10/2026, da [Chi costruisce e tiene in funzione la piattaforma](01-chi-costruisce-e-mantiene.md).** Il **piano carta**: se la piattaforma non va, il banco dà ricevute di carta e l'operatore registra dopo. Il modello deve accogliere un incasso registrato in ritardo, con la data vera dell'incasso e la ricevuta di carta già data, senza contarlo due volte (§7).
+
+**30/10/2026, da [Com'è fatta la piattaforma e dove gira](08-forma-e-dove-gira.md).** PostgreSQL su Scalingo, con i file nel database. I permessi legati al rapporto con la casa sono codice nostro, controllato sul server a ogni richiesta, compresi i file.
