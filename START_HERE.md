@@ -43,24 +43,9 @@ Il 27/10/2026, nella prima sessione del ticket [Pagina del pacchetto: clienti, a
 
 Il 30/10/2026, nella seconda sessione dello stesso ticket, sono fatte le **schermate dei clienti delle tappe 10–14 e fuori dalla storia** (versione 11 della pagina). Dalla revisione dell'esperienza dodici scelte dell'utente, scritte in DESIGN.md: si contesta dalla voce, con i conti; l'esito «corretto» con i conti prima e dopo; il nuovo canone con le scelte spiegate e l'ISTAT in parole semplici; chi vede ogni documento; la disdetta che dice quali case tocca; il deposito a fine locazione. Due regole di prodotto precisate in PRODUCT.md §12: la casa che esce non toglie l'adesione per le altre case; con più proprietari il nuovo canone lo approva chi è nell'incarico.
 
-**Prossima sessione, proposta dall'agente:** la terza e ultima sessione dello stesso ticket, con la sezione «Cosa resta aperto» e il controllo di accessibilità sull'intera pagina; poi il ticket si chiude e la pagina è il pacchetto per il controllo B.
+Il 30/10/2026, nella terza sessione, la **pagina del pacchetto è completa** (versione 12) e il ticket è chiuso. Nuova sezione **«Cosa resta aperto»**, dall'indice: 17 voci divise per cosa fermano (controllo B, pilota, lancio, niente), con chi le aspetta, cosa toccano e dove sono i dettagli; in ogni tappa la riga «Può ancora cambiare qui» ([DESIGN.md](DESIGN.md), «Pacchetto per il controllo B»). Il controllo di accessibilità WCAG 2.2 AA sull'intera pagina non lascia difetti misurabili nel browser; le prove con screen reader veri e su un iPhone vero restano per la prima versione e fermano il pilota.
 
-Messaggio:
-
-/wayfinder .scratch/design-percorso-1/map.md — ticket «Pagina del pacchetto: clienti, accesso e situazioni comuni» (.scratch/design-percorso-1/issues/23-pacchetto-clienti-situazioni.md), terza sessione
-
-Leggi AGENTS.md, STATUS.md, la mappa e il ticket, con i «Commenti» delle sessioni 1 e 2. In DESIGN.md leggi «Pacchetto per il controllo B (percorso 1)», «Componenti e token», «Dati limite e accessibilità (percorso 1)» e «Interazioni e stati (percorso 1)»; per «Cosa resta aperto» anche le voci aperte di STATUS.md («Prossimi passi»), PRODUCT.md §10.10 e i pareri elencati in DESIGN.md (ricevute, foto, accesso). Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
-
-- Il ticket è già `claimed`: lavora solo su quello, con la skill `prototype` (ramo UI). Solo dati inventati; pagina privata, sorgente fuori dal repository.
-- Riprendi il sorgente della pagina con lo strumento Artifact, azione «read» (https://claude.ai/artifact/9KwvBBmgGc859wN67hWbAF), e pubblica gli aggiornamenti sullo stesso indirizzo, con le immagini che la pagina ha già. Il sorgente letto è avvolto in uno scheletro `<!doctype html>…<body>`: per pubblicare togli quell'involucro, per provare in Chromium tienilo.
-- In questa sessione: la sezione **«Cosa resta aperto»** della pagina (al posto di «Poi, nella seconda parte» nell'indice delle tappe): per ogni voce chi la aspetta, cosa tocca nella pagina e cosa ferma (pilota, lancio, niente), senza ripetere i dettagli che stanno nei documenti. Portami prima la forma della sezione come «prima e dopo» in un'immagine, una proposta alla volta, in parole semplici e con una raccomandazione motivata.
-- Poi il controllo **`accessibility-audit`** (WCAG 2.2 AA) sull'intera pagina: contrasti misurati, tastiera, fuoco, nomi per lo screen reader, testo ingrandito al 200%, spaziatura del testo, movimento ridotto. Le correzioni che cambiano una regola di DESIGN.md me le porti una alla volta; le altre le applichi e me le dici.
-- Controlla la pagina in Chromium a 360, 390, 768, 900, 1024, 1180 e 1366 px, in chiaro e in scuro, ricaricando per ogni schermata, su una copia con `<!doctype html>` come la pagina pubblicata; guarda a occhio l'interno delle cornici.
-- Se ti carico lo ZIP delle immagini consegnate (sezione «Immagini dell'accesso: consegnate, da integrare» di START_HERE.md): mettile nella pagina, con le notturne per lo scuro al posto del velo, le misure giuste per ogni schermo (`srcset`/`image-set`) e le posizioni di tessera e ombra ricontrollate; mostrami la pagina d'accesso in scuro, prima e dopo, e misura i contrasti del modulo sopra la stanza.
-- Alla fine chiudi il ticket con la risposta, aggiorna la mappa (Decisioni finora) e DESIGN.md, «Pacchetto per il controllo B».
-
-Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
-
+**Prossima sessione, proposta dall'agente:** se hai lo ZIP delle immagini dell'accesso, la sessione breve qui sotto. Poi, quando vuoi, l'**architettura** (METODO.md, passo 7): con la pagina del pacchetto e le risposte del collaboratore di ƎE porta al controllo B. Il messaggio è sotto, «Architettura del percorso 1».
 
 ---
 
@@ -68,18 +53,37 @@ Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push 
 
 Il lavoro di generazione è terminato il 30/10/2026. La scelta visiva è in DESIGN.md, «Accesso, tessera e situazioni comuni»; consegna, verifiche e limiti sono in STATUS.md, «Immagini dell'accesso».
 
-**Prima della terza sessione in Claude:** scarica dalla conversazione Codex e allega `Connetto-immagini-A-complete.zip`. Il repository non contiene le immagini e il percorso dell'ambiente Codex non è accessibile automaticamente da Claude.
+**Prima della sessione in Claude:** scarica dalla conversazione Codex e allega `Connetto-immagini-A-complete.zip`. Il repository non contiene le immagini e il percorso dell'ambiente Codex non è accessibile automaticamente da Claude.
 
-Messaggio da aggiungere alla terza sessione del ticket sopra:
+Messaggio (sessione breve, sulla pagina del pacchetto):
 
-«Allego lo ZIP delle immagini di Connetto. Usa i file in `finali/`; leggi `Consegna.md`, `Elenco-file.csv` e `Verifiche.txt` nello ZIP e confronta i fogli in `confronti-finali/`. Mantieni le immagini fuori dal repository.
+/wayfinder .scratch/design-percorso-1/map.md — immagini nuove della pagina d'accesso nella pagina del pacchetto (https://claude.ai/artifact/9KwvBBmgGc859wN67hWbAF). Allego lo ZIP delle immagini di Connetto.
 
-Sostituisci le immagini diurne e usa quelle con `-notte` nell'accesso in scuro al posto del velo. Mantieni le coordinate dei livelli e controlla visivamente ritaglio, angolo, allineamento di tessera e ombra e i segni C–Legame, Connetto e ƎE: il generatore non ha garantito identità pixel per pixel. Usa le risoluzioni corrette per computer e telefono (`srcset`/`image-set`).
+Leggi AGENTS.md, STATUS.md («Immagini dell'accesso») e, in DESIGN.md, «Accesso, tessera e situazioni comuni (percorso 1)», «Rifinitura delle schermate interne (percorso 1)» e «Pacchetto per il controllo B (percorso 1)». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
 
-Mostrami l'accesso in scuro prima e dopo. Misura nuovamente il contrasto sul modulo renderizzato, anche per il testo secondario: le misure sulle sole immagini non bastano dopo ritagli o ridimensionamenti nella pagina. Per `stanza-computer-notte`, verifica prima la collocazione nelle schermate interne rispetto a DESIGN.md, «Rifinitura», che finora esclude la stanza in scuro; non cambiare automaticamente pannelli o carte.
+- Usa i file in `finali/`; leggi `Consegna.md`, `Elenco-file.csv` e `Verifiche.txt` nello ZIP e confronta i fogli in `confronti-finali/`. Le immagini restano fuori dal repository e solo nei prototipi fino al parere.
+- Riprendi la pagina con lo strumento Artifact, azione «read», e pubblica sullo stesso indirizzo. Il sorgente letto è avvolto in uno scheletro `<!doctype html>…<body>`: per pubblicare togli quell'involucro, per provare in Chromium tienilo.
+- Sostituisci le immagini diurne e usa quelle con `-notte` nell'accesso in scuro al posto del velo, con le misure giuste per ogni schermo (`srcset`/`image-set`). Controlla a occhio ritaglio, angolo, allineamento di tessera e ombra e i segni C–Legame, Connetto e ƎE. Per `stanza-computer-notte` verifica prima la collocazione rispetto a «Rifinitura», che finora esclude la stanza in scuro; non cambiare pannelli o carte senza chiedermelo.
+- Mostrami l'accesso in scuro, prima e dopo. Misura i contrasti del modulo renderizzato sopra la stanza, anche del testo secondario, con il testo nascosto e i pixel del fondo. Togli dalla sezione «Cosa resta aperto» la voce «Le immagini nuove della pagina d'accesso».
+- Controlla la pagina in Chromium a 360, 390, 768, 900, 1024, 1180 e 1366 px, in chiaro e in scuro, ricaricando per ogni schermata.
 
-Le immagini restano solo nei prototipi fino al parere. Prosegui poi con «Cosa resta aperto» e il controllo di accessibilità previsti dalla sessione 3.»
+Chiudi la sessione aggiornando STATUS.md, START_HERE.md e DESIGN.md («Pagina d'accesso»), poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 
+---
+
+## Architettura del percorso 1 (METODO.md, passo 7)
+
+Il design del percorso 1 ha la sua pagina del pacchetto completa; il controllo B conferma design e architettura insieme. Messaggio:
+
+/wayfinder Architettura del percorso 1 (docs/METODO.md, passo 7): apri la mappa.
+
+Leggi AGENTS.md, STATUS.md, PRODUCT.md (§7, §10, §12 e §13), docs/METODO.md (passo 7 e controllo B), ARCHITECTURE.md e, in DESIGN.md, «Pacchetto per il controllo B (percorso 1)» e «Componenti e token». La pagina del pacchetto (https://claude.ai/artifact/9KwvBBmgGc859wN67hWbAF, sezione «Cosa resta aperto») dice cosa aspetta ancora. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+
+- Fissa con me la destinazione (skill `grilling` e `domain-modeling`), poi apri la mappa con i ticket che si possono già scrivere; le ricerche sulle fonti ufficiali le salvi in `docs/ricerca/`, nel branch della sessione.
+- Skill `ponytail`: poche alternative reali, nessuna infrastruttura per esigenze ipotetiche. Nessun codice applicativo e nessuno stack scelto prima delle mie decisioni, una alla volta, in parole semplici, con una raccomandazione motivata.
+- Nessun account, servizio o messaggio reale senza la mia autorizzazione.
+
+Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 
 ---
 
