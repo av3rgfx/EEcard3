@@ -11,8 +11,8 @@ Con i fatti della [ricerca sull'accesso](04-ricerca-accesso-codice.md) e la form
 
 1. **Chi lo fa:** la funzione d'accesso del servizio scelto oppure una nostra, e con quale invio dei codici.
 2. **Regole:** durata del codice, tentativi, sessione, uscita da tutti i dispositivi, recupero quando la persona cambia numero o email, verifica al banco dell'email o del cellulare.
-3. **Operatore di ƎE:** se entra come i clienti o con qualcosa in più, visto che vede i dati di tutte le case; spazio distinto e mai «come se fosse il cliente» (§4).
+3. **Operatore di ƎE:** deciso il 30/10/2026 nel ticket [Entrare con un codice via email: il conflitto con le fonti](13-codice-email-conflitto.md): passkey obbligatoria su un account di lavoro a parte, recupero dall'utente. Qui resta come: computer condiviso al banco o no (risposta 1 del collaboratore di ƎE, [ticket](../../design-percorso-1/issues/05-collaboratore-guarda-operatore.md); se è condiviso, telefono personale o chiavetta), durata della sessione, uscita.
 4. **Un solo accesso per più ruoli** su case diverse (§4) e il percorso 2, dove il tecnico entra con un incarico.
-5. **Conflitti:** se la ricerca sconsiglia ciò che è deciso, si porta all'utente il conflitto con una proposta, prima di scegliere.
+5. **Conflitti:** il conflitto con le fonti è chiuso il 30/10/2026 (ticket 13): codice per i clienti con regole più severe, passkey facoltativa per i clienti, lista di controllo della sicurezza dell'accesso (limiti a tentativi e invii, sessioni, consultazione in serie, recupero dell'account di lavoro). Qui si fissano i valori.
 
 Limiti: nessun account o servizio. Scelta in ARCHITECTURE.md («Integrazioni»); un cambio di prodotto in PRODUCT.md §12.
