@@ -32,6 +32,14 @@ _Da evitare_: account da proprietario o da inquilino (il ruolo è del rapporto, 
 Una casa in affitto che il proprietario ha affidato in gestione all'agenzia, che segue l'inquilino e riceve il canone per suo conto.
 _Da evitare_: casa mediata (la sola mediazione non è gestione), immobile in gestione
 
+**Rapporto con la casa**:
+Il legame di una persona con una casa, come proprietario o come inquilino, con un inizio e una fine. Da qui nasce ciò che la persona vede di quella casa e per quanto tempo.
+_Da evitare_: ruolo (è il tipo del rapporto e da solo non dà accesso), permesso
+
+**Locazione**:
+Il contratto con cui il proprietario affitta una casa a uno o più inquilini, con durata, canone e oneri accessori. Ogni inquilino ha il suo rapporto con la casa per quella locazione; quelle finite restano nello storico.
+_Da evitare_: affitto (si confonde con il canone), contratto (da solo indica il documento)
+
 **Incarico di gestione**:
 L'accordo scritto con cui il proprietario affida all'agenzia una casa gestita e l'incasso del canone per suo conto, con il termine di consegna e le regole sui pagamenti parziali e sul compenso. È distinto dall'adesione e dall'incarico del tecnico.
 _Da evitare_: mandato (termine legale, non del servizio), contratto di gestione, incarico (da solo indica quello del tecnico)
