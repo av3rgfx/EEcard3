@@ -1,6 +1,6 @@
 # Accesso con un codice via email o SMS
 
-Ricerca del 30 ottobre 2026, svolta da un agente in background (skill `research`) su fonti primarie e ufficiali, con la data di lettura per ogni fonte. Risponde al ticket [04 «Ricerca: accesso con un codice via email o SMS»](../../.scratch/architettura-percorso-1/issues/04-ricerca-accesso-codice.md) e serve al ticket [10 «Accesso: come entrano clienti e operatori»](../../.scratch/architettura-percorso-1/issues/10-accesso.md).
+Ricerca del 30 ottobre 2026, svolta da un agente in background (skill `research`) su fonti primarie e ufficiali, con la data di lettura per ogni fonte. Risponde al ticket [04 «Ricerca: accesso con un codice via email o SMS»](../../.scratch/architettura-percorso-1/issues/04-ricerca-accesso-codice.md) e serve al ticket [10 «Accesso: come entrano clienti e operatori»](../../.scratch/architettura-percorso-1/issues/10-accesso.md). Il 31/10/2026 la sessione di quel ticket ha aggiunto il §5, su come si stringe Better Auth, la libreria scelta.
 
 **Non è un parere legale né una valutazione di sicurezza.** Dice cosa scrivono oggi le fonti che si sono potute leggere. Nessun account creato, nessun servizio provato, nessun messaggio inviato. Non sono stati consultati repository o decisioni di tentativi precedenti.
 
@@ -163,6 +163,30 @@ Decisione ([PRODUCT.md](../../PRODUCT.md) §12, 23/10/2026): **si entra con un c
   - registrando di nuovo lo stesso utente, la passkey viene sovrascritta sui suoi dispositivi.
 - **Inferenza.** Il dominio della passkey è lo stesso indirizzo web che aspetta il parere sul nome (mappa, «Non ancora specificato»). Conviene fissarlo prima di offrire le passkey: se cambia, le passkey vanno create di nuovo. Lo stesso vale per la riga dell'SMS legata al dominio.
 
+## 5. Better Auth: come si stringe sulle nostre regole
+
+Verifica del 31/10/2026 per il ticket [Accesso: come entrano clienti e operatori](../../.scratch/architettura-percorso-1/issues/10-accesso.md), sulla documentazione ufficiale [21]–[27] e sul codice pubblicato della versione **1.7.14** (ultima stabile, 26/10/2026; la 1.8 è in prova) [28], letto senza installarlo né eseguirlo. Dove la documentazione tace vale il codice letto, che può cambiare con le versioni: ogni punto va riprovato con un test all'inizio della costruzione.
+
+| Regola nostra | Cosa offre Better Auth (**Fonte**) | Cosa serve (**Inferenza**) |
+| --- | --- | --- |
+| **6 cifre, 10 minuti** | Email e SMS: `otpLength` 6, `expiresIn` 300 secondi predefiniti, regolabili [21][22] | `expiresIn: 600` in tutti e due |
+| **Un uso** | Il codice si consuma alla verifica; dopo `allowedAttempts` errori (3 predefiniti) il codice muore [21][22][28] | Già così |
+| **Codice come impronta** | Email: `storeOTP: "hashed"` (SHA-256), oppure `"encrypted"` con il segreto dell'applicazione [21][28]. **SMS: nessuna opzione**, il codice si salva in chiaro con il conteggio dei tentativi [22][28] | Email con l'impronta; per l'SMS una scelta (vedi sotto) |
+| **Tentativi per account, non azzerati da un codice nuovo** | Conteggio solo **per codice**: un codice nuovo riparte da zero (`resendStrategy: "rotate"`, predefinita) [21][28] | Un conteggio nostro per persona, in una tabella, letto prima di ogni verifica e aggiornato dopo, con gli «hook» della libreria [24] |
+| **Limiti agli invii** | Limiti alle richieste **solo per indirizzo IP**, non per account [23]: 100 ogni 10 secondi in generale; il plugin email ha 3 al minuto per ciascun percorso, quello SMS 10 al minuto per tutti i suoi percorsi [28]. Spenti in sviluppo; in memoria, salvo `storage: "database"` [23] | `storage: "database"`; limiti per persona e un tetto giornaliero di SMS scritti da noi. Su Scalingo l'indirizzo vero arriva in un'intestazione del proxy: `trustedProxies` va provato (**Da verificare**) |
+| **Nessuna registrazione automatica** | Email: `disableSignUp: true`; con un indirizzo sconosciuto la richiesta risponde «inviato» senza mandare nulla e la verifica dà «codice non valido» [21][28]. SMS: si registra solo con `signUpOnVerification`, spento in partenza [22] | `disableSignUp: true`; per l'SMS non attivare la registrazione |
+| **Stessa risposta se l'account esiste o no** | Email: sì, come sopra; la guida consiglia di non aspettare l'invio, per non farsi riconoscere dai tempi [21]. **SMS: il codice parte verso qualsiasi numero**, anche mai registrato [28] | Per l'SMS un controllo nostro prima dell'invio: si manda solo a un cellulare verificato al banco, rispondendo comunque «inviato». Senza, chiunque fa partire SMS a nostre spese |
+| **Cambi solo al banco** | Cambio email spento in partenza (`changeEmail.enabled`) [21]. Cambio del numero aperto a chi è dentro: codice al numero nuovo e verifica con `updatePhoneNumber` [22][28] | Chiudere questo passaggio ai clienti con un hook; i cambi li fa l'operatore |
+| **Avviso di nuovo accesso** | Nessun avviso pronto. Negli hook «dopo» c'è la sessione appena creata (`ctx.context.newSession`) e il percorso che l'ha creata [24] | Un hook nostro che manda l'avviso dopo ogni accesso riuscito |
+| **Durata delle sessioni** | `expiresIn` 7 giorni e `updateAge` 1 giorno predefiniti: la sessione **si allunga usandola**; `disableSessionRefresh` la ferma [25][28]. Nessuna durata per ruolo né scadenza per inattività [25]. Ogni sessione nuova passa dagli hook del database, che possono cambiarne la scadenza [26][28]. Elenco delle sessioni, chiusura di una, delle altre o di tutte [25]. Cookie con prefisso `__Secure-`, `HttpOnly`, `SameSite=Lax` in HTTPS [28] | Durate per clienti e account di lavoro scelte nel ticket; una regola nostra per l'inattività dell'account di lavoro |
+| **Passkey obbligatoria per l'account di lavoro** | Nessuna regola per ruolo: ogni account può entrare con codice o passkey se i plugin sono attivi. Gli hook «prima» bloccano un percorso con un errore [24] | Hook nostro: un account di lavoro non riceve codici e non entra dai percorsi del codice |
+| **Prova di presenza (impronta, viso, PIN)** | `userVerification: "preferred"` predefinito; **il server verifica sempre con `requireUserVerification: false`**, in registrazione e in accesso [27][28] | Per l'account di lavoro chiedere `"required"` e **controllare noi** il segnale della verifica nella risposta del dispositivo: senza, una chiavetta senza PIN varrebbe una prova sola |
+| **Prima passkey dell'operatore** | Predefinito: si aggiunge una passkey solo da dentro, con una sessione recente. Con `registration.requireSession: false` si registra senza sessione, con un `context` che la nostra funzione `resolveUser` traduce nella persona [27][28] | Un invito monouso creato da chi tiene in funzione la piattaforma, così il codice via email non apre mai l'account di lavoro |
+
+**Avvisi di sicurezza** [29], pagina principale letta il 31/10/2026: gli ultimi (28–30/9/2026) riguardano OAuth, SSO, l'accesso da altri dispositivi e, in basso, i limiti alle richieste con richieste contemporanee su PostgreSQL attraverso l'adattatore Drizzle. Nessuno nomina passkey o SMS. **Inferenza:** la configurazione scelta (codice e passkey, niente password né OAuth) non è toccata dagli avvisi letti, ma due cose vanno provate: i limiti sotto richieste contemporanee e la versione aggiornata.
+
+**Inferenza sull'impronta del codice.** Un codice di 6 cifre ha un milione di valori: chi legge il database ricava il codice dall'impronta in pochi istanti. L'impronta serve contro la lettura casuale (copie, registri, schermate di chi mantiene), non contro chi ha già il database. Il codice vale 10 minuti e si cancella dopo l'uso; chi legge il database vede comunque già i dati. Il rischio di un codice SMS in chiaro è quindi piccolo, ma è una regola già scritta e la decide l'utente.
+
 ## Dove serve un parere professionale
 
 1. **Privacy** (il consulente o il DPO già previsti, [privacy-dati.md](privacy-dati.md)):
@@ -199,6 +223,18 @@ Tutte lette il 30/10/2026.
 18. Apple Developer, *Supporting passkeys*: https://developer.apple.com/documentation/authenticationservices/supporting-passkeys — associated domains `webcredentials`, registrazione, richieste combinate (letto attraverso i dati pubblici della stessa pagina, perché la pagina HTML non mostra il testo senza JavaScript).
 19. Apple Support, *About the security of passkeys*, pubblicata il 16/9/2024: https://support.apple.com/en-us/102195
 20. Apple Newsroom, *Apple announces powerful new privacy and security features*, 5/6/2023: https://www.apple.com/newsroom/2023/06/apple-announces-powerful-new-privacy-and-security-features/
+
+Lette il 31/10/2026 (§5):
+
+21. Better Auth, Email OTP: https://www.better-auth.com/docs/plugins/email-otp — `otpLength`, `expiresIn`, `allowedAttempts`, `disableSignUp`, `storeOTP`, `resendStrategy`, `changeEmail`, invio senza attesa.
+22. Better Auth, Phone Number: https://www.better-auth.com/docs/plugins/phone-number — `sendOTP`, `signUpOnVerification`, `requireVerification`, `verifyOTP`, cambio del numero, `disableSession`.
+23. Better Auth, Rate Limit: https://www.better-auth.com/docs/concepts/rate-limit — 100 ogni 10 secondi, per indirizzo IP, `storage: "database"`, `customRules`, `trustedProxies`.
+24. Better Auth, Hooks: https://www.better-auth.com/docs/concepts/hooks — hook «prima» e «dopo», `ctx.path`, `APIError`, `ctx.context.newSession`.
+25. Better Auth, Session Management: https://www.better-auth.com/docs/concepts/session-management — `expiresIn` 7 giorni, `updateAge`, `disableSessionRefresh`, `freshAge` 1 giorno, chiusura delle sessioni.
+26. Better Auth, Database: https://www.better-auth.com/docs/concepts/database — hook del database, `additionalFields` con `input: false` per i campi decisi dal server.
+27. Better Auth, Passkey: https://www.better-auth.com/docs/plugins/passkey — `rpID`, `origin`, `authenticatorSelection` (`userVerification` predefinito `preferred`), `registration.requireSession`, `resolveUser`.
+28. Codice pubblicato di `better-auth` 1.7.14 e `@better-auth/passkey` 1.7.14 sul registro npm (https://registry.npmjs.org/better-auth, https://registry.npmjs.org/@better-auth/passkey), letto senza installarlo: `plugins/email-otp/routes.mjs` e `utils.mjs`, `plugins/phone-number/index.mjs` e `routes.mjs`, `db/internal-adapter.mjs`, `context/create-context.mjs`, `cookies/index.mjs`, `passkey/dist/index.mjs`.
+29. Better Auth, Security advisories: https://github.com/better-auth/better-auth/security/advisories — prima pagina.
 
 ## Fonti non raggiunte
 

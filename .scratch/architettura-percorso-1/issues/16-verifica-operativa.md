@@ -18,3 +18,5 @@ Con lo stack scelto ([Linguaggio, framework e componenti](09-linguaggio-framewor
 Già decisi: copie e prova di ripristino ([ticket](08-forma-e-dove-gira.md)); lista di controllo della sicurezza dell'accesso ([ticket](13-codice-email-conflitto.md)), che si precisa nel ticket [Accesso: come entrano clienti e operatori](10-accesso.md). Una prova di attacco fatta da esperti resta un rischio da dichiarare al controllo B.
 
 ## Commenti (Comments)
+
+**31/10/2026, da [Accesso: come entrano clienti e operatori](10-accesso.md).** Le regole dell'accesso (ARCHITECTURE.md, «Accesso») vanno coperte da test automatici che girano a ogni aggiornamento di Better Auth: alcune si basano sul codice letto della versione 1.7.14 e possono cambiare. Da provare in particolare: i limiti con richieste contemporanee su PostgreSQL, l'indirizzo vero dietro il proxy di Scalingo, il controllo della verifica dell'utente nelle passkey, il rifiuto del codice per l'account di lavoro, l'SMS che non parte verso numeri non verificati.

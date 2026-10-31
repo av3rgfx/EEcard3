@@ -24,6 +24,10 @@ _Da evitare_: iscrizione (è della persona, non della casa), onboarding, registr
 L'accesso personale di chi lavora per l'agenzia allo spazio di lavoro, con i dati di tutte le case. È distinto dall'account da cliente della stessa persona: chiuderne uno non tocca l'altro.
 _Da evitare_: account dell'operatore (non dice se è quello di lavoro o da cliente), profilo admin
 
+**Account da cliente**:
+L'accesso personale di un cliente, uno per persona anche con più case o più ruoli, legato alla sua email o al suo cellulare. Ciò che mostra dipende dai rapporti della persona con le case e dura quanto loro.
+_Da evitare_: account da proprietario o da inquilino (il ruolo è del rapporto, non dell'account), utente
+
 **Casa gestita**:
 Una casa in affitto che il proprietario ha affidato in gestione all'agenzia, che segue l'inquilino e riceve il canone per suo conto.
 _Da evitare_: casa mediata (la sola mediazione non è gestione), immobile in gestione
