@@ -1,7 +1,7 @@
 # Modello dei dati e dei permessi del percorso 1
 
 Type: grilling
-Status: open
+Status: claimed
 Blocked by:
 Mappa: [Architettura del percorso 1](../map.md)
 
