@@ -1,7 +1,7 @@
 # Modello dei dati e dei permessi del percorso 1
 
 Type: grilling
-Status: claimed
+Status: resolved
 Blocked by:
 Mappa: [Architettura del percorso 1](../map.md)
 
@@ -17,6 +17,20 @@ Che cosa conserva la piattaforma per il percorso 1, come si collegano le cose e 
 6. **Il posto per dopo, senza costruirlo:** il tecnico con l'accesso dato dall'incarico (percorso 2), lo spazio delle bollette che il personale di ƎE non vede mai (percorso 3), più agenzie con dati separati. Si decide solo se il modello di oggi lascia il posto, per esempio se ogni dato porta fin da subito la sua agenzia.
 
 Limiti: le parole nuove decise vanno in GLOSSARY.md; il modello in ARCHITECTURE.md («Dati e autorizzazioni»); un ADR solo per una scelta difficile da invertire. Se il ticket è troppo grande per una sessione si divide alla chiusura della prima parte. Si usano solo dati inventati negli esempi.
+
+## Risposta (Answer)
+
+Decisa dall'utente il 31/10/2026, undici domande una alla volta, tutte sull'opzione consigliata, e un riepilogo confermato con quattro punti in più (dettaglio sotto «Commenti»).
+
+- **Le cose e i legami:** tre radici con l'agenzia (casa, persona con il suo account da cliente, account di lavoro); dentro la casa rapporti di proprietà, locazione con gli inquilini e il canone a versioni, incarico di gestione a versioni con la persona indicata, documenti della casa e foto; dentro la locazione canone del mese, somme una tantum, contabili, incassi verificati divisi sui mesi, ricevute, scadenze, contestazioni e documenti; dentro l'incarico le consegne; dentro la persona adesioni (una per ruolo), tessere, documenti, messaggi, conteggi dell'accesso e, dal percorso 3, lo spazio delle bollette. Sopra a tutto il quaderno dei fatti e i numeri del pilota. Gli stati si ricavano dai fatti; importi al centesimo esatto.
+- **I permessi:** quattro contenitori (casa, locazione, incarico, persona) e la tabella di §10.7 applicata al rapporto che la persona ha oggi; un solo guardiano nel codice per pagine, ricerche, anteprime, file, PDF ed esportazioni, con un controllo che ferma le pagine che non ci passano e prove automatiche per ogni tipo di persona. Le fonti di accesso hanno le date, mai i ruoli.
+- **Fine dei rapporti:** l'ex inquilino tiene contratto e ricevute per 5 anni, da solo; il proprietario tiene la storia con il nome, senza contatti né contabili (salvo residui o contestazioni aperti); confine al parere privacy.
+- **Cosa non si cancella:** versioni e quaderno dei fatti; si cancellano davvero solo foto tolte, codici usati e dati con la conservazione scaduta.
+- **Nessun doppio:** numero unico per modulo, avviso sui doppioni delle persone, numero della ricevuta di carta unico; un incasso, una ricevuta, divisa sui mesi. Mesi passati: solo ciò che è aperto all'attivazione; nuovo canone con decorrenza passata come somma una tantum.
+- **Misure del pilota:** una riga per proprietario e mese, poi solo il numero il giorno 10; tempo di lavoro stimato per casa, mai per operatore.
+- **Posto per dopo:** incarico del tecnico e condivisione come nuove fonti di accesso; spazio delle bollette nella persona, con il «mai» per l'account di lavoro; agenzia sulle radici.
+
+Registrata in [ARCHITECTURE.md](../../../ARCHITECTURE.md) («Dati e autorizzazioni»; «Decisioni confermate», «Dati e permessi»), [ADR 0003](../../../docs/adr/0003-contenitori-e-guardiano.md), [GLOSSARY.md](../../../GLOSSARY.md) («Rapporto con la casa», «Locazione»), [PRODUCT.md](../../../PRODUCT.md) §10.10 (due domande al parere privacy, una anche legale). Nessun cambio di prodotto in §12: le risposte precisano la specifica senza cambiarla.
 
 ## Commenti (Comments)
 
@@ -41,3 +55,4 @@ Limiti: le parole nuove decise vanno in GLOSSARY.md; il modello in ARCHITECTURE.
 9. **Proprietari che vedono lo stato del canone** (§13). Le altre misure si ricavano dai dati che ci sono già (adesioni, rinnovi, disdette, contestazioni ed esiti, consegne in ritardo, ricevute annullate, pratiche chieste, chiamate avviate). Domanda: cosa si registra per contare le persone e per quanto. Risposta dell'utente: **A** (consigliato). La prima apertura nel mese di una pagina con lo stato del canone di quel mese scrive una riga (persona, casa, mese, giorno; né ora né dispositivo); il giorno 10 del mese dopo la piattaforma conserva il numero («34 proprietari su 52») e cancella le righe con i nomi. Il numero lo vede solo l'utente, in una pagina per chi tiene in funzione la piattaforma; gli operatori non sanno chi ha guardato. Scartati: righe tenute per tutto il pilota (dato personale senza bisogno, misura decisa «senza nomi»); contatore di aperture senza persona (conta aperture, non persone).
 10. **Tempo di lavoro dell'operatore** (D1, §13). Domanda: come misurare il tempo di ogni attivazione e i minuti al mese per casa. Risposta dell'utente: **A** (consigliato). Stima automatica dagli orari del quaderno dei fatti: azioni sulla stessa casa a meno di 10 minuti l'una dall'altra formano un pezzo di lavoro, sommato per casa e per tipo (attivazione, canone, consegna, contestazione); numeri per casa e per mese, visti solo dall'utente, **mai per operatore**; dicono cosa coprono («tempo nella piattaforma; telefonate e carta non contati»). Al parere legale e privacy: se anche così serve un accordo o un'informativa per i lavoratori di ƎE (controllo a distanza; norma non letta in questa sessione). Scartati: minuti scritti dall'operatore (lavoro in più, stime poco affidabili); domanda facoltativa a fine attivazione, da aggiungere se nelle prime settimane il tempo fuori dalla piattaforma sembra contare molto.
 11. **Il posto per i percorsi 2 e 3.** Domanda: se il modello lascia il posto a tecnico e spazio delle bollette senza costruirli. Risposta dell'utente: **A** (consigliato). Il guardiano ragiona per **fonti di accesso** con le date, non per ruoli: oggi il rapporto con la casa e l'account di lavoro; con il percorso 2 l'incarico del tecnico, limitato a ciò che serve alla richiesta e finché l'intervento non si chiude; con la vendita la condivisione (destinatario, durata, revoca). Lo spazio delle bollette sta nella persona, quindi segue l'inquilino in un'altra casa di ƎE, con la regola «l'account di lavoro qui non entra mai»; una protezione più forte resta nella nebbia del percorso 3. Scartati: incarichi e condivisioni preparati ora, vuoti (pezzi da tenere senza uso, da rifare); spazio delle bollette già separato in un altro database (decide il percorso 3 senza discuterlo).
+12. **Riepilogo** confermato dall'utente, con quattro punti non chiesti uno per uno: gli stati si ricavano dai fatti e non si scrivono a mano; una consegna copre uno o più incassi della stessa casa e ogni incasso entra in una sola consegna; importi al centesimo esatto e soglia dei contanti sommata per persona e giorno; dove si scrive (ARCHITECTURE.md, ADR 0003, due parole in GLOSSARY.md, nessun cambio in §12, due domande in §10.10).
