@@ -1,7 +1,7 @@
 # Accesso: come entrano clienti e operatori
 
 Type: grilling
-Status: claimed
+Status: resolved
 Blocked by: 04, 08, 09, 13
 Mappa: [Architettura del percorso 1](../map.md)
 
@@ -16,6 +16,18 @@ Con i fatti della [ricerca sull'accesso](04-ricerca-accesso-codice.md) e la form
 5. **Conflitti:** il conflitto con le fonti è chiuso il 30/10/2026 (ticket 13): codice per i clienti con regole più severe, passkey facoltativa per i clienti, lista di controllo della sicurezza dell'accesso (limiti a tentativi e invii, sessioni, consultazione in serie, recupero dell'account di lavoro). Qui si fissano i valori.
 
 Limiti: nessun account o servizio. Scelta in ARCHITECTURE.md («Integrazioni»); un cambio di prodotto in PRODUCT.md §12.
+
+## Risposta (Answer)
+
+Decisa dall'utente il 31/10/2026, nove domande una alla volta, tutte sull'opzione consigliata, e un riepilogo confermato (dettaglio sotto «Commenti»). Prima delle domande, la verifica di Better Auth 1.7.14 sulle nostre regole ([docs/ricerca/accesso-codice.md](../../../docs/ricerca/accesso-codice.md), §5).
+
+- **Chi lo fa:** Better Auth con i plugin del codice via email, del codice via SMS e delle passkey, più poco codice nostro dove la libreria non arriva: errori e invii contati per persona, tetto degli SMS, avvisi, divieto del codice per l'account di lavoro, controllo della verifica dell'utente nelle passkey, SMS solo verso numeri verificati. L'invio dei codici dipende dal ticket [Servizi esterni: email, SMS e ISTAT](11-servizi-esterni.md).
+- **Clienti:** un account per persona; codice di 6 cifre per 10 minuti, un uso, 3 errori per codice; pausa di 15 minuti dopo 5 errori di fila, blocco dopo 10, riaperto dall'operatore; al massimo 3 codici ogni 15 minuti e 10 al giorno; tetto di 20 SMS d'accesso al giorno; sessione di 30 giorni fissi; «Esci da tutti i dispositivi»; avviso dopo ogni accesso; email e numero si cambiano solo al banco, per telefono solo il blocco. Codice via email salvato come impronta, via SMS come lo salva la libreria.
+- **Account di lavoro:** solo passkey, con impronta, viso o PIN controllati dal server; sessione di 1 ora senza uso e al massimo 12 ore; prima passkey da un invito di 1 ora di chi mantiene, più una seconda di riserva (ripiego: chiavetta in agenzia); avviso quando si aggiunge o si toglie una passkey.
+- **Più ruoli:** un solo account da cliente per persona, permessi dai rapporti con le case; il tecnico del percorso 2 con lo stesso tipo di account, limitato agli incarichi.
+- **Aperti:** computer condiviso al banco (risposta 1 del collaboratore di ƎE), che può riaprire le risposte 6 e 7; la delega per chi non può venire al banco al parere legale; al parere privacy l'avviso via SMS sullo stesso telefono del codice e il codice SMS senza impronta.
+
+Registrata in [ARCHITECTURE.md](../../../ARCHITECTURE.md) («Decisioni confermate», «Accesso»), [PRODUCT.md](../../../PRODUCT.md) §12 (31/10/2026) e §10.10, [DESIGN.md](../../../DESIGN.md) (profilo, «Accesso, tessera e situazioni comuni»), [GLOSSARY.md](../../../GLOSSARY.md) («Account da cliente»). Nessun ADR: le regole si cambiano con la configurazione e poco codice.
 
 ## Commenti (Comments)
 
