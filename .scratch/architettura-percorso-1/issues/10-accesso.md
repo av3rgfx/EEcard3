@@ -1,7 +1,7 @@
 # Accesso: come entrano clienti e operatori
 
 Type: grilling
-Status: open
+Status: claimed
 Blocked by: 04, 08, 09, 13
 Mappa: [Architettura del percorso 1](../map.md)
 
