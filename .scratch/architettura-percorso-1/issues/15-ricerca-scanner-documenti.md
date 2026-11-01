@@ -1,7 +1,7 @@
 # Ricerca: scanner di documenti già pronti
 
 Type: research
-Status: open
+Status: claimed
 Blocked by:
 Mappa: [Architettura del percorso 1](../map.md)
 
