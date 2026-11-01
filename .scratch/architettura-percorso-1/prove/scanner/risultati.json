@@ -1,0 +1,619 @@
+{
+ "browser": "Chromium 153.0.8010.12 senza schermo, su un computer (non un telefono)",
+ "richieste_esterne": [],
+ "prova_completa": [
+  {
+   "caso": "legno-leggera",
+   "misura": "1500x2000",
+   "scanic_ok": true,
+   "scanic_err": {
+    "mean": 0.17661237755614947,
+    "max": 0.282842712474619
+   },
+   "scanic_ms": 112.10000000003492,
+   "jscanify_ok": true,
+   "jscanify_err": {
+    "mean": 0.0723606797749979,
+    "max": 0.08944271909999159
+   },
+   "jscanify_ms": 131.70000000001164
+  },
+  {
+   "caso": "legno-forte",
+   "misura": "1500x2000",
+   "scanic_ok": true,
+   "scanic_err": {
+    "mean": 0.47271597813272176,
+    "max": 0.58309518948453
+   },
+   "scanic_ms": 107.10000000003492,
+   "jscanify_ok": true,
+   "jscanify_err": {
+    "mean": 0.1156062329783655,
+    "max": 0.1264911064067352
+   },
+   "jscanify_ms": 131.29999999998836
+  },
+  {
+   "caso": "tavolo-chiaro",
+   "misura": "1500x2000",
+   "scanic_ok": true,
+   "scanic_err": {
+    "mean": 0.2885800941716266,
+    "max": 0.4242640687119285
+   },
+   "scanic_ms": 45.70000000001164,
+   "jscanify_ok": true,
+   "jscanify_err": {
+    "mean": 26.17586753542862,
+    "max": 48.98001224989639
+   },
+   "jscanify_ms": 159.79999999998836,
+   "schiarisci_ms": 87.70000000001164
+  },
+  {
+   "caso": "tessuto-righe",
+   "misura": "1500x2000",
+   "scanic_ok": true,
+   "scanic_err": {
+    "mean": 1.0220233014132776,
+    "max": 2.7166155414412247
+   },
+   "scanic_ms": 72.29999999998836,
+   "jscanify_ok": true,
+   "jscanify_err": {
+    "mean": 24.706891082637135,
+    "max": 47.80001673639874
+   },
+   "jscanify_ms": 182.20000000001164
+  },
+  {
+   "caso": "ombra-mano",
+   "misura": "1500x2000",
+   "scanic_ok": true,
+   "scanic_err": {
+    "mean": 1.2180003791677885,
+    "max": 4.004996878900157
+   },
+   "scanic_ms": 38.70000000001164,
+   "jscanify_ok": true,
+   "jscanify_err": {
+    "mean": 0.07414213562373075,
+    "max": 0.08
+   },
+   "jscanify_ms": 132.09999999997672,
+   "schiarisci_ms": 78.09999999997672
+  },
+  {
+   "caso": "scontrino-avorio",
+   "misura": "1500x2000",
+   "scanic_ok": true,
+   "scanic_err": {
+    "mean": 0.2599586409417042,
+    "max": 0.4
+   },
+   "scanic_ms": 88.90000000002328,
+   "jscanify_ok": true,
+   "jscanify_err": {
+    "mean": 0.14516177866780308,
+    "max": 0.29120439557122074
+   },
+   "jscanify_ms": 142.09999999997672
+  },
+  {
+   "caso": "piegato",
+   "misura": "1500x2000",
+   "scanic_ok": true,
+   "scanic_err": {
+    "mean": 0.4403579571927283,
+    "max": 0.670820393249937
+   },
+   "scanic_ms": 37.29999999998836,
+   "jscanify_ok": true,
+   "jscanify_err": {
+    "mean": 0.0723606797749979,
+    "max": 0.08944271909999159
+   },
+   "jscanify_ms": 145.09999999997672,
+   "schiarisci_ms": 123.80000000004657
+  },
+  {
+   "caso": "scrivania-oggetti",
+   "misura": "1500x2000",
+   "scanic_ok": true,
+   "scanic_err": {
+    "mean": 0.42071067811865476,
+    "max": 0.5
+   },
+   "scanic_ms": 36.899999999965075,
+   "jscanify_ok": true,
+   "jscanify_err": {
+    "mean": 0.07414213562373095,
+    "max": 0.08
+   },
+   "jscanify_ms": 136.39999999996508
+  },
+  {
+   "caso": "ruotato",
+   "misura": "2000x1500",
+   "scanic_ok": true,
+   "scanic_err": {
+    "mean": 35.3788862514156,
+    "max": 67.74370819493129
+   },
+   "scanic_ms": 138.60000000003492,
+   "jscanify_ok": true,
+   "jscanify_err": {
+    "mean": 16.587621499312586,
+    "max": 33.50849444543876
+   },
+   "jscanify_ms": 128
+  },
+  {
+   "caso": "angolo-fuori",
+   "misura": "1500x2000",
+   "scanic_ok": true,
+   "scanic_err": {
+    "mean": 1.416751159442749,
+    "max": 4.8
+   },
+   "scanic_ms": 122.40000000002328,
+   "jscanify_ok": true,
+   "jscanify_err": {
+    "mean": 30.545790636542453,
+    "max": 61.475211264378764
+   },
+   "jscanify_ms": 128.79999999998836
+  },
+  {
+   "caso": "legno-leggera",
+   "misura": "3000x4000",
+   "scanic_ok": true,
+   "scanic_err": {
+    "mean": 12.166151576258871,
+    "max": 12.831601614763452
+   },
+   "scanic_ms": 33.90000000002328,
+   "extract_ms_12MP": 573
+  },
+  {
+   "caso": "legno-forte",
+   "misura": "3000x4000",
+   "scanic_ok": true,
+   "scanic_err": {
+    "mean": 0.3026637392541885,
+    "max": 0.4472135954999579
+   },
+   "scanic_ms": 33,
+   "extract_ms_12MP": 494.4000000000233
+  },
+  {
+   "caso": "tavolo-chiaro",
+   "misura": "3000x4000",
+   "scanic_ok": true,
+   "scanic_err": {
+    "mean": 0.4070596407726561,
+    "max": 0.7810249675906655
+   },
+   "scanic_ms": 52.600000000034925,
+   "extract_ms_12MP": 283.5
+  },
+  {
+   "caso": "tessuto-righe",
+   "misura": "3000x4000",
+   "scanic_ok": true,
+   "scanic_err": {
+    "mean": 24.108055964813467,
+    "max": 46.80010683748489
+   },
+   "scanic_ms": 157.29999999998836,
+   "extract_ms_12MP": 30.399999999965075
+  },
+  {
+   "caso": "ombra-mano",
+   "misura": "3000x4000",
+   "scanic_ok": true,
+   "scanic_err": {
+    "mean": 1.3369522138250025,
+    "max": 4.011234224026316
+   },
+   "scanic_ms": 66.70000000001164,
+   "extract_ms_12MP": 358.4000000000233
+  },
+  {
+   "caso": "scontrino-avorio",
+   "misura": "3000x4000",
+   "scanic_ok": true,
+   "scanic_err": {
+    "mean": 0.41364008175530914,
+    "max": 0.6082762530298219
+   },
+   "scanic_ms": 32.09999999997672,
+   "extract_ms_12MP": 187.39999999996508
+  },
+  {
+   "caso": "piegato",
+   "misura": "3000x4000",
+   "scanic_ok": true,
+   "scanic_err": {
+    "mean": 0.39814697982617103,
+    "max": 0.4472135954999579
+   },
+   "scanic_ms": 34.29999999998836,
+   "extract_ms_12MP": 312.4000000000233
+  },
+  {
+   "caso": "scrivania-oggetti",
+   "misura": "3000x4000",
+   "scanic_ok": true,
+   "scanic_err": {
+    "mean": 0.402270816242564,
+    "max": 0.4242640687119285
+   },
+   "scanic_ms": 34.59999999997672,
+   "extract_ms_12MP": 193.09999999997672
+  },
+  {
+   "caso": "ruotato",
+   "misura": "4000x3000",
+   "scanic_ok": true,
+   "scanic_err": {
+    "mean": 45.94028782635365,
+    "max": 76.71147241449613
+   },
+   "scanic_ms": 115.09999999997672,
+   "extract_ms_12MP": 3.5
+  },
+  {
+   "caso": "angolo-fuori",
+   "misura": "3000x4000",
+   "scanic_ok": true,
+   "scanic_err": {
+    "mean": 1.4315601381239094,
+    "max": 4.8
+   },
+   "scanic_ms": 174.90000000002328,
+   "extract_ms_12MP": 388.79999999998836
+  }
+ ],
+ "video": {
+  "fotogrammi": 30,
+  "trovati": 30,
+  "ms_mediana": 54.09999999997672,
+  "ms_max": 111.10000000003492,
+  "video": "1080x1440"
+ },
+ "editor": {
+  "elementi": [
+   {
+    "tag": "BUTTON",
+    "role": null,
+    "label": "Top-left corner",
+    "tabindex": null,
+    "size": "22x22"
+   },
+   {
+    "tag": "BUTTON",
+    "role": null,
+    "label": "Top-right corner",
+    "tabindex": null,
+    "size": "20x20"
+   },
+   {
+    "tag": "BUTTON",
+    "role": null,
+    "label": "Bottom-right corner",
+    "tabindex": null,
+    "size": "20x20"
+   },
+   {
+    "tag": "BUTTON",
+    "role": null,
+    "label": "Bottom-left corner",
+    "tabindex": null,
+    "size": "20x20"
+   },
+   {
+    "tag": "BUTTON",
+    "role": null,
+    "label": "Reset",
+    "tabindex": null,
+    "size": "34x34"
+   },
+   {
+    "tag": "BUTTON",
+    "role": null,
+    "label": "Precision nudge (expert)",
+    "tabindex": null,
+    "size": "34x34"
+   },
+   {
+    "tag": "BUTTON",
+    "role": null,
+    "label": "Cancel",
+    "tabindex": null,
+    "size": "34x34"
+   },
+   {
+    "tag": "BUTTON",
+    "role": null,
+    "label": "Apply",
+    "tabindex": null,
+    "size": "34x34"
+   },
+   {
+    "tag": "BUTTON",
+    "role": null,
+    "label": "Move left 1px",
+    "tabindex": null,
+    "size": "0x0"
+   },
+   {
+    "tag": "BUTTON",
+    "role": null,
+    "label": "Move up 1px",
+    "tabindex": null,
+    "size": "0x0"
+   },
+   {
+    "tag": "BUTTON",
+    "role": null,
+    "label": "Move down 1px",
+    "tabindex": null,
+    "size": "0x0"
+   },
+   {
+    "tag": "BUTTON",
+    "role": null,
+    "label": "Move right 1px",
+    "tabindex": null,
+    "size": "0x0"
+   },
+   {
+    "tag": "BUTTON",
+    "role": null,
+    "label": "Move left 5px",
+    "tabindex": null,
+    "size": "0x0"
+   },
+   {
+    "tag": "BUTTON",
+    "role": null,
+    "label": "Move up 5px",
+    "tabindex": null,
+    "size": "0x0"
+   },
+   {
+    "tag": "BUTTON",
+    "role": null,
+    "label": "Move down 5px",
+    "tabindex": null,
+    "size": "0x0"
+   },
+   {
+    "tag": "BUTTON",
+    "role": null,
+    "label": "Move right 5px",
+    "tabindex": null,
+    "size": "0x0"
+   }
+  ],
+  "tastiera": {
+   "prima": {
+    "x": 138.75,
+    "y": 142.5
+   },
+   "dopo": {
+    "x": 143.75,
+    "y": 142.5
+   }
+  },
+  "live": 0
+ },
+ "fiducia_e_riduzione": [
+  {
+   "caso": "legno-leggera",
+   "misura": "1500x2000",
+   "conf": 0.9328125442465584,
+   "err": 0.282842712474619,
+   "err_ridotta": 0.5099019513592785,
+   "conf_ridotta": 0.9323332377203736,
+   "jscanify": 0.08944271909999159
+  },
+  {
+   "caso": "legno-leggera",
+   "misura": "3000x4000",
+   "conf": 0.9040978695263329,
+   "err": 12.831601614763452,
+   "err_ridotta": 0.6082762530298219,
+   "conf_ridotta": 0.9160471195970783
+  },
+  {
+   "caso": "legno-forte",
+   "misura": "1500x2000",
+   "conf": 0.8693777251720806,
+   "err": 0.58309518948453,
+   "err_ridotta": 0.4472135954999579,
+   "conf_ridotta": 0.8703874682545601,
+   "jscanify": 0.1264911064067352
+  },
+  {
+   "caso": "legno-forte",
+   "misura": "3000x4000",
+   "conf": 0.8703286684651318,
+   "err": 0.4472135954999579,
+   "err_ridotta": 0.5385164807134505,
+   "conf_ridotta": 0.8702525376304244
+  },
+  {
+   "caso": "tavolo-chiaro",
+   "misura": "1500x2000",
+   "conf": 0.9222523361440895,
+   "err": 0.4242640687119285,
+   "err_ridotta": 0.4242640687119285,
+   "conf_ridotta": 0.9222504577794689,
+   "jscanify": 48.98001224989639
+  },
+  {
+   "caso": "tavolo-chiaro",
+   "misura": "3000x4000",
+   "conf": 0.922816446975792,
+   "err": 0.7810249675906655,
+   "err_ridotta": 0.36055512754639896,
+   "conf_ridotta": 0.9219683722350044
+  },
+  {
+   "caso": "tessuto-righe",
+   "misura": "1500x2000",
+   "conf": 0.9012268305753927,
+   "err": 2.7166155414412247,
+   "err_ridotta": 2.7166155414412247,
+   "conf_ridotta": 0.9012211932538814,
+   "jscanify": 47.80001673639874
+  },
+  {
+   "caso": "tessuto-righe",
+   "misura": "3000x4000",
+   "conf": 0.6522910261020789,
+   "err": 46.80010683748489,
+   "err_ridotta": 46.80010683748489,
+   "conf_ridotta": 0.6528203895591029
+  },
+  {
+   "caso": "ombra-mano",
+   "misura": "1500x2000",
+   "conf": 0.9070140642077511,
+   "err": 4.004996878900157,
+   "err_ridotta": 4.004996878900157,
+   "conf_ridotta": 0.9070140642077511,
+   "jscanify": 0.08
+  },
+  {
+   "caso": "ombra-mano",
+   "misura": "3000x4000",
+   "conf": 0.9068260819885497,
+   "err": 4.011234224026316,
+   "err_ridotta": 4.104875150354758,
+   "conf_ridotta": 0.9067460360701359
+  },
+  {
+   "caso": "scontrino-avorio",
+   "misura": "1500x2000",
+   "conf": 0.8075505288352969,
+   "err": 0.4,
+   "err_ridotta": 0.5099019513592785,
+   "conf_ridotta": 0.7881473732196828,
+   "jscanify": 0.29120439557122074
+  },
+  {
+   "caso": "scontrino-avorio",
+   "misura": "3000x4000",
+   "conf": 0.7912659096955544,
+   "err": 0.6082762530298219,
+   "err_ridotta": 0.31622776601683794,
+   "conf_ridotta": 0.7971654089723651
+  },
+  {
+   "caso": "piegato",
+   "misura": "1500x2000",
+   "conf": 0.928465059183636,
+   "err": 0.670820393249937,
+   "err_ridotta": 0.5,
+   "conf_ridotta": 0.9283803635893211,
+   "jscanify": 0.08944271909999159
+  },
+  {
+   "caso": "piegato",
+   "misura": "3000x4000",
+   "conf": 0.928173381427568,
+   "err": 0.4472135954999579,
+   "err_ridotta": 0.5,
+   "conf_ridotta": 0.9281710841612755
+  },
+  {
+   "caso": "scrivania-oggetti",
+   "misura": "1500x2000",
+   "conf": 0.8501851491486332,
+   "err": 0.5,
+   "err_ridotta": 0.5,
+   "conf_ridotta": 0.8502006802107107,
+   "jscanify": 0.08
+  },
+  {
+   "caso": "scrivania-oggetti",
+   "misura": "3000x4000",
+   "conf": 0.8503928468432217,
+   "err": 0.4242640687119285,
+   "err_ridotta": 0.5,
+   "conf_ridotta": 0.8509333673608973
+  },
+  {
+   "caso": "ruotato",
+   "misura": "2000x1500",
+   "conf": 0.12887858592894036,
+   "err": 67.74370819493129,
+   "err_ridotta": 74.49248284223046,
+   "conf_ridotta": 0.17538712572118073,
+   "jscanify": 33.50849444543876
+  },
+  {
+   "caso": "ruotato",
+   "misura": "4000x3000",
+   "conf": 0.18205754230295093,
+   "err": 76.71147241449613,
+   "err_ridotta": 74.58471693316265,
+   "conf_ridotta": 0.18205754230295093
+  },
+  {
+   "caso": "angolo-fuori",
+   "misura": "1500x2000",
+   "conf": 0.8966293986127339,
+   "err": 4.8,
+   "err_ridotta": 9.90050503762308,
+   "conf_ridotta": 0.9478373797216529,
+   "jscanify": 61.475211264378764
+  },
+  {
+   "caso": "angolo-fuori",
+   "misura": "3000x4000",
+   "conf": 0.8970896704443806,
+   "err": 4.8,
+   "err_ridotta": 4.8,
+   "conf_ridotta": 0.897402172946444
+  },
+  {
+   "caso": "ruotato-15",
+   "misura": "1500x2000",
+   "conf": 0.8913377355628785,
+   "err": 0.36055512754639896,
+   "err_ridotta": 0.36055512754639896,
+   "conf_ridotta": 0.8913379859106643,
+   "jscanify": 0.08944271909999159
+  },
+  {
+   "caso": "ruotato-15",
+   "misura": "3000x4000",
+   "conf": 0.8907463940599717,
+   "err": 0.9,
+   "err_ridotta": 0.9,
+   "conf_ridotta": 0.8907458985784993
+  },
+  {
+   "caso": "ruotato-15-chiaro",
+   "misura": "1500x2000",
+   "conf": 0.8895978552936867,
+   "err": 2.5079872407968904,
+   "err_ridotta": 1.7029386365926402,
+   "conf_ridotta": 0.8900401343870317,
+   "jscanify": 48.438414507496006
+  },
+  {
+   "caso": "ruotato-15-chiaro",
+   "misura": "3000x4000",
+   "conf": 0.8906554137168539,
+   "err": 0.9,
+   "err_ridotta": 1.7029386365926402,
+   "conf_ridotta": 0.8903366411890533
+  }
+ ]
+}

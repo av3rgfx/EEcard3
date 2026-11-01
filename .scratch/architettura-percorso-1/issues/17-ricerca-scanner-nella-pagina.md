@@ -17,7 +17,7 @@ Limiti: nessuna installazione nel progetto e nessun account; nessuna immagine a 
 
 ## Risposta (Answer)
 
-Ricerca del 1/11/2026 in [docs/ricerca/scanner-documenti.md](../../../docs/ricerca/scanner-documenti.md), §10, fatta in sequenza dalla sessione principale: l'agente in background non ha avuto il permesso. Letti npm, GitHub (README, licenze, segnalazioni), Hacker News e i risultati del motore di ricerca. Reddit non ha dato discussioni e dal contenitore risponde 403. **Prova pratica non fatta:** il permesso per scaricare ed eseguire il codice delle librerie è stato negato.
+Ricerca del 1/11/2026 in [docs/ricerca/scanner-documenti.md](../../../docs/ricerca/scanner-documenti.md), §10, fatta in sequenza dalla sessione principale: l'agente in background non ha avuto il permesso. Letti npm, GitHub (README, licenze, segnalazioni), Hacker News e i risultati del motore di ricerca. Reddit non ha dato discussioni e dal contenitore risponde 403. **Prova pratica:** prima negata dal sistema dei permessi, poi autorizzata dall'utente e fatta lo stesso giorno (ricerca, §10.7).
 
 - **Una decina di strumenti liberi trovati.** scanic resta il migliore: MIT, circa 42 KB, attivo, con prove su foto vere a ogni rilascio. Dalla 1.7.0 (13/10/2026) lavora anche sul **video della fotocamera** e in un Web Worker.
 - **Rilevatore IA di scanic:** il codice è MIT, ma il modello è addestrato anche su immagini «solo per ricerca» (MIDV, SmartDoc). Resta spento; se servisse, prima un parere sulle licenze.
@@ -26,3 +26,13 @@ Ricerca del 1/11/2026 in [docs/ricerca/scanner-documenti.md](../../../docs/ricer
 - **Indizi dagli sviluppatori:** la parte difficile è la fotocamera dentro la pagina su Safari di iPhone (memoria, blocchi), non trovare i bordi.
 
 *Parere dell'agente, non decisione:* scanic al centro, in due tempi. Nel pilota la foto dal campo file e poi «Controlla il foglio»; dopo una prova su un iPhone vero, la fotocamera dentro la pagina con riquadro in tempo reale, consigli a voce e scatto automatico. La sesta domanda per il ticket [Documenti, foto e ricevute in PDF](12-documenti-foto-ricevute.md) è nella ricerca, §9.
+
+**Prova con fogli inventati (1/11/2026, autorizzata dall'utente).** Script in [prove/scanner/](../prove/scanner/README.md), esito nella ricerca, §10.7.
+- **Come:** dodici scene inventate (contabile e scontrino di prova) a 1500×2000 e a 12 MP, in Chromium su un computer, con ogni richiesta esterna bloccata: nessuna richiesta.
+- **scanic** trova il foglio in 9 scene su 12, anche su un tavolo chiaro, con l'ombra e con la piega. Sbaglia a 45° e sul tessuto a righe a 12 MP, e lì la sua fiducia scende (0,18 e 0,65 contro 0,79–0,95). Va rimpicciolita la foto a circa 1000 px prima della ricerca: a 12 MP intera ha scambiato le venature del legno per il bordo.
+- **jscanify** è più preciso sui fogli ben staccati dallo sfondo, ma perde il foglio sul tavolo chiaro, sul tessuto e con un angolo fuori, senza accorgersene.
+- **Video:** 30 fotogrammi su 30, circa 54 ms l'uno.
+- **Schiarimento nostro** di circa 25 righe: toglie l'ombra e uniforma il foglio piegato.
+- **Editor di scanic:** nomi degli angoli in inglese e fissi, nessun annuncio allo screen reader, pulsanti senza trascinare nascosti.
+
+*Parere aggiornato, non decisione:* scanic con due regole nostre (foto rimpicciolita, soglia di fiducia intorno a 0,75 che apre l'editor); schiarimento, consigli a voce ed eventualmente l'editor scritti da noi; fotocamera nella pagina dopo la prova su un iPhone vero.

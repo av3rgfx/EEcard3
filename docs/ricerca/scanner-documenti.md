@@ -15,7 +15,7 @@ Legenda: **Fonte** = ciò che dice la fonte; **Inferenza** = ciò che ne deduce 
 - **Le foto di iPhone:** dalla fotocamera di Safari arriva un JPEG; dalla libreria foto, per impostazione predefinita, la versione «più compatibile» [5][6][7]. Un file HEIC può arrivare da «Scegli file». sharp, sul server, non legge l'HEIC con i pacchetti già pronti [19].
 - **App iPhone (dopo):** VisionKit ha la fotocamera per documenti da iOS 13. Trova il foglio, lo ritaglia, raddrizza la prospettiva, uniforma la luce e restituisce le pagine come immagini; il PDF lo fa l'app [21][23].
 - **Android:** lo scanner di ML Kit fa tutto (bordi, filtri, ombre, macchie, più pagine, JPEG e PDF) e lavora sul telefono. Funziona solo nelle **app native** con i servizi Google Play, non nel web [24][25]. ML Kit invia a Google i dati d'uso, non le immagini [26][27].
-- **Ricerca allargata (§10):** fra una decina di strumenti trovati su npm, GitHub e Hacker News, scanic resta il più adatto, e dalla 1.7.0 lavora anche sul video della fotocamera. Il suo rilevatore con l'intelligenza artificiale è addestrato anche su immagini «solo per ricerca»: resta spento. Nessuno strumento libero e maturo fa insieme fotocamera nella pagina, guida e schiarimento: quella parte si scrive noi.
+- **Ricerca allargata e prova (§10):** fra una decina di strumenti trovati su npm, GitHub e Hacker News, scanic resta il più adatto, e dalla 1.7.0 lavora anche sul video della fotocamera. Nella prova con fogli inventati trova il foglio in 9 scene su 12, anche su un tavolo chiaro dove jscanify fallisce; quando sbaglia, la sua fiducia scende. Il suo rilevatore con l'intelligenza artificiale è addestrato anche su immagini «solo per ricerca»: resta spento. Nessuno strumento libero e maturo fa insieme fotocamera nella pagina, guida e schiarimento: quella parte si scrive noi.
 - **Accessibilità:** il campo per scegliere un file è già l'alternativa senza fotocamera. Trascinare gli angoli richiede anche un modo **senza trascinare** (WCAG 2.2, criterio 2.5.7, livello AA) [29]. Nessuna fonte Apple o Google letta descrive una guida a voce per inquadrare il foglio: **Da verificare** sui telefoni.
 
 ## 1. Il web sul telefono
@@ -219,7 +219,7 @@ Risponde al ticket [17 «Ricerca: strumenti per uno scanner nostro dentro la pag
 
 - **Dove si è cercato:** registro npm (ricerca per parole e conteggi settimanali dal 23 al 29/10/2026) [30]; GitHub (README, licenze, elenchi delle segnalazioni, ultimo commit con `git ls-remote`) [31]–[37]; Hacker News con la sua interfaccia pubblica [38]; motore di ricerca con domande su Reddit e sui forum [39].
 - **Reddit:** nessuna discussione trovata. Le ricerche limitate a reddit.com non hanno dato risultati, e il sito dal contenitore risponde 403 (già visto il 30/10/2026 in [skill-sicurezza-sviluppo.md](skill-sicurezza-sviluppo.md), §0). Le opinioni degli sviluppatori vengono quindi dalle segnalazioni su GitHub e da Hacker News, e valgono come **indizi**, non come fonti.
-- **Prova pratica non fatta:** il permesso per scaricare ed eseguire il codice delle librerie in un browser, anche con fogli inventati, è stato negato. I numeri qui sotto sono quelli dichiarati dagli autori, non misurati da noi, salvo le grandezze dei file già misurate nel §2.
+- **Prova pratica:** prima negata dal sistema dei permessi, poi autorizzata dall'utente e fatta con fogli inventati (§10.7). Nel §10.2–10.6 i numeri sono quelli dichiarati dagli autori; quelli misurati da noi sono nel §10.7.
 
 ### 10.2 Candidati trovati
 
@@ -267,9 +267,58 @@ Scartati senza leggerli oltre, perché commerciali o con chiave di licenza: Dyna
    - *secondo tempo:* la **fotocamera dentro la pagina**, con il riquadro del foglio in tempo reale, consigli a voce e scatto automatico. scanic legge già il video. Si aggiunge solo dopo una prova su un iPhone vero: memoria, calore, permessi, VoiceOver.
 3. **Scritti da noi:** schiarimento e guida, piccoli e provati con fogli inventati.
 4. **Da non usare:** docuSnap (licenza contraddittoria), scanner-core come dipendenza (troppo giovane), OpenCV.js e jscanify (peso; blocco su iPhone).
-5. **Prova consigliata, quando l'utente la autorizza:** scanic su fogli inventati nel browser del contenitore, poi su un iPhone e un Android veri.
+5. **Prova:** fatta su fogli inventati (§10.7), con esito buono e due regole in più; resta quella su un iPhone e un Android veri.
 
 *Perché in due tempi:* il primo dà subito bordi e raddrizzamento con poco rischio. Il secondo è quello che l'utente immagina, ma le fonti dicono che su Safari di iPhone è la parte fragile.
+
+### 10.7 Prova con fogli inventati
+
+Autorizzata dall'utente il 1/11/2026. Gli script sono in [.scratch/architettura-percorso-1/prove/scanner/](../../.scratch/architettura-percorso-1/prove/scanner/README.md), con i numeri in `risultati.json`.
+
+**Metodo**
+- La prova crea da sé una **contabile di prova** A4 e uno **scontrino di prova**, con testo inventato. Li posa in prospettiva su sfondi diversi, con luce non uniforme, rumore e una leggera sfocatura, come in una foto. Gli angoli veri sono quindi noti.
+- **Dodici scene:** legno scuro con prospettiva leggera e forte; tavolo chiaro quasi bianco; tessuto a righe; ombra di una mano sul foglio; scontrino color avorio; foglio piegato a metà; scrivania con telefono, busta e tazza; foglio girato di 15° su legno e su tavolo chiaro; foglio girato di 45°; un angolo fuori dall'inquadratura.
+- **Due misure:** 1500×2000 e 3000×4000 pixel, cioè 12 megapixel come un telefono.
+- **Due librerie:** scanic 1.7.1 e jscanify 1.4.3 con il suo OpenCV.js. Pacchetti scaricati dal registro npm ed estratti in una cartella a parte, fuori dal progetto; niente `npm install`, nessuno script d'installazione eseguito.
+- **Dove:** Chromium 153 senza schermo, su un computer, non su un telefono. Ogni richiesta non locale era bloccata e registrata: **nessuna**. scanic non ha chiesto nulla oltre al suo file.
+- **Errore** = distanza fra gli angoli trovati e quelli veri, in percentuale della diagonale della foto, sull'angolo peggiore. Sotto l'1% il ritaglio è a occhio perfetto; verso il 3–5% un angolo è visibilmente fuori.
+- **Un errore nostro corretto durante la prova:** la prima versione delle scene aveva una cornice scura ai bordi, dovuta alla sfocatura, e metà delle righe trasparenti. Ha falsato il primo giro, che è stato rifatto.
+
+**Risultati** (errore sull'angolo peggiore; per scanic con la foto rimpicciolita da noi a 1000 px sul lato lungo, vedi sotto)
+
+| Scena | scanic, 1500×2000 | scanic, 12 MP | Fiducia di scanic | jscanify, 1500×2000 |
+| --- | --- | --- | --- | --- |
+| Legno, prospettiva leggera | 0,5% | 0,6% | 0,93 | 0,1% |
+| Legno, prospettiva forte | 0,5% | 0,5% | 0,87 | 0,1% |
+| Tavolo chiaro | 0,4% | 0,4% | 0,92 | **49%** |
+| Tessuto a righe | 2,7% | **47%** | 0,90 / **0,65** | **48%** |
+| Ombra di una mano | 4,0% | 4,1% | 0,91 | 0,1% |
+| Scontrino avorio | 0,5% | 0,3% | 0,79 | 0,3% |
+| Foglio piegato | 0,5% | 0,5% | 0,93 | 0,1% |
+| Scrivania con oggetti | 0,5% | 0,5% | 0,85 | 0,1% |
+| Girato di 15°, legno | 0,4% | 0,9% | 0,89 | 0,1% |
+| Girato di 15°, tavolo chiaro | 1,7% | 1,7% | 0,89 | **48%** |
+| Girato di 45° | **74%** | **75%** | **0,18** | **34%** |
+| Angolo fuori inquadratura | 9,9% | 4,8% | 0,90–0,95 | **61%** |
+
+- **Fonte (prova): scanic** trova bene il foglio in 9 scene su 12, anche sul tavolo chiaro, con l'ombra e con la piega. Sbaglia con il foglio a 45° e con il tessuto a righe a 12 MP; in questi due casi la sua **fiducia** scende (0,18 e 0,65), mentre nei casi giusti resta fra 0,79 e 0,95. Nell'angolo fuori inquadratura il ritaglio comprende un po' di sfondo, come ci si aspetta.
+- **Fonte (prova): foto grandi.** Passando la foto da 12 MP così com'è, scanic ha sbagliato anche il legno con prospettiva leggera (13%), scambiando le venature per il bordo. Rimpicciolita da noi a 1000 px prima della ricerca, con gli angoli riportati alla misura vera, l'errore torna allo 0,6%. Il tempo di ricerca è di 30–180 ms; il raddrizzamento di una foto da 12 MP di 0,2–0,6 s.
+- **Fonte (prova): jscanify** è più preciso quando il foglio stacca bene dallo sfondo (0,1%). Ma perde il foglio sul tavolo chiaro, sul tessuto, con un angolo fuori e a 45°: sceglie un altro contorno e non dà alcuna fiducia per accorgersene. Ricerca in circa 130–180 ms, più 3,5 MB da scaricare.
+- **Fonte (prova): video.** Su un video 1080×1440 creato dalla scena con l'ombra, che si muove un poco, scanic ha trovato il foglio in 30 fotogrammi su 30, con 54 ms a fotogramma (massimo 111). Al ritmo di 10 ricerche al secondo, come nell'esempio dell'autore, resta margine, ma su un computer: su iPhone **Da verificare**.
+- **Fonte (prova): schiarimento nostro.** Circa 25 righe: si stima la luce della carta su riquadri di 16 px, si ammorbidisce, si divide e si porta il fondo a bianco. Toglie l'ombra della mano e uniforma la metà scura del foglio piegato, in 80–125 ms su un foglio da 1500×2000 circa. La linea della piega resta visibile, come è giusto.
+- **Fonte (prova): editor degli angoli.**
+  - I quattro angoli sono pulsanti, con un nome **in inglese** («Top-left corner»). I nomi sono scritti nel codice e non si cambiano dalle opzioni, a differenza di quelli dei pulsanti della barra («Reset», «Cancel», «Apply»).
+  - Con la tastiera le frecce spostano l'angolo (5 pressioni, 5 px).
+  - I pulsanti per spostare senza trascinare ci sono, ma nascosti finché non si accende «Precision nudge».
+  - Non c'è nessun annuncio per lo screen reader (`aria-live`).
+  - I pallini degli angoli si vedono di 20×20 px; secondo la guida l'area di tocco è di 44 px [18], da misurare su telefono.
+- **Inferenza.**
+  - **Regole per noi:** rimpicciolire sempre la foto a circa 1000 px prima della ricerca; sotto una fiducia di circa 0,75 non fidarsi del ritaglio e aprire subito l'editor, con un messaggio. La soglia è da tarare su foto vere.
+  - **Editor:** i nomi italiani e gli annunci li mettiamo noi, oppure scriviamo il nostro editor sopra `extractDocument`. L'editor di scanic è piccolo; il nostro sarebbe di poche decine di righe e rispetterebbe meglio DESIGN.md e il criterio 2.5.7.
+  - **Nessuna combinazione con jscanify:** dove scanic sbaglia, sbaglia anche jscanify; dove jscanify è più preciso, scanic lo è abbastanza.
+- **Limiti:** immagini sintetiche, più pulite delle foto vere (niente riflessi, mossi, dita, fogli curvi); un browser da computer, non Safari su iPhone; nessuna prova di memoria o di calore. La prova dice che la strada regge, non che regge sul telefono.
+
+**Parere aggiornato dell'agente, dopo la prova** (*parere, non decisione*): la scelta di scanic esce rafforzata, con due regole nostre: foto rimpicciolita e soglia di fiducia. Insieme a scanic si scrivono noi tre cose: schiarimento (provato qui), consigli a voce, ed eventualmente l'editor. La fotocamera dentro la pagina resta per il secondo tempo, dopo la prova su un iPhone vero, partendo dalla stessa pagina di prova.
 
 ## Fonti
 
@@ -321,6 +370,6 @@ Tutte lette il 1/11/2026.
 - **docs.opencv.org**, pagine della guida (per esempio `tutorial_js_setup.html`) e **opencv.org/license**: risposta 403 o pagina di controllo anti-robot. Si sono lette le stesse guide nel repository di OpenCV [15]. La data del passaggio ad Apache 2.0 non è stata letta su una fonte ufficiale.
 - **API di GitHub** per rilasci e date dei commit (WebKit, OpenCV, jscanify, scanic): non abilitata in questa sessione. I commit sono letti con `git ls-remote`, le versioni e le date da npm.
 - **Accessibilità della fotocamera per documenti** di Apple e dello scanner di ML Kit: nessuna pagina ufficiale trovata che ne parli.
-- **Non eseguiti:** prove in un browser, su iPhone o su Android; nessuna libreria è stata eseguita. Per la ricerca allargata (§10) la prova è stata chiesta e il permesso negato.
+- **Non eseguiti:** prove su iPhone o su Android. La prova nel browser di un computer, con fogli inventati, è nel §10.7.
 - **Reddit:** nessuna discussione trovata con il motore di ricerca; il sito risponde 403 dal contenitore (§10.1).
 - **Sorgente di OpenDocScan e di Scanicle:** non trovato.
