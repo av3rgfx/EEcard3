@@ -2,7 +2,7 @@
 
 Type: grilling
 Status: open
-Blocked by: 02, 06, 08, 15
+Blocked by: 02, 06, 08, 15, 17
 Mappa: [Architettura del percorso 1](../map.md)
 
 ## Domanda (Question)
@@ -35,3 +35,5 @@ Limiti: nessun account o servizio. Scelta in ARCHITECTURE.md.
 **1/11/2026, da [Verifica operativa del percorso 1](16-verifica-operativa.md).** Strumenti decisi: Drizzle su PostgreSQL 17, migrazioni che aggiungono e non tolgono, un solo lavoro notturno con il programmatore di Scalingo (anche per cancellare ciò che ha la conservazione scaduta), prove nel browser con Playwright in ogni controllo. Il PDF delle ricevute si può provare lì. Contenitori temporanei del lavoro notturno e del comando dopo la pubblicazione: M, 512 MiB.
 
 **1/11/2026, da [Ricerca: scanner di documenti già pronti](15-ricerca-scanner-documenti.md).** Ricerca chiusa in [docs/ricerca/scanner-documenti.md](../../../docs/ricerca/scanner-documenti.md); questo ticket non ha più blocchi aperti. Da decidere qui, con le cinque domande del §9: quali caricamenti passano dallo scanner (la proposta esclude le foto della facciata); nel pilota solo il campo file con il ritocco sul server oppure anche «Controlla il foglio» con i bordi trovati da soli; un PDF unico per documento o pagine separate; cosa fare con un HEIC che il server non legge; su quali telefoni e con quali screen reader provare. Lo scanner cambia anche le schermate di caricamento: l'aspetto va poi in DESIGN.md.
+
+**1/11/2026, preferenza dell'utente e [Ricerca: strumenti per uno scanner nostro dentro la pagina](17-ricerca-scanner-nella-pagina.md).** All'utente piace l'idea di uno **scanner nostro dentro la pagina**; prima di scegliere ha chiesto una ricerca allargata, ora chiusa (ricerca, §10). Si aggiunge una sesta domanda (§9): la fotocamera dentro la pagina, con riquadro in tempo reale, consigli a voce e scatto automatico, entra nel pilota oppure in un secondo tempo, dopo una prova su un iPhone vero? Il parere dell'agente è il secondo tempo. Per la prova con fogli inventati serve il permesso dell'utente di eseguire nel contenitore il codice di scanic.

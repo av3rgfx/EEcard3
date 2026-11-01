@@ -69,6 +69,8 @@ Il 1/11/2026 è chiuso anche [Servizi esterni: email, SMS e ISTAT](.scratch/arch
 
 Il 1/11/2026 è chiusa anche la [ricerca sugli scanner di documenti](.scratch/architettura-percorso-1/issues/15-ricerca-scanner-documenti.md) ([docs/ricerca/scanner-documenti.md](docs/ricerca/scanner-documenti.md)). Nessun browser del telefono porta lo scanner di sistema dentro la pagina: su iPhone si può scansionare con File o Anteprima e poi scegliere il PDF; la scansione di Google Drive salva su Google e non va suggerita. Nel browser la libreria libera **scanic** (MIT, circa 42 KB) trova i bordi del foglio e lo raddrizza dentro il telefono; schiarire è poco codice nostro; sul server sharp riduce la foto e toglie luogo e ora. Per l'app iPhone c'è VisionKit; ML Kit vale solo per un'app Android. Il parere dell'agente e cinque domande per l'utente sono nella ricerca, §7 e §9. Molti punti si verificano solo su telefoni veri.
 
+Il 1/11/2026, su richiesta dell'utente, a cui piace uno **scanner nostro dentro la pagina**, è chiusa anche la [ricerca allargata](.scratch/architettura-percorso-1/issues/17-ricerca-scanner-nella-pagina.md) (stesso file, §10). Fra una decina di strumenti liberi resta **scanic**, che dalla 1.7.0 lavora anche sul video della fotocamera. Il suo rilevatore con l'intelligenza artificiale resta spento: è addestrato anche su immagini «solo per ricerca». Schiarimento e consigli a voce («avvicinati», «stai fermo») si scrivono noi. Parere dell'agente: nel pilota la foto e poi «Controlla il foglio»; la fotocamera dentro la pagina dopo una prova su un iPhone vero. Sesta domanda nella ricerca, §9. Reddit non ha dato discussioni; la prova con fogli inventati non è fatta, perché il permesso di eseguire il codice delle librerie è stato negato.
+
 **Prossima sessione:** [Documenti, foto e ricevute in PDF](.scratch/architettura-percorso-1/issues/12-documenti-foto-ricevute.md), l'ultimo ticket aperto della mappa, ora senza blocchi; il messaggio è sotto.
 
 ---
@@ -77,10 +79,10 @@ Il 1/11/2026 è chiusa anche la [ricerca sugli scanner di documenti](.scratch/ar
 
 /wayfinder .scratch/architettura-percorso-1/map.md — ticket «Documenti, foto e ricevute in PDF» (.scratch/architettura-percorso-1/issues/12-documenti-foto-ricevute.md).
 
-Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora) e il ticket con tutti i commenti; poi docs/ricerca/scanner-documenti.md (§7 e §9) e docs/ricerca/pdf-ricevute.md, PRODUCT.md §12 (riga del 30/10/2026 «Scansione automatica al caricamento») e, in DESIGN.md, «Ricevute stampate (percorso 1)» e «Foto e illustrazione della casa (percorso 1)». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora) e il ticket con tutti i commenti; poi docs/ricerca/scanner-documenti.md (§7, §9 e §10) e docs/ricerca/pdf-ricevute.md, PRODUCT.md §12 (riga del 30/10/2026 «Scansione automatica al caricamento») e, in DESIGN.md, «Ricevute stampate (percorso 1)» e «Foto e illustrazione della casa (percorso 1)». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
 
 - Rivendica il ticket (`Status: claimed`) e lavora solo su questo, con le skill `grilling`, `domain-modeling` e `ponytail`.
-- Fammi le domande una alla volta, in parole semplici, con una raccomandazione; comprese le cinque sullo scanner della ricerca (§9).
+- Fammi le domande una alla volta, in parole semplici, con una raccomandazione; comprese le sei sullo scanner della ricerca (§9).
 - Registra le scelte tecniche in ARCHITECTURE.md, un cambio di prodotto in PRODUCT.md §12, l'aspetto in DESIGN.md; un ADR solo se la scelta è difficile da invertire.
 - Nessuna installazione, nessun account, nessuna immagine a servizi esterni; prove usa e getta solo con fogli inventati.
 

@@ -15,6 +15,7 @@ Legenda: **Fonte** = ciò che dice la fonte; **Inferenza** = ciò che ne deduce 
 - **Le foto di iPhone:** dalla fotocamera di Safari arriva un JPEG; dalla libreria foto, per impostazione predefinita, la versione «più compatibile» [5][6][7]. Un file HEIC può arrivare da «Scegli file». sharp, sul server, non legge l'HEIC con i pacchetti già pronti [19].
 - **App iPhone (dopo):** VisionKit ha la fotocamera per documenti da iOS 13. Trova il foglio, lo ritaglia, raddrizza la prospettiva, uniforma la luce e restituisce le pagine come immagini; il PDF lo fa l'app [21][23].
 - **Android:** lo scanner di ML Kit fa tutto (bordi, filtri, ombre, macchie, più pagine, JPEG e PDF) e lavora sul telefono. Funziona solo nelle **app native** con i servizi Google Play, non nel web [24][25]. ML Kit invia a Google i dati d'uso, non le immagini [26][27].
+- **Ricerca allargata (§10):** fra una decina di strumenti trovati su npm, GitHub e Hacker News, scanic resta il più adatto, e dalla 1.7.0 lavora anche sul video della fotocamera. Il suo rilevatore con l'intelligenza artificiale è addestrato anche su immagini «solo per ricerca»: resta spento. Nessuno strumento libero e maturo fa insieme fotocamera nella pagina, guida e schiarimento: quella parte si scrive noi.
 - **Accessibilità:** il campo per scegliere un file è già l'alternativa senza fotocamera. Trascinare gli angoli richiede anche un modo **senza trascinare** (WCAG 2.2, criterio 2.5.7, livello AA) [29]. Nessuna fonte Apple o Google letta descrive una guida a voce per inquadrare il foglio: **Da verificare** sui telefoni.
 
 ## 1. Il web sul telefono
@@ -182,6 +183,8 @@ Dopo il web: **E. VisionKit** nell'app iPhone (§3). **F. ML Kit** solo se un gi
 
 ## 7. Parere dell'agente
 
+*Aggiornato dal §10 (ricerca allargata): la scelta di scanic resta; il §10 aggiunge la fotocamera dentro la pagina come passo successivo e tiene spento il rilevatore IA.*
+
 *Parere, non decisione.* Seguendo l'ordine «prima il telefono, poi le librerie, poi il codice nostro»:
 
 1. **Sempre**, per tutti i caricamenti: campo file con `accept="image/*,application/pdf"` e `multiple`, **senza** `capture`. Così il menu di sistema offre fotocamera, foto e file, e chi non usa la fotocamera ha già la sua strada. Una riga d'aiuto: «Su iPhone puoi anche scansionare il foglio con l'app File e scegliere il PDF». Sul server: sharp riduce la foto, la ruota per il verso giusto, toglie luogo e ora, controlla tipo e grandezza.
@@ -194,17 +197,79 @@ Dopo il web: **E. VisionKit** nell'app iPhone (§3). **F. ML Kit** solo se un gi
 ## 8. Dove serve un parere professionale
 
 - **Privacy:** contabili e documenti contengono dati personali di terzi (nomi, IBAN, indirizzi). Il trattamento sul telefono e sul nostro server rientra nel parere privacy già previsto. Con un'app Android con ML Kit andrebbero scritte nell'informativa le metriche inviate a Google [26]. Questa ricerca non dà un parere legale.
+- **Licenze del modello IA:** solo se un giorno si accendesse il rilevatore IA di scanic, addestrato anche su immagini «solo per ricerca» (§10.3) [40].
 - **Licenze:** solo se si scegliesse una libreria LGPL per l'HEIC nel browser (`heic-to`, `libheif-js`) o una libvips con x265 sul server (brevetti HEVC) [19][20].
 
 ## 9. Cosa resta all'utente
 
-Domande per il ticket [Documenti, foto e ricevute in PDF](../../.scratch/architettura-percorso-1/issues/12-documenti-foto-ricevute.md):
+Sei domande per il ticket [Documenti, foto e ricevute in PDF](../../.scratch/architettura-percorso-1/issues/12-documenti-foto-ricevute.md):
 
 1. **Quali caricamenti** passano dallo scanner: contabili, ricevute, documenti del fascicolo? Le foto della facciata no (proposta del §7).
 2. **Nel pilota o dopo:** nel pilota solo il campo file con il ritocco sul server (A), oppure anche «Controlla il foglio» con il rilevamento dei bordi (C)?
 3. **Più pagine:** un PDF unico per documento, unito sul server, oppure pagine separate?
 4. **HEIC che non si legge:** convertirlo (libreria LGPL o server compilato a parte) oppure chiedere una foto in JPEG con un messaggio chiaro?
-5. **Prove con telefoni veri:** su quali iPhone e Android, con VoiceOver e TalkBack, e con fogli inventati?
+5. **Fotocamera dentro la pagina** (§10.6): nel pilota, oppure in un secondo tempo, dopo una prova su un iPhone vero?
+6. **Prove con telefoni veri:** su quali iPhone e Android, con VoiceOver e TalkBack, e con fogli inventati?
+
+## 10. Ricerca allargata: strumenti per uno scanner nella pagina
+
+Risponde al ticket [17 «Ricerca: strumenti per uno scanner nostro dentro la pagina»](../../.scratch/architettura-percorso-1/issues/17-ricerca-scanner-nella-pagina.md), aperto il 1/11/2026 su richiesta dell'utente, a cui piace l'idea di uno scanner nostro dentro la pagina. Letture fatte in sequenza dalla sessione principale: l'agente in background non ha avuto il permesso.
+
+### 10.1 Metodo
+
+- **Dove si è cercato:** registro npm (ricerca per parole e conteggi settimanali dal 23 al 29/10/2026) [30]; GitHub (README, licenze, elenchi delle segnalazioni, ultimo commit con `git ls-remote`) [31]–[37]; Hacker News con la sua interfaccia pubblica [38]; motore di ricerca con domande su Reddit e sui forum [39].
+- **Reddit:** nessuna discussione trovata. Le ricerche limitate a reddit.com non hanno dato risultati, e il sito dal contenitore risponde 403 (già visto il 30/10/2026 in [skill-sicurezza-sviluppo.md](skill-sicurezza-sviluppo.md), §0). Le opinioni degli sviluppatori vengono quindi dalle segnalazioni su GitHub e da Hacker News, e valgono come **indizi**, non come fonti.
+- **Prova pratica non fatta:** il permesso per scaricare ed eseguire il codice delle librerie in un browser, anche con fogli inventati, è stato negato. I numeri qui sotto sono quelli dichiarati dagli autori, non misurati da noi, salvo le grandezze dei file già misurate nel §2.
+
+### 10.2 Candidati trovati
+
+| Strumento | Cos'è | Licenza | Peso, dipendenze | Attività | Esito |
+| --- | --- | --- | --- | --- | --- |
+| **scanic** [32] | Libreria: bordi, raddrizzamento, editor degli angoli; dalla 1.7.0 (13/10/2026) anche sul video della fotocamera e in un Web Worker | MIT | ~42 KB compressi, nessuna | 21 versioni in 15 mesi, prove su foto vere a ogni rilascio, 5 segnalazioni tutte chiuse | **Il migliore** |
+| scanic-ml [33] | Rilevatore IA facoltativo di scanic (modello DocCornerNet) | MIT il codice; dati di addestramento in parte «solo per ricerca» | ~2 MB | come scanic | Spento (§10.3) |
+| jscanify [34] | Libreria sopra OpenCV.js | MIT | ~3,5 MB compressi con OpenCV.js | 31 segnalazioni chiuse; ultima versione luglio 2026 | Pesante; blocco su iPhone mai risolto (§10.4) |
+| opencv-document-scanner [35] | Libreria sopra OpenCV.js | MIT | come OpenCV.js | ~1.100 scaricamenti in una settimana, ultima versione 9/2025; l'autore lavora per Dynamsoft, gli esempi rimandano al suo visore commerciale | Non aggiunge nulla a jscanify |
+| @jg-stevan/scanner-core [36] | Motore completo: fotocamera, bordi (OpenCV 4.5.5 in un worker), scatto automatico, schiarimento, PDF, testo | MIT | richiede OpenCV, zustand, jspdf, heic2any; legato a una variabile di Next.js | Nato il 15/10/2026, 564 scaricamenti in una settimana | Troppo giovane e legato; utile da leggere per lo schiarimento |
+| docuSnap [37] | Fotocamera con riquadro in tempo reale, controlli di nitidezza, luce e riflessi, consigli («avvicinati», «stai fermo»), scatto automatico | **Contraddittoria:** il README dice «valutazione o commerciale, contattare l'autore», il file LICENSE è MIT di un altro autore | Un file, nessuna dipendenza; scarica pico.js da un CDN | Non su npm | Scartato per la licenza; l'idea della guida è buona |
+| docscan (pncolvr) [31] | App completa nel browser: OpenCV.js, pdf-lib, modo colore e bianco e nero, PDF di più pagine | MIT | come OpenCV.js | App, non libreria | Solo riferimento |
+| Doxa [31] | Soglie adattive per fogli (Sauvola, Bradley e altre) in C++, compilabili in WebAssembly | CC0 | va compilato noi | Nessun pacchetto npm pronto | Non serve: lo schiarimento è poche decine di righe |
+| image-js [30] | Elaborazione d'immagini in JavaScript | MIT | ~11 MB non compresso | 71.000 scaricamenti in una settimana | Generica, nessun aiuto sui bordi del foglio |
+| OpenDocScan, Scanicle [39] | App nel browser segnalate da elenchi di prodotti | Scanicle chiusa; OpenDocScan «MIT o Apache» secondo l'elenco | — | Sorgente non trovato | Non verificabili |
+
+Scartati senza leggerli oltre, perché commerciali o con chiave di licenza: Dynamsoft, Genius Scan Web SDK, Scanbot, Microblink [30]. Anche i molti pacchetti per React Native, Capacitor o Cordova non servono: avvolgono VisionKit e ML Kit nelle app (§3, §4).
+
+### 10.3 Il rilevatore IA di scanic
+
+- **Fonte:** il modello è DocCornerNet, MIT [33]. È addestrato sul DocCornerDataset, che secondo la sua scheda ha licenza «altro»: MIDV-500, MIDV-2019 e SmartDoc «solo per uso di ricerca», COCO in CC BY 4.0, dataset Roboflow con licenze diverse [40].
+- **Inferenza.** Usare in un servizio commerciale un modello addestrato su immagini «solo per ricerca» è una questione legale aperta. Il rilevatore resta spento, come già proposto nel §7. Se un giorno servisse, prima un parere sulle licenze.
+
+### 10.4 Cosa dicono gli sviluppatori (indizi)
+
+- **jscanify su iPhone:** la fotocamera si blocca subito nei browser di iPhone e su Android no. Il manutentore non trova la causa; la segnalazione è chiusa a gennaio 2024 senza conferma della soluzione [34].
+- **jscanify in generale:** segnalazioni chiuse su ricevute non trovate, sfondi pieni di oggetti, qualità scarsa [34]. Nel lancio su Hacker News (aprile 2023, 51 punti) le domande erano su una prova con la fotocamera e sui fogli curvi [38].
+- **scanic:** una segnalazione su «precisione bassa» (giugno 2026). Il manutentore corregge in giornata un errore di caricamento e chiede immagini d'esempio per la precisione [32].
+- **OpenCV.js:** la memoria si libera a mano, oggetto per oggetto. Un oggetto dimenticato basta a far cadere una pagina sul telefono (guida citata in [39]; **Inferenza**).
+- **Scanicle:** l'autore, nella presentazione del prodotto, dice che la parte più lunga è stata far funzionare la fotocamera su Safari di iPhone senza superarne i limiti né farlo cadere [39].
+- **Inferenza.** La parte difficile non è trovare i bordi, ma la fotocamera dentro la pagina su iPhone: memoria, permessi, calore. Va provata su un iPhone vero prima di prometterla.
+
+### 10.5 Cosa resta da scrivere a noi
+
+- **Schiarimento («effetto documento»).** Nessuna libreria matura lo offre da sola. Gli algoritmi sono noti e pubblici: soglia locale di Bradley-Roth o di Sauvola con l'immagine integrale; stima dell'ombra con una chiusura morfologica su un'immagine ridotta, poi divisione; stiramento del bianco. scanner-core li scrive in circa 700 righe MIT, leggibili come esempio [36]. Si scrivono noi, con una prova su fogli inventati.
+- **Guida e scatto automatico.** docuSnap mostra l'idea: nitidezza, luce, riflessi e grandezza del foglio controllati a ogni fotogramma, con consigli come «avvicinati» e «stai fermo» [37]. Si scrive noi, sui bordi trovati da scanic. Sarebbe anche la **guida a voce** che manca nelle fonti Apple e Google (§5.2): gli stessi consigli letti dallo screen reader.
+
+### 10.6 Parere aggiornato dell'agente
+
+*Parere, non decisione.*
+
+1. **Il cuore resta scanic**, servito dal nostro sito, con il rilevatore IA spento: è l'unico strumento libero, leggero, attivo e con le prove su foto vere.
+2. **Scanner nella pagina in due tempi:**
+   - *primo tempo, pilota:* la foto si scatta con la fotocamera di sistema dal campo file, poi «Controlla il foglio» con scanic (§7, punto 2);
+   - *secondo tempo:* la **fotocamera dentro la pagina**, con il riquadro del foglio in tempo reale, consigli a voce e scatto automatico. scanic legge già il video. Si aggiunge solo dopo una prova su un iPhone vero: memoria, calore, permessi, VoiceOver.
+3. **Scritti da noi:** schiarimento e guida, piccoli e provati con fogli inventati.
+4. **Da non usare:** docuSnap (licenza contraddittoria), scanner-core come dipendenza (troppo giovane), OpenCV.js e jscanify (peso; blocco su iPhone).
+5. **Prova consigliata, quando l'utente la autorizza:** scanic su fogli inventati nel browser del contenitore, poi su un iPhone e un Android veri.
+
+*Perché in due tempi:* il primo dà subito bordi e raddrizzamento con poco rischio. Il secondo è quello che l'utente immagina, ma le fonti dicono che su Safari di iPhone è la parte fragile.
 
 ## Fonti
 
@@ -239,10 +304,23 @@ Tutte lette il 1/11/2026.
 27. Google, ML Kit, «Android data disclosure»: https://developers.google.com/ml-kit/android-data-disclosure — dati raccolti in tutte le funzioni.
 28. Registro npm e conteggi settimanali (23–29/10/2026): https://registry.npmjs.org/ e https://api.npmjs.org/downloads/point/last-week/ per `pdf-lib`, `@cantoo/pdf-lib`, `jspdf`, `pdfkit`, `jscanify`, `scanic`, `@techstark/opencv-js`; README di pdf-lib, https://github.com/Hopding/pdf-lib (`embedJpg`, `embedPng`, Node e browser); guida di PDFKit alle immagini, https://github.com/foliojs/pdfkit/blob/master/docs/images.md (JPEG, PNG, orientamento EXIF).
 29. W3C, «Understanding Success Criterion 2.5.7: Dragging Movements» (WCAG 2.2): https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements.html.
+30. Registro npm, ricerca per parole («document scanner», «document edge detection», «perspective crop», «document detection wasm», «scanner opencv», `keywords:document-scanner`): https://registry.npmjs.org/-/v1/search; conteggi settimanali 23–29/10/2026: https://api.npmjs.org/downloads/point/last-week/ per `scanic`, `scanic-ml`, `jscanify`, `opencv-document-scanner`, `@jg-stevan/scanner-core`, `@mha/scan-edit-lib`, `document_crop`, `image-js`.
+31. GitHub, progetti letti in sola lettura: pncolvr/docscan (README, LICENSE MIT, commit `ee74651`), https://github.com/pncolvr/docscan; brandonmpetty/Doxa (README, LICENSE CC0, commit `f95c0c0`), https://github.com/brandonmpetty/Doxa.
+32. scanic: CHANGELOG (1.5.0–1.7.1), https://github.com/marquaye/scanic/blob/main/CHANGELOG.md; elenco delle segnalazioni, https://github.com/marquaye/scanic/issues?q=is%3Aissue; segnalazione 7, https://github.com/marquaye/scanic/issues/7; README, commit `dec0cd0`.
+33. scanic-ml 0.2.0: https://www.npmjs.com/package/scanic-ml; scheda del modello, https://unpkg.com/scanic-ml@0.2.0/MODEL_CARD.md; DocCornerNet-CoordClass (LICENSE MIT), https://github.com/mapo80/DocCornerNet-CoordClass.
+34. jscanify: elenco delle segnalazioni, https://github.com/puffinsoft/jscanify/issues?q=is%3Aissue; segnalazione 17 «IOS Compatibility», https://github.com/puffinsoft/jscanify/issues/17.
+35. opencv-document-scanner 1.2.2: https://www.npmjs.com/package/opencv-document-scanner; README e LICENSE MIT, https://github.com/tony-xlh/opencvjs-document-scanner (commit `4122ab6`).
+36. @jg-stevan/scanner-core 0.4.1: https://www.npmjs.com/package/@jg-stevan/scanner-core; README e codice `dist/image-modes.js`, `dist/ocr.js` su https://unpkg.com/@jg-stevan/scanner-core@0.4.1/; repository https://github.com/Jg-Stevan/web-scanner (LICENSE MIT, commit `feba267`).
+37. docuSnap: README (licenza «Evaluation / Commercial») e LICENSE (MIT, «Copyright (c) 2023 ColonelParrot»), https://github.com/petermartis/docuSnap (commit `1b43ee6`).
+38. Hacker News, interfaccia pubblica: «Show HN: Scan documents and convert them to PDF with just JavaScript» (jscanify, 15/4/2023), https://news.ycombinator.com/item?id=35576827; ricerche su https://hn.algolia.com/api/v1/search.
+39. Motore di ricerca, risultati letti come indizi: presentazione di Scanicle, https://www.producthunt.com/p/scanicle/scanicle; scheda di OpenDocScan, https://alternativeto.net/software/opendocscan/about/; guida Dynamsoft a OpenCV.js nel browser, https://dynamsoft.com/codepool/web-document-scanner-with-opencvjs.html.
+40. Hugging Face, scheda del DocCornerDataset: https://huggingface.co/datasets/mapo80/DocCornerDataset — licenza «other», fonti e loro licenze.
 
 ## Fonti non raggiunte
 
 - **docs.opencv.org**, pagine della guida (per esempio `tutorial_js_setup.html`) e **opencv.org/license**: risposta 403 o pagina di controllo anti-robot. Si sono lette le stesse guide nel repository di OpenCV [15]. La data del passaggio ad Apache 2.0 non è stata letta su una fonte ufficiale.
 - **API di GitHub** per rilasci e date dei commit (WebKit, OpenCV, jscanify, scanic): non abilitata in questa sessione. I commit sono letti con `git ls-remote`, le versioni e le date da npm.
 - **Accessibilità della fotocamera per documenti** di Apple e dello scanner di ML Kit: nessuna pagina ufficiale trovata che ne parli.
-- **Non eseguiti:** prove in un browser, su iPhone o su Android; nessuna libreria è stata eseguita.
+- **Non eseguiti:** prove in un browser, su iPhone o su Android; nessuna libreria è stata eseguita. Per la ricerca allargata (§10) la prova è stata chiesta e il permesso negato.
+- **Reddit:** nessuna discussione trovata con il motore di ricerca; il sito risponde 403 dal contenitore (§10.1).
+- **Sorgente di OpenDocScan e di Scanicle:** non trovato.
