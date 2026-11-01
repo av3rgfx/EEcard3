@@ -1,0 +1,266 @@
+{
+ "browser": "153.0.8010.12",
+ "richieste_esterne_bloccate": [],
+ "file_locali": [
+  "/script/prova.html",
+  "/pkg/tesseract.js-7.0.0/package/dist/tesseract.min.js",
+  "/script/importo.js",
+  "/pkg/pdfjs-dist-6.5.438/package/build/pdf.min.mjs",
+  "/out/docs/documenti.json",
+  "/pkg/pdfjs-dist-6.5.438/package/build/pdf.worker.min.mjs",
+  "/out/docs/A-contabile-pdf.pdf",
+  "/out/docs/B-app-pdf.pdf",
+  "/out/docs/C-punto-pdf.pdf",
+  "/out/docs/D-scansione-pdf.pdf",
+  "/pkg/tesseract.js-7.0.0/package/dist/worker.min.js",
+  "/pkg/tesseract.js-core-7.0.0/package/tesseract-core-relaxedsimd-lstm.wasm.js",
+  "/pkg/ita-1.0.0/package/4.0.0_best_int/ita.traineddata.gz",
+  "/out/docs/E-screenshot-png.png",
+  "/out/docs/F-foto.png",
+  "/out/docs/G-foto-difficile.png",
+  "/out/docs/M-foto-pessima.png",
+  "/out/docs/N-foto-lontana.png",
+  "/out/docs/O-sbagliato-referto-foto.png",
+  "/out/docs/H-sbagliato-bolletta-pdf.pdf",
+  "/out/docs/I-sbagliato-referto-png.png",
+  "/out/docs/J-sbagliato-biglietto-pdf.pdf",
+  "/out/docs/K-parziale-pdf.pdf",
+  "/out/docs/L-due-mesi-pdf.pdf"
+ ],
+ "avvioOcrMs": 259,
+ "res": [
+  {
+   "id": "A-contabile-pdf",
+   "via": "testo del PDF",
+   "ms": 129,
+   "trovati": [
+    "totale"
+   ],
+   "atteso": [
+    "totale"
+   ],
+   "giusto": true,
+   "avviso": false,
+   "importi_letti": [
+    "730.00",
+    "1.00"
+   ],
+   "estratto": "Banca di Prova S.p.A. Documento inventato per una prova. Nessun dato è vero. Contabile di bonifico SEPA - Esito: eseguito Ordinante Giulia Bianchi (inventata) I"
+  },
+  {
+   "id": "B-app-pdf",
+   "via": "testo del PDF",
+   "ms": 153,
+   "trovati": [
+    "canone"
+   ],
+   "atteso": [
+    "canone"
+   ],
+   "giusto": true,
+   "avviso": false,
+   "importi_letti": [
+    "650.00",
+    "0.00"
+   ],
+   "estratto": "Bonifico inviato App di prova - dati inventati 650,00 € A Mario Rossi (inventato) Da Conto di Giulia Bianchi (inventata) Quando 1 novembre 2026, 09:41 Causale A"
+  },
+  {
+   "id": "C-punto-pdf",
+   "via": "testo del PDF",
+   "ms": 147,
+   "trovati": [
+    "totale"
+   ],
+   "atteso": [
+    "totale"
+   ],
+   "giusto": true,
+   "avviso": false,
+   "importi_letti": [
+    "730.00",
+    "1.00"
+   ],
+   "estratto": "Banca di Prova S.p.A. Documento inventato per una prova. Nessun dato è vero. Contabile di bonifico SEPA - Esito: eseguito Ordinante Giulia Bianchi (inventata) I"
+  },
+  {
+   "id": "D-scansione-pdf",
+   "via": "PDF di immagini + riconoscimento",
+   "ms": 1364,
+   "trovati": [
+    "totale"
+   ],
+   "atteso": [
+    "totale"
+   ],
+   "giusto": true,
+   "avviso": false,
+   "importi_letti": [
+    "730.00",
+    "1.00"
+   ],
+   "estratto": "Banca di Prova S.p.A. Documento inventato per una prova. Nessun dato è vero. Contabile di bonifico SEPA - Esito: eseguito Ordinante Giulia Bianchi (inventata) I"
+  },
+  {
+   "id": "E-screenshot-png",
+   "via": "riconoscimento del testo",
+   "ms": 453,
+   "trovati": [
+    "canone"
+   ],
+   "atteso": [
+    "canone"
+   ],
+   "giusto": true,
+   "avviso": false,
+   "importi_letti": [
+    "650.00",
+    "0.00"
+   ],
+   "estratto": "Bonifico inviato App di prova - dati inventati 650,00 € A Mario Rossi (inventato) ba Conto di Giulia Bianchi (inventata) Quando 1 novembre 2026, 09:41 Causale A"
+  },
+  {
+   "id": "F-foto",
+   "via": "riconoscimento del testo",
+   "ms": 2073,
+   "trovati": [
+    "totale"
+   ],
+   "atteso": [
+    "totale"
+   ],
+   "giusto": true,
+   "avviso": false,
+   "importi_letti": [
+    "730.00",
+    "1.00"
+   ],
+   "estratto": "Banca di Prova S.p.A. Documento inventato per una prova. Nessun dato è vero Contabile di bonifico SEPA - Esito: eseguito Ordinante Giulia Bianchi (inventata) IB"
+  },
+  {
+   "id": "G-foto-difficile",
+   "via": "riconoscimento del testo",
+   "ms": 1049,
+   "trovati": [
+    "totale"
+   ],
+   "atteso": [
+    "totale"
+   ],
+   "giusto": true,
+   "avviso": false,
+   "importi_letti": [
+    "730.00",
+    "1.00"
+   ],
+   "estratto": "Banca di Prova S.p.A. Contabile di bonifico SEPA . Esito: eseguito rdinante Guta Bianchi (inventata) IBAN ordinante !T00 A000 0000 0000 0000 0000 001 Benetician"
+  },
+  {
+   "id": "M-foto-pessima",
+   "via": "riconoscimento + 2° giro preparato",
+   "ms": 1996,
+   "trovati": [],
+   "atteso": [
+    "totale"
+   ],
+   "giusto": false,
+   "avviso": true,
+   "importi_letti": [],
+   "estratto": "ene spa ini “= opa, e a; - _ - fn rem ipa ° \"tue pn ” e n © tn “——— e ma, - “ua e_ - “ln - ninanioe o SO - "
+  },
+  {
+   "id": "N-foto-lontana",
+   "via": "riconoscimento + 2° giro preparato",
+   "ms": 2194,
+   "trovati": [],
+   "atteso": [
+    "totale"
+   ],
+   "giusto": false,
+   "avviso": true,
+   "importi_letti": [],
+   "estratto": "Banca di Prova SpA atea è sentina SEPA Gata: cagato sm 3 e e i o tpninn ‘n= azemaznnnz—ne da A i Banca di Prova SpA = Cemsatata è tonica SEPA Gea i i \"de Gaetan"
+  },
+  {
+   "id": "O-sbagliato-referto-foto",
+   "via": "riconoscimento + 2° giro preparato",
+   "ms": 1822,
+   "trovati": [],
+   "atteso": [],
+   "giusto": true,
+   "avviso": true,
+   "importi_letti": [
+    "36.15"
+   ],
+   "estratto": "Referto di laboratorio (inventato) Glucosio 92 mg/dl Colesterolo totale 180 mg/di Ticket pagato 36,15 € E FIFA Referto di laboratorio (inventato) Glucosio 92 mg"
+  },
+  {
+   "id": "H-sbagliato-bolletta-pdf",
+   "via": "testo del PDF",
+   "ms": 115,
+   "trovati": [],
+   "atteso": [],
+   "giusto": true,
+   "avviso": true,
+   "importi_letti": [
+    "48.20",
+    "9.30",
+    "65.00"
+   ],
+   "estratto": "Bolletta luce di prova Documento inventato. Periodo settembre-ottobre 2026 Consumo 650 kWh Quota energia 48,20 € Oneri di sistema 9,30 € Totale da pagare 65,00 "
+  },
+  {
+   "id": "I-sbagliato-referto-png",
+   "via": "riconoscimento + 2° giro preparato",
+   "ms": 950,
+   "trovati": [],
+   "atteso": [],
+   "giusto": true,
+   "avviso": true,
+   "importi_letti": [],
+   "estratto": "Referto di laboratorio (inventato) Glucosio 92 mg/dl Colesterolo totale 180 mg/dl Pressione 120/80 Data 30/10/2026 Referto di laboratorio (inventato) Glucosio 9"
+  },
+  {
+   "id": "J-sbagliato-biglietto-pdf",
+   "via": "testo del PDF",
+   "ms": 167,
+   "trovati": [],
+   "atteso": [],
+   "giusto": true,
+   "avviso": true,
+   "importi_letti": [
+    "73.50"
+   ],
+   "estratto": "Biglietto treno di prova Tratta Milano - Napoli, 650 km Prezzo 73,50 € Posto Carrozza 7, posto 730 "
+  },
+  {
+   "id": "K-parziale-pdf",
+   "via": "testo del PDF",
+   "ms": 132,
+   "trovati": [],
+   "atteso": [],
+   "giusto": true,
+   "avviso": true,
+   "importi_letti": [
+    "300.00",
+    "1.00"
+   ],
+   "estratto": "Banca di Prova S.p.A. Documento inventato per una prova. Nessun dato è vero. Contabile di bonifico SEPA - Esito: eseguito Ordinante Giulia Bianchi (inventata) I"
+  },
+  {
+   "id": "L-due-mesi-pdf",
+   "via": "testo del PDF",
+   "ms": 150,
+   "trovati": [],
+   "atteso": [],
+   "giusto": true,
+   "avviso": true,
+   "importi_letti": [
+    "1460.00",
+    "1.00"
+   ],
+   "estratto": "Banca di Prova S.p.A. Documento inventato per una prova. Nessun dato è vero. Contabile di bonifico SEPA - Esito: eseguito Ordinante Giulia Bianchi (inventata) I"
+  }
+ ],
+ "nota": "Chromium senza schermo su un computer, non un telefono; documenti inventati generati da genera.js"
+}

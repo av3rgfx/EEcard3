@@ -73,21 +73,9 @@ Il 1/11/2026, su richiesta dell'utente, a cui piace uno **scanner nostro dentro 
 
 Il 1/11/2026 l'utente ha scelto **scanic con i due accorgimenti**: foto rimpicciolita prima della ricerca e soglia di fiducia che apre la correzione degli angoli (ARCHITECTURE.md, «Scanner dei documenti»). Il collaboratore di ƎE propone inoltre che, quando l'inquilino carica un documento, la piattaforma cerchi **la cifra dell'affitto** e, se non la trova, avvisi che il file potrebbe essere sbagliato e che il proprietario potrà vederlo, lasciando comunque caricare (PRODUCT.md §12, 1/11/2026). Il testo va riscritto senza genere.
 
-**Prossima sessione:** [Ricerca: trovare l'importo nel documento caricato](.scratch/architettura-percorso-1/issues/18-ricerca-importo-nel-documento.md), poi [Documenti, foto e ricevute in PDF](.scratch/architettura-percorso-1/issues/12-documenti-foto-ricevute.md), l'ultimo ticket della mappa. I due messaggi sono sotto.
+Il 1/11/2026 è chiusa anche la [ricerca sull'importo nel documento](.scratch/architettura-percorso-1/issues/18-ricerca-importo-nel-documento.md) ([docs/ricerca/importo-documento.md](docs/ricerca/importo-documento.md)). Il testo si legge **nel telefono, prima dell'invio**: pdf.js per i PDF della banca, tesseract.js in italiano per foto e scansioni, tutto dal nostro sito. Nella prova con 15 documenti inventati 13 risultati sono giusti: falliscono solo due foto illeggibili anche a occhio. «Condividi» da un'altra app funziona su Android con il sito installato; su iPhone serve l'app.
 
----
-
-## Architettura del percorso 1: ricerca sull'importo nel documento
-
-/wayfinder .scratch/architettura-percorso-1/map.md — ticket «Ricerca: trovare l'importo nel documento caricato» (.scratch/architettura-percorso-1/issues/18-ricerca-importo-nel-documento.md).
-
-Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora) e il ticket; poi PRODUCT.md §12, riga del 1/11/2026 «Controllo dell'importo nel documento caricato», e docs/ricerca/scanner-documenti.md (§10.7, la prova dello scanner). Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
-
-- Rivendica il ticket (`Status: claimed`) e lavora solo su questo, con le skill `research` e `ponytail`.
-- Fonti ufficiali (Apple, Google, documentazione dei browser, sorgente delle librerie) con la data di lettura, in un file di docs/ricerca/.
-- Nessuna installazione nel progetto e nessun account; nessun documento a servizi esterni. Autorizzo una prova usa e getta con contabili inventate, scaricando il codice delle librerie in una cartella temporanea fuori dal progetto e bloccando ogni richiesta esterna.
-
-Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
+**Prossima sessione:** [Documenti, foto e ricevute in PDF](.scratch/architettura-percorso-1/issues/12-documenti-foto-ricevute.md), l'ultimo ticket della mappa, ora senza blocchi; il messaggio è sotto.
 
 ---
 
@@ -95,10 +83,10 @@ Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push 
 
 /wayfinder .scratch/architettura-percorso-1/map.md — ticket «Documenti, foto e ricevute in PDF» (.scratch/architettura-percorso-1/issues/12-documenti-foto-ricevute.md).
 
-Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora) e il ticket con tutti i commenti; poi docs/ricerca/scanner-documenti.md (§7, §9 e §10) e docs/ricerca/pdf-ricevute.md, PRODUCT.md §12 (riga del 30/10/2026 «Scansione automatica al caricamento») e, in DESIGN.md, «Ricevute stampate (percorso 1)» e «Foto e illustrazione della casa (percorso 1)». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora) e il ticket con tutti i commenti; poi docs/ricerca/scanner-documenti.md (§7, §9 e §10) e docs/ricerca/importo-documento.md (§7 e §9) e docs/ricerca/pdf-ricevute.md, PRODUCT.md §12 (riga del 30/10/2026 «Scansione automatica al caricamento») e, in DESIGN.md, «Ricevute stampate (percorso 1)» e «Foto e illustrazione della casa (percorso 1)». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
 
 - Rivendica il ticket (`Status: claimed`) e lavora solo su questo, con le skill `grilling`, `domain-modeling` e `ponytail`.
-- Fammi le domande una alla volta, in parole semplici, con una raccomandazione; comprese quelle rimaste sullo scanner (ricerca, §9; scanic con i due accorgimenti è già scelto) e quelle sul controllo dell'importo (PRODUCT.md §12, 1/11/2026, e la ricerca del ticket 18).
+- Fammi le domande una alla volta, in parole semplici, con una raccomandazione; comprese quelle rimaste sullo scanner (ricerca, §9; scanic con i due accorgimenti è già scelto) e quelle sul controllo dell'importo (PRODUCT.md §12, 1/11/2026; ricerca, §9).
 - Registra le scelte tecniche in ARCHITECTURE.md, un cambio di prodotto in PRODUCT.md §12, l'aspetto in DESIGN.md; un ADR solo se la scelta è difficile da invertire.
 - Nessuna installazione, nessun account, nessuna immagine a servizi esterni; prove usa e getta solo con fogli inventati.
 

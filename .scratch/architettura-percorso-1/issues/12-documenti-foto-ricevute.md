@@ -2,7 +2,7 @@
 
 Type: grilling
 Status: open
-Blocked by: 02, 06, 08, 15, 17, 18
+Blocked by: 02, 06, 08, 15, 17, 18 (tutti chiusi)
 Mappa: [Architettura del percorso 1](../map.md)
 
 ## Domanda (Question)
@@ -41,3 +41,12 @@ Limiti: nessun account o servizio. Scelta in ARCHITECTURE.md.
 **1/11/2026, scelta dell'utente sullo scanner.** «Va bene, scanic con i due accorgimenti»: foto rimpicciolita prima della ricerca e soglia di fiducia che apre la correzione degli angoli. Scritto in [ARCHITECTURE.md](../../../ARCHITECTURE.md), «Scanner dei documenti». Restano qui le altre domande della ricerca, §9: quali caricamenti, pilota o dopo, PDF unico o pagine, HEIC, fotocamera dentro la pagina, telefoni per la prova.
 
 **1/11/2026, proposta del collaboratore di ƎE, riferita dall'utente.** Se l'inquilino carica per sbaglio un file che non c'entra con la locazione, la piattaforma cerca nel documento la cifra dell'affitto; se non la trova avvisa e lascia comunque caricare. Registrata in [PRODUCT.md](../../../PRODUCT.md) §12, riga del 1/11/2026; prima la [ricerca](18-ricerca-importo-nel-documento.md) su come leggere il testo senza servizi esterni. Da decidere qui: quali importi contano, su quali caricamenti, dove si legge il testo, web e app. *Nota dell'agente:* il testo proposto («Sei sicuro…») ha un genere; va riscritto senza, come chiede DESIGN.md.
+
+**1/11/2026, da [Ricerca: trovare l'importo nel documento caricato](18-ricerca-importo-nel-documento.md).** Ricerca chiusa in [docs/ricerca/importo-documento.md](../../../docs/ricerca/importo-documento.md): il controllo si può fare nel telefono, prima dell'invio, e nella prova con documenti inventati regge. Da decidere qui, con le cinque domande del §9:
+- su quali caricamenti vale il controllo;
+- quali importi bastano (parziale, arretrati, più mesi);
+- due avvisi o uno;
+- nel pilota PDF e foto insieme, oppure prima i soli PDF;
+- il testo dei messaggi, senza genere.
+
+Questo ticket non ha più blocchi aperti.

@@ -1,0 +1,70 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Prova: importo nel documento (dati inventati)</title>
+<script src="/pkg/tesseract.js-7.0.0/package/dist/tesseract.min.js"></script>
+<script src="/script/importo.js"></script>
+<script type="module">
+import * as pdfjs from '/pkg/pdfjs-dist-6.5.438/package/build/pdf.min.mjs';
+pdfjs.GlobalWorkerOptions.workerSrc = '/pkg/pdfjs-dist-6.5.438/package/build/pdf.worker.min.mjs';
+const ATTESI = { canone: 65000, oneri: 8000, totale: 73000 };
+let worker;
+async function ocr(canvasOrUrl) {
+  if (!worker) {
+    const t = performance.now();
+    worker = await Tesseract.createWorker('ita', 1, {
+      workerPath: '/pkg/tesseract.js-7.0.0/package/dist/worker.min.js',
+      corePath: '/pkg/tesseract.js-core-7.0.0/package/',
+      langPath: '/pkg/ita-1.0.0/package/4.0.0_best_int',
+      cacheMethod: 'none',
+    });
+    window.avvioOcrMs = performance.now() - t;
+  }
+  const { data } = await worker.recognize(canvasOrUrl);
+  return data.text;
+}
+async function caricaImmagine(url) { const i = new Image(); i.src = url; await i.decode(); return i; }
+function foto(img, o) { // foto inventata: ruotata, con ombra, rumore e sfocatura
+  const k = o.larg / img.width, W = o.larg, H = Math.round(img.height * k) + 200;
+  const c = document.createElement('canvas'); c.width = W; c.height = H; const g = c.getContext('2d');
+  g.fillStyle = '#6b5440'; g.fillRect(0, 0, W, H);
+  g.save(); g.translate(W / 2, H / 2); g.rotate(o.rot * Math.PI / 180); g.scale(k * 0.92, k * 0.92); g.drawImage(img, -img.width / 2, -img.height / 2); g.restore();
+  const grd = g.createRadialGradient(W * .7, H * .4, 10, W * .7, H * .4, W * .6); grd.addColorStop(0, `rgba(0,0,0,${o.ombra})`); grd.addColorStop(1, 'rgba(0,0,0,0)');
+  g.fillStyle = grd; g.fillRect(0, 0, W, H);
+  const d = g.getImageData(0, 0, W, H); let s = 7; for (let i = 0; i < d.data.length; i += 4) { s = (s * 1103515245 + 12345) >>> 0; const n = ((s >>> 16) % 25) - 12; d.data[i] += n; d.data[i + 1] += n; d.data[i + 2] += n; }
+  g.putImageData(d, 0, 0);
+  const out = document.createElement('canvas'); out.width = W; out.height = H; const og = out.getContext('2d'); og.filter = `blur(${o.blur || 1}px)`; og.drawImage(c, 0, 0);
+  return out;
+}
+function prepara(src) { // ingrandisci a 1800 px e schiarisci (stima della luce della carta e divisione)
+  const k = Math.max(1, 1800 / src.width), W = Math.round(src.width * k), H = Math.round(src.height * k);
+  const c = document.createElement('canvas'); c.width = W; c.height = H; const g = c.getContext('2d'); g.imageSmoothingQuality = 'high'; g.drawImage(src, 0, 0, W, H);
+  const img = g.getImageData(0, 0, W, H), d = img.data, s = 24, w = Math.ceil(W / s), h = Math.ceil(H / s), m = new Float32Array(w * h);
+  for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) { const i = (y * W + x) * 4, l = (d[i] * 77 + d[i + 1] * 150 + d[i + 2] * 29) >> 8, j = ((y / s) | 0) * w + ((x / s) | 0); if (l > m[j]) m[j] = l; }
+  const bl = new Float32Array(w * h); for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) { let t = 0, n = 0; for (let yy = Math.max(0, y - 2); yy <= Math.min(h - 1, y + 2); yy++) for (let xx = Math.max(0, x - 2); xx <= Math.min(w - 1, x + 2); xx++) { t += m[yy * w + xx]; n++; } bl[y * w + x] = t / n; }
+  for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) { const i = (y * W + x) * 4, l = (d[i] * 77 + d[i + 1] * 150 + d[i + 2] * 29) >> 8, bg = Math.max(40, bl[((y / s) | 0) * w + ((x / s) | 0)]); let v = l / bg; v = v > 0.9 ? 255 : 255 * Math.pow(v / 0.9, 2); d[i] = d[i + 1] = d[i + 2] = v; }
+  g.putImageData(img, 0, 0); return c;
+}
+async function leggiPdf(url) {
+  const pdf = await pdfjs.getDocument({ url, isEvalSupported: false }).promise;
+  let testo = '';
+  for (let n = 1; n <= pdf.numPages; n++) { const tc = await (await pdf.getPage(n)).getTextContent(); testo += tc.items.map(i => i.str).join(' ') + '\n'; }
+  if (testo.replace(/\s/g, '').length >= 20) return { testo, via: 'testo del PDF' };
+  // PDF fatto di immagini: disegna la pagina e riconosci il testo
+  let t2 = '';
+  for (let n = 1; n <= pdf.numPages; n++) { const pg = await pdf.getPage(n); const vp = pg.getViewport({ scale: 2 }); const c = document.createElement('canvas'); c.width = vp.width; c.height = vp.height; await pg.render({ canvas: c, viewport: vp }).promise; t2 += await ocr(c); }
+  return { testo: t2, via: 'PDF di immagini + riconoscimento' };
+}
+window.runAll = async () => {
+  const docs = await (await fetch('/out/docs/documenti.json')).json(); const res = [];
+  for (const d of docs) {
+    const url = '/out/docs/' + d.file, t0 = performance.now(); let r;
+    if (d.tipo.startsWith('pdf')) r = await leggiPdf(url);
+    else { const img = await caricaImmagine(url); const src = d.tipo === 'foto' ? foto(img, d.foto) : img; if (d.tipo === 'foto') window.saveImage(d.id + '.jpg', src.toDataURL('image/jpeg', .8)); r = { testo: await ocr(src), via: 'riconoscimento del testo' };
+      if (Importo.trova(r.testo, ATTESI).length === 0) { const pr = prepara(src); if (d.tipo === 'foto') window.saveImage(d.id + '-preparata.jpg', pr.toDataURL('image/jpeg', .8)); r = { testo: r.testo + '\n' + await ocr(pr), via: 'riconoscimento + 2° giro preparato' }; } }
+    const ms = performance.now() - t0, trovati = Importo.trova(r.testo, ATTESI);
+    res.push({ id: d.id, via: r.via, ms: Math.round(ms), trovati, atteso: d.atteso, giusto: JSON.stringify(trovati) === JSON.stringify(d.atteso), avviso: trovati.length === 0, importi_letti: [...Importo.importi(r.testo)].map(c => (c / 100).toFixed(2)), estratto: r.testo.replace(/\s+/g, ' ').slice(0, 160) });
+  }
+  return { avvioOcrMs: Math.round(window.avvioOcrMs || 0), res };
+};
+window.ready = true;
+</script>
