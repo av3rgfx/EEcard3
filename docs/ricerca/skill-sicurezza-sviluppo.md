@@ -128,6 +128,8 @@ Date dell'ultima modifica lette sulla pagina dei commit di GitHub della cartella
 
 ## Cosa resta all'utente
 
+*Scelte fatte dall'utente il 1/11/2026 nel ticket [Verifica operativa del percorso 1](../../.scratch/architettura-percorso-1/issues/16-verifica-operativa.md): punto 1 (a), punto 2 (b) con `property-based-testing` tramite fast-check, punto 3 superato (né Supabase né Firebase), punto 4 (a) più (b) e (c) una volta prima del pilota, punto 5 rischio accettato. Dettaglio in [ARCHITECTURE.md](../../ARCHITECTURE.md), «Verifica operativa».*
+
 Scelte possibili, da decidere una alla volta. Ogni installazione la decide l'utente. Ogni skill si copia a un commit preciso, dopo averla controllata con `skill-scanner` o letta, e uguale in `.claude/skills` e `.agents/skills`.
 
 1. **Revisione di sicurezza in più oltre a `/security-review`.** Opzioni: (a) `security-review` di Sentry, rinominata, solo istruzioni; (b) nessuna aggiunta, con le tre esclusioni del §1.1 coperte da test e da una riga in BACKEND.md; (c) `differential-review` di Trail of Bits, più lenta, utile quando il codice ha già una storia.

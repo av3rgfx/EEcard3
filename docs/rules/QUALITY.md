@@ -8,6 +8,11 @@ Prima di dichiarare concluso il lavoro:
 - Confermare i problemi segnalati prima di applicare correzioni.
 - Controllare nel browser il percorso realmente implementato, non soltanto il codice.
 
+Test prima del codice (EECard3, decisione dell'utente del 1/11/2026, ARCHITECTURE.md, «Verifica operativa»):
+- Per regole del dominio, denaro, permessi e accesso: prima la prova che fallisce, eseguita e vista fallire; poi il codice minimo che la fa passare.
+- Per importi, divisioni al centesimo e doppio invio, anche test su molti valori generati (fast-check).
+- Non vale per i prototipi usa e getta.
+
 Per UI:
 - Azione principale funzionante e conferma comprensibile.
 - Caricamento, vuoto, errore, successo e recupero.
