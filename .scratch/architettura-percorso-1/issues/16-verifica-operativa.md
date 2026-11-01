@@ -1,7 +1,7 @@
 # Verifica operativa del percorso 1
 
 Type: grilling
-Status: claimed
+Status: resolved
 Blocked by: 02
 Mappa: [Architettura del percorso 1](../map.md)
 
@@ -16,6 +16,22 @@ Con lo stack scelto ([Linguaggio, framework e componenti](09-linguaggio-framewor
 5. **Ambiente di prova:** per le prove dell'utente con proprietari, inquilini e agenzia simulati da sub-agenti ([PRODUCT.md](../../../PRODUCT.md) §10.9), solo dati inventati.
 
 Già decisi: copie e prova di ripristino ([ticket](08-forma-e-dove-gira.md)); lista di controllo della sicurezza dell'accesso ([ticket](13-codice-email-conflitto.md)), che si precisa nel ticket [Accesso: come entrano clienti e operatori](10-accesso.md). Una prova di attacco fatta da esperti resta un rischio da dichiarare al controllo B.
+
+## Risposta (Answer)
+
+Decisa dall'utente il 1/11/2026, dodici domande una alla volta, tutte sull'opzione consigliata, e un riepilogo confermato (dettaglio nei commenti). Registrata in [ARCHITECTURE.md](../../../ARCHITECTURE.md), «Decisioni confermate», «Verifica operativa»; regola dei test in [docs/rules/QUALITY.md](../../../docs/rules/QUALITY.md); termine «Piano carta» in [GLOSSARY.md](../../../GLOSSARY.md); fatti in [docs/ricerca/verifica-operativa.md](../../../docs/ricerca/verifica-operativa.md). Nessun cambio in PRODUCT.md §12, nessun ADR.
+
+1. **Database:** Drizzle su PostgreSQL 17 ovunque; quaderno dei fatti che il database rifiuta di modificare, numeri unici con vincolo di unicità, importi in centesimi interi.
+2. **Controlli:** tutti a ogni modifica, in GitHub Actions: tipi, regole di scrittura, test su PostgreSQL vero, guardiano, coerenza delle migrazioni, prove nel browser con accessibilità, costruzione. Ramo principale protetto; Scalingo pubblica solo con i controlli verdi. Repository pubblico, come oggi.
+3. **Revisione e test:** OCR più `security-review` di Sentry rinominata con la regola «utente entrato, ma di un'altra casa»; prima la prova che fallisce (QUALITY.md), test su molti valori per il denaro. Una volta prima del pilota `supply-chain-risk-auditor` e `insecure-defaults`; l'esperto umano resta un rischio accettato da dichiarare al controllo B.
+4. **Aggiornamenti:** Dependabot settimanale, attesa di 7 giorni, sicurezza subito; unione automatica se verde per piccoli e medi, Better Auth compreso, grandi in una sessione con gli agenti.
+5. **Migrazioni:** da sole a ogni pubblicazione, solo aggiunte; ciò che toglie o riscrive dati salvati solo con l'utente, in un giorno feriale, dopo aver visto la copia della notte.
+6. **Lavori a orario:** un solo lavoro notturno con il programmatore di Scalingo, che recupera i giri saltati e non crea doppioni.
+7. **Avvisi:** Scalingo per email (critici, pagine in errore, memoria) più una pagina «salute» controllata da GitHub ogni 30 minuti; registri senza dati personali, tenuti 1 anno da Scalingo (al parere privacy); prova degli avvisi prima del pilota e ogni 3 mesi.
+8. **Piano carta:** carta dopo 10 minuti di errori, senza aspettare l'utente; pagina d'errore fissa di Scalingo per i clienti; foglio di una pagina all'inizio del pilota, letto dall'utente e dal collaboratore di ƎE.
+9. **Ambiente di prova:** usa e getta, acceso dagli agenti, con PostgreSQL vuoto e dati inventati fissi, uguale ai controlli; codici letti in una pagina che in produzione non esiste.
+
+Scartati: Kysely e Prisma; controlli più leggeri; repository privato; skill TDD di superpowers e `differential-review`; aggiornamenti sempre a mano o tutto automatico; migrazioni tutte da sole o tutte con l'utente; lavori alle date esatte e contenitore orologio; servizio degli errori e sorveglianza esterna; app di prova sempre accesa e review app; prima chiamare l'utente o carta al primo errore.
 
 ## Commenti (Comments)
 

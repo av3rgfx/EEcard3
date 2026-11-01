@@ -28,6 +28,10 @@ _Da evitare_: account dell'operatore (non dice se è quello di lavoro o da clien
 L'accesso personale di un cliente, uno per persona anche con più case o più ruoli, legato alla sua email o al suo cellulare. Ciò che mostra dipende dai rapporti della persona con le case e dura quanto loro.
 _Da evitare_: account da proprietario o da inquilino (il ruolo è del rapporto, non dell'account), utente
 
+**Piano carta**:
+Il modo di lavorare del banco quando la piattaforma non risponde: ricevute di carta dal blocchetto numerato, come prima di Connetto, e registrazione nella piattaforma quando torna, con la data vera e il numero della ricevuta di carta, che non si registra due volte. Lo decide l'operatore, senza aspettare chi tiene in funzione la piattaforma.
+_Da evitare_: modalità offline (la piattaforma non lavora fuori linea), emergenza
+
 **Casa gestita**:
 Una casa in affitto che il proprietario ha affidato in gestione all'agenzia, che segue l'inquilino e riceve il canone per suo conto.
 _Da evitare_: casa mediata (la sola mediazione non è gestione), immobile in gestione
