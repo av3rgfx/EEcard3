@@ -75,7 +75,24 @@ Il 1/11/2026 l'utente ha scelto **scanic con i due accorgimenti**: foto rimpicci
 
 Il 1/11/2026 è chiusa anche la [ricerca sull'importo nel documento](.scratch/architettura-percorso-1/issues/18-ricerca-importo-nel-documento.md) ([docs/ricerca/importo-documento.md](docs/ricerca/importo-documento.md)). Il testo si legge **nel telefono, prima dell'invio**: pdf.js per i PDF della banca, tesseract.js in italiano per foto e scansioni, tutto dal nostro sito. Nella prova con 15 documenti inventati 13 risultati sono giusti: falliscono solo due foto illeggibili anche a occhio. «Condividi» da un'altra app funziona su Android con il sito installato; su iPhone serve l'app.
 
-**Prossima sessione:** [Documenti, foto e ricevute in PDF](.scratch/architettura-percorso-1/issues/12-documenti-foto-ricevute.md), l'ultimo ticket della mappa, ora senza blocchi; il messaggio è sotto.
+Il 1/11/2026 l'utente riferisce un'altra proposta del collaboratore di ƎE: chi è poco pratico, spesso le persone più anziane, fatica a caricare un documento ricevuto su WhatsApp o scaricato da un sito. Dal documento toccherebbe «Condividi» e sceglierebbe **Connetto**; il file entra subito e il posto si sceglie dopo. Si sa già che su Android il sito può comparire in «Condividi» solo se è installato sulla schermata Home, e su iPhone solo con l'app. L'utente vuole decidere se tenerla, cambiarla o toglierla **prima** del lavoro sui documenti.
+
+**Prossima sessione:** prima [Condividere un file verso Connetto da un'altra app](.scratch/architettura-percorso-1/issues/19-condividere-verso-connetto.md), poi [Documenti, foto e ricevute in PDF](.scratch/architettura-percorso-1/issues/12-documenti-foto-ricevute.md), l'ultimo ticket della mappa. I due messaggi sono sotto, nell'ordine.
+
+---
+
+## Architettura del percorso 1: condividere un file verso Connetto (prima)
+
+/wayfinder .scratch/architettura-percorso-1/map.md — ticket «Condividere un file verso Connetto da un'altra app» (.scratch/architettura-percorso-1/issues/19-condividere-verso-connetto.md).
+
+Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora) e il ticket; poi docs/ricerca/importo-documento.md (§4 e §7) e, in PRODUCT.md §12, le righe del 1/11/2026. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+
+- Rivendica il ticket (`Status: claimed`) e lavora solo su questo, con le skill `grilling`, `domain-modeling` e `ponytail`; `research` per i fatti che mancano, con fonti ufficiali e la data di lettura.
+- Voglio capire se l'idea va tenuta, cambiata o tolta, e se c'è una soluzione migliore per chi è poco pratico con il telefono. Fammi le domande una alla volta, in parole semplici, con una raccomandazione.
+- Registra l'esito in PRODUCT.md §12 e nel ticket, e aggiorna il ticket «Documenti, foto e ricevute in PDF», che viene subito dopo.
+- Nessun account, servizio o messaggio reale.
+
+Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 
 ---
 

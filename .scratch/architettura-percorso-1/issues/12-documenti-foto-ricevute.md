@@ -2,7 +2,7 @@
 
 Type: grilling
 Status: open
-Blocked by: 02, 06, 08, 15, 17, 18 (tutti chiusi)
+Blocked by: 02, 06, 08, 15, 17, 18, 19
 Mappa: [Architettura del percorso 1](../map.md)
 
 ## Domanda (Question)
@@ -50,3 +50,5 @@ Limiti: nessun account o servizio. Scelta in ARCHITECTURE.md.
 - il testo dei messaggi, senza genere.
 
 Questo ticket non ha più blocchi aperti.
+
+**1/11/2026, nuova proposta del collaboratore di ƎE, riferita dall'utente.** Per chi è poco pratico: Connetto in «Condividi» delle altre app, con il file che entra subito e il posto scelto dopo. L'utente vuole analizzarla **prima** di questo ticket, nel ticket [Condividere un file verso Connetto da un'altra app](19-condividere-verso-connetto.md), che ora lo blocca.
