@@ -67,19 +67,22 @@ Il 1/11/2026 è chiuso anche [Verifica operativa del percorso 1](.scratch/archit
 
 Il 1/11/2026 è chiuso anche [Servizi esterni: email, SMS e ISTAT](.scratch/architettura-percorso-1/issues/11-servizi-esterni.md). Le email partono da **Amazon SES a Milano**, da un **sottodominio di ƎE**; gli SMS da **Skebby**, con il nome di ƎE iscritto nel registro AGCOM, ma solo dopo aver letto il suo contratto sui dati. Gli SMS sono **a parte dai 20 €**: circa 0,40 € al mese per ogni persona senza email, da considerare nel prezzo dell'adesione, con un avviso sopra 15 € al mese. «Oggi» mostra una voce per persona quando i suoi messaggi non sono **recapitati** (parola nuova del glossario); niente aperture né «letto». L'ISTAT si legge di notte e la variazione si calcola con la formula ufficiale; se manca, l'operatore la inserisce a mano. Da chiedere a ƎE: quanti clienti non hanno l'email e chi gestisce il suo dominio. Dettagli in ARCHITECTURE.md («Servizi esterni: email, SMS e ISTAT»), PRODUCT.md §12 e GLOSSARY.md («Recapitato»); prezzi riletti in [docs/ricerca/invio-email-sms.md](docs/ricerca/invio-email-sms.md), §10.
 
-**Prossima sessione:** la ricerca sugli scanner (ticket 15), il cui messaggio è sotto; dopo di lei [Documenti, foto e ricevute in PDF](.scratch/architettura-percorso-1/issues/12-documenti-foto-ricevute.md), l'ultimo ticket aperto della mappa.
+Il 1/11/2026 è chiusa anche la [ricerca sugli scanner di documenti](.scratch/architettura-percorso-1/issues/15-ricerca-scanner-documenti.md) ([docs/ricerca/scanner-documenti.md](docs/ricerca/scanner-documenti.md)). Nessun browser del telefono porta lo scanner di sistema dentro la pagina: su iPhone si può scansionare con File o Anteprima e poi scegliere il PDF; la scansione di Google Drive salva su Google e non va suggerita. Nel browser la libreria libera **scanic** (MIT, circa 42 KB) trova i bordi del foglio e lo raddrizza dentro il telefono; schiarire è poco codice nostro; sul server sharp riduce la foto e toglie luogo e ora. Per l'app iPhone c'è VisionKit; ML Kit vale solo per un'app Android. Il parere dell'agente e cinque domande per l'utente sono nella ricerca, §7 e §9. Molti punti si verificano solo su telefoni veri.
+
+**Prossima sessione:** [Documenti, foto e ricevute in PDF](.scratch/architettura-percorso-1/issues/12-documenti-foto-ricevute.md), l'ultimo ticket aperto della mappa, ora senza blocchi; il messaggio è sotto.
 
 ---
 
-## Architettura del percorso 1: ricerca sugli scanner di documenti
+## Architettura del percorso 1: documenti, foto e ricevute in PDF
 
-/wayfinder .scratch/architettura-percorso-1/map.md — ticket «Ricerca: scanner di documenti già pronti» (.scratch/architettura-percorso-1/issues/15-ricerca-scanner-documenti.md).
+/wayfinder .scratch/architettura-percorso-1/map.md — ticket «Documenti, foto e ricevute in PDF» (.scratch/architettura-percorso-1/issues/12-documenti-foto-ricevute.md).
 
-Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora) e il ticket; poi PRODUCT.md §12, riga del 30/10/2026 «Scansione automatica al caricamento», e il ticket «Documenti, foto e ricevute in PDF» (commenti del 30/10/2026). Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora) e il ticket con tutti i commenti; poi docs/ricerca/scanner-documenti.md (§7 e §9) e docs/ricerca/pdf-ricevute.md, PRODUCT.md §12 (riga del 30/10/2026 «Scansione automatica al caricamento») e, in DESIGN.md, «Ricevute stampate (percorso 1)» e «Foto e illustrazione della casa (percorso 1)». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
 
-- Rivendica il ticket (`Status: claimed`) e lavora solo su questo, con le skill `research` e `ponytail`.
-- Fonti ufficiali (Apple, Google, documentazione dei browser, sorgente delle librerie) con la data di lettura, in un file di docs/ricerca/. Non smontare app di altri.
-- Nessuna installazione e nessun account; una prova usa e getta con fogli inventati solo se serve a rispondere, e nessuna immagine a servizi esterni.
+- Rivendica il ticket (`Status: claimed`) e lavora solo su questo, con le skill `grilling`, `domain-modeling` e `ponytail`.
+- Fammi le domande una alla volta, in parole semplici, con una raccomandazione; comprese le cinque sullo scanner della ricerca (§9).
+- Registra le scelte tecniche in ARCHITECTURE.md, un cambio di prodotto in PRODUCT.md §12, l'aspetto in DESIGN.md; un ADR solo se la scelta è difficile da invertire.
+- Nessuna installazione, nessun account, nessuna immagine a servizi esterni; prove usa e getta solo con fogli inventati.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 
