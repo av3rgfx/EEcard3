@@ -1,7 +1,7 @@
 # Decisioni tecniche
 
 ## Stato
-Scelte in corso al passo 7 ([docs/METODO.md](docs/METODO.md)). Dal 30/10/2026 sono decisi la forma della piattaforma e il posto in cui gira, e poi linguaggio, framework e componenti; dal 31/10/2026 le regole dell'accesso e il modello dei dati e dei permessi; dal 1/11/2026 la verifica operativa: database, controlli automatici, aggiornamenti, avvisi, lavori programmati e ambiente di prova («Decisioni confermate»). I servizi esterni non sono ancora scelti. Nessuna soluzione tecnica dei tentativi precedenti è un punto di partenza.
+Scelte in corso al passo 7 ([docs/METODO.md](docs/METODO.md)). Dal 30/10/2026 sono decisi la forma della piattaforma e il posto in cui gira, e poi linguaggio, framework e componenti; dal 31/10/2026 le regole dell'accesso e il modello dei dati e dei permessi; dal 1/11/2026 la verifica operativa: database, controlli automatici, aggiornamenti, avvisi, lavori programmati e ambiente di prova, e i servizi esterni: email, SMS e ISTAT («Decisioni confermate»). Nessuna soluzione tecnica dei tentativi precedenti è un punto di partenza.
 
 Dal 30/10/2026 le scelte si prendono nella mappa [Architettura del percorso 1](.scratch/architettura-percorso-1/map.md), una alla volta con l'utente. Destinazione confermata: le scelte tecniche del percorso 1 scritte qui, **pronte per il controllo B**, senza rendere difficili i percorsi 2 e 3; il controllo B è un passo a parte.
 
@@ -24,14 +24,14 @@ Dal 30/10/2026 le scelte si prendono nella mappa [Architettura del percorso 1](.
 Promemoria chiesti dall'utente, non decisioni. Si riprendono quando si sceglie lo stack.
 - **Librerie di componenti animati** (promemoria dell'utente del 23/10/2026): *deciso il 30/10/2026*, nessuna delle due; vedi «Decisioni confermate», «Linguaggio, framework e componenti».
 
-- **Sapere se un messaggio non è arrivato** (27/10/2026, da DESIGN.md, «Spazio dell'operatore», «Oggi»). La pagina «Oggi» dell'operatore mostra i messaggi non arrivati con il motivo. Al passo 7 si verifica cosa segnalano i servizi d'invio scelti (SMS non consegnato, email rifiutata) e come arriva a Connetto; ciò che non si sa (un'email nello spam) non si mostra come «arrivato».
+- **Sapere se un messaggio non è arrivato** (27/10/2026, da DESIGN.md, «Spazio dell'operatore», «Oggi»): *deciso il 1/11/2026*, vedi «Decisioni confermate», «Servizi esterni».
 
 ## Confini
 - **Una sola applicazione** fa pagine web, regole e permessi, ospitata da Scalingo (Parigi), con un database PostgreSQL gestito che contiene dati, documenti e foto (30/10/2026, «Decisioni confermate»).
 - L'**accesso** sta dentro l'applicazione, con Better Auth, che offre il codice via email o SMS e le passkey (30/10/2026, «Linguaggio, framework e componenti»).
 - L'**app iPhone** futura parlerà con la stessa applicazione; ora non si costruisce nulla per lei.
 - **Un solo linguaggio**, TypeScript, per server e schermate, con React Router (30/10/2026).
-- DA DEFINIRE: servizi di email e SMS, lettura ISTAT.
+- **Servizi esterni** (1/11/2026): email da Amazon SES a Milano, SMS da Skebby, indice ISTAT dall'interfaccia pubblica di IstatData («Decisioni confermate», «Servizi esterni»).
 
 ## Dati e autorizzazioni
 - **Contenitori e radici** (31/10/2026): ogni cosa conservata sta in uno di quattro contenitori, la **casa**, la **locazione**, l'**incarico di gestione** e la **persona**. Le radici (casa, persona, account di lavoro) portano l'**agenzia**; il resto la eredita. Dettaglio in «Decisioni confermate», «Dati e permessi», e nell'[ADR 0003](docs/adr/0003-contenitori-e-guardiano.md).
@@ -40,8 +40,9 @@ Promemoria chiesti dall'utente, non decisioni. Si riprendono quando si sceglie l
 
 ## Integrazioni
 - **Autenticazione:** decisa il 31/10/2026 («Decisioni confermate», «Accesso»).
+- **Email:** Amazon SES nella regione di Milano, da un sottodominio di ƎE; **SMS:** Skebby (Commify Italia), con l'alias di ƎE nel Registro AGCOM; **ISTAT:** interfaccia SDMX di IstatData letta dal lavoro notturno. Decisi il 1/11/2026 («Decisioni confermate», «Servizi esterni»).
 
-DA DEFINIRE: pagamenti, email e messaggi, documenti, notifiche, wallet, firma, AI, secondo le necessità effettive.
+DA DEFINIRE: pagamenti, documenti, notifiche sul telefono, wallet, firma, AI, secondo le necessità effettive.
 
 ## Decisioni confermate
 Annotare alternative, motivi, vincoli e conseguenze.
@@ -148,6 +149,28 @@ Discussione nel [ticket](.scratch/architettura-percorso-1/issues/16-verifica-ope
 - **Da verificare all'inizio della costruzione:** che l'email di GitHub per il controllo fallito arrivi davvero all'utente; l'unione automatica delle versioni medie; dove ospitare la pagina d'errore fissa.
 - Nessun ADR: ogni punto si cambia con la configurazione o con una migrazione; Drizzle è il più costoso da cambiare, ma senza un compromesso sorprendente.
 - *Motivo:* chi tiene in funzione la piattaforma non legge il codice, quindi la rete sono i controlli automatici, tutti, a ogni modifica, e un modo semplice di accorgersi dei guasti; il tutto senza fornitori né costi in più, con un lavoro notturno che si ripara da solo e migrazioni che non tolgono nulla senza una persona presente.
+
+### Servizi esterni: email, SMS e ISTAT (1/11/2026, decisione dell'utente)
+Discussione nel [ticket](.scratch/architettura-percorso-1/issues/11-servizi-esterni.md), sette domande una alla volta, tutte sull'opzione consigliata, e un riepilogo confermato con quattro punti in più; fatti in [docs/ricerca/invio-email-sms.md](docs/ricerca/invio-email-sms.md) (prezzi e condizioni riletti il 1/11/2026, §10) e [docs/ricerca/istat-variazione.md](docs/ricerca/istat-variazione.md); prodotto in [PRODUCT.md](PRODUCT.md) §12. Nessun account aperto, nessun messaggio inviato: gli account si aprono a nome di ƎE solo con l'autorizzazione dell'utente.
+- **Costo** (stima nel ticket, da controllare nel pilota): circa 10 messaggi al mese per casa, metà essenziali e metà d'accesso; 1.000–2.100 al mese con 100–200 case. Le email costano meno di 1 $ al mese. Gli SMS sono **a parte** dai circa 20 €: circa 4 al mese, 0,39 €, per ogni persona senza email; da 5 a 39 € al mese secondo quante sono. La piattaforma conta gli SMS del mese e avvisa chi la mantiene sopra **15 €**; resta il tetto di 20 SMS d'accesso al giorno («Accesso»).
+- **Email: Amazon SES, regione Milano** (`eu-south-1`), invio con l'interfaccia per programmi (a Milano non c'è SMTP), account a nome di ƎE, piano a consumo (0,10 $ ogni 1.000). Contratto sui dati nelle condizioni di AWS; uscita dalla «sandbox» chiesta all'apertura (risposta entro 96 ore); TLS imposto verso i destinatari; nessun indirizzo nei tag. Il pannello lo configurano gli agenti, con una lista di passi per l'utente.
+  - *Scartati:* Brevo (logo probabile nelle email, 9 € al mese per toglierlo; esiti non firmati e persi con un errore della piattaforma; registri senza limite da regolare; sub-responsabili negli Stati Uniti); Mailgun (100 email al giorno gratis, sotto il giorno dei promemoria).
+- **Mittente e dominio:** un **sottodominio del dominio di ƎE** usato solo dalla piattaforma (per esempio `avvisi.<dominio di ƎE>`), con SPF, DKIM e DMARC allineati, poi DMARC in `quarantine` o `reject` ([docs/ricerca/email.md](docs/ricerca/email.md)). Mittente «ƎE» con «Connetto» accanto (§10.5); risposte alla casella di ƎE, dove si imposta la risposta automatica. Serve una volta l'accesso alle impostazioni del dominio di ƎE; senza dominio se ne compra uno a nome di ƎE. L'indirizzo web della piattaforma aspetta ancora il parere sul nome.
+  - *Scartati:* un dominio nuovo del servizio (aspetta il parere ed è sconosciuto ai clienti); il dominio principale di ƎE (un problema negli invii toccherebbe la posta dell'agenzia).
+- **SMS: Skebby** (Commify Italia), SMS «Classic+» con la ricevuta di consegna, circa 0,0975 € l'uno, pacchetti da 25 € validi 2 anni, account a nome di ƎE. Skebby iscrive l'**alias di ƎE** nel Registro AGCOM (servono ragione sociale, partita IVA e PEC di ƎE); il testo dell'alias, al massimo 11 caratteri GSM-7, aspetta il parere sul nome. **Prima di aprire l'account** l'utente legge con gli agenti il contratto sui dati in vigore: testi conservati il meno possibile e mai i codici oltre l'invio, nomina a responsabile per ciò che tratta per ƎE. Se non regge, si passa ad **Amazon End User Messaging** (stesso account di SES) solo dopo una conferma scritta di Amazon sull'iscrizione dell'alias.
+  - *Scartato:* Amazon subito (alias in Italia senza registrazione dichiarata, contro la delibera AGCOM 9/26/CIR: SMS bloccati o da un numero qualsiasi); Brevo (in Italia solo numeri +39, nei piani costosi).
+- **Invio:** ogni messaggio si salva nella persona insieme al fatto che lo produce («Dati e permessi»), poi parte subito; chi chiede un codice riceve la risposta senza attendere l'invio. Un messaggio ancora fermo dopo 10 minuti si rimanda da solo, con il suo numero unico, senza doppioni. Un solo punto del codice parla con SES e con Skebby: nei controlli e nell'ambiente di prova lo sostituisce una **finta**, e non parte niente di vero («Verifica operativa»); le prove con SES usano gli indirizzi simulati.
+- **Esiti:** quattro esiti per messaggio, **recapitato**, **non recapitato** con il motivo, **segnato come spam**, **esito non noto** dopo 24 ore senza notizia; prima si è *in attesa* e non si mostra. Gli esiti di SES arrivano con SNS a un indirizzo HTTPS della piattaforma: **firma verificata** (versione 2, `TopicArn` atteso), nuovi tentativi fino a 1 ora con una regola nostra; ciò che si perde dopo diventa «esito non noto». Skebby manda lo stato finale a un indirizzo con un **codice segreto** nel percorso, perché non descrive una firma. Mai aperture, clic o pixel.
+- **«Oggi»:** una sola voce per persona i cui messaggi non sono recapitati, con il motivo e cosa fare; un indirizzo rifiutato per sempre resta fermo (lista di soppressione di SES) finché l'operatore non lo cambia al banco. Nessun reinvio automatico su un altro canale.
+- **ISTAT:** il lavoro notturno legge dall'interfaccia SDMX di IstatData (`esploradati.istat.it/SDMXWS`, serie FOI senza tabacchi) **una volta sola** l'indice di ogni mese che serve e lo conserva con la data della lettura, per tutte le case; poche richieste a notte, mai oltre 1 al minuto (il limite è 5, con blocco di 1–2 giorni). Le variazioni si calcolano dagli indici con la formula e i coefficienti di raccordo dell'ISTAT, con un test sui numeri di settembre 2026 (+4,0% su un anno, +5,5% su due). La proposta mostra numero, mese, «Fonte: ISTAT» con il link e la licenza CC BY 4.0. Se il dato manca 3 giorni lavorativi dopo l'uscita del calendario, o il servizio non risponde (anche dopo un cambio di base, che cambia il nome della serie), «Oggi» chiede all'operatore di inserirlo a mano dai link ufficiali, con la scritta «inserito dall'operatore», e chi mantiene riceve un avviso.
+  - *Scartati:* solo a mano (cambierebbe D18); sola variazione su un anno dall'interfaccia, quella su due anni a mano.
+- **Registri:** mai indirizzi, numeri, codici o testi dei messaggi, nemmeno negli esiti salvati: solo identificativi, canale, esito e motivo.
+- **Per dopo, senza attivarlo:** SES riceve email a Milano su un sottodominio diverso da quello d'invio, e il messaggio resta solo dove lo si salva: è la strada per l'indirizzo per le bollette (percorso 3), da valutare con la separazione dello spazio delle bollette.
+- **Elenco dei fornitori per ƎE:** si aggiungono Amazon Web Services (SES a Milano, sub-responsabili nell'elenco di AWS) e Commify Italia (Skebby, sede dei dati da verificare nel contratto).
+- **Al parere** privacy e telecomunicazioni, in un solo incarico ([PRODUCT.md](PRODUCT.md) §10.10): ruolo di Skebby e contratto; chi è il mittente dell'alias; sub-responsabili di Amazon fuori dall'UE; durata degli esiti presso i fornitori e nella piattaforma.
+- **Da verificare all'inizio della costruzione:** il testo del contratto sui dati di Skebby e la sede dei dati; come si attiva la modalità di prova di Skebby; che gli esiti di SES arrivino per tutti i tipi previsti con gli indirizzi simulati.
+- Nessun ADR: SES e Skebby stanno dietro un solo punto del codice e si sostituiscono con poco lavoro; il dominio d'invio si cambia con i record del dominio.
+- *Motivo:* i dati restano in Italia, le email costano quasi niente e l'SMS arriva con il nome che i clienti conoscono, come vogliono le regole AGCOM; gli esiti sono firmati o protetti, e ciò che non si sa non si mostra come recapitato; l'ISTAT si legge da solo, ma l'operatore controlla e ha sempre la strada a mano.
 
 ## Verifica operativa
 - Copie e prova di ripristino: decise il 30/10/2026 («Decisioni confermate», «Forma della piattaforma e dove gira»).

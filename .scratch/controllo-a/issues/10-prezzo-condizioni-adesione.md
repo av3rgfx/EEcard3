@@ -40,3 +40,5 @@ Non c'è proposta di pre-adesione: le adesioni si contano nel pilota (PRODUCT.md
 Il parere legale sull'art. 54-bis del Codice del consumo (funzione di recesso) è in PRODUCT.md §10.10.
 
 **30/10/2026, dalla mappa dell'architettura** ([Chi costruisce e tiene in funzione la piattaforma](../../architettura-percorso-1/issues/01-chi-costruisce-e-mantiene.md)). I servizi del pilota costano circa 20 € al mese, pagati da ƎE; l'utente è disposto a salire se il prezzo, con una media ipotetica di 10–20 proprietari paganti, lo copre. Il prezzo deve tenerne conto.
+
+**1/11/2026, dalla mappa dell'architettura** ([Servizi esterni: email, SMS e ISTAT](../../architettura-percorso-1/issues/11-servizi-esterni.md)). Gli **SMS sono una spesa a parte** dai circa 20 € al mese (scelta dell'utente): circa 4 SMS e 0,39 € al mese per ogni persona senza email, da 5 a 39 € al mese con 100–200 case secondo quante sono (stima nel ticket). Il prezzo dell'adesione deve tenerne conto; la piattaforma avvisa chi la mantiene sopra 15 € al mese. Skebby si compra a pacchetti, il primo da 25 €.
