@@ -32,6 +32,10 @@ _Da evitare_: account da proprietario o da inquilino (il ruolo è del rapporto, 
 Il modo di lavorare del banco quando la piattaforma non risponde: ricevute di carta dal blocchetto numerato, come prima di Connetto, e registrazione nella piattaforma quando torna, con la data vera e il numero della ricevuta di carta, che non si registra due volte. Lo decide l'operatore, senza aspettare chi tiene in funzione la piattaforma.
 _Da evitare_: modalità offline (la piattaforma non lavora fuori linea), emergenza
 
+**Recapitato**:
+L'esito di un'email o di un SMS accettato dalla casella o dal telefono di chi lo riceve. Non dice che il messaggio sia nella posta in arrivo né che sia stato letto; il contrario è «non recapitato», sempre con il motivo, che nelle schermate dell'operatore si dice anche «non arrivato».
+_Da evitare_: consegnato (è della consegna del denaro), arrivato (per l'esito positivo: fa pensare alla posta in arrivo), letto
+
 **Casa gestita**:
 Una casa in affitto che il proprietario ha affidato in gestione all'agenzia, che segue l'inquilino e riceve il canone per suo conto.
 _Da evitare_: casa mediata (la sola mediazione non è gestione), immobile in gestione

@@ -65,23 +65,9 @@ Il 31/10/2026 è chiuso anche [Modello dei dati e dei permessi del percorso 1](.
 
 Il 1/11/2026 è chiuso anche [Verifica operativa del percorso 1](.scratch/architettura-percorso-1/issues/16-verifica-operativa.md). Il database si usa con **Drizzle** su PostgreSQL 17. A ogni modifica girano **tutti i controlli** in GitHub (tipi, test su un database vero, guardiano, migrazioni, prove nel browser con accessibilità) e Scalingo pubblica solo se passano; il repository resta **pubblico**. Si aggiungono la skill `security-review` di Sentry e la regola «prima la prova che fallisce». Gli aggiornamenti arrivano ogni lunedì e si uniscono da soli se verdi, i grandi a mano. Le migrazioni solo aggiungono; un **lavoro notturno** recupera i giri saltati. Gli avvisi arrivano per email da Scalingo e da un controllo di GitHub ogni 30 minuti; il **piano carta** scatta dopo 10 minuti di errori; l'ambiente di prova è usa e getta. Nessun costo nuovo. Dettagli in ARCHITECTURE.md («Verifica operativa»), docs/rules/QUALITY.md e GLOSSARY.md («Piano carta»); fatti in [docs/ricerca/verifica-operativa.md](docs/ricerca/verifica-operativa.md).
 
-**Prossima sessione:** il ticket 11, [Servizi esterni: email, SMS e ISTAT](.scratch/architettura-percorso-1/issues/11-servizi-esterni.md); il suo messaggio è sotto. In parallelo la ricerca sugli scanner (ticket 15); dopo di lei [Documenti, foto e ricevute in PDF](.scratch/architettura-percorso-1/issues/12-documenti-foto-ricevute.md).
+Il 1/11/2026 è chiuso anche [Servizi esterni: email, SMS e ISTAT](.scratch/architettura-percorso-1/issues/11-servizi-esterni.md). Le email partono da **Amazon SES a Milano**, da un **sottodominio di ƎE**; gli SMS da **Skebby**, con il nome di ƎE iscritto nel registro AGCOM, ma solo dopo aver letto il suo contratto sui dati. Gli SMS sono **a parte dai 20 €**: circa 0,40 € al mese per ogni persona senza email, da considerare nel prezzo dell'adesione, con un avviso sopra 15 € al mese. «Oggi» mostra una voce per persona quando i suoi messaggi non sono **recapitati** (parola nuova del glossario); niente aperture né «letto». L'ISTAT si legge di notte e la variazione si calcola con la formula ufficiale; se manca, l'operatore la inserisce a mano. Da chiedere a ƎE: quanti clienti non hanno l'email e chi gestisce il suo dominio. Dettagli in ARCHITECTURE.md («Servizi esterni: email, SMS e ISTAT»), PRODUCT.md §12 e GLOSSARY.md («Recapitato»); prezzi riletti in [docs/ricerca/invio-email-sms.md](docs/ricerca/invio-email-sms.md), §10.
 
----
-
-## Architettura del percorso 1: servizi esterni
-
-/wayfinder .scratch/architettura-percorso-1/map.md — ticket «Servizi esterni: email, SMS e ISTAT» (.scratch/architettura-percorso-1/issues/11-servizi-esterni.md).
-
-Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora, Non ancora specificato) e il ticket, compresi i «Commenti»; poi docs/ricerca/invio-email-sms.md, docs/ricerca/istat-variazione.md, ARCHITECTURE.md («Cosa vincolerà la scelta», «Decisioni confermate», compresi «Accesso», «Dati e permessi» e «Verifica operativa») e PRODUCT.md §10.5 e §10.10. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
-
-- Rivendica il ticket (`Status: claimed`) e lavora solo su questo, con le skill `grilling`, `domain-modeling` e `ponytail`.
-- Le domande una alla volta, in parole semplici, con una raccomandazione motivata e cosa comporta ogni opzione. Conta i messaggi del pilota (codici, avvisi dopo l'accesso, messaggi essenziali) contro i 20 € al mese.
-- Prezzi, condizioni e dove stanno i dati dei fornitori dalle fonti ufficiali aggiornate, con la data di lettura, in docs/ricerca/; segnala cosa va al parere.
-- Scelta in ARCHITECTURE.md («Integrazioni») con data e motivo; un cambio di prodotto in PRODUCT.md §12; un termine deciso in GLOSSARY.md. Chiudi il ticket con la risposta e la riga in «Decisioni finora».
-- Nessuna installazione, nessun account, servizio o messaggio reale senza la mia autorizzazione.
-
-Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
+**Prossima sessione:** la ricerca sugli scanner (ticket 15), il cui messaggio è sotto; dopo di lei [Documenti, foto e ricevute in PDF](.scratch/architettura-percorso-1/issues/12-documenti-foto-ricevute.md), l'ultimo ticket aperto della mappa.
 
 ---
 

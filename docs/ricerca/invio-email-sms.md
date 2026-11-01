@@ -1,6 +1,6 @@
 # Servizi per inviare email e SMS
 
-Ricerca del 30 ottobre 2026, svolta da un agente in background con la skill `research` su fonti primarie; tutte le fonti sono state lette il 30/10/2026. Risponde al ticket [05 «Ricerca: servizi per inviare email e SMS»](../../.scratch/architettura-percorso-1/issues/05-ricerca-invio-email-sms.md) e serve al ticket [11 «Servizi esterni: email, SMS e ISTAT»](../../.scratch/architettura-percorso-1/issues/11-servizi-esterni.md).
+Ricerca del 30 ottobre 2026, svolta da un agente in background con la skill `research` su fonti primarie; tutte le fonti sono state lette il 30/10/2026. Prezzi e condizioni decisivi riletti il 1/11/2026 (§10). Risponde al ticket [05 «Ricerca: servizi per inviare email e SMS»](../../.scratch/architettura-percorso-1/issues/05-ricerca-invio-email-sms.md) e serve al ticket [11 «Servizi esterni: email, SMS e ISTAT»](../../.scratch/architettura-percorso-1/issues/11-servizi-esterni.md).
 
 Non si ripetono: i requisiti dei programmi di posta, SPF, DKIM, DMARC e la regola sulle email promozionali ([email.md](email.md), 19/10/2026); la forma di email e SMS, i caratteri GSM-7 e le regole AGCOM sul mittente alfanumerico ([email-sms-forma.md](email-sms-forma.md), 23/10/2026, §3–§4). Il ruolo di ƎE e della piattaforma nel trattamento dei dati è in [privacy-dati.md](privacy-dati.md).
 
@@ -173,6 +173,26 @@ Un consulente privacy e telecomunicazioni; conviene un solo incarico insieme al 
 - Brevo: prezzo dell'SMS verso l'Italia; logo nelle email del piano gratuito; conservazione delle email ricevute; notifiche in modalità sandbox.
 - Amazon: come si registra l'alias in Italia e come si prova l'invio verso i numeri simulati italiani.
 - Se Gmail, Outlook.com e Libero mandano le segnalazioni di spam per singolo messaggio.
+
+## 10. Verifica del 1/11/2026
+
+Rilettura delle fonti che decidono il ticket [Servizi esterni: email, SMS e ISTAT](../../.scratch/architettura-percorso-1/issues/11-servizi-esterni.md), fatta il 1/11/2026 nella sessione del ticket, senza account e senza invii. Si riporta solo ciò che è cambiato o che mancava; il resto dei §1–§9 resta valido.
+
+- **Amazon SES, prezzi** [5], **Fonte:** a consumo 0,10 $ ogni 1.000 email inviate più 0,12 $ per GB di allegati; ricevere costa 0,10 $ ogni 1.000 email più 0,09 $ ogni 1.000 «chunk» da 256 KB. Gli account nuovi partono dal 21/7/2026 sul piano Essentials (0,16 $ ogni 1.000, nessun canone fisso); il primo passaggio al consumo, per chi non ha scelto Essentials, vale subito. Ai clienti AWS nuovi fino a 200 $ di crediti, da usare entro 12 mesi. Nessun piano SES gratuito.
+- **Amazon, SMS in Italia** [13][17], **Fonte:** la riga dell'Italia dice ancora «Sender ID: Yes» senza la nota «Registration required», che invece compare per Spagna, Irlanda e Regno Unito. Il prezzo per SMS sta solo nel file per Paese (0,08 $ letto il 30/10/2026, non riletto). Un numero lungo italiano costa 30 $ al mese, con circa 3 settimane di attivazione: serve solo per ricevere risposte, non per mandare con un alias. **Da verificare** resta come l'alias entri nel Registro AGCOM.
+- **Skebby, pacchetti** [41], **Fonte:** c'è un pacchetto più piccolo di quello letto il 30/10/2026: **255 SMS a 25 €** (0,0980 € l'uno); poi 367 a 34 €, 735 a 68 €, 1.837 a 170 € (0,0925 €). IVA esclusa, un SMS è un segmento di 160 caratteri, il credito vale **2 anni**. Il mittente personalizzato è fra le caratteristiche degli SMS «Alta qualità (Classic)»; il rapporto di consegna per singolo SMS è del tipo «Classic+», 0,005 € a SMS sotto i pacchetti da 1.425 €.
+- **Skebby, condizioni e dati:** la pagina `skebby.it/privacy/` risponde 404 e una ricerca non ha trovato né il contratto sui dati né la sede dei server. Il provvedimento del Garante [42], riletto, cita un «Addendum per la Protezione dei Dati» allegato alle condizioni generali, che al punto 10.3 faceva dare al cliente il consenso a conservare i dati fino a 24 mesi; fra i testi conservati c'erano anche **codici d'accesso (OTP) bancari**. Dopo il provvedimento Commify ha dichiarato di conservare i testi solo per chi lo sceglie, per 6 mesi, e di cancellarli per gli altri; sanzione di 80.000 € (**Fonte**). **Da verificare:** il testo attuale dell'addendum e la sede dei dati, da leggere prima di aprire l'account.
+- **Brevo, prezzi** [31], **Fonte:** la versione testuale dei prezzi (generata il 29/9/2026) dà Starter a 7 € al mese per 5.000 email e un componente aggiuntivo «Remove Brevo logo» a **9 € al mese**; non dice se il logo compaia anche nelle email transazionali (**Da verificare**). Il prezzo degli SMS verso l'Italia non c'è.
+
+- **Amazon SNS, notifiche verso la piattaforma** [46][47], **Fonte** (chiude un «Da verificare» del §1.3): SNS firma ogni messaggio verso un indirizzo HTTPS (versione 2 con SHA256, consigliata) e chiede di verificare la firma prima di usarlo, rifiutando i messaggi con un `TopicArn` inatteso. Riprova gli errori 5xx e 429; gli altri errori sono definitivi. Per HTTPS la regola predefinita fa 3 nuovi tentativi; una regola propria arriva a 100 tentativi in **al massimo 1 ora**. Finiti i tentativi il messaggio si scarta, salvo una coda di riserva (SQS).
+
+**Inferenza.** Per gli SMS il dubbio sull'alias resta solo su Amazon; per Skebby resta il contratto sui dati. Un codice d'accesso via SMS dura 10 minuti, ma passa comunque dal fornitore: la durata con cui il fornitore conserva i testi va scritta nel contratto e portata al parere (§8, punti 1 e 4).
+
+Fonti in più, lette il 1/11/2026:
+
+45. Skebby, `https://www.skebby.it/privacy/`: 404.
+46. Amazon SNS, «Message delivery retries»: https://docs.aws.amazon.com/sns/latest/dg/sns-message-delivery-retries.html
+47. Amazon SNS, «Verifying the signatures of Amazon SNS messages»: https://docs.aws.amazon.com/sns/latest/dg/sns-verify-signature-of-message.html
 
 ## Fonti
 
