@@ -2,7 +2,7 @@
 
 Type: grilling
 Status: open
-Blocked by: 02, 06, 08, 15
+Blocked by: 02, 06, 08, 15, 17, 18, 19
 Mappa: [Architettura del percorso 1](../map.md)
 
 ## Domanda (Question)
@@ -33,3 +33,22 @@ Limiti: nessun account o servizio. Scelta in ARCHITECTURE.md.
 **31/10/2026, da [Modello dei dati e dei permessi del percorso 1](02-modello-dati-permessi.md).** Il tipo del file decide il suo contenitore (casa, locazione, incarico, persona) e quindi chi lo vede, sempre attraverso il guardiano, anche per anteprime, PDF ed esportazioni. Documenti e contabili si conservano nello stesso modo, a versioni; le foto a parte, perché si cancellano davvero (resta la riga nel quaderno dei fatti). Resta qui come cancellarle anche dalle copie di sicurezza (7 giorni di Scalingo, fino a 12 mesi della copia mensile). Una ricevuta per incasso, salvo quella che la sostituisce; l'incasso del piano carta porta il numero della ricevuta di carta, che non si registra due volte. A fine locazione il proprietario non vede più le contabili, salvo quelle legate a residui o contestazioni aperti.
 
 **1/11/2026, da [Verifica operativa del percorso 1](16-verifica-operativa.md).** Strumenti decisi: Drizzle su PostgreSQL 17, migrazioni che aggiungono e non tolgono, un solo lavoro notturno con il programmatore di Scalingo (anche per cancellare ciò che ha la conservazione scaduta), prove nel browser con Playwright in ogni controllo. Il PDF delle ricevute si può provare lì. Contenitori temporanei del lavoro notturno e del comando dopo la pubblicazione: M, 512 MiB.
+
+**1/11/2026, da [Ricerca: scanner di documenti già pronti](15-ricerca-scanner-documenti.md).** Ricerca chiusa in [docs/ricerca/scanner-documenti.md](../../../docs/ricerca/scanner-documenti.md); questo ticket non ha più blocchi aperti. Da decidere qui, con le cinque domande del §9: quali caricamenti passano dallo scanner (la proposta esclude le foto della facciata); nel pilota solo il campo file con il ritocco sul server oppure anche «Controlla il foglio» con i bordi trovati da soli; un PDF unico per documento o pagine separate; cosa fare con un HEIC che il server non legge; su quali telefoni e con quali screen reader provare. Lo scanner cambia anche le schermate di caricamento: l'aspetto va poi in DESIGN.md.
+
+**1/11/2026, preferenza dell'utente e [Ricerca: strumenti per uno scanner nostro dentro la pagina](17-ricerca-scanner-nella-pagina.md).** All'utente piace l'idea di uno **scanner nostro dentro la pagina**; prima di scegliere ha chiesto una ricerca allargata, ora chiusa (ricerca, §10). Si aggiunge una sesta domanda (§9): la fotocamera dentro la pagina, con riquadro in tempo reale, consigli a voce e scatto automatico, entra nel pilota oppure in un secondo tempo, dopo una prova su un iPhone vero? Il parere dell'agente è il secondo tempo. La prova con fogli inventati è fatta, su autorizzazione dell'utente (ricerca, §10.7): scanic regge, con due regole nostre, la foto rimpicciolita e una soglia di fiducia che apre l'editor.
+
+**1/11/2026, scelta dell'utente sullo scanner.** «Va bene, scanic con i due accorgimenti»: foto rimpicciolita prima della ricerca e soglia di fiducia che apre la correzione degli angoli. Scritto in [ARCHITECTURE.md](../../../ARCHITECTURE.md), «Scanner dei documenti». Restano qui le altre domande della ricerca, §9: quali caricamenti, pilota o dopo, PDF unico o pagine, HEIC, fotocamera dentro la pagina, telefoni per la prova.
+
+**1/11/2026, proposta del collaboratore di ƎE, riferita dall'utente.** Se l'inquilino carica per sbaglio un file che non c'entra con la locazione, la piattaforma cerca nel documento la cifra dell'affitto; se non la trova avvisa e lascia comunque caricare. Registrata in [PRODUCT.md](../../../PRODUCT.md) §12, riga del 1/11/2026; prima la [ricerca](18-ricerca-importo-nel-documento.md) su come leggere il testo senza servizi esterni. Da decidere qui: quali importi contano, su quali caricamenti, dove si legge il testo, web e app. *Nota dell'agente:* il testo proposto («Sei sicuro…») ha un genere; va riscritto senza, come chiede DESIGN.md.
+
+**1/11/2026, da [Ricerca: trovare l'importo nel documento caricato](18-ricerca-importo-nel-documento.md).** Ricerca chiusa in [docs/ricerca/importo-documento.md](../../../docs/ricerca/importo-documento.md): il controllo si può fare nel telefono, prima dell'invio, e nella prova con documenti inventati regge. Da decidere qui, con le cinque domande del §9:
+- su quali caricamenti vale il controllo;
+- quali importi bastano (parziale, arretrati, più mesi);
+- due avvisi o uno;
+- nel pilota PDF e foto insieme, oppure prima i soli PDF;
+- il testo dei messaggi, senza genere.
+
+Questo ticket non ha più blocchi aperti.
+
+**1/11/2026, nuova proposta del collaboratore di ƎE, riferita dall'utente.** Per chi è poco pratico: Connetto in «Condividi» delle altre app, con il file che entra subito e il posto scelto dopo. L'utente vuole analizzarla **prima** di questo ticket, nel ticket [Condividere un file verso Connetto da un'altra app](19-condividere-verso-connetto.md), che ora lo blocca.

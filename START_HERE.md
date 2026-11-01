@@ -67,19 +67,45 @@ Il 1/11/2026 è chiuso anche [Verifica operativa del percorso 1](.scratch/archit
 
 Il 1/11/2026 è chiuso anche [Servizi esterni: email, SMS e ISTAT](.scratch/architettura-percorso-1/issues/11-servizi-esterni.md). Le email partono da **Amazon SES a Milano**, da un **sottodominio di ƎE**; gli SMS da **Skebby**, con il nome di ƎE iscritto nel registro AGCOM, ma solo dopo aver letto il suo contratto sui dati. Gli SMS sono **a parte dai 20 €**: circa 0,40 € al mese per ogni persona senza email, da considerare nel prezzo dell'adesione, con un avviso sopra 15 € al mese. «Oggi» mostra una voce per persona quando i suoi messaggi non sono **recapitati** (parola nuova del glossario); niente aperture né «letto». L'ISTAT si legge di notte e la variazione si calcola con la formula ufficiale; se manca, l'operatore la inserisce a mano. Da chiedere a ƎE: quanti clienti non hanno l'email e chi gestisce il suo dominio. Dettagli in ARCHITECTURE.md («Servizi esterni: email, SMS e ISTAT»), PRODUCT.md §12 e GLOSSARY.md («Recapitato»); prezzi riletti in [docs/ricerca/invio-email-sms.md](docs/ricerca/invio-email-sms.md), §10.
 
-**Prossima sessione:** la ricerca sugli scanner (ticket 15), il cui messaggio è sotto; dopo di lei [Documenti, foto e ricevute in PDF](.scratch/architettura-percorso-1/issues/12-documenti-foto-ricevute.md), l'ultimo ticket aperto della mappa.
+Il 1/11/2026 è chiusa anche la [ricerca sugli scanner di documenti](.scratch/architettura-percorso-1/issues/15-ricerca-scanner-documenti.md) ([docs/ricerca/scanner-documenti.md](docs/ricerca/scanner-documenti.md)). Nessun browser del telefono porta lo scanner di sistema dentro la pagina: su iPhone si può scansionare con File o Anteprima e poi scegliere il PDF; la scansione di Google Drive salva su Google e non va suggerita. Nel browser la libreria libera **scanic** (MIT, circa 42 KB) trova i bordi del foglio e lo raddrizza dentro il telefono; schiarire è poco codice nostro; sul server sharp riduce la foto e toglie luogo e ora. Per l'app iPhone c'è VisionKit; ML Kit vale solo per un'app Android. Il parere dell'agente e cinque domande per l'utente sono nella ricerca, §7 e §9. Molti punti si verificano solo su telefoni veri.
+
+Il 1/11/2026, su richiesta dell'utente, a cui piace uno **scanner nostro dentro la pagina**, è chiusa anche la [ricerca allargata](.scratch/architettura-percorso-1/issues/17-ricerca-scanner-nella-pagina.md) (stesso file, §10). Fra una decina di strumenti liberi resta **scanic**, che dalla 1.7.0 lavora anche sul video della fotocamera. Il suo rilevatore con l'intelligenza artificiale resta spento: è addestrato anche su immagini «solo per ricerca». Schiarimento e consigli a voce («avvicinati», «stai fermo») si scrivono noi. Parere dell'agente: nel pilota la foto e poi «Controlla il foglio»; la fotocamera dentro la pagina dopo una prova su un iPhone vero. Sesta domanda nella ricerca, §9. Reddit non ha dato discussioni. Nella **prova con fogli inventati**, autorizzata dall'utente, scanic trova il foglio in 9 scene su 12, anche su un tavolo chiaro, e quando sbaglia lo dice con una fiducia bassa; va rimpicciolita la foto prima della ricerca. Lo schiarimento scritto da noi toglie l'ombra. Script in [.scratch/architettura-percorso-1/prove/scanner/](.scratch/architettura-percorso-1/prove/scanner/README.md); resta la prova su un iPhone vero.
+
+Il 1/11/2026 l'utente ha scelto **scanic con i due accorgimenti**: foto rimpicciolita prima della ricerca e soglia di fiducia che apre la correzione degli angoli (ARCHITECTURE.md, «Scanner dei documenti»). Il collaboratore di ƎE propone inoltre che, quando l'inquilino carica un documento, la piattaforma cerchi **la cifra dell'affitto** e, se non la trova, avvisi che il file potrebbe essere sbagliato e che il proprietario potrà vederlo, lasciando comunque caricare (PRODUCT.md §12, 1/11/2026). Il testo va riscritto senza genere.
+
+Il 1/11/2026 è chiusa anche la [ricerca sull'importo nel documento](.scratch/architettura-percorso-1/issues/18-ricerca-importo-nel-documento.md) ([docs/ricerca/importo-documento.md](docs/ricerca/importo-documento.md)). Il testo si legge **nel telefono, prima dell'invio**: pdf.js per i PDF della banca, tesseract.js in italiano per foto e scansioni, tutto dal nostro sito. Nella prova con 15 documenti inventati 13 risultati sono giusti: falliscono solo due foto illeggibili anche a occhio. «Condividi» da un'altra app funziona su Android con il sito installato; su iPhone serve l'app.
+
+Il 1/11/2026 l'utente riferisce un'altra proposta del collaboratore di ƎE: chi è poco pratico, spesso le persone più anziane, fatica a caricare un documento ricevuto su WhatsApp o scaricato da un sito. Dal documento toccherebbe «Condividi» e sceglierebbe **Connetto**; il file entra subito e il posto si sceglie dopo. Si sa già che su Android il sito può comparire in «Condividi» solo se è installato sulla schermata Home, e su iPhone solo con l'app. L'utente vuole decidere se tenerla, cambiarla o toglierla **prima** del lavoro sui documenti.
+
+**Prossima sessione:** prima [Condividere un file verso Connetto da un'altra app](.scratch/architettura-percorso-1/issues/19-condividere-verso-connetto.md), poi [Documenti, foto e ricevute in PDF](.scratch/architettura-percorso-1/issues/12-documenti-foto-ricevute.md), l'ultimo ticket della mappa. I due messaggi sono sotto, nell'ordine.
 
 ---
 
-## Architettura del percorso 1: ricerca sugli scanner di documenti
+## Architettura del percorso 1: condividere un file verso Connetto (prima)
 
-/wayfinder .scratch/architettura-percorso-1/map.md — ticket «Ricerca: scanner di documenti già pronti» (.scratch/architettura-percorso-1/issues/15-ricerca-scanner-documenti.md).
+/wayfinder .scratch/architettura-percorso-1/map.md — ticket «Condividere un file verso Connetto da un'altra app» (.scratch/architettura-percorso-1/issues/19-condividere-verso-connetto.md).
 
-Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora) e il ticket; poi PRODUCT.md §12, riga del 30/10/2026 «Scansione automatica al caricamento», e il ticket «Documenti, foto e ricevute in PDF» (commenti del 30/10/2026). Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora) e il ticket; poi docs/ricerca/importo-documento.md (§4 e §7) e, in PRODUCT.md §12, le righe del 1/11/2026. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
 
-- Rivendica il ticket (`Status: claimed`) e lavora solo su questo, con le skill `research` e `ponytail`.
-- Fonti ufficiali (Apple, Google, documentazione dei browser, sorgente delle librerie) con la data di lettura, in un file di docs/ricerca/. Non smontare app di altri.
-- Nessuna installazione e nessun account; una prova usa e getta con fogli inventati solo se serve a rispondere, e nessuna immagine a servizi esterni.
+- Rivendica il ticket (`Status: claimed`) e lavora solo su questo, con le skill `grilling`, `domain-modeling` e `ponytail`; `research` per i fatti che mancano, con fonti ufficiali e la data di lettura.
+- Voglio capire se l'idea va tenuta, cambiata o tolta, e se c'è una soluzione migliore per chi è poco pratico con il telefono. Fammi le domande una alla volta, in parole semplici, con una raccomandazione.
+- Registra l'esito in PRODUCT.md §12 e nel ticket, e aggiorna il ticket «Documenti, foto e ricevute in PDF», che viene subito dopo.
+- Nessun account, servizio o messaggio reale.
+
+Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
+
+---
+
+## Architettura del percorso 1: documenti, foto e ricevute in PDF
+
+/wayfinder .scratch/architettura-percorso-1/map.md — ticket «Documenti, foto e ricevute in PDF» (.scratch/architettura-percorso-1/issues/12-documenti-foto-ricevute.md).
+
+Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora) e il ticket con tutti i commenti; poi docs/ricerca/scanner-documenti.md (§7, §9 e §10) e docs/ricerca/importo-documento.md (§7 e §9) e docs/ricerca/pdf-ricevute.md, PRODUCT.md §12 (riga del 30/10/2026 «Scansione automatica al caricamento») e, in DESIGN.md, «Ricevute stampate (percorso 1)» e «Foto e illustrazione della casa (percorso 1)». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+
+- Rivendica il ticket (`Status: claimed`) e lavora solo su questo, con le skill `grilling`, `domain-modeling` e `ponytail`.
+- Fammi le domande una alla volta, in parole semplici, con una raccomandazione; comprese quelle rimaste sullo scanner (ricerca, §9; scanic con i due accorgimenti è già scelto) e quelle sul controllo dell'importo (PRODUCT.md §12, 1/11/2026; ricerca, §9).
+- Registra le scelte tecniche in ARCHITECTURE.md, un cambio di prodotto in PRODUCT.md §12, l'aspetto in DESIGN.md; un ADR solo se la scelta è difficile da invertire.
+- Nessuna installazione, nessun account, nessuna immagine a servizi esterni; prove usa e getta solo con fogli inventati.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 
