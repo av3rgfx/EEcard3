@@ -1,7 +1,7 @@
 # Condividere un file verso Connetto da un'altra app
 
 Type: grilling
-Status: open
+Status: claimed
 Blocked by:
 Mappa: [Architettura del percorso 1](../map.md)
 
