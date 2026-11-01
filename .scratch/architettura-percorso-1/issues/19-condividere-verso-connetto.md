@@ -1,7 +1,7 @@
 # Condividere un file verso Connetto da un'altra app
 
 Type: grilling
-Status: claimed
+Status: resolved
 Blocked by:
 Mappa: [Architettura del percorso 1](../map.md)
 
@@ -30,10 +30,18 @@ Limiti: nessun account, servizio o messaggio reale; eventuali fatti nuovi con fo
 
 ## Commenti (Comments)
 
-**1/11/2026, sessione di analisi (skill `grilling`, `domain-modeling`, `ponytail`).** Fatti raccolti prima delle domande, letti il 1/11/2026:
-- Nel percorso 1 carica documenti l'inquilino solo se paga con bonifico al proprietario (la contabile); chi paga al banco ha la ricevuta di carta e non carica nulla. Il proprietario aggiunge i suoi documenti (PRODUCT.md §10).
-- In Italia, ottobre 2026: 62 % delle visite web da telefono da Android, 38 % da iPhone ([StatCounter](https://gs.statcounter.com/os-market-share/mobile/italy)). Sono visite, non persone, e non i clienti di ƎE: il dato di ƎE manca.
-- Su Android Connetto compare in «Condividi» solo con il sito installato sulla schermata Home con Chrome; su iPhone con Safari no, serve l'app ([docs/ricerca/importo-documento.md](../../../docs/ricerca/importo-documento.md), §4).
-- Su iPhone, da WhatsApp: tocco sul documento, «Condividi», «Salva in File»; poi dalla pagina «Scegli file», «Recenti». Solo guide di terzi ([GuidingTech](https://www.guidingtech.com/where-are-whatsapp-documents-or-images-stored/), [iPhoneLife](https://cdn.iphonelife.com/content/how-to-save-items-to-files-app-iphone)); pagine ufficiali di Apple e WhatsApp non raggiunte: **da verificare** su un iPhone vero.
+**1/11/2026, sessione di analisi (skill `grilling`, `domain-modeling`, `ponytail`).** Fatti raccolti prima delle domande, con le fonti, in [docs/ricerca/importo-documento.md](../../../docs/ricerca/importo-documento.md), §4, «Aggiunta del 1/11/2026»: nel percorso 1 carica la contabile solo l'inquilino che paga con bonifico al proprietario (chi paga al banco ha la ricevuta di carta), e il proprietario aggiunge i suoi documenti (PRODUCT.md §10); in Italia circa 62 % delle visite web da telefono da Android e 38 % da iPhone, visite e non clienti di ƎE; su iPhone da WhatsApp si salva in File e si ritrova da «Scegli file», da verificare su un iPhone vero.
 
 **Domanda 1, «Condividi» nel pilota?** Scelta dell'utente, sull'opzione consigliata: **non nel pilota**. L'idea si tiene e si sposta all'app iPhone, con l'estensione di condivisione. Su Android si valuta dopo il pilota, solo se molti clienti installano il sito. Scartati: sì nel pilota (solo Android installato, un'installazione in più da insegnare, due gesti diversi da spiegare al banco); togliere l'idea (con l'app è il gesto più semplice).
+
+**Domanda 2, aiuto nel pilota per chi è poco pratico.** Proposta dell'agente: guida corta «Il documento è su WhatsApp?» sotto «Carica la contabile», frase che ricorda che il proprietario può confermare anche senza contabile, l'operatore che fotografa e carica la contabile al banco. Alternative: solo la guida, nessun aiuto. **Scelta dell'utente: nessun aiuto.** «La piattaforma verrà usata principalmente da PC e chi usa il PC non dovrebbe avere questi problemi; per il telefono il problema verrà risolto con l'applicazione.» Scartati anche l'inoltro via email a un indirizzo della casa (nuovo servizio di ricezione, indirizzo da ricordare, file da abbinare al mese) e WhatsApp verso l'agenzia (passa da Meta, contro la scelta sui dati).
+
+*Punto segnalato dall'agente:* «soprattutto dal computer» non era scritto nei documenti; pagina del pacchetto e scanner trattano computer e telefono alla pari, e lo scanner nella pagina serve a chi fotografa con il telefono. Se la previsione regge, lo scanner pesa meno nel ticket [Documenti, foto e ricevute in PDF](12-documenti-foto-ricevute.md).
+
+**Domanda 3, verificare la previsione?** Scelta dell'utente, sull'opzione consigliata: si scrive come **previsione da verificare nel pilota**, con due misure senza nomi: ogni mese quanti documenti arrivano dal computer e quanti dal telefono (lo dice il browser, nessuno strumento in più); le volte in cui qualcuno non riesce a caricare e porta il foglio in agenzia, annotate dall'operatore. Se a metà pilota il telefono supera circa la metà dei caricamenti, si riprende la guida o si anticipa l'app. Scartati: nessun controllo; solo l'annotazione dell'operatore (vede chi chiede aiuto, non chi rinuncia).
+
+*Rami chiusi senza domanda:* «prima entra, poi scegli dove metterlo» e il controllo dell'importo nell'estensione di condivisione riguardano l'app iPhone, fuori dall'ambito di questa mappa; la ricerca indica già la strada (il file resta nel telefono e si controlla prima dell'invio, §4). Nel design e nell'accessibilità del pilota non cambia nulla.
+
+## Risposta (Answer)
+
+**Tenere, ma non nel pilota.** Connetto in «Condividi» arriva con l'**app iPhone**, con l'estensione di condivisione; su Android, con il sito installato, si valuta dopo il pilota solo se molti clienti installano il sito. Nel pilota **nessun aiuto in più**: «Carica la contabile» resta com'è, nel mese giusto. Previsione dell'utente da verificare: i clienti useranno soprattutto il **computer**; due misure senza nomi nel pilota (caricamenti dal computer e dal telefono; documenti portati in agenzia perché non caricati). Registrato in [PRODUCT.md](../../../PRODUCT.md) §12, riga del 1/11/2026, e §13, «Chi resta fuori?».
