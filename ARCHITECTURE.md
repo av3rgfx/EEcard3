@@ -1,7 +1,7 @@
 # Decisioni tecniche
 
 ## Stato
-Scelte in corso al passo 7 ([docs/METODO.md](docs/METODO.md)). Dal 30/10/2026 sono decisi la forma della piattaforma e il posto in cui gira, e poi linguaggio, framework e componenti; dal 31/10/2026 le regole dell'accesso e il modello dei dati e dei permessi; dal 1/11/2026 la verifica operativa: database, controlli automatici, aggiornamenti, avvisi, lavori programmati e ambiente di prova, e i servizi esterni: email, SMS e ISTAT («Decisioni confermate»). Nessuna soluzione tecnica dei tentativi precedenti è un punto di partenza.
+Scelte in corso al passo 7 ([docs/METODO.md](docs/METODO.md)). Dal 30/10/2026 sono decisi la forma della piattaforma e il posto in cui gira, e poi linguaggio, framework e componenti; dal 31/10/2026 le regole dell'accesso e il modello dei dati e dei permessi; dal 1/11/2026 la verifica operativa: database, controlli automatici, aggiornamenti, avvisi, lavori programmati e ambiente di prova, e i servizi esterni: email, SMS e ISTAT, e lo scanner dei documenti («Decisioni confermate»). Nessuna soluzione tecnica dei tentativi precedenti è un punto di partenza.
 
 Dal 30/10/2026 le scelte si prendono nella mappa [Architettura del percorso 1](.scratch/architettura-percorso-1/map.md), una alla volta con l'utente. Destinazione confermata: le scelte tecniche del percorso 1 scritte qui, **pronte per il controllo B**, senza rendere difficili i percorsi 2 e 3; il controllo B è un passo a parte.
 
@@ -171,6 +171,16 @@ Discussione nel [ticket](.scratch/architettura-percorso-1/issues/11-servizi-este
 - **Da verificare all'inizio della costruzione:** il testo del contratto sui dati di Skebby e la sede dei dati; come si attiva la modalità di prova di Skebby; che gli esiti di SES arrivino per tutti i tipi previsti con gli indirizzi simulati.
 - Nessun ADR: SES e Skebby stanno dietro un solo punto del codice e si sostituiscono con poco lavoro; il dominio d'invio si cambia con i record del dominio.
 - *Motivo:* i dati restano in Italia, le email costano quasi niente e l'SMS arriva con il nome che i clienti conoscono, come vogliono le regole AGCOM; gli esiti sono firmati o protetti, e ciò che non si sa non si mostra come recapitato; l'ISTAT si legge da solo, ma l'operatore controlla e ha sempre la strada a mano.
+
+### Scanner dei documenti (1/11/2026, decisione dell'utente)
+Dopo le ricerche in [docs/ricerca/scanner-documenti.md](docs/ricerca/scanner-documenti.md) (§1–§10) e la prova con fogli inventati (§10.7); ticket [Ricerca: scanner di documenti già pronti](.scratch/architettura-percorso-1/issues/15-ricerca-scanner-documenti.md) e [Ricerca: strumenti per uno scanner nostro dentro la pagina](.scratch/architettura-percorso-1/issues/17-ricerca-scanner-nella-pagina.md). L'utente ha scelto l'opzione consigliata.
+- **scanic** (MIT) trova i bordi del foglio e lo raddrizza **dentro il telefono**; il suo codice si serve dal nostro sito, mai da un CDN; il **rilevatore con l'intelligenza artificiale resta spento** (addestrato anche su immagini «solo per ricerca»).
+- **Due regole nostre:** la foto si **rimpicciolisce a circa 1000 px** sul lato lungo prima di cercare il foglio, e gli angoli si riportano alla misura vera; sotto una **soglia di fiducia** (circa 0,75, da tarare su foto vere) non ci si fida del ritaglio e si apre subito la correzione degli angoli, con un messaggio.
+- Scritti da noi: lo schiarimento del foglio (provato nella prova) e, se serve, la correzione degli angoli con nomi italiani, annunci allo screen reader e un modo senza trascinare (WCAG 2.2, 2.5.7).
+- **Restano da decidere** nel ticket [Documenti, foto e ricevute in PDF](.scratch/architettura-percorso-1/issues/12-documenti-foto-ricevute.md): quali caricamenti passano dallo scanner, se entra nel pilota, un PDF unico o pagine separate, l'HEIC, la fotocamera dentro la pagina (nel pilota o dopo una prova su iPhone), su quali telefoni provare.
+- *Scartati:* jscanify e opencv-document-scanner (OpenCV.js, circa 3,5 MB; nella prova perdono il foglio su fondo chiaro senza accorgersene; blocco segnalato su iPhone); docuSnap (licenza contraddittoria); la scansione di Google Drive (le immagini vanno a Google).
+- Nessun ADR: scanic sta dietro un punto solo del codice e si sostituisce con poco lavoro.
+- *Motivo:* l'unico strumento libero, leggero e attivo che regge nella prova, anche su fondo chiaro, e che dice quando non è sicuro; le immagini non escono dal telefono.
 
 ## Verifica operativa
 - Copie e prova di ripristino: decise il 30/10/2026 («Decisioni confermate», «Forma della piattaforma e dove gira»).

@@ -2,7 +2,7 @@
 
 Type: grilling
 Status: open
-Blocked by: 02, 06, 08, 15, 17
+Blocked by: 02, 06, 08, 15, 17, 18
 Mappa: [Architettura del percorso 1](../map.md)
 
 ## Domanda (Question)
@@ -37,3 +37,7 @@ Limiti: nessun account o servizio. Scelta in ARCHITECTURE.md.
 **1/11/2026, da [Ricerca: scanner di documenti già pronti](15-ricerca-scanner-documenti.md).** Ricerca chiusa in [docs/ricerca/scanner-documenti.md](../../../docs/ricerca/scanner-documenti.md); questo ticket non ha più blocchi aperti. Da decidere qui, con le cinque domande del §9: quali caricamenti passano dallo scanner (la proposta esclude le foto della facciata); nel pilota solo il campo file con il ritocco sul server oppure anche «Controlla il foglio» con i bordi trovati da soli; un PDF unico per documento o pagine separate; cosa fare con un HEIC che il server non legge; su quali telefoni e con quali screen reader provare. Lo scanner cambia anche le schermate di caricamento: l'aspetto va poi in DESIGN.md.
 
 **1/11/2026, preferenza dell'utente e [Ricerca: strumenti per uno scanner nostro dentro la pagina](17-ricerca-scanner-nella-pagina.md).** All'utente piace l'idea di uno **scanner nostro dentro la pagina**; prima di scegliere ha chiesto una ricerca allargata, ora chiusa (ricerca, §10). Si aggiunge una sesta domanda (§9): la fotocamera dentro la pagina, con riquadro in tempo reale, consigli a voce e scatto automatico, entra nel pilota oppure in un secondo tempo, dopo una prova su un iPhone vero? Il parere dell'agente è il secondo tempo. La prova con fogli inventati è fatta, su autorizzazione dell'utente (ricerca, §10.7): scanic regge, con due regole nostre, la foto rimpicciolita e una soglia di fiducia che apre l'editor.
+
+**1/11/2026, scelta dell'utente sullo scanner.** «Va bene, scanic con i due accorgimenti»: foto rimpicciolita prima della ricerca e soglia di fiducia che apre la correzione degli angoli. Scritto in [ARCHITECTURE.md](../../../ARCHITECTURE.md), «Scanner dei documenti». Restano qui le altre domande della ricerca, §9: quali caricamenti, pilota o dopo, PDF unico o pagine, HEIC, fotocamera dentro la pagina, telefoni per la prova.
+
+**1/11/2026, proposta del collaboratore di ƎE, riferita dall'utente.** Se l'inquilino carica per sbaglio un file che non c'entra con la locazione, la piattaforma cerca nel documento la cifra dell'affitto; se non la trova avvisa e lascia comunque caricare. Registrata in [PRODUCT.md](../../../PRODUCT.md) §12, riga del 1/11/2026; prima la [ricerca](18-ricerca-importo-nel-documento.md) su come leggere il testo senza servizi esterni. Da decidere qui: quali importi contano, su quali caricamenti, dove si legge il testo, web e app. *Nota dell'agente:* il testo proposto («Sei sicuro…») ha un genere; va riscritto senza, come chiede DESIGN.md.
