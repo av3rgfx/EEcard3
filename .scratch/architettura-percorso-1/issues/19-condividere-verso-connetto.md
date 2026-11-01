@@ -27,3 +27,13 @@ Da analizzare nella sessione, una domanda alla volta:
 4. Pilota o dopo: sul web (Android installato), con l'app iPhone, o entrambe; che cosa cambia nel design (DESIGN.md) e nell'accessibilità.
 
 Limiti: nessun account, servizio o messaggio reale; eventuali fatti nuovi con fonti ufficiali in `docs/ricerca/`. Esito: tenere, cambiare o togliere, registrato in PRODUCT.md §12. Serve prima del ticket [Documenti, foto e ricevute in PDF](12-documenti-foto-ricevute.md).
+
+## Commenti (Comments)
+
+**1/11/2026, sessione di analisi (skill `grilling`, `domain-modeling`, `ponytail`).** Fatti raccolti prima delle domande, letti il 1/11/2026:
+- Nel percorso 1 carica documenti l'inquilino solo se paga con bonifico al proprietario (la contabile); chi paga al banco ha la ricevuta di carta e non carica nulla. Il proprietario aggiunge i suoi documenti (PRODUCT.md §10).
+- In Italia, ottobre 2026: 62 % delle visite web da telefono da Android, 38 % da iPhone ([StatCounter](https://gs.statcounter.com/os-market-share/mobile/italy)). Sono visite, non persone, e non i clienti di ƎE: il dato di ƎE manca.
+- Su Android Connetto compare in «Condividi» solo con il sito installato sulla schermata Home con Chrome; su iPhone con Safari no, serve l'app ([docs/ricerca/importo-documento.md](../../../docs/ricerca/importo-documento.md), §4).
+- Su iPhone, da WhatsApp: tocco sul documento, «Condividi», «Salva in File»; poi dalla pagina «Scegli file», «Recenti». Solo guide di terzi ([GuidingTech](https://www.guidingtech.com/where-are-whatsapp-documents-or-images-stored/), [iPhoneLife](https://cdn.iphonelife.com/content/how-to-save-items-to-files-app-iphone)); pagine ufficiali di Apple e WhatsApp non raggiunte: **da verificare** su un iPhone vero.
+
+**Domanda 1, «Condividi» nel pilota?** Scelta dell'utente, sull'opzione consigliata: **non nel pilota**. L'idea si tiene e si sposta all'app iPhone, con l'estensione di condivisione. Su Android si valuta dopo il pilota, solo se molti clienti installano il sito. Scartati: sì nel pilota (solo Android installato, un'installazione in più da insegnare, due gesti diversi da spiegare al banco); togliere l'idea (con l'app è il gesto più semplice).
