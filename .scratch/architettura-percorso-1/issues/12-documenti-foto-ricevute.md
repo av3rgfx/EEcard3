@@ -52,3 +52,9 @@ Limiti: nessun account o servizio. Scelta in ARCHITECTURE.md.
 Questo ticket non ha più blocchi aperti.
 
 **1/11/2026, nuova proposta del collaboratore di ƎE, riferita dall'utente.** Per chi è poco pratico: Connetto in «Condividi» delle altre app, con il file che entra subito e il posto scelto dopo. L'utente vuole analizzarla **prima** di questo ticket, nel ticket [Condividere un file verso Connetto da un'altra app](19-condividere-verso-connetto.md), che ora lo blocca.
+
+**1/11/2026, da [Condividere un file verso Connetto da un'altra app](19-condividere-verso-connetto.md).** Ticket chiuso; questo ticket non ha più blocchi aperti. Esito ([PRODUCT.md](../../../PRODUCT.md) §12, riga del 1/11/2026):
+- **Nessun «Condividi» verso Connetto nel pilota**: niente `share_target` nel manifesto né service worker che tiene i file condivisi. Il file entra solo dalla pagina, con il posto già scelto («Carica la contabile» nel mese). Arriva con l'app iPhone; Android con il sito installato si valuta dopo il pilota.
+- **Nessun aiuto in più** per caricare dal telefono: niente guida, niente indirizzo email della casa, niente WhatsApp.
+- **Previsione dell'utente:** i clienti useranno la piattaforma **soprattutto dal computer**. Da tenere presente qui: lo scanner nella pagina (scanic, già scelto) serve a chi fotografa con il telefono, quindi può pesare meno; per esempio nel pilota «Controlla il foglio» solo dove serve davvero, oppure lo scanner dopo il pilota. È una domanda da fare all'utente, non già decisa. Sul computer conta anche il caricamento trascinando il file.
+- **Da costruire per la misura** (§13, «Chi resta fuori?»): ogni mese il numero dei documenti caricati dal computer e dal telefono, solo i due totali, senza nomi né dettagli del dispositivo conservati per persona; l'operatore annota, senza nomi, chi porta in agenzia un documento che non è riuscito a caricare.

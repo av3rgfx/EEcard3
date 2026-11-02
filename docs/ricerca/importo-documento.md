@@ -53,6 +53,9 @@ Legenda: **Fonte** = ciò che dice la fonte o ciò che la prova ha misurato; **I
   - Sul web dell'iPhone il caso del collaboratore, il tocco sbagliato mentre si condivide, non può accadere: un file arriva solo scegliendolo dalla pagina. Lì però si può sbagliare file nella stessa maniera, e il controllo serve uguale.
   - Su Android, con il sito installato, il service worker può tenere il file nel telefono finché non è controllato: niente parte prima della conferma.
   - Nell'app iPhone, l'estensione di condivisione fa il controllo prima dell'invio.
+- **Aggiunta del 1/11/2026** (ticket [19 «Condividere un file verso Connetto da un'altra app»](../../.scratch/architettura-percorso-1/issues/19-condividere-verso-connetto.md)):
+  - **Fonte (StatCounter):** in Italia, a ottobre 2026, il 61,95 % delle visite web da telefono viene da Android e il 38,04 % da iPhone [14]. Sono visite, non persone, e non i clienti di ƎE: il dato di ƎE manca.
+  - **Da verificare (solo guide di terzi):** su iPhone un documento ricevuto su WhatsApp si salva toccandolo, poi «Condividi» e «Salva in File»; finisce in iCloud Drive o «Sul mio iPhone», e dalla pagina si ritrova con «Scegli file» [15][16]. Le pagine ufficiali di Apple e WhatsApp non sono state raggiunte; va provato su un iPhone vero.
 
 ## 5. Trovare la cifra
 
@@ -143,9 +146,13 @@ Tutte lette il 1/11/2026.
 11. Apple, App Extension Programming Guide, «Share», https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/Share.html (archivio, 2017).
 12. npm, `scribe.js-ocr` 0.17.0 (AGPL-3.0), https://www.npmjs.com/package/scribe.js-ocr.
 13. Prova di questa ricerca: [.scratch/architettura-percorso-1/prove/importo/](../../.scratch/architettura-percorso-1/prove/importo/README.md).
+14. StatCounter Global Stats, «Mobile Operating System Market Share Italy», https://gs.statcounter.com/os-market-share/mobile/italy (ottobre 2026).
+15. Guiding Tech, «Where are WhatsApp documents or images stored», https://www.guidingtech.com/where-are-whatsapp-documents-or-images-stored/ (fonte secondaria).
+16. iPhone Life, «How to save items to the Files app», https://cdn.iphonelife.com/content/how-to-save-items-to-files-app-iphone (fonte secondaria).
 
 ## Fonti non raggiunte
 
 - Le pagine della documentazione Apple si leggono solo dall'interfaccia JSON; l'elenco delle lingue di Vision non c'è.
 - La pagina attuale di Apple sulle estensioni di condivisione non è stata trovata; letta la guida d'archivio.
+- Le guide ufficiali di Apple (app File, «Recenti») e di WhatsApp (salvare un documento su iPhone) non sono uscite dalle ricerche del 1/11/2026; usate solo fonti secondarie [15][16].
 - **Non eseguiti:** prove su iPhone e Android; prove con contabili vere.

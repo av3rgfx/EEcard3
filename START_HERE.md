@@ -77,22 +77,9 @@ Il 1/11/2026 è chiusa anche la [ricerca sull'importo nel documento](.scratch/ar
 
 Il 1/11/2026 l'utente riferisce un'altra proposta del collaboratore di ƎE: chi è poco pratico, spesso le persone più anziane, fatica a caricare un documento ricevuto su WhatsApp o scaricato da un sito. Dal documento toccherebbe «Condividi» e sceglierebbe **Connetto**; il file entra subito e il posto si sceglie dopo. Si sa già che su Android il sito può comparire in «Condividi» solo se è installato sulla schermata Home, e su iPhone solo con l'app. L'utente vuole decidere se tenerla, cambiarla o toglierla **prima** del lavoro sui documenti.
 
-**Prossima sessione:** prima [Condividere un file verso Connetto da un'altra app](.scratch/architettura-percorso-1/issues/19-condividere-verso-connetto.md), poi [Documenti, foto e ricevute in PDF](.scratch/architettura-percorso-1/issues/12-documenti-foto-ricevute.md), l'ultimo ticket della mappa. I due messaggi sono sotto, nell'ordine.
+Il 1/11/2026 è chiuso anche [Condividere un file verso Connetto da un'altra app](.scratch/architettura-percorso-1/issues/19-condividere-verso-connetto.md) ([PRODUCT.md](PRODUCT.md) §12): l'idea si tiene ma **non nel pilota**, arriva con l'app iPhone; nel pilota nessun aiuto in più per caricare dal telefono. Previsione dell'utente da verificare nel pilota: i clienti useranno **soprattutto il computer**.
 
----
-
-## Architettura del percorso 1: condividere un file verso Connetto (prima)
-
-/wayfinder .scratch/architettura-percorso-1/map.md — ticket «Condividere un file verso Connetto da un'altra app» (.scratch/architettura-percorso-1/issues/19-condividere-verso-connetto.md).
-
-Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora) e il ticket; poi docs/ricerca/importo-documento.md (§4 e §7) e, in PRODUCT.md §12, le righe del 1/11/2026. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
-
-- Rivendica il ticket (`Status: claimed`) e lavora solo su questo, con le skill `grilling`, `domain-modeling` e `ponytail`; `research` per i fatti che mancano, con fonti ufficiali e la data di lettura.
-- Voglio capire se l'idea va tenuta, cambiata o tolta, e se c'è una soluzione migliore per chi è poco pratico con il telefono. Fammi le domande una alla volta, in parole semplici, con una raccomandazione.
-- Registra l'esito in PRODUCT.md §12 e nel ticket, e aggiorna il ticket «Documenti, foto e ricevute in PDF», che viene subito dopo.
-- Nessun account, servizio o messaggio reale.
-
-Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
+**Prossima sessione:** [Documenti, foto e ricevute in PDF](.scratch/architettura-percorso-1/issues/12-documenti-foto-ricevute.md), l'ultimo ticket della mappa. Il messaggio è sotto.
 
 ---
 
@@ -100,10 +87,10 @@ Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push 
 
 /wayfinder .scratch/architettura-percorso-1/map.md — ticket «Documenti, foto e ricevute in PDF» (.scratch/architettura-percorso-1/issues/12-documenti-foto-ricevute.md).
 
-Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora) e il ticket con tutti i commenti; poi docs/ricerca/scanner-documenti.md (§7, §9 e §10) e docs/ricerca/importo-documento.md (§7 e §9) e docs/ricerca/pdf-ricevute.md, PRODUCT.md §12 (riga del 30/10/2026 «Scansione automatica al caricamento») e, in DESIGN.md, «Ricevute stampate (percorso 1)» e «Foto e illustrazione della casa (percorso 1)». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora) e il ticket con tutti i commenti; poi docs/ricerca/scanner-documenti.md (§7, §9 e §10) e docs/ricerca/importo-documento.md (§7 e §9) e docs/ricerca/pdf-ricevute.md, PRODUCT.md §12 (riga del 30/10/2026 «Scansione automatica al caricamento» e righe del 1/11/2026, compresa «Condividere un file verso Connetto») e, in DESIGN.md, «Ricevute stampate (percorso 1)» e «Foto e illustrazione della casa (percorso 1)». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
 
 - Rivendica il ticket (`Status: claimed`) e lavora solo su questo, con le skill `grilling`, `domain-modeling` e `ponytail`.
-- Fammi le domande una alla volta, in parole semplici, con una raccomandazione; comprese quelle rimaste sullo scanner (ricerca, §9; scanic con i due accorgimenti è già scelto) e quelle sul controllo dell'importo (PRODUCT.md §12, 1/11/2026; ricerca, §9).
+- Fammi le domande una alla volta, in parole semplici, con una raccomandazione; comprese quelle rimaste sullo scanner (ricerca, §9; scanic con i due accorgimenti è già scelto) e quelle sul controllo dell'importo (PRODUCT.md §12, 1/11/2026; ricerca, §9). Tieni conto della mia previsione che i clienti useranno soprattutto il computer: dimmi se cambia quanto mettere dello scanner nel pilota.
 - Registra le scelte tecniche in ARCHITECTURE.md, un cambio di prodotto in PRODUCT.md §12, l'aspetto in DESIGN.md; un ADR solo se la scelta è difficile da invertire.
 - Nessuna installazione, nessun account, nessuna immagine a servizi esterni; prove usa e getta solo con fogli inventati.
 
