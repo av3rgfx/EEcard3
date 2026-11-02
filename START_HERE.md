@@ -81,23 +81,9 @@ Il 1/11/2026 è chiuso anche [Condividere un file verso Connetto da un'altra app
 
 Il 2/11/2026 è chiuso anche [Documenti, foto e ricevute in PDF](.scratch/architettura-percorso-1/issues/12-documenti-foto-ricevute.md), l'ultimo ticket della mappa: **l'architettura del percorso 1 è pronta per il controllo B**. Con la previsione «soprattutto computer» esce dal pilota la fotocamera dentro la pagina, non lo scanner: «Controlla il foglio» parte solo quando arriva una foto, nei caricamenti di documenti e contabili. Il controllo dell'importo vale per le due contabili (inquilino ed ƎE), su PDF e foto, con due avvisi e sempre «Carica comunque». Ogni documento è un PDF, al massimo 20 MB e 20 pagine, e si apre solo attraverso il guardiano; niente antivirus nel pilota (rischio accettato). Le foto della facciata tolte si cancellano nella notte e non entrano nella copia mensile. Le ricevute si fanno con **Typst**, si salvano a ogni fatto e non si rifanno; per il piano carta c'è una copia in PDF della ricevuta di carta. Le durate di conservazione arrivano dal parere privacy, e prima niente si cancella da solo. Dettagli in ARCHITECTURE.md («Documenti, foto e ricevute»), PRODUCT.md §12 (2/11/2026) e DESIGN.md («Caricare documenti e contabili (percorso 1)»).
 
-Il 2/11/2026, dopo la chiusura, il collaboratore di ƎE ha proposto che l'inquilino **firmi il documento del nuovo canone ISTAT** (firma digitale, foglio firmato e caricato, o al banco) dopo l'approvazione del proprietario, e che solo allora l'aggiornamento sia «ufficiale» (PRODUCT.md §12, da decidere). Nuovo ticket [Firma dell'inquilino sul nuovo canone ISTAT](.scratch/architettura-percorso-1/issues/20-firma-inquilino-istat.md), da chiudere prima del controllo B.
+Il 2/11/2026 è decisa anche la proposta del collaboratore di ƎE sulla **firma dell'inquilino sul nuovo canone ISTAT** ([ticket](.scratch/architettura-percorso-1/issues/20-firma-inquilino-istat.md); PRODUCT.md §12): la firma prova la ricezione e il canone cambia comunque; nel pilota firma digitale propria (anche con CieSign), foglio firmato e caricato o al banco, senza fornitori; firmano tutti, salvo l'**inquilino indicato**; verifica delle firme digitali con DSS nel lavoro notturno o dall'operatore. Ricerca in [docs/ricerca/firma-digitale.md](docs/ricerca/firma-digitale.md). Al collaboratore si chiede quali altri documenti vuole far firmare.
 
-**Poi:** il **controllo B** ([docs/METODO.md](docs/METODO.md), passo 7), quando arrivano le risposte del collaboratore di ƎE (messaggio «Il collaboratore di ƎE guarda lo spazio dell'operatore», sotto). Il messaggio per il controllo B è il primo qui sotto.
-
----
-
-## Architettura del percorso 1: firma dell'inquilino sul nuovo canone ISTAT
-
-/wayfinder .scratch/architettura-percorso-1/map.md — ticket «Firma dell'inquilino sul nuovo canone ISTAT» (.scratch/architettura-percorso-1/issues/20-firma-inquilino-istat.md).
-
-Leggi AGENTS.md, STATUS.md, la mappa e il ticket con tutti i commenti; poi PRODUCT.md §10.3 (D18, «Cambi del canone») e §12 (riga del 2/11/2026 «Firma dell'inquilino sul nuovo canone ISTAT»), docs/ricerca/adempimenti-locazione.md (riga ISTAT) e, in DESIGN.md, le voci «Nuovo canone» di operatore, proprietario e inquilino. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
-
-- Rivendica il ticket (`Status: claimed`) se non lo è già, e lavora solo su questo, con `grilling`, `domain-modeling` e `ponytail`.
-- Fammi le domande una alla volta, in parole semplici, con una raccomandazione. Distingui ciò che decido io da ciò che va al parere legale. Nessun servizio di firma digitale va provato o aperto senza la mia autorizzazione.
-- Registra le scelte di prodotto in PRODUCT.md §12, quelle tecniche in ARCHITECTURE.md, l'aspetto in DESIGN.md.
-
-Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
+**Prossimo passo:** il **controllo B** ([docs/METODO.md](docs/METODO.md), passo 7), quando arrivano le risposte del collaboratore di ƎE (messaggio «Il collaboratore di ƎE guarda lo spazio dell'operatore», sotto). Il messaggio per il controllo B è il primo qui sotto.
 
 ---
 

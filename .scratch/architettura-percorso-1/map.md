@@ -1,7 +1,7 @@
 # Architettura del percorso 1: attivazione e canone del mese
 
 Type: map (wayfinder:map)
-Aperta: 30/10/2026; il 2/11/2026 tutti i ticket erano chiusi, poi una nuova proposta del collaboratore di ƎE ha aperto il ticket [Firma dell'inquilino sul nuovo canone ISTAT](issues/20-firma-inquilino-istat.md), che cambia il nuovo canone e va deciso prima del controllo B, dopo la pagina del pacchetto completa ([docs/METODO.md](../../docs/METODO.md), passo 7; [DESIGN.md](../../DESIGN.md), «Pacchetto per il controllo B (percorso 1)»)
+Aperta: 30/10/2026; destinazione raggiunta il 2/11/2026 (tutti i ticket chiusi, compresa la firma dell'inquilino sul nuovo canone ISTAT; architettura pronta per il controllo B), dopo la pagina del pacchetto completa ([docs/METODO.md](../../docs/METODO.md), passo 7; [DESIGN.md](../../DESIGN.md), «Pacchetto per il controllo B (percorso 1)»)
 
 ## Destinazione (Destination)
 
@@ -48,6 +48,7 @@ Le **scelte tecniche del percorso 1** sono decise dall'utente, una alla volta, e
 - [Condividere un file verso Connetto da un'altra app](issues/19-condividere-verso-connetto.md): idea tenuta ma non nel pilota: arriva con l'app iPhone; Android con il sito installato si valuta dopo. Nel pilota nessun aiuto in più per caricare dal telefono. Previsione dell'utente: i clienti useranno soprattutto il computer; si verifica con il conteggio dei caricamenti dal computer e dal telefono e con i documenti portati in agenzia.
 - [Documenti, foto e ricevute in PDF](issues/12-documenti-foto-ricevute.md): «Controlla il foglio» nel pilota solo quando arriva una foto, per documenti e contabili; fotocamera nella pagina dopo il pilota; un PDF per documento, HEIC con un messaggio dove non si legge. Controllo dell'importo su tutte e due le contabili, PDF e foto, con due avvisi. File: PDF fino a 20 MB e 20 pagine, solo dal guardiano, niente antivirus (rischio accettato). Foto tolte cancellate nella notte e fuori dalla copia mensile. Ricevute con Typst, salvate a ogni fatto; copia in PDF della ricevuta di carta. Durate dal parere privacy, niente cancellato prima.
 - [Ricerca: firma digitale offerta da ƎE](issues/21-ricerca-firma-digitale.md): solo la firma qualificata vale ovunque come quella a penna; offrire una firma avanzata propria porta obblighi pesanti (20 anni, assicurazione da 500.000 €). Firma qualificata usa e getta da InfoCert e Namirial, senza listino pubblico; Youtrust da 1.248 € l'anno. Firma con la CIE (CieSign) avanzata e gratuita; firma con SPID solo con l'adesione di ƎE. Verifica sul server con DSS (Java).
+- [Firma dell'inquilino sul nuovo canone ISTAT](issues/20-firma-inquilino-istat.md): la firma è una prova di ricezione, il canone cambia comunque; nel pilota firma digitale propria (anche CieSign), foglio firmato e caricato o al banco, senza fornitori; firmano tutti, salvo l'inquilino indicato con un foglio di tutti; un messaggio e la firma mancante in coda; verifica con DSS nel lavoro notturno o dall'operatore, riscrittura protetta solo se DSS costa di più; documento da firmare generico con Typst.
 
 ## Non ancora specificato (Not yet specified)
 

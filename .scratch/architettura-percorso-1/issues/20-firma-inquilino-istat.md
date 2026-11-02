@@ -1,7 +1,7 @@
 # Firma dell'inquilino sul nuovo canone ISTAT
 
 Type: grilling
-Status: claimed
+Status: resolved
 Blocked by:
 Mappa: [Architettura del percorso 1](../map.md)
 
@@ -18,6 +18,12 @@ Oggi è deciso altro ([PRODUCT.md](../../../PRODUCT.md) §10.3, D18): l'operator
 5. Cosa cambia per **più inquilini** (firmano tutti o uno?) e per il controllo B.
 
 Limiti: nessun account o servizio esterno; prove solo con dati inventati. Le decisioni di prodotto in PRODUCT.md §12, quelle tecniche in ARCHITECTURE.md, l'aspetto in DESIGN.md.
+
+## Risposta (Answer)
+
+Risolto il 2/11/2026 con l'utente: dieci domande una alla volta e un riepilogo confermato, con un punto in più (firma con la CIE nell'app iPhone, da valutare con l'app) e la parola «inquilino indicato». La firma dell'inquilino è una **prova di ricezione**: il canone cambia comunque alla decorrenza. Nel pilota si firma senza fornitori: firma digitale propria (anche CieSign), foglio firmato e caricato, firma in agenzia. Firmano tutti gli inquilini, salvo l'inquilino indicato con un foglio di tutti. Un messaggio solo e la «firma mancante» nel lavoro in coda. Verifica delle firme digitali con DSS nel lavoro notturno, oppure dall'operatore; se DSS costa di più, riscrittura con DSS arbitro nei controlli ed esito solo come suggerimento. Documento da firmare generico, lettera A4 con Typst, a versioni. Ricerca collegata: [Ricerca: firma digitale offerta da ƎE](21-ricerca-firma-digitale.md).
+
+Scritto in [PRODUCT.md](../../../PRODUCT.md) §12 (2/11/2026) e §10.3; [ARCHITECTURE.md](../../../ARCHITECTURE.md), «Documento da firmare: aggiornamento ISTAT»; [DESIGN.md](../../../DESIGN.md), stessa sezione; [GLOSSARY.md](../../../GLOSSARY.md), «Documento da firmare» e «Inquilino indicato»; domande al parere legale in PRODUCT.md §10.10. Nessun ADR.
 
 ## Commenti (Comments)
 

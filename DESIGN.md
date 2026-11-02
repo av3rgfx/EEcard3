@@ -543,6 +543,14 @@ Deciso dall'utente il 2/11/2026 nel ticket [Documenti, foto e ricevute in PDF](.
 - **Da scrivere con le schermate:** il messaggio per la foto in formato HEIC che il browser non sa aprire (proposta di partenza: «Questa foto è in un formato dell'iPhone che il browser non sa aprire. Caricala dall'iPhone, oppure salvala come JPEG e riprova.»); i messaggi per il file troppo grande (oltre 20 MB o 20 pagine) e per il file che non si apre; l'attesa mentre si legge il testo (1–2 s per una foto).
 - *Evidenza:* scelte dell'utente nel ticket, senza prototipo; le prove su telefoni e computer veri, con VoiceOver, TalkBack e NVDA, sono decise in ARCHITECTURE.md e fermano il pilota.
 
+## Documento da firmare: aggiornamento ISTAT (percorso 1)
+Deciso dall'utente il 2/11/2026 nel [ticket](.scratch/architettura-percorso-1/issues/20-firma-inquilino-istat.md); prodotto in [PRODUCT.md](PRODUCT.md) §12, regole tecniche in [ARCHITECTURE.md](ARCHITECTURE.md). **Le schermate non sono ancora disegnate**: cambiano «Nuovo canone ISTAT» dell'operatore, «Nuovo canone da approvare» del proprietario e «Nuovo canone in arrivo» dell'inquilino (sezioni sopra), e si disegnano con queste regole prima della costruzione.
+
+- **Il foglio:** lettera A4 come le ricevute («Ricevute stampate»), ƎE in testa; casa e persone, canone attuale, variazione ISTAT con fonte e data, misura del contratto, nuovo canone, decorrenza, chi ha approvato e quando, posto del testo legale (in attesa del parere), uno spazio firma per ogni inquilino o solo per l'inquilino indicato. Sopra le firme: «**La firma conferma di aver ricevuto questa comunicazione.**» *Scartata:* «firmo per accettazione», perché la firma non è un accordo e l'inquilino può contestare.
+- **All'inquilino:** nella pagina del nuovo canone il documento, i tre modi di firmare (carica il PDF con la tua firma digitale; stampa, firma e carica il foglio; firma in agenzia) e, dopo, chi ha firmato e quando. CieSign si nomina solo dopo il parere legale.
+- **Stati, ricavati dai fatti:** «da firmare», «firme 1 di 2», «firmato»; per una firma digitale caricata «caricata, da verificare», poi «verificata» o «da guardare». Il proprietario vede lo stato delle firme e i documenti firmati; l'operatore trova «firma mancante» nel lavoro in coda dalla decorrenza.
+- *Evidenza:* scelte dell'utente nel ticket, senza prototipo.
+
 ## Pacchetto per il controllo B (percorso 1)
 Deciso dall'utente il 26/10/2026, una scelta alla volta, nel ticket [Pacchetto per il controllo B](.scratch/design-percorso-1/issues/21-pacchetto-controllo-b.md), che conserva le alternative scartate e i confronti mostrati. Ambito: ciò che l'utente guarda per confermare la direzione di design insieme all'architettura ([docs/METODO.md](docs/METODO.md), passi 6 e 7).
 
