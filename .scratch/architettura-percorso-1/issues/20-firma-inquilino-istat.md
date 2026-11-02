@@ -1,7 +1,7 @@
 # Firma dell'inquilino sul nuovo canone ISTAT
 
 Type: grilling
-Status: open
+Status: claimed
 Blocked by:
 Mappa: [Architettura del percorso 1](../map.md)
 
@@ -20,3 +20,8 @@ Oggi è deciso altro ([PRODUCT.md](../../../PRODUCT.md) §10.3, D18): l'operator
 Limiti: nessun account o servizio esterno; prove solo con dati inventati. Le decisioni di prodotto in PRODUCT.md §12, quelle tecniche in ARCHITECTURE.md, l'aspetto in DESIGN.md.
 
 ## Commenti (Comments)
+
+**2/11/2026, grilling con l'utente (`grilling`, `domain-modeling`, `ponytail`), domande una alla volta.**
+
+1. *Cosa vale la firma.* **Scelta dell'utente: A.** La firma è la **prova che l'inquilino ha ricevuto la comunicazione**: il canone cambia alla decorrenza se il contratto lo prevede e il proprietario ha approvato, firmi o no. Finché manca, l'operatore trova «firma dell'inquilino mancante» nel lavoro in coda e sollecita di persona; quando arriva, l'aggiornamento risulta «firmato». L'inquilino può sempre contestare. Da confermare al parere legale; se servisse il consenso si passa a B cambiando una regola. *Scartata:* B, firma come condizione (l'inquilino potrebbe bloccare un aumento previsto dal contratto).
+   - *Domanda dell'utente:* perché la firma digitale chiederebbe un servizio esterno a pagamento? Risposta dell'agente nel commento sotto.
