@@ -1,7 +1,7 @@
 # Documenti, foto e ricevute in PDF
 
 Type: grilling
-Status: open
+Status: claimed
 Blocked by: 02, 06, 08, 15, 17, 18, 19
 Mappa: [Architettura del percorso 1](../map.md)
 
