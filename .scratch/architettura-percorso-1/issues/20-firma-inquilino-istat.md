@@ -25,3 +25,10 @@ Limiti: nessun account o servizio esterno; prove solo con dati inventati. Le dec
 
 1. *Cosa vale la firma.* **Scelta dell'utente: A.** La firma è la **prova che l'inquilino ha ricevuto la comunicazione**: il canone cambia alla decorrenza se il contratto lo prevede e il proprietario ha approvato, firmi o no. Finché manca, l'operatore trova «firma dell'inquilino mancante» nel lavoro in coda e sollecita di persona; quando arriva, l'aggiornamento risulta «firmato». L'inquilino può sempre contestare. Da confermare al parere legale; se servisse il consenso si passa a B cambiando una regola. *Scartata:* B, firma come condizione (l'inquilino potrebbe bloccare un aumento previsto dal contratto).
    - *Domanda dell'utente:* perché la firma digitale chiederebbe un servizio esterno a pagamento? Risposta dell'agente nel commento sotto.
+
+**2/11/2026, risposta dell'agente sulla firma digitale** (da memoria, *non ancora verificata sulle fonti ufficiali*: regolamento eIDAS 910/2014 e Codice dell'amministrazione digitale, artt. 20 e 21). La risposta di prima era troppo sbrigativa. Le firme elettroniche hanno livelli diversi:
+- **semplice:** per esempio «Confermo» dentro Connetto dopo l'accesso con il codice. La facciamo noi, gratis; il suo valore lo valuta il giudice caso per caso;
+- **avanzata:** si può costruire in proprio, ma con obblighi pesanti (identificazione, regole AgID, conservazione), che di solito si affidano a un fornitore;
+- **qualificata, la «firma digitale» italiana:** vale come la firma a penna. La rilascia solo un **prestatore qualificato** iscritto agli elenchi europei, ed è per questo che servirebbe un servizio esterno. Lo si paga solo se è **ƎE a offrire** la firma a chi non ce l'ha.
+
+Se l'inquilino ha **già una sua firma digitale**, firma il PDF con i suoi strumenti e lo **carica come un documento qualsiasi**: per noi nessun costo e nessun fornitore. Controllare che la firma sia valida richiede un programma di verifica (*da verificare quale*, senza inviare il documento a servizi esterni). Firmare con SPID o con la CIE: *da verificare* se e con quale livello.
