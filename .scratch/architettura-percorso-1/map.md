@@ -1,7 +1,7 @@
 # Architettura del percorso 1: attivazione e canone del mese
 
 Type: map (wayfinder:map)
-Aperta: 30/10/2026; destinazione raggiunta il 2/11/2026 (tutti i ticket chiusi, architettura pronta per il controllo B), dopo la pagina del pacchetto completa ([docs/METODO.md](../../docs/METODO.md), passo 7; [DESIGN.md](../../DESIGN.md), «Pacchetto per il controllo B (percorso 1)»)
+Aperta: 30/10/2026; il 2/11/2026 tutti i ticket erano chiusi, poi una nuova proposta del collaboratore di ƎE ha aperto il ticket [Firma dell'inquilino sul nuovo canone ISTAT](issues/20-firma-inquilino-istat.md), che cambia il nuovo canone e va deciso prima del controllo B, dopo la pagina del pacchetto completa ([docs/METODO.md](../../docs/METODO.md), passo 7; [DESIGN.md](../../DESIGN.md), «Pacchetto per il controllo B (percorso 1)»)
 
 ## Destinazione (Destination)
 
