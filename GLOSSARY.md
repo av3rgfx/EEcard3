@@ -97,7 +97,7 @@ Il documento della banca che dice che un bonifico è stato disposto. È una prov
 _Da evitare_: ricevuta del bonifico, ricevuta
 
 **Ricevuta**:
-Il documento che chi incassa il canone rilascia a chi paga, preparato dalla piattaforma e firmato da ƎE; si corregge solo annullandola o sostituendola. Fuori dal denaro la parola compare solo nel nome ufficiale «ricevuta della registrazione».
+Il documento che chi incassa il canone rilascia a chi paga, preparato dalla piattaforma e firmato da ƎE; si corregge solo annullandola o sostituendola. Un incasso ha una sola ricevuta: per quello del piano carta è il foglio del blocchetto, e il PDF della piattaforma ne è solo una copia. Fuori dal denaro la parola compare solo nel nome ufficiale «ricevuta della registrazione».
 _Da evitare_: quietanza (termine legale), ricevuta per le conferme (per esempio la conferma della disdetta)
 
 **Incasso verificato**:
@@ -107,6 +107,14 @@ _Da evitare_: pagato (senza dire chi lo conferma), saldato
 **Consegna**:
 Il passaggio con cui l'agenzia dà al proprietario il canone incassato per lui, con il rendiconto. Ha stati propri, distinti da quelli del canone: da consegnare, inviata (con bonifico, finché il proprietario non conferma di averla ricevuta), consegnata (confermata dal proprietario o firmata da lui in agenzia), in ritardo, contestata.
 _Da evitare_: rimessa, versamento, ritiro
+
+**Documento da firmare**:
+Un documento che la piattaforma prepara dai dati e che una persona firma per provare di averlo ricevuto, a penna o con una firma digitale; la firma non vuol dire accordo. Nel percorso 1 è solo l'aggiornamento del canone ISTAT.
+_Da evitare_: accettazione, consenso, conferma (è un'azione nella piattaforma, non una firma)
+
+**Inquilino indicato**:
+L'inquilino che, con un foglio firmato da tutti gli inquilini del contratto o per il contratto stesso, firma i documenti da firmare anche per gli altri. Senza, firmano tutti.
+_Da evitare_: inquilino di riferimento, capofamiglia, intestatario
 
 **Contestazione**:
 Un disaccordo registrato da chi ha un rapporto con la casa su un canone, una consegna o un nuovo canone, con un esito: confermato, corretto o non risolto. Finché è aperta la voce resta segnata e non produce messaggi di ritardo.

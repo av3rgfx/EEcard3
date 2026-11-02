@@ -79,20 +79,25 @@ Il 1/11/2026 l'utente riferisce un'altra proposta del collaboratore di ƎE: chi 
 
 Il 1/11/2026 è chiuso anche [Condividere un file verso Connetto da un'altra app](.scratch/architettura-percorso-1/issues/19-condividere-verso-connetto.md) ([PRODUCT.md](PRODUCT.md) §12): l'idea si tiene ma **non nel pilota**, arriva con l'app iPhone; nel pilota nessun aiuto in più per caricare dal telefono. Previsione dell'utente da verificare nel pilota: i clienti useranno **soprattutto il computer**.
 
-**Prossima sessione:** [Documenti, foto e ricevute in PDF](.scratch/architettura-percorso-1/issues/12-documenti-foto-ricevute.md), l'ultimo ticket della mappa. Il messaggio è sotto.
+Il 2/11/2026 è chiuso anche [Documenti, foto e ricevute in PDF](.scratch/architettura-percorso-1/issues/12-documenti-foto-ricevute.md), l'ultimo ticket della mappa: **l'architettura del percorso 1 è pronta per il controllo B**. Con la previsione «soprattutto computer» esce dal pilota la fotocamera dentro la pagina, non lo scanner: «Controlla il foglio» parte solo quando arriva una foto, nei caricamenti di documenti e contabili. Il controllo dell'importo vale per le due contabili (inquilino ed ƎE), su PDF e foto, con due avvisi e sempre «Carica comunque». Ogni documento è un PDF, al massimo 20 MB e 20 pagine, e si apre solo attraverso il guardiano; niente antivirus nel pilota (rischio accettato). Le foto della facciata tolte si cancellano nella notte e non entrano nella copia mensile. Le ricevute si fanno con **Typst**, si salvano a ogni fatto e non si rifanno; per il piano carta c'è una copia in PDF della ricevuta di carta. Le durate di conservazione arrivano dal parere privacy, e prima niente si cancella da solo. Dettagli in ARCHITECTURE.md («Documenti, foto e ricevute»), PRODUCT.md §12 (2/11/2026) e DESIGN.md («Caricare documenti e contabili (percorso 1)»).
+
+Il 2/11/2026 è decisa anche la proposta del collaboratore di ƎE sulla **firma dell'inquilino sul nuovo canone ISTAT** ([ticket](.scratch/architettura-percorso-1/issues/20-firma-inquilino-istat.md); PRODUCT.md §12): la firma prova la ricezione e il canone cambia comunque; nel pilota firma digitale propria (anche con CieSign), foglio firmato e caricato o al banco, senza fornitori; firmano tutti, salvo l'**inquilino indicato**; verifica delle firme digitali con DSS nel lavoro notturno o dall'operatore. Ricerca in [docs/ricerca/firma-digitale.md](docs/ricerca/firma-digitale.md). Al collaboratore si chiede quali altri documenti vuole far firmare.
+
+**Prossimo passo:** il **controllo B** ([docs/METODO.md](docs/METODO.md), passo 7), quando arrivano le risposte del collaboratore di ƎE (messaggio «Il collaboratore di ƎE guarda lo spazio dell'operatore», sotto). Il messaggio per il controllo B è il primo qui sotto.
 
 ---
 
-## Architettura del percorso 1: documenti, foto e ricevute in PDF
+## Controllo B: design e architettura del percorso 1
 
-/wayfinder .scratch/architettura-percorso-1/map.md — ticket «Documenti, foto e ricevute in PDF» (.scratch/architettura-percorso-1/issues/12-documenti-foto-ricevute.md).
+Si fa quando sono arrivate e registrate le risposte del collaboratore di ƎE (messaggio più sotto). Prima di allora l'architettura non ha altro da decidere. Messaggio:
 
-Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora) e il ticket con tutti i commenti; poi docs/ricerca/scanner-documenti.md (§7, §9 e §10) e docs/ricerca/importo-documento.md (§7 e §9) e docs/ricerca/pdf-ricevute.md, PRODUCT.md §12 (riga del 30/10/2026 «Scansione automatica al caricamento» e righe del 1/11/2026, compresa «Condividere un file verso Connetto») e, in DESIGN.md, «Ricevute stampate (percorso 1)» e «Foto e illustrazione della casa (percorso 1)». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+Controllo B del percorso 1 (docs/METODO.md, passo 7): design e architettura sono pronti, e le risposte del collaboratore di ƎE sono registrate nel ticket «Il collaboratore di ƎE guarda lo spazio dell'operatore».
 
-- Rivendica il ticket (`Status: claimed`) e lavora solo su questo, con le skill `grilling`, `domain-modeling` e `ponytail`.
-- Fammi le domande una alla volta, in parole semplici, con una raccomandazione; comprese quelle rimaste sullo scanner (ricerca, §9; scanic con i due accorgimenti è già scelto) e quelle sul controllo dell'importo (PRODUCT.md §12, 1/11/2026; ricerca, §9). Tieni conto della mia previsione che i clienti useranno soprattutto il computer: dimmi se cambia quanto mettere dello scanner nel pilota.
-- Registra le scelte tecniche in ARCHITECTURE.md, un cambio di prodotto in PRODUCT.md §12, l'aspetto in DESIGN.md; un ADR solo se la scelta è difficile da invertire.
-- Nessuna installazione, nessun account, nessuna immagine a servizi esterni; prove usa e getta solo con fogli inventati.
+Leggi AGENTS.md, STATUS.md, docs/METODO.md (passi 6–8), la mappa `.scratch/architettura-percorso-1/map.md` (Destinazione, Decisioni finora, Non ancora specificato) e ARCHITECTURE.md; in DESIGN.md «Pacchetto per il controllo B (percorso 1)». La pagina del pacchetto è https://claude.ai/artifact/9KwvBBmgGc859wN67hWbAF; aprila con lo strumento Artifact, azione «read». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+
+- Portami in parole semplici cosa confermo: la direzione di design e le scelte tecniche, con i rischi accettati (controllo di un esperto umano, nessun antivirus nel pilota) e ciò che resta aperto prima del pilota (pareri, prove su telefoni veri, «Cosa resta aperto» della pagina).
+- Se le risposte del collaboratore cambiano qualcosa nei dati o nel lavoro al banco, mostrami il conflitto con una proposta, una domanda alla volta, con una raccomandazione.
+- Registra l'esito in PRODUCT.md §12 con data e motivo. Non scrivere codice: il piano di costruzione è il passo 8.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 
