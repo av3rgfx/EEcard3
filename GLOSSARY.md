@@ -97,7 +97,7 @@ Il documento della banca che dice che un bonifico è stato disposto. È una prov
 _Da evitare_: ricevuta del bonifico, ricevuta
 
 **Ricevuta**:
-Il documento che chi incassa il canone rilascia a chi paga, preparato dalla piattaforma e firmato da ƎE; si corregge solo annullandola o sostituendola. Fuori dal denaro la parola compare solo nel nome ufficiale «ricevuta della registrazione».
+Il documento che chi incassa il canone rilascia a chi paga, preparato dalla piattaforma e firmato da ƎE; si corregge solo annullandola o sostituendola. Un incasso ha una sola ricevuta: per quello del piano carta è il foglio del blocchetto, e il PDF della piattaforma ne è solo una copia. Fuori dal denaro la parola compare solo nel nome ufficiale «ricevuta della registrazione».
 _Da evitare_: quietanza (termine legale), ricevuta per le conferme (per esempio la conferma della disdetta)
 
 **Incasso verificato**:

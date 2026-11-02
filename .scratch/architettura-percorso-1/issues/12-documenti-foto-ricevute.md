@@ -1,7 +1,7 @@
 # Documenti, foto e ricevute in PDF
 
 Type: grilling
-Status: claimed
+Status: resolved
 Blocked by: 02, 06, 08, 15, 17, 18, 19
 Mappa: [Architettura del percorso 1](../map.md)
 
@@ -15,6 +15,19 @@ Dove stanno e come si servono i file del percorso 1, e come si producono le rice
 4. **Conservazione:** quanto restano i file dopo la fine dei rapporti, per quello che è già deciso (§10.8); il resto aspetta il parere privacy.
 
 Limiti: nessun account o servizio. Scelta in ARCHITECTURE.md.
+
+## Risposta (Answer)
+
+Risolto il 2/11/2026 con l'utente: quindici domande una alla volta, tutte sull'opzione consigliata, e un riepilogo confermato con tre dettagli in più (foto della facciata in due misure, Manrope a peso fisso nelle ricevute, nessun ADR). Dettaglio delle domande sotto, «Commenti», 2/11/2026.
+
+- **Scanner:** «Controlla il foglio» nel pilota solo quando arriva una foto, dal telefono o dal computer, nei caricamenti di documenti e contabili (non le foto della facciata); un documento è un PDF unico; HEIC convertito dove il browser sa leggerlo, altrimenti un messaggio; fotocamera dentro la pagina dopo il pilota; prove su iPhone, Android di fascia media, Windows con NVDA e Mac.
+- **Controllo dell'importo:** su tutte e due le contabili, PDF e foto, prima dell'invio; cifre che la piattaforma conosce già; due avvisi con i nomi di chi vedrà il documento e «Carica comunque».
+- **File:** ogni documento è un PDF, al massimo 20 MB e 20 pagine; controlli sul server; apertura solo attraverso il guardiano; versioni mai sovrascritte; nessun antivirus nel pilota, rischio accettato.
+- **Foto della facciata:** togliere nasconde subito, «Annulla» per 8 secondi, file cancellato nella notte; la copia mensile non contiene le foto, quindi una foto tolta sparisce da tutte le copie in circa 5 settimane.
+- **Ricevute:** Typst (PDF/UA-1 che si ferma sugli errori, anteprima e unione delle pagine), veraPDF nei controlli; PDF salvato a ogni fatto e mai rifatto; per il piano carta una copia in PDF con il numero del blocchetto.
+- **Conservazione:** una tabella delle durate da riempire con il parere privacy; finché manca una durata, niente si cancella da solo.
+
+Scritto in [ARCHITECTURE.md](../../../ARCHITECTURE.md), «Documenti, foto e ricevute»; prodotto in [PRODUCT.md](../../../PRODUCT.md) §12, riga del 2/11/2026; aspetto in [DESIGN.md](../../../DESIGN.md), «Caricare documenti e contabili (percorso 1)» e «Ricevute stampate (percorso 1)»; [GLOSSARY.md](../../../GLOSSARY.md), «Ricevuta». Nessun ADR. Era l'ultimo ticket: l'architettura del percorso 1 è pronta per il controllo B.
 
 ## Commenti (Comments)
 

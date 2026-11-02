@@ -1,7 +1,7 @@
 # Architettura del percorso 1: attivazione e canone del mese
 
 Type: map (wayfinder:map)
-Aperta: 30/10/2026, dopo la pagina del pacchetto completa ([docs/METODO.md](../../docs/METODO.md), passo 7; [DESIGN.md](../../DESIGN.md), «Pacchetto per il controllo B (percorso 1)»)
+Aperta: 30/10/2026; destinazione raggiunta il 2/11/2026 (tutti i ticket chiusi, architettura pronta per il controllo B), dopo la pagina del pacchetto completa ([docs/METODO.md](../../docs/METODO.md), passo 7; [DESIGN.md](../../DESIGN.md), «Pacchetto per il controllo B (percorso 1)»)
 
 ## Destinazione (Destination)
 
@@ -46,6 +46,7 @@ Le **scelte tecniche del percorso 1** sono decise dall'utente, una alla volta, e
 - [Ricerca: strumenti per uno scanner nostro dentro la pagina](issues/17-ricerca-scanner-nella-pagina.md): fra una decina di strumenti liberi resta scanic, che dalla 1.7.0 legge anche il video della fotocamera; rilevatore IA spento (addestrato anche su immagini «solo per ricerca»); OpenCV.js e jscanify scartati per peso e blocchi su iPhone; schiarimento e consigli a voce da scrivere noi. Prova con fogli inventati, autorizzata dall'utente: scanic trova il foglio in 9 scene su 12 e, quando sbaglia, la sua fiducia scende; jscanify perde il foglio su fondo chiaro. Parere: foto rimpicciolita e soglia di fiducia; fotocamera dentro la pagina in un secondo tempo, dopo una prova su iPhone.
 - [Ricerca: trovare l'importo nel documento caricato](issues/18-ricerca-importo-nel-documento.md): si legge nel telefono prima dell'invio, con pdf.js per i PDF (circa 0,5 MB) e tesseract.js in italiano per foto e scansioni (circa 3,2 MB, 0,5–2 s), tutto dal nostro sito. Prova con 15 documenti inventati: 13 giusti, falliscono solo due foto illeggibili anche a occhio. «Condividi» da un'altra app: Android con il sito installato, iPhone solo con l'app. Parere: due avvisi, importo assente e foto illeggibile.
 - [Condividere un file verso Connetto da un'altra app](issues/19-condividere-verso-connetto.md): idea tenuta ma non nel pilota: arriva con l'app iPhone; Android con il sito installato si valuta dopo. Nel pilota nessun aiuto in più per caricare dal telefono. Previsione dell'utente: i clienti useranno soprattutto il computer; si verifica con il conteggio dei caricamenti dal computer e dal telefono e con i documenti portati in agenzia.
+- [Documenti, foto e ricevute in PDF](issues/12-documenti-foto-ricevute.md): «Controlla il foglio» nel pilota solo quando arriva una foto, per documenti e contabili; fotocamera nella pagina dopo il pilota; un PDF per documento, HEIC con un messaggio dove non si legge. Controllo dell'importo su tutte e due le contabili, PDF e foto, con due avvisi. File: PDF fino a 20 MB e 20 pagine, solo dal guardiano, niente antivirus (rischio accettato). Foto tolte cancellate nella notte e fuori dalla copia mensile. Ricevute con Typst, salvate a ogni fatto; copia in PDF della ricevuta di carta. Durate dal parere privacy, niente cancellato prima.
 
 ## Non ancora specificato (Not yet specified)
 
