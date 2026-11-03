@@ -5,7 +5,7 @@ Da incollare in Claude Code o Codex aperto su questo repository. La skill Wayfin
 Il **design del percorso 1** ([docs/METODO.md](docs/METODO.md), passo 6) ha una mappa: [Design del percorso 1](.scratch/design-percorso-1/map.md). Approvati il 23/10/2026:
 - direzione **«Terracotta»** con il chiaro in vetrina;
 - spazio dell'operatore;
-- schermate del proprietario e dell'inquilino (le ricevute dell'inquilino a mesi a pillola sono provvisorie, in attesa del collaboratore di ƎE);
+- schermate del proprietario e dell'inquilino (le ricevute dell'inquilino a mesi a pillola, confermate il 3/11/2026);
 - **accesso, tessera digitale e situazioni comuni**: accesso con un codice, pagina d'accesso con la tessera di rame, benvenuto animato, scheda «Tessera», disdetta da soli.
 
 Il 24/10/2026 è approvata anche la **rifinitura estetica delle schermate interne dei clienti**, la «via di mezzo» ([DESIGN.md](DESIGN.md), «Rifinitura delle schermate interne (percorso 1)»). Il 25/10/2026 sono decisi i **testi dell'interfaccia** ([DESIGN.md](DESIGN.md), «Testi dell'interfaccia (percorso 1)»: «in agenzia», «tu» anche nei titoli, frasi senza genere, «entro» per il canone, «Spese», titolo «Mese: il fatto») e la **tessera fisica del pilota** ([PRODUCT.md](PRODUCT.md) §12: lamina arancione, chip DESFire EV3 spento, solo un codice suo, consegna in agenzia).
@@ -85,38 +85,38 @@ Il 2/11/2026 è decisa anche la proposta del collaboratore di ƎE sulla **firma 
 
 Il 2/11/2026 è pronta la **prova guidata** per il collaboratore di ƎE: https://claude.ai/artifact/5H1bQMDiAxmFqXnHeXKvSc (privata). Il messaggio con le sette domande è nel ticket «Il collaboratore di ƎE guarda lo spazio dell'operatore», sotto «Commenti», pronto da copiare.
 
-**Prossima sessione:** l'utente condivide la prova dal menu «Condividi», solo con il collaboratore, e gli manda il messaggio; quando arrivano le risposte si usa il messaggio «Il collaboratore di ƎE guarda lo spazio dell'operatore», sotto. Se prima vuole correggere la prova, il messaggio è «Correzioni alla prova guidata», qui sotto.
+Il 3/11/2026 sono registrate le **risposte del collaboratore di ƎE** e il ticket [Il collaboratore di ƎE guarda lo spazio dell'operatore](.scratch/design-percorso-1/issues/05-collaboratore-guarda-operatore.md) è chiuso. Due correzioni decise dall'utente: al banco di ƎE **solo contanti** (i mezzi accettati sono un dato dell'agenzia, il modulo non chiede più come si paga) e **«È arrivato di meno»** accanto al «Ricevuto» del proprietario, con la differenza che resta da pagare, più la riga sul bonifico automatico nel nuovo canone dell'inquilino. Confermati: computer fisso al banco, ordine della coda, «tu» nell'app, ricevute dell'inquilino a mesi a pillola, nuovo canone ISTAT valido anche senza firma. Restano aperti, senza fermare il controllo B: altri documenti da firmare, stampante, tempi dell'incasso di oggi, bonifici sul conto di ƎE.
 
-**Dopo:** il **controllo B** ([docs/METODO.md](docs/METODO.md), passo 7), quando arrivano le risposte del collaboratore di ƎE (messaggio «Il collaboratore di ƎE guarda lo spazio dell'operatore», sotto). Il messaggio per il controllo B è il primo qui sotto.
+Lo stesso giorno sono entrate nel percorso 1 sei **richieste del collaboratore** ([ticket](.scratch/architettura-percorso-1/issues/22-richieste-collaboratore-3-novembre.md); PRODUCT.md §12): ricerca con i recenti, «Invia», «Ferma l'accesso», valutazione della casa (anche senza gestione, con il sì del proprietario e l'elenco letto dal sito di ƎE, che l'utente sviluppa in parallelo), tecnici della casa con «Chiama» e l'SMS al tecnico. Collaborazioni con altre agenzie dopo il pilota.
+
+**Prossima sessione:** le **schermate delle richieste del collaboratore**, con il messaggio qui sotto; poi il **controllo B** ([docs/METODO.md](docs/METODO.md), passo 7).
 
 ---
 
-## Correzioni alla prova guidata (solo se l'utente le chiede)
+## Schermate delle richieste del collaboratore
 
-/wayfinder .scratch/design-percorso-1/map.md — ticket «Il collaboratore di ƎE guarda lo spazio dell'operatore» (.scratch/design-percorso-1/issues/05-collaboratore-guarda-operatore.md): correzioni alla prova guidata, https://claude.ai/artifact/5H1bQMDiAxmFqXnHeXKvSc. Le mie indicazioni sono in fondo a questo messaggio.
+/wayfinder .scratch/design-percorso-1/map.md — ticket «Schermate delle richieste del collaboratore» (.scratch/design-percorso-1/issues/24-schermate-richieste-collaboratore.md).
 
-Leggi AGENTS.md, STATUS.md e il ticket (commento del 2/11/2026, «prova guidata pronta»). Rileggi la prova con lo strumento Artifact, azione «read», e aggiornala sullo stesso indirizzo. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+Leggi AGENTS.md, STATUS.md, la mappa, il ticket e il ticket «Richieste del collaboratore di ƎE del 3/11/2026» (.scratch/architettura-percorso-1/issues/22-richieste-collaboratore-3-novembre.md); in DESIGN.md «Direzione del percorso 1», «Rifinitura delle schermate interne (percorso 1)», «Testi dell'interfaccia (percorso 1)» e «Richieste del collaboratore di ƎE (percorso 1)»; in PRODUCT.md §12 la riga del 3/11/2026. La pagina del pacchetto (https://claude.ai/artifact/9KwvBBmgGc859wN67hWbAF) si legge con lo strumento Artifact, azione «read», come riferimento di stile. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
 
-- Correggi una indicazione alla volta, con le skill `prototype`, `ux-writing` e `mobile-native`; riprova nel browser (telefono e computer, tastiera, nessun errore) e mostrami la pagina.
-- Se una correzione cambia una regola di DESIGN.md o di PRODUCT.md, portamela come scelta prima di farla. Se cambia un compito, aggiorna anche il messaggio nel ticket.
-- Il ticket resta `claimed`; nessun messaggio inviato da te.
+- Rivendica il ticket e lavora solo su quello, con le skill `prototype`, `ux-writing` e `grilling`. Prototipo usa e getta, fuori dal repository, solo dati inventati; provalo nel browser su telefono e computer, in chiaro e in scuro, con la tastiera.
+- Le scelte me le fai una alla volta, in parole semplici, con una raccomandazione; un cambio di regole va in DESIGN.md con data e motivo.
+- Chiudi il ticket quando le schermate sono approvate.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
-
-Indicazioni:
 
 ---
 
 ## Controllo B: design e architettura del percorso 1
 
-Si fa quando sono arrivate e registrate le risposte del collaboratore di ƎE (messaggio più sotto). Prima di allora l'architettura non ha altro da decidere. Messaggio:
+Le risposte del collaboratore di ƎE sono registrate dal 3/11/2026. Il controllo B si fa dopo il ticket «Schermate delle richieste del collaboratore» (scelta dell'utente del 3/11/2026). Messaggio:
 
 Controllo B del percorso 1 (docs/METODO.md, passo 7): design e architettura sono pronti, e le risposte del collaboratore di ƎE sono registrate nel ticket «Il collaboratore di ƎE guarda lo spazio dell'operatore».
 
 Leggi AGENTS.md, STATUS.md, docs/METODO.md (passi 6–8), la mappa `.scratch/architettura-percorso-1/map.md` (Destinazione, Decisioni finora, Non ancora specificato) e ARCHITECTURE.md; in DESIGN.md «Pacchetto per il controllo B (percorso 1)». La pagina del pacchetto è https://claude.ai/artifact/9KwvBBmgGc859wN67hWbAF; aprila con lo strumento Artifact, azione «read». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
 
 - Portami in parole semplici cosa confermo: la direzione di design e le scelte tecniche, con i rischi accettati (controllo di un esperto umano, nessun antivirus nel pilota) e ciò che resta aperto prima del pilota (pareri, prove su telefoni veri, «Cosa resta aperto» della pagina).
-- Se le risposte del collaboratore cambiano qualcosa nei dati o nel lavoro al banco, mostrami il conflitto con una proposta, una domanda alla volta, con una raccomandazione.
+- Le correzioni del collaboratore sono già decise (ticket, «Risposta»): controlla che ARCHITECTURE.md le regga (mezzi accettati al banco per agenzia; pagamento parziale confermato dal proprietario; le scelte della sezione «Richieste del collaboratore di ƎE», segnate da confermare). Se trovi un conflitto, mostramelo con una proposta, una domanda alla volta, con una raccomandazione.
 - Registra l'esito in PRODUCT.md §12 con data e motivo. Non scrivere codice: il piano di costruzione è il passo 8.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
@@ -136,23 +136,6 @@ Leggi AGENTS.md, STATUS.md, la mappa (sezione «Dopo la destinazione») e il tic
 - Mostrami il risultato (ricalco, automatico, controlli e vista isometrica) e portami la decisione in parole semplici: la vista entra o no nella prima versione.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
-
----
-
-**Il collaboratore di ƎE guarda lo spazio dell'operatore.** Il ticket è rivendicato. Dal 2/11/2026 il collaboratore riceve la prova guidata (https://claude.ai/artifact/5H1bQMDiAxmFqXnHeXKvSc, condivisa dall'utente dal menu «Condividi») e il messaggio con sette domande, nel ticket sotto «Commenti»: le prime cinque sono quelle del 23/10 riscritte sui compiti, la sesta e la settima riguardano il documento da firmare dell'ISTAT.
-
-/wayfinder .scratch/design-percorso-1/map.md — ticket «Il collaboratore di ƎE guarda lo spazio dell'operatore» (.scratch/design-percorso-1/issues/05-collaboratore-guarda-operatore.md): le risposte del collaboratore sono in fondo a questo messaggio.
-
-Leggi AGENTS.md, STATUS.md, la mappa, il ticket e, in DESIGN.md, «Spazio dell'operatore (percorso 1)», «Schermate dell'inquilino (percorso 1)», «Documento da firmare: aggiornamento ISTAT (percorso 1)» e «Voce»; in PRODUCT.md §12 la riga «Firma dell'inquilino sul nuovo canone ISTAT» (2/11/2026). Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
-
-- Registra le risposte in sintesi, senza nomi, abbinate al numero della domanda; se non si capisce a quale appartengono, chiedimelo.
-- Le risposte 6 e 7 riguardano il documento da firmare: altri documenti da aggiungere (su richiesta) e il canone che cambia alla decorrenza anche senza firma. Se la 7 non conferma la scelta dell'utente, portami il conflitto con una proposta (PRODUCT.md §12 e il ticket «Firma dell'inquilino sul nuovo canone ISTAT»).
-- La risposta 5 decide le ricevute dell'inquilino: mesi a pillola (scelta provvisoria) o elenco semplice. Me la porti come scelta da confermare e la registri in DESIGN.md, «Schermate dell'inquilino (percorso 1)», e nel ticket «Schermate dell'inquilino».
-- Le correzioni che ne escono me le porti una alla volta, in parole semplici, con una raccomandazione; un cambio di regole va in DESIGN.md con data e motivo. Chiudi il ticket quando le correzioni sono decise.
-
-Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
-
-Risposte del collaboratore:
 
 ---
 

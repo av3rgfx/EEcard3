@@ -1,7 +1,7 @@
 # Il collaboratore di ƎE guarda lo spazio dell'operatore
 
 Type: task
-Status: claimed
+Status: resolved
 Blocked by: 04, 09
 Mappa: [Design del percorso 1](../map.md)
 
@@ -15,6 +15,14 @@ Compito con l'utente (HITL):
 3. L'agente le registra qui in forma sintetica, senza nomi; le correzioni che ne escono si portano all'utente una alla volta.
 
 Va fatto sul prototipo più completo dello spazio dell'operatore disponibile: quello del ticket [Schermate dell'operatore di ƎE](09-schermate-operatore.md), aggiunto a «Blocked by» il 23/10/2026. Blocca solo il controllo B, non il resto del design. Le risposte del collaboratore sono il parere di chi lavora al banco, non un'evidenza sui clienti.
+
+## Risposta (Answer)
+
+Risolto il 3/11/2026. Lo spazio dell'operatore regge il lavoro al banco, con due correzioni decise dall'utente una alla volta, entrambe sull'opzione consigliata:
+- **al banco solo contanti per ƎE**: i mezzi accettati sono un dato dell'agenzia; con un solo mezzo il modulo non chiede come si paga e oltre i 5.000 € l'avviso indica il bonifico (DESIGN.md, «Spazio dell'operatore», «Incasso al banco»; PRODUCT.md §10.3; ARCHITECTURE.md);
+- **«È arrivato di meno»** accanto al «Ricevuto» del proprietario, con la differenza che resta da pagare, e la riga sul bonifico automatico nel nuovo canone dell'inquilino (DESIGN.md, «Schermate del proprietario» e «Schermate dell'inquilino»; PRODUCT.md §10.3).
+
+Confermati: il computer fisso come apparecchio principale, l'ordine della coda, il «tu» nell'app, le ricevute dell'inquilino a **mesi a pillola** (scelta non più provvisoria, ticket [Schermate dell'inquilino](11-schermate-inquilino.md)) e il nuovo canone ISTAT che vale alla decorrenza anche senza firma ([Firma dell'inquilino sul nuovo canone ISTAT](../../architettura-percorso-1/issues/20-firma-inquilino-istat.md)). Restano aperte, senza fermare il controllo B: quali altri documenti far firmare (risposta 6; nel pilota solo l'ISTAT), la stampante al banco, i passi e i tempi dell'incasso di oggi, se e per cosa gli inquilini chiedono le ricevute, e se ƎE riceve anche bonifici sul proprio conto (inferenza dell'agente dalla risposta 2, da chiedere prima del pilota; PRODUCT.md §11, «Dati attesi da ƎE»).
 
 ## Commenti (Comments)
 
@@ -86,3 +94,23 @@ Perché queste domande:
 - Restano fuori, come deciso, le domande raccolte in DESIGN.md per il collaboratore (chi firma le ricevute, il foglio della ricevuta annullata, la proprietaria che non risponde sul nuovo canone, i tre tipi di casa del disegno): si possono aggiungere se l'utente lo chiede.
 
 Il ticket resta `claimed` finché arrivano le risposte; si registrano in sintesi, senza nomi.
+
+**3/11/2026, risposte del collaboratore** (riferite dall'utente per messaggio; in sintesi, senza nomi). Sono il parere di chi lavora al banco, non un'evidenza sui clienti.
+
+1. *Su cosa lavora al banco:* soprattutto il computer fisso; a volte il portatile o il telefono. Sulla stampante non ha risposto.
+2. *Incasso al banco:* a ƎE l'inquilino che paga in agenzia paga **solo in contanti**, per scelta di questa agenzia. Chi vuole pagare con la carta fa un **bonifico direttamente al proprietario**. Non ha descritto i passi di oggi né i tempi, e non ha segnalato mancanze nella prova.
+3. *Ordine della coda:* va bene così.
+4. *«Tu» o «Lei»:* in agenzia dipende dalla persona; nell'app resta il «tu».
+5. *Ricevute dell'inquilino:* preferisce i **mesi a pillola**. Non ha detto se e per cosa gli inquilini chiedono oggi le ricevute.
+6. *Altri documenti da firmare:* ancora da decidere.
+7. *Nuovo canone valido dalla decorrenza anche senza la firma:* ancora da confermare. Non conferma e non smentisce la scelta dell'utente del 2/11/2026.
+   - *Stesso giorno, risposta dell'utente* (consigliata dall'agente): la scelta del 2/11/2026 resta, da confermare con ƎE prima del pilota insieme al parere legale.
+   - *Stesso giorno, seconda risposta del collaboratore* (messaggio riferito dall'utente con una schermata, qui in sintesi): **sì, il canone cambia anche se l'inquilino non firma**. L'aumento è un diritto del proprietario e l'inquilino ha firmato un contratto che lo prevede. Il problema vero, per lui, è l'inquilino che continua a pagare la cifra vecchia: la differenza diventa un debito che cresce finché il proprietario non procede con lo sfratto. Aggiunge che l'aggiornamento ISTAT cade quando si pagano le tasse annuali del contratto (il registro): un inquilino non lo rifiuta per pochi euro. **La scelta dell'utente è confermata**; resta il parere legale già previsto (PRODUCT.md §11, «Pareri prima del pilota»).
+
+**3/11/2026, correzioni decise con l'utente, una alla volta** (`grilling`, `domain-modeling`, `ponytail`).
+1. *Ricevute dell'inquilino* (risposta 5): mesi a pillola confermati. Scartato l'elenco semplice.
+2. *Nuovo canone senza firma* (risposta 7): prima della seconda risposta del collaboratore l'utente aveva scelto di tenere la sua decisione, da confermare prima del pilota; poi il collaboratore l'ha confermata.
+3. *Mezzi al banco* (risposta 2): solo contanti, regolabile per agenzia. Scartati: togliere la carta da Connetto; lasciare la scelta fra contanti e carta.
+4. *Inquilino che paga la cifra vecchia* (seconda risposta 7): «È arrivato di meno» per il proprietario, differenza da pagare nel mese e nella coda di ƎE, riga sul bonifico automatico; nessun sollecito automatico. Scartati: solo il promemoria; nessun cambio.
+Non diventano correzioni: la risposta 1 (le schermate dell'operatore coprono già il computer, il portatile e il telefono), la 3 e la 4 (confermano), la 6 (resta aperta: nel pilota solo l'ISTAT).
+Le schermate della pagina del pacchetto e della prova guidata mostrano ancora «Contanti / Carta» e il solo «Ricevuto»: valgono le regole di DESIGN.md; si ridisegnano quando si costruisce.
