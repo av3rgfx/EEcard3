@@ -223,6 +223,15 @@ Proposta del collaboratore di ƎE; discussione nel [ticket](.scratch/architettur
 - Nessun ADR: oggi la riscrittura è solo una strada di riserva; se si arriva a farla, la scelta va riconsiderata con un ADR.
 - *Motivo:* una prova scritta della ricezione senza costi né fornitori, con la verifica automatica dove costa centesimi e l'occhio dell'operatore sempre disponibile.
 
+### Richieste del collaboratore di ƎE (3/11/2026, decisione dell'utente)
+Discussione nel [ticket](.scratch/architettura-percorso-1/issues/22-richieste-collaboratore-3-novembre.md); prodotto in [PRODUCT.md](PRODUCT.md) §12, schermate in [DESIGN.md](DESIGN.md). Proposte dell'agente sulle scelte dell'utente, **da confermare al controllo B**.
+- **Aperti di recente:** una tabella per account (account di lavoro: ultime 8 schede; account da cliente: ultime 5, solo degli ultimi 7 giorni), scritta all'apertura di una scheda già permessa e letta attraverso il guardiano: una scheda non più permessa non compare. «Svuota» cancella le righe. Niente testo cercato, niente memoria nel browser.
+- **«Invia»:** nel browser, condivisione di file del dispositivo (Web Share) con il PDF già scaricato attraverso il guardiano; dove manca, il download. Nessun invio dal server. Il supporto dei browser va verificato sulle fonti prima della costruzione.
+- **«Ferma l'accesso»:** è il blocco già previsto in «Accesso» (sessioni chiuse, codici fermi), con motivo, autore e data nel quaderno e «Riapri»; non tocca i rapporti con le case.
+- **Valutazione:** nella **casa**, con importo, data, autore, scadenza, stato della pubblicazione e la fonte del sì (tasto o foglio caricato). Un lavoro notturno, come gli altri, cancella l'importo alla scadenza e lascia la riga senza cifra. **Casa senza gestione:** una casa con il rapporto di proprietà e senza incarico di gestione, che il modello dei contenitori già permette; i permessi del proprietario valgono come per le altre case, senza locazione.
+- **Elenco per il sito:** una sola pagina in sola lettura, in JSON, con le valutazioni pubblicate e non scadute (zona, tipo, metri quadri, cifra, scadenza e un identificativo che non dice la casa), protetta da una chiave del sito che si può cambiare, con un limite di richieste. È l'unica porta verso l'esterno oltre alle pagine dei clienti; passa dal guardiano con una fonte di accesso propria, «sito».
+- **Tecnici della casa:** il tecnico è una scheda nell'agenzia (nome, mestiere, telefono, liberatoria), legata alle case con la scelta del proprietario o dell'agenzia; nessun account. «Chiama» registra l'avvio come «Chiama ƎE» e manda l'SMS con Skebby: è un SMS in più per chiamata, nel conto degli SMS.
+
 ## Verifica operativa
 - Copie e prova di ripristino: decise il 30/10/2026 («Decisioni confermate», «Forma della piattaforma e dove gira»).
 - Controlli del codice, aggiornamenti, migrazioni, lavori a orario, avvisi di guasto, piano carta e ambiente di prova: decisi il 1/11/2026 («Decisioni confermate», «Verifica operativa»).
