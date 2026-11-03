@@ -89,31 +89,19 @@ Il 3/11/2026 sono registrate le **risposte del collaboratore di ƎE** e il ticke
 
 Lo stesso giorno sono entrate nel percorso 1 sei **richieste del collaboratore** ([ticket](.scratch/architettura-percorso-1/issues/22-richieste-collaboratore-3-novembre.md); PRODUCT.md §12): ricerca con i recenti, «Invia», «Ferma l'accesso», valutazione della casa (anche senza gestione, con il sì del proprietario e l'elenco letto dal sito di ƎE, che l'utente sviluppa in parallelo), tecnici della casa con «Chiama» e l'SMS al tecnico. Collaborazioni con altre agenzie dopo il pilota.
 
-**Prossima sessione:** le **schermate delle richieste del collaboratore**, con il messaggio qui sotto; poi il **controllo B** ([docs/METODO.md](docs/METODO.md), passo 7).
+Lo stesso giorno le **schermate delle richieste** sono disegnate e approvate ([ticket](.scratch/design-percorso-1/issues/24-schermate-richieste-collaboratore.md), chiuso; DESIGN.md, «Richieste del collaboratore di ƎE (percorso 1)»): ricerca dell'operatore in cima a ogni pagina, «Invia» con la scritta, motivo di «Ferma l'accesso» da un elenco, valutazione della proprietaria in una sezione sotto il riquadro. Prototipo: https://claude.ai/artifact/NJ7XmFUL4dGLxTZWCS5jpC.
 
----
-
-## Schermate delle richieste del collaboratore
-
-/wayfinder .scratch/design-percorso-1/map.md — ticket «Schermate delle richieste del collaboratore» (.scratch/design-percorso-1/issues/24-schermate-richieste-collaboratore.md).
-
-Leggi AGENTS.md, STATUS.md, la mappa, il ticket e il ticket «Richieste del collaboratore di ƎE del 3/11/2026» (.scratch/architettura-percorso-1/issues/22-richieste-collaboratore-3-novembre.md); in DESIGN.md «Direzione del percorso 1», «Rifinitura delle schermate interne (percorso 1)», «Testi dell'interfaccia (percorso 1)» e «Richieste del collaboratore di ƎE (percorso 1)»; in PRODUCT.md §12 la riga del 3/11/2026. La pagina del pacchetto (https://claude.ai/artifact/9KwvBBmgGc859wN67hWbAF) si legge con lo strumento Artifact, azione «read», come riferimento di stile. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
-
-- Rivendica il ticket e lavora solo su quello, con le skill `prototype`, `ux-writing` e `grilling`. Prototipo usa e getta, fuori dal repository, solo dati inventati; provalo nel browser su telefono e computer, in chiaro e in scuro, con la tastiera.
-- Le scelte me le fai una alla volta, in parole semplici, con una raccomandazione; un cambio di regole va in DESIGN.md con data e motivo.
-- Chiudi il ticket quando le schermate sono approvate.
-
-Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
+**Prossima sessione:** il **controllo B** ([docs/METODO.md](docs/METODO.md), passo 7), con il messaggio qui sotto.
 
 ---
 
 ## Controllo B: design e architettura del percorso 1
 
-Le risposte del collaboratore di ƎE sono registrate dal 3/11/2026. Il controllo B si fa dopo il ticket «Schermate delle richieste del collaboratore» (scelta dell'utente del 3/11/2026). Messaggio:
+Le risposte del collaboratore di ƎE sono registrate dal 3/11/2026 e le schermate delle sue richieste sono approvate lo stesso giorno. Messaggio:
 
-Controllo B del percorso 1 (docs/METODO.md, passo 7): design e architettura sono pronti, e le risposte del collaboratore di ƎE sono registrate nel ticket «Il collaboratore di ƎE guarda lo spazio dell'operatore».
+Controllo B del percorso 1 (docs/METODO.md, passo 7): design e architettura sono pronti, le risposte del collaboratore di ƎE sono registrate nel ticket «Il collaboratore di ƎE guarda lo spazio dell'operatore» e le schermate delle sue richieste sono approvate (ticket «Schermate delle richieste del collaboratore»; prototipo https://claude.ai/artifact/NJ7XmFUL4dGLxTZWCS5jpC).
 
-Leggi AGENTS.md, STATUS.md, docs/METODO.md (passi 6–8), la mappa `.scratch/architettura-percorso-1/map.md` (Destinazione, Decisioni finora, Non ancora specificato) e ARCHITECTURE.md; in DESIGN.md «Pacchetto per il controllo B (percorso 1)». La pagina del pacchetto è https://claude.ai/artifact/9KwvBBmgGc859wN67hWbAF; aprila con lo strumento Artifact, azione «read». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+Leggi AGENTS.md, STATUS.md, docs/METODO.md (passi 6–8), la mappa `.scratch/architettura-percorso-1/map.md` (Destinazione, Decisioni finora, Non ancora specificato) e ARCHITECTURE.md; in DESIGN.md «Pacchetto per il controllo B (percorso 1)» e «Richieste del collaboratore di ƎE (percorso 1)». La pagina del pacchetto è https://claude.ai/artifact/9KwvBBmgGc859wN67hWbAF; aprila con lo strumento Artifact, azione «read». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
 
 - Portami in parole semplici cosa confermo: la direzione di design e le scelte tecniche, con i rischi accettati (controllo di un esperto umano, nessun antivirus nel pilota) e ciò che resta aperto prima del pilota (pareri, prove su telefoni veri, «Cosa resta aperto» della pagina).
 - Le correzioni del collaboratore sono già decise (ticket, «Risposta»): controlla che ARCHITECTURE.md le regga (mezzi accettati al banco per agenzia; pagamento parziale confermato dal proprietario; le scelte della sezione «Richieste del collaboratore di ƎE», segnate da confermare). Se trovi un conflitto, mostramelo con una proposta, una domanda alla volta, con una raccomandazione.
