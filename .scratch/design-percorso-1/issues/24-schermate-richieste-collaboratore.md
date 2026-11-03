@@ -12,7 +12,7 @@ Come si vedono, nella direzione «Terracotta» e con le regole già decise, le s
 2. la ricerca dei clienti: barra nella barra laterale, lente al telefono, recenti di 7 giorni;
 3. «Invia» accanto a documenti e ricevute;
 4. «Ferma l'accesso» e «Riapri» nella pagina della persona, con «Modifica» dei dati;
-5. la valutazione: inserimento dell'operatore, la casa del proprietario con «Pubblica sul sito» e l'anteprima, il foglio del sì, la scadenza e «Chiedi una nuova valutazione»;
+5. la valutazione: inserimento dell'operatore, la casa del proprietario con «Pubblica sul sito» e l'anteprima, il foglio del sì, la scadenza, lo storico delle valutazioni con le cifre solo per l'operatore e «Chiedi una nuova valutazione»;
 6. la casa senza gestione, per l'operatore e per il proprietario;
 7. «I tecnici di questa casa» con «Chiama» e l'SMS al tecnico, e l'inserimento dei tecnici da parte dell'operatore.
 
