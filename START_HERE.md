@@ -91,13 +91,32 @@ Lo stesso giorno sono entrate nel percorso 1 sei **richieste del collaboratore**
 
 Lo stesso giorno le **schermate delle richieste** sono disegnate e approvate ([ticket](.scratch/design-percorso-1/issues/24-schermate-richieste-collaboratore.md), chiuso; DESIGN.md, «Richieste del collaboratore di ƎE (percorso 1)»): ricerca dell'operatore in cima a ogni pagina, «Invia» con la scritta, motivo di «Ferma l'accesso» da un elenco, valutazione della proprietaria in una sezione sotto il riquadro. Prototipo: https://claude.ai/artifact/NJ7XmFUL4dGLxTZWCS5jpC.
 
-**Prossima sessione:** il **controllo B** ([docs/METODO.md](docs/METODO.md), passo 7), con il messaggio qui sotto.
+Il 4/11/2026 il collaboratore di ƎE ha mandato **nuove proposte** in un audio: una tessera e dei servizi per chi vende, i professionisti della compravendita (geometra, ingegnere, notaio), l'assistenza a chi partecipa alle aste e la ricerca dei professionisti in zona. Per studiarle c'è una mappa nuova, [Proposte del collaboratore di ƎE del 4/11/2026](.scratch/proposte-collaboratore-4-novembre/map.md), con l'[audio restituito](.scratch/proposte-collaboratore-4-novembre/audio-4-novembre.md). Destinazione confermata dall'utente: per ogni proposta un esito (già coperta, da integrare, da approfondire, da rimandare, da scartare) con le sue condizioni. Le quattro ricerche della mappa sono chiuse; restano otto decisioni, una per sessione.
+
+**Prossima sessione:** il ticket «Cosa, fra le proposte, può toccare il percorso 1», con il messaggio qui sotto. Dopo quel ticket il **controllo B** può partire, ma non deve: l'utente intende aspettare la fine dello studio (scelta del 4/11/2026).
+
+---
+
+## Proposte del collaboratore di ƎE del 4/11/2026
+
+Messaggio:
+
+/wayfinder .scratch/proposte-collaboratore-4-novembre/map.md — ticket «Cosa, fra le proposte, può toccare il percorso 1» (.scratch/proposte-collaboratore-4-novembre/issues/05-cosa-tocca-percorso-1.md)
+
+Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Non ancora specificato), l'audio restituito (.scratch/proposte-collaboratore-4-novembre/audio-4-novembre.md) e il ticket; poi le quattro ricerche chiuse della mappa (docs/ricerca/compravendita-ruoli.md, aste-immobiliari.md, segnalare-professionisti.md, professionisti-in-zona.md) e, solo dove servono, PRODUCT.md §4, §5, §7, §12 e il ticket chiuso «Richieste del collaboratore di ƎE del 3/11/2026». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+
+- Rivendica il ticket (`Status: claimed`) prima di lavorare e lavora solo su questo, con le skill `grilling` e `domain-modeling`.
+- Per ciascuna delle dieci proposte dimmi se può entrare nel percorso 1: sì, no o forse, con il motivo, i punti dell'audio, le decisioni già prese e i fatti delle ricerche. Portami le decisioni una alla volta, in parole semplici, con una raccomandazione motivata e le conseguenze delle alternative. Non simulare le mie risposte.
+- Non svolgere il controllo B e non anticipare lo sviluppo; niente codice, schermate o integrazioni; nessun contatto con professionisti, account o servizi reali.
+- Registra in PRODUCT.md §12 solo ciò che confermo, con data e motivo; la discussione resta nel ticket. Chiudi il ticket con la risposta e aggiorna «Decisioni finora» della mappa.
+
+Chiudi la sessione aggiornando STATUS.md e START_HERE.md con verifiche, decisioni, problemi aperti e il messaggio /wayfinder per il ticket successivo, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 
 ---
 
 ## Controllo B: design e architettura del percorso 1
 
-Le risposte del collaboratore di ƎE sono registrate dal 3/11/2026 e le schermate delle sue richieste sono approvate lo stesso giorno. Messaggio:
+Le risposte del collaboratore di ƎE sono registrate dal 3/11/2026 e le schermate delle sue richieste sono approvate lo stesso giorno. Dal 4/11/2026 il controllo B può partire dopo il ticket «Cosa, fra le proposte, può toccare il percorso 1» della mappa [Proposte del collaboratore di ƎE del 4/11/2026](.scratch/proposte-collaboratore-4-novembre/map.md); se quel ticket porta qualcosa nel percorso 1, il controllo B aspetta quel pezzo. L'utente intende aspettare la fine dello studio. Messaggio:
 
 Controllo B del percorso 1 (docs/METODO.md, passo 7): design e architettura sono pronti, le risposte del collaboratore di ƎE sono registrate nel ticket «Il collaboratore di ƎE guarda lo spazio dell'operatore» e le schermate delle sue richieste sono approvate (ticket «Schermate delle richieste del collaboratore»; prototipo https://claude.ai/artifact/NJ7XmFUL4dGLxTZWCS5jpC).
 

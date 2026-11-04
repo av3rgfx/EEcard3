@@ -1,0 +1,18 @@
+# Una tessera per chi vende e un'app sola
+
+Type: grilling
+Status: open
+Blocked by: 06
+Mappa: [Proposte del collaboratore di ƎE del 4/11/2026](../map.md)
+
+## Domanda (Question)
+
+Proposte 1 e 2 (punti 2 e 4 dell'[audio](../audio-4-novembre.md)). Serve una tessera diversa per chi vende, e l'app resta una sola? Valutare separatamente **tessera** (il segno dell'adesione, GLOSSARY), **servizio** (cosa riceve la persona) e **offerta commerciale** (prezzo, periodicità, inclusioni): il colore non dà permessi. Posizioni riferite: il padre propone una tessera di colore diverso e un'app dedicata; il collaboratore preferisce un unico ambiente. Il verde è un esempio, non una direzione visiva approvata; nell'audio non c'è una tessera per chi compra.
+
+Già deciso: tessera solo segno dell'adesione, che non autentica e non dà accesso (§5.6, §12 18/10/2026); tessera fisica del pilota arancione, un solo modello (§12, 25/10/2026); idea dei fondatori di tessere diverse per proprietario e inquilino e di livelli (§5.6), fuori dalla prima versione; un account da cliente per persona con più ruoli (GLOSSARY); marchio autonomo (§1). Si decide il principio, non il disegno: un'eventuale tessera nuova si disegna nella mappa del design.
+
+Per ogni proposta si porta all'utente, in parole semplici: punti dell'audio, cosa è già deciso, evidenze (fatti, inferenze, ipotesi, dati mancanti), benefici, costi e lavoro umano, rischi, poche alternative reali (compresi «non aggiungere nulla» e una forma minima), la raccomandazione motivata e l'esito proposto (già coperta, da integrare, da approfondire, da rimandare, da scartare). Una decisione alla volta; si registra nei documenti canonici solo ciò che l'utente conferma.
+
+## Risposta (Answer)
+
+## Commenti (Comments)
