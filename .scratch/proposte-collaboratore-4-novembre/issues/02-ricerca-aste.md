@@ -1,7 +1,7 @@
 # Ricerca: aste immobiliari, chi le gestisce e chi può assistere chi partecipa
 
 Type: research
-Status: open
+Status: resolved
 Blocked by:
 Mappa: [Proposte del collaboratore di ƎE del 4/11/2026](../map.md)
 
@@ -16,5 +16,12 @@ Punto 6 dell'[audio](../audio-4-novembre.md). Il collaboratore vuole inserire ne
 Solo fonti primarie (Normattiva, Ministero della Giustizia, Portale delle Vendite Pubbliche, siti dei tribunali, consigli nazionali degli ordini), con la data di lettura; le affermazioni del collaboratore non sono fatti verificati. Domanda precisa per un parere dove serve. Nessun contatto. Risultati in `docs/ricerca/aste-immobiliari.md`.
 
 ## Risposta (Answer)
+
+Chiusa il 4/11/2026, fatta da un agente in background: [docs/ricerca/aste-immobiliari.md](../../../docs/ricerca/aste-immobiliari.md), 35 fonti lette il 4/11/2026.
+- **Chi gestisce:** il tribunale. Il giudice ordina la vendita e di norma la delega a un notaio, avvocato o commercialista iscritto in un elenco; il custode mostra la casa; una società autorizzata gestisce la gara telematica; gli avvisi sono sul Portale delle Vendite Pubbliche; il bene passa con un decreto del giudice. Conferma il punto 6: né l'agenzia né l'app gestiscono le aste.
+- **Chi può assistere:** per partecipare non serve alcun professionista. Offrire per un altro, anche «per persona da nominare», è riservato all'avvocato. **Nessuna «abilitazione per le aste»** trovata nelle fonti ufficiali: l'affermazione del collaboratore non ha riscontro (un'assenza va confermata con un parere). Figure vicine con regole proprie: avvocato (anche specialista in esecuzione forzata), agente immobiliare iscritto, agenzia d'affari di pubblici incanti con comunicazione al Questore, consulente di professione non regolata. La consulenza legale continuativa sugli atti del tribunale è di norma degli avvocati.
+- **Agenzie e mediatori:** alcuni tribunali (Terni, Monza, Udine) avvertono che non usano intermediari e che chi compra non deve compensi; nessuna fonte letta vieta di farsi aiutare a proprie spese (inferenza).
+- **Domande per un parere:** dove finisce l'aiuto pratico e comincia la consulenza riservata agli avvocati; se chi assiste a pagamento deve dare comunicazione al Questore; se un'agenzia può farsi pagare da chi compra all'asta; che responsabilità ha ƎE se presenta qualcuno come «abilitato».
+- **Limiti:** non lette la guida dei notai, alcune pagine di tribunali e l'elenco ministeriale delle associazioni professionali; niente sentenze né imposte; alcune pagine dei tribunali senza data.
 
 ## Commenti (Comments)
