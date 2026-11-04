@@ -16,3 +16,5 @@ Per ogni proposta si porta all'utente, in parole semplici: punti dell'audio, cos
 ## Risposta (Answer)
 
 ## Commenti (Comments)
+
+**4/11/2026, dall'agente alla chiusura delle ricerche.** Un secondo possibile conflitto da portare all'utente: il fascicolo per la vendita prevede che «i tecnici dell'agenzia» facciano l'accesso agli atti (§5.1; §12, 18/10/2026), ma l'agente immobiliare non può esercitare professioni dello stesso settore né lavorare in conflitto di interessi ([ricerca](../../../docs/ricerca/compravendita-ruoli.md)); se i tecnici possano lavorare sulle case che ƎE media è una domanda per un parere. Va chiarito anche cosa vuol dire «tecnici dell'agenzia» (dipendenti o professionisti esterni conosciuti).
