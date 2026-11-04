@@ -83,7 +83,7 @@ Nuova mappa [Proposte del collaboratore di ƎE del 4/11/2026](.scratch/proposte-
   - [professionisti in zona](docs/ricerca/professionisti-in-zona.md): a mano è l'unica forma che dice chi l'agenzia conosce; un collegamento di ricerca a Google Maps è gratuito e senza chiave; con Google solo il riquadro già pronto, senza copiare i dati, con account e fatturazione.
 - **Conflitti segnalati, da portare all'utente nei ticket:** «venditori dopo il pilota» (22/10/2026) contro le case in vendita già nel percorso 1 con la valutazione (3/11/2026); i «tecnici dell'agenzia» del fascicolo per la vendita e l'incompatibilità dell'agente immobiliare (parere).
 - **Aperti:** otto ticket di decisione, il primo «Cosa, fra le proposte, può toccare il percorso 1»; domande per i pareri nelle quattro ricerche, da raccogliere nel ticket di chiusura. Il sito del Notariato non era raggiungibile: i Principi di deontologia dei notai non sono letti.
-- **Verifiche:** solo documenti, nessun codice, schermata o integrazione; nessun account, chiave o contatto con professionisti; OCR non serve. I file delle ricerche sono stati controllati: nessun dato di contatto di persone reali.
+- **Verifiche:** solo documenti, nessun codice, schermata o integrazione; nessun account, chiave o contatto con professionisti; OCR non serve. Controllo rapido dei file delle ricerche (indirizzi email e numeri di telefono): nessun contatto di persone reali.
 
 ## Fatto (3 novembre 2026, schermate delle richieste)
 Ticket [Schermate delle richieste del collaboratore](.scratch/design-percorso-1/issues/24-schermate-richieste-collaboratore.md), chiuso: 37 schermate in sette gruppi approvate dall'utente, quattro scelte una alla volta, tutte sull'opzione consigliata.
