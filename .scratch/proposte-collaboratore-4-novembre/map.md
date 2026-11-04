@@ -37,6 +37,8 @@ Il punto 1 dell'audio è il metodo che chiede il collaboratore.
 
 <!-- una riga per ticket chiuso: nome con link, poi il succo della risposta -->
 
+- [Ricerca: trovare professionisti in zona, a mano, con collegamenti esterni o con Google](issues/04-ricerca-professionisti-in-zona.md): a mano costa solo il tempo dell'operatore ed è l'unica forma che dice chi l'agenzia conosce; un collegamento di ricerca a Google Maps è gratuito e senza chiave, ma porta fuori da Connetto; gli albi servono a verificare l'iscrizione, non a trovare per zona, e non si copiano; con Google si può usare solo il riquadro già pronto (10.000 ricerche gratis al mese), senza copiare i dati, con account, fatturazione e chiave.
+
 ## Non ancora specificato (Not yet specified)
 
 - **Quali servizi per chi vende:** l'audio non li elenca (punto 4). Se il ticket su chi vende li ritiene utili, servirà una domanda al collaboratore di ƎE; prezzo, periodicità e inclusioni non si inventano.
