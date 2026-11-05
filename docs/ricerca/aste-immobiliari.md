@@ -1,5 +1,7 @@
 # Aste immobiliari: chi le gestisce e chi può assistere chi partecipa
 
+> **Storico superato dal 5/11/2026.** L'utente ha escluso le aste da Connetto e dal sito di ƎE (PRODUCT.md §12, 5/11/2026): la ricerca non si riprende, non guida decisioni e i suoi criteri non si trasferiscono alle vendite. Resta solo come registro di ciò che si è letto il 4/11/2026.
+
 Ricerca del 4 novembre 2026, svolta dall'agente in sequenza con la skill `research`, su fonti primarie lette tutte il 4/11/2026. Risponde al ticket [02 «Ricerca: aste immobiliari, chi le gestisce e chi può assistere chi partecipa»](../../.scratch/proposte-collaboratore-4-novembre/issues/02-ricerca-aste.md), punto 6 dell'[audio del 4/11/2026](../../.scratch/proposte-collaboratore-4-novembre/audio-4-novembre.md). Il collaboratore di ƎE vuole inserire nell'app chi assiste chi partecipa alle aste, senza gestirle, e riferisce che esistono «persone abilitate appositamente». Questa affermazione qui si verifica, non si dà per vera.
 
 **Non è una scelta.** Nessun contatto, nessun account, nessun servizio usato. Riguarda soprattutto le vendite forzate di immobili nelle esecuzioni (codice di procedura civile), con un cenno alle vendite nella liquidazione giudiziale.

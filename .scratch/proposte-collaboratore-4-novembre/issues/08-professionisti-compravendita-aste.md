@@ -1,4 +1,4 @@
-# Professionisti della compravendita e delle aste: in che forma, e chi fa cosa
+# Professionisti della compravendita: in che forma, e chi fa cosa
 
 Type: grilling
 Status: open
@@ -7,7 +7,7 @@ Mappa: [Proposte del collaboratore di ƎE del 4/11/2026](../map.md)
 
 ## Domanda (Question)
 
-Proposte 5, 6 e 10 (punti 5, 6 e 10 dell'[audio](../audio-4-novembre.md)). Geometra, ingegnere, notaio e chi assiste nelle aste entrano in Connetto, e in quale forma? Scegliere fra forme distinte: **elenco di contatti**, **segnalazione di fiducia** dell'agenzia, **richiesta gestita** dall'agenzia, **consulenza**, **incarico** al professionista, e la **mediazione** che resta dell'agenzia. Come si fa capire al cliente chi fa cosa e chi risponde di cosa (punto 10), senza che l'agenzia sembri garantire il lavoro altrui? L'app e l'agenzia non gestiscono le aste (punto 6).
+*Dal 5/11/2026 le aste sono escluse (vedi «Commenti»): la parte sulle aste non si tratta più.* Proposte 5, 6 e 10 (punti 5, 6 e 10 dell'[audio](../audio-4-novembre.md)). Geometra, ingegnere, notaio e chi assiste nelle aste entrano in Connetto, e in quale forma? Scegliere fra forme distinte: **elenco di contatti**, **segnalazione di fiducia** dell'agenzia, **richiesta gestita** dall'agenzia, **consulenza**, **incarico** al professionista, e la **mediazione** che resta dell'agenzia. Come si fa capire al cliente chi fa cosa e chi risponde di cosa (punto 10), senza che l'agenzia sembri garantire il lavoro altrui? L'app e l'agenzia non gestiscono le aste (punto 6).
 
 Già deciso: tecnici della casa in forma leggera, inseriti dall'operatore, senza account, con «Chiama» e l'SMS al tecnico (§12, 3/11/2026); «Tecnico» nel glossario è chi riceve le richieste d'aiuto, non un notaio; Connetto non sostituisce i professionisti abilitati (§9); responsabilità di chi consiglia (STUDIO.md, G). Fatti dalle ricerche [Chi fa cosa nella compravendita](01-ricerca-ruoli-compravendita.md), [Aste immobiliari](02-ricerca-aste.md) e [Segnalare professionisti](03-ricerca-segnalare-professionisti.md). Se servono parole nuove (per esempio per un professionista che non è un tecnico) si fissano con l'utente in GLOSSARY.md.
 
@@ -16,3 +16,5 @@ Per ogni proposta si porta all'utente, in parole semplici: punti dell'audio, cos
 ## Risposta (Answer)
 
 ## Commenti (Comments)
+
+**5/11/2026, decisioni dell'utente arrivate con la consegna del sito di ƎE** (PRODUCT.md §12, 5/11/2026). *Aste:* escluse, proposta 6 scartata; il titolo del ticket perde le aste, il nome del file resta per non rompere i collegamenti. *Rete:* approvata una rete di professionisti per la compravendita, con **contatti mediati dall'agenzia**, cioè l'agenzia decide chi mettere in contatto, senza ricopiare dati o smistare a mano ogni messaggio. Non approvati: tariffe, commissioni, accordi economici, pubblicità generica, classifiche, prenotazioni, pagamenti, account dei professionisti; nomi, qualifiche e disponibilità non verificati. *Restano qui:* la forma fra quelle della domanda (con la rete approvata, la mediazione resta dell'agenzia), la parola nuova per chi non è un «Tecnico» del glossario (notaio, professionisti della compravendita), come spiegare chi fa cosa (punto 10). *Proposta dell'agente per il registro* ([docs/integrazione-sito.md](../../../docs/integrazione-sito.md), §6): una sola scheda per professionista, con tre cose distinte, presenza nel registro, legame privato con una casa, e comparire sul sito solo con la scelta dell'agenzia e il sì scritto e revocabile del professionista; il tecnico di un proprietario non entra nella rete da solo; comparire non dà accesso alle case; nessun invio automatico di documenti o dati privati.

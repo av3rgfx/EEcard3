@@ -13,7 +13,7 @@ Le proposte, con i punti dell'audio:
 3. servizi per chi vende e legame con il sito (punti 3, 4);
 4. servizi della casa per chi vende, chi abita la propria casa e chi ne ha una sola (punto 3);
 5. professionisti della compravendita: geometra, ingegnere, notaio (punti 5, 10);
-6. assistenza a chi partecipa alle aste, senza gestirle (punto 6);
+6. assistenza a chi partecipa alle aste, senza gestirle (punto 6); *scartata dall'utente il 5/11/2026*;
 7. visibilità gratuita, timore di sembrare interessati e confini del lavoro dell'agenzia (punto 7);
 8. altre agenzie che aggiungono i propri professionisti con un gesto semplice (punto 8);
 9. ricerca dei professionisti in zona, anche con Google (punto 9);
@@ -41,6 +41,7 @@ Il punto 1 dell'audio è il metodo che chiede il collaboratore.
 - [Ricerca: aste immobiliari, chi le gestisce e chi può assistere chi partecipa](issues/02-ricerca-aste.md): le gestisce il tribunale con delegato, custode e gestore telematico; per partecipare non serve un professionista, offrire per altri è dell'avvocato; nessuna «abilitazione per le aste» nelle fonti ufficiali (da confermare con un parere); alcuni tribunali avvertono contro gli intermediari; quattro domande per un parere.
 - [Ricerca: segnalare professionisti, fra privacy, trasparenza e regole delle professioni](issues/03-ricerca-segnalare-professionisti.md): serve l'accordo scritto e revocabile del professionista, con un sì separato per il sito pubblico; i rapporti economici vanno detti prima della scelta e l'ordine spiegato; avvocati e notai non possono pagare per avere clienti, le altre professioni non con vantaggi scorretti; chi indica soltanto risponde dei propri errori, chi incarica o vende il lavoro anche della scelta o del lavoro altrui.
 - [Ricerca: trovare professionisti in zona, a mano, con collegamenti esterni o con Google](issues/04-ricerca-professionisti-in-zona.md): a mano costa solo il tempo dell'operatore ed è l'unica forma che dice chi l'agenzia conosce; un collegamento di ricerca a Google Maps è gratuito e senza chiave, ma porta fuori da Connetto; gli albi servono a verificare l'iscrizione, non a trovare per zona, e non si copiano; con Google si può usare solo il riquadro già pronto (10.000 ricerche gratis al mese), senza copiare i dati, con account, fatturazione e chiave.
+- **Consegna del sito di ƎE del 5/11/2026** (decisioni dell'utente prese lavorando sul sito; PRODUCT.md §12, 5/11/2026): **aste escluse** (proposta 6 scartata, [ricerca](issues/02-ricerca-aste.md) storico superato); **rete di professionisti per la compravendita approvata**, con contatti mediati dall'agenzia (proposta 5, forma e fase nei ticket 05 e 08); sito e Connetto complementari, **una sola gestione della rete**, sito solo vendita per la parte immobiliare (proposte 3 e 7); sezione pubblica delle valutazioni decisa; contatti dal sito gestiti sul sito, senza seconda coda in Connetto. Contratto proposto in [docs/integrazione-sito.md](../../docs/integrazione-sito.md); nuovo ticket [Integrazione con il sito di ƎE](issues/13-integrazione-sito.md).
 
 ## Non ancora specificato (Not yet specified)
 
@@ -53,6 +54,7 @@ Il punto 1 dell'audio è il metodo che chiede il collaboratore.
 
 - **Il controllo B e lo sviluppo** (scelta dell'utente del 4/11/2026).
 - **Disegno delle schermate e scelte tecniche:** dopo gli esiti, nelle mappe del design e dell'architettura.
-- **Il sito di ƎE:** repository separato, non si modifica qui.
+- **Il sito di ƎE:** repository separato, non si modifica qui; da qui si restituiscono documentazione e contratti ([docs/integrazione-sito.md](../../docs/integrazione-sito.md)).
+- **Aste:** escluse dall'utente il 5/11/2026; non si riprendono né ricerca né sviluppo.
 - **Collaborazioni con altre agenzie, provvigioni e ordine delle case sul sito:** già nel percorso dopo il pilota deciso il 3/11/2026; qui si guarda solo la proposta del punto 8.
 - **Contatti veri con professionisti, account, prove con servizi reali** senza autorizzazione dell'utente.

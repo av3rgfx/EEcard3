@@ -16,3 +16,5 @@ Per ogni proposta si porta all'utente, in parole semplici: punti dell'audio, cos
 ## Risposta (Answer)
 
 ## Commenti (Comments)
+
+**5/11/2026, dalla consegna del sito di ƎE** (PRODUCT.md §12, 5/11/2026). È deciso che il sito **presenta al pubblico la rete** ƎE e raccoglie i contatti; Connetto la serve nel contesto della casa. Restano qui: cosa si dice su scelta, ordine e rapporti economici; il collaboratore propone anche consulenze a pagamento e visibilità per attività della zona, **non approvate**. Dalla [ricerca](03-ricerca-segnalare-professionisti.md): «gratuita» deve essere vera in tutti i sensi; sul sito serve un sì del professionista distinto da quello per l'app. L'elenco del sito non ha un ordine che sembri una classifica ([docs/integrazione-sito.md](../../../docs/integrazione-sito.md), §4 e §6).

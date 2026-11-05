@@ -42,6 +42,8 @@ Promemoria chiesti dall'utente, non decisioni. Si riprendono quando si sceglie l
 - **Autenticazione:** decisa il 31/10/2026 («Decisioni confermate», «Accesso»).
 - **Email:** Amazon SES nella regione di Milano, da un sottodominio di ƎE; **SMS:** Skebby (Commify Italia), con l'alias di ƎE nel Registro AGCOM; **ISTAT:** interfaccia SDMX di IstatData letta dal lavoro notturno. Decisi il 1/11/2026 («Decisioni confermate», «Servizi esterni»).
 
+- **Sito di ƎE:** repository e applicazione separati; legge da Connetto le valutazioni pubblicate («Decisioni confermate», «Richieste del collaboratore di ƎE»). Contratto proposto in [docs/integrazione-sito.md](docs/integrazione-sito.md) (5/11/2026); i contatti dal sito restano nel sito, senza scrittura verso Connetto.
+
 Documenti, foto e ricevute: decisi il 2/11/2026 («Decisioni confermate»). DA DEFINIRE: pagamenti, notifiche sul telefono, wallet, firma, AI, secondo le necessità effettive.
 
 ## Decisioni confermate
@@ -229,7 +231,7 @@ Discussione nel [ticket](.scratch/architettura-percorso-1/issues/22-richieste-co
 - **«Invia»:** nel browser, condivisione di file del dispositivo (Web Share) con il PDF già scaricato attraverso il guardiano; dove manca, il download. Nessun invio dal server. Il supporto dei browser va verificato sulle fonti prima della costruzione.
 - **«Ferma l'accesso»:** è il blocco già previsto in «Accesso» (sessioni chiuse, codici fermi), con motivo, autore e data nel quaderno e «Riapri»; non tocca i rapporti con le case.
 - **Valutazione:** nella **casa**, con importo, data, autore, scadenza, stato della pubblicazione e la fonte del sì (tasto o foglio caricato). Alla scadenza la valutazione esce dalla vista del proprietario e dall'elenco del sito (lo decide la data, senza lavoro notturno) e resta, con la cifra, nello storico visibile solo all'operatore. **Casa senza gestione:** una casa con il rapporto di proprietà e senza incarico di gestione, che il modello dei contenitori già permette; i permessi del proprietario valgono come per le altre case, senza locazione.
-- **Elenco per il sito:** una sola pagina in sola lettura, in JSON, con le valutazioni pubblicate e non scadute (zona, tipo, metri quadri, cifra, scadenza e un identificativo che non dice la casa), protetta da una chiave del sito che si può cambiare, con un limite di richieste. È l'unica porta verso l'esterno oltre alle pagine dei clienti; passa dal guardiano con una fonte di accesso propria, «sito».
+- **Elenco per il sito:** una sola pagina in sola lettura, in JSON, con le valutazioni pubblicate e non scadute (zona, tipo, metri quadri, cifra, scadenza e un identificativo che non dice la casa), protetta da una chiave del sito che si può cambiare, con un limite di richieste. È l'unica porta verso l'esterno oltre alle pagine dei clienti; passa dal guardiano con una fonte di accesso propria, «sito». *Dal 5/11/2026* il formato, le regole comuni (chiavi con permessi per elenco, rotazione, errori, versioni, copie e ritiri) e un eventuale secondo elenco dei professionisti della rete sono **proposti** in [docs/integrazione-sito.md](docs/integrazione-sito.md), da confermare al controllo B e con l'utente; nessun endpoint esiste.
 - **Tecnici della casa:** il tecnico è una scheda nell'agenzia (nome, mestiere, telefono, liberatoria), legata alle case con la scelta del proprietario o dell'agenzia; nessun account. «Chiama» registra l'avvio come «Chiama ƎE» e manda l'SMS con Skebby: è un SMS in più per chiamata, nel conto degli SMS.
 
 ## Verifica operativa

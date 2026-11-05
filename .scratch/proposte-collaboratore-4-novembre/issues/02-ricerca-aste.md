@@ -25,3 +25,5 @@ Chiusa il 4/11/2026, fatta da un agente in background: [docs/ricerca/aste-immobi
 - **Limiti:** non lette la guida dei notai, alcune pagine di tribunali e l'elenco ministeriale delle associazioni professionali; niente sentenze né imposte; alcune pagine dei tribunali senza data.
 
 ## Commenti (Comments)
+
+**5/11/2026, decisione dell'utente (consegna del sito di ƎE).** Le aste **non si realizzano**: niente sezione o servizio, catalogo, acquisizione, sincronizzazione o integrazioni, né in Connetto né sul sito; la ricerca e lo sviluppo non si riprendono. Questa ricerca e il file [docs/ricerca/aste-immobiliari.md](../../../docs/ricerca/aste-immobiliari.md) restano **solo come storico superato**; i suoi criteri non si trasferiscono alle vendite. PRODUCT.md §12, 5/11/2026.

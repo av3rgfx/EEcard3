@@ -93,6 +93,8 @@ Lo stesso giorno le **schermate delle richieste** sono disegnate e approvate ([t
 
 Il 4/11/2026 il collaboratore di ƎE ha mandato **nuove proposte** in un audio: una tessera e dei servizi per chi vende, i professionisti della compravendita (geometra, ingegnere, notaio), l'assistenza a chi partecipa alle aste e la ricerca dei professionisti in zona. Per studiarle c'è una mappa nuova, [Proposte del collaboratore di ƎE del 4/11/2026](.scratch/proposte-collaboratore-4-novembre/map.md), con l'[audio restituito](.scratch/proposte-collaboratore-4-novembre/audio-4-novembre.md). Destinazione confermata dall'utente: per ogni proposta un esito (già coperta, da integrare, da approfondire, da rimandare, da scartare) con le sue condizioni. Le quattro ricerche della mappa sono chiuse; restano otto decisioni, una per sessione.
 
+Il 5/11/2026 è arrivata la **consegna del sito di ƎE**, con decisioni dell'utente prese lavorando sul sito (PRODUCT.md §12, 5/11/2026): **aste escluse** (non si riprendono né ricerca né sviluppo), rete di professionisti per la compravendita approvata con contatti mediati dall'agenzia, sito solo vendita, una sola gestione della rete, sezione pubblica delle valutazioni, contatti dal sito gestiti sul sito. Il contratto proposto per il sito è in [docs/integrazione-sito.md](docs/integrazione-sito.md) (nessun endpoint esiste); le decisioni aperte e il registro delle consegne nel ticket [Integrazione con il sito di ƎE](.scratch/proposte-collaboratore-4-novembre/issues/13-integrazione-sito.md).
+
 **Prossima sessione:** il ticket «Cosa, fra le proposte, può toccare il percorso 1», con il messaggio qui sotto. Dopo quel ticket il **controllo B** può partire, ma non deve: l'utente intende aspettare la fine dello studio (scelta del 4/11/2026).
 
 ---
@@ -103,14 +105,30 @@ Messaggio:
 
 /wayfinder .scratch/proposte-collaboratore-4-novembre/map.md — ticket «Cosa, fra le proposte, può toccare il percorso 1» (.scratch/proposte-collaboratore-4-novembre/issues/05-cosa-tocca-percorso-1.md)
 
-Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Non ancora specificato), l'audio restituito (.scratch/proposte-collaboratore-4-novembre/audio-4-novembre.md) e il ticket; poi le quattro ricerche chiuse della mappa (docs/ricerca/compravendita-ruoli.md, aste-immobiliari.md, segnalare-professionisti.md, professionisti-in-zona.md) e, solo dove servono, PRODUCT.md §4, §5, §7, §12 e il ticket chiuso «Richieste del collaboratore di ƎE del 3/11/2026». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora, Non ancora specificato), l'audio restituito (.scratch/proposte-collaboratore-4-novembre/audio-4-novembre.md) e il ticket con i suoi commenti; poi le ricerche chiuse della mappa che contano ancora (docs/ricerca/compravendita-ruoli.md, segnalare-professionisti.md, professionisti-in-zona.md; le aste sono escluse dal 5/11/2026 e la loro ricerca è solo storico) e docs/integrazione-sito.md e, solo dove servono, PRODUCT.md §4, §5, §7, §12 e il ticket chiuso «Richieste del collaboratore di ƎE del 3/11/2026». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
 
 - Rivendica il ticket (`Status: claimed`) prima di lavorare e lavora solo su questo, con le skill `grilling` e `domain-modeling`.
-- Per ciascuna delle dieci proposte dimmi se può entrare nel percorso 1: sì, no o forse, con il motivo, i punti dell'audio, le decisioni già prese e i fatti delle ricerche. Portami le decisioni una alla volta, in parole semplici, con una raccomandazione motivata e le conseguenze delle alternative. Non simulare le mie risposte.
+- Le decisioni del 5/11/2026 (PRODUCT.md §12) sono già prese: non chiedermele di nuovo. La proposta 6, aste, è scartata. Per la rete approvata chiedimi prima se il registro dei professionisti con il loro sì al sito entra nel percorso 1 o dopo.
+- Per ciascuna delle altre proposte dimmi se può entrare nel percorso 1: sì, no o forse, con il motivo, i punti dell'audio, le decisioni già prese e i fatti delle ricerche. Portami le decisioni una alla volta, in parole semplici, con una raccomandazione motivata e le conseguenze delle alternative. Non simulare le mie risposte.
 - Non svolgere il controllo B e non anticipare lo sviluppo; niente codice, schermate o integrazioni; nessun contatto con professionisti, account o servizi reali.
 - Registra in PRODUCT.md §12 solo ciò che confermo, con data e motivo; la discussione resta nel ticket. Chiudi il ticket con la risposta e aggiorna «Decisioni finora» della mappa.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md con verifiche, decisioni, problemi aperti e il messaggio /wayfinder per il ticket successivo, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
+
+---
+
+## Quando arriva una nuova consegna dal sito di ƎE
+
+Il sito ha un suo registro delle decisioni che toccano Connetto (`AGGIORNAMENTI-CONNETTO.md` nel repository del sito) e un messaggio di consegna che l'utente incolla qui. Messaggio:
+
+Consegna dal sito di ƎE: [incolla il testo]. Leggi AGENTS.md, STATUS.md, PRODUCT.md §12 (5/11/2026), docs/integrazione-sito.md e il ticket .scratch/proposte-collaboratore-4-novembre/issues/13-integrazione-sito.md, con le consegne già recepite nei «Commenti». Confronta la consegna con quelle già recepite: non rifare il lavoro, non trattare le proposte come approvate, non modificare il repository del sito.
+
+- Registra solo le decisioni dell'utente nuove, in PRODUCT.md §12 (prodotto) o ARCHITECTURE.md (tecnica), e segnala i conflitti con lo stato di Connetto senza cancellare decisioni successive.
+- Aggiorna docs/integrazione-sito.md se cambia il contratto, tenendo distinti stato reale, contratto proposto e decisioni aperte; mai URL, chiavi o date inventati.
+- Aggiungi una riga nei «Commenti» del ticket 13: cosa hai recepito e cosa hai realizzato.
+- Restituiscimi un aggiornamento breve per il sito: decisione e fonte, dati e contratto interessati, compatibilità, disponibilità effettiva, prove svolte, azione richiesta al sito. Niente segreti.
+
+Chiudi la sessione aggiornando STATUS.md, poi fai commit e push sul branch della sessione.
 
 ---
 
