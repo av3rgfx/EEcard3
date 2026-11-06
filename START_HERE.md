@@ -97,7 +97,9 @@ Il 5/11/2026 è arrivata la **consegna del sito di ƎE**, con decisioni dell'ute
 
 Il 6/11/2026 sono letti gli aggiornamenti del sito fino alla landing approvata: nessuna decisione nuova per Connetto, tre punti da portare all'utente (ticket 13 e 08).
 
-**Prossima sessione:** il ticket «Cosa, fra le proposte, può toccare il percorso 1», con il messaggio qui sotto. Dopo quel ticket il **controllo B** può partire, ma non deve: l'utente intende aspettare la fine dello studio (scelta del 4/11/2026).
+Il 6/11/2026 è chiuso il ticket «Cosa, fra le proposte, può toccare il percorso 1» (PRODUCT.md §12, 6/11/2026): entrano nel percorso 1 la tessera per chi vende, il registro della rete con il sì dei professionisti al sito, la trasparenza della rete e la spiegazione «chi fa cosa»; «forse» per altri servizi a chi vende e per il fascicolo per la vendita, con le domande per il collaboratore e l'avvocato in [domande-vendita-collaboratore-avvocato.md](.scratch/proposte-collaboratore-4-novembre/domande-vendita-collaboratore-avvocato.md), da consegnare a cura dell'utente.
+
+**Prossima sessione:** il ticket «Chi vende, chi compra e chi ha una sola casa», con il messaggio qui sotto. Il **controllo B** aspetta ora i ticket 06, 07, 08, 09 e 13.
 
 ---
 
@@ -105,18 +107,26 @@ Il 6/11/2026 sono letti gli aggiornamenti del sito fino alla landing approvata: 
 
 Messaggio:
 
-/wayfinder .scratch/proposte-collaboratore-4-novembre/map.md — ticket «Cosa, fra le proposte, può toccare il percorso 1» (.scratch/proposte-collaboratore-4-novembre/issues/05-cosa-tocca-percorso-1.md)
+/wayfinder .scratch/proposte-collaboratore-4-novembre/map.md — ticket «Chi vende, chi compra e chi ha una sola casa: cosa c'è già e cosa manca» (.scratch/proposte-collaboratore-4-novembre/issues/06-chi-vende-chi-compra.md)
 
-Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora, Non ancora specificato), l'audio restituito (.scratch/proposte-collaboratore-4-novembre/audio-4-novembre.md) e il ticket con i suoi commenti; poi le ricerche chiuse della mappa che contano ancora (docs/ricerca/compravendita-ruoli.md, segnalare-professionisti.md, professionisti-in-zona.md; le aste sono escluse dal 5/11/2026 e la loro ricerca è solo storico) e docs/integrazione-sito.md e, solo dove servono, PRODUCT.md §4, §5, §7, §12 e il ticket chiuso «Richieste del collaboratore di ƎE del 3/11/2026». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora, Non ancora specificato), l'audio restituito (.scratch/proposte-collaboratore-4-novembre/audio-4-novembre.md), il ticket con i suoi commenti, il ticket chiuso «Cosa, fra le proposte, può toccare il percorso 1» (Risposta e Commenti) e il documento .scratch/proposte-collaboratore-4-novembre/domande-vendita-collaboratore-avvocato.md; poi, solo dove servono, docs/ricerca/compravendita-ruoli.md, docs/integrazione-sito.md e PRODUCT.md §4, §5.1, §5.6, §7 e §12 (18/10, 22/10, 23/10, 3/11, 5/11 e 6/11/2026). Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
 
 - Rivendica il ticket (`Status: claimed`) prima di lavorare e lavora solo su questo, con le skill `grilling` e `domain-modeling`.
-- Le decisioni del 5/11/2026 (PRODUCT.md §12) sono già prese: non chiedermele di nuovo. La proposta 6, aste, è scartata. Per la rete approvata chiedimi prima se il registro dei professionisti con il loro sì al sito entra nel percorso 1 o dopo.
-- Dal 6/11/2026 (commenti dei ticket 08 e 13): sul sito di ƎE la rete è presentata anche con progettare e rinnovare, traslochi, utenze e bollette, caldaia e idraulica, che toccano i tecnici della casa e il percorso 3; approvata solo la presentazione sul sito. Tienine conto nella domanda sul registro, senza trattarlo come approvato; la domanda su cosa comprende la rete resta del ticket 08. Il sito promuove Connetto per nome: il parere sul marchio diventa urgente anche per il sito.
-- Per ciascuna delle altre proposte dimmi se può entrare nel percorso 1: sì, no o forse, con il motivo, i punti dell'audio, le decisioni già prese e i fatti delle ricerche. Portami le decisioni una alla volta, in parole semplici, con una raccomandazione motivata e le conseguenze delle alternative. Non simulare le mie risposte.
+- Le decisioni del 5/11 e del 6/11/2026 sono già prese: non chiedermele di nuovo. Chi vende è già nel percorso 1 con casa senza gestione, documenti, valutazione, tessera e rete; altri servizi e fascicolo per la vendita sono «forse»; i servizi della casa per chi abita restano al percorso 3.
+- Se in fondo a questo messaggio ci sono le risposte del collaboratore di ƎE o dell'avvocato, registrale nel ticket con chi ha risposto e la data e usale; se non ci sono, non inventarle: lavora su ciò che non ne dipende e lascia aperto il resto.
+- Portami una alla volta, in parole semplici, con una raccomandazione motivata e le conseguenze delle alternative: il conflitto «venditori dopo il pilota» (22/10/2026) con chi vende già nel percorso 1; chi conta come «chi vende» e da quale rapporto con la casa nasce ciò che vede; i «tecnici dell'agenzia» del fascicolo; l'esito delle proposte 3 e 4. Non simulare le mie risposte.
 - Non svolgere il controllo B e non anticipare lo sviluppo; niente codice, schermate o integrazioni; nessun contatto con professionisti, account o servizi reali.
-- Registra in PRODUCT.md §12 solo ciò che confermo, con data e motivo; la discussione resta nel ticket. Chiudi il ticket con la risposta e aggiorna «Decisioni finora» della mappa.
+- Registra in PRODUCT.md §12 solo ciò che confermo, con data e motivo; la discussione resta nel ticket. Chiudi il ticket con la risposta e aggiorna «Decisioni finora» della mappa. Se una decisione tocca il sito di ƎE, aggiorna docs/integrazione-sito.md e aggiungi una voce in cima a docs/consegne-al-sito.md.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md con verifiche, decisioni, problemi aperti e il messaggio /wayfinder per il ticket successivo, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
+
+---
+
+## Per la sessione del sito di ƎE (Claude Code o Codex sull'altro repository)
+
+Messaggio da incollare nella sessione del sito quando [docs/consegne-al-sito.md](docs/consegne-al-sito.md) ha voci nuove:
+
+Leggi da EEcard3 (`main`) docs/consegne-al-sito.md, dalla voce più recente fino all'ultima già annotata nel nostro AGGIORNAMENTI-CONNETTO.md, e docs/integrazione-sito.md nelle sezioni che le voci citano. Applica solo le «Azioni richieste al sito»; non trattare come approvato ciò che le voci dicono aperto, non inventare testi, nomi o endpoint, non modificare EEcard3. Annota in AGGIORNAMENTI-CONNETTO.md quali voci hai letto e cosa hai fatto; se una richiesta è in conflitto con una decisione del sito, segnalamelo invece di scegliere.
 
 ---
 
@@ -137,7 +147,7 @@ Chiudi la sessione aggiornando STATUS.md, poi fai commit e push sul branch della
 
 ## Controllo B: design e architettura del percorso 1
 
-Le risposte del collaboratore di ƎE sono registrate dal 3/11/2026 e le schermate delle sue richieste sono approvate lo stesso giorno. Dal 4/11/2026 il controllo B può partire dopo il ticket «Cosa, fra le proposte, può toccare il percorso 1» della mappa [Proposte del collaboratore di ƎE del 4/11/2026](.scratch/proposte-collaboratore-4-novembre/map.md); se quel ticket porta qualcosa nel percorso 1, il controllo B aspetta quel pezzo. L'utente intende aspettare la fine dello studio. Messaggio:
+Le risposte del collaboratore di ƎE sono registrate dal 3/11/2026 e le schermate delle sue richieste sono approvate lo stesso giorno. Dal 6/11/2026 il controllo B aspetta i pezzi che il ticket «Cosa, fra le proposte, può toccare il percorso 1» della mappa [Proposte del collaboratore di ƎE del 4/11/2026](.scratch/proposte-collaboratore-4-novembre/map.md) ha portato nel percorso 1, cioè i ticket 06, 07, 08, 09 e 13. L'utente intende aspettare la fine dello studio. Messaggio:
 
 Controllo B del percorso 1 (docs/METODO.md, passo 7): design e architettura sono pronti, le risposte del collaboratore di ƎE sono registrate nel ticket «Il collaboratore di ƎE guarda lo spazio dell'operatore» e le schermate delle sue richieste sono approvate (ticket «Schermate delle richieste del collaboratore»; prototipo https://claude.ai/artifact/NJ7XmFUL4dGLxTZWCS5jpC).
 

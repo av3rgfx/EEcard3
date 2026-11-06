@@ -14,3 +14,5 @@ Per ogni proposta si porta all'utente, in parole semplici: punti dell'audio, cos
 ## Risposta (Answer)
 
 ## Commenti (Comments)
+
+**6/11/2026, dal ticket [Cosa, fra le proposte, può toccare il percorso 1](05-cosa-tocca-percorso-1.md).** Altre agenzie e i loro professionisti **non entrano nel percorso 1**: restano per dopo il pilota; la scheda del professionista sta già nell'agenzia, con dati separati, e non chiude la strada. Qui resta l'esito finale; il ticket non ferma il controllo B.
