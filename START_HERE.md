@@ -116,9 +116,17 @@ Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora, Non 
 - Se in fondo a questo messaggio ci sono le risposte del collaboratore di ƎE o dell'avvocato, registrale nel ticket con chi ha risposto e la data e usale; se non ci sono, non inventarle: lavora su ciò che non ne dipende e lascia aperto il resto.
 - Portami una alla volta, in parole semplici, con una raccomandazione motivata e le conseguenze delle alternative: il conflitto «venditori dopo il pilota» (22/10/2026) con chi vende già nel percorso 1; chi conta come «chi vende» e da quale rapporto con la casa nasce ciò che vede; i «tecnici dell'agenzia» del fascicolo; l'esito delle proposte 3 e 4. Non simulare le mie risposte.
 - Non svolgere il controllo B e non anticipare lo sviluppo; niente codice, schermate o integrazioni; nessun contatto con professionisti, account o servizi reali.
-- Registra in PRODUCT.md §12 solo ciò che confermo, con data e motivo; la discussione resta nel ticket. Chiudi il ticket con la risposta e aggiorna «Decisioni finora» della mappa.
+- Registra in PRODUCT.md §12 solo ciò che confermo, con data e motivo; la discussione resta nel ticket. Chiudi il ticket con la risposta e aggiorna «Decisioni finora» della mappa. Se una decisione tocca il sito di ƎE, aggiorna docs/integrazione-sito.md e aggiungi una voce in cima a docs/consegne-al-sito.md.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md con verifiche, decisioni, problemi aperti e il messaggio /wayfinder per il ticket successivo, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
+
+---
+
+## Per la sessione del sito di ƎE (Claude Code o Codex sull'altro repository)
+
+Messaggio da incollare nella sessione del sito quando [docs/consegne-al-sito.md](docs/consegne-al-sito.md) ha voci nuove:
+
+Leggi da EEcard3 (`main`) docs/consegne-al-sito.md, dalla voce più recente fino all'ultima già annotata nel nostro AGGIORNAMENTI-CONNETTO.md, e docs/integrazione-sito.md nelle sezioni che le voci citano. Applica solo le «Azioni richieste al sito»; non trattare come approvato ciò che le voci dicono aperto, non inventare testi, nomi o endpoint, non modificare EEcard3. Annota in AGGIORNAMENTI-CONNETTO.md quali voci hai letto e cosa hai fatto; se una richiesta è in conflitto con una decisione del sito, segnalamelo invece di scegliere.
 
 ---
 

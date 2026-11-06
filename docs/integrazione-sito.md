@@ -219,7 +219,7 @@ Coordinamento tecnico, solo proposte: se sito e Connetto stanno sotto lo stesso 
 
 ## 10. Aggiornamenti fra i due progetti
 
-Per ogni modifica di Connetto che tocca il sito, la sessione di Connetto aggiorna questo documento e restituisce un breve aggiornamento con:
+Per ogni modifica di Connetto che tocca il sito, la sessione di Connetto aggiorna questo documento e aggiunge una voce in cima a [consegne-al-sito.md](consegne-al-sito.md), il registro che il sito legge a inizio sessione, con:
 - decisione e fonte (data, ticket o voce di PRODUCT.md §12);
 - dati e contratto interessati (sezione e campi);
 - compatibilità (versione, cambiamenti solo aggiuntivi o rottura);
