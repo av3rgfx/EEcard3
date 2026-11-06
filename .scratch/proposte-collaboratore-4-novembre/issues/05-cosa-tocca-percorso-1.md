@@ -1,7 +1,7 @@
 # Cosa, fra le proposte, può toccare il percorso 1
 
 Type: grilling
-Status: open
+Status: claimed
 Blocked by: 01, 02, 03, 04
 Mappa: [Proposte del collaboratore di ƎE del 4/11/2026](../map.md)
 
