@@ -794,7 +794,7 @@ Le domande aperte sono nei ticket della mappa; prezzo, periodicità e trattenuta
 Messaggi per le prossime sessioni in [START_HERE.md](START_HERE.md).
 
 ## Ultima verifica
-6/11/2026, cosa entra nel percorso 1: `python3 tools/check_setup.py` dà integrità OK; link locali di PRODUCT.md, docs/integrazione-sito.md, STATUS.md, START_HERE.md, della mappa delle proposte, dei suoi ticket e del documento di domande: nessuno rotto. Frontiera calcolata dai file dei ticket: libero il 06; 07 e 08 aspettano il 06, 09, 10 e 11 aspettano l'08, il 13 aspetta l'08. Nessun dato reale, contatto o servizio usato. Revisione OCR non applicabile (solo documenti).
+6/11/2026, cosa entra nel percorso 1: `python3 tools/check_setup.py` dà integrità OK; link locali di PRODUCT.md, docs/integrazione-sito.md, docs/consegne-al-sito.md, STATUS.md, START_HERE.md, della mappa delle proposte, dei suoi ticket e del documento di domande: nessuno rotto. Frontiera calcolata dai file dei ticket: libero il 06; 07 e 08 aspettano il 06, 09, 10 e 11 aspettano l'08, il 13 aspetta l'08. Nessun dato reale, contatto o servizio usato. Revisione OCR non applicabile (solo documenti).
 
 5/11/2026, consegna dal sito di ƎE: `python3 tools/check_setup.py` dà integrità OK; i tre esempi JSON di docs/integrazione-sito.md si leggono con il parser di Python; link locali di docs/integrazione-sito.md, PRODUCT.md, ARCHITECTURE.md, STATUS.md, START_HERE.md, della ricerca sulle aste, della mappa delle proposte e dei suoi ticket: nessuno rotto; nessun indirizzo email, numero di telefono o URL nel documento di integrazione e nel ticket 13. Revisione OCR non applicabile (solo documenti, nessun codice).
 
