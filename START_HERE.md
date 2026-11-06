@@ -95,6 +95,8 @@ Il 4/11/2026 il collaboratore di ƎE ha mandato **nuove proposte** in un audio: 
 
 Il 5/11/2026 è arrivata la **consegna del sito di ƎE**, con decisioni dell'utente prese lavorando sul sito (PRODUCT.md §12, 5/11/2026): **aste escluse** (non si riprendono né ricerca né sviluppo), rete di professionisti per la compravendita approvata con contatti mediati dall'agenzia, sito solo vendita, una sola gestione della rete, sezione pubblica delle valutazioni, contatti dal sito gestiti sul sito. Il contratto proposto per il sito è in [docs/integrazione-sito.md](docs/integrazione-sito.md) (nessun endpoint esiste); le decisioni aperte e il registro delle consegne nel ticket [Integrazione con il sito di ƎE](.scratch/proposte-collaboratore-4-novembre/issues/13-integrazione-sito.md).
 
+Il 6/11/2026 sono letti gli aggiornamenti del sito fino alla landing approvata: nessuna decisione nuova per Connetto, tre punti da portare all'utente (ticket 13 e 08).
+
 **Prossima sessione:** il ticket «Cosa, fra le proposte, può toccare il percorso 1», con il messaggio qui sotto. Dopo quel ticket il **controllo B** può partire, ma non deve: l'utente intende aspettare la fine dello studio (scelta del 4/11/2026).
 
 ---
@@ -109,6 +111,7 @@ Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora, Non 
 
 - Rivendica il ticket (`Status: claimed`) prima di lavorare e lavora solo su questo, con le skill `grilling` e `domain-modeling`.
 - Le decisioni del 5/11/2026 (PRODUCT.md §12) sono già prese: non chiedermele di nuovo. La proposta 6, aste, è scartata. Per la rete approvata chiedimi prima se il registro dei professionisti con il loro sì al sito entra nel percorso 1 o dopo.
+- Dal 6/11/2026 (commenti dei ticket 08 e 13): sul sito di ƎE la rete è presentata anche con progettare e rinnovare, traslochi, utenze e bollette, caldaia e idraulica, che toccano i tecnici della casa e il percorso 3; approvata solo la presentazione sul sito. Tienine conto nella domanda sul registro, senza trattarlo come approvato; la domanda su cosa comprende la rete resta del ticket 08. Il sito promuove Connetto per nome: il parere sul marchio diventa urgente anche per il sito.
 - Per ciascuna delle altre proposte dimmi se può entrare nel percorso 1: sì, no o forse, con il motivo, i punti dell'audio, le decisioni già prese e i fatti delle ricerche. Portami le decisioni una alla volta, in parole semplici, con una raccomandazione motivata e le conseguenze delle alternative. Non simulare le mie risposte.
 - Non svolgere il controllo B e non anticipare lo sviluppo; niente codice, schermate o integrazioni; nessun contatto con professionisti, account o servizi reali.
 - Registra in PRODUCT.md §12 solo ciò che confermo, con data e motivo; la discussione resta nel ticket. Chiudi il ticket con la risposta e aggiorna «Decisioni finora» della mappa.
