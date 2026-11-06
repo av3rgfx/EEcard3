@@ -1,7 +1,7 @@
 # Cosa, fra le proposte, può toccare il percorso 1
 
 Type: grilling
-Status: claimed
+Status: resolved
 Blocked by: 01, 02, 03, 04
 Mappa: [Proposte del collaboratore di ƎE del 4/11/2026](../map.md)
 
@@ -14,6 +14,23 @@ Da considerare: le decisioni che tengono venditori, fascicolo per la vendita e a
 Per ogni proposta si porta all'utente, in parole semplici: punti dell'audio, cosa è già deciso, evidenze (fatti, inferenze, ipotesi, dati mancanti), benefici, costi e lavoro umano, rischi, poche alternative reali (compresi «non aggiungere nulla» e una forma minima), la raccomandazione motivata e l'esito proposto (già coperta, da integrare, da approfondire, da rimandare, da scartare). Una decisione alla volta; si registra nei documenti canonici solo ciò che l'utente conferma.
 
 ## Risposta (Answer)
+
+Smistamento deciso dall'utente il 6/11/2026, una proposta alla volta (discussione in «Commenti»); registrato in PRODUCT.md §12 (6/11/2026). L'esito finale di ogni proposta resta nel suo ticket.
+
+| Proposta | Nel percorso 1? | In breve | Dove si decide il resto |
+| --- | --- | --- | --- |
+| 1. Tessera per chi vende | **Sì** | Entra; cosa dà, a chi e a quali condizioni non è deciso; colore nella mappa del design | [06](06-chi-vende-chi-compra.md), [07](07-tessera-e-app.md) |
+| 2. Un'app sola | **Già coperta** | Un account per persona con più ruoli; nessuna seconda app | [07](07-tessera-e-app.md) (esito) |
+| 3. Servizi per chi vende e legame con il sito | **Forse** | Chi vende entra con ciò che c'è (casa senza gestione, documenti, valutazione, tessera, rete); altri servizi solo se il collaboratore li elenca, fascicolo per la vendita solo se risposte e parere lo permettono, entrambi prima del controllo B; [domande pronte](../domande-vendita-collaboratore-avvocato.md) | [06](06-chi-vende-chi-compra.md) |
+| 4. Servizi della casa per chi abita o ha una sola casa | **No** | Dopo, con il percorso 3 delle bollette; già coperti i documenti della casa di chi vende | [06](06-chi-vende-chi-compra.md) |
+| 5. Rete dei professionisti della compravendita | **Sì** | Il registro con «nella rete ƎE» e il sì scritto e revocabile del professionista al sito entra, con il secondo elenco per il sito (cambia il 3/11/2026 «il sito legge solo le valutazioni»); all'inizio la rete della compravendita, i mestieri presentati sul sito il 6/11 restano una domanda | [08](08-professionisti-compravendita-aste.md), [13](13-integrazione-sito.md) |
+| 6. Aste | Scartata il 5/11/2026 | — | — |
+| 7. Trasparenza e confini dell'agenzia | **Sì** | Cosa si dice su scelta, ordine e rapporti economici, prima del controllo B | [09](09-visibilita-trasparenza.md) |
+| 8. Altre agenzie e i loro professionisti | **No** | Dopo il pilota; la scheda nell'agenzia non chiude la strada | [11](11-altre-agenzie-professionisti.md) |
+| 9. Ricerca in zona | **No** | Dopo; nel percorso 1 solo professionisti conosciuti dall'agenzia | [10](10-ricerca-in-zona.md) |
+| 10. Chi fa cosa | **Sì** | Breve spiegazione dove compare la rete, testo controllato dall'avvocato | [08](08-professionisti-compravendita-aste.md) |
+
+**Conseguenza per il controllo B:** aspetta i pezzi entrati, cioè i ticket 06 (per il «forse»), 07, 08, 09 e 13; i ticket 10 e 11 non lo fermano. L'utente intendeva comunque aspettare la fine dello studio. Prima dell'uso con persone vere servono il parere dell'avvocato e quello privacy sulla rete pubblicata.
 
 ## Commenti (Comments)
 
@@ -34,3 +51,4 @@ Domanda nuova per questo ticket: il **registro della rete con il sì dei profess
 - *Domanda 7, proposta 7, trasparenza e confini del lavoro dell'agenzia.* Alternative: **sì** (regole e testi su scelta, ordine e rapporti economici decisi nel ticket 09 prima del controllo B, con le risposte del collaboratore e dell'avvocato), **no** (elenco senza spiegazioni, che verrebbero dopo). Raccomandazione dell'agente: sì, conseguenza del registro nel percorso 1. **Scelta dell'utente: sì.**
 - *Domanda 8, proposta 8, altre agenzie e i loro professionisti «con un clic».* Alternative: **no, dopo il pilota** con le altre agenzie (la scheda del professionista sta già nell'agenzia, con dati separati, e non chiude la strada), **sì** (invito «con un clic» costruito ora, senza nessuno che lo usi nel pilota). Raccomandazione dell'agente: no. **Scelta dell'utente: no, resta per dopo il pilota.**
 - *Domanda 9, proposta 9, ricerca dei professionisti in zona.* Alternative: **no, dopo** (forma nel ticket 10), **forma minima** (link gratuito «Cerca in zona su Google Maps» accanto alla rete), **riquadro di Google** (account, fatturazione e chiave, contro la preferenza dell'utente per nessun servizio dati a pagamento). Raccomandazione dell'agente: no. **Scelta dell'utente: no, resta per dopo**; nel percorso 1 solo professionisti conosciuti dall'agenzia.
+- *Domanda 10, proposta 10, chi fa cosa fra agenzia, notaio e tecnico.* Alternative: **sì** (breve spiegazione «chi fa cosa» dove compare la rete, in Connetto e sul sito; testo nel ticket 08, controllato dall'avvocato prima dell'uso con persone vere), **no** (rete senza spiegazione dei ruoli). Raccomandazione dell'agente: sì. **Scelta dell'utente: sì.**

@@ -16,3 +16,5 @@ Per ogni proposta si porta all'utente, in parole semplici: punti dell'audio, cos
 ## Commenti (Comments)
 
 **5/11/2026, dalla consegna del sito di ƎE.** La «visibilità per attività della zona» proposta dal collaboratore non è approvata; la rete approvata è quella dei professionisti della compravendita conosciuti dall'agenzia (PRODUCT.md §12, 5/11/2026). Preferenza dell'utente: nessun servizio dati a pagamento. Il riquadro di Google, gratuito fino a una soglia ma con account e fatturazione ([ricerca](04-ricerca-professionisti-in-zona.md)), va riconsiderato alla luce di questa preferenza; resta da decidere se serve un collegamento esterno gratuito o nulla.
+
+**6/11/2026, dal ticket [Cosa, fra le proposte, può toccare il percorso 1](05-cosa-tocca-percorso-1.md).** La ricerca in zona **non entra nel percorso 1**: lì compaiono solo professionisti conosciuti dall'agenzia. Qui resta l'esito finale (per esempio un collegamento gratuito a Google Maps più avanti, o nulla); il ticket non ferma il controllo B.

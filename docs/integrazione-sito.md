@@ -13,6 +13,7 @@ Tre livelli, sempre distinti:
 - **Nessun indirizzo, chiave o data di disponibilità.** Il dominio dipende dal parere sul nome Connetto; nessuna chiave è stata generata; nessuna data di consegna è stabilita.
 - **Stack di Connetto: documentato, non installato.** TypeScript, React Router, Better Auth, Drizzle su PostgreSQL 17, Scalingo a Parigi, Amazon SES a Milano, Skebby per gli SMS ([ARCHITECTURE.md](../ARCHITECTURE.md), «Decisioni confermate»). Nessun servizio è attivo e nessun account è aperto. Coincide con lo stack scelto dal sito, ma applicazioni, database, credenziali e rilasci restano separati.
 - **Già deciso in Connetto** (3/11/2026, [PRODUCT.md](../PRODUCT.md) §12; [ARCHITECTURE.md](../ARCHITECTURE.md), «Richieste del collaboratore di ƎE», da confermare al controllo B): un elenco JSON in sola lettura delle valutazioni pubblicate e non scadute, protetto da una chiave del sito che si può cambiare e da un limite di richieste, che passa dal guardiano con la fonte di accesso «sito». Sono decisi i campi pubblici (zona, tipo, metri quadri, cifra, scadenza, identificativo che non dice la casa), non il loro formato.
+- **Deciso il 6/11/2026** ([PRODUCT.md](../PRODUCT.md) §12): l'elenco dei professionisti della rete con il loro sì al sito entra nel percorso 1, accanto a quello delle valutazioni (§6). Nessun endpoint esiste ancora.
 - **Il resto di questo documento è proposta.** Le prove della §8 non sono state eseguite: non c'è nulla da provare.
 
 ## 2. Decisioni dell'utente recepite
@@ -34,7 +35,7 @@ Fonte: consegna del sito del 5/11/2026, con le decisioni prese dall'utente lavor
 | --- | --- | --- |
 | **Annuncio di vendita** (prezzo di vendita, disponibilità, descrizioni, foto autorizzate) | Sito | Nulla. Una casa o una valutazione di Connetto non diventa un annuncio da sola. |
 | **Valutazione della casa** | Connetto | Solo le valutazioni con il sì del proprietario, non revocato e non scadute, con i soli campi della §5. |
-| **Professionista** (scheda, legame con le case, sì a comparire) | Connetto, se l'utente lo conferma (§6) | Solo i membri della rete ƎE con il proprio sì al sito, con i soli campi della §6. |
+| **Professionista** (scheda, legame con le case, sì a comparire) | Connetto (deciso il 6/11/2026, §6) | Solo i membri della rete ƎE con il proprio sì al sito, con i soli campi della §6. |
 | **Contatto dal sito** (nome, recapito, messaggio, riferimento pubblico) | Sito | Nulla nella prima fase (§7). |
 
 Regole che valgono per tutti: nessun nome di clienti, indirizzo preciso, foto, documento o dato del fascicolo esce da Connetto; la pubblicazione di un professionista non gli dà accesso a una casa; nessun invio automatico di documenti o dati privati ai professionisti; un visitatore del sito non viene mai collegato in automatico a una casa privata, a un account o a una valutazione.
@@ -49,7 +50,7 @@ Il meccanismo più semplice che regge le revoche: **il sito legge da Connetto un
 - La chiave è un valore casuale di almeno 32 byte, in base64url, con un prefisso riconoscibile (per esempio `connetto_sito_`) per farla trovare dai controlli dei segreti.
 - **Nel sito** sta solo in una variabile d'ambiente del server (Scalingo), mai nel codice, nel repository, nei registri, nel browser o in una pagina. Le chiamate partono solo dal server del sito.
 - **In Connetto** si conserva solo l'impronta della chiave, con nome, data di creazione e autorizzazioni.
-- **Autorizzazioni distinte:** ogni chiave appartiene alla fonte di accesso «sito» e porta permessi separati per elenco, `valutazioni:lettura` e, solo se l'utente lo conferma, `professionisti:lettura`. Con la chiave del sito non si legge nient'altro: né pagine dei clienti né dati dell'operatore.
+- **Autorizzazioni distinte:** ogni chiave appartiene alla fonte di accesso «sito» e porta permessi separati per elenco, `valutazioni:lettura` e `professionisti:lettura` (quest'ultimo deciso il 6/11/2026). Con la chiave del sito non si legge nient'altro: né pagine dei clienti né dati dell'operatore.
 - **Rotazione senza interruzioni:** fino a due chiavi attive per la fonte «sito». Si crea la nuova, la si mette nel sito, si controlla una lettura riuscita, si revoca la vecchia. Una chiave revocata smette di funzionare alla richiesta successiva. Rotazione subito se una chiave può essere uscita; altrimenti con la frequenza che si concorda (§9).
 
 **Limiti.** Proposta: 60 richieste al minuto per chiave; oltre, `429` con `Retry-After` in secondi. Il sito ne fa molte meno (vedi «Lettura»).
@@ -129,7 +130,7 @@ Elenco vuoto: `"valutazioni": []`, risposta `200`. `generato_il` è l'ora del ca
 
 ## 6. Elenco dei professionisti pubblicabili
 
-Stato: **rete approvata dall'utente il 5/11/2026; lettura da Connetto non ancora confermata; campi solo candidati; endpoint inesistente.** Il 3/11/2026 l'utente ha deciso che il sito legge da Connetto *solo* le valutazioni: aggiungere questo elenco va confermato (§9, prima decisione).
+Stato: **rete approvata dall'utente il 5/11/2026; registro e lettura da Connetto decisi il 6/11/2026, nel percorso 1; campi solo candidati; endpoint inesistente.** Il 6/11/2026 l'utente ha deciso che il registro della rete con il sì dei professionisti al sito entra nel percorso 1 e che il sito legge da Connetto anche questo elenco ([PRODUCT.md](../PRODUCT.md) §12, 6/11/2026, che precisa il 3/11/2026). All'inizio comprende la rete della compravendita; se comprende anche i servizi presentati sul sito il 6/11/2026 si decide nel [ticket 08](../.scratch/proposte-collaboratore-4-novembre/issues/08-professionisti-compravendita-aste.md). Accanto all'elenco, sul sito e in Connetto, vanno i testi su scelta, ordine e rapporti economici ([ticket 09](../.scratch/proposte-collaboratore-4-novembre/issues/09-visibilita-trasparenza.md)) e una breve spiegazione «chi fa cosa» fra agenzia, notaio e tecnico (ticket 08), controllata dall'avvocato.
 
 **Tre cose distinte nel registro** (proposta per il modello di Connetto, sopra i «tecnici della casa» già decisi: una scheda nell'agenzia con nome, mestiere, telefono e liberatoria, senza account):
 1. **Presenza nel registro:** la scheda del professionista nell'agenzia, inserita una volta dall'operatore. Vale anche per il tecnico scelto da un proprietario.
@@ -203,7 +204,7 @@ Da eseguire quando esisteranno le due parti, solo con dati inventati. **Nessuna 
 
 | Domanda | Chi decide | Ferma |
 | --- | --- | --- |
-| Connetto offre l'elenco dei professionisti, e in quale fase (percorso 1 o dopo)? Cambierebbe la decisione del 3/11/2026 «il sito legge solo le valutazioni». | utente ([ticket 05](../.scratch/proposte-collaboratore-4-novembre/issues/05-cosa-tocca-percorso-1.md) e [08](../.scratch/proposte-collaboratore-4-novembre/issues/08-professionisti-compravendita-aste.md)) | §6 |
+| ~~Connetto offre l'elenco dei professionisti, e in quale fase?~~ **Deciso il 6/11/2026:** sì, nel percorso 1 ([ticket 05](../.scratch/proposte-collaboratore-4-novembre/issues/05-cosa-tocca-percorso-1.md)). Restano: quali professioni e mestieri comprende, e le parole (ticket [08](../.scratch/proposte-collaboratore-4-novembre/issues/08-professionisti-compravendita-aste.md)) | utente | §6 |
 | **T_ritiro**, la latenza massima di ritiro dal sito | utente, con il parere privacy | §4, prove 3–7 |
 | Mostrare l'ultimo elenco oltre T_ritiro se Connetto non risponde | utente | §4 |
 | Grandezza della zona, elenco dei tipi, quale misura dei metri quadri | utente con ƎE | §5 |

@@ -16,3 +16,5 @@ Per ogni proposta si porta all'utente, in parole semplici: punti dell'audio, cos
 ## Risposta (Answer)
 
 ## Commenti (Comments)
+
+**6/11/2026, dal ticket [Cosa, fra le proposte, può toccare il percorso 1](05-cosa-tocca-percorso-1.md)** (PRODUCT.md §12, 6/11/2026). La tessera per chi vende **entra nel percorso 1**: qui si decide cosa dà, a chi e a quali condizioni, senza inventarlo (domande 4 e 5 del [documento per il collaboratore](../domande-vendita-collaboratore-avvocato.md)); il colore va alla mappa del design. Un'app sola: **già coperta**, nessuna seconda app. Questo ticket ora ferma il controllo B.
