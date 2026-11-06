@@ -14,3 +14,5 @@ Per ogni proposta si porta all'utente, in parole semplici: punti dell'audio, cos
 ## Risposta (Answer)
 
 ## Commenti (Comments)
+
+**5/11/2026, dalla consegna del sito di ƎE.** La «visibilità per attività della zona» proposta dal collaboratore non è approvata; la rete approvata è quella dei professionisti della compravendita conosciuti dall'agenzia (PRODUCT.md §12, 5/11/2026). Preferenza dell'utente: nessun servizio dati a pagamento. Il riquadro di Google, gratuito fino a una soglia ma con account e fatturazione ([ricerca](04-ricerca-professionisti-in-zona.md)), va riconsiderato alla luce di questa preferenza; resta da decidere se serve un collegamento esterno gratuito o nulla.

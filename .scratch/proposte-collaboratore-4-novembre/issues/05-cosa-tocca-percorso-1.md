@@ -16,3 +16,9 @@ Per ogni proposta si porta all'utente, in parole semplici: punti dell'audio, cos
 ## Risposta (Answer)
 
 ## Commenti (Comments)
+
+**5/11/2026, decisioni dell'utente arrivate con la consegna del sito di ƎE** (PRODUCT.md §12, 5/11/2026), da usare nello smistamento senza richiederle:
+- proposta 6, aste: **scartata**, non entra in nessun percorso;
+- proposta 5, rete di professionisti per la compravendita: **approvata**, con contatti mediati dall'agenzia; resta da dire in quale forma e in quale fase entra in Connetto. Il sì alla rete non anticipa il percorso 2 e non sostituisce «Chiama»;
+- proposte 3 e 7, sito: il sito presenta al pubblico la rete e raccoglie i contatti, Connetto serve la rete nel contesto della casa, una sola gestione della rete; il sito per la parte immobiliare tratta solo la vendita.
+Domanda nuova per questo ticket: il **registro della rete con il sì dei professionisti al sito** entra nel percorso 1 (e quindi nel controllo B), accanto ai tecnici della casa, oppure dopo? Il 3/11/2026 l'utente ha deciso che il sito legge da Connetto solo le valutazioni: aggiungere i professionisti cambia quella decisione. Contratto proposto in [docs/integrazione-sito.md](../../../docs/integrazione-sito.md), §6; il sito non aspetta: intanto presenta servizi e contatto dell'agenzia.
