@@ -1,7 +1,7 @@
 # Chi vende, chi compra e chi ha una sola casa: cosa c'è già e cosa manca
 
 Type: grilling
-Status: open
+Status: claimed
 Blocked by: 05
 Mappa: [Proposte del collaboratore di ƎE del 4/11/2026](../map.md)
 
