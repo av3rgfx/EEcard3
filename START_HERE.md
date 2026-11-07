@@ -101,7 +101,9 @@ Il 6/11/2026 è chiuso il ticket «Cosa, fra le proposte, può toccare il percor
 
 Il 7/11/2026 è chiuso il ticket «Chi vende, chi compra e chi ha una sola casa» (PRODUCT.md §12 e §10.8, 7/11/2026): chi vende è nel pilota con il necessario ed è il proprietario, senza rapporto nuovo; a vendita fatta il rapporto finisce, con 3 mesi di sola lettura senza adesione pagata; per il fascicolo l'ipotesi è un tecnico incaricato da chi vende; se a fine studio mancano le risposte, altri servizi e fascicolo passano a dopo il pilota.
 
-**Prossima sessione:** il ticket «Una tessera per chi vende e un'app sola», con il messaggio qui sotto. Il **controllo B** aspetta ora i ticket 07, 08, 09 e 13. In alternativa si può prendere il ticket «Professionisti della compravendita: in che forma, e chi fa cosa», anch'esso libero.
+Il 7/11/2026 è chiuso anche il ticket «Una tessera per chi vende e un'app sola» (PRODUCT.md §12, 7/11/2026): tessera, servizio e offerta distinti, una tessera per persona; la tessera va a chi ha una casa in vendita in Connetto; adesione gratuita per ora per chi ha solo case senza gestione; una seconda tessera fisica di un altro colore per chi vende; un'app sola. Quale tessera ha chi affitta e vende insieme è nel ticket nuovo «Quale tessera ha chi affitta e vende insieme», che l'utente discute con il collega sulla pagina condivisa [Tessera di chi vende](https://claude.ai/artifact/PAw8wJuEQ3g6fEKjfugPKL).
+
+**Prossima sessione:** il ticket «Professionisti della compravendita: in che forma, e chi fa cosa», con il messaggio qui sotto. Il **controllo B** aspetta ora i ticket 08, 09, 13 e 14. Quando l'utente ha parlato con il collega, il ticket 14 con il secondo messaggio.
 
 ---
 
@@ -109,18 +111,35 @@ Il 7/11/2026 è chiuso il ticket «Chi vende, chi compra e chi ha una sola casa�
 
 Messaggio:
 
-/wayfinder .scratch/proposte-collaboratore-4-novembre/map.md — ticket «Una tessera per chi vende e un'app sola» (.scratch/proposte-collaboratore-4-novembre/issues/07-tessera-e-app.md)
+/wayfinder .scratch/proposte-collaboratore-4-novembre/map.md — ticket «Professionisti della compravendita: in che forma, e chi fa cosa» (.scratch/proposte-collaboratore-4-novembre/issues/08-professionisti-compravendita-aste.md)
 
-Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora, Non ancora specificato), l'audio restituito (.scratch/proposte-collaboratore-4-novembre/audio-4-novembre.md, punti 2 e 4), il ticket con i suoi commenti, i ticket chiusi «Cosa, fra le proposte, può toccare il percorso 1» e «Chi vende, chi compra e chi ha una sola casa» (Risposta e Commenti) e il documento .scratch/proposte-collaboratore-4-novembre/domande-vendita-collaboratore-avvocato.md (domande 4 e 5); poi, solo dove servono, GLOSSARY.md («Adesione», «Tessera», «Account da cliente»), DESIGN.md (tessera digitale di rame, tessera fisica arancione), docs/ricerca/tessere.md e PRODUCT.md §5.6, §7 e §12 (18/10, 23/10, 25/10, 6/11 e 7/11/2026). Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora, Non ancora specificato), l'audio restituito (.scratch/proposte-collaboratore-4-novembre/audio-4-novembre.md, punti 5, 7 e 10), il ticket con i suoi commenti, i ticket chiusi «Cosa, fra le proposte, può toccare il percorso 1», «Chi vende, chi compra e chi ha una sola casa» e «Una tessera per chi vende e un'app sola» (Risposta), le ricerche chiuse «Chi fa cosa nella compravendita» e «Segnalare professionisti» (Risposta) e il documento .scratch/proposte-collaboratore-4-novembre/domande-vendita-collaboratore-avvocato.md (parti C e F); poi, solo dove servono, GLOSSARY.md («Tecnico»), docs/integrazione-sito.md (§6), docs/ricerca/compravendita-ruoli.md, docs/ricerca/segnalare-professionisti.md e PRODUCT.md §9 e §12 (3/11, 5/11, 6/11 e 7/11/2026). Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
 
 - Rivendica il ticket (`Status: claimed`) prima di lavorare e lavora solo su questo, con le skill `grilling` e `domain-modeling`.
-- Le decisioni del 6/11 e del 7/11/2026 sono già prese: non chiedermele di nuovo. La tessera per chi vende entra nel percorso 1; un'app sola è già coperta; chi vende è il proprietario, senza rapporto nuovo con la casa, e la tessera resta un segno che non apre nulla.
-- Se in fondo a questo messaggio ci sono le risposte del collaboratore di ƎE, registrale nel ticket con chi ha risposto e la data e usale; se non ci sono, non inventarle: lavora su ciò che non ne dipende e lascia aperto il resto.
-- Portami una alla volta, in parole semplici, con una raccomandazione motivata e le conseguenze delle alternative: tenere distinti tessera, servizio e offerta commerciale per chi vende; a chi va la tessera (incarico di vendita, valutazione, chiunque voglia vendere); se chi vende senza gestione ha un'adesione e se è a pagamento; se una tessera fisica in più cambia il solo modello arancione del 25/10/2026; l'esito delle proposte 1 e 2. Il colore va alla mappa del design. Non simulare le mie risposte.
-- Non svolgere il controllo B e non anticipare lo sviluppo; niente codice, schermate o integrazioni; nessun contatto con fornitori, professionisti, account o servizi reali.
-- Registra in PRODUCT.md §12 solo ciò che confermo, con data e motivo; la discussione resta nel ticket. Chiudi il ticket con la risposta e aggiorna «Decisioni finora» della mappa. Se una decisione tocca il sito di ƎE, aggiorna docs/integrazione-sito.md e aggiungi una voce in cima a docs/consegne-al-sito.md.
+- Le decisioni del 5/11, del 6/11 e del 7/11/2026 sono già prese: non chiedermele di nuovo. La rete della compravendita è approvata, con contatti mediati dall'agenzia; il registro con «nella rete ƎE» e il sì scritto e revocabile del professionista al sito entra nel percorso 1, con il secondo elenco per il sito; aste escluse; «chi fa cosa» sì, con il testo controllato dall'avvocato.
+- Se in fondo a questo messaggio ci sono risposte del collaboratore di ƎE o dell'avvocato, registrale nel ticket con chi ha risposto e la data e usale; se non ci sono, non inventarle: lavora su ciò che non ne dipende e lascia aperto il resto.
+- Portami una alla volta, in parole semplici, con una raccomandazione motivata e le conseguenze delle alternative: in quale forma i professionisti entrano nel percorso 1 (elenco di contatti, segnalazione di fiducia, richiesta gestita, consulenza, incarico; la mediazione resta dell'agenzia); la parola per un professionista che non è un «Tecnico» del glossario; se la rete comprende anche i servizi presentati sul sito il 6/11/2026; cosa dice la breve spiegazione «chi fa cosa», come bozza per l'avvocato; l'esito delle proposte 5 e 10. Non simulare le mie risposte.
+- Non svolgere il controllo B e non anticipare lo sviluppo; niente codice, schermate o integrazioni; nessun contatto con professionisti, account o servizi reali.
+- Registra in PRODUCT.md §12 solo ciò che confermo, con data e motivo; termini nuovi in GLOSSARY.md solo se li decido; la discussione resta nel ticket. Chiudi il ticket con la risposta e aggiorna «Decisioni finora» della mappa. Se una decisione tocca il sito di ƎE, aggiorna docs/integrazione-sito.md e aggiungi una voce in cima a docs/consegne-al-sito.md.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md con verifiche, decisioni, problemi aperti e il messaggio /wayfinder per il ticket successivo, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
+
+---
+
+## Quando hai parlato con il collega della tessera di chi vende
+
+Messaggio:
+
+/wayfinder .scratch/proposte-collaboratore-4-novembre/map.md — ticket «Quale tessera ha chi affitta e vende insieme» (.scratch/proposte-collaboratore-4-novembre/issues/14-tessera-affitta-e-vende.md): con il collega abbiamo usato la pagina condivisa; leggi le risposte salvate lì.
+
+Leggi AGENTS.md, STATUS.md, la mappa, il ticket, il ticket chiuso «Una tessera per chi vende e un'app sola» (Risposta e Commenti, domanda 4-bis) e PRODUCT.md §12 (25/10 e 7/11/2026). Leggi le risposte della pagina https://claude.ai/artifact/PAw8wJuEQ3g6fEKjfugPKL (raccolta `risposte`) e i suoi commenti; sono discussione, non decisioni. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+
+- Rivendica il ticket (`Status: claimed`) prima di lavorare e lavora solo su questo, con le skill `grilling` e `domain-modeling`.
+- Riassumi nel ticket le risposte con chi le ha date e la data; se le domande 3 e 4 della pagina contengono risposte del collaboratore, registrale anche nel ticket «Una tessera per chi vende e un'app sola» e segnala cosa cambiano.
+- Portami una alla volta, con una raccomandazione motivata: quale tessera ha chi affitta e vende insieme; se il colore che dice «vende» in pubblico va bene. Il colore resta alla mappa del design. Non simulare le mie risposte.
+- Registra in PRODUCT.md §12 solo ciò che confermo; chiudi il ticket e aggiorna «Decisioni finora» della mappa e la voce del colore nella mappa del design. Nessun ordine o contatto con fornitori.
+
+Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 
 ---
 
