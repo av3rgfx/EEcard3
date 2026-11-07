@@ -52,6 +52,18 @@ _Da evitare_: affitto (si confonde con il canone), contratto (da solo indica il 
 L'accordo scritto con cui il proprietario affida all'agenzia una casa gestita e l'incasso del canone per suo conto, con il termine di consegna e le regole sui pagamenti parziali e sul compenso. È distinto dall'adesione e dall'incarico del tecnico.
 _Da evitare_: mandato (termine legale, non del servizio), contratto di gestione, incarico (da solo indica quello del tecnico)
 
+**Professionista**:
+Una persona o uno studio con un mestiere, con la propria scheda nel registro dell'agenzia. Ogni tecnico è un professionista; un notaio o un geometra per una vendita sono professionisti ma non tecnici.
+_Da evitare_: partner (fa pensare a un accordo commerciale), consulente, fornitore
+
+**Rete ƎE**:
+I professionisti che l'agenzia ha scelto di indicare ai propri clienti. Esserci non dà accesso a nessuna casa; il tecnico scelto da un proprietario non ci entra da solo.
+_Da evitare_: partner (fa pensare a un accordo commerciale)
+
+**Indicazione**:
+L'agenzia mostra a un cliente un professionista della rete ƎE; il cliente sceglie, affida il lavoro e lo paga lui. Non è una consulenza né un incarico dato dall'agenzia per conto del cliente.
+_Da evitare_: segnalazione, raccomandazione, consiglio di fiducia (fanno pensare a una garanzia sul lavoro altrui), incarico
+
 **Tecnico**:
 Un professionista abilitato a ricevere le richieste di un mestiere per una casa, indicato dall'agenzia oppure dal proprietario.
 _Da evitare_: fornitore, artigiano
