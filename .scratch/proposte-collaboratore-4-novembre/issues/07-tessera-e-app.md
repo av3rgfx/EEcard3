@@ -1,7 +1,7 @@
 # Una tessera per chi vende e un'app sola
 
 Type: grilling
-Status: open
+Status: claimed
 Blocked by: 06
 Mappa: [Proposte del collaboratore di ƎE del 4/11/2026](../map.md)
 
