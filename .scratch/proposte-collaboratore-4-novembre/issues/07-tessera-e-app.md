@@ -29,7 +29,7 @@ Deciso dall'utente il 7/11/2026, una domanda alla volta (discussione in «Commen
 4. **Tessera fisica:** una **seconda tessera fisica di un altro colore** per chi vende, accanto all'arancione (cambia in parte il 25/10/2026, «un solo modello»); colore nella mappa del design.
 5. **Esiti** come in tabella.
 
-**Resta aperto, senza inventarlo:** quale tessera fisica ha chi affitta e vende insieme (ticket 14, dopo la discussione dell'utente con il collega sulla [pagina condivisa](https://claude.ai/artifact/PAw8wJuEQ3g6fEKjfugPKL)); se il colore che dice in pubblico «vende» va bene (stessa pagina); cosa riceve in più chi vende e se paga (domande 4 e 5 del collaboratore); il colore. Il sito di ƎE non è toccato: la tessera si consegna in agenzia.
+**Resta aperto, senza inventarlo:** quale tessera fisica ha chi affitta e vende insieme (ticket 14, dopo la discussione dell'utente con il collega sulla [pagina condivisa](https://claude.ai/artifact/PAw8wJuEQ3g6fEKjfugPKL)); se il colore che dice in pubblico «vende» va bene (stessa pagina); cosa riceve in più chi vende e se paga (domande 4 e 5 del collaboratore); il colore. Per il sito di ƎE il contratto non cambia (la tessera si consegna in agenzia); cosa il sito può dirne è nella voce del 7/11/2026 di [docs/consegne-al-sito.md](../../../docs/consegne-al-sito.md).
 
 ## Commenti (Comments)
 

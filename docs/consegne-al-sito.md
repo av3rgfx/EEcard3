@@ -6,6 +6,29 @@ Ogni voce segue la [§10 del contratto](integrazione-sito.md#10-aggiornamenti-fr
 
 ---
 
+## 7/11/2026: tessera per chi vende
+
+**Decisione e fonte.** Decisioni dell'utente del 7/11/2026 ([PRODUCT.md](../PRODUCT.md) §12; ticket [Una tessera per chi vende e un'app sola](../.scratch/proposte-collaboratore-4-novembre/issues/07-tessera-e-app.md)). Precisa il punto 4 della voce del 6/11/2026.
+
+**Cosa cambia per il sito.**
+1. **Cosa è la tessera di chi vende:** un segno per farsi riconoscere in agenzia. Non apre nulla, non dà servizi o sconti e non paga. Il servizio di chi vende in Connetto è la parte base: la casa, i suoi documenti, la valutazione (la prima gratuita) e la rete.
+2. **A chi va:** a chi ha una casa in vendita in Connetto, dal giorno della valutazione o dell'incarico di vendita. Si consegna **solo in agenzia**: il sito non la vende, non la spedisce e non la richiede.
+3. **Prezzo:** per ora l'adesione di chi ha solo case in vendita è **gratuita**; le valutazioni dopo la prima si pagano al prezzo di ƎE (3/11/2026). Un prezzo per chi vende arriverà solo se lo propone il collaboratore di ƎE e lo decide l'utente.
+4. **Aspetto:** ci sarà una seconda tessera fisica di un altro colore, accanto all'arancione. **Il colore non è scelto** (il verde dell'audio era un esempio); quale tessera ha chi affitta e vende insieme è aperto (ticket [Quale tessera ha chi affitta e vende insieme](../.scratch/proposte-collaboratore-4-novembre/issues/14-tessera-affitta-e-vende.md)).
+5. **Un'app sola:** chi vende usa la stessa Connetto degli altri clienti; nessuna app a parte.
+
+**Compatibilità.** Nessun cambiamento al contratto (versione 1): il sito non legge dati sulla tessera.
+
+**Disponibilità effettiva.** Nessun endpoint, nessun codice, nessuna chiave, nessun indirizzo. Il controllo B aspetta ora i ticket 08, 09, 13 e 14.
+
+**Prove.** Nessuna: non c'è nulla da provare.
+
+**Azione richiesta al sito.**
+- Se il sito parla della tessera di chi vende, dirla com'è: un segno consegnato in agenzia a chi vende con ƎE, oggi senza costi; niente vantaggi, sconti, servizi in più o prezzi.
+- Non mostrare la tessera di chi vende con un colore o un disegno finché il colore non è scelto; niente verde come se fosse deciso.
+
+---
+
 ## 7/11/2026: chi vende in Connetto
 
 **Decisione e fonte.** Decisioni dell'utente del 7/11/2026 ([PRODUCT.md](../PRODUCT.md) §12 e §10.8; ticket [Chi vende, chi compra e chi ha una sola casa](../.scratch/proposte-collaboratore-4-novembre/issues/06-chi-vende-chi-compra.md)).
