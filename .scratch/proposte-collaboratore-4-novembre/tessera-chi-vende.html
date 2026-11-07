@@ -1,0 +1,506 @@
+<title>Tessera di chi vende</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: una colonna di lettura; ogni domanda è un blocco con spiegazione, esempio animato, scelta e risposte di tutti. */
+:root {
+  --bg: #f2f3f1;
+  --surface: #ffffff;
+  --ink: #1d2422;
+  --muted: #5b6662;
+  --line: #d5dad7;
+  --accent: #c4561a;
+  --accent-soft: #fbe6d8;
+  --ok: #2f6b4f;
+  --orange-a: #e0701f; --orange-b: #ffb466; --orange-c: #b9520f;
+  --ph-a: #8b938f; --ph-b: #b7beba;
+  --third-a: #2e3634; --third-b: #59625f;
+  --f-display: "Archivo", "Arial Narrow", system-ui, sans-serif;
+  --f-body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #151918; --surface: #1e2422; --ink: #e8ece9; --muted: #a3ada9; --line: #34403c;
+  --accent: #f08a4b; --accent-soft: #3a2619; --ok: #7cc7a2;
+  --ph-a: #6f7874; --ph-b: #949d99; --third-a: #0d1110; --third-b: #3d4744;
+  color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #151918; --surface: #1e2422; --ink: #e8ece9; --muted: #a3ada9; --line: #34403c;
+  --accent: #f08a4b; --accent-soft: #3a2619; --ok: #7cc7a2;
+  --ph-a: #6f7874; --ph-b: #949d99; --third-a: #0d1110; --third-b: #3d4744;
+  color-scheme: dark }
+
+body { background: var(--bg); color: var(--ink); font: 400 17px/1.55 var(--f-body); }
+.wrap { max-width: 800px; margin: 0 auto; padding-block: 40px 80px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid; gap: 40px; }
+h1, h2, h3 { font-family: var(--f-display); text-wrap: balance; margin: 0; line-height: 1.15; }
+h1 { font-size: clamp(30px, 6vw, 44px); font-weight: 800; letter-spacing: -0.01em; }
+h2 { font-size: clamp(22px, 4vw, 28px); font-weight: 700; }
+h3 { font-size: 17px; font-weight: 700; }
+p { margin: 0; max-width: 65ch; }
+.eyebrow { font: 700 12px/1 var(--f-display); letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.muted { color: var(--muted); }
+.small { font-size: 14px; }
+header { display: grid; gap: 14px; }
+.status { font-size: 14px; color: var(--muted); border-left: 3px solid var(--line); padding-left: 10px; }
+
+.decided { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 18px 20px; display: grid; gap: 10px; }
+.decided ul { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
+
+section.q { display: grid; gap: 18px; padding-top: 28px; border-top: 2px solid var(--ink); }
+.q-head { display: grid; gap: 8px; }
+
+/* simulatore */
+.sim { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px; display: grid; gap: 14px; }
+.sim-controls { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; justify-content: space-between; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.seg button { font: 700 14px/1 var(--f-display); padding: 9px 12px; border: 0; background: transparent; color: var(--ink); cursor: pointer; }
+.seg button + button { border-left: 1px solid var(--line); }
+.seg-label { font: 700 13px/1 var(--f-display); color: var(--muted); margin-right: 6px; }
+.seg-wrap { display: inline-flex; align-items: center; }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+.play { font: 700 14px/1 var(--f-display); padding: 9px 14px; border-radius: 8px; border: 1px solid var(--accent); background: var(--accent-soft); color: var(--ink); cursor: pointer; }
+.grid-scroll { overflow-x: auto; }
+table.people { border-collapse: collapse; width: 100%; }
+table.people th, table.people td { text-align: left; vertical-align: top; padding: 10px 8px; border-bottom: 1px solid var(--line); }
+table.people thead th { font: 700 12px/1.2 var(--f-display); text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+table.people thead th.now { color: var(--accent); }
+td.who b { display: block; }
+td.who span { font-size: 13px; color: var(--muted); }
+td.cell { transition: opacity .3s; }
+td.cell.future { opacity: .28; }
+td.cell.now { background: var(--accent-soft); }
+.cards { display: flex; gap: 4px; min-height: 46px; align-items: center; }
+.card { width: 70px; aspect-ratio: 1.586; max-width: 100%; border-radius: 6px; position: relative; display: grid; place-items: end start; padding: 4px 6px; box-sizing: border-box;
+  font: 500 9px/1 var(--f-mono); letter-spacing: .04em; box-shadow: 0 1px 2px rgba(0,0,0,.25); }
+.card.O { background: linear-gradient(135deg, var(--orange-c), var(--orange-a) 40%, var(--orange-b) 60%, var(--orange-a)); color: #3a1702; }
+.card.V { background: repeating-linear-gradient(45deg, var(--ph-a) 0 6px, var(--ph-b) 6px 12px); color: #111; }
+.card.T { background: radial-gradient(circle, var(--third-b) 1.2px, transparent 1.6px) 0 0/7px 7px, var(--third-a); color: #eef; }
+.card.N { background: transparent; border: 1.5px dashed var(--line); box-shadow: none; color: var(--muted); }
+.card.off { opacity: .4; filter: grayscale(.6); }
+.card.off::after { content: ""; position: absolute; left: 6%; right: 6%; top: 50%; border-top: 2px solid var(--ink); transform: rotate(-12deg); }
+.card .lbl { background: rgba(255,255,255,.75); color: #111; padding: 2px 3px; border-radius: 2px; }
+.card.N .lbl { background: none; color: var(--muted); }
+.swap { animation: swap .42s ease; }
+@keyframes swap { 0% { transform: scaleX(1); } 50% { transform: scaleX(0); } 100% { transform: scaleX(1); } }
+.note { font-size: 13px; color: var(--muted); margin-top: 4px; }
+.note.event { color: var(--accent); font-weight: 700; }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 13px; color: var(--muted); align-items: center; }
+.legend .card { width: 40px; padding: 0; }
+.legend span { display: inline-flex; gap: 6px; align-items: center; }
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+.fact { border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; display: grid; gap: 2px; }
+.fact b { font: 800 22px/1.1 var(--f-display); font-variant-numeric: tabular-nums; }
+.fact span { font-size: 13px; color: var(--muted); }
+.fact.yes b { color: var(--ok); }
+.fact.no b { color: var(--accent); }
+
+/* opzioni */
+fieldset { border: 0; margin: 0; padding: 0; display: grid; gap: 10px; }
+legend.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.opt { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; background: var(--surface); border: 1.5px solid var(--line); border-radius: 10px; padding: 14px 16px; cursor: pointer; }
+.opt:has(input:checked) { border-color: var(--accent); box-shadow: inset 4px 0 0 var(--accent); }
+.opt input { margin: 4px 0 0; accent-color: var(--accent); width: 18px; height: 18px; }
+.opt .t { font-weight: 700; }
+.opt .d { grid-column: 2; font-size: 15px; color: var(--muted); display: grid; gap: 4px; }
+.opt .rec { font: 700 11px/1 var(--f-display); letter-spacing: .06em; text-transform: uppercase; color: var(--ok); margin-left: 6px; }
+.why { display: grid; gap: 6px; }
+.why label { font-weight: 700; font-size: 15px; }
+textarea { font: inherit; font-size: 16px; color: var(--ink); background: var(--surface); border: 1.5px solid var(--line); border-radius: 8px; padding: 10px 12px; min-height: 76px; resize: vertical; width: 100%; box-sizing: border-box; }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.btn { font: 700 15px/1 var(--f-display); padding: 12px 16px; border-radius: 8px; border: 1.5px solid var(--ink); background: var(--ink); color: var(--bg); cursor: pointer; }
+.btn.ghost { background: transparent; color: var(--ink); }
+.btn:disabled { opacity: .45; cursor: default; }
+.saved { font-size: 14px; color: var(--ok); }
+button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+.answers { display: grid; gap: 8px; }
+.answers h3 { font-size: 15px; }
+.ans-list { display: grid; gap: 8px; }
+.ans { border-left: 3px solid var(--line); padding: 4px 0 4px 12px; display: grid; gap: 2px; min-width: 0; }
+.ans b { font-family: var(--f-display); }
+.ans .pill { display: inline-block; font: 700 12px/1 var(--f-display); padding: 4px 8px; border-radius: 999px; background: var(--accent-soft); margin-left: 6px; }
+.ans p { font-size: 15px; overflow-wrap: anywhere; }
+.empty { font-size: 14px; color: var(--muted); }
+footer { font-size: 14px; color: var(--muted); display: grid; gap: 6px; border-top: 1px solid var(--line); padding-top: 16px; }
+@media (max-width: 560px) {
+  table.people th, table.people td { padding: 8px 4px; }
+  .card { width: 52px; padding: 3px 4px; font-size: 8px; }
+  .cards { flex-wrap: wrap; min-height: 36px; }
+  td.who span, .note { font-size: 12px; }
+}
+@media (prefers-reduced-motion: reduce) { .swap { animation: none; } td.cell { transition: none; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <span class="eyebrow">Connetto · proposte del collaboratore di ƎE</span>
+    <h1>Tessera di chi vende</h1>
+    <p>Quattro domande da discutere insieme. Per ognuna c'è una spiegazione, un esempio da far scorrere, le possibili risposte e lo spazio per dire la propria. Ogni risposta salvata mostra chi l'ha data; con «Discuti» si apre un commento su quella domanda.</p>
+    <p class="status" id="status">Collegamento alle risposte condivise in corso…</p>
+  </header>
+
+  <div class="decided">
+    <h3>Già deciso, da non riaprire qui</h3>
+    <ul>
+      <li>Un'app sola: chi vende usa la stessa Connetto degli altri.</li>
+      <li>Chi vende è il proprietario della casa. La tessera è solo un segno per farsi riconoscere in agenzia: non apre nulla, non dà servizi e non paga.</li>
+      <li>Ogni persona ha un'adesione sola e una tessera sola, anche con più case.</li>
+      <li>La tessera va a chi ha una casa in vendita in Connetto, dalla valutazione o dall'incarico. Per ora l'adesione di chi ha solo case in vendita è gratuita.</li>
+      <li>Ci sarà una seconda tessera fisica, di un altro colore, per chi vende. Oggi quella di tutti è arancione.</li>
+    </ul>
+    <p class="small muted">I colori della tessera di chi vende e della eventuale terza tessera non sono scelti: in questa pagina sono segnaposto a righe e a puntini.</p>
+  </div>
+
+  <!-- Domanda 1 -->
+  <section class="q" id="q1" data-q="q1">
+    <div class="q-head">
+      <span class="eyebrow">Domanda 1 di 4</span>
+      <h2>Quale tessera ha chi affitta e vende insieme?</h2>
+      <p>Marta ha una casa affittata e gestita da ƎE, quindi ha la tessera arancione. Poi mette in vendita una seconda casa. Quale tessera deve avere in mano? Scegli un'opzione qui sotto e fai scorrere il tempo per vedere cosa succede a quattro persone.</p>
+    </div>
+
+    <div class="sim" aria-label="Esempio con quattro persone">
+      <div class="sim-controls">
+        <span class="seg-wrap"><span class="seg-label" aria-hidden="true">Opzione</span><div class="seg" role="group" aria-label="Opzione da vedere" id="simOpt"></div></span>
+        <div class="seg" role="group" aria-label="Momento" id="simStep"></div>
+        <button class="play" id="play" type="button">▶ Fai scorrere</button>
+      </div>
+      <div class="grid-scroll">
+        <table class="people" id="people">
+          <thead><tr><th scope="col">Persona</th><th scope="col" data-step="0">Prima</th><th scope="col" data-step="1">Durante la vendita</th><th scope="col" data-step="2">Dopo</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="legend">
+        <span><i class="card O"></i>arancione, quella di oggi</span>
+        <span><i class="card V"></i>tessera di chi vende</span>
+        <span><i class="card T"></i>terza tessera</span>
+        <span><i class="card N"></i>nessuna</span>
+      </div>
+      <div class="facts" id="facts"></div>
+    </div>
+
+    <fieldset>
+      <legend class="sr">Risposta alla domanda 1</legend>
+      <label class="opt"><input type="radio" name="q1" value="A" id="q1-A"><span class="t">A · La vendita ha la precedenza <span class="rec">consigliata</span></span>
+        <span class="d"><span>Chiunque abbia una casa in vendita con ƎE ha la tessera di chi vende, anche chi paga. A vendita fatta torna all'arancione se gli resta una casa gestita.</span><span>Due modelli in scorta. Marta cambia tessera due volte al banco.</span></span></label>
+      <label class="opt"><input type="radio" name="q1" value="B" id="q1-B"><span class="t">B · Una terza tessera per chi affitta e vende</span>
+        <span class="d"><span>Chi ha insieme una casa gestita e una in vendita riceve una terza tessera, di un altro colore ancora.</span><span>Tre modelli in scorta: un lotto in più, circa 200–450 € all'inizio (stima). La useranno probabilmente poche persone, e ogni nuova combinazione di ruoli chiederebbe un altro colore.</span></span></label>
+      <label class="opt"><input type="radio" name="q1" value="C" id="q1-C"><span class="t">C · Solo chi vende e basta</span>
+        <span class="d"><span>La tessera di chi vende va solo a chi ha soltanto case in vendita. Marta tiene l'arancione.</span><span>Nessun cambio per Marta, ma la tessera di chi vende finisce solo a chi non paga e sembra «di serie B».</span></span></label>
+      <label class="opt"><input type="radio" name="q1" value="D" id="q1-D"><span class="t">D · Due tessere per Marta</span>
+        <span class="d"><span>Marta tiene l'arancione e riceve anche quella di chi vende, finché vende.</span><span>Cambia la regola «una tessera per persona» e al banco si consegnano e si spengono più tessere.</span></span></label>
+    </fieldset>
+    <div class="why"><label for="q1-why">Perché (facoltativo)</label><textarea id="q1-why" placeholder="Per esempio: cosa ti convince, cosa ti preoccupa"></textarea></div>
+    <div class="actions"><button class="btn" type="button" data-save="q1">Salva la mia risposta</button><button class="btn ghost" type="button" data-discuss="q1" hidden>Discuti</button><span class="saved" data-saved="q1" aria-live="polite"></span></div>
+    <div class="answers"><h3>Risposte finora</h3><div class="ans-list" data-list="q1"><p class="empty">Ancora nessuna risposta.</p></div></div>
+  </section>
+
+  <!-- Domanda 2 -->
+  <section class="q" id="q2" data-q="q2">
+    <div class="q-head">
+      <span class="eyebrow">Domanda 2 di 4</span>
+      <h2>Va bene che il colore dica a tutti che la persona vende?</h2>
+      <p>La tessera fisica non porta nome né ruolo, perché si mostra in pubblico, per esempio al banco con altre persone vicino. Un colore riservato a chi vende fa capire a chi la vede che quella persona ha una casa in vendita. È un'informazione piccola, ma pubblica.</p>
+    </div>
+    <fieldset>
+      <legend class="sr">Risposta alla domanda 2</legend>
+      <label class="opt"><input type="radio" name="q2" value="A" id="q2-A"><span class="t">A · Sì, va bene, con un colore sobrio <span class="rec">consigliata</span></span>
+        <span class="d"><span>La tessera di chi vende resta riconoscibile. Nella scelta del colore si preferisce un colore elegante, non vistoso, che non attiri l'attenzione di estranei.</span></span></label>
+      <label class="opt"><input type="radio" name="q2" value="B" id="q2-B"><span class="t">B · Sì, anzi: deve vedersi bene</span>
+        <span class="d"><span>Il colore deve farsi notare: aiuta a far sapere che ƎE segue anche le vendite.</span></span></label>
+      <label class="opt"><input type="radio" name="q2" value="C" id="q2-C"><span class="t">C · No, non deve vedersi</span>
+        <span class="d"><span>Chi vende non deve essere riconoscibile in pubblico. Vuol dire riprendere la scelta della seconda tessera fisica e tornare a un modello solo.</span></span></label>
+    </fieldset>
+    <div class="why"><label for="q2-why">Perché (facoltativo)</label><textarea id="q2-why"></textarea></div>
+    <div class="actions"><button class="btn" type="button" data-save="q2">Salva la mia risposta</button><button class="btn ghost" type="button" data-discuss="q2" hidden>Discuti</button><span class="saved" data-saved="q2" aria-live="polite"></span></div>
+    <div class="answers"><h3>Risposte finora</h3><div class="ans-list" data-list="q2"><p class="empty">Ancora nessuna risposta.</p></div></div>
+  </section>
+
+  <!-- Domanda 3 -->
+  <section class="q" id="q3" data-q="q3">
+    <div class="q-head">
+      <span class="eyebrow">Domanda 3 di 4 · per il collaboratore di ƎE</span>
+      <h2>Cosa dovrebbe ricevere in più chi vende?</h2>
+      <p>La tessera non apre nulla: è un segno. Quello che conta è cosa riceve chi vende. Oggi è già deciso questo: la casa in Connetto, i suoi documenti, la valutazione (la prima gratuita) e la rete dei professionisti. Serve qualcos'altro?</p>
+    </div>
+    <fieldset>
+      <legend class="sr">Risposta alla domanda 3</legend>
+      <label class="opt"><input type="radio" name="q3" value="A" id="q3-A"><span class="t">A · Basta quello che c'è</span>
+        <span class="d"><span>Per partire vanno bene casa, documenti, valutazione e rete.</span></span></label>
+      <label class="opt"><input type="radio" name="q3" value="B" id="q3-B"><span class="t">B · Serve qualcosa in più</span>
+        <span class="d"><span>Scrivi qui sotto cosa, anche cose piccole, e se oggi lo fate già.</span></span></label>
+      <label class="opt"><input type="radio" name="q3" value="C" id="q3-C"><span class="t">C · Non lo so ancora</span>
+        <span class="d"><span>Ci si pensa: la domanda resta aperta.</span></span></label>
+    </fieldset>
+    <div class="why"><label for="q3-why">Cosa, e perché</label><textarea id="q3-why" placeholder="Per esempio: un servizio, un'informazione, un controllo"></textarea></div>
+    <div class="actions"><button class="btn" type="button" data-save="q3">Salva la mia risposta</button><button class="btn ghost" type="button" data-discuss="q3" hidden>Discuti</button><span class="saved" data-saved="q3" aria-live="polite"></span></div>
+    <div class="answers"><h3>Risposte finora</h3><div class="ans-list" data-list="q3"><p class="empty">Ancora nessuna risposta.</p></div></div>
+  </section>
+
+  <!-- Domanda 4 -->
+  <section class="q" id="q4" data-q="q4">
+    <div class="q-head">
+      <span class="eyebrow">Domanda 4 di 4 · per il collaboratore di ƎE</span>
+      <h2>Chi vende dovrebbe pagare qualcosa?</h2>
+      <p>Per ora l'adesione di chi ha solo case in vendita è gratuita, come quella dell'inquilino; le valutazioni dopo la prima si pagano al prezzo di ƎE. Un prezzo per chi vende si mette solo se lo propone ƎE.</p>
+    </div>
+    <fieldset>
+      <legend class="sr">Risposta alla domanda 4</legend>
+      <label class="opt"><input type="radio" name="q4" value="A" id="q4-A"><span class="t">A · Gratis, come adesso</span>
+        <span class="d"><span>Chi vende non paga l'adesione; ƎE guadagna con la vendita.</span></span></label>
+      <label class="opt"><input type="radio" name="q4" value="B" id="q4-B"><span class="t">B · A pagamento</span>
+        <span class="d"><span>Scrivi qui sotto una cifra e una durata indicative, e cosa comprenderebbe.</span></span></label>
+      <label class="opt"><input type="radio" name="q4" value="C" id="q4-C"><span class="t">C · Non lo so ancora</span>
+        <span class="d"><span>Resta gratis finché non c'è una proposta.</span></span></label>
+    </fieldset>
+    <div class="why"><label for="q4-why">Cifra, durata, motivo</label><textarea id="q4-why"></textarea></div>
+    <div class="actions"><button class="btn" type="button" data-save="q4">Salva la mia risposta</button><button class="btn ghost" type="button" data-discuss="q4" hidden>Discuti</button><span class="saved" data-saved="q4" aria-live="polite"></span></div>
+    <div class="answers"><h3>Risposte finora</h3><div class="ans-list" data-list="q4"><p class="empty">Ancora nessuna risposta.</p></div></div>
+  </section>
+
+  <footer>
+    <p>Le risposte qui servono a discutere. Le decisioni le prende chi segue il progetto, una alla volta, e si registrano nei documenti di Connetto con data e motivo.</p>
+    <p>Persone e case dell'esempio sono inventate. Il costo della terza tessera è una stima dai prezzi dei fornitori letti il 25/10/2026.</p>
+  </footer>
+</div>
+
+<script>
+(() => {
+  const STEPS = ["Prima", "Durante la vendita", "Dopo"];
+  // Ogni cella: [carte, nota]; carte: O arancione, V vendita, T terza, N nessuna; "x" dopo la lettera = spenta.
+  const PEOPLE = [
+    { name: "Luca", desc: "inquilino di una casa gestita", story: ["", "", ""] },
+    { name: "Paola", desc: "ha solo una casa: la vende", story: ["", "Fa la valutazione e mette in vendita", "Venduta"] },
+    { name: "Marta", desc: "una casa gestita e una in vendita", story: ["Ha la casa affittata", "Mette in vendita la seconda casa", "Vende la seconda casa"] },
+    { name: "Gianni", desc: "non vende e affida la casa in gestione", story: ["", "Mette in vendita", "Non vende: la affida a ƎE in gestione"] },
+  ];
+  const OPTS = {
+    A: { title: "A", cells: [
+      [["O"],["O"],["O"]],
+      [["N"],["V"],["Vx"]],
+      [["O"],["V"],["O"]],
+      [["N"],["V"],["O"]] ], models: 2, payer: true, one: true, extra: "nessuno" },
+    B: { title: "B", cells: [
+      [["O"],["O"],["O"]],
+      [["N"],["V"],["Vx"]],
+      [["O"],["T"],["O"]],
+      [["N"],["V"],["O"]] ], models: 3, payer: false, one: true, extra: "200–450 €" },
+    C: { title: "C", cells: [
+      [["O"],["O"],["O"]],
+      [["N"],["V"],["Vx"]],
+      [["O"],["O"],["O"]],
+      [["N"],["V"],["O"]] ], models: 2, payer: false, one: true, extra: "nessuno" },
+    D: { title: "D", cells: [
+      [["O"],["O"],["O"]],
+      [["N"],["V"],["Vx"]],
+      [["O"],["O","V"],["O","Vx"]],
+      [["N"],["V"],["O"]] ], models: 2, payer: true, one: false, extra: "qualche tessera" },
+  };
+  const LABEL = { O: "arancione", V: "vendita", T: "terza", N: "nessuna" };
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let opt = "A", step = 2, timer = null;
+
+  const $ = (s, r = document) => r.querySelector(s);
+  const tbody = $("#people tbody");
+
+  // costruisce la tabella una volta
+  PEOPLE.forEach((p, i) => {
+    const tr = document.createElement("tr");
+    const who = document.createElement("td"); who.className = "who";
+    const b = document.createElement("b"); b.textContent = p.name;
+    const s = document.createElement("span"); s.textContent = p.desc;
+    who.append(b, s); tr.append(who);
+    for (let k = 0; k < 3; k++) {
+      const td = document.createElement("td"); td.className = "cell"; td.dataset.p = i; td.dataset.k = k;
+      td.innerHTML = '<div class="cards"></div><div class="note"></div>';
+      tr.append(td);
+    }
+    tbody.append(tr);
+  });
+
+  function cardEl(code) {
+    const off = code.endsWith("x"); const t = code[0];
+    const el = document.createElement("i");
+    el.className = "card " + t + (off ? " off" : "");
+    el.dataset.code = code;
+    const l = document.createElement("span"); l.className = "lbl"; l.textContent = off ? "spenta" : LABEL[t];
+    el.append(l);
+    el.setAttribute("aria-label", "tessera " + LABEL[t] + (off ? ", spenta" : ""));
+    el.setAttribute("role", "img");
+    return el;
+  }
+
+  const active = cs => cs.filter(c => c !== "N" && !c.endsWith("x"));
+  function diff(a, b) {
+    const pa = active(a), pb = active(b);
+    return { added: pb.filter(c => !pa.includes(c)), removed: pa.filter(c => !pb.includes(c)) };
+  }
+  function changesUpTo(o, k) {
+    let swaps = 0;
+    o.cells.forEach(row => {
+      for (let j = 1; j <= k; j++) {
+        const { added, removed } = diff(row[j - 1], row[j]);
+        if (added.length && removed.length) swaps++;
+      }
+    });
+    return swaps;
+  }
+
+  function render(animate) {
+    const o = OPTS[opt];
+    document.querySelectorAll("#people thead th[data-step]").forEach(th => th.classList.toggle("now", +th.dataset.step === step));
+    tbody.querySelectorAll("td.cell").forEach(td => {
+      const p = +td.dataset.p, k = +td.dataset.k;
+      const codes = o.cells[p][k];
+      const box = td.querySelector(".cards");
+      const before = [...box.children].map(c => c.dataset.code).join();
+      if (before !== codes.join()) {
+        box.replaceChildren(...codes.map(cardEl));
+        if (animate && !reduce && k <= step) box.querySelectorAll(".card").forEach(c => c.classList.add("swap"));
+      }
+      const note = td.querySelector(".note");
+      const prev = k > 0 ? o.cells[p][k - 1].join() : null;
+      let text = PEOPLE[p].story[k];
+      if (k > 0 && prev !== codes.join()) {
+        const { added, removed } = diff(o.cells[p][k - 1], codes);
+        let ev = "";
+        if (added.length && removed.length) ev = "cambio al banco";
+        else if (added.length) ev = active(codes).length > 1 ? "riceve una seconda tessera" : "consegna al banco";
+        else if (removed.length) ev = !active(codes).length ? (p === 1 ? "tiene i documenti 3 mesi, poi la tessera si spegne" : "la tessera si spegne") : "la tessera di chi vende si spegne";
+        text = (text && ev ? text + " · " : text) + ev;
+        note.className = "note event";
+      } else note.className = "note";
+      note.textContent = text;
+      td.classList.toggle("future", k > step);
+      td.classList.toggle("now", k === step);
+    });
+    const facts = $("#facts");
+    const f = [
+      ["", o.models, "modelli di tessera in scorta"],
+      ["", changesUpTo(o, step), "cambi di tessera al banco fin qui"],
+      [o.payer ? "yes" : "no", o.payer ? "Sì" : "No", "chi paga può avere la tessera di chi vende"],
+      [o.one ? "yes" : "no", o.one ? "Sì" : "No", "una tessera per persona"],
+      ["", o.extra, "costo in più all'inizio"],
+    ];
+    facts.replaceChildren(...f.map(([cls, v, l]) => {
+      const d = document.createElement("div"); d.className = "fact " + cls;
+      const b = document.createElement("b"); b.textContent = v;
+      const s = document.createElement("span"); s.textContent = l;
+      d.append(b, s); return d;
+    }));
+    document.querySelectorAll("#simOpt button").forEach(b => b.setAttribute("aria-pressed", b.dataset.v === opt));
+    document.querySelectorAll("#simStep button").forEach(b => b.setAttribute("aria-pressed", +b.dataset.v === step));
+  }
+
+  const simOpt = $("#simOpt"), simStep = $("#simStep");
+  Object.keys(OPTS).forEach(k => {
+    const b = document.createElement("button"); b.type = "button"; b.dataset.v = k; b.textContent = k; b.setAttribute("aria-label", "Opzione " + k);
+    b.onclick = () => { stop(); opt = k; render(true); };
+    simOpt.append(b);
+  });
+  STEPS.forEach((s, i) => {
+    const b = document.createElement("button"); b.type = "button"; b.dataset.v = i; b.textContent = s;
+    b.onclick = () => { stop(); step = i; render(true); };
+    simStep.append(b);
+  });
+  function stop() { if (timer) { clearInterval(timer); timer = null; $("#play").textContent = "▶ Fai scorrere"; } }
+  $("#play").onclick = () => {
+    if (timer) return stop();
+    step = 0; render(true);
+    $("#play").textContent = "■ Ferma";
+    timer = setInterval(() => { if (step >= 2) return stop(); step++; render(true); }, 1600);
+  };
+  document.querySelectorAll('input[name="q1"]').forEach(r => r.addEventListener("change", () => { stop(); opt = r.value; render(true); }));
+  render(false);
+
+  // ---- risposte condivise ----
+  const QS = ["q1", "q2", "q3", "q4"];
+  const status = $("#status");
+  let db = null, user = null, myId = null, all = {};
+
+  function myAnswerFromForm(q) {
+    const r = document.querySelector('input[name="' + q + '"]:checked');
+    return { scelta: r ? r.value : "", perche: $("#" + q + "-why").value.trim() };
+  }
+
+  async function renderAnswers() {
+    const ids = Object.keys(all);
+    let profiles = {};
+    if (user && ids.length) { try { profiles = await user.profiles(ids); } catch (e) {} }
+    QS.forEach(q => {
+      const list = document.querySelector('[data-list="' + q + '"]');
+      const rows = ids.map(id => ({ id, a: (all[id].risposte || {})[q] })).filter(x => x.a && (x.a.scelta || x.a.perche));
+      if (!rows.length) { list.innerHTML = '<p class="empty">Ancora nessuna risposta.</p>'; return; }
+      list.replaceChildren(...rows.map(({ id, a }) => {
+        const d = document.createElement("div"); d.className = "ans";
+        const head = document.createElement("div");
+        const b = document.createElement("b"); b.textContent = (profiles[id] && profiles[id].name) || (id === myId ? "Tu" : "Qualcuno");
+        head.append(b);
+        if (a.scelta) { const pill = document.createElement("span"); pill.className = "pill"; pill.textContent = "Opzione " + a.scelta; head.append(pill); }
+        d.append(head);
+        if (a.perche) { const p = document.createElement("p"); p.textContent = a.perche; d.append(p); }
+        return d;
+      }));
+    });
+  }
+
+  function fillMine() {
+    const mine = myId && all[myId] && all[myId].risposte;
+    if (!mine) return;
+    QS.forEach(q => {
+      const a = mine[q]; if (!a) return;
+      const r = a.scelta && document.getElementById(q + "-" + a.scelta);
+      if (r && !document.querySelector('input[name="' + q + '"]:checked')) { r.checked = true; if (q === "q1") { opt = a.scelta; render(false); } }
+      const ta = $("#" + q + "-why"); if (ta && !ta.value) ta.value = a.perche || "";
+    });
+  }
+
+  document.querySelectorAll("[data-save]").forEach(btn => btn.addEventListener("click", async () => {
+    const q = btn.dataset.save; const out = document.querySelector('[data-saved="' + q + '"]');
+    const a = myAnswerFromForm(q);
+    if (!a.scelta && !a.perche) { out.textContent = "Scegli un'opzione o scrivi qualcosa prima di salvare."; return; }
+    if (!db || !myId) { out.textContent = "In questa vista le risposte non si possono salvare: discutetene a voce o con i commenti."; return; }
+    btn.disabled = true; out.textContent = "Salvataggio…";
+    try {
+      const cur = (all[myId] && all[myId].risposte) || {};
+      const risposte = Object.assign({}, cur, { [q]: Object.assign(a, { quando: new Date().toISOString() }) });
+      await db.collection("risposte").doc(myId).set({ risposte });
+      out.textContent = "Salvata. La vedono tutti quelli che aprono la pagina.";
+    } catch (e) {
+      out.textContent = "Non salvata: con il tuo accesso puoi solo leggere. Chiedi a chi ha condiviso la pagina di darti il permesso di modificarla.";
+    } finally { btn.disabled = false; }
+  }));
+
+  (async () => {
+    try {
+      [db, user] = await Promise.all([window.claude?.use("db"), window.claude?.use("user")]);
+    } catch (e) { db = null; }
+    if (user) { try { myId = await user.id(); } catch (e) {} }
+    if (!db) { status.textContent = "In questa vista le risposte condivise non sono disponibili: si può leggere e provare l'esempio."; return; }
+    if (!myId) status.textContent = "Puoi leggere le risposte; per salvare la tua devi aver fatto l'accesso.";
+    const t = setTimeout(() => { status.textContent = "Le risposte condivise non rispondono: riprova più tardi."; }, 10000);
+    db.collection("risposte").onSnapshot(snap => {
+      clearTimeout(t);
+      all = {}; snap.docs.forEach(d => { all[d.id] = d.data() || {}; });
+      if (myId) status.textContent = "Le risposte si salvano per tutti. Puoi cambiarle quando vuoi.";
+      fillMine(); renderAnswers();
+    }, () => { clearTimeout(t); status.textContent = "Le risposte condivise non sono leggibili con questo accesso."; });
+  })();
+
+  (async () => {
+    const comments = await window.claude?.use("comments");
+    if (!comments) return;
+    document.querySelectorAll("[data-discuss]").forEach(b => {
+      b.hidden = false;
+      b.addEventListener("click", async () => {
+        try { await comments.openComposer({ element: document.getElementById(b.dataset.discuss) }); } catch (e) { b.hidden = true; }
+      });
+    });
+  })();
+})();
+</script>
