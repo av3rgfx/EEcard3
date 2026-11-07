@@ -1,7 +1,7 @@
 # Professionisti della compravendita: in che forma, e chi fa cosa
 
 Type: grilling
-Status: open
+Status: claimed
 Blocked by: 05, 06
 Mappa: [Proposte del collaboratore di ƎE del 4/11/2026](../map.md)
 
