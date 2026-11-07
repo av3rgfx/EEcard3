@@ -14,6 +14,7 @@ Tre livelli, sempre distinti:
 - **Stack di Connetto: documentato, non installato.** TypeScript, React Router, Better Auth, Drizzle su PostgreSQL 17, Scalingo a Parigi, Amazon SES a Milano, Skebby per gli SMS ([ARCHITECTURE.md](../ARCHITECTURE.md), «Decisioni confermate»). Nessun servizio è attivo e nessun account è aperto. Coincide con lo stack scelto dal sito, ma applicazioni, database, credenziali e rilasci restano separati.
 - **Già deciso in Connetto** (3/11/2026, [PRODUCT.md](../PRODUCT.md) §12; [ARCHITECTURE.md](../ARCHITECTURE.md), «Richieste del collaboratore di ƎE», da confermare al controllo B): un elenco JSON in sola lettura delle valutazioni pubblicate e non scadute, protetto da una chiave del sito che si può cambiare e da un limite di richieste, che passa dal guardiano con la fonte di accesso «sito». Sono decisi i campi pubblici (zona, tipo, metri quadri, cifra, scadenza, identificativo che non dice la casa), non il loro formato.
 - **Deciso il 6/11/2026** ([PRODUCT.md](../PRODUCT.md) §12): l'elenco dei professionisti della rete con il loro sì al sito entra nel percorso 1, accanto a quello delle valutazioni (§6). Nessun endpoint esiste ancora.
+- **Deciso il 7/11/2026** ([PRODUCT.md](../PRODUCT.md) §12): chi vende è nel pilota con la casa senza gestione e la valutazione, quindi le valutazioni delle case in vendita arrivano al sito fin dal pilota; non cambiano campi né regole della §5. A vendita fatta il rapporto del proprietario con la casa finisce; cosa succede alla sua valutazione pubblicata è aperto (§9).
 - **Il resto di questo documento è proposta.** Le prove della §8 non sono state eseguite: non c'è nulla da provare.
 
 ## 2. Decisioni dell'utente recepite
@@ -205,6 +206,7 @@ Da eseguire quando esisteranno le due parti, solo con dati inventati. **Nessuna 
 | Domanda | Chi decide | Ferma |
 | --- | --- | --- |
 | ~~Connetto offre l'elenco dei professionisti, e in quale fase?~~ **Deciso il 6/11/2026:** sì, nel percorso 1 ([ticket 05](../.scratch/proposte-collaboratore-4-novembre/issues/05-cosa-tocca-percorso-1.md)). Restano: quali professioni e mestieri comprende, e le parole (ticket [08](../.scratch/proposte-collaboratore-4-novembre/issues/08-professionisti-compravendita-aste.md)) | utente | §6 |
+| Valutazione pubblicata di una casa **venduta**: resta fino alla scadenza o al ritiro del sì, come oggi, oppure esce con la vendita? (7/11/2026, [ticket 06](../.scratch/proposte-collaboratore-4-novembre/issues/06-chi-vende-chi-compra.md)) | utente | §5 |
 | **T_ritiro**, la latenza massima di ritiro dal sito | utente, con il parere privacy | §4, prove 3–7 |
 | Mostrare l'ultimo elenco oltre T_ritiro se Connetto non risponde | utente | §4 |
 | Grandezza della zona, elenco dei tipi, quale misura dei metri quadri | utente con ƎE | §5 |
