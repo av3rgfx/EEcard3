@@ -47,6 +47,8 @@ Ecco come l'abbiamo capita dall'idea dei fondatori. **È un'ipotesi, non una dec
 | 9. Prezzo | Da decidere | Quanto costerebbe a chi vende, e quando paga? È compreso nella provvigione? |
 | 10. Fine | Allo scadere dell'anno, o a vendita fatta | Cosa succede ai documenti: restano a chi vende, passano a chi compra, si cancellano? |
 
+*Aggiornamento del 7/11/2026 (scelta dell'utente nel [ticket su chi vende](issues/06-chi-vende-chi-compra.md)):* finché non arrivano le risposte e il parere, l'ipotesi di partenza per il passo 3 è un **tecnico incaricato e pagato da chi vende**, scelto da lui anche dalla rete di ƎE, con ƎE che raccoglie e ordina i documenti; i tecnici di ƎE solo se l'avvocato li ritiene ammessi. Le domande non cambiano.
+
 11. Quanto tempo vi prenderebbe **un fascicolo**, dall'inizio alla fine, contando uscite, telefonate e controlli? Oggi Connetto conta su 1–1,5 ore al giorno di lavoro dell'agenzia.
 12. Lo fate già oggi, anche in parte, per qualche vendita? Se sì, cosa funziona e cosa no?
 

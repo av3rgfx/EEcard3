@@ -6,6 +6,28 @@ Ogni voce segue la [§10 del contratto](integrazione-sito.md#10-aggiornamenti-fr
 
 ---
 
+## 7/11/2026: chi vende in Connetto
+
+**Decisione e fonte.** Decisioni dell'utente del 7/11/2026 ([PRODUCT.md](../PRODUCT.md) §12 e §10.8; ticket [Chi vende, chi compra e chi ha una sola casa](../.scratch/proposte-collaboratore-4-novembre/issues/06-chi-vende-chi-compra.md)).
+
+**Cosa cambia per il sito.**
+1. **Chi vende è nel pilota**, con casa senza gestione, documenti, valutazione con la pubblicazione sul sito, tessera e rete. Le valutazioni delle case in vendita arrivano quindi al sito fin dal pilota, con i campi e le regole del 3/11/2026 ([integrazione-sito.md](integrazione-sito.md) §5), invariati.
+2. **Chi compra non ha nulla in Connetto** nella prima versione: contatta l'agenzia dal sito, senza account, come già deciso il 5/11/2026.
+3. **Casa venduta:** il rapporto del proprietario con la casa finisce alla data della vendita. Se la sua valutazione pubblicata debba uscire dal sito con la vendita è **aperto** ([integrazione-sito.md](integrazione-sito.md) §9): oggi esce alla scadenza o al ritiro del sì.
+4. **Fascicolo per la vendita e altri servizi per chi vende:** restano «forse»; se a fine studio mancano le risposte del collaboratore e il parere dell'avvocato, passano a dopo il pilota. Nessun collegamento fra fascicolo e annunci è deciso.
+
+**Compatibilità.** Nessun cambiamento al formato proposto (versione 1 del contratto).
+
+**Disponibilità effettiva.** Nessun endpoint, nessun codice, nessuna chiave, nessun indirizzo. Il controllo B aspetta ora i ticket 07, 08, 09 e 13.
+
+**Prove.** Nessuna: non c'è nulla da provare.
+
+**Azione richiesta al sito.**
+- Leggere [integrazione-sito.md](integrazione-sito.md) §1 e §9 aggiornati.
+- Non presentare servizi per chi vende oltre alla valutazione, né vantaggi o prezzi della tessera, finché non sono decisi.
+
+---
+
 ## 6/11/2026: cosa entra nel percorso 1 di Connetto
 
 **Decisione e fonte.** Decisioni dell'utente del 6/11/2026 ([PRODUCT.md](../PRODUCT.md) §12; ticket [Cosa, fra le proposte, può toccare il percorso 1](../.scratch/proposte-collaboratore-4-novembre/issues/05-cosa-tocca-percorso-1.md)).

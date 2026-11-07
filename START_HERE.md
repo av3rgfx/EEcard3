@@ -99,7 +99,9 @@ Il 6/11/2026 sono letti gli aggiornamenti del sito fino alla landing approvata: 
 
 Il 6/11/2026 è chiuso il ticket «Cosa, fra le proposte, può toccare il percorso 1» (PRODUCT.md §12, 6/11/2026): entrano nel percorso 1 la tessera per chi vende, il registro della rete con il sì dei professionisti al sito, la trasparenza della rete e la spiegazione «chi fa cosa»; «forse» per altri servizi a chi vende e per il fascicolo per la vendita, con le domande per il collaboratore e l'avvocato in [domande-vendita-collaboratore-avvocato.md](.scratch/proposte-collaboratore-4-novembre/domande-vendita-collaboratore-avvocato.md), da consegnare a cura dell'utente.
 
-**Prossima sessione:** il ticket «Chi vende, chi compra e chi ha una sola casa», con il messaggio qui sotto. Il **controllo B** aspetta ora i ticket 06, 07, 08, 09 e 13.
+Il 7/11/2026 è chiuso il ticket «Chi vende, chi compra e chi ha una sola casa» (PRODUCT.md §12 e §10.8, 7/11/2026): chi vende è nel pilota con il necessario ed è il proprietario, senza rapporto nuovo; a vendita fatta il rapporto finisce, con 3 mesi di sola lettura senza adesione pagata; per il fascicolo l'ipotesi è un tecnico incaricato da chi vende; se a fine studio mancano le risposte, altri servizi e fascicolo passano a dopo il pilota.
+
+**Prossima sessione:** il ticket «Una tessera per chi vende e un'app sola», con il messaggio qui sotto. Il **controllo B** aspetta ora i ticket 07, 08, 09 e 13. In alternativa si può prendere il ticket «Professionisti della compravendita: in che forma, e chi fa cosa», anch'esso libero.
 
 ---
 
@@ -107,15 +109,15 @@ Il 6/11/2026 è chiuso il ticket «Cosa, fra le proposte, può toccare il percor
 
 Messaggio:
 
-/wayfinder .scratch/proposte-collaboratore-4-novembre/map.md — ticket «Chi vende, chi compra e chi ha una sola casa: cosa c'è già e cosa manca» (.scratch/proposte-collaboratore-4-novembre/issues/06-chi-vende-chi-compra.md)
+/wayfinder .scratch/proposte-collaboratore-4-novembre/map.md — ticket «Una tessera per chi vende e un'app sola» (.scratch/proposte-collaboratore-4-novembre/issues/07-tessera-e-app.md)
 
-Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora, Non ancora specificato), l'audio restituito (.scratch/proposte-collaboratore-4-novembre/audio-4-novembre.md), il ticket con i suoi commenti, il ticket chiuso «Cosa, fra le proposte, può toccare il percorso 1» (Risposta e Commenti) e il documento .scratch/proposte-collaboratore-4-novembre/domande-vendita-collaboratore-avvocato.md; poi, solo dove servono, docs/ricerca/compravendita-ruoli.md, docs/integrazione-sito.md e PRODUCT.md §4, §5.1, §5.6, §7 e §12 (18/10, 22/10, 23/10, 3/11, 5/11 e 6/11/2026). Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora, Non ancora specificato), l'audio restituito (.scratch/proposte-collaboratore-4-novembre/audio-4-novembre.md, punti 2 e 4), il ticket con i suoi commenti, i ticket chiusi «Cosa, fra le proposte, può toccare il percorso 1» e «Chi vende, chi compra e chi ha una sola casa» (Risposta e Commenti) e il documento .scratch/proposte-collaboratore-4-novembre/domande-vendita-collaboratore-avvocato.md (domande 4 e 5); poi, solo dove servono, GLOSSARY.md («Adesione», «Tessera», «Account da cliente»), DESIGN.md (tessera digitale di rame, tessera fisica arancione), docs/ricerca/tessere.md e PRODUCT.md §5.6, §7 e §12 (18/10, 23/10, 25/10, 6/11 e 7/11/2026). Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
 
 - Rivendica il ticket (`Status: claimed`) prima di lavorare e lavora solo su questo, con le skill `grilling` e `domain-modeling`.
-- Le decisioni del 5/11 e del 6/11/2026 sono già prese: non chiedermele di nuovo. Chi vende è già nel percorso 1 con casa senza gestione, documenti, valutazione, tessera e rete; altri servizi e fascicolo per la vendita sono «forse»; i servizi della casa per chi abita restano al percorso 3.
-- Se in fondo a questo messaggio ci sono le risposte del collaboratore di ƎE o dell'avvocato, registrale nel ticket con chi ha risposto e la data e usale; se non ci sono, non inventarle: lavora su ciò che non ne dipende e lascia aperto il resto.
-- Portami una alla volta, in parole semplici, con una raccomandazione motivata e le conseguenze delle alternative: il conflitto «venditori dopo il pilota» (22/10/2026) con chi vende già nel percorso 1; chi conta come «chi vende» e da quale rapporto con la casa nasce ciò che vede; i «tecnici dell'agenzia» del fascicolo; l'esito delle proposte 3 e 4. Non simulare le mie risposte.
-- Non svolgere il controllo B e non anticipare lo sviluppo; niente codice, schermate o integrazioni; nessun contatto con professionisti, account o servizi reali.
+- Le decisioni del 6/11 e del 7/11/2026 sono già prese: non chiedermele di nuovo. La tessera per chi vende entra nel percorso 1; un'app sola è già coperta; chi vende è il proprietario, senza rapporto nuovo con la casa, e la tessera resta un segno che non apre nulla.
+- Se in fondo a questo messaggio ci sono le risposte del collaboratore di ƎE, registrale nel ticket con chi ha risposto e la data e usale; se non ci sono, non inventarle: lavora su ciò che non ne dipende e lascia aperto il resto.
+- Portami una alla volta, in parole semplici, con una raccomandazione motivata e le conseguenze delle alternative: tenere distinti tessera, servizio e offerta commerciale per chi vende; a chi va la tessera (incarico di vendita, valutazione, chiunque voglia vendere); se chi vende senza gestione ha un'adesione e se è a pagamento; se una tessera fisica in più cambia il solo modello arancione del 25/10/2026; l'esito delle proposte 1 e 2. Il colore va alla mappa del design. Non simulare le mie risposte.
+- Non svolgere il controllo B e non anticipare lo sviluppo; niente codice, schermate o integrazioni; nessun contatto con fornitori, professionisti, account o servizi reali.
 - Registra in PRODUCT.md §12 solo ciò che confermo, con data e motivo; la discussione resta nel ticket. Chiudi il ticket con la risposta e aggiorna «Decisioni finora» della mappa. Se una decisione tocca il sito di ƎE, aggiorna docs/integrazione-sito.md e aggiungi una voce in cima a docs/consegne-al-sito.md.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md con verifiche, decisioni, problemi aperti e il messaggio /wayfinder per il ticket successivo, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
@@ -147,7 +149,7 @@ Chiudi la sessione aggiornando STATUS.md, poi fai commit e push sul branch della
 
 ## Controllo B: design e architettura del percorso 1
 
-Le risposte del collaboratore di ƎE sono registrate dal 3/11/2026 e le schermate delle sue richieste sono approvate lo stesso giorno. Dal 6/11/2026 il controllo B aspetta i pezzi che il ticket «Cosa, fra le proposte, può toccare il percorso 1» della mappa [Proposte del collaboratore di ƎE del 4/11/2026](.scratch/proposte-collaboratore-4-novembre/map.md) ha portato nel percorso 1, cioè i ticket 06, 07, 08, 09 e 13. L'utente intende aspettare la fine dello studio. Messaggio:
+Le risposte del collaboratore di ƎE sono registrate dal 3/11/2026 e le schermate delle sue richieste sono approvate lo stesso giorno. Dal 6/11/2026 il controllo B aspetta i pezzi che il ticket «Cosa, fra le proposte, può toccare il percorso 1» della mappa [Proposte del collaboratore di ƎE del 4/11/2026](.scratch/proposte-collaboratore-4-novembre/map.md) ha portato nel percorso 1, cioè i ticket 07, 08, 09 e 13 (il 06 è chiuso dal 7/11/2026). L'utente intende aspettare la fine dello studio. Messaggio:
 
 Controllo B del percorso 1 (docs/METODO.md, passo 7): design e architettura sono pronti, le risposte del collaboratore di ƎE sono registrate nel ticket «Il collaboratore di ƎE guarda lo spazio dell'operatore» e le schermate delle sue richieste sono approvate (ticket «Schermate delle richieste del collaboratore»; prototipo https://claude.ai/artifact/NJ7XmFUL4dGLxTZWCS5jpC).
 

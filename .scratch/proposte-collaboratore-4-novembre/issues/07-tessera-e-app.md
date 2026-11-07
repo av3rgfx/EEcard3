@@ -18,3 +18,5 @@ Per ogni proposta si porta all'utente, in parole semplici: punti dell'audio, cos
 ## Commenti (Comments)
 
 **6/11/2026, dal ticket [Cosa, fra le proposte, può toccare il percorso 1](05-cosa-tocca-percorso-1.md)** (PRODUCT.md §12, 6/11/2026). La tessera per chi vende **entra nel percorso 1**: qui si decide cosa dà, a chi e a quali condizioni, senza inventarlo (domande 4 e 5 del [documento per il collaboratore](../domande-vendita-collaboratore-avvocato.md)); il colore va alla mappa del design. Un'app sola: **già coperta**, nessuna seconda app. Questo ticket ora ferma il controllo B.
+
+**7/11/2026, dal ticket [Chi vende, chi compra e chi ha una sola casa](06-chi-vende-chi-compra.md)** (PRODUCT.md §12, 7/11/2026). Chi vende è il **proprietario**, senza rapporto nuovo con la casa: la tessera per chi vende, se data, resta un segno e non apre nulla. Chi vende è nel pilota con il necessario; a vendita fatta il rapporto finisce. Restano a questo ticket: a chi va la tessera (incarico di vendita, valutazione, chiunque voglia vendere), cosa dà e se chi vende senza gestione paga un'adesione; senza le risposte del collaboratore (domande 4 e 5) non si inventano.
