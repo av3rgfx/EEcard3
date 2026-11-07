@@ -2,7 +2,7 @@
 
 Type: grilling
 Status: open
-Blocked by: 06, 07, 08, 09, 10, 11
+Blocked by: 06, 07, 08, 09, 10, 11, 14
 Mappa: [Proposte del collaboratore di ƎE del 4/11/2026](../map.md)
 
 ## Domanda (Question)
