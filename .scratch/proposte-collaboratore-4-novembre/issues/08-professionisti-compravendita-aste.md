@@ -1,7 +1,7 @@
 # Professionisti della compravendita: in che forma, e chi fa cosa
 
 Type: grilling
-Status: claimed
+Status: resolved
 Blocked by: 05, 06
 Mappa: [Proposte del collaboratore di ƎE del 4/11/2026](../map.md)
 
@@ -14,6 +14,22 @@ Già deciso: tecnici della casa in forma leggera, inseriti dall'operatore, senza
 Per ogni proposta si porta all'utente, in parole semplici: punti dell'audio, cosa è già deciso, evidenze (fatti, inferenze, ipotesi, dati mancanti), benefici, costi e lavoro umano, rischi, poche alternative reali (compresi «non aggiungere nulla» e una forma minima), la raccomandazione motivata e l'esito proposto (già coperta, da integrare, da approfondire, da rimandare, da scartare). Una decisione alla volta; si registra nei documenti canonici solo ciò che l'utente conferma.
 
 ## Risposta (Answer)
+
+Deciso dall'utente il 7 e l'8/11/2026, una domanda alla volta (discussione in «Commenti»); registrato in PRODUCT.md §12 (8/11/2026) e in GLOSSARY.md («Professionista», «Rete ƎE», «Indicazione»). **Nessuna risposta del collaboratore di ƎE o dell'avvocato** era disponibile: ciò che ne dipende resta aperto e le regole sono provvisorie.
+
+| Proposta | Esito | In breve |
+| --- | --- | --- |
+| 5. Professionisti della compravendita | **Da integrare** nel percorso 1 | Rete ƎE nella forma dell'**indicazione**, partendo dalla compravendita (decisioni 1–3). Aperti, senza fermare il disegno: quali mestieri esatti (collaboratore, 13), persone o studi e dati mostrati (15; campi nel ticket [Integrazione con il sito di ƎE](13-integrazione-sito.md)), il sì dei professionisti (19), rapporti economici (14; ticket [Visibilità gratuita, trasparenza e confini del lavoro dell'agenzia](09-visibilita-trasparenza.md)); pareri F7–F13 e G15–G19 prima dell'uso con persone vere (6/11/2026) |
+| 10. Chi fa cosa | **Da integrare** nel percorso 1 | Breve spiegazione accanto alla rete, un solo testo per app e sito; bozza della decisione 4 consegnata all'avvocato nella domanda F14; il testo definitivo va nelle schermate solo dopo il suo controllo. Il passaggio non ricostruibile dell'audio (circa 3:58–4:11, domanda 20) resta nel «Non ancora specificato» della mappa |
+
+**Le decisioni.**
+1. **Forma: indicazione.** ƎE indica i professionisti della rete; il cliente sceglie, affida il lavoro e paga lui. Contatto con «Chiama» nell'app (SMS al professionista come per i tecnici della casa, 3/11/2026) e con il contatto dell'agenzia sul sito (5/11/2026). Niente richieste smistate a mano, consulenza o incarichi dati da ƎE per conto del cliente. Provvisoria fino alle risposte del collaboratore (16, 17) e dell'avvocato (F9, F10).
+2. **Parole:** **Professionista** (persona o studio con un mestiere e una scheda nel registro dell'agenzia; ogni tecnico è un professionista, non il contrario), **Rete ƎE** (i professionisti che l'agenzia sceglie di indicare; non dà accesso a case; il tecnico del proprietario non ci entra da solo), **Indicazione** (l'agenzia mostra un professionista della rete; il cliente sceglie, affida e paga). «Tecnico» invariato.
+3. **Mestieri:** una sola Rete ƎE, nello stesso registro dei tecnici della casa, che nel percorso 1 comprende la **compravendita**; gli altri mestieri presentati sul sito il 6/11/2026 (progettare e rinnovare, traslochi, caldaia e idraulica) possono entrare dopo nella stessa rete, con le risposte del collaboratore e una decisione dell'utente; **utenze e bollette** fuori dalla rete fino al percorso 3; **mutuo e assistenza legale** solo dopo una verifica delle loro regole sulle fonti ufficiali.
+4. **Bozza «chi fa cosa»** per l'avvocato, nei «Commenti» e nella domanda F14 del [documento](../domande-vendita-collaboratore-avvocato.md): descrive i ruoli di agenzia, notaio, tecnico, chi vende e professionisti della rete, senza liberatoria; resta all'avvocato se aggiungere «ƎE non garantisce il lavoro dei professionisti».
+5. **Esiti** come in tabella.
+
+**Conseguenza per il controllo B:** aspetta ora i ticket 09, 13 e 14. **Per il sito di ƎE:** cambia lo stato della §6 di [docs/integrazione-sito.md](../../../docs/integrazione-sito.md) (forma, parole, professioni iniziali, testo «chi fa cosa»), voce dell'8/11/2026 in [docs/consegne-al-sito.md](../../../docs/consegne-al-sito.md); i campi del contratto non cambiano.
 
 ## Commenti (Comments)
 
@@ -42,3 +58,5 @@ Per ogni proposta si porta all'utente, in parole semplici: punti dell'audio, cos
 *Domanda lasciata all'avvocato:* se aggiungere «ƎE non garantisce il lavoro dei professionisti» o se la frase nuoce. *Alternative scartate:* una riga sola (tace ciò di cui l'agenzia risponde, F14 chiede di non togliere responsabilità); una liberatoria formale (non esclude dolo e colpa grave, verso i consumatori si presume vessatoria: [ricerca](../../../docs/ricerca/segnalare-professionisti.md), §5); bozza scritta solo dall'avvocato (più costo, non conosce Connetto né la decisione 1). *Motivo:* descrivere bene i ruoli è ciò che chiede il punto 10 e ciò che la ricerca indica come utile; dice cosa è davvero necessario (APE, notaio per trascrivere) senza rendere obbligatorio il resto ([ricerca](../../../docs/ricerca/compravendita-ruoli.md), §5).
 
 *8/11/2026, fuori tema per questo ticket:* l'utente ha riferito una risposta del collaboratore di ƎE sulle tessere; è registrata nel ticket [Quale tessera ha chi affitta e vende insieme](14-tessera-affitta-e-vende.md) e non decide nulla qui.
+
+*Decisione 5, esiti (utente, 8/11/2026: «sì» alla raccomandazione).* Proposta 5 **da integrare** nel percorso 1, nella forma dell'indicazione, con i punti aperti della «Risposta»; proposta 10 **da integrare**, con il testo definitivo solo dopo l'avvocato. *Alternativa scartata:* «da approfondire» per entrambe fino alle risposte (il controllo B resterebbe fermo su pareri che il 6/11/2026 sono legati all'uso con persone vere, e design e architettura non potrebbero disegnare la rete). *Motivo:* forma, parole e mestieri sono decisi; ciò che manca cambia dettagli e testi, non la forma.
