@@ -1,8 +1,8 @@
 # Visibilità gratuita, trasparenza e confini del lavoro dell'agenzia
 
 Type: grilling
-Status: open
-Blocked by: 08
+Status: claimed
+Blocked by: 08 (chiuso l'8/11/2026)
 Mappa: [Proposte del collaboratore di ƎE del 4/11/2026](../map.md)
 
 ## Domanda (Question)
@@ -20,3 +20,5 @@ Per ogni proposta si porta all'utente, in parole semplici: punti dell'audio, cos
 **5/11/2026, dalla consegna del sito di ƎE** (PRODUCT.md §12, 5/11/2026). È deciso che il sito **presenta al pubblico la rete** ƎE e raccoglie i contatti; Connetto la serve nel contesto della casa. Restano qui: cosa si dice su scelta, ordine e rapporti economici; il collaboratore propone anche consulenze a pagamento e visibilità per attività della zona, **non approvate**. Dalla [ricerca](03-ricerca-segnalare-professionisti.md): «gratuita» deve essere vera in tutti i sensi; sul sito serve un sì del professionista distinto da quello per l'app. L'elenco del sito non ha un ordine che sembri una classifica ([docs/integrazione-sito.md](../../../docs/integrazione-sito.md), §4 e §6).
 
 **6/11/2026, dal ticket [Cosa, fra le proposte, può toccare il percorso 1](05-cosa-tocca-percorso-1.md)** (PRODUCT.md §12, 6/11/2026). Cosa si dice su scelta, ordine e rapporti economici dei professionisti **entra nel percorso 1** e va deciso prima del controllo B, con le risposte del collaboratore (domanda 14) e dell'avvocato (domande 7–9 e 12) del [documento](../domande-vendita-collaboratore-avvocato.md).
+
+**9/11/2026, sessione di decisione** (grilling e domain-modeling, una domanda alla volta). **Nessuna risposta del collaboratore di ƎE né dell'avvocato** è arrivata con la richiesta della sessione: le domande C14, C15, C18, C19, F7, F8, F12 e la parte G restano aperte e non si presume nulla sui rapporti economici fra ƎE e i professionisti, né la loro presenza né la loro assenza. Già decisi e non riaperti: indicazione (cliente sceglie, affida e paga; «Chiama» nell'app, contatto dell'agenzia sul sito), rete che parte dalla compravendita, registro con il sì scritto e revocabile al sito nel percorso 1, consulenze a pagamento e visibilità per attività della zona non approvate, «chi fa cosa» in bozza per l'avvocato (PRODUCT.md §12, 5/11, 6/11 e 8/11/2026).
