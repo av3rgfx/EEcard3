@@ -6,6 +6,28 @@ Ogni voce segue la [§10 del contratto](integrazione-sito.md#10-aggiornamenti-fr
 
 ---
 
+## 8/11/2026: professionisti della compravendita e «chi fa cosa»
+
+**Decisione e fonte.** Decisioni dell'utente del 7 e dell'8/11/2026 ([PRODUCT.md](../PRODUCT.md) §12, 8/11/2026; ticket [Professionisti della compravendita: in che forma, e chi fa cosa](../.scratch/proposte-collaboratore-4-novembre/issues/08-professionisti-compravendita-aste.md); parole in [GLOSSARY.md](../GLOSSARY.md)). Precisa la rete del 5/11 e del 6/11/2026; contratto in [integrazione-sito.md](integrazione-sito.md) §6.
+
+**Cosa cambia per il sito.**
+1. **Forma:** ƎE **indica** i professionisti della Rete ƎE. Il visitatore sceglie, affida il lavoro e lo paga direttamente al professionista; il contatto passa dall'agenzia, come già deciso (§7 del contratto). ƎE non fa consulenza nelle pratiche e non dà incarichi al posto del cliente: il sito non deve dire il contrario (per esempio «ci pensiamo noi», «ti assegniamo un professionista»).
+2. **Parole:** «professionista» per tutti; «Rete ƎE» per quelli che l'agenzia indica; un notaio o un geometra non sono «tecnici». Da evitare, come nel glossario: «partner» (fa pensare a un accordo commerciale) e, per l'indicazione, «segnalazione», «raccomandazione» e «consiglio di fiducia» (fanno pensare a una garanzia sul lavoro altrui).
+3. **Quali mestieri:** nella prima versione la rete comprende la **compravendita**. Gli altri servizi della landing (progettare e rinnovare, traslochi, caldaia e idraulica) restano **presentazione con il contatto dell'agenzia, senza nomi**; potranno entrare nella rete solo con una nuova decisione. **Utenze e bollette** non entrano nella rete. **Mutuo e assistenza legale** non si indicano con nomi finché le loro regole non sono verificate.
+4. **«Chi fa cosa»:** ci sarà un testo breve, uguale sul sito e in Connetto, accanto all'elenco dei professionisti. Esiste solo una bozza in attesa del controllo dell'avvocato.
+
+**Compatibilità.** Nessun cambiamento ai campi del contratto (versione 1); il campo `professione` resta un elenco chiuso da decidere, all'inizio solo professioni della compravendita.
+
+**Disponibilità effettiva.** Nessun endpoint, nessun codice, nessuna chiave, nessun indirizzo, nessun professionista reale. Il controllo B aspetta ora i ticket 09, 13 e 14.
+
+**Prove.** Nessuna: non c'è nulla da provare.
+
+**Azione richiesta al sito.**
+- Controllare i testi della landing e del gruppo «comprare e vendere» con i punti 1–3: niente promesse di consulenza, di incarichi gestiti dall'agenzia o di garanzia sul lavoro dei professionisti; niente nomi di professionisti, neanche d'esempio presentati come reali.
+- **Non pubblicare** una spiegazione «chi fa cosa» scritta sul sito: arriverà da Connetto con il testo controllato dall'avvocato.
+
+---
+
 ## 7/11/2026: tessera per chi vende
 
 **Decisione e fonte.** Decisioni dell'utente del 7/11/2026 ([PRODUCT.md](../PRODUCT.md) §12; ticket [Una tessera per chi vende e un'app sola](../.scratch/proposte-collaboratore-4-novembre/issues/07-tessera-e-app.md)). Precisa il punto 4 della voce del 6/11/2026.

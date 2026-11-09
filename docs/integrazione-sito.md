@@ -16,6 +16,7 @@ Tre livelli, sempre distinti:
 - **Deciso il 6/11/2026** ([PRODUCT.md](../PRODUCT.md) §12): l'elenco dei professionisti della rete con il loro sì al sito entra nel percorso 1, accanto a quello delle valutazioni (§6). Nessun endpoint esiste ancora.
 - **Deciso il 7/11/2026** ([PRODUCT.md](../PRODUCT.md) §12): chi vende è nel pilota con la casa senza gestione e la valutazione, quindi le valutazioni delle case in vendita arrivano al sito fin dal pilota; non cambiano campi né regole della §5. A vendita fatta il rapporto del proprietario con la casa finisce; cosa succede alla sua valutazione pubblicata è aperto (§9).
 - **Deciso il 7/11/2026, tessera per chi vende** ([PRODUCT.md](../PRODUCT.md) §12): la tessera di chi vende è solo un segno, va a chi ha una casa in vendita in Connetto (dalla valutazione o dall'incarico) e si consegna in agenzia; per ora l'adesione di chi ha solo case in vendita è gratuita; ci sarà una seconda tessera fisica di un altro colore, non ancora scelto. Non cambiano contratto, campi o elenchi: il sito non legge nulla sulla tessera.
+- **Deciso l'8/11/2026, professionisti della compravendita** ([PRODUCT.md](../PRODUCT.md) §12): ƎE **indica** i professionisti della Rete ƎE, il cliente sceglie, affida e paga lui; la rete parte dalla compravendita; la spiegazione «chi fa cosa» è una bozza in attesa dell'avvocato. Non cambiano i campi del contratto (§6).
 - **Il resto di questo documento è proposta.** Le prove della §8 non sono state eseguite: non c'è nulla da provare.
 
 ## 2. Decisioni dell'utente recepite
@@ -132,7 +133,11 @@ Elenco vuoto: `"valutazioni": []`, risposta `200`. `generato_il` è l'ora del ca
 
 ## 6. Elenco dei professionisti pubblicabili
 
-Stato: **rete approvata dall'utente il 5/11/2026; registro e lettura da Connetto decisi il 6/11/2026, nel percorso 1; campi solo candidati; endpoint inesistente.** Il 6/11/2026 l'utente ha deciso che il registro della rete con il sì dei professionisti al sito entra nel percorso 1 e che il sito legge da Connetto anche questo elenco ([PRODUCT.md](../PRODUCT.md) §12, 6/11/2026, che precisa il 3/11/2026). All'inizio comprende la rete della compravendita; se comprende anche i servizi presentati sul sito il 6/11/2026 si decide nel [ticket 08](../.scratch/proposte-collaboratore-4-novembre/issues/08-professionisti-compravendita-aste.md). Accanto all'elenco, sul sito e in Connetto, vanno i testi su scelta, ordine e rapporti economici ([ticket 09](../.scratch/proposte-collaboratore-4-novembre/issues/09-visibilita-trasparenza.md)) e una breve spiegazione «chi fa cosa» fra agenzia, notaio e tecnico (ticket 08), controllata dall'avvocato.
+Stato: **rete approvata dall'utente il 5/11/2026; registro e lettura da Connetto decisi il 6/11/2026, nel percorso 1; forma, parole e professioni iniziali decise l'8/11/2026; campi solo candidati; endpoint inesistente.** Il 6/11/2026 l'utente ha deciso che il registro della rete con il sì dei professionisti al sito entra nel percorso 1 e che il sito legge da Connetto anche questo elenco ([PRODUCT.md](../PRODUCT.md) §12, 6/11/2026, che precisa il 3/11/2026). **Deciso l'8/11/2026** nel [ticket 08](../.scratch/proposte-collaboratore-4-novembre/issues/08-professionisti-compravendita-aste.md) (parole in [GLOSSARY.md](../GLOSSARY.md)):
+- **Forma, l'indicazione:** ƎE mostra i professionisti della **Rete ƎE**; il cliente o il visitatore sceglie, affida il lavoro e paga lui. Sul sito il contatto passa dall'agenzia (§7); in Connetto da «Chiama». ƎE non smista richieste a mano, non fa consulenza e non dà incarichi per conto del cliente. Regola provvisoria fino alle risposte del collaboratore e dell'avvocato.
+- **Parole:** «professionista» per chiunque sia nel registro, «tecnico» solo per chi è legato a una casa per un mestiere, «Rete ƎE» per chi l'agenzia sceglie di indicare. Sul sito un notaio o un geometra non si chiamano «tecnici della casa».
+- **Professioni iniziali:** la rete parte dalla **compravendita**; l'elenco chiuso del campo `professione` dipende ancora dalla risposta del collaboratore. Gli altri mestieri presentati dal sito (progettare e rinnovare, traslochi, caldaia e idraulica) potranno entrare nella stessa rete con una decisione dell'utente; **utenze e bollette** no, fino al percorso 3 di Connetto; **mutuo e assistenza legale** solo dopo una verifica delle loro regole. Nell'attesa il sito li presenta con il contatto dell'agenzia, senza nomi.
+- **Chi fa cosa:** un solo testo per sito e Connetto, accanto all'elenco; la bozza è nella domanda F14 del [documento per l'avvocato](../.scratch/proposte-collaboratore-4-novembre/domande-vendita-collaboratore-avvocato.md). **Non si pubblica** prima del suo controllo; quando è approvato, Connetto lo consegna al sito con una voce in [consegne-al-sito.md](consegne-al-sito.md). Accanto all'elenco, sul sito e in Connetto, vanno i testi su scelta, ordine e rapporti economici ([ticket 09](../.scratch/proposte-collaboratore-4-novembre/issues/09-visibilita-trasparenza.md)) e una breve spiegazione «chi fa cosa» fra agenzia, notaio e tecnico (ticket 08), controllata dall'avvocato.
 
 **Tre cose distinte nel registro** (proposta per il modello di Connetto, sopra i «tecnici della casa» già decisi: una scheda nell'agenzia con nome, mestiere, telefono e liberatoria, senza account):
 1. **Presenza nel registro:** la scheda del professionista nell'agenzia, inserita una volta dall'operatore. Vale anche per il tecnico scelto da un proprietario.
@@ -147,7 +152,7 @@ Campi candidati, **da approvare** con l'utente e con il parere privacy; il sì d
 | --- | --- | --- | --- |
 | `id` | stringa opaca, come per le valutazioni | sì | Identificativo stabile del professionista per il sito, diverso dagli identificativi interni. |
 | `nome_pubblico` | stringa, 1–120 caratteri | sì | Nome dello studio o della persona, come l'ha approvato il professionista. |
-| `professione` | stringa | sì | Da un elenco chiuso da decidere. L'audio cita geometra, ingegnere e notaio; non è un elenco approvato. |
+| `professione` | stringa | sì | Da un elenco chiuso da decidere. All'inizio solo professioni della compravendita (8/11/2026); l'audio cita geometra, ingegnere e notaio, non è un elenco approvato. |
 | `zona_attivita` | stringa, 1–80 caratteri | sì | Dove lavora, con la stessa grandezza delle zone delle valutazioni. |
 | `presentazione` | stringa fino a 280 caratteri, oppure `null` | no | Breve testo approvato dal professionista; `null` se non l'ha dato. |
 
@@ -206,12 +211,13 @@ Da eseguire quando esisteranno le due parti, solo con dati inventati. **Nessuna 
 
 | Domanda | Chi decide | Ferma |
 | --- | --- | --- |
-| ~~Connetto offre l'elenco dei professionisti, e in quale fase?~~ **Deciso il 6/11/2026:** sì, nel percorso 1 ([ticket 05](../.scratch/proposte-collaboratore-4-novembre/issues/05-cosa-tocca-percorso-1.md)). Restano: quali professioni e mestieri comprende, e le parole (ticket [08](../.scratch/proposte-collaboratore-4-novembre/issues/08-professionisti-compravendita-aste.md)) | utente | §6 |
+| ~~Connetto offre l'elenco dei professionisti, e in quale fase?~~ **Deciso il 6/11/2026:** sì, nel percorso 1 ([ticket 05](../.scratch/proposte-collaboratore-4-novembre/issues/05-cosa-tocca-percorso-1.md)). ~~Restano: quali professioni e mestieri comprende, e le parole~~ **Deciso l'8/11/2026** (ticket [08](../.scratch/proposte-collaboratore-4-novembre/issues/08-professionisti-compravendita-aste.md)): parte dalla compravendita; l'elenco esatto resta nella riga dei campi pubblici | utente | §6 |
 | Valutazione pubblicata di una casa **venduta**: resta fino alla scadenza o al ritiro del sì, come oggi, oppure esce con la vendita? (7/11/2026, [ticket 06](../.scratch/proposte-collaboratore-4-novembre/issues/06-chi-vende-chi-compra.md)) | utente | §5 |
 | **T_ritiro**, la latenza massima di ritiro dal sito | utente, con il parere privacy | §4, prove 3–7 |
 | Mostrare l'ultimo elenco oltre T_ritiro se Connetto non risponde | utente | §4 |
 | Grandezza della zona, elenco dei tipi, quale misura dei metri quadri | utente con ƎE | §5 |
 | Campi pubblici e testo del sì dei professionisti; elenco delle professioni | utente, parere privacy | §6 |
+| Testo «chi fa cosa» definitivo (bozza nella domanda F14) | avvocato, poi utente | presentazione sul sito e in Connetto |
 | Ordine dei professionisti sul sito e cosa si dice su scelta e rapporti economici | utente ([ticket 09](../.scratch/proposte-collaboratore-4-novembre/issues/09-visibilita-trasparenza.md)) | presentazione sul sito |
 | Mandare i dati di un visitatore a un professionista | utente, parere privacy | §7 |
 | Indirizzo base e dominio di Connetto | dopo il parere sul nome | tutto |
