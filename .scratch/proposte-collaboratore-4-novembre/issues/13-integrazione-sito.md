@@ -1,7 +1,7 @@
 # Integrazione con il sito di ƎE: contratto delle valutazioni e della rete
 
 Type: grilling
-Status: open
+Status: claimed
 Blocked by: 05, 08
 Mappa: [Proposte del collaboratore di ƎE del 4/11/2026](../map.md)
 
