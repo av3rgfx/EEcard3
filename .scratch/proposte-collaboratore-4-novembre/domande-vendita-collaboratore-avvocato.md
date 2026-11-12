@@ -65,6 +65,12 @@ Ecco come l'abbiamo capita dall'idea dei fondatori. **È un'ipotesi, non una dec
 20. Nell'audio, verso il minuto 4:00 (circa 3:58–4:11), c'è un passaggio sul **coordinamento delle pratiche** che non si capisce. Puoi ripetere cosa intendevi? Riguarda chi segue le pratiche fra agenzia, tecnico e notaio?
 21. In quale **regione** lavora ƎE? Serve per le regole regionali sull'attestato energetico (APE).
 
+### D bis. Valutazioni sul sito (aggiunte il 12/11/2026, ticket [Integrazione con il sito di ƎE](issues/13-integrazione-sito.md))
+Le regole sono già decise dall'utente; ci servono i vostri elenchi.
+22. **Zone:** con quali zone dividete la vostra area quando parlate di case (quartieri, frazioni, comuni)? Ci serve l'elenco dei nomi che usate. Regola già decisa: mai più piccola di un quartiere o di una frazione, il comune intero se è piccolo; vale anche per la zona di lavoro dei professionisti.
+23. **Tipi di casa:** quali parole usate, al massimo 6? Proposta da correggere: appartamento, attico, casa indipendente, villa, villetta a schiera.
+24. **Metri quadri:** nelle vostre valutazioni quale superficie usate (per esempio commerciale, calpestabile, catastale)? Sul sito scriveremo il suo nome accanto al numero.
+
 ---
 
 ## Parte 2. Richieste per l'avvocato
@@ -101,9 +107,9 @@ Non è deciso se fra ƎE e i professionisti ci saranno rapporti economici.
 ### G. Privacy (avvocato o esperto privacy)
 15. Per l'elenco dei professionisti **nell'app**, visibile solo ai clienti con una casa, quale base giuridica vale: consenso, contratto o legittimo interesse? E per il **sito pubblico**, dove i dati sono diffusi a chiunque?
 16. Si possono usare i dati degli **albi professionali** per verificare l'iscrizione e la sospensione di un professionista, prima e durante la sua presenza nell'elenco?
-17. Quando un professionista **ritira il sì**, in quanto tempo deve sparire dal sito? E cosa si deve fare per le copie nei motori di ricerca?
+17. Quando un professionista **ritira il sì**, in quanto tempo deve sparire dal sito? E cosa si deve fare per le copie nei motori di ricerca? *(Il 12/11/2026 l'utente ha scelto 15 minuti, per professionisti e valutazioni: ci serve sapere se va bene.)*
 18. Si possono **mandare i dati di un cliente o di un visitatore del sito** a un professionista della rete? Con quale consenso e con quale informativa?
-19. Il **testo del sì** che firma il professionista: cosa deve contenere (dati mostrati, dove, durata, revoca)?
+19. Il **testo del sì** che firma il professionista: cosa deve contenere (dati mostrati, dove, durata, revoca)? *(Contenuto deciso dall'utente il 12/11/2026, da controllare: la scheda esatta come apparirà; sito pubblico e copiabile dai motori di ricerca; ritiro con una telefonata o un messaggio, via dal sito in 15 minuti; vale fino al ritiro con un controllo ogni anno; sì nuovo a ogni cambio dei testi; chi tiene i dati.)*
 
 ---
 

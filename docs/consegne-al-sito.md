@@ -6,6 +6,34 @@ Ogni voce segue la [§10 del contratto](integrazione-sito.md#10-aggiornamenti-fr
 
 ---
 
+## 12/11/2026: contratto con il sito (ritiri, casa venduta, campi dei professionisti, nome Connetto)
+
+**Decisione e fonte.** Otto decisioni dell'utente del 12/11/2026 ([PRODUCT.md](../PRODUCT.md) §12, 12/11/2026, «Integrazione con il sito di ƎE»; ticket [Integrazione con il sito di ƎE](../.scratch/proposte-collaboratore-4-novembre/issues/13-integrazione-sito.md)), senza risposte del collaboratore di ƎE, dell'avvocato o dell'esperto privacy. Precisa le voci del 12/11 (trasparenza) e dell'8/11/2026; contratto aggiornato in [integrazione-sito.md](integrazione-sito.md) §1, §4, §5, §6, §7, §8 e §9.
+
+**Cosa cambia per il sito.**
+1. **Ritiri entro 15 minuti (T_ritiro).** Una voce che non c'è più nell'elenco di Connetto deve sparire da tutte le pagine e copie del sito, cache pubblica compresa, entro 15 minuti; vale per valutazioni e professionisti. Regola pratica: intervallo di lettura più durata della cache non oltre 15 minuti (per esempio lettura ogni 5 minuti, cache di 10 al massimo).
+2. **Connetto non risponde.** Dopo 15 minuti senza una lettura valida il sito toglie le voci di quella sezione, mostra un messaggio neutro con il contatto dell'agenzia e avvisa chi mantiene il sito. Nessuna eccezione e nessun «aggiornato alle …» oltre i 15 minuti. Le scadenze delle valutazioni il sito le applica comunque da solo.
+3. **Casa venduta.** Una valutazione esce dall'elenco anche quando l'operatore registra la vendita: per il sito è un ritiro come gli altri, senza campi nuovi.
+4. **Zona, tipo, metri quadri** (§5): zona mai più piccola di un quartiere o di una frazione (il comune intero se piccolo), mai via, civico o CAP, la stessa lista per valutazioni e professionisti; tipo da un elenco chiuso di al massimo 6 parole; metri quadri interi, con il nome della misura accanto. Gli elenchi veri li dà ƎE: la bozza dei tipi (appartamento, attico, casa indipendente, villa, villetta a schiera) **non è approvata** e non va pubblicata come definitiva.
+5. **Professionisti, campi chiusi** (§6): solo nome pubblico, mestiere, zona, presentazione e nota sul rapporto economico. Il sito non aggiunge foto, link al sito del professionista o telefono dello studio, neanche presi da altre fonti.
+6. **Campi sui soldi, nomi definitivi** (§6): per voce `nota_rapporto_economico` (fino a 160 caratteri o `null`: `null` vuol dire solo «niente da mostrare», mai «nessun rapporto»); nell'involucro `frase_rapporti_economici` (fino a 200 caratteri o `null`), che contiene **il testo stesso** della frase da mostrare, approvato, e arriva solo se vero per tutti. Il sito mostra il testo così com'è, non ne tiene una copia propria e, con `null`, non mostra frasi sui soldi. I candidati `rapporto_economico` e `senza_rapporti_economici` della voce precedente **non si usano**.
+7. **Nome e simbolo di Connetto.** La sezione della landing che presenta Connetto **non si pubblica con nome e simbolo di Connetto** finché non arriva il parere sul marchio: nell'attesa, se il sito ne parla, usa una descrizione senza nome (per esempio «l'app per i clienti di ƎE») con il logo di ƎE. Valutazioni e professionisti si pubblicano senza bisogno del nome.
+8. **Copia dei valori visivi di Connetto** (`docs/brand/CONNETTO.md` del sito): resta come riferimento solo per la sezione su Connetto, con scritto da quale versione di Connetto è presa; la fonte resta DESIGN.md di Connetto. I cambiamenti che la toccano arriveranno con una voce di questo registro.
+9. **Dati dei visitatori:** come già deciso il 12/11, ƎE non li manda ai professionisti; il sito non lo prevede.
+
+**Compatibilità.** Versione 1 invariata nei campi obbligatori. I due campi del punto 6 sono aggiunte facoltative; nessun campo esistente cambia nome o significato.
+
+**Disponibilità effettiva.** Nessun endpoint, nessun codice, nessuna chiave, nessun indirizzo, nessun professionista o elenco reale. Limite di richieste, rotazione delle chiavi e formato si confermano al controllo B, che aspetta ora solo il ticket sulla tessera di chi affitta e vende.
+
+**Prove.** Nessuna: non c'è nulla da provare.
+
+**Azione richiesta al sito.**
+- Se il sito prepara la lettura degli elenchi, usare i 15 minuti dei punti 1 e 2 e i nomi del punto 6.
+- Non pubblicare la sezione su Connetto con nome e simbolo prima del parere sul marchio (punto 7).
+- Annotare in `docs/brand/CONNETTO.md` del sito la versione di Connetto da cui sono presi i valori (punto 8).
+
+---
+
 ## 12/11/2026: trasparenza della Rete ƎE (scelta, ordine, rapporti economici)
 
 **Decisione e fonte.** Decisioni dell'utente del 9 e del 12/11/2026 ([PRODUCT.md](../PRODUCT.md) §12, 12/11/2026; ticket [Visibilità gratuita, trasparenza e confini del lavoro dell'agenzia](../.scratch/proposte-collaboratore-4-novembre/issues/09-visibilita-trasparenza.md)). Precisa la voce dell'8/11/2026; contratto in [integrazione-sito.md](integrazione-sito.md) §4 e §6.
