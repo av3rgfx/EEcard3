@@ -6,6 +6,30 @@ Ogni voce segue la [§10 del contratto](integrazione-sito.md#10-aggiornamenti-fr
 
 ---
 
+## 12/11/2026: trasparenza della Rete ƎE (scelta, ordine, rapporti economici)
+
+**Decisione e fonte.** Decisioni dell'utente del 9 e del 12/11/2026 ([PRODUCT.md](../PRODUCT.md) §12, 12/11/2026; ticket [Visibilità gratuita, trasparenza e confini del lavoro dell'agenzia](../.scratch/proposte-collaboratore-4-novembre/issues/09-visibilita-trasparenza.md)). Precisa la voce dell'8/11/2026; contratto in [integrazione-sito.md](integrazione-sito.md) §4 e §6.
+
+**Cosa cambia per il sito.**
+1. **Ordine:** i professionisti si mostrano raggruppati per mestiere, poi in ordine alfabetico del nome pubblico, come in Connetto, con una riga che lo dice («In ordine alfabetico, per mestiere»). Niente rotazione, niente ordine scelto a mano, niente «in evidenza».
+2. **Testi accanto all'elenco:** chi sono (professionisti che ƎE conosce perché lavora nella zona e che hanno accettato di comparire), che il visitatore può rivolgersi a chi preferisce, che l'iscrizione all'albo si controlla all'ingresso e ogni anno. Sono **bozze** in attesa dell'avvocato: il testo da pubblicare arriverà con una voce nuova di questo registro.
+3. **Soldi:** nessuna frase sui rapporti economici, né «gratis» né «nessun compenso», finché Connetto non la consegna. Quando arriverà, la frase generale si mostra solo se l'elenco dice che vale per tutti (campo candidato `senza_rapporti_economici`), e un eventuale rapporto si mostra accanto al nome (campo candidato `rapporto_economico`).
+4. **Parole da evitare** sul sito, oltre a quelle dell'8/11: «sponsor», «certificati», «garantiti», «i migliori», «di fiducia», «selezionati per te».
+5. **Niente recensioni o giudizi** sui professionisti, e nessun cellulare, email personale o numero d'albo.
+6. **Cosa ƎE non fa con la rete:** il lavoro dei professionisti, incarichi o preventivi al posto del cliente, controlli o garanzie sul loro lavoro, invio dei dati del visitatore. Consulenze a pagamento e visibilità venduta ad attività della zona **non sono approvate** (rimandate al parere dell'avvocato).
+
+**Compatibilità.** Due campi facoltativi candidati (`rapporto_economico` per voce, `senza_rapporti_economici` nell'involucro): aggiunta compatibile con la versione 1, nomi da confermare nel ticket 13. Nessun campo esistente cambia.
+
+**Disponibilità effettiva.** Nessun endpoint, nessun codice, nessuna chiave, nessun indirizzo, nessun professionista reale. Il controllo B aspetta ora i ticket 13 e 14.
+
+**Prove.** Nessuna: non c'è nulla da provare.
+
+**Azione richiesta al sito.**
+- Se il sito prepara la pagina della rete, usare l'ordine del punto 1 e lasciare gli spazi per i testi dei punti 2 e 3 senza riempirli con testi propri.
+- Togliere dalla landing, se ci sono, parole del punto 4 e qualunque «gratis» o «nessun compenso» riferito ai professionisti.
+
+---
+
 ## 8/11/2026: professionisti della compravendita e «chi fa cosa»
 
 **Decisione e fonte.** Decisioni dell'utente del 7 e dell'8/11/2026 ([PRODUCT.md](../PRODUCT.md) §12, 8/11/2026; ticket [Professionisti della compravendita: in che forma, e chi fa cosa](../.scratch/proposte-collaboratore-4-novembre/issues/08-professionisti-compravendita-aste.md); parole in [GLOSSARY.md](../GLOSSARY.md)). Precisa la rete del 5/11 e del 6/11/2026; contratto in [integrazione-sito.md](integrazione-sito.md) §6.
