@@ -1,7 +1,7 @@
 # Ricerca dei professionisti in zona: a mano, collegamenti esterni o Google
 
 Type: grilling
-Status: open
+Status: claimed
 Blocked by: 08
 Mappa: [Proposte del collaboratore di ƎE del 4/11/2026](../map.md)
 
