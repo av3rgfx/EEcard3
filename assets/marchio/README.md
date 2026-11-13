@@ -10,14 +10,37 @@ Simbolo di Connetto, scelto e fornito dall'utente il 23/10/2026 ([DESIGN.md](../
 | --- | --- |
 | `legame-regular.svg` | da 32 px in su |
 | `legame-small.svg` | fra 16 e 31 px, disegnata per restare leggibile; sotto i 16 px non si usa |
+| `icona-app.svg` | icona dell'app: simbolo bianco, versione regolare, su un quadrato pieno arancio #c4460f, 1024 × 1024, senza angoli arrotondati (li aggiunge il telefono). Il simbolo occupa il 62,5% del lato |
+| `favicon.svg` | icona nella scheda del browser: versione piccola, arancio #c4460f, #ff7a45 quando il sistema è scuro, senza quadrato, riquadro stretto sul segno |
 
 Regole d'uso, indicate dall'utente:
 - Intorno al segno restano libere almeno 12 unità su 96.
-- Un solo colore pieno: i file usano `currentColor`, quindi il segno prende il colore del testo intorno. I colori non sono decisi.
+- Un solo colore pieno. Di regola il segno prende il **colore del testo** intorno (i file usano `currentColor`). Dal 13/11/2026 può essere anche **arancio**, solo dove il marchio deve farsi riconoscere da solo: icona dell'app, icona del browser, copertina delle email. L'arancio è quello dei pulsanti: #c4460f sul chiaro, #ff7a45 sullo scuro. Sulla piastra arancio il segno è bianco. Nessun altro colore.
 - Il segno non si ruota, non si specchia e non si deforma; i due elementi non si uniscono. Niente gradienti, ombre o contorni. Sulle foto va su un fondo uniforme.
 - Eccezione decisa dall'utente il 23/10/2026: sulla tessera di rame, vista come oggetto, il segno può essere inciso nel materiale, con rilievo e ombre del materiale, la forma identica e senza ruotarlo rispetto alla tessera. Ovunque altro valgono le regole sopra ([DESIGN.md](../../DESIGN.md), «Accesso, tessera e situazioni comuni»).
-- «Legame» è il nome del disegno; il prodotto si chiama Connetto. La scritta del nome (wordmark) non esiste ancora.
+- «Legame» è il nome del disegno; il prodotto si chiama Connetto. La scritta del nome (wordmark) definitiva non esiste ancora: c'è una preferenza provvisoria, in «Guida d'uso».
 - Non è stata fatta una ricerca di marchi simili già registrati e il marchio non è registrato: prima di registrarlo o di usarlo in pubblico serve un parere professionale.
+
+## Guida d'uso: icone, scritta e misure
+
+Decisa dall'utente il 13/11/2026, una scelta alla volta, con la skill `logo-design` ([DESIGN.md](../../DESIGN.md), «Identità»).
+
+**Icone.** L'app usa `icona-app.svg`: la piastra arancio si riconosce fra le altre app. Il browser usa `favicon.svg`, senza piastra: così il segno occupa tutti i 16 pixel e le due parti restano distinte (con la piastra scenderebbe a circa 10 pixel). Altri formati, come PNG e `.ico`, si ricavano da questi due file quando servono.
+
+**Simbolo con la scritta** (*provvisorio*: la scritta definitiva si disegna dopo il parere sul marchio; se il nome cambia, questa parte decade):
+- scritta «Connetto» in Manrope 650, lettere strette di −0,02 em, le due «t» avvicinate di −0,11 em fino a condividere una sola stanghetta; nella versione definitiva le lettere diventano contorni, come in `ee.svg`;
+- in riga: il simbolo è alto 1,05 volte la grandezza del testo, a 0,36 volte la grandezza del testo dalla scritta, centrato in altezza; in colonna: simbolo alto 1,5 volte la grandezza del testo, sopra la scritta, a 0,3 volte;
+- intorno alla combinazione resta libera almeno metà dell'altezza del simbolo, come per ƎE.
+
+**Misure minime.**
+
+| Uso | Schermo | Stampa |
+| --- | --- | --- |
+| Simbolo, versione piccola | da 16 a 31 px | da 5 a 10 mm |
+| Simbolo, versione regolare | da 32 px | da 10 mm |
+| Simbolo con la scritta | testo da 14 px | da 25 mm di larghezza |
+
+Le misure di stampa sono prudenti, ricavate dalle prove a schermo: si correggono con la prima prova di stampa vera. Sotto i 14 px di testo o i 25 mm l'unione delle «t» non si vede più.
 
 ## Logo di ƎE
 
@@ -53,4 +76,6 @@ Regole d'uso (decise dall'utente il 26/10/2026, una scelta alla volta):
 b8a61e1cc8363740bfc46d7ad0afdbb138bc73b4d71667cf925b3ab170f59f07  legame-regular.svg
 9ae2d996bf7b39fe4abb9864b7d6cbcaf563cfe8df9115ad3e19e51189ef2474  legame-small.svg
 01cccc97600869ae4f5e2cb2590bb97fa5526890e2f1293486df2b1e3b33569c  ee.svg
+895885be070b2a00899161dfd701a833e3ced8b2b021022af5749a94a13dec54  icona-app.svg
+9ccf35748a13786d3fb22bdff20c63d9d6b57e5f19304559164f2203e8eea40d  favicon.svg
 ```

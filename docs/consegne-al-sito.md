@@ -6,6 +6,26 @@ Ogni voce segue la [§10 del contratto](integrazione-sito.md#10-aggiornamenti-fr
 
 ---
 
+## 13/11/2026: regole del marchio di Connetto (colori, icone, scritta provvisoria)
+
+**Decisione e fonte.** Decisioni dell'utente del 13/11/2026, prese con la skill `logo-design` ([DESIGN.md](../DESIGN.md), «Identità»; regole e file in [assets/marchio/](../assets/marchio/README.md), «Guida d'uso»). C–Legame resta il simbolo, con forma e file invariati.
+
+**Cosa cambia per il sito** (solo per la copia dei valori visivi `docs/brand/CONNETTO.md`):
+1. **Colori del simbolo.** Di regola il colore del testo; anche arancio (#c4460f sul chiaro, #ff7a45 sullo scuro) solo per icona dell'app, icona del browser e copertina delle email. Nessun token cambia valore: sono i colori dei pulsanti già noti.
+2. **Icone.** Due file nuovi in Connetto: `icona-app.svg` (simbolo bianco su piastra arancio) e `favicon.svg` (simbolo arancio, versione piccola). Sono le icone di Connetto, **non** del sito di ƎE.
+3. **Scritta «Connetto».** C'è solo una preferenza provvisoria (le due «t» con una stanghetta sola); decade se il parere cambia il nome. Non va copiata come definitiva.
+4. **Misure.** Spazio libero intorno a simbolo e scritta pari a metà dell'altezza del simbolo; minimi in «Guida d'uso».
+
+**Compatibilità.** Nessun campo del contratto cambia; nessun valore già copiato cambia.
+
+**Disponibilità effettiva.** Solo regole e file nel repository di Connetto; nessuna pagina pubblica.
+
+**Prove.** Pagine di prova con dati inventati, verificate nel browser a 16 px su chiaro e scuro; nessuna prova con persone.
+
+**Azione richiesta al sito.** Aggiornare la copia dei valori, segnando questa versione. **Nulla da pubblicare**: vale ancora il punto 7 della voce del 12/11/2026, niente nome e simbolo di Connetto sul sito prima del parere sul marchio.
+
+---
+
 ## 12/11/2026: contratto con il sito (ritiri, casa venduta, campi dei professionisti, nome Connetto)
 
 **Decisione e fonte.** Otto decisioni dell'utente del 12/11/2026 ([PRODUCT.md](../PRODUCT.md) §12, 12/11/2026, «Integrazione con il sito di ƎE»; ticket [Integrazione con il sito di ƎE](../.scratch/proposte-collaboratore-4-novembre/issues/13-integrazione-sito.md)), senza risposte del collaboratore di ƎE, dell'avvocato o dell'esperto privacy. Precisa le voci del 12/11 (trasparenza) e dell'8/11/2026; contratto aggiornato in [integrazione-sito.md](integrazione-sito.md) §1, §4, §5, §6, §7, §8 e §9.

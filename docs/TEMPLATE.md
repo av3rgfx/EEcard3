@@ -27,6 +27,7 @@ Valutazione del kit «Template SaaS e App» (fotografia del 18 ottobre 2026), us
 | `ponytail` | Alta quando ci sarà codice: niente infrastruttura per esigenze ipotetiche | Architettura e realizzazione |
 | `ux-writing`, `accessibility-audit`, `apple-design`, `emil-design-eng`, `mobile-native`, `break-ui`, `review-animations` | Alta per la qualità dell'interfaccia richiesta dall'utente | Design e realizzazione |
 | `open-code-review-delegate`, `playwright-cli` | Alta: revisione obbligatoria per l'utente e verifica dell'interfaccia | Realizzazione |
+| `logo-design` (aggiunta il 13/11/2026, vedi sotto) | Media: critica e prove del marchio (16 px, un colore, al rovescio), varianti tecniche; non sostituisce scelte registrate | Marchio di Connetto, su richiesta |
 | `animate-ui` | Condizionata: solo con un frontend React compatibile | Realizzazione, se pertinente |
 | `write-swift` | Più avanti: app iPhone dopo il web | Dopo la piattaforma web |
 | `setup-matt-pocock-skills` | Bassa: il tracker è già configurato; serve solo per cambiarlo | Raramente |
@@ -61,3 +62,12 @@ Non applicate al kit originale; utili per una versione successiva.
 - `python3 tools/check_setup.py` nel repository: integrità **OK**, 20 skill, copie Claude e Codex equivalenti. Il file di lock copre skill e licenze, non i documenti di contesto, che quindi si possono modificare.
 - Programmi facoltativi: `git`, `node` e `npm` presenti; `ocr` e `playwright-cli` assenti nell'ambiente cloud di questa sessione.
 - Lettura delle istruzioni principali delle skill e ricerca mirata negli script inclusi: nessun comando di rete, di cancellazione o di esecuzione di processi trovato.
+
+## Skill aggiunte dopo l'avvio
+
+### `logo-design` (13/11/2026, richiesta dell'utente)
+- **Fonte:** [kaankiziltug/logo-design-skill](https://github.com/kaankiziltug/logo-design-skill), revisione `bbf31e521d765eb6d53242549bbee7c2e5bbd6bc` (6/11/2026), cartella `skills/logo-design`. Autore Kaan Kızıltuğ. Licenza MIT; licenza e avviso sui marchi in `third_party/licenses/kaankiziltug__logo-design-skill/`.
+- **Verifica prima della copia:** clone pubblico in una cartella di prova, nessuno script eseguito. Letti `SKILL.md`, le 14 guide, i 2 modelli e i 9 script. Gli script usano solo Python standard e, per le immagini, un programma già presente (qui Chrome); nessuna chiamata in rete, chiave, account o servizio a pagamento. L'unico file del repository che usa la rete (`tools/traffic/collect.py`, statistiche dell'autore) non è copiato.
+- **Copiati 28 file**, identici all'originale, in `.agents/skills/logo-design/` e `.claude/skills/logo-design/`, con le impronte in `skills.lock.json`.
+- **Esclusi**, scelta dell'utente del 13/11/2026 («tutto tranne i loghi», perché non servono al funzionamento): i 1.432 loghi di aziende vere in `assets/library/svg/` (marchi altrui, fuori dalla licenza MIT), la galleria che li mostra e `build_catalog.py`, che ricostruisce il catalogo dai loghi. Restano catalogo e statistiche, solo testo: `search_library.py` funziona per riassunti e ricerche, ma i percorsi dei file indicati non esistono; `preview_sheet.py --refs-industry` non funziona. Per togliere tutto basta cancellare le due cartelle, la licenza e le righe nel lock.
+- **Uso in EECard3** (riga in `AGENTS.md`): niente «via veloce» che presume le risposte; il simbolo C–Legame si critica e si prova, non si ridisegna; colori, Manrope e logo di ƎE cambiano solo con una decisione dell'utente; per l'icona dell'app iPhone prevalgono le regole Apple; gli script scrivono solo nella cartella di prova, mai in `assets/marchio/`.
