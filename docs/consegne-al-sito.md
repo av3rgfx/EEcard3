@@ -6,6 +6,24 @@ Ogni voce segue la [§10 del contratto](integrazione-sito.md#10-aggiornamenti-fr
 
 ---
 
+## 13/11/2026: niente ricerca di Google accanto alla rete
+
+**Decisione e fonte.** Decisioni dell'utente del 13/11/2026 ([PRODUCT.md](../PRODUCT.md) §12, 13/11/2026, «ricerca dei professionisti in zona»; ticket [Ricerca dei professionisti in zona](../.scratch/proposte-collaboratore-4-novembre/issues/10-ricerca-in-zona.md)), senza risposte del collaboratore di ƎE né dell'avvocato. Contratto aggiornato in [integrazione-sito.md](integrazione-sito.md) §6, «Ricerca in zona».
+
+**Cosa cambia per il sito.**
+1. Accanto alla rete pubblica il sito **non mette** ricerche, collegamenti o riquadri di Google Maps o di altri servizi per «trovare altri professionisti in zona», e non mostra risultati trovati online vicino alla Rete ƎE.
+2. In Connetto oggi non c'è nessuna ricerca in zona. Se tornerà dopo il pilota, sarà un collegamento solo nell'app, fuori dall'elenco della rete: al sito non arriva nulla.
+
+**Compatibilità.** Nessun campo del contratto cambia.
+
+**Disponibilità effettiva.** Solo una regola; nessun endpoint esiste.
+
+**Prove.** Nessuna: solo documenti.
+
+**Azione richiesta al sito.** Controllare che la sezione della rete e le pagine dei servizi non abbiano ricerche o mappe di Google per cercare professionisti; se ci sono, toglierle o portarle all'utente. La mappa dell'agenzia per farsi trovare non è toccata da questa regola.
+
+---
+
 ## 13/11/2026: regole del marchio di Connetto (colori, icone, scritta provvisoria)
 
 **Decisione e fonte.** Decisioni dell'utente del 13/11/2026, prese con la skill `logo-design` ([DESIGN.md](../DESIGN.md), «Identità»; regole e file in [assets/marchio/](../assets/marchio/README.md), «Guida d'uso»). C–Legame resta il simbolo, con forma e file invariati.
