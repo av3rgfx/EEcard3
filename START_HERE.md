@@ -111,6 +111,10 @@ Il 12/11/2026 è chiuso anche il ticket «Integrazione con il sito di ƎE: contr
 
 Il 13/11/2026 è installata la skill `logo-design` (senza i loghi di marchi altrui) e, con essa, deciso il **marchio**: C–Legame resta il simbolo dopo il confronto con tre simboli nuovi; per la scritta c'è una preferenza provvisoria, le due «t» con una stanghetta sola, da riprendere dopo il parere; guida d'uso con l'arancio per icone ed email, `icona-app.svg`, `favicon.svg`, spazio libero e misure minime ([DESIGN.md](DESIGN.md), «Identità»; [assets/marchio/](assets/marchio/README.md)).
 
+**Per il sito:** c'è una voce nuova in docs/consegne-al-sito.md (13/11/2026, regole del marchio): quando lavori sul sito, incolla il messaggio «Per la sessione del sito di ƎE» qui sotto. Non c'è nulla da pubblicare prima del parere.
+
+**Più avanti, solo in locale:** il giro di brand kit sul sito di ƎE, se l'agenzia lo vuole (è il suo marchio), con la skill `logo-design` installata in quel repository; e la scritta di Connetto dopo il parere.
+
 **Prossima sessione:** il ticket «Ricerca dei professionisti in zona: a mano, collegamenti esterni o Google», con il messaggio successivo; non ferma il controllo B. Il **controllo B** aspetta ora solo il ticket 14, da fare con il secondo messaggio quando l'utente ha parlato con il collega (c'è già la risposta del collaboratore). Dopo il ticket 10 resta il ticket «Altre agenzie e i loro professionisti», poi il ticket di chiusura «Sostenibilità e ordine».
 
 ---
@@ -234,7 +238,7 @@ Leggi AGENTS.md, STATUS.md, la mappa, il ticket e docs/ricerca/nome-connetto.md.
 - Rivendica il ticket (`Status: claimed`), registra l'esito in sintesi e chiudilo.
 - Dal 12/11/2026 il sito di ƎE non pubblica nome e simbolo di Connetto prima di questo parere (ticket «Integrazione con il sito di ƎE», decisione 7): con l'esito aggiungi una voce in cima a docs/consegne-al-sito.md che dica al sito se può usarli.
 - Se il parere chiede di cambiare il nome o di usarne una forma diversa, le scelte me le fai una alla volta, in parole semplici, con una raccomandazione motivata; per i nomi candidati fai prima la stessa ricerca preliminare (skill `research`). Nessuna registrazione di domini o marchi.
-- Se il nome resta, riprendi con la skill `logo-design` la preferenza provvisoria per la scritta (DESIGN.md, «Identità», 13/11/2026): disegno a contorni, prove a 14 px e la mia conferma; se il nome cambia, la preferenza decade.
+- Se il nome resta, riprendi con la skill `logo-design` la preferenza provvisoria per la scritta (DESIGN.md, «Identità», 13/11/2026): disegno a contorni, prove a 14 px e la mia conferma; se il nome cambia, la preferenza decade. **Questo giro si fa solo in locale** (AGENTS.md, regola del 13/11/2026): se la sessione è nel cloud, registra l'esito del parere e fermati prima della scritta.
 - Aggiorna PRODUCT.md §1 e §12, DESIGN.md e la mappa.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.

@@ -78,6 +78,8 @@ Se una decisione confermata presenta un problema concreto, spiegare il conflitto
 - Animate UI solo se pertinente al frontend e alla versione in uso; non installare componenti per decorazione.
 - logo-design solo per il marchio di Connetto e su richiesta: niente «via veloce», C–Legame si critica e si prova
   senza ridisegnarlo, colori, Manrope e ƎE cambiano solo con una decisione dell'utente; installata senza i loghi altrui.
+  Dal 13/11/2026 i nuovi giri con logo-design si fanno solo **in locale**, sul computer dell'utente (decisione dell'utente:
+  nel cloud lo script delle immagini si blocca e Google Fonts è bloccato); se la sessione è nel cloud, fermarsi e dirlo.
 - write-swift solo per codice Swift; non scegliere lo stack dell'app prima dei requisiti.
 
 ## Backend e verifica
