@@ -6,6 +6,22 @@ Ogni voce segue la [§10 del contratto](integrazione-sito.md#10-aggiornamenti-fr
 
 ---
 
+## 22/11/2026: nessuna ricerca in zona accanto alla rete
+
+**Decisione e fonte.** Decisioni dell'utente del 22/11/2026 nel ticket [Ricerca dei professionisti in zona](../.scratch/proposte-collaboratore-4-novembre/issues/10-ricerca-in-zona.md) ([PRODUCT.md](../PRODUCT.md) §12, 22/11/2026). La proposta 9 del collaboratore di ƎE («trovare professionisti in zona, anche con Google») è **rimandata**: torna solo se nel pilota mancano spesso mestieri o zone.
+
+**Cosa cambia per il sito.** Accanto alla Rete ƎE **non va aggiunta** nessuna ricerca in zona, nessun riquadro di Google e nessun collegamento a Google Maps. Al contatto vale la stessa regola di Connetto: l'agenzia indica solo chi conosce; se un visitatore chiede un mestiere che la rete non ha, gli dice che non conosce nessuno e non passa nomi trovati online.
+
+**Compatibilità.** Nessun campo del contratto cambia ([integrazione-sito.md](integrazione-sito.md) §6).
+
+**Disponibilità effettiva.** Solo una decisione; nulla di nuovo esiste.
+
+**Prove.** Nessuna: non ci sono codice né dati.
+
+**Azione richiesta al sito.** Nessuna, se il sito non ha già una ricerca o un collegamento a Google accanto alla rete; se li ha, toglierli o segnalarlo a Connetto.
+
+---
+
 ## 13/11/2026: regole del marchio di Connetto (colori, icone, scritta provvisoria)
 
 **Decisione e fonte.** Decisioni dell'utente del 13/11/2026, prese con la skill `logo-design` ([DESIGN.md](../DESIGN.md), «Identità»; regole e file in [assets/marchio/](../assets/marchio/README.md), «Guida d'uso»). C–Legame resta il simbolo, con forma e file invariati.
