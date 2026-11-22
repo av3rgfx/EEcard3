@@ -1,7 +1,7 @@
 # Ricerca dei professionisti in zona: a mano, collegamenti esterni o Google
 
 Type: grilling
-Status: open
+Status: claimed
 Blocked by: 08
 Mappa: [Proposte del collaboratore di ƎE del 4/11/2026](../map.md)
 
@@ -18,3 +18,5 @@ Per ogni proposta si porta all'utente, in parole semplici: punti dell'audio, cos
 **5/11/2026, dalla consegna del sito di ƎE.** La «visibilità per attività della zona» proposta dal collaboratore non è approvata; la rete approvata è quella dei professionisti della compravendita conosciuti dall'agenzia (PRODUCT.md §12, 5/11/2026). Preferenza dell'utente: nessun servizio dati a pagamento. Il riquadro di Google, gratuito fino a una soglia ma con account e fatturazione ([ricerca](04-ricerca-professionisti-in-zona.md)), va riconsiderato alla luce di questa preferenza; resta da decidere se serve un collegamento esterno gratuito o nulla.
 
 **6/11/2026, dal ticket [Cosa, fra le proposte, può toccare il percorso 1](05-cosa-tocca-percorso-1.md).** La ricerca in zona **non entra nel percorso 1**: lì compaiono solo professionisti conosciuti dall'agenzia. Qui resta l'esito finale (per esempio un collegamento gratuito a Google Maps più avanti, o nulla); il ticket non ferma il controllo B.
+
+**22/11/2026, sessione di decisione** (grilling e domain-modeling, una domanda alla volta). **Nessuna risposta del collaboratore di ƎE né dell'avvocato** è arrivata con la richiesta della sessione: non si presume nulla. Già decisi e non riaperti: nel percorso 1 nessuna ricerca in zona, solo professionisti conosciuti dall'agenzia (6/11/2026); nessun servizio dati a pagamento (5/11/2026); ƎE **indica** i professionisti della Rete ƎE e non manda dati dei clienti (8/11 e 12/11/2026); entra nella rete solo chi ƎE conosce davvero, non un nome trovato online (12/11/2026); niente recensioni; sul sito il contatto passa dall'agenzia. Fatti dalla [ricerca](04-ricerca-professionisti-in-zona.md) del 4/11/2026, non riletti: le condizioni di Google possono essere cambiate e vanno rilette prima di qualsiasi uso.
