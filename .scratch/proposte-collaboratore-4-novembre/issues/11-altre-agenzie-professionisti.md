@@ -1,7 +1,7 @@
 # Altre agenzie e i loro professionisti
 
 Type: grilling
-Status: claimed
+Status: resolved
 Blocked by: 08
 Mappa: [Proposte del collaboratore di ƎE del 4/11/2026](../map.md)
 
@@ -13,6 +13,18 @@ Per ogni proposta si porta all'utente, in parole semplici: punti dell'audio, cos
 
 ## Risposta (Answer)
 
+Chiuso il 23/11/2026 con tre decisioni dell'utente, una alla volta, tutte sulla raccomandazione; **nessuna risposta del collaboratore di ƎE né dell'avvocato** (PRODUCT.md §12, 23/11/2026). Alternative e motivi nei «Commenti».
+
+| Proposta | Esito | Condizioni |
+| --- | --- | --- |
+| 8. Altre agenzie che aggiungono i propri professionisti con un gesto semplice | **Da integrare** nel percorso delle altre agenzie dopo il pilota (deciso il 3/11/2026) | I due principi sotto; prima di costruire, la ricerca su legge e regole di quel percorso risponde alle tre domande sotto |
+
+1. **Strada aperta, nessuna rete in comune.** Le scelte del pilota non chiudono la strada a una rete per ogni agenzia: **una scheda e un sì per ogni agenzia** (lo stesso professionista con due agenzie ha due schede, ognuna con il suo sì, la sua verifica dell'albo e i suoi dati) e **nessuna rete in comune** fra agenzie. Alla seconda agenzia si rivedono quattro dettagli oggi pensati per ƎE: il nome «Rete ƎE», i testi accanto alla rete, «Chiama ƎE» negli SMS, la chiave del sito per ogni agenzia. Nulla cambia nel pilota.
+2. **Gesto semplice = invito.** L'agenzia scrive solo ciò che sa (chi, mestiere, telefono, come lo conosce) e il suo clic manda un **invito**; il professionista dice sì da sé, con la liberatoria dove serve, sa chi ha inserito i suoi dati e **compare solo dopo il sì**; l'operatore dell'agenzia controlla l'albo; ogni agenzia vede solo i suoi. La semplicità sta nel non rincorrere fogli e non ricopiare dati, non nel saltare i controlli. Esclusi: prendere professionisti dalla rete di un'altra agenzia, caricare in blocco la rubrica.
+3. **Esito: da integrare** nel percorso delle altre agenzie dopo il pilota. La sua ricerca iniziale su legge e regole risponde a: (a) ogni agenzia è titolare del proprio elenco? (b) cosa dice l'invito al professionista, compresa la fonte dei dati (GDPR art. 14)? (c) con più agenzie Connetto diventa un servizio di intermediazione online del regolamento UE 2019/1150 (già domanda 13 del [documento per l'avvocato](../domande-vendita-collaboratore-avvocato.md))? Oggi nulla si aggiunge al pilota né alle domande per l'avvocato.
+
+GLOSSARY.md invariato (nessun termine nuovo deciso). Sito di ƎE: contratto invariato, nessuna consegna.
+
 ## Commenti (Comments)
 
 **6/11/2026, dal ticket [Cosa, fra le proposte, può toccare il percorso 1](05-cosa-tocca-percorso-1.md).** Altre agenzie e i loro professionisti **non entrano nel percorso 1**: restano per dopo il pilota; la scheda del professionista sta già nell'agenzia, con dati separati, e non chiude la strada. Qui resta l'esito finale; il ticket non ferma il controllo B.
@@ -21,3 +33,4 @@ Per ogni proposta si porta all'utente, in parole semplici: punti dell'audio, cos
 
 - *Domanda 1, le scelte del pilota chiudono la strada a una rete per ogni agenzia?* Fatti: la scheda del professionista sta nell'agenzia (ARCHITECTURE.md, «Tecnici della casa»), l'agenzia è sulle radici e i dati sono separati (ADR 0003); la ricerca indica che ogni agenzia è titolare del proprio elenco e che il sì del professionista vale verso chi lo indica (**inferenza**, da confermare con il parere privacy). Pensati per ƎE: il nome «Rete ƎE», i testi accanto alla rete, «Chiama ƎE» negli SMS, la chiave del sito. Alternative: **A** non aggiungere nulla (nessun costo, ma i dettagli vanno riscoperti e resta il rischio di «condividere» schede fra agenzie); **B** forma minima: si scrive che la strada resta aperta con due regole (una scheda e un sì per ogni agenzia; nessuna rete in comune) e i quattro dettagli da rivedere alla seconda agenzia, senza cambiare il pilota; **C** rete in comune fra agenzie (un professionista, una scheda usata da più agenzie: mescola dati e consensi, fa entrare chi l'agenzia non conosce, contro il 12/11/2026, e porta domande legali senza nessuno che la usi nel pilota). Raccomandazione dell'agente: B. **Scelta dell'utente: B.**
 - *Domanda 2, cosa vuol dire per un'altra agenzia aggiungere i propri professionisti «con un gesto semplice».* Fatto dalla ricerca: se i dati li inserisce un'agenzia, il professionista va informato e gli va detta la fonte (GDPR art. 14); il clic può essere l'invio di un invito, con la comparsa solo dopo il sì (**inferenza**, da confermare con il parere privacy). Alternative: **A** non aggiungere nulla (la seconda agenzia fa come ƎE: sicuro, ma l'idea resta senza risposta e la semplicità non è scritta); **B** forma minima, un principio: l'agenzia scrive solo ciò che sa (chi, mestiere, telefono, come lo conosce) e il suo clic manda un invito; il professionista dice sì da sé, con la liberatoria dove serve, sa chi ha inserito i suoi dati e compare solo dopo il sì; l'operatore dell'agenzia controlla l'albo; ogni agenzia vede solo i suoi; la semplicità sta nel non rincorrere fogli e non ricopiare dati, non nel saltare i controlli; nulla cambia nel pilota; **C** caricare in blocco la rubrica dell'agenzia (fa entrare chi forse l'agenzia non conosce, contro il 12/11/2026; informativa, albo e sì per ognuno, più lavoro e più errori). Esclusa dalla domanda 1: prendere professionisti dalla rete di un'altra agenzia. Raccomandazione dell'agente: B. **Scelta dell'utente: B.**
+- *Domanda 3, esito della proposta 8.* Cornice: il percorso nuovo dopo il pilota per agenzie, collaborazioni e provvigioni ([ticket del 3/11](../../architettura-percorso-1/issues/22-richieste-collaboratore-3-novembre.md), non riaperto), che parte da una ricerca su legge e regole, poi dati del pilota e 2–3 agenzie amiche. Alternative: **da integrare** in quel percorso con i due principi e tre domande per la sua ricerca (titolare di ogni elenco; cosa dice l'invito, con la fonte dei dati; servizio di intermediazione online, regolamento UE 2019/1150); **da rimandare** a quando un'altra agenzia mostra interesse (effetto simile, ma fuori dal percorso deciso, con il rischio di ridiscuterla da capo); **già coperta** (le tre domande andrebbero perse); **da approfondire ora** (ricerca o parere per qualcosa che nel pilota nessuno usa); **da scartare** (si perde un vantaggio che il collaboratore vede, oggi a costo zero). Raccomandazione dell'agente: da integrare. **Scelta dell'utente: sì, da integrare.**
