@@ -6,6 +6,27 @@ Ogni voce segue la [§10 del contratto](integrazione-sito.md#10-aggiornamenti-fr
 
 ---
 
+## 23/11/2026: tessera di chi possiede una casa
+
+**Decisione e fonte.** Decisioni dell'utente del 23/11/2026 nel ticket [Quale tessera ha chi affitta e vende insieme](../.scratch/proposte-collaboratore-4-novembre/issues/14-tessera-affitta-e-vende.md) ([PRODUCT.md](../PRODUCT.md) §12, 23/11/2026), sulla risposta del collaboratore di ƎE dell'8/11/2026. Cambia in parte il punto 4 della voce del 7/11/2026.
+
+**Cosa cambia per il sito.**
+1. La seconda tessera fisica, di un altro colore, non è più «di chi vende» ma **di chi possiede una casa** con ƎE, affittata, gestita o in vendita. L'arancione resta all'inquilino. Chi affitta e vende insieme ha una tessera sola.
+2. La tessera resta un segno consegnato **solo in agenzia**: niente vantaggi, sconti, servizi in più, livelli o prezzi. Il «gradino più alto» di cui parla il collaboratore riguarda solo l'aspetto.
+3. Il colore **non è ancora scelto**: si sceglie nella mappa del design di Connetto.
+
+**Compatibilità.** Nessun cambiamento al contratto (versione 1): il sito non legge dati sulla tessera.
+
+**Disponibilità effettiva.** Solo una decisione; nulla di nuovo esiste. Il controllo B di Connetto non aspetta più i ticket delle proposte del collaboratore.
+
+**Prove.** Nessuna: non c'è nulla da provare.
+
+**Azione richiesta al sito.**
+- Se il sito parla della tessera, non chiamarla più «tessera di chi vende»: è la tessera di chi possiede una casa con ƎE, consegnata in agenzia, senza vantaggi né prezzi.
+- Non mostrarla con un colore o un disegno finché il colore non è scelto.
+
+---
+
 ## 22/11/2026: nessuna ricerca in zona accanto alla rete
 
 **Decisione e fonte.** Decisioni dell'utente del 22/11/2026 nel ticket [Ricerca dei professionisti in zona](../.scratch/proposte-collaboratore-4-novembre/issues/10-ricerca-in-zona.md) ([PRODUCT.md](../PRODUCT.md) §12, 22/11/2026). La proposta 9 del collaboratore di ƎE («trovare professionisti in zona, anche con Google») è **rimandata**: torna solo se nel pilota mancano spesso mestieri o zone.

@@ -119,28 +119,13 @@ Il 22/11/2026 è chiuso il ticket «Ricerca dei professionisti in zona» (PRODUC
 
 Il 23/11/2026 è chiuso il ticket «Altre agenzie e i loro professionisti» (PRODUCT.md §12, 23/11/2026): le scelte del pilota non chiudono la strada a una rete per ogni agenzia, con una scheda e un sì per ogni agenzia e nessuna rete in comune; il «gesto semplice» è un invito, e il professionista compare solo dopo il suo sì; proposta 8 da integrare nel percorso delle altre agenzie dopo il pilota. Il sito non cambia.
 
-**Prossima sessione:** il ticket 14 «Quale tessera ha chi affitta e vende insieme», con il messaggio «Quando hai parlato con il collega della tessera di chi vende» qui sotto; il **controllo B** aspetta solo lui. Dopo il ticket 14 resta il ticket di chiusura «Sostenibilità e ordine», con il messaggio successivo.
+Il 23/11/2026 è chiuso anche il ticket «Quale tessera ha chi affitta e vende insieme» (PRODUCT.md §12, 23/11/2026): la seconda tessera fisica va a **chi possiede una casa**, l'arancione resta all'inquilino; il «gradino più alto» è solo nell'aspetto; il colore dice «possiede una casa» e deve vedersi bene, e si sceglie nella mappa del design. Sulla pagina condivisa con il collega non c'erano risposte. Il **controllo B** non aspetta più nessun ticket delle proposte del collaboratore.
+
+**Prossima sessione:** il ticket di chiusura «Sostenibilità e ordine», con il messaggio qui sotto.
 
 ---
 
-## Quando hai parlato con il collega della tessera di chi vende
-
-Messaggio:
-
-/wayfinder .scratch/proposte-collaboratore-4-novembre/map.md — ticket «Quale tessera ha chi affitta e vende insieme» (.scratch/proposte-collaboratore-4-novembre/issues/14-tessera-affitta-e-vende.md): con il collega abbiamo usato la pagina condivisa; leggi le risposte salvate lì. Nei commenti del ticket c'è anche la risposta del collaboratore riferita l'8/11/2026 (chi possiede una casa, che la affitti o la venda, ha la tessera dell'altro colore).
-
-Leggi AGENTS.md, STATUS.md, la mappa, il ticket, il ticket chiuso «Una tessera per chi vende e un'app sola» (Risposta e Commenti, domanda 4-bis) e PRODUCT.md §12 (25/10 e 7/11/2026). Leggi le risposte della pagina https://claude.ai/artifact/PAw8wJuEQ3g6fEKjfugPKL (raccolta `risposte`) e i suoi commenti; sono discussione, non decisioni. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
-
-- Rivendica il ticket (`Status: claimed`) prima di lavorare e lavora solo su questo, con le skill `grilling` e `domain-modeling`.
-- Riassumi nel ticket le risposte con chi le ha date e la data; se le domande 3 e 4 della pagina contengono risposte del collaboratore, registrale anche nel ticket «Una tessera per chi vende e un'app sola» e segnala cosa cambiano.
-- Portami una alla volta, con una raccomandazione motivata: se adottare la proposta del collaboratore (seconda tessera per chi possiede una casa, non solo per chi vende) o un'altra opzione per chi affitta e vende insieme; cosa vuol dire «un gradino più alto», visto che la tessera non dà permessi e i livelli sono fuori dalla prima versione; se il colore che dice in pubblico «vende» o «possiede» va bene. Il colore resta alla mappa del design. Non simulare le mie risposte.
-- Registra in PRODUCT.md §12 solo ciò che confermo; chiudi il ticket e aggiorna «Decisioni finora» della mappa e la voce del colore nella mappa del design. Nessun ordine o contatto con fornitori.
-
-Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
-
----
-
-## Dopo il ticket 14: chiusura delle proposte del collaboratore di ƎE
+## Prossima sessione: chiusura delle proposte del collaboratore di ƎE
 
 Messaggio:
 
@@ -148,7 +133,7 @@ Messaggio:
 
 Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora, Non ancora specificato, Fuori ambito) e il ticket; poi, solo dove servono, le risposte dei ticket chiusi della mappa, PRODUCT.md §10.1, §10.10 e §12 (dal 3/11 al 23/11/2026 e la decisione del ticket 14) e il documento di domande per collaboratore e avvocato. Il ticket del 3/11 su collaborazioni e provvigioni non si riapre. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti. Il repository del sito non si legge né si modifica, salvo mia richiesta esplicita.
 
-- Controlla prima che i ticket 06–11 e 14 siano chiusi; se il 14 è aperto, fermati e dimmelo.
+- Controlla prima che i ticket 06–11 e 14 siano chiusi; se uno è aperto, fermati e dimmelo.
 - Rivendica il ticket (`Status: claimed`) prima di lavorare e lavora solo su questo, con le skill `grilling` e `domain-modeling`.
 - Le decisioni fino all'ultima registrata in PRODUCT.md §12 sono già prese: non chiedermele di nuovo.
 - Se in fondo a questo messaggio ci sono risposte del collaboratore di ƎE o dell'avvocato, registrale nei ticket pertinenti con chi ha risposto e la data e usale; se non ci sono, non inventarle.
@@ -332,6 +317,7 @@ La richiesta è pronta nel ticket [Ricerca: tessere fisiche](.scratch/controllo-
 Leggi AGENTS.md, STATUS.md, il ticket, docs/ricerca/tessere.md e docs/ricerca/tessera-contactless.md (sezione 5) e in PRODUCT.md §12 la riga «Tessera fisica nel pilota». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice o decisioni di tentativi precedenti.
 
 - Confronta i preventivi con i requisiti della richiesta (chip DESFire EV3 originale, lamina arancione e antenna, codice da file, chiavi, campione) e segnala cosa manca.
+- La richiesta copre solo l'arancione: dal 23/11/2026 c'è anche una seconda tessera per chi possiede una casa (PRODUCT.md §12). Se il suo colore non è ancora scelto nella mappa del design, dimmelo; la divisione delle quantità fra i due modelli è un dato mancante, non inventarla.
 - Portami una alla volta, con una raccomandazione: fornitore, quantità (era consigliato 250), lamina o plastica a colore fisso se la lamina costa troppo, campione da ordinare. Nessun ordine o pagamento senza la mia autorizzazione esplicita.
 - Registra le decisioni in PRODUCT.md §12 e nel ticket.
 
