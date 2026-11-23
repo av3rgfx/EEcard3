@@ -117,26 +117,9 @@ Il 13/11/2026 è installata la skill `logo-design` (senza i loghi di marchi altr
 
 Il 22/11/2026 è chiuso il ticket «Ricerca dei professionisti in zona» (PRODUCT.md §12, 22/11/2026): nessuna ricerca in zona, nemmeno dopo il percorso 1, e se manca un mestiere si chiede in agenzia; l'agenzia indica solo chi conosce, in app, sul sito e al banco, e non passa nomi trovati online; proposta 9 da rimandare, torna solo se nel pilota mancano spesso mestieri o zone, e allora solo un collegamento gratuito a Google Maps fuori da Connetto. Per il sito: voce del 22/11/2026 in docs/consegne-al-sito.md, contratto invariato.
 
-**Prossima sessione:** il ticket «Altre agenzie e i loro professionisti», con il messaggio successivo; non ferma il controllo B. Il **controllo B** aspetta ora solo il ticket 14, da fare con il secondo messaggio quando l'utente ha parlato con il collega (c'è già la risposta del collaboratore). Dopo il ticket 11 e il ticket 14 resta il ticket di chiusura «Sostenibilità e ordine».
+Il 23/11/2026 è chiuso il ticket «Altre agenzie e i loro professionisti» (PRODUCT.md §12, 23/11/2026): le scelte del pilota non chiudono la strada a una rete per ogni agenzia, con una scheda e un sì per ogni agenzia e nessuna rete in comune; il «gesto semplice» è un invito, e il professionista compare solo dopo il suo sì; proposta 8 da integrare nel percorso delle altre agenzie dopo il pilota. Il sito non cambia.
 
----
-
-## Proposte del collaboratore di ƎE del 4/11/2026
-
-Messaggio:
-
-/wayfinder .scratch/proposte-collaboratore-4-novembre/map.md — ticket «Altre agenzie e i loro professionisti» (.scratch/proposte-collaboratore-4-novembre/issues/11-altre-agenzie-professionisti.md)
-
-Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora, Non ancora specificato, Fuori ambito), il ticket con i suoi commenti e il punto 8 dell'audio (.scratch/proposte-collaboratore-4-novembre/audio-4-novembre.md); poi, solo dove servono, i ticket chiusi «Cosa, fra le proposte, può toccare il percorso 1», «Professionisti della compravendita: in che forma, e chi fa cosa», «Visibilità gratuita, trasparenza e confini del lavoro dell'agenzia» e «Ricerca dei professionisti in zona» (Risposta), la ricerca chiusa «Ricerca: segnalare professionisti, fra privacy, trasparenza e regole delle professioni» e PRODUCT.md §4 e §12 (18/10, 3/11, 6/11, 8/11, 12/11 e 22/11/2026). Il ticket del 3/11 su collaborazioni e provvigioni non si riapre. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti. Il repository del sito non si legge né si modifica, salvo mia richiesta esplicita.
-
-- Rivendica il ticket (`Status: claimed`) prima di lavorare e lavora solo su questo, con le skill `grilling` e `domain-modeling`.
-- Le decisioni fino al 22/11/2026 sono già prese: non chiedermele di nuovo. In particolare: le altre agenzie vengono dopo il pilota e non entrano nel percorso 1 (18/10 e 6/11/2026); collaborazioni e provvigioni sono già in un percorso dopo il pilota (3/11/2026); una sola Rete ƎE nello stesso registro dei tecnici, con la scheda del professionista nell'agenzia e dati separati (8/11/2026); entra nella rete solo chi l'agenzia conosce davvero, con albo controllato e sì scritto, e nessuno paga per esserci (12/11/2026); l'agenzia indica solo chi conosce e non passa nomi trovati online (22/11/2026).
-- Se in fondo a questo messaggio ci sono risposte del collaboratore di ƎE o dell'avvocato, registrale nel ticket con chi ha risposto e la data e usale; se non ci sono, non inventarle.
-- Portami una alla volta, in parole semplici, con una raccomandazione motivata e le conseguenze delle alternative (compresi «non aggiungere nulla» e una forma minima): se le scelte del pilota chiudono la strada a una rete per ogni agenzia, senza costruirla; cosa vuol dire per un'altra agenzia aggiungere i propri professionisti «con un gesto semplice» senza togliere consenso del professionista, liberatoria, verifica dell'albo e dati separati; l'esito della proposta 8 (già coperta, da integrare, da approfondire, da rimandare con cosa la fa tornare, da scartare). Non simulare le mie risposte.
-- Non svolgere il controllo B e non anticipare lo sviluppo; niente codice, schermate o integrazioni; nessun contatto con agenzie, professionisti o servizi reali.
-- Registra in PRODUCT.md §12 solo ciò che confermo, con data e motivo; termini nuovi in GLOSSARY.md solo se li decido; la discussione resta nel ticket. Chiudi il ticket con la risposta e aggiorna «Decisioni finora» della mappa. Se la decisione tocca il sito, aggiorna docs/integrazione-sito.md e aggiungi una voce in cima a docs/consegne-al-sito.md.
-
-Chiudi la sessione aggiornando STATUS.md e START_HERE.md con verifiche, decisioni, problemi aperti e il messaggio /wayfinder per il ticket successivo, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
+**Prossima sessione:** il ticket 14 «Quale tessera ha chi affitta e vende insieme», con il messaggio «Quando hai parlato con il collega della tessera di chi vende» qui sotto; il **controllo B** aspetta solo lui. Dopo il ticket 14 resta il ticket di chiusura «Sostenibilità e ordine», con il messaggio successivo.
 
 ---
 
@@ -154,6 +137,26 @@ Leggi AGENTS.md, STATUS.md, la mappa, il ticket, il ticket chiuso «Una tessera 
 - Registra in PRODUCT.md §12 solo ciò che confermo; chiudi il ticket e aggiorna «Decisioni finora» della mappa e la voce del colore nella mappa del design. Nessun ordine o contatto con fornitori.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
+
+---
+
+## Dopo il ticket 14: chiusura delle proposte del collaboratore di ƎE
+
+Messaggio:
+
+/wayfinder .scratch/proposte-collaboratore-4-novembre/map.md — ticket «Sostenibilità e ordine dei percorsi: la chiusura dello studio» (.scratch/proposte-collaboratore-4-novembre/issues/12-sostenibilita-ordine.md)
+
+Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora, Non ancora specificato, Fuori ambito) e il ticket; poi, solo dove servono, le risposte dei ticket chiusi della mappa, PRODUCT.md §10.1, §10.10 e §12 (dal 3/11 al 23/11/2026 e la decisione del ticket 14) e il documento di domande per collaboratore e avvocato. Il ticket del 3/11 su collaborazioni e provvigioni non si riapre. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti. Il repository del sito non si legge né si modifica, salvo mia richiesta esplicita.
+
+- Controlla prima che i ticket 06–11 e 14 siano chiusi; se il 14 è aperto, fermati e dimmelo.
+- Rivendica il ticket (`Status: claimed`) prima di lavorare e lavora solo su questo, con le skill `grilling` e `domain-modeling`.
+- Le decisioni fino all'ultima registrata in PRODUCT.md §12 sono già prese: non chiedermele di nuovo.
+- Se in fondo a questo messaggio ci sono risposte del collaboratore di ƎE o dell'avvocato, registrale nei ticket pertinenti con chi ha risposto e la data e usale; se non ci sono, non inventarle.
+- Portami una alla volta, in parole semplici, con una raccomandazione motivata e le conseguenze delle alternative: se gli esiti reggono insieme nelle 1–1,5 ore al giorno di ƎE e per chi tiene in funzione la piattaforma (circa 20 € al mese), con i costi nuovi; l'impatto sul percorso 1, sul controllo B e sul pilota; il posto dei percorsi nuovi nell'ordine (2 richiesta d'aiuto, 3 bollette, 4 report annuale; poi le altre agenzie, che ora comprendono anche la proposta 8); le domande per i pareri da aggiungere a PRODUCT.md §10.10. Verifica che ogni proposta della mappa abbia il suo esito. Non simulare le mie risposte.
+- Non svolgere il controllo B e non anticipare lo sviluppo; niente codice, schermate o integrazioni; nessun contatto con agenzie, professionisti o servizi reali.
+- Registra in PRODUCT.md §12 solo ciò che confermo, con data e motivo; la discussione resta nel ticket. Chiudi il ticket e la mappa se ha raggiunto la destinazione. Se una decisione tocca il sito, aggiorna docs/integrazione-sito.md e aggiungi una voce in cima a docs/consegne-al-sito.md.
+
+Chiudi la sessione aggiornando STATUS.md e START_HERE.md con verifiche, decisioni, problemi aperti e il messaggio per il passo successivo, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 
 ---
 
