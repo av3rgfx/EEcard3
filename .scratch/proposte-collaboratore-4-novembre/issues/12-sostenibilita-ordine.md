@@ -1,7 +1,7 @@
 # Sostenibilità e ordine dei percorsi: la chiusura dello studio
 
 Type: grilling
-Status: open
+Status: claimed
 Blocked by: 06, 07, 08, 09, 10, 11, 14
 Mappa: [Proposte del collaboratore di ƎE del 4/11/2026](../map.md)
 
