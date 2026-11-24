@@ -41,3 +41,7 @@ Le scelte si fanno con l'utente una alla volta, con una raccomandazione e le con
 *Decisione 3, i testi (utente, 24/11/2026: «3 B», diversa dalla raccomandazione A).* Le tre frasi **in fondo**, dopo i nomi e dopo «Non c'è il mestiere che ti serve?», sotto «Come sono scelti», con la frase sui compensi e «chi fa cosa» quando arriveranno; la nota sul rapporto resta accanto al nome. Limite già detto all'utente nella pagina: chi chiama il primo nome di solito non le legge. Registrato in DESIGN.md.
 
 *Decisione 4, chi parla nei testi:* domanda semplice, fatta direttamente in chat (regola del 24/11/2026).
+
+*Decisione 4, chi parla (utente, 24/11/2026: «4 A»).* **Nessuna prima persona**: «Professionisti che ƎE conosce perché lavora in questa zona…», «Prima di indicarli ƎE controlla… e lo ricontrolla ogni anno»; in «chi fa cosa» il «tu». Aggiornate le bozze per l'avvocato (F12, F14) e la §6 del contratto con il sito, con una voce in docs/consegne-al-sito.md. Registrato in DESIGN.md.
+
+*Decisione 5, presentata il 24/11/2026:* cosa vede il cliente con la rete spenta. A nessuna riga, e nelle case in vendita «Chiama ƎE» dice «anche per notaio, geometra e altri professionisti» (consigliata); B la riga c'è con «non ancora attivi» e apre una pagina «chiedi in agenzia»; C nessuna traccia. In attesa della risposta.
