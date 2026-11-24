@@ -45,3 +45,7 @@ Le scelte si fanno con l'utente una alla volta, con una raccomandazione e le con
 *Decisione 4, chi parla (utente, 24/11/2026: «4 A»).* **Nessuna prima persona**: «Professionisti che ƎE conosce perché lavora in questa zona…», «Prima di indicarli ƎE controlla… e lo ricontrolla ogni anno»; in «chi fa cosa» il «tu». Aggiornate le bozze per l'avvocato (F12, F14) e la §6 del contratto con il sito, con una voce in docs/consegne-al-sito.md. Registrato in DESIGN.md.
 
 *Decisione 5, presentata il 24/11/2026:* cosa vede il cliente con la rete spenta. A nessuna riga, e nelle case in vendita «Chiama ƎE» dice «anche per notaio, geometra e altri professionisti» (consigliata); B la riga c'è con «non ancora attivi» e apre una pagina «chiedi in agenzia»; C nessuna traccia. In attesa della risposta.
+
+*Decisione 5, rete spenta (utente, 24/11/2026: «5 A»).* Nessuna riga dei professionisti; nelle case senza gestione «Chiama ƎE» dice «anche per notaio, geometra e altri professionisti». Registrato in DESIGN.md.
+
+*Decisione 6, presentata il 24/11/2026:* dove sta la rete nello spazio dell'operatore. A dentro «Persone», con due pulsanti «Clienti» e «Rete ƎE» sopra l'elenco (consigliata); B una quinta scheda «Rete». In tutte e due la scheda del professionista e la pagina «spenta» della prova, gruppo 6. In attesa della risposta.
