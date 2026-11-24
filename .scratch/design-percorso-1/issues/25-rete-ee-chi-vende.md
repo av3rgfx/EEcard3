@@ -49,3 +49,7 @@ Le scelte si fanno con l'utente una alla volta, con una raccomandazione e le con
 *Decisione 5, rete spenta (utente, 24/11/2026: «5 A»).* Nessuna riga dei professionisti; nelle case senza gestione «Chiama ƎE» dice «anche per notaio, geometra e altri professionisti». Registrato in DESIGN.md.
 
 *Decisione 6, presentata il 24/11/2026:* dove sta la rete nello spazio dell'operatore. A dentro «Persone», con due pulsanti «Clienti» e «Rete ƎE» sopra l'elenco (consigliata); B una quinta scheda «Rete». In tutte e due la scheda del professionista e la pagina «spenta» della prova, gruppo 6. In attesa della risposta.
+
+*Decisione 6, la rete per l'operatore (utente, 24/11/2026: «6 A»).* **Dentro «Persone»**, con «Clienti» e «Rete ƎE»; la scheda del professionista, «Togli dalla rete» con il motivo da un elenco e la pagina «spenta» come nella prova, gruppo 6. Registrato in DESIGN.md.
+
+*Decisione 7, il promemoria:* domanda semplice, fatta direttamente in chat.
