@@ -37,3 +37,7 @@ Le scelte si fanno con l'utente una alla volta, con una raccomandazione e le con
 *Decisione 2, l'elenco (utente, 24/11/2026: «2 A»).* **Una pagina sola** con i mestieri in cui c'è qualcuno e in fondo, sempre, «Non c'è il mestiere che ti serve?» con la frase del 22/11/2026 e «Chiama ƎE». Scartate B e C come nella pagina delle scelte. Registrato in DESIGN.md.
 
 *Decisione 3, presentata il 24/11/2026:* dove stanno le tre frasi in bozza su come sono scelti. A in cima, in un riquadro chiaro prima dei nomi, con «chi fa cosa» in fondo quando arriverà (consigliata); B in fondo, dopo i nomi; C dietro una riga «Come sono scelti» che apre un foglio. La pagina mostra, sotto ogni telefono, cosa la proprietaria ha letto prima di toccare il primo «Chiama». In attesa della risposta.
+
+*Decisione 3, i testi (utente, 24/11/2026: «3 B», diversa dalla raccomandazione A).* Le tre frasi **in fondo**, dopo i nomi e dopo «Non c'è il mestiere che ti serve?», sotto «Come sono scelti», con la frase sui compensi e «chi fa cosa» quando arriveranno; la nota sul rapporto resta accanto al nome. Limite già detto all'utente nella pagina: chi chiama il primo nome di solito non le legge. Registrato in DESIGN.md.
+
+*Decisione 4, chi parla nei testi:* domanda semplice, fatta direttamente in chat (regola del 24/11/2026).
