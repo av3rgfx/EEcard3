@@ -6,6 +6,27 @@ Ogni voce segue la [§10 del contratto](integrazione-sito.md#10-aggiornamenti-fr
 
 ---
 
+## 24/11/2026: elenco dei professionisti vuoto all'avvio del pilota
+
+**Decisione e fonte.** Decisioni dell'utente del 23 e del 24/11/2026 nel ticket [Sostenibilità e ordine dei percorsi: la chiusura dello studio](../.scratch/proposte-collaboratore-4-novembre/issues/12-sostenibilita-ordine.md) ([PRODUCT.md](../PRODUCT.md) §12, 24/11/2026), che chiude la mappa delle proposte del collaboratore di ƎE.
+
+**Cosa cambia per il sito.**
+1. Il pilota di Connetto può partire con la **Rete ƎE spenta**, finché mancano i pareri dell'avvocato e privacy sulla rete e i testi definitivi ([integrazione-sito.md](integrazione-sito.md) §6). In quel periodo l'elenco dei professionisti è **vuoto**; poi la rete si accende senza cambiare il contratto.
+2. **Fascicolo per la vendita e altri servizi per chi vende** passano a dopo il pilota, nel percorso per chi vende: per ora non c'è nulla da presentare sul sito.
+3. Ordine dei percorsi di Connetto dopo il pilota: prima il percorso per chi vende, poi le altre agenzie. Nulla cambia oggi per il sito.
+
+**Compatibilità.** Nessun campo cambia (versione 1): un elenco vuoto è una risposta valida.
+
+**Disponibilità effettiva.** Solo decisioni; nessun endpoint esiste.
+
+**Prove.** Nessuna: non ci sono codice né dati. Da aggiungere alle verifiche condivise (§8), quando esisteranno: con l'elenco vuoto il sito non mostra la sezione dei professionisti né segnaposto.
+
+**Azione richiesta al sito.**
+- Prevedere che l'elenco dei professionisti possa restare vuoto anche a lungo, all'avvio: niente sezione vuota, niente «presto disponibile», niente nomi presi altrove.
+- Non presentare sul sito un fascicolo per la vendita o servizi per chi vende diversi dalla valutazione.
+
+---
+
 ## 23/11/2026: tessera di chi possiede una casa
 
 **Decisione e fonte.** Decisioni dell'utente del 23/11/2026 nel ticket [Quale tessera ha chi affitta e vende insieme](../.scratch/proposte-collaboratore-4-novembre/issues/14-tessera-affitta-e-vende.md) ([PRODUCT.md](../PRODUCT.md) §12, 23/11/2026), sulla risposta del collaboratore di ƎE dell'8/11/2026. Cambia in parte il punto 4 della voce del 7/11/2026.

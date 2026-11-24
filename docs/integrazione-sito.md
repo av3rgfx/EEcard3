@@ -148,6 +148,8 @@ Stato: **rete approvata dall'utente il 5/11/2026; registro e lettura da Connetto
   - *Da nessuna parte:* recensioni o giudizi, cellulari ed email personali, numero d'albo. Il sito non aggiunge testi propri su come sono scelti, sull'ordine o sui soldi.
 - **Ricerca in zona, decisa il 22/11/2026** nel [ticket 10](../.scratch/proposte-collaboratore-4-novembre/issues/10-ricerca-in-zona.md) ([PRODUCT.md](../PRODUCT.md) §12, 22/11/2026): accanto alla rete **nessuna ricerca in zona e nessun collegamento a Google**, né in Connetto né sul sito; l'agenzia indica solo chi conosce, e se un visitatore chiede un mestiere che la rete non ha, gli dice che non conosce nessuno, senza passare nomi trovati online. Il contratto non cambia.
 
+- **Rete spenta all'avvio, decisa il 24/11/2026** nel [ticket di chiusura](../.scratch/proposte-collaboratore-4-novembre/issues/12-sostenibilita-ordine.md) ([PRODUCT.md](../PRODUCT.md) §12, 24/11/2026): il pilota di Connetto può partire con la Rete ƎE **spenta**, finché mancano i pareri dell'avvocato (F7, F9, F11–F14, F8 se serve) e privacy (G15–G19) e i testi definitivi. In quel periodo l'elenco dei professionisti risponde vuoto (`"professionisti": []`, risposta `200`) e il sito non mostra la sezione né segnaposto; quando la rete si accende le voci arrivano con le regole di sempre, senza cambiare il contratto.
+
 **Tre cose distinte nel registro** (proposta per il modello di Connetto, sopra i «tecnici della casa» già decisi: una scheda nell'agenzia con nome, mestiere, telefono e liberatoria, senza account):
 1. **Presenza nel registro:** la scheda del professionista nell'agenzia, inserita una volta dall'operatore. Vale anche per il tecnico scelto da un proprietario.
 2. **Legame privato con una casa:** «I tecnici di questa casa», prima quello del proprietario poi quello dell'agenzia. **Non esce mai** verso il sito.
@@ -240,6 +242,7 @@ Da eseguire quando esisteranno le due parti, solo con dati inventati. **Nessuna 
 | Indirizzo base e dominio di Connetto | dopo il parere sul nome | tutto |
 | Nome e simbolo di Connetto sul sito: **deciso il 12/11/2026** che non compaiono prima del parere sul marchio; la copia dei valori visivi nel sito resta come riferimento | consulente in marchi | sezione del sito su Connetto |
 | Limite di richieste e frequenza della rotazione | proposta tecnica, al controllo B | §4 |
+| Pareri per accendere la Rete ƎE: elencati in [PRODUCT.md](../PRODUCT.md) §10.10 dal 24/11/2026; fino ad allora l'elenco dei professionisti è vuoto (§6) | avvocato, esperto privacy | elenco dei professionisti, non l'avvio del pilota |
 | Pareri già segnalati: valutazione pubblicata (privacy), pubblicazione dei professionisti, imparzialità del mediatore e rete ([ricerca](ricerca/segnalare-professionisti.md), §6) | professionisti esterni | prima dell'uso reale |
 
 Coordinamento tecnico, solo proposte: se sito e Connetto stanno sotto lo stesso dominio di ƎE, ognuno usa il proprio nome di host come identificativo delle passkey, così gli account restano separati; per le email, mittenti e identità di invio distinti per i due prodotti.

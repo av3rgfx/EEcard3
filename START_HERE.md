@@ -121,27 +121,37 @@ Il 23/11/2026 è chiuso il ticket «Altre agenzie e i loro professionisti» (PRO
 
 Il 23/11/2026 è chiuso anche il ticket «Quale tessera ha chi affitta e vende insieme» (PRODUCT.md §12, 23/11/2026): la seconda tessera fisica va a **chi possiede una casa**, l'arancione resta all'inquilino; il «gradino più alto» è solo nell'aspetto; il colore dice «possiede una casa» e deve vedersi bene, e si sceglie nella mappa del design. Sulla pagina condivisa con il collega non c'erano risposte. Il **controllo B** non aspetta più nessun ticket delle proposte del collaboratore.
 
-**Prossima sessione:** il ticket di chiusura «Sostenibilità e ordine», con il messaggio qui sotto.
+Il 24/11/2026 è chiusa la mappa delle proposte del collaboratore, con il ticket «Sostenibilità e ordine dei percorsi: la chiusura dello studio» (PRODUCT.md §12, 24/11/2026). Gli esiti reggono come ipotesi del pilota: nella misura «Quanto costa all'agenzia?» si contano a parte i minuti per le case senza gestione e per la rete. La piattaforma resta nei 20 € al mese; tessere e pareri li paga ƎE. Altri servizi per chi vende e fascicolo passano a dopo il pilota. Il pilota parte anche con la Rete ƎE spenta, finché mancano i suoi pareri. Dopo il report annuale vengono il percorso per chi vende e poi le altre agenzie. I pareri della rete e del marchio sono in §10.10. Per il sito: voce del 24/11/2026 in docs/consegne-al-sito.md (l'elenco dei professionisti può restare vuoto).
+
+**Da fare a cura dell'utente:** consegnare al collaboratore e all'avvocato il [documento di domande](.scratch/proposte-collaboratore-4-novembre/domande-vendita-collaboratore-avvocato.md); l'aggiornamento in cima dice quali domande servono subito. Le risposte si portano in una sessione nuova, con il messaggio «Quando arrivano le risposte del collaboratore o dell'avvocato» qui sotto.
+
+**Prossima sessione:** il disegno della Rete ƎE e del colore della tessera di chi possiede, nella mappa del design, con il messaggio qui sotto. Poi il controllo B.
 
 ---
 
-## Prossima sessione: chiusura delle proposte del collaboratore di ƎE
+## Prossima sessione: Rete ƎE e tessera di chi possiede nel disegno del percorso 1
 
 Messaggio:
 
-/wayfinder .scratch/proposte-collaboratore-4-novembre/map.md — ticket «Sostenibilità e ordine dei percorsi: la chiusura dello studio» (.scratch/proposte-collaboratore-4-novembre/issues/12-sostenibilita-ordine.md)
+/wayfinder .scratch/design-percorso-1/map.md — «Non ancora specificato»: «Rete ƎE e chi vende nel percorso 1» e «Colore della tessera fisica di chi possiede una casa»
 
-Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora, Non ancora specificato, Fuori ambito) e il ticket; poi, solo dove servono, le risposte dei ticket chiusi della mappa, PRODUCT.md §10.1, §10.10 e §12 (dal 3/11 al 23/11/2026 e la decisione del ticket 14) e il documento di domande per collaboratore e avvocato. Il ticket del 3/11 su collaborazioni e provvigioni non si riapre. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti. Il repository del sito non si legge né si modifica, salvo mia richiesta esplicita.
+Leggi AGENTS.md, STATUS.md, la mappa del design (Destinazione, Note, Decisioni finora, Non ancora specificato) e DESIGN.md nelle parti pertinenti («Componenti e token», «Richieste del collaboratore di ƎE (percorso 1)», «Testi dell'interfaccia (percorso 1)»); poi PRODUCT.md §12 dal 6/11 al 24/11/2026, GLOSSARY.md («Professionista», «Rete ƎE», «Indicazione», «Tessera») e i ticket 08, 09, 10, 14 e 12 della mappa delle proposte, solo dove servono. La pagina del pacchetto è https://claude.ai/artifact/9KwvBBmgGc859wN67hWbAF; aprila con lo strumento Artifact, azione «read». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti. Il repository del sito non si legge né si modifica.
 
-- Controlla prima che i ticket 06–11 e 14 siano chiusi; se uno è aperto, fermati e dimmelo.
-- Rivendica il ticket (`Status: claimed`) prima di lavorare e lavora solo su questo, con le skill `grilling` e `domain-modeling`.
-- Le decisioni fino all'ultima registrata in PRODUCT.md §12 sono già prese: non chiedermele di nuovo.
-- Se in fondo a questo messaggio ci sono risposte del collaboratore di ƎE o dell'avvocato, registrale nei ticket pertinenti con chi ha risposto e la data e usale; se non ci sono, non inventarle.
-- Portami una alla volta, in parole semplici, con una raccomandazione motivata e le conseguenze delle alternative: se gli esiti reggono insieme nelle 1–1,5 ore al giorno di ƎE e per chi tiene in funzione la piattaforma (circa 20 € al mese), con i costi nuovi; l'impatto sul percorso 1, sul controllo B e sul pilota; il posto dei percorsi nuovi nell'ordine (2 richiesta d'aiuto, 3 bollette, 4 report annuale; poi le altre agenzie, che ora comprendono anche la proposta 8); le domande per i pareri da aggiungere a PRODUCT.md §10.10. Verifica che ogni proposta della mappa abbia il suo esito. Non simulare le mie risposte.
-- Non svolgere il controllo B e non anticipare lo sviluppo; niente codice, schermate o integrazioni; nessun contatto con agenzie, professionisti o servizi reali.
-- Registra in PRODUCT.md §12 solo ciò che confermo, con data e motivo; la discussione resta nel ticket. Chiudi il ticket e la mappa se ha raggiunto la destinazione. Se una decisione tocca il sito, aggiorna docs/integrazione-sito.md e aggiungi una voce in cima a docs/consegne-al-sito.md.
+- Trasforma le due voci in ticket della mappa del design (crea e poi collega), rivendicane uno (`Status: claimed`) e lavora solo su quello, con le skill `prototype`, `grilling` e `domain-modeling`.
+- Le decisioni registrate in PRODUCT.md §12 sono già prese: non chiedermele di nuovo. I testi accanto alla rete restano in bozza fino all'avvocato; disegna anche lo stato «rete spenta» e il messaggio «chiedi in agenzia».
+- Il colore della tessera di chi possiede deve vedersi bene e non deve sembrare un pacchetto (23/11/2026); l'arancione resta all'inquilino; colori, Manrope ed ƎE del marchio non cambiano.
+- Portami una decisione alla volta, in parole semplici, con una raccomandazione motivata e le conseguenze delle alternative; prove usa e getta solo per quella domanda, con dati inventati. Non simulare le mie risposte.
+- Non svolgere il controllo B e non scrivere codice applicativo; nessun contatto con persone o servizi reali.
 
-Chiudi la sessione aggiornando STATUS.md e START_HERE.md con verifiche, decisioni, problemi aperti e il messaggio per il passo successivo, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
+Registra in DESIGN.md solo ciò che confermo, con data e motivo; la discussione resta nel ticket. Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
+
+---
+
+## Quando arrivano le risposte del collaboratore o dell'avvocato
+
+Messaggio, con le risposte incollate in fondo:
+
+/wayfinder Risposte alle domande del documento .scratch/proposte-collaboratore-4-novembre/domande-vendita-collaboratore-avvocato.md, da [collaboratore di ƎE / avvocato / esperto privacy], del [data]. Leggi AGENTS.md, STATUS.md, la mappa chiusa delle proposte (Decisioni finora) e PRODUCT.md §10.10 e §12 dal 6/11 al 24/11/2026. Registra le risposte nei «Commenti» dei ticket pertinenti con chi ha risposto e la data, senza riaprirli; poi dimmi in parole semplici, una cosa alla volta, cosa cambiano: risposte per la rete (13, 14, 19, F7–F14, G15–G19) verso l'accensione della Rete ƎE; zone, tipi e superficie (21–24) verso il contratto con il sito; servizi per chi vende e fascicolo (1–12, E1–E6) verso un ticket nuovo per il percorso per chi vende, dopo il pilota (24/11/2026). Apri un ticket nuovo solo per ciò che chiede una decisione. Registra in PRODUCT.md §12 solo ciò che confermo; se tocca il sito, aggiorna docs/integrazione-sito.md e aggiungi una voce in cima a docs/consegne-al-sito.md. Chiudi aggiornando STATUS.md e START_HERE.md, poi commit, push e PR.
 
 ---
 
@@ -170,7 +180,7 @@ Chiudi la sessione aggiornando STATUS.md, poi fai commit e push sul branch della
 
 ## Controllo B: design e architettura del percorso 1
 
-Le risposte del collaboratore di ƎE sono registrate dal 3/11/2026 e le schermate delle sue richieste sono approvate lo stesso giorno. Dal 6/11/2026 il controllo B aspetta i pezzi che il ticket «Cosa, fra le proposte, può toccare il percorso 1» della mappa [Proposte del collaboratore di ƎE del 4/11/2026](.scratch/proposte-collaboratore-4-novembre/map.md) ha portato nel percorso 1, cioè i ticket 07, 08, 09 e 13 (il 06 è chiuso dal 7/11/2026). *Dal 12/11/2026* sono chiusi anche 07, 08, 09 e 13: il controllo B aspetta solo il ticket 14. L'utente intende aspettare la fine dello studio. Messaggio:
+Le risposte del collaboratore di ƎE sono registrate dal 3/11/2026 e le schermate delle sue richieste sono approvate lo stesso giorno. Dal 6/11/2026 il controllo B aspetta i pezzi che il ticket «Cosa, fra le proposte, può toccare il percorso 1» della mappa [Proposte del collaboratore di ƎE del 4/11/2026](.scratch/proposte-collaboratore-4-novembre/map.md) ha portato nel percorso 1, cioè i ticket 07, 08, 09 e 13 (il 06 è chiuso dal 7/11/2026). *Dal 12/11/2026* sono chiusi anche 07, 08, 09 e 13: il controllo B aspetta solo il ticket 14. *Dal 24/11/2026* la mappa delle proposte è chiusa: il controllo B aspetta il disegno della Rete ƎE e del colore della tessera di chi possiede (mappa del design) e controlla anche che la rete si possa tenere spenta all'avvio del pilota (mappa dell'architettura, «Non ancora specificato»). Messaggio:
 
 Controllo B del percorso 1 (docs/METODO.md, passo 7): design e architettura sono pronti, le risposte del collaboratore di ƎE sono registrate nel ticket «Il collaboratore di ƎE guarda lo spazio dell'operatore» e le schermate delle sue richieste sono approvate (ticket «Schermate delle richieste del collaboratore»; prototipo https://claude.ai/artifact/NJ7XmFUL4dGLxTZWCS5jpC).
 
@@ -178,6 +188,7 @@ Leggi AGENTS.md, STATUS.md, docs/METODO.md (passi 6–8), la mappa `.scratch/arc
 
 - Portami in parole semplici cosa confermo: la direzione di design e le scelte tecniche, con i rischi accettati (controllo di un esperto umano, nessun antivirus nel pilota) e ciò che resta aperto prima del pilota (pareri, prove su telefoni veri, «Cosa resta aperto» della pagina).
 - Le correzioni del collaboratore sono già decise (ticket, «Risposta»): controlla che ARCHITECTURE.md le regga (mezzi accettati al banco per agenzia; pagamento parziale confermato dal proprietario; le scelte della sezione «Richieste del collaboratore di ƎE», segnate da confermare). Se trovi un conflitto, mostramelo con una proposta, una domanda alla volta, con una raccomandazione.
+- Controlla anche le parti entrate dalle proposte del collaboratore (PRODUCT.md §12, 6/11–24/11/2026): la voce «Rete ƎE nel percorso 1» in «Non ancora specificato» della mappa dell'architettura (rete spenta all'avvio, sì all'app e al sito, controllo annuale) e i minuti contati a parte per le case senza gestione e per la rete (§13).
 - Registra l'esito in PRODUCT.md §12 con data e motivo. Non scrivere codice: il piano di costruzione è il passo 8.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
