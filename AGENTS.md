@@ -10,6 +10,9 @@ Prevalgono sulle sezioni generiche del template quando sono in conflitto.
 - Rispondere e scrivere i documenti in italiano.
 - Le domande all'utente si fanno in parole semplici: cosa si chiede, perché conta e cosa comporta ogni opzione,
   senza gergo tecnico o legale (richiesta dell'utente, 19/10/2026).
+- Per le decisioni più complesse si prepara una **pagina interattiva** (Artifact privato) molto visiva: la domanda in parole semplici,
+  le opzioni affiancate con esempi concreti e dati inventati, cosa comporta ciascuna e la raccomandazione; si risponde in chat.
+  Le domande semplici e veloci si fanno direttamente. Sempre una decisione alla volta (richiesta dell'utente, 24/11/2026).
 - Ordine di lettura: STATUS.md, PRODUCT.md (l'idea completa), docs/STUDIO.md (cosa studiare),
   docs/METODO.md (come procedere). docs/TEMPLATE.md solo se si lavora sul kit.
 - **Fase attuale: studio.** Architettura, stack, design, piano di sviluppo e prima versione non sono decisi.
