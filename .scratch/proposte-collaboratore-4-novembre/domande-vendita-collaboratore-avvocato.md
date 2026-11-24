@@ -6,6 +6,11 @@ Preparato il 6/11/2026 dal ticket [Cosa, fra le proposte, può toccare il percor
 
 ## Per chi legge: cosa è deciso e cosa no
 
+**Aggiornamento del 24/11/2026** (ticket [Sostenibilità e ordine dei percorsi](issues/12-sostenibilita-ordine.md)). Alcune cose qui sotto sono cambiate:
+- la seconda tessera fisica è ora la tessera di **chi possiede una casa** (affittata o in vendita), non solo di chi vende; l'arancione resta all'inquilino (23/11/2026);
+- **altri servizi per chi vende e fascicolo per la vendita** non entrano nella prima versione: vengono dopo il pilota, in un percorso per chi vende. Le domande 1–12 al collaboratore e le richieste E1–E6 all'avvocato restano utili per quel percorso, senza fretta;
+- **le domande più utili adesso:** al collaboratore la 13 (quali professioni), la 14 (rapporti economici), la 19 (il sì dei professionisti), la 20 (il passaggio dell'audio) e le 21–24 (regione, zone, tipi di casa, superficie); all'avvocato F7, F9, F11–F14, F8 solo se ci sono rapporti economici, e G15–G19. Servono ad accendere la rete dei professionisti: senza, la prima versione parte con la rete spenta. F10 non serve finché l'agenzia indica soltanto i professionisti.
+
 **Deciso dall'utente.**
 - Chi vende entra già nella prima versione di Connetto con quello che c'è: la scheda della casa «senza gestione», i documenti, la valutazione della casa (la prima gratis) e la pubblicazione della valutazione sul sito solo con il suo sì.
 - Entra anche una **tessera per chi vende**. Cosa dà, e a quali condizioni, è ancora da decidere.
