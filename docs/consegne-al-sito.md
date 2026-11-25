@@ -6,6 +6,22 @@ Ogni voce segue la [§10 del contratto](integrazione-sito.md#10-aggiornamenti-fr
 
 ---
 
+## 24/11/2026: testi accanto alla rete senza prima persona
+
+**Decisione e fonte.** Decisione dell'utente del 24/11/2026 nel ticket [Rete ƎE e chi vende nel percorso 1](../.scratch/design-percorso-1/issues/25-rete-ee-chi-vende.md) ([DESIGN.md](../DESIGN.md), «Rete ƎE (percorso 1)»): le bozze accanto alla rete non parlano più in prima persona, come il resto di Connetto.
+
+**Cosa cambia per il sito.** Le bozze in [integrazione-sito.md](integrazione-sito.md) §6 diventano «Professionisti che ƎE conosce perché lavora in questa zona…» e «Prima di indicarli ƎE controlla… e lo ricontrolla ogni anno»; la bozza «chi fa cosa» (domanda F14) usa il «tu» e «persone che ƎE conosce». Restano bozze, da non pubblicare prima del controllo dell'avvocato.
+
+**Compatibilità.** Nessun campo cambia (versione 1).
+
+**Disponibilità effettiva.** Solo testi in bozza.
+
+**Prove.** Nessuna.
+
+**Azione richiesta al sito.** Se il sito tiene già copia delle bozze, aggiornarla; nulla da pubblicare.
+
+---
+
 ## 24/11/2026: elenco dei professionisti vuoto all'avvio del pilota
 
 **Decisione e fonte.** Decisioni dell'utente del 23 e del 24/11/2026 nel ticket [Sostenibilità e ordine dei percorsi: la chiusura dello studio](../.scratch/proposte-collaboratore-4-novembre/issues/12-sostenibilita-ordine.md) ([PRODUCT.md](../PRODUCT.md) §12, 24/11/2026), che chiude la mappa delle proposte del collaboratore di ƎE.
