@@ -1,7 +1,7 @@
 # Rete ƎE e chi vende nel percorso 1
 
 Type: prototype
-Status: claimed
+Status: resolved
 Blocked by:
 Mappa: [Design del percorso 1](../map.md)
 
@@ -17,6 +17,17 @@ Come si vedono, nella direzione «Terracotta» e con le regole già decise, le s
 Le scelte si fanno con l'utente una alla volta, con una raccomandazione e le conseguenze delle alternative; un cambio di regole visive va in DESIGN.md solo se l'utente lo conferma. Le schermate della casa senza gestione e della valutazione sono già approvate (3/11/2026). Dopo questo ticket, con il [colore della tessera di chi possiede una casa](26-colore-tessera-chi-possiede.md), viene il controllo B.
 
 ## Risposta (Answer)
+
+Risolto il 25/11/2026: **schermate della Rete ƎE approvate dall'utente**, otto scelte una alla volta (24 e 25/11/2026). Sei sulla raccomandazione; la 3 diversa dalla raccomandazione; la 1 bis nata da un'osservazione dell'utente. Prova usa e getta con dati inventati, aggiornata alle scelte: https://claude.ai/artifact/N9ihQ28meZHa9cQQ98WUGm (privata, versione 2). Pagina delle scelte: https://claude.ai/artifact/3gjPtMAzhbotUqXH9Jb49h (privata, versione 7). Il sorgente di tutte e due è nella cartella temporanea della sessione e non entra nel repository.
+1. **Da dove si entra:** una riga in ogni casa della proprietaria, sotto «I tecnici di questa casa».
+2. **Il nome (1 bis):** «Professionisti per vendere o comprare», sotto «notaio, geometra e altri che ƎE conosce»; nella pagina «Rete ƎE» come occhiello.
+3. **L'elenco:** una pagina sola con i mestieri in cui c'è qualcuno; in fondo «Non c'è il mestiere che ti serve?».
+4. **I testi:** in fondo, sotto «Come sono scelti» (scelta dell'utente, diversa dalla raccomandazione «in cima»).
+5. **Chi parla:** nessuna prima persona; aggiornate le bozze F12 e F14 e il contratto con il sito.
+6. **Rete spenta:** nessuna riga; «Chiama ƎE» nelle case senza gestione dice «anche per notaio, geometra e altri professionisti».
+7. **Per l'operatore:** dentro «Persone», con «Clienti» e «Rete ƎE»; scheda del professionista, «Togli dalla rete» con il motivo, pagina «spenta».
+8. **Promemoria:** una voce in coda un mese prima del controllo annuale, in fondo all'ordine.
+Regole in DESIGN.md, «Rete ƎE (percorso 1)». PRODUCT.md e GLOSSARY.md non cambiano: «Rete ƎE» resta il termine del dominio, il nome della riga è un testo dell'interfaccia. La pagina del pacchetto per il controllo B non è aggiornata: si aggiorna solo se l'utente lo chiede.
 
 ## Commenti (Comments)
 
@@ -53,3 +64,7 @@ Le scelte si fanno con l'utente una alla volta, con una raccomandazione e le con
 *Decisione 6, la rete per l'operatore (utente, 24/11/2026: «6 A»).* **Dentro «Persone»**, con «Clienti» e «Rete ƎE»; la scheda del professionista, «Togli dalla rete» con il motivo da un elenco e la pagina «spenta» come nella prova, gruppo 6. Registrato in DESIGN.md.
 
 *Decisione 7, il promemoria:* domanda semplice, fatta direttamente in chat.
+
+*Decisione 7, il promemoria (utente, 25/11/2026: «7 A»).* Una **voce nella coda** un mese prima della scadenza, in fondo all'ordine, finché il controllo non è finito; apre la pagina del controllo annuale. Registrato in DESIGN.md. Chiuso il ticket.
+
+*Verifiche:* prova e pagina delle scelte aperte in Chromium (telefono 390 px e computer 1200 px, chiaro e scuro dove serviva), nessun errore della pagina e nessuno scorrimento orizzontale. Nessuna prova con persone, screen reader o telefoni veri. Revisione OCR non applicabile: nessun codice nel repository, solo documenti; i prototipi usa e getta stanno fuori dal repository.
