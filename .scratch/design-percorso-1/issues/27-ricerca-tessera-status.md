@@ -1,7 +1,7 @@
 # Ricerca: una tessera che dà status senza essere un livello
 
 Type: research
-Status: claimed
+Status: resolved
 Blocked by:
 Mappa: [Design del percorso 1](../map.md)
 
@@ -24,5 +24,7 @@ Domande per la ricerca, su fonti primarie (studi pubblicati, dati ufficiali, sch
 Risultato atteso: [docs/ricerca/tessera-status.md](../../../docs/ricerca/tessera-status.md), con fatti, inferenze, ipotesi e dati mancanti distinti; poi la domanda torna all'utente nel ticket 26, una decisione alla volta. Nessun contatto con persone o fornitori.
 
 ## Risposta (Answer)
+
+Chiuso il 26/11/2026 con [docs/ricerca/tessera-status.md](../../../docs/ricerca/tessera-status.md), scritta da un agente in background con la skill `research` e controllata a campione dalla sessione principale (ISTAT 73,9%; condizione blu e giallo dello studio di Drèze e Nunes). In breve: lo status nasce dalla scarsità e dal confronto, e in Italia il 73,9% delle famiglie vive in casa propria, quindi «possiede una casa» è comune; oro e argento creano una scala da soli, due colori qualunque no (Drèze e Nunes 2009); un trattamento migliore mostrato in pubblico abbassa chi guarda (Steinhoff e Palmatier 2016) e perdere lo status pesa più che non averlo (Wagner e altri 2009); l'affitto in Italia è legato a reddito basso, età giovane e origine estera (Banca d'Italia 2022; ISTAT 2025), quindi il segno «inquilino» non è neutro; le prove sulla psicologia del colore sono deboli; la lamina costa circa 0,14 € a tessera, la rame e l'olografica vanno chieste. Lavagna: bianco, argento, oro, diamante e arcobaleno sconsigliati, rosso troppo vicino all'arancione. Raccomandazione dell'agente di ricerca: due colori pieni alla pari, stessa lamina e finitura, orgoglio da significato, consegna curata e riconoscimento in privato. Pareri da valutare: privacy, sicurezza contro le imitazioni, prova con persone reali (solo con autorizzazione). Le scelte tornano all'utente nel ticket 26.
 
 ## Commenti (Comments)

@@ -2,7 +2,7 @@
 
 Type: prototype
 Status: claimed
-Blocked by: 27
+Blocked by: 27 (chiuso)
 Mappa: [Design del percorso 1](../map.md)
 
 ## Domanda (Question)
