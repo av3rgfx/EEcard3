@@ -127,65 +127,38 @@ Il 24/11/2026 è chiusa la mappa delle proposte del collaboratore, con il ticket
 
 Il 24 e il 25/11/2026 è chiuso il ticket «Rete ƎE e chi vende nel percorso 1» della mappa del design ([DESIGN.md](DESIGN.md), «Rete ƎE (percorso 1)»): una riga in ogni casa, «Professionisti per vendere o comprare»; l'elenco in una pagina sola, con «Non c'è il mestiere che ti serve?» in fondo; i testi su come sono scelti in fondo; nessuna prima persona; con la rete spenta nessuna riga e «Chiama ƎE» che lo dice; per l'operatore la rete sta dentro «Persone» e il controllo annuale è una voce in coda. Prova aggiornata: https://claude.ai/artifact/N9ihQ28meZHa9cQQ98WUGm. **Regola nuova** (AGENTS.md, 24/11/2026): per le decisioni complesse una pagina interattiva e visiva con esempi; per quelle semplici una domanda diretta.
 
-**Prossima sessione:** il colore della tessera di chi possiede, nella mappa del design, con il messaggio qui sotto. Poi il controllo B.
+Il 25 e il 26/11/2026 è chiuso il ticket «Colore della tessera fisica di chi possiede una casa» ([DESIGN.md](DESIGN.md), «Tessera fisica di chi possiede una casa (percorso 1)»): le due tessere fisiche sono **alla pari**, la verde dice «possiede una casa» ma nessuna ha qualcosa in più; **verde bosco** con lamina rame per chi possiede, arancione con lamina arancione per l'inquilino, tutte e due opache con la lamina lucida. I colori della lavagna del collaboratore non si usano, con il motivo in DESIGN.md. Ricerca: [docs/ricerca/tessera-status.md](docs/ricerca/tessera-status.md). La richiesta di preventivo delle tessere ora comprende i due modelli.
+
+**Da fare a cura dell'utente:** riferire al collaboratore di ƎE la scelta «alla pari» e il motivo per i colori della lavagna (DESIGN.md).
+
+**Prossima sessione:** il controllo B, con il messaggio «Controllo B» qui sotto. Il ticket «Consegna della tessera fisica in agenzia» non lo ferma e si può fare quando si vuole, con il suo messaggio.
 
 ---
 
-## Prossima sessione: colore della tessera di chi possiede
+## Quando si vuole: consegna della tessera fisica in agenzia
 
 Messaggio:
 
-/wayfinder .scratch/design-percorso-1/map.md — ticket «Colore della tessera fisica di chi possiede una casa» (.scratch/design-percorso-1/issues/26-colore-tessera-chi-possiede.md)
+/wayfinder .scratch/design-percorso-1/map.md — ticket «Consegna della tessera fisica in agenzia» (.scratch/design-percorso-1/issues/28-consegna-tessera-fisica.md)
 
-Leggi AGENTS.md, STATUS.md, la mappa del design (Destinazione, Note, Decisioni finora) e il ticket; poi DESIGN.md nelle parti pertinenti («Identità», «Accesso, tessera e situazioni comuni (percorso 1)», «Componenti e token»), PRODUCT.md §5.6 e §12 (25/10, 7/11 e 23/11/2026), il ticket «Quale tessera ha chi affitta e vende insieme» delle proposte e il ticket delle tessere fisiche del controllo A, solo dove servono. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti. Il repository del sito non si legge né si modifica.
+Leggi AGENTS.md, STATUS.md, la mappa del design (Destinazione, Note, Decisioni finora) e il ticket; poi DESIGN.md nelle parti pertinenti («Tessera fisica di chi possiede una casa (percorso 1)», «Accesso, tessera e situazioni comuni (percorso 1)», «Spazio dell'operatore (percorso 1)»), docs/ricerca/tessera-status.md (§4, §6 e «Cosa ne segue per la scelta») e docs/ricerca/tessere.md (§5), solo dove servono. Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti. Il repository del sito non si legge né si modifica.
 
-- Rivendica il ticket (`Status: claimed`) e lavora solo su quello, con le skill `prototype`, `grilling` e `domain-modeling`.
-- Le decisioni registrate sono già prese: non chiedermele di nuovo. La tessera di chi possiede deve vedersi bene e non deve sembrare un pacchetto o un livello; l'arancione resta all'inquilino e non deve sembrare povera; colori, Manrope ed ƎE del marchio non cambiano; la tessera digitale di rame non cambia.
-- Portami una decisione alla volta, in parole semplici, con una raccomandazione motivata e le conseguenze delle alternative. Per le decisioni complesse fai una pagina interattiva e visiva, con le tessere affiancate in mano, nel portafoglio, sul banco e in chiaro e scuro; per quelle semplici chiedimelo in chat. Solo dati inventati. Non simulare le mie risposte.
+- Rivendica il ticket (`Status: claimed`) e lavora solo su quello, con le skill `prototype`, `grilling` e `domain-modeling`; `ux-writing` per i testi della cartellina e dell'operatore.
+- Le decisioni registrate sono già prese: tessere alla pari, verde bosco e arancione, nessun vantaggio legato alla tessera, consegna solo in agenzia nel pilota. I testi stampati restano bozze fino al parere legale e a quello sul nome.
+- Portami una decisione alla volta, in parole semplici, con una raccomandazione motivata e le conseguenze delle alternative. Per le decisioni complesse fai una pagina interattiva e visiva (cartellina, consegna al banco, per chi possiede e per l'inquilino, in chiaro e scuro); per quelle semplici chiedimelo in chat. Solo dati inventati. Non simulare le mie risposte.
 - Non svolgere il controllo B e non scrivere codice applicativo; nessun contatto con persone, fornitori o servizi reali.
 
 Registra in DESIGN.md solo ciò che confermo, con data e motivo; la discussione resta nel ticket. Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 
 ---
 
-## Quando arrivano le risposte del collaboratore o dell'avvocato
-
-Messaggio, con le risposte incollate in fondo:
-
-/wayfinder Risposte alle domande del documento .scratch/proposte-collaboratore-4-novembre/domande-vendita-collaboratore-avvocato.md, da [collaboratore di ƎE / avvocato / esperto privacy], del [data]. Leggi AGENTS.md, STATUS.md, la mappa chiusa delle proposte (Decisioni finora) e PRODUCT.md §10.10 e §12 dal 6/11 al 24/11/2026. Registra le risposte nei «Commenti» dei ticket pertinenti con chi ha risposto e la data, senza riaprirli; poi dimmi in parole semplici, una cosa alla volta, cosa cambiano: risposte per la rete (13, 14, 19, F7–F14, G15–G19) verso l'accensione della Rete ƎE; zone, tipi e superficie (21–24) verso il contratto con il sito; servizi per chi vende e fascicolo (1–12, E1–E6) verso un ticket nuovo per il percorso per chi vende, dopo il pilota (24/11/2026). Apri un ticket nuovo solo per ciò che chiede una decisione. Registra in PRODUCT.md §12 solo ciò che confermo; se tocca il sito, aggiorna docs/integrazione-sito.md e aggiungi una voce in cima a docs/consegne-al-sito.md. Chiudi aggiornando STATUS.md e START_HERE.md, poi commit, push e PR.
-
----
-
-## Per la sessione del sito di ƎE (Claude Code o Codex sull'altro repository)
-
-Messaggio da incollare nella sessione del sito quando [docs/consegne-al-sito.md](docs/consegne-al-sito.md) ha voci nuove:
-
-Leggi da EEcard3 (`main`) docs/consegne-al-sito.md, dalla voce più recente fino all'ultima già annotata nel nostro AGGIORNAMENTI-CONNETTO.md, e docs/integrazione-sito.md nelle sezioni che le voci citano. Applica solo le «Azioni richieste al sito»; non trattare come approvato ciò che le voci dicono aperto, non inventare testi, nomi o endpoint, non modificare EEcard3. Annota in AGGIORNAMENTI-CONNETTO.md quali voci hai letto e cosa hai fatto; se una richiesta è in conflitto con una decisione del sito, segnalamelo invece di scegliere.
-
----
-
-## Quando arriva una nuova consegna dal sito di ƎE
-
-Il sito ha un suo registro delle decisioni che toccano Connetto (`AGGIORNAMENTI-CONNETTO.md` nel repository del sito) e un messaggio di consegna che l'utente incolla qui. Messaggio:
-
-Consegna dal sito di ƎE: [incolla il testo]. Leggi AGENTS.md, STATUS.md, PRODUCT.md §12 (5/11/2026), docs/integrazione-sito.md e il ticket .scratch/proposte-collaboratore-4-novembre/issues/13-integrazione-sito.md, con le consegne già recepite nei «Commenti». Confronta la consegna con quelle già recepite: non rifare il lavoro, non trattare le proposte come approvate, non modificare il repository del sito.
-
-- Registra solo le decisioni dell'utente nuove, in PRODUCT.md §12 (prodotto) o ARCHITECTURE.md (tecnica), e segnala i conflitti con lo stato di Connetto senza cancellare decisioni successive.
-- Aggiorna docs/integrazione-sito.md se cambia il contratto, tenendo distinti stato reale, contratto proposto e decisioni aperte; mai URL, chiavi o date inventati.
-- Aggiungi una riga nei «Commenti» del ticket 13: cosa hai recepito e cosa hai realizzato.
-- Restituiscimi un aggiornamento breve per il sito: decisione e fonte, dati e contratto interessati, compatibilità, disponibilità effettiva, prove svolte, azione richiesta al sito. Niente segreti.
-
-Chiudi la sessione aggiornando STATUS.md, poi fai commit e push sul branch della sessione.
-
----
-
 ## Controllo B: design e architettura del percorso 1
 
-Le risposte del collaboratore di ƎE sono registrate dal 3/11/2026 e le schermate delle sue richieste sono approvate lo stesso giorno. Dal 6/11/2026 il controllo B aspetta i pezzi che il ticket «Cosa, fra le proposte, può toccare il percorso 1» della mappa [Proposte del collaboratore di ƎE del 4/11/2026](.scratch/proposte-collaboratore-4-novembre/map.md) ha portato nel percorso 1, cioè i ticket 07, 08, 09 e 13 (il 06 è chiuso dal 7/11/2026). *Dal 12/11/2026* sono chiusi anche 07, 08, 09 e 13: il controllo B aspetta solo il ticket 14. *Dal 24/11/2026* la mappa delle proposte è chiusa: il controllo B aspetta il disegno della Rete ƎE (chiuso il 25/11/2026, DESIGN.md «Rete ƎE (percorso 1)») e del colore della tessera di chi possiede (mappa del design) e controlla anche che la rete si possa tenere spenta all'avvio del pilota (mappa dell'architettura, «Non ancora specificato»). Messaggio:
+Le risposte del collaboratore di ƎE sono registrate dal 3/11/2026 e le schermate delle sue richieste sono approvate lo stesso giorno. Dal 6/11/2026 il controllo B aspetta i pezzi che il ticket «Cosa, fra le proposte, può toccare il percorso 1» della mappa [Proposte del collaboratore di ƎE del 4/11/2026](.scratch/proposte-collaboratore-4-novembre/map.md) ha portato nel percorso 1, cioè i ticket 07, 08, 09 e 13 (il 06 è chiuso dal 7/11/2026). *Dal 12/11/2026* sono chiusi anche 07, 08, 09 e 13: il controllo B aspetta solo il ticket 14. *Dal 24/11/2026* la mappa delle proposte è chiusa: il controllo B aspettava il disegno della Rete ƎE (chiuso il 25/11/2026, DESIGN.md «Rete ƎE (percorso 1)») e del colore della tessera di chi possiede (chiuso il 26/11/2026, DESIGN.md «Tessera fisica di chi possiede una casa (percorso 1)»): non aspetta più nulla, e controlla anche che la rete si possa tenere spenta all'avvio del pilota (mappa dell'architettura, «Non ancora specificato»). Messaggio:
 
 Controllo B del percorso 1 (docs/METODO.md, passo 7): design e architettura sono pronti, le risposte del collaboratore di ƎE sono registrate nel ticket «Il collaboratore di ƎE guarda lo spazio dell'operatore» e le schermate delle sue richieste sono approvate (ticket «Schermate delle richieste del collaboratore»; prototipo https://claude.ai/artifact/NJ7XmFUL4dGLxTZWCS5jpC).
 
-Leggi AGENTS.md, STATUS.md, docs/METODO.md (passi 6–8), la mappa `.scratch/architettura-percorso-1/map.md` (Destinazione, Decisioni finora, Non ancora specificato) e ARCHITECTURE.md; in DESIGN.md «Pacchetto per il controllo B (percorso 1)», «Richieste del collaboratore di ƎE (percorso 1)» e «Rete ƎE (percorso 1)» (prova https://claude.ai/artifact/N9ihQ28meZHa9cQQ98WUGm; la pagina del pacchetto non contiene ancora queste schermate: chiedimi se aggiornarla). La pagina del pacchetto è https://claude.ai/artifact/9KwvBBmgGc859wN67hWbAF; aprila con lo strumento Artifact, azione «read». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+Leggi AGENTS.md, STATUS.md, docs/METODO.md (passi 6–8), la mappa `.scratch/architettura-percorso-1/map.md` (Destinazione, Decisioni finora, Non ancora specificato) e ARCHITECTURE.md; in DESIGN.md «Pacchetto per il controllo B (percorso 1)», «Richieste del collaboratore di ƎE (percorso 1)» «Rete ƎE (percorso 1)» (prova https://claude.ai/artifact/N9ihQ28meZHa9cQQ98WUGm) e «Tessera fisica di chi possiede una casa (percorso 1)» (prove https://claude.ai/artifact/BrcMw4yYCsXWv7gMP2pd3X e https://claude.ai/artifact/GfYAgqA4i9UXeqeEN4dKAV; la pagina del pacchetto non contiene ancora queste schermate: chiedimi se aggiornarla). La pagina del pacchetto è https://claude.ai/artifact/9KwvBBmgGc859wN67hWbAF; aprila con lo strumento Artifact, azione «read». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
 
 - Portami in parole semplici cosa confermo: la direzione di design e le scelte tecniche, con i rischi accettati (controllo di un esperto umano, nessun antivirus nel pilota) e ciò che resta aperto prima del pilota (pareri, prove su telefoni veri, «Cosa resta aperto» della pagina).
 - Le correzioni del collaboratore sono già decise (ticket, «Risposta»): controlla che ARCHITECTURE.md le regga (mezzi accettati al banco per agenzia; pagamento parziale confermato dal proprietario; le scelte della sezione «Richieste del collaboratore di ƎE», segnate da confermare). Se trovi un conflitto, mostramelo con una proposta, una domanda alla volta, con una raccomandazione.
@@ -328,8 +301,8 @@ La richiesta è pronta nel ticket [Ricerca: tessere fisiche](.scratch/controllo-
 
 Leggi AGENTS.md, STATUS.md, il ticket, docs/ricerca/tessere.md e docs/ricerca/tessera-contactless.md (sezione 5) e in PRODUCT.md §12 la riga «Tessera fisica nel pilota». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice o decisioni di tentativi precedenti.
 
-- Confronta i preventivi con i requisiti della richiesta (chip DESFire EV3 originale, lamina arancione e antenna, codice da file, chiavi, campione) e segnala cosa manca.
-- La richiesta copre solo l'arancione: dal 23/11/2026 c'è anche una seconda tessera per chi possiede una casa (PRODUCT.md §12). Se il suo colore non è ancora scelto nella mappa del design, dimmelo; la divisione delle quantità fra i due modelli è un dato mancante, non inventarla.
+- Confronta i preventivi con i requisiti della richiesta (chip DESFire EV3 originale, lamine arancione e rame e antenna, codice da file, chiavi, campione) e segnala cosa manca.
+- Dal 26/11/2026 la richiesta copre i due modelli: arancione con lamina arancione e verde bosco con lamina rame, opachi (DESIGN.md, «Tessera fisica di chi possiede una casa (percorso 1)»). Controlla che i fornitori abbiano le due lamine e che sul campione il codice si legga sui due fondi; la divisione delle quantità fra i due modelli è un dato mancante, non inventarla.
 - Portami una alla volta, con una raccomandazione: fornitore, quantità (era consigliato 250), lamina o plastica a colore fisso se la lamina costa troppo, campione da ordinare. Nessun ordine o pagamento senza la mia autorizzazione esplicita.
 - Registra le decisioni in PRODUCT.md §12 e nel ticket.
 
