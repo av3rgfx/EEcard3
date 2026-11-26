@@ -6,6 +6,22 @@ Ogni voce segue la [§10 del contratto](integrazione-sito.md#10-aggiornamenti-fr
 
 ---
 
+## 26/11/2026: aspetto della tessera fisica di chi possiede una casa
+
+**Decisione e fonte.** Decisioni dell'utente del 26/11/2026 nel ticket [Colore della tessera fisica di chi possiede una casa](../.scratch/design-percorso-1/issues/26-colore-tessera-chi-possiede.md) ([DESIGN.md](../DESIGN.md), «Tessera fisica di chi possiede una casa (percorso 1)»).
+
+**Cosa cambia per il sito.** Si chiude il punto lasciato aperto il 7/11/2026 («il colore non è scelto»): la tessera fisica di chi possiede una casa è **verde bosco con lamina rame**, quella dell'inquilino resta **arancione con lamina arancione**, tutte e due opache e **alla pari**. Se il sito presenta le tessere: nessuna è «premium», «superiore» o «più ricca», e nessuna dà vantaggi; il verde dice solo che la persona possiede una casa. I colori pensati all'inizio per livelli (bianco, rosso, argento, oro, diamante, arcobaleno) non si usano.
+
+**Compatibilità.** Nessun campo cambia (versione 1).
+
+**Disponibilità effettiva.** Nessuna tessera è ordinata: tonalità e lamine si fissano sul campione del fornitore.
+
+**Prove.** Nessuna.
+
+**Azione richiesta al sito.** Nessuna; se il sito mostra già una tessera di un altro colore, non pubblicarla come definitiva.
+
+---
+
 ## 24/11/2026: testi accanto alla rete senza prima persona
 
 **Decisione e fonte.** Decisione dell'utente del 24/11/2026 nel ticket [Rete ƎE e chi vende nel percorso 1](../.scratch/design-percorso-1/issues/25-rete-ee-chi-vende.md) ([DESIGN.md](../DESIGN.md), «Rete ƎE (percorso 1)»): le bozze accanto alla rete non parlano più in prima persona, come il resto di Connetto.
