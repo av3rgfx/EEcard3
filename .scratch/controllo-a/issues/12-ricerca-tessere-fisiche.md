@@ -41,7 +41,7 @@ Controllo a campione della sessione principale sulle fonti originali: GCARD, Met
 7. **Nel pilota niente spedizione: la tessera si consegna solo in agenzia**, con la cartellina; chi la perde la ritira lì. La spedizione a pagamento si studia con l'adesione a distanza, con i pareri legale e fiscale. Scartate: posta ordinaria (1,30 €, senza prova di consegna) e raccomandata (6,00 €). Consigliata dall'agente.
 8. **Quantità del primo ordine: si decide con il preventivo** (scelta dell'utente), quando si conoscono prezzo e quantità minima di chip più lamina. Era consigliato 250: circa 100 case con proprietario e inquilino fanno fino a circa 200 tessere, più la scorta.
 
-### Richiesta di preventivo, pronta da copiare (25/10/2026)
+### Richiesta di preventivo, pronta da copiare (25/10/2026; aggiornata il 26/11/2026 con il secondo modello, DESIGN.md «Tessera fisica di chi possiede una casa (percorso 1)»)
 Da mandare a due o tre fornitori italiani, per esempio GCARD (Carteplastiche, Genzano di Roma) e RFID.it (Sinfotech, Merate), dall'indirizzo dell'utente o di ƎE. Non contiene dati personali di clienti. Le parti fra parentesi quadre le completa chi la manda.
 
 > Oggetto: Richiesta di preventivo e campione: tessere PVC con chip MIFARE DESFire EV3 e lamina a caldo
@@ -51,12 +51,12 @@ Da mandare a due o tre fornitori italiani, per esempio GCARD (Carteplastiche, Ge
 >
 > - Formato ISO/IEC 7810 ID-1 (85,60 × 53,98 mm), spessore 0,76 mm.
 > - Chip contactless **originale NXP MIFARE DESFire EV3** (2K o 4K, indicate il modello esatto). Non accettiamo chip «compatibili» né MIFARE Classic.
-> - Stampa a colori fronte e retro su grafica nostra, con **lamina a caldo metallizzata color arancione o rame** su una parte del fronte. Vi chiediamo se la lamina disturba l'antenna, quale zona lasciare libera e se la tessera finita resta conforme a ISO/IEC 14443-A, con la distanza di lettura misurata.
+> - **Due modelli** con la stessa grafica e lo stesso chip: fondo arancione con **lamina a caldo arancione**, e fondo verde scuro con **lamina a caldo color rame**, sugli stessi punti del fronte (simbolo, scritte e codice). Laminazione **opaca** su tutte e due, con la lamina lucida. Indicate se avete la lamina arancione e quella rame; se no, quali colori vicini. Stampa a colori fronte e retro su grafica nostra. Vi chiediamo se la lamina disturba l'antenna, quale zona lasciare libera e se la tessera finita resta conforme a ISO/IEC 14443-A, con la distanza di lettura misurata.
 > - **Codice stampato diverso su ogni tessera**, preso da un nostro file (codici casuali, nessun nome).
 > - Elenco dei numeri di serie (UID) del chip abbinati al codice stampato.
 > - Chiavi del chip: con quali chiavi di trasporto escono le tessere e se potete caricare chiavi indicate da noi; come le ricevete e le distruggete.
 > - Prova del 100% delle tessere e sostituzione delle difettose.
-> - Prezzi per 100, 250 e 500 pezzi, IVA esclusa; quantità minima; tempi di produzione; spedizione; costo e tempi del campione.
+> - Prezzi per 100, 250 e 500 pezzi, IVA esclusa, anche divisi fra i due modelli; quantità minima; tempi di produzione; spedizione; costo e tempi del campione.
 > - Disponibilità dello stesso chip e della stessa grafica per ordini successivi.
 > - A parte, se le fate: cartelline in carta con fessura per una tessera, stessa quantità.
 >
