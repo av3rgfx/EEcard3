@@ -78,6 +78,24 @@ Legenda: **Fonte** = ciò che dice la fonte; **Inferenza** = ciò che ne deduce 
 - **GitHub Actions:** un servizio `postgres:17` (o `17.12` per fissare la minore) con il controllo `pg_isready`. Il PostgreSQL 16 del runner resta spento e non va usato. **Da verificare:** se il limite di Docker Hub tocchi i runner di GitHub (le fonti lette non ne parlano).
 - **Computer dell'utente:** il sistema del computer non è scritto nei documenti (**dato mancante**). Con Docker Desktop si usa la stessa immagine dei controlli e della sessione, e ƎE rientra probabilmente nella licenza gratuita (inferenza sui numeri dell'agenzia). Senza Docker restano Postgres.app su macOS, l'installatore EDB su Windows e macOS, PGDG su Linux: sono installazioni per tutto il computer, da far fare all'utente.
 
+### Aggiornamento del 27/11/2026, ticket «Strumenti di lavoro»
+Prove fatte nella sessione principale durante il ticket [«Strumenti di lavoro»](../../.scratch/costruzione-percorso-1/issues/05-strumenti-di-lavoro.md), con una password inventata, poi contenitori e immagini cancellati e Docker spento.
+
+| Comando | Esito |
+|---|---|
+| `dockerd` avviato a mano | pronto in circa 1 s |
+| `docker pull public.ecr.aws/docker/library/postgres:17` | **rifiutato**: `error from registry: Data limit exceeded`. Poche ore prima, nella ricerca, aveva funzionato |
+| `docker pull mirror.gcr.io/library/postgres:17` | riuscito in circa 5 s (665 MB) |
+| `docker pull postgres:17` (Docker Hub), subito dopo | riuscito; i livelli erano già scaricati, quindi è stato chiesto solo l'indice |
+| Impronta (`RepoDigests`) delle due immagini | identica: `sha256:97fb5337…`, cioè la stessa immagine ufficiale |
+| `docker run` dell'immagine di `mirror.gcr.io`, `pg_isready`, `select version()` | pronto in circa 2 s; `PostgreSQL 17.12 (Debian 17.12-1.pgdg13+1)` |
+| archlinux.org, ricerca dei pacchetti `postgresql`, `postgresql-17`, `docker` [42] | `postgresql` 18.7 (`extra`, 15/11/2026); nessun pacchetto 17 nei repository ufficiali; `docker` 29.10.1 (`extra`) |
+
+- **Fonte:** «Amazon ECR Public supports up to 500GB of data per month» per chi non è autenticato, non modificabile, e «1 per second» per i download non autenticati in ogni regione; la pagina non dice se il limite valga per indirizzo [43].
+- **Fonte:** «Artifact Registry caches frequently-accessed public Docker Hub images on `mirror.gcr.io`»; «Pulling cached images does not count against Docker Hub rate limits»; «there is no guarantee that a particular image will remain cached»; la via indicata è configurare Docker con `registry-mirrors`, così se l'immagine non c'è si passa a Docker Hub [44]. La pagina non dice se si possa usare senza account fuori da Google Cloud: la prova dice di sì, oggi.
+- **Inferenza:** dalla sessione cloud nessun registro senza account è sicuro: Docker Hub ed ECR hanno rifiutato in momenti diversi dello stesso giorno, probabilmente per l'indirizzo d'uscita condiviso. La strada più robusta, fra quelle provate, è Docker configurato con `mirror.gcr.io` come copia, con Docker Hub come ripiego automatico, e l'immagine scaricata prima che parta l'agente.
+- **Inferenza:** su Arch Linux PostgreSQL 17 si usa con Docker (il pacchetto del sistema è il 18); su Linux Docker Engine non chiede la licenza di Docker Desktop.
+
 ### Cosa resta all'utente
 - Dire quale sistema ha il computer e se va bene installare Docker Desktop, o un PostgreSQL 17 locale.
 - Per la sessione cloud: se salvare nello script di preparazione dell'ambiente l'avvio di Docker e il download dell'immagine (o i pacchetti PGDG). Lo propone l'agente, lo approva l'utente.
@@ -238,6 +256,9 @@ Tutte lette il 27/11/2026.
 39. veraPDF, «Installation» e home della documentazione: https://docs.verapdf.org/install/, https://docs.verapdf.org/; rilasci: https://software.verapdf.org/releases/
 40. DSS, `README.md`: https://raw.githubusercontent.com/esig/dss/master/README.md; Maven Central, `eu/europa/ec/joinup/sd-dss/dss-validation`: https://repo.maven.apache.org/maven2/eu/europa/ec/joinup/sd-dss/dss-validation/maven-metadata.xml
 41. Adoptium API: https://api.adoptium.net/v3/info/available_releases
+42. Arch Linux, ricerca dei pacchetti (letta il 27/11/2026): https://archlinux.org/packages/search/json/?name=postgresql, https://archlinux.org/packages/search/json/?name=docker
+43. AWS, «Amazon ECR Public service quotas» (letta il 27/11/2026): https://docs.aws.amazon.com/AmazonECR/latest/public/public-service-quotas.html
+44. Google Cloud, «Pull cached Docker Hub images» (letta il 27/11/2026): https://docs.cloud.google.com/artifact-registry/docs/pull-cached-dockerhub-images
 
 ## Fonti e comandi non riusciti
 - `docker pull postgres:17` da Docker Hub: `429 Too Many Requests`, due volte (limite senza account per indirizzo).
