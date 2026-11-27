@@ -1,7 +1,7 @@
 # Strumenti di lavoro: dove si costruisce, PostgreSQL 17 e OCR
 
 Type: grilling
-Status: open
+Status: claimed
 Blocked by: 02
 Mappa: [Costruzione del percorso 1: il piano](../map.md)
 
