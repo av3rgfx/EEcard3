@@ -1,7 +1,7 @@
 # Come si divide la costruzione: fondamenta e tappe
 
 Type: grilling
-Status: open
+Status: claimed
 Blocked by:
 Mappa: [Costruzione del percorso 1: il piano](../map.md)
 
@@ -20,3 +20,4 @@ Da decidere anche: quanto è grande un pezzo (una sessione, una PR), e cosa si p
 ## Commenti (Comments)
 
 - 27/11/2026, scelta dell'utente sulla raccomandazione: **non si rifà il controllo dell'architettura e dei linguaggi** (scelte di quattro settimane prima, con alternative confrontate, confermate al controllo B e ricontrollate dalle ricerche [01](01-ricerca-piattaforma-servizi.md) e [02](02-ricerca-strumenti-lavoro.md)). Al suo posto il piano mette presto le **prove pratiche dei punti incerti**, soprattutto DSS nella memoria di Scalingo e Better Auth con React Router 8; se una non regge si riapre solo quel pezzo, con un confronto mirato. Da tenere presente nel decidere come si divide la costruzione.
+- 27/11/2026, pagina della decisione (prototipo usa e getta, solo dati inventati): https://claude.ai/artifact/F5zn77inajPNERNutSbUjS. Le tre forme affiancate con un cursore «dopo il pezzo 1…6» (chi entra, chi vede cosa provato su 7 persone, tappe finite su 14, denaro provato fra le persone), le prove dei punti incerti comuni a tutte e tre, cosa comporta ciascuna; raccomandazione: A con fondamenta sottili. In attesa della risposta dell'utente.
