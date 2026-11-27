@@ -6,6 +6,22 @@ Ogni voce segue la [§10 del contratto](integrazione-sito.md#10-aggiornamenti-fr
 
 ---
 
+## 26/11/2026: commercialista nella Rete ƎE, aste rimandate
+
+**Decisione e fonte.** Decisioni dell'utente del 26/11/2026 nel ticket [Audio del collaboratore su aste, commercialisti e pubblicità](../.scratch/proposte-collaboratore-4-novembre/issues/15-audio-aste-commercialisti.md) ([PRODUCT.md](../PRODUCT.md) §12, 26/11/2026).
+
+**Cosa cambia per il sito.** Il **commercialista** entra fra i mestieri iniziali della Rete ƎE per la compravendita, accanto a geometra, ingegnere e notaio: il campo `professione` lo comprende. L'assistenza a chi partecipa alle **aste** passa da esclusa a rimandata, solo come mestiere della rete nel percorso per chi vende dopo il pilota: oggi sul sito non cambia nulla, niente sezione, catalogo o testi sulle aste. Se un professionista ha un rapporto con ƎE (per esempio lo studio che ne segue la contabilità), arriva con `nota_rapporto_economico`, come già previsto.
+
+**Compatibilità.** Nessun campo nuovo (versione 1); un valore in più nell'elenco di `professione`, ancora da chiudere con il collaboratore.
+
+**Disponibilità effettiva.** Nessuna: l'elenco dei professionisti resta vuoto finché la rete è spenta (24/11/2026).
+
+**Prove.** Nessuna.
+
+**Azione richiesta al sito.** Nessuna; se il sito presenta i mestieri della rete, può citare anche il commercialista, senza nomi.
+
+---
+
 ## 26/11/2026: aspetto della tessera fisica di chi possiede una casa
 
 **Decisione e fonte.** Decisioni dell'utente del 26/11/2026 nel ticket [Colore della tessera fisica di chi possiede una casa](../.scratch/design-percorso-1/issues/26-colore-tessera-chi-possiede.md) ([DESIGN.md](../DESIGN.md), «Tessera fisica di chi possiede una casa (percorso 1)»).

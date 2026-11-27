@@ -4,6 +4,8 @@ Preparato il 6/11/2026 dal ticket [Cosa, fra le proposte, può toccare il percor
 
 ---
 
+> **Aggiornamento del 26/11/2026** ([ticket 15](issues/15-audio-aste-commercialisti.md)): dagli audio del collaboratore arriva una risposta parziale alle domande 13 e 14. Il **commercialista** entra nella rete (scelta dell'utente); uno dei candidati è lo studio che segue ƎE, quindi per lui c'è un rapporto da dire e la richiesta F8 serve. La bozza F14 «chi fa cosa» va estesa al commercialista. Le aste sono rimandate al percorso per chi vende, con le quattro domande della ricerca sulle aste per il parere.
+
 ## Per chi legge: cosa è deciso e cosa no
 
 **Aggiornamento del 24/11/2026** (ticket [Sostenibilità e ordine dei percorsi](issues/12-sostenibilita-ordine.md)). Alcune cose qui sotto sono cambiate:

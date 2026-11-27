@@ -15,7 +15,7 @@ Le proposte, con i punti dell'audio:
 3. servizi per chi vende e legame con il sito (punti 3, 4);
 4. servizi della casa per chi vende, chi abita la propria casa e chi ne ha una sola (punto 3);
 5. professionisti della compravendita: geometra, ingegnere, notaio (punti 5, 10);
-6. assistenza a chi partecipa alle aste, senza gestirle (punto 6); *scartata dall'utente il 5/11/2026*;
+6. assistenza a chi partecipa alle aste, senza gestirle (punto 6); *scartata dall'utente il 5/11/2026*, *da rimandare dal 26/11/2026* (percorso per chi vende, solo come mestiere della Rete ƎE e dopo un parere; [ticket 15](issues/15-audio-aste-commercialisti.md));
 7. visibilità gratuita, timore di sembrare interessati e confini del lavoro dell'agenzia (punto 7);
 8. altre agenzie che aggiungono i propri professionisti con un gesto semplice (punto 8);
 9. ricerca dei professionisti in zona, anche con Google (punto 9);
@@ -69,6 +69,10 @@ Il punto 1 dell'audio è il metodo che chiede il collaboratore.
 - **Il controllo B e lo sviluppo** (scelta dell'utente del 4/11/2026).
 - **Disegno delle schermate e scelte tecniche:** dopo gli esiti, nelle mappe del design e dell'architettura.
 - **Il sito di ƎE:** repository separato, non si modifica qui; da qui si restituiscono documentazione e contratti ([docs/integrazione-sito.md](../../docs/integrazione-sito.md)).
-- **Aste:** escluse dall'utente il 5/11/2026; non si riprendono né ricerca né sviluppo.
+- **Aste:** escluse dall'utente il 5/11/2026; dal 26/11/2026 l'assistenza a chi partecipa torna come **da rimandare**, solo come mestiere della Rete ƎE nel percorso per chi vende e dopo un parere ([ticket 15](issues/15-audio-aste-commercialisti.md)); aste gestite, sezione, catalogo e integrazioni restano escluse.
 - **Collaborazioni con altre agenzie, provvigioni e ordine delle case sul sito:** già nel percorso dopo il pilota deciso il 3/11/2026; qui si guarda solo la proposta del punto 8.
 - **Contatti veri con professionisti, account, prove con servizi reali** senza autorizzazione dell'utente.
+
+## Dopo la chiusura (After closing)
+
+- [Audio del collaboratore su aste, commercialisti e pubblicità: cosa c'era già](issues/15-audio-aste-commercialisti.md) (26/11/2026): tre audio brevi mai arrivati qui; già coperti niente aste gestite, consulenza pagata dal cliente, pubblicità rimandata; proposta 6 da scartata a **da rimandare**; il **commercialista** entra fra i mestieri iniziali della rete (scelta dell'utente, diversa dalla raccomandazione); lo studio che segue ƎE, se entra, ha un rapporto da dire e chiede F8.
