@@ -6,6 +6,38 @@ Ogni voce segue la [§10 del contratto](integrazione-sito.md#10-aggiornamenti-fr
 
 ---
 
+## 27/11/2026: controllo B superato, limiti e rotazione della chiave
+
+**Decisione e fonte.** Controllo B del percorso 1 confermato dall'utente il 27/11/2026 ([PRODUCT.md](../PRODUCT.md) §12; [ARCHITECTURE.md](../ARCHITECTURE.md), «Richieste del collaboratore di ƎE»).
+
+**Cosa cambia per il sito.** Le proposte tecniche del contratto diventano decise: **60 richieste al minuto** per chiave (oltre, `429` con `Retry-After`); la chiave del sito si cambia **una volta l'anno** e subito se può essere uscita, con due chiavi attive durante il cambio; formato della **versione 1** con i due elenchi, valutazioni e professionisti ([integrazione-sito.md](integrazione-sito.md) §4–§6).
+
+**Compatibilità.** Nessun campo cambia (versione 1).
+
+**Disponibilità effettiva.** Nessun indirizzo né chiave: arrivano con la costruzione e dopo il parere sul nome.
+
+**Prove.** Quelle di [integrazione-sito.md](integrazione-sito.md) §8, da fare quando gli elenchi esistono.
+
+**Azione richiesta al sito.** Leggere al massimo una volta ogni pochi minuti (intervallo più cache entro 15 minuti) e prevedere il cambio annuale della chiave.
+
+---
+
+## 26/11/2026: commercialista nella Rete ƎE, aste rimandate
+
+**Decisione e fonte.** Decisioni dell'utente del 26/11/2026 nel ticket [Audio del collaboratore su aste, commercialisti e pubblicità](../.scratch/proposte-collaboratore-4-novembre/issues/15-audio-aste-commercialisti.md) ([PRODUCT.md](../PRODUCT.md) §12, 26/11/2026).
+
+**Cosa cambia per il sito.** Il **commercialista** entra fra i mestieri iniziali della Rete ƎE per la compravendita, accanto a geometra, ingegnere e notaio: il campo `professione` lo comprende. L'assistenza a chi partecipa alle **aste** passa da esclusa a rimandata, solo come mestiere della rete nel percorso per chi vende dopo il pilota: oggi sul sito non cambia nulla, niente sezione, catalogo o testi sulle aste. Se un professionista ha un rapporto con ƎE (per esempio lo studio che ne segue la contabilità), arriva con `nota_rapporto_economico`, come già previsto.
+
+**Compatibilità.** Nessun campo nuovo (versione 1); un valore in più nell'elenco di `professione`, ancora da chiudere con il collaboratore.
+
+**Disponibilità effettiva.** Nessuna: l'elenco dei professionisti resta vuoto finché la rete è spenta (24/11/2026).
+
+**Prove.** Nessuna.
+
+**Azione richiesta al sito.** Nessuna; se il sito presenta i mestieri della rete, può citare anche il commercialista, senza nomi.
+
+---
+
 ## 26/11/2026: aspetto della tessera fisica di chi possiede una casa
 
 **Decisione e fonte.** Decisioni dell'utente del 26/11/2026 nel ticket [Colore della tessera fisica di chi possiede una casa](../.scratch/design-percorso-1/issues/26-colore-tessera-chi-possiede.md) ([DESIGN.md](../DESIGN.md), «Tessera fisica di chi possiede una casa (percorso 1)»).
