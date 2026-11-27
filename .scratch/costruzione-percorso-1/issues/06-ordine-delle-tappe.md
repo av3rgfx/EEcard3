@@ -15,3 +15,7 @@ Con la forma decisa nel ticket [Come si divide la costruzione](03-come-si-divide
 4. **Pezzi fuori dalla storia:** casa senza gestione e valutazione, Rete ƎE spenta, elenchi per il sito, tecnici della casa con «Chiama», «Aperti di recente», «Ferma l'accesso», tessere, profilo e disdetta: dove entrano.
 
 ## Risposta (Answer)
+
+## Commenti (Comments)
+
+- 27/11/2026, dal ticket [Come si divide la costruzione](03-come-si-divide.md): prima le prove usa e getta, poi le fondamenta sottili, che comprendono già l'accesso con le sue pagine nel design approvato, il guardiano e il quaderno; la tappa «Primo accesso e tessera» non costruisce più l'accesso. Ogni tappa ha 1–3 storie di prova come traguardo: le «prove per tappa» di questo ticket ci si appoggiano.
