@@ -131,7 +131,7 @@ Il 25 e il 26/11/2026 è chiuso il ticket «Colore della tessera fisica di chi p
 
 **Da fare a cura dell'utente:** riferire al collaboratore di ƎE la scelta «alla pari» e il motivo per i colori della lavagna (DESIGN.md).
 
-Il 26 e il 27/11/2026 è fatto il **controllo B** (PRODUCT.md §12, 27/11/2026): «Ferma l'accesso» ferma anche le passkey; tre audio vecchi del collaboratore hanno portato le aste da scartate a rimandate e il commercialista nella Rete ƎE (26/11/2026); poi la conferma. Lo stesso giorno l'idea della chat dentro Connetto: prima come messaggi nella richiesta d'aiuto del percorso 2 (PRODUCT.md §12, 27/11/2026). **Prossima sessione:** l'avviso nella pagina del pacchetto, poi il piano di costruzione, con i messaggi «Passo 8» qui sotto. Il ticket «Consegna della tessera fisica in agenzia» non lo ferma e si può fare quando si vuole, con il suo messaggio.
+Il 26 e il 27/11/2026 è fatto il **controllo B** (PRODUCT.md §12, 27/11/2026): «Ferma l'accesso» ferma anche le passkey; tre audio vecchi del collaboratore hanno portato le aste da scartate a rimandate e il commercialista nella Rete ƎE (26/11/2026); poi la conferma. Lo stesso giorno l'idea della chat dentro Connetto: prima come messaggi nella richiesta d'aiuto del percorso 2 (PRODUCT.md §12, 27/11/2026). Lo stesso giorno è fatto l'avviso nella pagina del pacchetto (versione 15). **Prossima sessione:** il piano di costruzione, con il messaggio «Passo 8» qui sotto. Il ticket «Consegna della tessera fisica in agenzia» non lo ferma e si può fare quando si vuole, con il suo messaggio.
 
 ---
 
@@ -156,11 +156,9 @@ Registra in DESIGN.md solo ciò che confermo, con data e motivo; la discussione 
 
 Il **controllo B è superato il 27/11/2026** (PRODUCT.md §12): design «Terracotta» e tutte le scelte di ARCHITECTURE.md confermati, con le «Precisazioni del controllo B» e i due rischi accettati. Pagina della decisione: https://claude.ai/artifact/D25DNEcokmGXijm191iEg5.
 
-**Prima, in una sessione breve:** l'avviso nella pagina del pacchetto, scelto dall'utente il 26/11/2026 (DESIGN.md, «Pacchetto per il controllo B»). La pagina (https://claude.ai/artifact/9KwvBBmgGc859wN67hWbAF) è grande, circa 360 KB: va riletta per intero, a pezzi, prima di ripubblicarla; poi un avviso in cima con i link ai prototipi approvati dopo il 30/10 (richieste del collaboratore https://claude.ai/artifact/NJ7XmFUL4dGLxTZWCS5jpC, Rete ƎE https://claude.ai/artifact/N9ihQ28meZHa9cQQ98WUGm, tessera https://claude.ai/artifact/BrcMw4yYCsXWv7gMP2pd3X e https://claude.ai/artifact/GfYAgqA4i9UXeqeEN4dKAV), la regola «dove la pagina è indietro valgono le sezioni di DESIGN.md» e «Cosa resta aperto» aggiornata dalla riga del 27/11/2026 di PRODUCT.md §12. Messaggio:
+**Fatto il 27/11/2026:** l'avviso nella pagina del pacchetto (https://claude.ai/artifact/9KwvBBmgGc859wN67hWbAF, versione 15), con i link ai prototipi approvati dopo il 30/10 e «Cosa resta aperto» aggiornata (DESIGN.md, «Pacchetto per il controllo B»).
 
-Aggiungi l'avviso alla pagina del pacchetto per il controllo B, come deciso il 26/11/2026 (DESIGN.md, «Pacchetto per il controllo B»; START_HERE.md, «Passo 8»). Leggi AGENTS.md e STATUS.md; apri la pagina con lo strumento Artifact, azione «read», e rileggila tutta a pezzi prima di ripubblicarla. Cambia solo l'avviso in cima e i dati di «Cosa resta aperto»; non ridisegnare schermate. Controlla nel browser telefono e computer, chiaro e scuro. Chiudi aggiornando STATUS.md e START_HERE.md, commit e push sul branch della sessione e PR.
-
-**Poi, il piano di costruzione** (docs/METODO.md, passo 8). Messaggio:
+**Il piano di costruzione** (docs/METODO.md, passo 8). Messaggio:
 
 /wayfinder — nuova mappa `.scratch/costruzione-percorso-1/`: piano di costruzione del percorso 1 (docs/METODO.md, passo 8), dopo il controllo B superato il 27/11/2026.
 
