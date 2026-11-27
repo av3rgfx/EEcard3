@@ -1,7 +1,7 @@
 # Ricerca: verifiche d'inizio sulla piattaforma e sui servizi
 
 Type: research
-Status: open
+Status: resolved
 Blocked by:
 Mappa: [Costruzione del percorso 1: il piano](../map.md)
 
@@ -24,3 +24,13 @@ Voci da ARCHITECTURE.md:
 12. **IstatData:** si può provare il calcolo con una lettura salvata una volta, senza chiamare il servizio nei test? Condizioni d'uso per letture dai controlli automatici («Servizi esterni», «ISTAT»).
 
 ## Risposta (Answer)
+
+Ricerca del 27/11/2026 in [docs/ricerca/inizio-costruzione-piattaforma.md](../../../docs/ricerca/inizio-costruzione-piattaforma.md), una sezione per voce, con fonti e tabella finale. Nessun account aperto, nessuna prova fatta.
+- **Si chiudono leggendo:** «Ferma l'accesso» ha un punto unico, `databaseHooks.session.create.before`, per codice email, SMS e passkey (meglio lanciare un `APIError`: l'entrata con il codice email non controlla una sessione rifiutata) (2).
+- **Si chiudono leggendo, poi:** Typst ammette `a-2a,ua-1` insieme, programma di 55,7 MB, Apache-2.0 (5); Web Share con file funziona in Safari, Chrome ed Edge, non in Firefox né su Linux (8); Drizzle 1.0 è ancora RC (rc.6 del 20/11/2026), quindi vale la regola della 0.45.4 (9); la lettura ISTAT salvata nei test è ammessa da CC BY 4.0 (12).
+- **Prove locali, gratis:** React Router 8.5.3 con Better Auth 1.7.28 (nessun cambio della 8 tocca l'aggancio; la 7 riceve ancora correzioni) (1); memoria con limite 256/512 MB (4); veraPDF sulla ricevuta (5); DSS 6.5.1 con 300 MB e con L (6).
+- **Prove su Scalingo o col fornitore (autorizzazione):** intestazioni del proxy, perché Scalingo non dice se sostituisce o allunga `X-Forwarded-For` (3); pagina d'errore con le cinque variabili `SCALINGO_*_URL`, ospitata fuori dall'app (7).
+- **Su Scalingo, poi:** `.buildpacks` con `buildpack-jvm-common` + Node (l'esempio `javaonly` è superato) (6); SES simula recapitato, non recapitato e spam, non l'«esito non noto» (11); modalità demo di Skebby non documentata (10). Si possono raccogliere in una sola accensione dell'app temporanea.
+- **Fatti nuovi:** swap di Scalingo tolto dal 1/1/2027; indirizzo d'uscita di Scalingo comune a tutte le app (il blocco ISTAT può venire da altri); contratto Skebby pubblico con DPA (testo dell'SMS non conservato oltre l'invio, salvo richiesta) ma sub-responsabili anche AWS, Azure e Commify UK.
+- **Al parere** (incarico unico già previsto): sub-responsabili di Skebby fuori dall'Italia e il dovere di controllarne l'elenco.
+- **Spetta all'utente:** dove ospitare la pagina d'errore; quando aprire Scalingo, AWS e Skebby; se scrivere a Skebby.

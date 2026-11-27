@@ -26,6 +26,8 @@ Confermata dall'utente il 27/11/2026 (proposta A). *Scartate:* piano e costruzio
 
 <!-- una riga per ticket chiuso: nome con link, poi il succo della risposta -->
 
+- [Ricerca: verifiche d'inizio sulla piattaforma e sui servizi](issues/01-ricerca-piattaforma-servizi.md): si chiudono leggendo «Ferma l'accesso» (un punto unico di Better Auth per ogni modo di entrare), Typst (PDF/A-2a e PDF/UA-1 insieme), Web Share (non in Firefox né su Linux: lì il download), Drizzle (1.0 ancora in prova, si parte dalla 0.45.4) e la lettura ISTAT salvata per i test. Si provano gratis in locale React Router 8 con Better Auth, la memoria e DSS (la prova più incerta). Chiedono Scalingo o il fornitore, quindi l'autorizzazione: proxy, pagina d'errore (ospitata fuori dall'app), Java accanto a Node, SES simulato, modalità demo di Skebby (non documentata); si possono raccogliere in una sola accensione dell'app temporanea. Fatti nuovi: niente swap su Scalingo dal 1/1/2027; indirizzo d'uscita comune a tutte le app (il blocco ISTAT può venire da altri); sub-responsabili di Skebby anche fuori dall'Italia, al parere.
+
 ## Non ancora specificato (Not yet specified)
 
 - **Decisioni piccole dentro le tappe**, che il piano colloca senza prenderle: il programma con cui l'operatore verifica una firma al banco (ARCHITECTURE.md, «Documento da firmare»); il testo della pagina d'errore fissa con le regole di DESIGN.md; email e SMS, che si disegnano dopo il parere sul nome.
