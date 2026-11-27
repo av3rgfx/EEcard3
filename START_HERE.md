@@ -154,7 +154,7 @@ Registra in DESIGN.md solo ciò che confermo, con data e motivo; la discussione 
 
 ## Passo 8: piano di costruzione del percorso 1
 
-Il **controllo B è superato il 27/11/2026** (PRODUCT.md §12). Il 27/11/2026 è aperta la mappa [Costruzione del percorso 1: il piano](.scratch/costruzione-percorso-1/map.md), con la destinazione confermata dall'utente: il piano confermato, pezzo per pezzo, fino a una prima versione del percorso 1 provata con dati inventati, compresa la prova con i sub-agenti (§10.9). Le due ricerche d'inizio (ticket 01 e 02) sono in corso. **Prossima decisione:** come si divide la costruzione. Messaggio:
+Il **controllo B è superato il 27/11/2026** (PRODUCT.md §12). Il 27/11/2026 è aperta la mappa [Costruzione del percorso 1: il piano](.scratch/costruzione-percorso-1/map.md), con la destinazione confermata dall'utente: il piano confermato, pezzo per pezzo, fino a una prima versione del percorso 1 provata con dati inventati, compresa la prova con i sub-agenti (§10.9). Le due ricerche d'inizio sono chiuse (docs/ricerca/inizio-costruzione-piattaforma.md e docs/ricerca/inizio-costruzione-strumenti.md). **Prossima decisione:** come si divide la costruzione. Messaggio:
 
 /wayfinder .scratch/costruzione-percorso-1/map.md — ticket «Come si divide la costruzione: fondamenta e tappe» (.scratch/costruzione-percorso-1/issues/03-come-si-divide.md)
 

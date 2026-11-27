@@ -16,3 +16,7 @@ L'utente quasi non legge il codice (ARCHITECTURE.md, «Cosa vincolerà la scelta
 Dipende dalla [ricerca sugli strumenti](02-ricerca-strumenti-lavoro.md) (OCR, protezione del ramo).
 
 ## Risposta (Answer)
+
+## Commenti (Comments)
+
+- 27/11/2026, dalla [ricerca sugli strumenti](02-ricerca-strumenti-lavoro.md): l'email di GitHub per un controllo fallito arriva solo a chi ha avviato il controllo e se l'ha accesa, quindi non è garantita per le proposte di Dependabot; l'unione automatica chiede un flusso (`fetch-metadata` più `gh pr merge --auto`), l'impostazione «Allow auto-merge» e i controlli obbligatori. Da decidere se i pacchetti `0.x` (per esempio Drizzle 0.45), che Dependabot tratta come versioni medie, si uniscono da soli.

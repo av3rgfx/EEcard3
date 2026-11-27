@@ -16,3 +16,7 @@ Dove lavorano gli agenti e con quali strumenti, perché i controlli siano gli st
 5. **Impostazioni del repository su GitHub** (protezione del ramo, Dependabot, avvisi): le cambia l'utente con una lista di passi o gli agenti con la sua autorizzazione.
 
 ## Risposta (Answer)
+
+## Commenti (Comments)
+
+- 27/11/2026, dalla [ricerca sugli strumenti](02-ricerca-strumenti-lavoro.md): il programma di avvio di OCR, senza `OCR_NO_UPDATE=1`, lancia da solo `npm i -g` ogni 18 minuti, cioè un'installazione globale automatica che AGENTS.md vieta: la variabile va impostata dove gira OCR. La skill `open-code-review-delegate` della fonte è cambiata dopo la nostra copia (commit `8eb8334`): da guardare con la regola sulle skill (provenienza e cambiamenti, copie Claude e Codex uguali). PostgreSQL 17 nella sessione: Docker spento finché non si accende a mano, immagine da `public.ecr.aws`; sul computer dell'utente il sistema non è scritto nei documenti, da chiedere.
