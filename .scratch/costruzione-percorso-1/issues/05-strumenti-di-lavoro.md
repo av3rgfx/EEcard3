@@ -1,7 +1,7 @@
 # Strumenti di lavoro: dove si costruisce, PostgreSQL 17 e OCR
 
 Type: grilling
-Status: claimed
+Status: resolved
 Blocked by: 02
 Mappa: [Costruzione del percorso 1: il piano](../map.md)
 
@@ -16,6 +16,17 @@ Dove lavorano gli agenti e con quali strumenti, perché i controlli siano gli st
 5. **Impostazioni del repository su GitHub** (protezione del ramo, Dependabot, avvisi): le cambia l'utente con una lista di passi o gli agenti con la sua autorizzazione.
 
 ## Risposta (Answer)
+
+Confermata dall'utente il 27/11/2026: sei decisioni una alla volta, tutte sull'opzione consigliata, più il riepilogo. Pagina della decisione 1: https://claude.ai/artifact/YCqZCuBQMQ9s1fFvNPp1Vk. Il dettaglio di ogni decisione è nei commenti qui sotto; le scelte tecniche sono in [ARCHITECTURE.md](../../../ARCHITECTURE.md), «Strumenti di lavoro».
+
+1. **Dove si costruisce:** di regola nelle **sessioni cloud**; il computer dell'utente, con **Arch Linux**, solo quando serve (provare l'app con le proprie mani a fine pezzo, se l'utente vuole; il controllo delle librerie prima del pilota). Docker e Node su Arch si installano la prima volta che servono.
+2. **PostgreSQL 17:** Docker ovunque con l'immagine `postgres:17`. Nel cloud uno script di preparazione in un ambiente cloud personale nuovo, «EECard3», con la rete limitata ai siti che servono, configura `mirror.gcr.io` (Docker Hub di ripiego) e scarica l'immagine prima che parta l'agente. Lo propone l'agente nella prima sessione delle fondamenta, dopo aver provato il comando unico; lo approva l'utente.
+3. **OCR:** dipendenza di sviluppo a versione fissa, sempre con `OCR_NO_UPDATE=1` (script del progetto e ambiente «EECard3»), aggiornata da Dependabot. Se non parte vale come controllo rosso. La skill `open-code-review-delegate` si aggiorna alla fonte, senza il consiglio `npm install -g`.
+4. **Skill di sicurezza:** `sentry-security-review` (commit `6d20de4`, con la regola «un'altra casa») e `gha-security-review`, copiate e lette nella prima sessione delle fondamenta.
+5. **Impostazioni di GitHub:** le cambia l'utente con la lista di passi dell'agente, dopo il primo giro dei controlli; la protezione vale anche per l'amministratore; l'agente verifica con la prima proposta.
+6. **Velocità:** controlli leggeri a ogni pezzo e una prova di carico prima del pilota; numeri e strumenti nel ticket [Velocità con molti utenti](11-velocita-molti-utenti.md).
+
+Ricadono tutti sulla **prima sessione delle fondamenta**, che diventa più ricca: quanto, lo dice il ticket [Ordine delle tappe](06-ordine-delle-tappe.md). Nessun termine nuovo in GLOSSARY.md; nessun ADR (tutto si cambia con la configurazione). Nessuna impostazione di GitHub né ambiente cloud toccati in questa sessione.
 
 ## Commenti (Comments)
 
