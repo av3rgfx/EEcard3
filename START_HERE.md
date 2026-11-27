@@ -131,7 +131,7 @@ Il 25 e il 26/11/2026 è chiuso il ticket «Colore della tessera fisica di chi p
 
 **Da fare a cura dell'utente:** riferire al collaboratore di ƎE la scelta «alla pari» e il motivo per i colori della lavagna (DESIGN.md).
 
-Il 26 e il 27/11/2026 è fatto il **controllo B** (PRODUCT.md §12, 27/11/2026): «Ferma l'accesso» ferma anche le passkey; tre audio vecchi del collaboratore hanno portato le aste da scartate a rimandate e il commercialista nella Rete ƎE (26/11/2026); poi la conferma. Lo stesso giorno l'idea della chat dentro Connetto: prima come messaggi nella richiesta d'aiuto del percorso 2 (PRODUCT.md §12, 27/11/2026). Lo stesso giorno è fatto l'avviso nella pagina del pacchetto (versione 15). **Prossima sessione:** il piano di costruzione, con il messaggio «Passo 8» qui sotto. Il ticket «Consegna della tessera fisica in agenzia» non lo ferma e si può fare quando si vuole, con il suo messaggio.
+Il 26 e il 27/11/2026 è fatto il **controllo B** (PRODUCT.md §12, 27/11/2026): «Ferma l'accesso» ferma anche le passkey; tre audio vecchi del collaboratore hanno portato le aste da scartate a rimandate e il commercialista nella Rete ƎE (26/11/2026); poi la conferma. Lo stesso giorno l'idea della chat dentro Connetto: prima come messaggi nella richiesta d'aiuto del percorso 2 (PRODUCT.md §12, 27/11/2026). Lo stesso giorno è fatto l'avviso nella pagina del pacchetto (versione 15). Il 27/11/2026 è aperta la mappa del piano di costruzione (passo 8). **Prossima sessione:** il ticket «Come si divide la costruzione», con il messaggio «Passo 8» qui sotto. Il ticket «Consegna della tessera fisica in agenzia» non lo ferma e si può fare quando si vuole, con il suo messaggio.
 
 ---
 
@@ -154,22 +154,17 @@ Registra in DESIGN.md solo ciò che confermo, con data e motivo; la discussione 
 
 ## Passo 8: piano di costruzione del percorso 1
 
-Il **controllo B è superato il 27/11/2026** (PRODUCT.md §12): design «Terracotta» e tutte le scelte di ARCHITECTURE.md confermati, con le «Precisazioni del controllo B» e i due rischi accettati. Pagina della decisione: https://claude.ai/artifact/D25DNEcokmGXijm191iEg5.
+Il **controllo B è superato il 27/11/2026** (PRODUCT.md §12). Il 27/11/2026 è aperta la mappa [Costruzione del percorso 1: il piano](.scratch/costruzione-percorso-1/map.md), con la destinazione confermata dall'utente: il piano confermato, pezzo per pezzo, fino a una prima versione del percorso 1 provata con dati inventati, compresa la prova con i sub-agenti (§10.9). Le due ricerche d'inizio (ticket 01 e 02) sono in corso. **Prossima decisione:** come si divide la costruzione. Messaggio:
 
-**Fatto il 27/11/2026:** l'avviso nella pagina del pacchetto (https://claude.ai/artifact/9KwvBBmgGc859wN67hWbAF, versione 15), con i link ai prototipi approvati dopo il 30/10 e «Cosa resta aperto» aggiornata (DESIGN.md, «Pacchetto per il controllo B»).
+/wayfinder .scratch/costruzione-percorso-1/map.md — ticket «Come si divide la costruzione: fondamenta e tappe» (.scratch/costruzione-percorso-1/issues/03-come-si-divide.md)
 
-**Il piano di costruzione** (docs/METODO.md, passo 8). Messaggio:
+Leggi AGENTS.md, STATUS.md, la mappa (Destinazione, Note, Decisioni finora) e il ticket; poi, solo dove servono, docs/METODO.md (passo 8), le due ricerche d'inizio costruzione, ARCHITECTURE.md («Decisioni confermate» e «Precisazioni del controllo B») e in DESIGN.md «Pacchetto per il controllo B» e «Componenti e token». Il repository è pulito per scelta: non cercare né riusare codice o decisioni di tentativi precedenti.
 
-/wayfinder — nuova mappa `.scratch/costruzione-percorso-1/`: piano di costruzione del percorso 1 (docs/METODO.md, passo 8), dopo il controllo B superato il 27/11/2026.
+- Rivendica il ticket (`Status: claimed`) e lavora solo su quello, con le skill `grilling` e `domain-modeling`; `prototype` per la pagina visiva.
+- È una scelta complessa: prepara una pagina interattiva e visiva (Artifact privato) con le forme affiancate (fondamenta poi tappe, tappe complete fin dall'inizio, per ruolo), con esempi di cosa si vede e si prova alla fine di ogni pezzo e dati inventati, cosa comporta ciascuna e la raccomandazione; rispondo in chat. Poi le altre domande del ticket una alla volta, in parole semplici.
+- Niente codice applicativo finché non confermo il piano; nessun account o servizio reale senza la mia autorizzazione.
 
-Leggi AGENTS.md, STATUS.md, docs/METODO.md (passo 8), docs/rules/BACKEND.md e docs/rules/QUALITY.md, ARCHITECTURE.md (tutte le «Decisioni confermate», le «Precisazioni del controllo B» e i punti «Da provare» e «Da verificare all'inizio della costruzione»), PRODUCT.md §10 e §12 (righe dal 26/11/2026) e in DESIGN.md «Pacchetto per il controllo B» e «Componenti e token». Il repository è pulito per scelta: non cercare né riusare codice o decisioni di tentativi precedenti.
-
-- Proponimi la destinazione della mappa (per esempio: l'ordine dei pezzi del percorso 1 fino a una prima versione provata con dati inventati, con la revisione dell'esperienza tappa per tappa già decisa) e aspetta la mia conferma.
-- Il piano dice l'ordine dei pezzi, cosa prova ognuno e quando si fanno le verifiche «da fare all'inizio della costruzione»; nessun account o servizio reale senza la mia autorizzazione; OCR obbligatoria prima del commit finale di ogni incremento di codice.
-- Una decisione alla volta, in parole semplici, con una raccomandazione; per le scelte complesse una pagina interattiva e visiva.
-- Niente codice applicativo finché non confermo il piano.
-
-Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
+Registra le decisioni nel ticket e nella mappa (Decisioni finora); scelte tecniche nuove in ARCHITECTURE.md con data e motivo. Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 
 ---
 
