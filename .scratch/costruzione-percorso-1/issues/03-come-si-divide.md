@@ -16,3 +16,7 @@ Il percorso 1 si costruisce «un percorso intero alla volta» (docs/METODO.md, p
 Da decidere anche: quanto è grande un pezzo (una sessione, una PR), e cosa si può vedere e provare alla fine di ciascuno. Scelta complessa: si prepara una pagina interattiva e visiva con le tre forme affiancate, con dati inventati.
 
 ## Risposta (Answer)
+
+## Commenti (Comments)
+
+- 27/11/2026, scelta dell'utente sulla raccomandazione: **non si rifà il controllo dell'architettura e dei linguaggi** (scelte di quattro settimane prima, con alternative confrontate, confermate al controllo B e ricontrollate dalle ricerche [01](01-ricerca-piattaforma-servizi.md) e [02](02-ricerca-strumenti-lavoro.md)). Al suo posto il piano mette presto le **prove pratiche dei punti incerti**, soprattutto DSS nella memoria di Scalingo e Better Auth con React Router 8; se una non regge si riapre solo quel pezzo, con un confronto mirato. Da tenere presente nel decidere come si divide la costruzione.
