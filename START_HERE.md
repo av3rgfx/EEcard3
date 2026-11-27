@@ -131,7 +131,7 @@ Il 25 e il 26/11/2026 è chiuso il ticket «Colore della tessera fisica di chi p
 
 **Da fare a cura dell'utente:** riferire al collaboratore di ƎE la scelta «alla pari» e il motivo per i colori della lavagna (DESIGN.md).
 
-Il 26 e il 27/11/2026 è fatto il **controllo B** (PRODUCT.md §12, 27/11/2026): «Ferma l'accesso» ferma anche le passkey; tre audio vecchi del collaboratore hanno portato le aste da scartate a rimandate e il commercialista nella Rete ƎE (26/11/2026); poi la conferma. **Prossima sessione:** l'avviso nella pagina del pacchetto, poi il piano di costruzione, con i messaggi «Passo 8» qui sotto. Il ticket «Consegna della tessera fisica in agenzia» non lo ferma e si può fare quando si vuole, con il suo messaggio.
+Il 26 e il 27/11/2026 è fatto il **controllo B** (PRODUCT.md §12, 27/11/2026): «Ferma l'accesso» ferma anche le passkey; tre audio vecchi del collaboratore hanno portato le aste da scartate a rimandate e il commercialista nella Rete ƎE (26/11/2026); poi la conferma. Lo stesso giorno l'idea della chat dentro Connetto: prima come messaggi nella richiesta d'aiuto del percorso 2 (PRODUCT.md §12, 27/11/2026). **Prossima sessione:** l'avviso nella pagina del pacchetto, poi il piano di costruzione, con i messaggi «Passo 8» qui sotto. Il ticket «Consegna della tessera fisica in agenzia» non lo ferma e si può fare quando si vuole, con il suo messaggio.
 
 ---
 
