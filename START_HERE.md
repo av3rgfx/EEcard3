@@ -131,7 +131,7 @@ Il 25 e il 26/11/2026 è chiuso il ticket «Colore della tessera fisica di chi p
 
 **Da fare a cura dell'utente:** riferire al collaboratore di ƎE la scelta «alla pari» e il motivo per i colori della lavagna (DESIGN.md).
 
-**Prossima sessione:** il controllo B, con il messaggio «Controllo B» qui sotto. Il ticket «Consegna della tessera fisica in agenzia» non lo ferma e si può fare quando si vuole, con il suo messaggio.
+Il 26 e il 27/11/2026 è fatto il **controllo B** (PRODUCT.md §12, 27/11/2026): «Ferma l'accesso» ferma anche le passkey; tre audio vecchi del collaboratore hanno portato le aste da scartate a rimandate e il commercialista nella Rete ƎE (26/11/2026); poi la conferma. **Prossima sessione:** l'avviso nella pagina del pacchetto, poi il piano di costruzione, con i messaggi «Passo 8» qui sotto. ~~Il controllo B, con il messaggio «Controllo B» qui sotto.~~ Il ticket «Consegna della tessera fisica in agenzia» non lo ferma e si può fare quando si vuole, con il suo messaggio.
 
 ---
 
@@ -152,18 +152,24 @@ Registra in DESIGN.md solo ciò che confermo, con data e motivo; la discussione 
 
 ---
 
-## Controllo B: design e architettura del percorso 1
+## Passo 8: piano di costruzione del percorso 1
 
-Le risposte del collaboratore di ƎE sono registrate dal 3/11/2026 e le schermate delle sue richieste sono approvate lo stesso giorno. Dal 6/11/2026 il controllo B aspetta i pezzi che il ticket «Cosa, fra le proposte, può toccare il percorso 1» della mappa [Proposte del collaboratore di ƎE del 4/11/2026](.scratch/proposte-collaboratore-4-novembre/map.md) ha portato nel percorso 1, cioè i ticket 07, 08, 09 e 13 (il 06 è chiuso dal 7/11/2026). *Dal 12/11/2026* sono chiusi anche 07, 08, 09 e 13: il controllo B aspetta solo il ticket 14. *Dal 24/11/2026* la mappa delle proposte è chiusa: il controllo B aspettava il disegno della Rete ƎE (chiuso il 25/11/2026, DESIGN.md «Rete ƎE (percorso 1)») e del colore della tessera di chi possiede (chiuso il 26/11/2026, DESIGN.md «Tessera fisica di chi possiede una casa (percorso 1)»): non aspetta più nulla, e controlla anche che la rete si possa tenere spenta all'avvio del pilota (mappa dell'architettura, «Non ancora specificato»). Messaggio:
+Il **controllo B è superato il 27/11/2026** (PRODUCT.md §12): design «Terracotta» e tutte le scelte di ARCHITECTURE.md confermati, con le «Precisazioni del controllo B» e i due rischi accettati. Pagina della decisione: https://claude.ai/artifact/D25DNEcokmGXijm191iEg5.
 
-Controllo B del percorso 1 (docs/METODO.md, passo 7): design e architettura sono pronti, le risposte del collaboratore di ƎE sono registrate nel ticket «Il collaboratore di ƎE guarda lo spazio dell'operatore» e le schermate delle sue richieste sono approvate (ticket «Schermate delle richieste del collaboratore»; prototipo https://claude.ai/artifact/NJ7XmFUL4dGLxTZWCS5jpC).
+**Prima, in una sessione breve:** l'avviso nella pagina del pacchetto, scelto dall'utente il 26/11/2026 (DESIGN.md, «Pacchetto per il controllo B»). La pagina (https://claude.ai/artifact/9KwvBBmgGc859wN67hWbAF) è grande, circa 360 KB: va riletta per intero, a pezzi, prima di ripubblicarla; poi un avviso in cima con i link ai prototipi approvati dopo il 30/10 (richieste del collaboratore https://claude.ai/artifact/NJ7XmFUL4dGLxTZWCS5jpC, Rete ƎE https://claude.ai/artifact/N9ihQ28meZHa9cQQ98WUGm, tessera https://claude.ai/artifact/BrcMw4yYCsXWv7gMP2pd3X e https://claude.ai/artifact/GfYAgqA4i9UXeqeEN4dKAV), la regola «dove la pagina è indietro valgono le sezioni di DESIGN.md» e «Cosa resta aperto» aggiornata dalla riga del 27/11/2026 di PRODUCT.md §12. Messaggio:
 
-Leggi AGENTS.md, STATUS.md, docs/METODO.md (passi 6–8), la mappa `.scratch/architettura-percorso-1/map.md` (Destinazione, Decisioni finora, Non ancora specificato) e ARCHITECTURE.md; in DESIGN.md «Pacchetto per il controllo B (percorso 1)», «Richieste del collaboratore di ƎE (percorso 1)» «Rete ƎE (percorso 1)» (prova https://claude.ai/artifact/N9ihQ28meZHa9cQQ98WUGm) e «Tessera fisica di chi possiede una casa (percorso 1)» (prove https://claude.ai/artifact/BrcMw4yYCsXWv7gMP2pd3X e https://claude.ai/artifact/GfYAgqA4i9UXeqeEN4dKAV; la pagina del pacchetto non contiene ancora queste schermate: chiedimi se aggiornarla). La pagina del pacchetto è https://claude.ai/artifact/9KwvBBmgGc859wN67hWbAF; aprila con lo strumento Artifact, azione «read». Il repository è pulito per scelta: non cercare, consultare o riusare repository, codice, design o decisioni di tentativi precedenti.
+Aggiungi l'avviso alla pagina del pacchetto per il controllo B, come deciso il 26/11/2026 (DESIGN.md, «Pacchetto per il controllo B»; START_HERE.md, «Passo 8»). Leggi AGENTS.md e STATUS.md; apri la pagina con lo strumento Artifact, azione «read», e rileggila tutta a pezzi prima di ripubblicarla. Cambia solo l'avviso in cima e i dati di «Cosa resta aperto»; non ridisegnare schermate. Controlla nel browser telefono e computer, chiaro e scuro. Chiudi aggiornando STATUS.md e START_HERE.md, commit e push sul branch della sessione e PR.
 
-- Portami in parole semplici cosa confermo: la direzione di design e le scelte tecniche, con i rischi accettati (controllo di un esperto umano, nessun antivirus nel pilota) e ciò che resta aperto prima del pilota (pareri, prove su telefoni veri, «Cosa resta aperto» della pagina).
-- Le correzioni del collaboratore sono già decise (ticket, «Risposta»): controlla che ARCHITECTURE.md le regga (mezzi accettati al banco per agenzia; pagamento parziale confermato dal proprietario; le scelte della sezione «Richieste del collaboratore di ƎE», segnate da confermare). Se trovi un conflitto, mostramelo con una proposta, una domanda alla volta, con una raccomandazione.
-- Controlla anche le parti entrate dalle proposte del collaboratore (PRODUCT.md §12, 6/11–24/11/2026): la voce «Rete ƎE nel percorso 1» in «Non ancora specificato» della mappa dell'architettura (rete spenta all'avvio, sì all'app e al sito, controllo annuale) e i minuti contati a parte per le case senza gestione e per la rete (§13).
-- Registra l'esito in PRODUCT.md §12 con data e motivo. Non scrivere codice: il piano di costruzione è il passo 8.
+**Poi, il piano di costruzione** (docs/METODO.md, passo 8). Messaggio:
+
+/wayfinder — nuova mappa `.scratch/costruzione-percorso-1/`: piano di costruzione del percorso 1 (docs/METODO.md, passo 8), dopo il controllo B superato il 27/11/2026.
+
+Leggi AGENTS.md, STATUS.md, docs/METODO.md (passo 8), docs/rules/BACKEND.md e docs/rules/QUALITY.md, ARCHITECTURE.md (tutte le «Decisioni confermate», le «Precisazioni del controllo B» e i punti «Da provare» e «Da verificare all'inizio della costruzione»), PRODUCT.md §10 e §12 (righe dal 26/11/2026) e in DESIGN.md «Pacchetto per il controllo B» e «Componenti e token». Il repository è pulito per scelta: non cercare né riusare codice o decisioni di tentativi precedenti.
+
+- Proponimi la destinazione della mappa (per esempio: l'ordine dei pezzi del percorso 1 fino a una prima versione provata con dati inventati, con la revisione dell'esperienza tappa per tappa già decisa) e aspetta la mia conferma.
+- Il piano dice l'ordine dei pezzi, cosa prova ognuno e quando si fanno le verifiche «da fare all'inizio della costruzione»; nessun account o servizio reale senza la mia autorizzazione; OCR obbligatoria prima del commit finale di ogni incremento di codice.
+- Una decisione alla volta, in parole semplici, con una raccomandazione; per le scelte complesse una pagina interattiva e visiva.
+- Niente codice applicativo finché non confermo il piano.
 
 Chiudi la sessione aggiornando STATUS.md e START_HERE.md, poi fai commit e push sul branch della sessione e crea o aggiorna la PR.
 

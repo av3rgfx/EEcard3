@@ -6,6 +6,22 @@ Ogni voce segue la [§10 del contratto](integrazione-sito.md#10-aggiornamenti-fr
 
 ---
 
+## 27/11/2026: controllo B superato, limiti e rotazione della chiave
+
+**Decisione e fonte.** Controllo B del percorso 1 confermato dall'utente il 27/11/2026 ([PRODUCT.md](../PRODUCT.md) §12; [ARCHITECTURE.md](../ARCHITECTURE.md), «Richieste del collaboratore di ƎE»).
+
+**Cosa cambia per il sito.** Le proposte tecniche del contratto diventano decise: **60 richieste al minuto** per chiave (oltre, `429` con `Retry-After`); la chiave del sito si cambia **una volta l'anno** e subito se può essere uscita, con due chiavi attive durante il cambio; formato della **versione 1** con i due elenchi, valutazioni e professionisti ([integrazione-sito.md](integrazione-sito.md) §4–§6).
+
+**Compatibilità.** Nessun campo cambia (versione 1).
+
+**Disponibilità effettiva.** Nessun indirizzo né chiave: arrivano con la costruzione e dopo il parere sul nome.
+
+**Prove.** Quelle di [integrazione-sito.md](integrazione-sito.md) §8, da fare quando gli elenchi esistono.
+
+**Azione richiesta al sito.** Leggere al massimo una volta ogni pochi minuti (intervallo più cache entro 15 minuti) e prevedere il cambio annuale della chiave.
+
+---
+
 ## 26/11/2026: commercialista nella Rete ƎE, aste rimandate
 
 **Decisione e fonte.** Decisioni dell'utente del 26/11/2026 nel ticket [Audio del collaboratore su aste, commercialisti e pubblicità](../.scratch/proposte-collaboratore-4-novembre/issues/15-audio-aste-commercialisti.md) ([PRODUCT.md](../PRODUCT.md) §12, 26/11/2026).

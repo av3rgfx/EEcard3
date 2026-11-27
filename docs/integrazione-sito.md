@@ -56,9 +56,9 @@ Il meccanismo più semplice che regge le revoche: **il sito legge da Connetto un
 - **Nel sito** sta solo in una variabile d'ambiente del server (Scalingo), mai nel codice, nel repository, nei registri, nel browser o in una pagina. Le chiamate partono solo dal server del sito.
 - **In Connetto** si conserva solo l'impronta della chiave, con nome, data di creazione e autorizzazioni.
 - **Autorizzazioni distinte:** ogni chiave appartiene alla fonte di accesso «sito» e porta permessi separati per elenco, `valutazioni:lettura` e `professionisti:lettura` (quest'ultimo deciso il 6/11/2026). Con la chiave del sito non si legge nient'altro: né pagine dei clienti né dati dell'operatore.
-- **Rotazione senza interruzioni:** fino a due chiavi attive per la fonte «sito». Si crea la nuova, la si mette nel sito, si controlla una lettura riuscita, si revoca la vecchia. Una chiave revocata smette di funzionare alla richiesta successiva. Rotazione subito se una chiave può essere uscita; altrimenti con la frequenza che si concorda (§9).
+- **Rotazione senza interruzioni:** fino a due chiavi attive per la fonte «sito». Si crea la nuova, la si mette nel sito, si controlla una lettura riuscita, si revoca la vecchia. Una chiave revocata smette di funzionare alla richiesta successiva. Rotazione subito se una chiave può essere uscita; altrimenti **una volta l'anno** (confermato al controllo B il 27/11/2026).
 
-**Limiti.** Proposta: 60 richieste al minuto per chiave; oltre, `429` con `Retry-After` in secondi. Il sito ne fa molte meno (vedi «Lettura»).
+**Limiti.** *Confermato al controllo B il 27/11/2026:* 60 richieste al minuto per chiave; oltre, `429` con `Retry-After` in secondi. Il sito ne fa molte meno (vedi «Lettura»).
 
 **Lettura.** Ogni risposta è l'**elenco completo** di ciò che si può pubblicare in quel momento, calcolato dal guardiano alla richiesta, senza copie dentro Connetto: una revoca o una scadenza vale dalla richiesta successiva. Niente paginazione nella versione 1: si attendono al più alcune centinaia di voci (inferenza: 100–200 case nel pilota). Se un elenco supera 1.000 voci si passa a una versione 2 con la paginazione. L'ordine dell'elenco **non ha significato**; l'ordine di presentazione lo decide il sito secondo le regole decise (per i professionisti, deciso il 9/11/2026 nel ticket [Visibilità gratuita, trasparenza e confini](../.scratch/proposte-collaboratore-4-novembre/issues/09-visibilita-trasparenza.md): per `professione`, poi alfabetico per `nome_pubblico`, con una riga che lo dice; §6).
 
@@ -241,7 +241,7 @@ Da eseguire quando esisteranno le due parti, solo con dati inventati. **Nessuna 
 | ~~Mandare i dati di un visitatore a un professionista~~ **Deciso il 12/11/2026** (ticket 09, decisione 6): no | utente | §7 |
 | Indirizzo base e dominio di Connetto | dopo il parere sul nome | tutto |
 | Nome e simbolo di Connetto sul sito: **deciso il 12/11/2026** che non compaiono prima del parere sul marchio; la copia dei valori visivi nel sito resta come riferimento | consulente in marchi | sezione del sito su Connetto |
-| Limite di richieste e frequenza della rotazione | proposta tecnica, al controllo B | §4 |
+| ~~Limite di richieste e frequenza della rotazione~~ **Confermati al controllo B il 27/11/2026:** 60 richieste al minuto per chiave; rotazione una volta l'anno e subito se la chiave può essere uscita; formato della versione 1 | utente | §4 |
 | Pareri per accendere la Rete ƎE: elencati in [PRODUCT.md](../PRODUCT.md) §10.10 dal 24/11/2026; fino ad allora l'elenco dei professionisti è vuoto (§6) | avvocato, esperto privacy | elenco dei professionisti, non l'avvio del pilota |
 | Pareri già segnalati: valutazione pubblicata (privacy), pubblicazione dei professionisti, imparzialità del mediatore e rete ([ricerca](ricerca/segnalare-professionisti.md), §6) | professionisti esterni | prima dell'uso reale |
 
