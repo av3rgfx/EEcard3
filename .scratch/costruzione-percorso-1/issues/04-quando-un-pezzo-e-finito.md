@@ -1,7 +1,7 @@
 # Quando un pezzo è finito e come entra nel ramo principale
 
 Type: grilling
-Status: open
+Status: claimed
 Blocked by: 02
 Mappa: [Costruzione del percorso 1: il piano](../map.md)
 
