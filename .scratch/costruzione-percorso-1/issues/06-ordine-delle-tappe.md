@@ -1,7 +1,7 @@
 # Ordine delle tappe e cosa prova ciascuna
 
 Type: grilling
-Status: open
+Status: claimed
 Blocked by: 03
 Mappa: [Costruzione del percorso 1: il piano](../map.md)
 
@@ -20,3 +20,4 @@ Con la forma decisa nel ticket [Come si divide la costruzione](03-come-si-divide
 
 - 27/11/2026, dal ticket [Come si divide la costruzione](03-come-si-divide.md): prima le prove usa e getta, poi le fondamenta sottili, che comprendono già l'accesso con le sue pagine nel design approvato, il guardiano e il quaderno; la tappa «Primo accesso e tessera» non costruisce più l'accesso. Ogni tappa ha 1–3 storie di prova come traguardo: le «prove per tappa» di questo ticket ci si appoggiano.
 - 27/11/2026, dal ticket [Strumenti di lavoro](05-strumenti-di-lavoro.md): la **prima sessione delle fondamenta** porta in più la dipendenza OCR con la skill aggiornata, la copia di `sentry-security-review` e `gha-security-review`, lo script dell'ambiente cloud «EECard3» da far approvare e, dopo il primo giro dei controlli, la lista delle impostazioni di GitHub per l'utente: va valutato se resta una sessione o si divide. Il ticket [Velocità con molti utenti](11-velocita-molti-utenti.md) aggiunge i dati inventati grandi e i tempi massimi: da collocare nelle fondamenta o nella prima tappa.
+- 28/11/2026, ticket rivendicato. Pagina della domanda 1 (prototipo usa e getta, solo dati inventati): https://claude.ai/artifact/MLDCLZpiFuYubJd3gKcqAF. Tre ordini affiancati (A, la storia così com'è; B, prima il denaro su case inserite a mano; C, la storia con la contestazione e la ricevuta corretta subito dopo il bonifico), un cursore «dopo il pezzo 1…15» con cosa funziona già, due problemi d'esempio con le tappe da ritoccare; raccomandazione C. In attesa della risposta dell'utente. Le altre domande (tappe piccole insieme, prove per tappa, revisione dell'esperienza, pezzi fuori dalla storia, prima sessione delle fondamenta e dati grandi) dopo, una alla volta.
