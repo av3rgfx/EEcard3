@@ -1,7 +1,7 @@
 # Ordine delle tappe e cosa prova ciascuna
 
 Type: grilling
-Status: claimed
+Status: resolved
 Blocked by: 03
 Mappa: [Costruzione del percorso 1: il piano](../map.md)
 
@@ -15,6 +15,33 @@ Con la forma decisa nel ticket [Come si divide la costruzione](03-come-si-divide
 4. **Pezzi fuori dalla storia:** casa senza gestione e valutazione, Rete ƎE spenta, elenchi per il sito, tecnici della casa con «Chiama», «Aperti di recente», «Ferma l'accesso», tessere, profilo e disdetta: dove entrano.
 
 ## Risposta (Answer)
+
+Confermata dall'utente il 28/11/2026: sette domande una alla volta, tutte sull'opzione consigliata, e il riepilogo confermato con tre proposte di collocazione. Pagina della domanda 1: https://claude.ai/artifact/MLDCLZpiFuYubJd3gKcqAF (privata, solo dati inventati). Il dettaglio di ogni domanda, con le alternative scartate, è nei commenti.
+
+1. **Ordine dei pezzi** (17 dopo il pezzo 0):
+   0. prove usa e getta (Better Auth, DSS, memoria);
+   1. **fondamenta**, in cinque sessioni: revisione e storie di prova; progetto e controlli; ambiente di prova (con i dati grandi); accesso; guardiano, quaderno e pagina «cosa vedi»;
+   2. attivazione in ufficio (tappa 1), con ricerca dell'operatore e «Aperti di recente», coda vuota e «Oggi», pulsante «Ferma l'accesso», più proprietari;
+   3. in agenzia con la proprietaria: incarico e adesione (tappa 2);
+   4. benvenuto, tessera e casa a inizio mese (tappe 3 e 4), con profilo e ricerca dei clienti, più case e due ruoli, misure del giorno 10 e lavoro notturno;
+   5. Luca paga in agenzia (tappa 5), con doppio invio e rete che cade;
+   6. la consegna a Marta e il «Ricevuto» (tappa 6), con la divisione al centesimo;
+   7. il bonifico con la contabile (tappa 7), con il parziale del proprietario;
+   8. la contestazione e la ricevuta corretta (tappa 10), con gli stati ricavati dopo annullamenti e sostituzioni;
+   9. la scadenza passata e più mesi aperti (tappa 8);
+   10. la consegna in ritardo (tappa 9);
+   11. il nuovo canone ISTAT con la firma (tappa 11);
+   12. documenti, scadenze e foto (tappa 12);
+   13. tecnici della casa e «Chiama» (nuovo);
+   14. Rete ƎE spenta ed elenco per il sito (nuovo), con le quattro prove della rete;
+   15. la disdetta dell'adesione (tappa 13);
+   16. casa senza gestione (nuovo), con la tessera fisica che spetta a chi possiede;
+   17. la fine della locazione e la casa fuori gestione (tappa 14).
+2. **Regole di ogni pezzo:** si apre con la sessione «revisione e storie di prova», senza codice dell'app; le prove automatiche «da fare all'inizio della costruzione» stanno dove nasce ciò che proteggono e si scrivono prima del codice (domanda 3); la tabella di §10.7 e i dati inventati grandi crescono a ogni pezzo; i tempi massimi contano dall'attivazione; le liste di [Quando un pezzo è finito](04-quando-un-pezzo-e-finito.md) restano come sono.
+3. **Fuori dalle tappe:** l'indirizzo vero dietro il proxy e dove ospitare la pagina d'errore fissa, al ticket [Verifiche su Scalingo](07-verifiche-su-scalingo.md).
+4. **Tre collocazioni proposte dall'agente e confermate** (dal «Non ancora specificato» della mappa): il programma con cui l'operatore verifica una firma al banco si decide nella sessione di revisione della tappa ISTAT; il testo della pagina d'errore fissa si scrive nelle fondamenta, con gli stati comuni; email e SMS, fino al parere sul nome, sono registrati dalla finta con testi provvisori segnati «in attesa del parere» e si disegnano dopo il parere, prima del pilota.
+
+Nessuna scelta tecnica nuova in ARCHITECTURE.md: ordine e sessioni sono il piano, che si scrive dove decide il ticket [Riepilogo del piano e conferma](10-riepilogo-piano.md). Nessun termine nuovo in GLOSSARY.md: pezzo, tappa e sessione sono parole del lavoro, non del prodotto.
 
 ## Commenti (Comments)
 
