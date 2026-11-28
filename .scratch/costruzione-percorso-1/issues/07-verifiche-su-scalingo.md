@@ -14,3 +14,7 @@ Alcune verifiche d'inizio si provano solo sulla piattaforma vera: la memoria del
 3. **Cosa si fa intanto** se l'account non c'è: prove equivalenti sul computer o nella sessione, con il limite dichiarato.
 
 ## Risposta (Answer)
+
+## Commenti (Comments)
+
+- 28/11/2026, dal ticket [Ordine delle tappe](06-ordine-delle-tappe.md): l'ordine è deciso (fondamenta, poi 16 pezzi). La firma ISTAT è l'undicesimo pezzo dopo le fondamenta: se la memoria di Scalingo ha da decidere la strada di riserva di DSS, conviene saperlo prima di quella tappa. Restano a questo ticket anche l'indirizzo vero dietro il proxy (simulato nelle fondamenta) e dove ospitare la pagina d'errore fissa (il testo si scrive nelle fondamenta).

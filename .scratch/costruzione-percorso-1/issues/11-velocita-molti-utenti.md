@@ -17,3 +17,5 @@ Il principio è deciso nel ticket [Strumenti di lavoro](05-strumenti-di-lavoro.m
 ## Risposta (Answer)
 
 ## Commenti (Comments)
+
+- 28/11/2026, dal ticket [Ordine delle tappe](06-ordine-delle-tappe.md) (scelta dell'utente): il programma dei dati inventati grandi **nasce nelle fondamenta**, nella sessione dell'ambiente di prova, con case, persone e rapporti; ogni pezzo aggiunge i suoi dati. I tempi massimi contano dall'attivazione; la regola contro le letture del database una riga alla volta vale dalle fondamenta. Restano a questo ticket grandezze, tempi e strumenti.

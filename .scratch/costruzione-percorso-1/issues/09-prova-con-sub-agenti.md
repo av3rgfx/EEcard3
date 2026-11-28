@@ -14,3 +14,7 @@ Prima del pilota l'utente prova la piattaforma con proprietari, inquilini e agen
 3. **Chi guarda:** l'utente legge un riepilogo e una pagina, oppure ripete a mano alcune situazioni.
 
 ## Risposta (Answer)
+
+## Commenti (Comments)
+
+- 28/11/2026, dal ticket [Ordine delle tappe](06-ordine-delle-tappe.md), ora chiuso: ogni pezzo ha 1–3 storie di prova approvate nella sua sessione «revisione e storie di prova» e diventate prove automatiche nel browser; i pezzi sono 16 dopo le fondamenta, con tre pezzi nuovi fuori dalla storia (tecnici della casa e «Chiama»; Rete ƎE spenta ed elenco per il sito; casa senza gestione). Una prova con i sub-agenti a ogni tappa si potrebbe appoggiare a quella sessione o al resoconto di fine pezzo.
